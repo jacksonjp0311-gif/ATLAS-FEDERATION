@@ -1,0 +1,26 @@
+{
+  "canonical_checkpoint_modified": false,
+  "canonical_federation_regression_not_run": true,
+  "exact_record_validation": {
+    "canonical_federation_released": false,
+    "file_hashes_checked": 37,
+    "full_federation_regression_executed": false,
+    "predecessor_exact_dependencies": 5,
+    "records_validated": 65,
+    "relations_validated": 63,
+    "result": "passed",
+    "schema": "atlas.db-optimization.staged-content-validation/1"
+  },
+  "file_manifest_sha256": "cf19334a8d42f0840e3701451323599810ff217b0a01954d3ff24caa464cda88",
+  "fresh_extraction_oracle_checks": 54018,
+  "fresh_extraction_unit_tests_passed": 30,
+  "independent_expert_review": false,
+  "local_oracle_checks": 54018,
+  "local_unit_tests_passed": 30,
+  "network_stacks_priority_16_unsealed": true,
+  "schema": "atlas.db-optimization.unsealed-archive-replay/1",
+  "status": "staged_content_verified_fresh_extraction",
+  "zip_bytes": 83570,
+  "zip_members": 38,
+  "zip_sha256": "b53aa0d29e512200754dd25330ba2406ae2ef5fa7a09f4308f1cec71b82c4f18"
+}
