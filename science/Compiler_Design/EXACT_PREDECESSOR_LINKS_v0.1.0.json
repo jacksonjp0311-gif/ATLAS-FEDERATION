@@ -1,0 +1,68 @@
+[
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-12-concept",
+      "revision": "17e65aa61704727af874456abf3329779742cab35b730c64354b7a2ffd7e851b"
+    },
+    "to": {
+      "record_id": "computer-architecture-digital-hardware-atlas:chapter-26-claim",
+      "revision": "f86e0d9ad3bdc11917d694db65cb46781e98ab83acddbf398f58865b6c321a13"
+    },
+    "title": "A bounded structured-language compiler from source to AT8 ROM — claim"
+  },
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-11-concept",
+      "revision": "ed627f77711646da27dabd8684d512d4c8dc3106ab66664723265723e48b7df2"
+    },
+    "to": {
+      "record_id": "computer-architecture-digital-hardware-atlas:chapter-27-claim",
+      "revision": "a245850cd6bf9e9b49c350ff7e9e50fa2bf604bb75f64cb4c7035016f920c62e"
+    },
+    "title": "Nested counted loops and compiler-owned register allocation — claim"
+  },
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-06-concept",
+      "revision": "87a98a46db3eacbbeb8ef438a681dc4e128d118c3613f5df001493e4e83a4d28"
+    },
+    "to": {
+      "record_id": "computer-architecture-digital-hardware-atlas:chapter-06-claim",
+      "revision": "f203fd5fa776d78a6470625c0a73383af4f89002c7f44c9670e7ae265965ce1e"
+    },
+    "title": "AT8 encoding: fixed 2-byte instructions and strict decoder — claim"
+  },
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-01-concept",
+      "revision": "11a2b5759c9ab48e7aadba0ba03eacad941cc29ea4405fc5ef18281d70cc2690"
+    },
+    "to": {
+      "record_id": "computation-atlas:chapter-02-concept",
+      "revision": "03f6e61b72b6cb8bbe005bd57b1d8ab8a6ce35ddb238946eda3efa4c9dcb5dcd"
+    },
+    "title": "Counter machines and explicit instruction semantics — foundational concept"
+  },
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-08-concept",
+      "revision": "b1ef1975d6ce5af471c58ea6df32e9d0f51bf2637b3b90f82df270ea6dfd3839"
+    },
+    "to": {
+      "record_id": "database-optimization-atlas:chapter-17-claim",
+      "revision": "d126074ff07d13259156f079c329bd1fac50cf21cd7a3132ef412b5e6a989330"
+    },
+    "title": "Left-deep dynamic-programming join ordering — scoped claim"
+  },
+  {
+    "from": {
+      "record_id": "compiler-design-atlas:chapter-12-concept",
+      "revision": "17e65aa61704727af874456abf3329779742cab35b730c64354b7a2ffd7e851b"
+    },
+    "to": {
+      "record_id": "os-internals-atlas:chapter-02-claim",
+      "revision": "cf0c41382a059c4c49d0d70e3ef46090a8b586b38b5c2d9a0082d95875be835a"
+    },
+    "title": "Firmware, boot loaders, kernel initialization and trusted recovery — qualified claim"
+  }
+]

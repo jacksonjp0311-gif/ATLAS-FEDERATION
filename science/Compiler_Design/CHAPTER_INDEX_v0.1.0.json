@@ -1,0 +1,86 @@
+[
+  {
+    "number": 1,
+    "slug": "01_what_a_compiler_must_preserve",
+    "title": "Compiler correctness and semantic preservation",
+    "path": "docs/chapters/01_what_a_compiler_must_preserve.md",
+    "bytes": 2235
+  },
+  {
+    "number": 2,
+    "slug": "02_lexing",
+    "title": "Lexical analysis and bounded tokenization",
+    "path": "docs/chapters/02_lexing.md",
+    "bytes": 1768
+  },
+  {
+    "number": 3,
+    "slug": "03_grammar_and_pratt",
+    "title": "Parsing, binding power and ambiguous expression structure",
+    "path": "docs/chapters/03_grammar_and_pratt.md",
+    "bytes": 1590
+  },
+  {
+    "number": 4,
+    "slug": "04_types_and_scopes",
+    "title": "Typing judgments, binding and early rejection",
+    "path": "docs/chapters/04_types_and_scopes.md",
+    "bytes": 1594
+  },
+  {
+    "number": 5,
+    "slug": "05_checked_integers",
+    "title": "I32 arithmetic, division and trap semantics",
+    "path": "docs/chapters/05_checked_integers.md",
+    "bytes": 1693
+  },
+  {
+    "number": 6,
+    "slug": "06_ir_and_codegen",
+    "title": "Intermediate representation and stack-machine code generation",
+    "path": "docs/chapters/06_ir_and_codegen.md",
+    "bytes": 1700
+  },
+  {
+    "number": 7,
+    "slug": "07_bytecode_validation",
+    "title": "Control-flow analysis, abstract stack types and initialization",
+    "path": "docs/chapters/07_bytecode_validation.md",
+    "bytes": 1753
+  },
+  {
+    "number": 8,
+    "slug": "08_optimizations",
+    "title": "Conservative optimization and trap-preserving transformations",
+    "path": "docs/chapters/08_optimizations.md",
+    "bytes": 1791
+  },
+  {
+    "number": 9,
+    "slug": "09_independent_oracle",
+    "title": "Executable evidence and independent finite oracles",
+    "path": "docs/chapters/09_independent_oracle.md",
+    "bytes": 1899
+  },
+  {
+    "number": 10,
+    "slug": "10_reproducible_artifacts",
+    "title": "Deterministic compiler artifacts, provenance and restoration",
+    "path": "docs/chapters/10_reproducible_artifacts.md",
+    "bytes": 1920
+  },
+  {
+    "number": 11,
+    "slug": "11_real_compiler_landscape",
+    "title": "From a toy compiler to real targets: LLVM, Wasm, RISC-V and CompCert",
+    "path": "docs/chapters/11_real_compiler_landscape.md",
+    "bytes": 1840
+  },
+  {
+    "number": 12,
+    "slug": "12_offline_rebuild",
+    "title": "Offline reconstruction, worked laboratory and known gaps",
+    "path": "docs/chapters/12_offline_rebuild.md",
+    "bytes": 1884
+  }
+]

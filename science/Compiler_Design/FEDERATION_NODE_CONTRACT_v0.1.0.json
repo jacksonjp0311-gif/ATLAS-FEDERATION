@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "nodes": 24,
+  "records": 4102,
+  "relations": 3337,
+  "new_records": 54,
+  "new_relations": 54,
+  "new_sources": 5
+}
