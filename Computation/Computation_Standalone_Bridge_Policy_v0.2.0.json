@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.standalone-bridge-policy/2",
+  "version": "0.2.0",
+  "result": "passed",
+  "standalone_records": 232,
+  "standalone_relations": 250,
+  "full_computation_relations": 255,
+  "federation_nodes": 8,
+  "federation_records": 1473,
+  "federation_relations": 706,
+  "outside_node_relations_full_only": 5,
+  "prior_162_record_revisions_and_175_relations_preserved": true,
+  "standalone_source_closed": true,
+  "full_source_closed": true,
+  "limitations": [
+    "The earlier unversioned standalone_bridge_policy.json describes v0.1 and is retained as historical evidence",
+    "An external link can be resolved only in the full eight-node federation; the standalone package deliberately omits those five relations"
+  ]
+}

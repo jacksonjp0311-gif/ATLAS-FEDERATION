@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.computation-v02-source-closure/1",
+  "version": "0.2.0",
+  "result": "passed",
+  "computation_records": 232,
+  "computation_sources": 21,
+  "full_computation_relations": 255,
+  "standalone_relations": 250,
+  "federation_records": 1473,
+  "federation_relations": 706,
+  "federation_nodes": 8,
+  "old_records_exact_revisions": 162,
+  "old_relations_exact_revisions": 175,
+  "source_card_has_original_bytes_count": 0,
+  "reference_records_validate_revisions": true,
+  "casebook_author_generated_only": true,
+  "limitations": [
+    "Prior build_source_closure.json describes the v0.1 source snapshot and remains unchanged",
+    "No independent scientific evaluation or authentic primary-source files have been obtained"
+  ]
+}

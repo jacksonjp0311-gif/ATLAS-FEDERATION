@@ -1,0 +1,32 @@
+{
+  "schema": "atlas.computation-v02-oracle/1",
+  "status": "passed",
+  "seed": 20261114,
+  "comparisons": 87385,
+  "categories": {
+    "networkx_mst_weight": 250,
+    "networkx_mst_component_count": 250,
+    "networkx_max_flow": 220,
+    "flow_cut_duality": 220,
+    "scipy_gauss_elimination": 917,
+    "numpy_fft_real": 15190,
+    "numpy_fft_imag": 15190,
+    "fft_round_trip": 15190,
+    "numpy_convolution_real": 19629,
+    "numpy_convolution_imag": 19629,
+    "hoeffding_rho": 250,
+    "numpy_sample_mean": 250,
+    "clock_relation": 200
+  },
+  "max_absolute_deviation": 8.810729923425242e-13,
+  "numpy_version": "2.3.5",
+  "networkx_version": "3.6.1",
+  "scipy_available": true,
+  "data_origin": "author_generated_synthetic_inputs",
+  "physical_science_review": false,
+  "unseen_ai_model_performance": false,
+  "limitations": [
+    "Numerical agreement under generated samples does not prove universal correctness",
+    "Adversarial, extreme precision, and nonnumeric performance questions require additional study"
+  ]
+}
