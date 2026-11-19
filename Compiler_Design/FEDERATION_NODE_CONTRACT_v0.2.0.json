@@ -1,0 +1,14 @@
+{
+  "new_bibliographic_source_cards": 1,
+  "new_records": 18,
+  "new_relations": 20,
+  "nodes": 24,
+  "original_30_domain_queue_unchanged": true,
+  "previous_records_retained_exact": 54,
+  "previous_relations_retained_exact": 54,
+  "records": 4120,
+  "relations": 3357,
+  "result": "passed",
+  "schema": "atlas.compiler-design-v02-cumulative-node-contract/1",
+  "source_manifests_unmodified_except_active_node": true
+}
