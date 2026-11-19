@@ -1,0 +1,174 @@
+{
+  "schema": "atlas.software-pattern-casebook/1",
+  "count": 24,
+  "cases": [
+    {
+      "number": 1,
+      "title": "Design patterns as reconstructible engineering contracts",
+      "method": "README.md and tests",
+      "test_fixture": "Select a failed local sensor-processing workflow. State its normal flow, the assumption that a value arrives in millivolts, the alternate value in volts, and the failure when units are confused. Identify which boundary a PortAdapter could n",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 2,
+      "title": "Canonical data, strict schemas, and versioned contracts",
+      "method": "contracts.envelope, contracts.parse_envelope",
+      "test_fixture": "Create the mapping {b:2,a:1}, wrap it as a version-one command, serialize and decode it. Reverse the order of input keys: the payload digest must not change. Modify a value without recomputing SHA-256: decoding must refuse. Supply a NaN, an",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 3,
+      "title": "Factory construction and explicit dependency injection",
+      "method": "composition.build_adapter, composition.PortAdapter",
+      "test_fixture": "Call build_adapter({source_units:mV}) and normalize a record containing 1234 mV; the output is 1.234 V. Construct the same adapter from source_units:V and input 1.234; both agree to floating-point precision. Reject an unknown unit or undecl",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 4,
+      "title": "Adapters and anti-corruption layers for incompatible information",
+      "method": "composition.PortAdapter.normalize",
+      "test_fixture": "Convert a synthetic reference signal of 2500 mV to 2.5 V and compare it with a 2.5 V reference using the same canonical field. Try an unrecognized Celsius unit for a voltage field: reject it before downstream use. Include a negative control",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 5,
+      "title": "Strategy pattern and deterministic policy substitution",
+      "method": "composition.StrategyRegistry",
+      "test_fixture": "Register an integer doubling strategy and an independent identity strategy. Evaluate the same integer and compare results to the reference definition. Attempt to register another function under the existing name; the registry must refuse th",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 6,
+      "title": "Decorator pattern for explicit audit boundaries",
+      "method": "composition.audited",
+      "test_fixture": "Wrap a function mapping x to {out:x+1} with an audit decorator and inspect the result SHA-256. Invoke the wrapper twice on the same input; the output digests should agree, although two audit entries exist. Wrap a function that raises: verif",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 7,
+      "title": "Pipes and filters with verifiable intermediate results",
+      "method": "composition.Pipeline.run",
+      "test_fixture": "Build a two-stage pipeline where the first stage converts an integer into {v:x+1}, and the second multiplies that field by three. With x=2, output {v:9} and two intermediate receipts. Mutate the second stage to a different calculation and v",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 8,
+      "title": "State machines with explicit forbidden transitions",
+      "method": "state.StateMachine, state.recovery_machine",
+      "test_fixture": "Start idle; prepare -> prepared; validate -> verified; commit -> committed. From idle try commit directly: refuse, state and trace unchanged. From prepared reject -> hold; reset -> idle. Execute identical sequences in separate instances and",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 9,
+      "title": "Retry with bounded attempts and explicit idempotency preconditions",
+      "method": "resilience.bounded_retry",
+      "test_fixture": "Make an operation fail twice with a designated transient OSError, then succeed on its third call. The retry wrapper returns attempt count three. Next make an operation fail with a ValueError that is not designated transient; it must be rais",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 10,
+      "title": "Circuit breaker states and recovery under unreliable dependencies",
+      "method": "resilience.CircuitBreaker",
+      "test_fixture": "With threshold two and reset interval five, record failures at ticks 0 and 1. An attempt at tick 2 is rejected. At tick 6 the breaker admits one half-open probe; a simultaneous second probe is rejected. Record a successful probe and confirm",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 11,
+      "title": "Bulkhead capacity partitioning and blast-radius limits",
+      "method": "resilience.Bulkhead",
+      "test_fixture": "Set lane search capacity one and restore capacity two. Acquire search once and verify a second search acquisition is refused while restore can still acquire twice. Release the search lease and verify it becomes available. Try releasing an u",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 12,
+      "title": "Queues, backpressure, duplicates and delivery guarantees",
+      "method": "resilience.Bulkhead and ledger.CommandJournal",
+      "test_fixture": "Model a queue lane with two available slots and attempt a third acquisition. The third must be refused without increasing the recorded allocation. Process a command with a stable id in the SQLite journal, then submit the same id and payload",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 13,
+      "title": "Command identity and database-local idempotent effects",
+      "method": "ledger.CommandJournal.execute",
+      "test_fixture": "Insert command ID c1 with {a:5,b:7}, using a pure reducer that returns {sum:12}. Submit the same command again and assert the reducer ran once; the replay returns the exact stored result with new_commit=False. Now reuse c1 with {a:5,b:8}: r",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 14,
+      "title": "Unit of Work, SQLite transactions and rollback boundaries",
+      "method": "ledger.CommandJournal",
+      "test_fixture": "Make a reducer raise after a transaction has begun. The database must roll back and contain zero committed commands for that ID. Submit a valid command afterward; the sequence must begin at one. In a separate test mutate a stored result dir",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 15,
+      "title": "Hash-chained command history with independent replay checks",
+      "method": "ledger.CommandJournal.verify_replay",
+      "test_fixture": "Commit two commands and capture the final head hash. Reopen SQLite and confirm the same head. Use a separate SQLite connection to alter result_json without updating the recorded hash: replay must fail. Test a changed payload and a broken pr",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 16,
+      "title": "Event sourcing with immutable blobs and a versioned head pointer",
+      "method": "events.EventChain, atomicfiles.ContentStore",
+      "test_fixture": "Append events {n:1} and {n:2}, close the process and construct a new reader from the same directory. Replay must return both in order with the same head hash. Corrupt the head pointer to an unknown digest: the next append and replay must re",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 17,
+      "title": "Content-addressed immutable artifacts and integrity checks",
+      "method": "atomicfiles.ContentStore.put/get",
+      "test_fixture": "Store the bytes of a small offline instruction file. The returned name must equal SHA-256 of those bytes. Store the same bytes again and verify the name is unchanged. Corrupt the stored blob through a separate test tool and require the next",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 18,
+      "title": "Atomic same-filesystem pointer replacement and rollback design",
+      "method": "atomicfiles.ContentStore.publish",
+      "test_fixture": "Publish an initial head pointing at blob A, then update it to blob B. A fresh reader must see the complete digest for B, while blob A remains retrievable by hash. Attempt a path traversal tag or symlink head: the operation must fail. A powe",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 19,
+      "title": "Recovering a derived snapshot after a committed journal update",
+      "method": "workflow.RecoveryWorkflow.apply/recover",
+      "test_fixture": "Commit command A normally. Commit command B but deliberately raise a simulated interruption before publishing its snapshot. Close the process. Reopen the journal, validate every hash-chain link, and call recover(): it should detect that the",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 20,
+      "title": "CQRS-style separation of command authority and read projections",
+      "method": "workflow.RecoveryWorkflow",
+      "test_fixture": "Commit two journal entries while intentionally interrupting publication after the second. The old snapshot contains one entry, while the verified authoritative ledger contains two. Calling recover reconstructs the projection; repeat without",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 21,
+      "title": "Cache-aside, invalidation and the limits of stale knowledge",
+      "method": "workflow snapshot revision comparison; Computer Architecture cache reference",
+      "test_fixture": "Commit a new journal entry and deliberately leave the derived snapshot stale. The read-side recovery compares hashes, detects revision mismatch, and reconstructs a fresh projection. A second read returns the same digest without rebuilding. ",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 22,
+      "title": "Software supply-chain evidence, rights, and untrusted inputs",
+      "method": "contracts.parse_envelope, evidence receipts",
+      "test_fixture": "Build a compact release with a source manifest, test receipt and exact restore instructions. Modify a single source byte and verify that the file digest no longer matches. Feed an oversized JSON message and a nested malicious-looking path t",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 23,
+      "title": "Property-based, differential and interruption-oriented test design",
+      "method": "evidence/independent_oracle.py and tests",
+      "test_fixture": "Generate 2,048 synthetic versioned envelopes with shuffled key order, verify canonical digest agreement and reject unauthorized modification. Generate 1,280 valid state-machine sequences and compare each transition with an independent hand-",
+      "scientific_evidence": "constructed offline software only"
+    },
+    {
+      "number": 24,
+      "title": "Reconstructing resilient software without network services",
+      "method": "python -m patterns_atlas; workflow.RecoveryWorkflow",
+      "test_fixture": "Run `python -m patterns_atlas` from a clean extracted package. It should report a committed result of 12 for a 5+7 calculation, simulate an interrupted later command, reopen its SQLite journal, and reconstruct a two-entry snapshot without r",
+      "scientific_evidence": "constructed offline software only"
+    }
+  ]
+}
