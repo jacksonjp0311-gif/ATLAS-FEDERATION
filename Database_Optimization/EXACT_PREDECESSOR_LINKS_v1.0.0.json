@@ -1,0 +1,49 @@
+{
+  "current_authoritative_predecessor_release": "Network_Stacks_v1.0.0",
+  "predecessor_records": [
+    {
+      "record_id": "os-internals-atlas:chapter-07-concept",
+      "revision": "61289f4f7c57be003cd093e7d4c387f222d0cb0375e1b0fd8810a333041fff52",
+      "title": "Demand paging, copy-on-write, protection faults and memory pressure \u2014 full technical concept"
+    },
+    {
+      "record_id": "os-internals-atlas:chapter-14-concept",
+      "revision": "6880e34d369f6380c97a348f9f5cdf80d62d332eee7754d64f0d9b4ad0aad3e8",
+      "title": "Write-ahead logging, ordering, fsync, namespace persistence and recovery \u2014 full technical concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-13-concept",
+      "revision": "0be6aaa38e82ff2bd2a30dd50b2527df5b7baa43f6c523b172c127176f399893",
+      "title": "Command identity and database-local idempotent effects \u2014 concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-14-concept",
+      "revision": "34b1cb4edad4d4c01b99413b66ea6a10e569cdacc8e8a9d5edc5762a9183de6b",
+      "title": "Unit of Work, SQLite transactions and rollback boundaries \u2014 concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-21-concept",
+      "revision": "6043245b5cddd7f8c64abc4775171b43a6b17f777e74f0c6b0c9067de2a3ef5a",
+      "title": "Cache-aside, invalidation and the limits of stale knowledge \u2014 concept"
+    },
+    {
+      "record_id": "network-stacks-atlas:chapter-10-concept",
+      "revision": "c3d57855d3a82e34fa26a61525bb053171ac156bdae70887a70952db279634d4",
+      "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 definitions and full technical chapter"
+    },
+    {
+      "record_id": "network-stacks-atlas:chapter-20-concept",
+      "revision": "7d0b0f1b0e5770b3bdce76e58974f324b7f1429e003d47e91ab4655e8cdfd02a",
+      "title": "Offline reconstruction and survival dependency chain \u2014 definitions and full technical chapter"
+    },
+    {
+      "record_id": "network-stacks-atlas:chapter-22-concept",
+      "revision": "c95e53cfbe050cb7dbd4b9a040664f8c984ab313d22be9e35b04ecb36bf007ac",
+      "title": "Independent acceptance gates, restoration and preservation \u2014 definitions and full technical chapter"
+    }
+  ],
+  "previous_full_archive_sha256": "41d88dac074563965872feae86545cc76748b0cb47811a006e5b3659e3cd6e1e",
+  "reconstruction": "new full archive must be restored and tested from exact predecessor",
+  "schema": "atlas.original-federation-exact-dependency/1",
+  "scientific_acceptance": "source record revision presence only; physical evidence not implied"
+}

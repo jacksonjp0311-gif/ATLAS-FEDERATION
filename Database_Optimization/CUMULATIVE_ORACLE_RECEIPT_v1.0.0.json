@@ -1,0 +1,15 @@
+{
+  "boundaries": "constructed finite software oracles; no independent human review, physical I/O measurements or DBMS production certification",
+  "comparisons": 78541,
+  "extension": {
+    "comparisons": 24523,
+    "sha256": "900264cf06a4dfb27c8a19f499a4e633c36b6f148be4066a05a216c09492cd6a"
+  },
+  "failures": 0,
+  "original": {
+    "comparisons": 54018,
+    "sha256": "d22ac604e51e5a927f2d64c426056cad8c6e3645b3232fab8ebb29f4fd9c4ec2"
+  },
+  "result": "passed",
+  "schema": "atlas.database-optimization-two-oracle-v1/1"
+}

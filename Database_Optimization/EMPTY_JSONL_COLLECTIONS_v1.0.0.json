@@ -1,0 +1,9 @@
+{
+  "schema": "atlas.database-empty-collections-reference/1",
+  "node": "database-optimization-atlas",
+  "path": "DATABASE-OPTIMIZATION-ATLAS/data/reviews.jsonl",
+  "size_bytes": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "original_zero_byte_file_present_in_full_verified_archive_and_patch": true,
+  "library_evidence_only_not_a_substitute_for_exact_original_file": true
+}
