@@ -1,0 +1,10 @@
+{
+  "byte_identical": true,
+  "contexts": 343,
+  "fresh_sha256": "69e9ae79a7715c2c0c567e10272bfb0de2150d12738a33a28cde6c2c05f7d63b",
+  "result": "passed",
+  "schema": "atlas.compiler-v02-exact-fresh-replay/1",
+  "source_sha256": "69e9ae79a7715c2c0c567e10272bfb0de2150d12738a33a28cde6c2c05f7d63b",
+  "suites": 54,
+  "tests": 3405
+}

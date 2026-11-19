@@ -1,0 +1,12 @@
+{
+  "independent_VM_semantic_comparisons": 36032,
+  "independent_parser_AST_matches": 9008,
+  "invalid_register_ir_controls_rejected": 5,
+  "malformed_grammar_controls_rejected": 8,
+  "notes": "Finite seeded cases, separate parsers share lexer and AST; AST evaluator shares arithmetic specification. Does not establish formal proof or native backend correctness.",
+  "programs": 9008,
+  "programs_with_expected_trap": 1736,
+  "result": "passed",
+  "schema": "atlas.compiler-design-v02-independent-multibackend-oracle/1",
+  "seed": 18022026
+}
