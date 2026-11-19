@@ -1,0 +1,28 @@
+{
+  "schema": "atlas.control-public-motor-descriptive/1",
+  "checked_date": "2026-11-13",
+  "project": "dilusha-c/PID_Motor_Controlled (educational motor-control GitHub project)",
+  "publisher": "Public student project repository (not independently peer reviewed)",
+  "source_repository": "https://github.com/dilusha-c/PID_Motor_Controlled",
+  "source_commit": "main branch at retrieval; pin by listed Git blob IDs for fixed inputs",
+  "rights": "No explicit content redistribution license established; raw third-party CSV is not mirrored; derived small descriptive summaries only.",
+  "raw_bytes_archived": false,
+  "computed_from": "Three publicly accessible time,rpm CSV files retrieved through GitHub read interface; 49 rows each. Original data not incorporated into package.",
+  "columns": ["time (reported seconds)", "rpm (measured speed)"],
+  "data_class": "third_party_reported_experimental_speed_records; descriptive_summary_only",
+  "series": [
+    {"nominal_file_label": "PWM 30", "url": "https://raw.githubusercontent.com/dilusha-c/PID_Motor_Controlled/main/Mode/mode1/data_pwm_30.csv", "git_blob_sha1":"4643b029c42096bbf71676e3904e6476f0c98e52", "n":49, "first_time_s":0.20000004768371582, "last_time_s":9.801964044570923, "mean_rpm":200.6612244897959, "population_sd_rpm":16.33937046131378, "last_10_mean_rpm":196.96, "min_rpm":120, "max_rpm":226.4},
+    {"nominal_file_label": "PWM 50", "url": "https://raw.githubusercontent.com/dilusha-c/PID_Motor_Controlled/main/Mode/mode1/data_pwm_50.csv", "git_blob_sha1":"823404a55a2e846701bff5333f3dd201193cae5e", "n":49, "first_time_s":0.20000076293945312, "last_time_s":9.800082683563232, "mean_rpm":247.51020408163274, "population_sd_rpm":15.86375981501721, "last_10_mean_rpm":249.96, "min_rpm":162.8, "max_rpm":271.2},
+    {"nominal_file_label": "PWM 70", "url": "https://raw.githubusercontent.com/dilusha-c/PID_Motor_Controlled/main/Mode/mode1/data_pwm_70.csv", "git_blob_sha1":"4ba5f92650402054426be9f8376f1752013201a8", "n":49, "first_time_s":0.20000004768371582, "last_time_s":9.800629377365112, "mean_rpm":265.9265306122449, "population_sd_rpm":12.210847895649817, "last_10_mean_rpm":264.36, "min_rpm":196.8, "max_rpm":280.8}
+  ],
+  "analysis": {
+    "reported_measured_applied_pwm_column_available": false,
+    "PWM_30_50_70_are_filename_labels": true,
+    "independent_experimental_replication": false,
+    "steady_state_certified": false,
+    "statistical_confidence_interval": null,
+    "plant_transfer_function_identified": false,
+    "controller_performance_or_safety_certified": false,
+    "reason_for_avoiding_dynamic_ARX": "Each file reports time and RPM only. Input is a nominal fixed PWM condition in the filename; there is no per-row applied PWM excitation. The three separate logs cannot be concatenated into a synchronized dynamic identification record."
+  }
+}
