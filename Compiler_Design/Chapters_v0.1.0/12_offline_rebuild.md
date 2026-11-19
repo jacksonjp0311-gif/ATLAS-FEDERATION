@@ -1,0 +1,9 @@
+# Chapter 12 — Offline reconstruction, worked laboratory and known gaps
+
+A future user needs enough information to rebuild the compiler without a cloud service: the grammar, type rules, arithmetic semantics, bytecode ISA, validator transfer functions, deterministic reference source, tests, seeded oracle, negative cases and source-provenance metadata. All software in this domain is pure Python standard library, with no network calls during execution.
+
+**Hands-on lab:** Create a file `test.tiny` containing `let base=7; let count=4; return if count<base then base*count else base/count;`. From the domain directory run `python -m compiler_atlas test.tiny` and expect `{"value":28,"semantics":"checked-i32"}`. Run `python -m compiler_atlas test.tiny --ir`, then `python -m unittest discover -s tests -q`, then `python -m evidence.independent_oracle`. Record interpreter version, actual counts, elapsed time and any violations. A failed test must remain a failed receipt until corrected and independently rerun.
+
+**Reconstruction exercise:** Implement your own parser from the precedence table without importing `compiler_atlas.core.parse`. Generate bytecode using the provided instruction table, then independently execute test cases. Compare not only values but also traps and error categories. Start with arithmetic precedence and sequential bindings, then conditional control flow, then deliberately malformed bytecode and misaligned jump targets.
+
+**Boundary checklist:** Not a complete C compiler, no native assembler or linker, no object format, no executable file loader, no hardware ABI, no memory model, no macros, no loops, no function calls, no security guarantee, no independent expert validation and no primary-source bytes authenticated. Any future version claiming those must add source coverage and executable evidence rather than relying on this edition's tests.
