@@ -1,0 +1,10 @@
+{
+  "archive_bytes": 735193042,
+  "full_archive_sha256": "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7",
+  "patch_members_verified": 301,
+  "predecessor_sha256": "cfd36e91dd1a093bf1edbd8a752f1fd6505e66123c577d167ed0f687c1381ebd",
+  "result": "passed",
+  "schema": "atlas.compiler-v02-exact-restore/1",
+  "scientific_expert_or_native_target_certification": false,
+  "source_files_sha256_verified": 11733
+}

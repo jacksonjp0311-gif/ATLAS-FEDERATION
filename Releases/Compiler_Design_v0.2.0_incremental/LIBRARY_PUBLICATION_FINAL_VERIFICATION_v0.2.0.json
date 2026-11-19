@@ -1,0 +1,89 @@
+{
+  "Bitwork_router_modified": false,
+  "checkpoint_and_active_pointer_readback_exact": true,
+  "critical_library_readbacks": {
+    "ATLAS_COLLECTION_Compiler_Design_v0.2.0_DELTA_from_Compiler_Design_v0.1.0.zip": {
+      "exact_match": true,
+      "sha256": "4cbe54fe29729c8895670f1efa31628d1501a848593a677798424dd03e46b3ed"
+    },
+    "ATLAS_FORGE_RELEASE_COMPILER_DESIGN_v0.2.0.json": {
+      "exact_match": true,
+      "sha256": "cef29e73b8bf1b30d755ca98e99eeed03a4363fe218a55166f33521f588187e7"
+    },
+    "FRESH_ARCHIVE_FEDERATION_TESTS_v0.2.0.json": {
+      "exact_match": true,
+      "sha256": "69e9ae79a7715c2c0c567e10272bfb0de2150d12738a33a28cde6c2c05f7d63b"
+    },
+    "PATCH_MANIFEST.json": {
+      "exact_match": true,
+      "sha256": "2fdb766a16422c1933e968d20983b045e70fa5d2eeb6b2812529e18cb79a9e5a"
+    },
+    "SOURCE_TREE_FEDERATION_TESTS_v0.2.0.json": {
+      "exact_match": true,
+      "sha256": "69e9ae79a7715c2c0c567e10272bfb0de2150d12738a33a28cde6c2c05f7d63b"
+    }
+  },
+  "date": "2026-11-19",
+  "independent_expert_review": false,
+  "inventory": {
+    "nodes": 24,
+    "original_domains_represented": 18,
+    "records": 4120,
+    "relations": 3357,
+    "source_cards": 657
+  },
+  "native_target_verified": false,
+  "next_content_domain": "compiler-design-atlas",
+  "no_separate_recovery_federation": true,
+  "original_30_domain_queue_unchanged": true,
+  "original_canonical_federation": "/ATLAS FORGE/",
+  "predecessor": "Compiler_Design_v0.1.0",
+  "release": "Compiler_Design_v0.2.0",
+  "result": "passed",
+  "schema": "atlas.compiler-design-v02-library-publication-verification/1",
+  "scientific_v1_accepted": false,
+  "sha256": {
+    "active_priority_postseal": "5168354fb42e1b1e0552012942577274abb70e864d31c19c5945dcfeb855fbf9",
+    "checkpoint_postseal": "4e9f54e9c6b046b632e9d6b83e07672ff6e4c798bcb57dee81f2ea5752306210",
+    "full_archive": "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7",
+    "patch": "4cbe54fe29729c8895670f1efa31628d1501a848593a677798424dd03e46b3ed",
+    "regression_source_and_fresh": "69e9ae79a7715c2c0c567e10272bfb0de2150d12738a33a28cde6c2c05f7d63b"
+  },
+  "source_library_readbacks": {
+    "DEPTH_MANUAL_v0.2.0.md": {
+      "exact_match": true,
+      "sha256": "bb4d545d7b85dc196be2ed138a57e49519cb49171517bbccbc0135b5fd83e6c7"
+    },
+    "atlas_manifest_v0.2.0.json": {
+      "exact_match": true,
+      "sha256": "a163ad289b01eb1be6537286fa4aa743c8d5abf0b30c9af55e04e68ec7c9fe0b"
+    },
+    "data_relations_v0.2.0.jsonl": {
+      "exact_match": true,
+      "sha256": "d80dd32393c30e2e13dd4243a954ed886c4389021b30ab45cee27ec18e3f79b7"
+    },
+    "reference_parser_v0.2.0.py": {
+      "exact_match": true,
+      "sha256": "d367f82b2042a0d2903e589d1f5741ce79891292d6e01a8d6df7c4055855f534"
+    },
+    "register_ir_v0.2.0.py": {
+      "exact_match": true,
+      "sha256": "00e796db5fa522a54fd191cea2a58615846346dd677f9d3a1b6ff62857412b6b"
+    }
+  },
+  "verification": {
+    "baseline_v01_independent_comparisons": 26201,
+    "contexts": 343,
+    "file_hashes_verified": 11733,
+    "fresh_tests": 3405,
+    "historical_file_deletions": 0,
+    "historical_unmodified_files": 11433,
+    "independent_backend_comparisons_v02": 36032,
+    "independent_parser_AST_comparisons": 9008,
+    "original_v01_exact_records_preserved": 54,
+    "original_v01_exact_relations_preserved": 54,
+    "patch_members_verified": 301,
+    "source_tests": 3405,
+    "suites": 54
+  }
+}
