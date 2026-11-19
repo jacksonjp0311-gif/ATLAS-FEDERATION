@@ -1,0 +1,23 @@
+{
+  "both_bbox_extents_mm": [
+    40.0,
+    40.0,
+    33.0
+  ],
+  "both_winding_consistent": true,
+  "digital_geometry_pass": true,
+  "open_scad_reference_stl_sha256": "15e5cd4bb3b528fafe8c7d8bb3cdeff77f31231490bfda2545252cebf48f4144",
+  "openscad_mesh_watertight": true,
+  "openscad_volume_mm3": 16556.561867,
+  "physical_material_properties_verified": false,
+  "physical_printed_part_inspected": false,
+  "portable_python_mesh_watertight": true,
+  "portable_python_stl_sha256": "3eb16babdb932d521f1a4cdbaef220d42cb9d9251d39c58b33c432e3f7d44edb",
+  "python_volume_mm3": 16556.556093,
+  "relative_mesh_volume_difference_fraction": 3.486975842344855e-07,
+  "result": "passed_digital_geometry_only",
+  "schema": "atlas.print-demo-independent-cad-comparison/1",
+  "slicer_profile_loaded": false,
+  "source_method_1": "Python standard-library analytic solid-of-revolution mesh generator",
+  "source_method_2": "separate OpenSCAD CGAL rotate_extrude renderer"
+}

@@ -1,0 +1,28 @@
+test_bad_diameter_refused (test_offline_bridge.ModelTests.test_bad_diameter_refused) ... ok
+test_bad_shoulder_overhang_refused (test_offline_bridge.ModelTests.test_bad_shoulder_overhang_refused) ... ok
+test_bad_thin_wall_refused (test_offline_bridge.ModelTests.test_bad_thin_wall_refused) ... ok
+test_build_no_atlas_has_honest_note (test_offline_bridge.ModelTests.test_build_no_atlas_has_honest_note) ... ok
+test_build_with_atlas_exact_graph (test_offline_bridge.ModelTests.test_build_with_atlas_exact_graph) ... ok
+test_default_dimensions (test_offline_bridge.ModelTests.test_default_dimensions) ... ok
+test_default_manifold (test_offline_bridge.ModelTests.test_default_manifold) ... ok
+test_default_stl_is_deterministic (test_offline_bridge.ModelTests.test_default_stl_is_deterministic) ... ok
+test_default_triangle_count (test_offline_bridge.ModelTests.test_default_triangle_count) ... ok
+test_invalid_boolean_dimension_refused (test_offline_bridge.ModelTests.test_invalid_boolean_dimension_refused) ... ok
+test_invalid_stl_rejected (test_offline_bridge.ModelTests.test_invalid_stl_rejected) ... ok
+test_mismatched_atlas_refuses (test_offline_bridge.ModelTests.test_mismatched_atlas_refuses) ... ok
+test_no_network_or_slicer_dep (test_offline_bridge.ModelTests.test_no_network_or_slicer_dep) ... ok
+test_scad_has_rotation (test_offline_bridge.ModelTests.test_scad_has_rotation) ... ok
+test_segment_count_invalid (test_offline_bridge.ModelTests.test_segment_count_invalid) ... ok
+test_truncated_stl_rejected (test_offline_bridge.ModelTests.test_truncated_stl_rejected) ... ok
+test_varied_parameters (test_offline_bridge.ModelTests.test_varied_parameters) ... ok
+test_bad_efficiency (test_power_budget.TestPowerEstimate.test_bad_efficiency) ... ok
+test_boolean_measurement_refused (test_power_budget.TestPowerEstimate.test_boolean_measurement_refused) ... ok
+test_hypothetical_budget_calculates (test_power_budget.TestPowerEstimate.test_hypothetical_budget_calculates) ... ok
+test_missing_values_remain_unknown (test_power_budget.TestPowerEstimate.test_missing_values_remain_unknown) ... ok
+test_not_enough_continuous_rating (test_power_budget.TestPowerEstimate.test_not_enough_continuous_rating) ... ok
+test_too_small_backup (test_power_budget.TestPowerEstimate.test_too_small_backup) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.037s
+
+OK

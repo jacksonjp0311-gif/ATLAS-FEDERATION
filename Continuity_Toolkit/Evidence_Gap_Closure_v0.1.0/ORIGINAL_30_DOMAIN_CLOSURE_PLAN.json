@@ -1,0 +1,272 @@
+{
+  "additional_enabling_nodes": [
+    "chemistry-atlas",
+    "computer-architecture-digital-hardware-atlas",
+    "cymatics-atlas",
+    "electronics-semiconductors-atlas",
+    "mathematics-physics-atlas",
+    "signal-atlas"
+  ],
+  "missing_domains": [
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Bioelectric Atlas",
+      "node": "bioelectric-atlas",
+      "priority": 9,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Software design patterns Atlas",
+      "node": "software-design-patterns-atlas",
+      "priority": 11,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Distributed systems Atlas",
+      "node": "distributed-systems-atlas",
+      "priority": 12,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Neural architectures Atlas",
+      "node": "neural-architectures-atlas",
+      "priority": 13,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Cryptographic protocols Atlas",
+      "node": "cryptographic-protocols-atlas",
+      "priority": 14,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "OS internals Atlas",
+      "node": "os-internals-atlas",
+      "priority": 15,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Network stacks Atlas",
+      "node": "network-stacks-atlas",
+      "priority": 16,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Database optimization Atlas",
+      "node": "database-optimization-atlas",
+      "priority": 17,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Compiler design Atlas",
+      "node": "compiler-design-atlas",
+      "priority": 18,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Formal verification Atlas",
+      "node": "formal-verification-atlas",
+      "priority": 19,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Reinforcement learning Atlas",
+      "node": "reinforcement-learning-atlas",
+      "priority": 20,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Knowledge graphs Atlas",
+      "node": "knowledge-graphs-atlas",
+      "priority": 21,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Multi-agent coordination Atlas",
+      "node": "multi-agent-coordination-atlas",
+      "priority": 22,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Quantum algorithms Atlas",
+      "node": "quantum-algorithms-atlas",
+      "priority": 23,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Bioinformatics pipelines Atlas",
+      "node": "bioinformatics-pipelines-atlas",
+      "priority": 24,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Energy systems modeling Atlas",
+      "node": "energy-systems-modeling-atlas",
+      "priority": 25,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Supply chain dynamics Atlas",
+      "node": "supply-chain-dynamics-atlas",
+      "priority": 26,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Regulatory compliance Atlas",
+      "node": "regulatory-compliance-atlas",
+      "priority": 27,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Cognitive architectures Atlas",
+      "node": "cognitive-architectures-atlas",
+      "priority": 28,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Simulation and digital twins Atlas",
+      "node": "simulation-and-digital-twins-atlas",
+      "priority": 29,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    },
+    {
+      "acceptance": "BLOCKED_NO_NODE",
+      "name": "Metacognitive control loops Atlas",
+      "node": "metacognitive-control-loops-atlas",
+      "priority": 30,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": false
+    }
+  ],
+  "missing_original_domain_count": 21,
+  "next_missing_original_priority": {
+    "acceptance": "BLOCKED_NO_NODE",
+    "name": "Bioelectric Atlas",
+    "node": "bioelectric-atlas",
+    "priority": 9,
+    "queue_stated_status": "queued_not_built",
+    "registered_node": false
+  },
+  "original_queue_count": 30,
+  "preservation": "Read-only diagnostic. Does not alter any original Atlas files or historical statuses.",
+  "registered_node_count": 15,
+  "represented": [
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Measurement Atlas",
+      "node": "measurement-atlas",
+      "priority": 1,
+      "queue_stated_status": "reference_candidate_preserved",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Causal Atlas",
+      "node": "causal-atlas",
+      "priority": 2,
+      "queue_stated_status": "scoped_reference_content_v1_preserved",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Materials Atlas",
+      "node": "materials-atlas",
+      "priority": 3,
+      "queue_stated_status": "scoped_reference_content_v1_preserved",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Control Atlas",
+      "node": "control-atlas",
+      "priority": 4,
+      "queue_stated_status": "v1_scoped_content_release_candidate",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Agent Atlas",
+      "node": "agent-atlas",
+      "priority": 5,
+      "queue_stated_status": "scoped_reference_content_v1",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Computation Atlas",
+      "node": "computation-atlas",
+      "priority": 6,
+      "queue_stated_status": "scoped_reference_content_v1",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Language Atlas",
+      "node": "language-atlas",
+      "priority": 7,
+      "queue_stated_status": "scoped_reference_content_v1",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Energy Atlas",
+      "node": "energy-atlas",
+      "priority": 8,
+      "queue_stated_status": "scoped_reference_content_v1",
+      "registered_node": true
+    },
+    {
+      "final_scientific_acceptance": "NOT_PROVEN_BY_NODE_PRESENCE",
+      "name": "Manufacturing Atlas",
+      "node": "manufacturing-atlas",
+      "priority": 10,
+      "queue_stated_status": "queued_not_built",
+      "registered_node": true
+    }
+  ],
+  "represented_original_domain_count": 9,
+  "router_scope": "DEFER until original domain content completed",
+  "schema": "atlas.continuity-gap-closure-plan/1",
+  "scientific_evidence": "All source authenticity, external peer review, and physical measurements require independent evidence; no acceptance inferred",
+  "source_edition": "Computer_Architecture_v0.5.0_continuity",
+  "source_queue_sha256": "9b3ceb5d942fa556e17cb3b731ed9a95b0468e795ed2c1ff8e21864c3e264c33"
+}

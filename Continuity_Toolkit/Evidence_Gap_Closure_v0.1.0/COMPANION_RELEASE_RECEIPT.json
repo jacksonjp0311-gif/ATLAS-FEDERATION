@@ -1,0 +1,16 @@
+{
+  "canonical_Atlas_unchanged": "Computer_Architecture_v0.5.0_continuity",
+  "clean_companion_tests_passed": 20,
+  "clean_extract_and_manifest_checks": "passed",
+  "companion_bytes": 153201,
+  "companion_members": 18,
+  "companion_sha256": "fc4af74b73191633771a9f60896dfe88edea38267dccda6ad3e5a50b9d0e48ef",
+  "edition": "0.1.0",
+  "full_canonical_archive_sha256": "ea4b1f70eeaabeec0ea5b553c27bf4b3e094efc1280b1067c3c4754247b3bf8e",
+  "full_original_volume_checks": 11,
+  "hardware_certified": false,
+  "offline_full_federation_tests": 2706,
+  "result": "passed_finite_software_evidence_intake_only",
+  "schema": "atlas.external-gap-closure-companion-release/1",
+  "scientific_source_authenticity_certified": false
+}

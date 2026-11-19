@@ -1,0 +1,126 @@
+{
+  "archive_verified_parts": 11,
+  "authenticated_original_publisher_files_in_offline_audit": 0,
+  "canonical_archive_sha256": "ea4b1f70eeaabeec0ea5b553c27bf4b3e094efc1280b1067c3c4754247b3bf8e",
+  "canonical_checkpoint_unchanged": true,
+  "canonical_edition": "Computer_Architecture_v0.5.0_continuity",
+  "date": "2026-11-17",
+  "demo_actual_print_verified": false,
+  "demo_geometry_mm": {
+    "bore_diameter": 8.4,
+    "core_diameter": 16.0,
+    "flange_diameter": 40.0,
+    "total_height": 33.0
+  },
+  "demo_mesh_watertight": true,
+  "demo_triangles": 1536,
+  "federation_test_passes": 2706,
+  "federation_test_suites": 34,
+  "gates": [
+    {
+      "gate": "OFFLINE_ARCHIVE",
+      "remaining": "Not yet verified on user machine",
+      "status": "PASS_IN_THIS_TEST_ENV",
+      "verified_or_known": "All 11 parts and complete ZIP digest checked; 711,416,573 bytes"
+    },
+    {
+      "gate": "OFFLINE_SEARCH_AND_GRAPH",
+      "remaining": "Semantic correctness and source truth not certified",
+      "status": "PASS_IN_THIS_TEST_ENV",
+      "verified_or_known": "15 nodes, 3235 exact records, 2415 relationships, 9364 files"
+    },
+    {
+      "gate": "OFFLINE_AT8_REFERENCE",
+      "remaining": "No fabricated CPU",
+      "status": "PASS_SOFTWARE_ONLY",
+      "verified_or_known": "Source/ROM boot-to-ISA example returns output 15"
+    },
+    {
+      "gate": "ENGINEERING_REFERENCE_3D_PRINT",
+      "remaining": "Canonical v0.5 contained zero STL, SCAD, 3MF, STEP or G-code assets",
+      "status": "PARTIAL",
+      "verified_or_known": "Manufacturing material/evidence references exist"
+    },
+    {
+      "gate": "ATLAS_TO_PARAMETRIC_CAD",
+      "remaining": "Not validated in connected user local AI agent",
+      "status": "PASS_IN_THIS_TEST_ENV",
+      "verified_or_known": "Six exact-revision Atlas records linked, deterministic Python-to-SCAD source"
+    },
+    {
+      "gate": "ATLAS_TO_DIGITAL_STL",
+      "remaining": "Digital model only, no approved material strength",
+      "status": "PASS_IN_THIS_TEST_ENV",
+      "verified_or_known": "Python standard library binary STL + native mesh verifier passed"
+    },
+    {
+      "gate": "INDEPENDENT_CAD_MESH",
+      "remaining": "OpenSCAD install on user machine not verified",
+      "status": "PASS_IN_THIS_TEST_ENV",
+      "verified_or_known": "OpenSCAD separately renders STL with same envelope and volume"
+    },
+    {
+      "gate": "SLICER_PROFILE_AND_GCODE",
+      "remaining": "Printer-specific offline slicer must be saved before outage",
+      "status": "NOT_VERIFIED",
+      "verified_or_known": "No local printer profile or G-code observed"
+    },
+    {
+      "gate": "PRINTER_OPERATION_AND_FEEDSTOCK",
+      "remaining": "Physical manufacturing cannot be asserted",
+      "status": "NOT_VERIFIED",
+      "verified_or_known": "Printer model, filament stock and spare parts not provided"
+    },
+    {
+      "gate": "BACKUP_POWER",
+      "remaining": "Grid-off printing needs safe verified electrical supply",
+      "status": "NOT_VERIFIED",
+      "verified_or_known": "No actual printer/laptop draw, peak power, usable battery/inverter data"
+    },
+    {
+      "gate": "FIT_AND_MEASUREMENT",
+      "remaining": "Digital mesh does not prove a usable fitted part",
+      "status": "NOT_VERIFIED",
+      "verified_or_known": "No user-site physical print or caliper measurement"
+    },
+    {
+      "gate": "LOCAL_AI_RAG_OR_AGENT_INTEGRATION",
+      "remaining": "Need disconnected task execution test on actual local computer",
+      "status": "NOT_VERIFIED",
+      "verified_or_known": "Offline reader works without AI, but the local model/tool adapter is untested"
+    },
+    {
+      "gate": "CRITICAL_COMPONENT_VALIDATION",
+      "remaining": "No certified water/electrical/pressure/medical/structural part approval",
+      "status": "HOLD",
+      "verified_or_known": "547 bibliographic cards; 0 source originals authenticated in audit"
+    },
+    {
+      "gate": "FULL_TECHNOLOGY_RESTART",
+      "remaining": "Requires raw materials, manufacturing, power, tools, original sources and physical external replication",
+      "status": "NOT_READY",
+      "verified_or_known": "Original roadmap still has 21 unregistered domains"
+    }
+  ],
+  "new_demo_assets": [
+    "ATLAS_COIL_FORMER.stl",
+    "ATLAS_COIL_FORMER.scad"
+  ],
+  "next_canonical_original_domain": "bioelectric-atlas priority 9 (preserved, not built by this companion)",
+  "original_30_domains_missing": 21,
+  "original_source_cards": 547,
+  "overall_verdict": "OFFLINE_KNOWLEDGE_READY_IN_TEST_ENV_BASIC_STL_READY_POWER_PRINTER_AND_ACTUAL_PRINT_UNVERIFIED",
+  "physical_hardware_or_printer_validated": false,
+  "previous_canonical_printable_assets_count": 0,
+  "priority_actions": [
+    "Copy complete v0.5 volumes and manifest/restore script to local disk and independent backup",
+    "Test local Atlas search fully disconnected",
+    "Record 3D printer model, offline slicer and saved profile, filament and physical power data",
+    "Slice and print a non-safety-critical calibration part, measure and log defects",
+    "Connect local AI to read-only Atlas retrieval and bounded CAD generator, then retest unplugged",
+    "Continue original thirty-domain content in recorded order, with independent science evidence gates"
+  ],
+  "schema": "atlas.blackout-fabrication-readiness/1",
+  "source_linked_contexts": 183,
+  "test_location": "ChatGPT isolated container, NOT verified on user local ASUS machine or printer"
+}

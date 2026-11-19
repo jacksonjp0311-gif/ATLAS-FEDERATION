@@ -1,0 +1,151 @@
+{
+  "canonical_atlas_full_sha256": "ea4b1f70eeaabeec0ea5b553c27bf4b3e094efc1280b1067c3c4754247b3bf8e",
+  "canonical_current_checkpoint_modified": false,
+  "canonical_domain_queue_modified": false,
+  "files": [
+    {
+      "bytes": 3578,
+      "path": "ATLAS_BLACKOUT_FIELD_CARD.pdf",
+      "sha256": "cbd22563d0978014283821259c06294f5d56050fb839967c80d9fe3a63bbe621"
+    },
+    {
+      "bytes": 1155,
+      "path": "ATLAS_OPERATOR_QUICK_REFERENCE.txt",
+      "sha256": "149261b858b90d63c14847167e80b8f5a92feb4d66a6e0d9fedb60f1e0a128ac"
+    },
+    {
+      "bytes": 3529,
+      "path": "BLACKOUT_FIRST_24_HOURS.md",
+      "sha256": "c5618ea014a089ab4c4aadbfe38c811f4cca1f4e46193b75d03e9bc84803fdf8"
+    },
+    {
+      "bytes": 1295,
+      "path": "BUILD_WINDOWS_OFFLINE.ps1",
+      "sha256": "7afd284dfff81fa5bf1023da0efb5b4b2b0e28ba517d26e85a58ada3075b0238"
+    },
+    {
+      "bytes": 2031,
+      "path": "LOCAL_AGENT_HANDOFF.md",
+      "sha256": "7bea0299c79b7db6677d4c839fa4c0101f697c03ab60330e3d52c3e0f73a27bc"
+    },
+    {
+      "bytes": 943,
+      "path": "LOCAL_HARDWARE_INVENTORY_TEMPLATE.json",
+      "sha256": "79553909f0518cfbbef24beb4610a70420d0802e58b90dc8eed5da3a6a7058b1"
+    },
+    {
+      "bytes": 1271,
+      "path": "MANUAL_NO_POWER_FALLBACK.md",
+      "sha256": "1fc0fc38d5af2a003e6ef4bcdcebca5cc014042343bf66f91a9adb818a1a5a7e"
+    },
+    {
+      "bytes": 636,
+      "path": "PHYSICAL_PART_ACCEPTANCE.csv",
+      "sha256": "c247ff060f96bdd323251206d0b0d27e0c46776af1da1f19677abf1c77e41138"
+    },
+    {
+      "bytes": 6789,
+      "path": "READINESS_ASSESSMENT.md",
+      "sha256": "4894f9076f91bd0d3be89bd731b81e1be7ef72716bcef7dd76a2747c252f63e0"
+    },
+    {
+      "bytes": 5451,
+      "path": "READINESS_MATRIX.json",
+      "sha256": "fa484dedf5c58954d7f49d8811ca9069c4490d8e4886224d69e8f4ad2d82957e"
+    },
+    {
+      "bytes": 3892,
+      "path": "README_FIRST.md",
+      "sha256": "0760717feaec5a0bfe4bc1b6d0cd825427d71a4aa92e127388ed264e22896b47"
+    },
+    {
+      "bytes": 1482,
+      "path": "RECONSTRUCTION_BOM.csv",
+      "sha256": "66e5cbcd06a62be47e6cfb7b186d6527ab1a3b9297a0604e6f64c06ce7e80975"
+    },
+    {
+      "bytes": 1142,
+      "path": "RIGHTS_AND_SCOPE.md",
+      "sha256": "5e5a5d0aeff2ea21c3ebbc44ae0bdcdb25558d0ff519ce99785c31d294a6aa06"
+    },
+    {
+      "bytes": 2393,
+      "path": "TEST_LOG.txt",
+      "sha256": "e10c1e7fa88f3a24e718d4dc67423ce46cfed0ca0b48ac1846e4a57f15c78aef"
+    },
+    {
+      "bytes": 12309,
+      "path": "atlas_print_bridge.py",
+      "sha256": "5feca46b3224bdb007d1618cbcb1546b3de3267f678ec26cf85bb7b51cfe96f0"
+    },
+    {
+      "bytes": 470,
+      "path": "outputs/ATLAS_COIL_FORMER.scad",
+      "sha256": "83316cb8ec3708786285ed2466dec77464faff3e34b0459e488ebf888d888009"
+    },
+    {
+      "bytes": 76884,
+      "path": "outputs/ATLAS_COIL_FORMER.stl",
+      "sha256": "3eb16babdb932d521f1a4cdbaef220d42cb9d9251d39c58b33c432e3f7d44edb"
+    },
+    {
+      "bytes": 252513,
+      "path": "outputs/ATLAS_COIL_FORMER_OPENSCAD_REFERENCE.stl",
+      "sha256": "15e5cd4bb3b528fafe8c7d8bb3cdeff77f31231490bfda2545252cebf48f4144"
+    },
+    {
+      "bytes": 3361,
+      "path": "outputs/DESIGN_EVIDENCE.json",
+      "sha256": "452215480d6a588f1e14e75940a7503882af570e5c8221719630dddabf8ceac3"
+    },
+    {
+      "bytes": 692,
+      "path": "outputs/MESH_AUDIT.json",
+      "sha256": "24be8fa41eaa6ff4dd95193a93be34dfaf71ff5a377910a1a8d5f70db8d4c745"
+    },
+    {
+      "bytes": 957,
+      "path": "outputs/OPENSCAD_COMPARISON.json",
+      "sha256": "c34ce3901c7c127f416b5b8376a498890ff25b4533d4ff2884a1a8fc55371065"
+    },
+    {
+      "bytes": 209,
+      "path": "outputs/OPENSCAD_LOG.txt",
+      "sha256": "ac1f75b2192cc55e096571761e8a6358696dbd293fa793afb2dde6fd9df056d8"
+    },
+    {
+      "bytes": 578,
+      "path": "outputs/POWER_BUDGET_UNKNOWN.json",
+      "sha256": "1e693fcc93b895097b8fc229e09f1174a9010ffe1b28c22aca1e92bff831e000"
+    },
+    {
+      "bytes": 3400,
+      "path": "outputs/PRINT_AND_INSPECT.md",
+      "sha256": "1d02030d5c398f0e17146c2ec9f154a71ffa2ddb9448a9f93e3c7edfdb58a99b"
+    },
+    {
+      "bytes": 3645,
+      "path": "power_budget.py",
+      "sha256": "2affdb539b23d33930d225efb9692bec62bc3b252ad472908d867b9f5c01d5b0"
+    },
+    {
+      "bytes": 4614,
+      "path": "tests/test_offline_bridge.py",
+      "sha256": "0eec73eb98532fcd73622fcf4d7c250a6b09f753f3a10306535530a1b4591ece"
+    },
+    {
+      "bytes": 1505,
+      "path": "tests/test_power_budget.py",
+      "sha256": "7b31c3d853a19b4d77cc3f3a4f1121b9ba39ca4309df6a82e87610e95072e737"
+    },
+    {
+      "bytes": 3714,
+      "path": "verify_mesh.py",
+      "sha256": "9a5f5e9f4beac9e71f77b0b10522642b094bdf617a9485bb25933e748a3ab470"
+    }
+  ],
+  "hardware_readiness": "not yet demonstrated at user site",
+  "project": "ATLAS FORGE original federation \u2014 optional tested field toolkit",
+  "schema": "atlas.fabrication-companion-file-manifest/1",
+  "version": "0.1.0"
+}
