@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-os-internals-reference"
+version = "1.0.0"
+description = "Bounded, offline, educational operating systems models in the original ATLAS FORGE federation"
+requires-python = ">=3.10"
+dependencies = []
+[tool.setuptools.packages.find]
+include = ["os_atlas*"]
