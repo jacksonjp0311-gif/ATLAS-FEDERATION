@@ -1,0 +1,8 @@
+{
+  "schema": "atlas.computer-v04-case-index/1",
+  "prior_constructed_cases": 42,
+  "new_constructed_cases": 12,
+  "total_constructed_cases": 54,
+  "evidence_type": "original constructed software examples",
+  "physical_device_measurements": 0
+}

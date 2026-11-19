@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.at8-v04-independent-finite-oracle/1",
+  "result": "passed",
+  "seed": 20261117,
+  "comparisons": 137455,
+  "groups": {
+    "exhaustive_nand_add_result": 65536,
+    "exhaustive_nand_sub_result": 65536,
+    "full_adder_truth": 8,
+    "three_valued_logic": 9,
+    "mixed_width_arithmetic": 1200,
+    "parity_single_error_detected": 2048,
+    "parity_double_error_not_guaranteed": 256,
+    "rr_full_load": 2600,
+    "Harvard_RAM_readback": 256,
+    "bootstrap_reproducible_receipts": 2,
+    "bootstrap_software_checked": 2,
+    "bootstrap_physical_hold": 2
+  },
+  "nand_add_sha256": "acfc3b62b787099ef909fdb6771901d75488cb63d0553c230a631e5104535697",
+  "physical_devices_tested": 0,
+  "hardware_signed_firmware_authenticated": false,
+  "independent_expert_science_review": false,
+  "note": "independently coded software/numeric checks only"
+}
