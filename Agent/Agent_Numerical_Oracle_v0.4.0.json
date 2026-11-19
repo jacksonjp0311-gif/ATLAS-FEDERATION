@@ -1,0 +1,23 @@
+{
+  "schema": "atlas.agent-v04-numeric-oracle/1",
+  "status": "passed",
+  "comparisons": 6000,
+  "categories": {
+    "proof_precedence": 1800,
+    "paired_exact_tail": 450,
+    "paired_missingness": 450,
+    "annotation_confusions": 2100,
+    "memory_review_precedence": 1200
+  },
+  "seed": 3141626,
+  "numpy_version": "2.3.5",
+  "scipy_binom_tail": true,
+  "MAST_original_rows_imported": 0,
+  "agent_invocations": 0,
+  "independent_ground_truth": false,
+  "causal_improvement_demonstrated": false,
+  "limitations": [
+    "Deterministic author-generated fixtures, not held-out tasks",
+    "Separately implemented precedence and binomial arithmetic is software verification only"
+  ]
+}
