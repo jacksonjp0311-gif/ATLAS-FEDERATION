@@ -1,0 +1,524 @@
+[
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC2104",
+    "revision": "9b7e37d0e978145b9e841d14461687ccf803650b3c81a1e76ed1892723bb400f",
+    "type": "source",
+    "title": "HMAC: Keyed-Hashing for Message Authentication"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC4231",
+    "revision": "db2e9e422c52105e9a1724d186f3e24bb159212c3a2a8afe2b9d25674072016f",
+    "type": "source",
+    "title": "Identifiers and Test Vectors for HMAC-SHA-224, HMAC-SHA-256, HMAC-SHA-384, and HMAC-SHA-512"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC5869",
+    "revision": "e7af810cc043c18c006ac689bf4dac6f575963390aa8af00191d3ede06138f0b",
+    "type": "source",
+    "title": "HMAC-based Extract-and-Expand Key Derivation Function (HKDF)"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC5116",
+    "revision": "15c99d10e235c1c17422f3edbdea90b552babb85cb94b6fed6f77948e0e55892",
+    "type": "source",
+    "title": "An Interface and Algorithms for Authenticated Encryption"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC8439",
+    "revision": "20f67ab761a5b673725aa26c18eb87d789c6558a4aa5ecc9acfde57c471e8113",
+    "type": "source",
+    "title": "ChaCha20 and Poly1305 for IETF Protocols"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC9846",
+    "revision": "43dbf2bfa278d68795e6f37de55cd6d7248b55ad664228e0ffa4a1def042ce9b",
+    "type": "source",
+    "title": "The Transport Layer Security (TLS) Protocol Version 1.3"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC9180",
+    "revision": "eee9ccc2ef7f03189d43c99fa269585bd01a616e9d8fa0707a6da4f7b0fe05c2",
+    "type": "source",
+    "title": "Hybrid Public Key Encryption"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC8032",
+    "revision": "520c623a089350977b19e47147dda8fb1ca34025ea70d86f0b897f6fd02e9184",
+    "type": "source",
+    "title": "Edwards-Curve Digital Signature Algorithm (EdDSA)"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC7748",
+    "revision": "88bc5de9920be406949cef5261fb87f46fb52cf6f8279f416e0d846c64d43b03",
+    "type": "source",
+    "title": "Elliptic Curves for Security"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC6962",
+    "revision": "a3ef9438afe94f0077934cb6730da41f5573720ea1c19c97671478792cc45c1f",
+    "type": "source",
+    "title": "Certificate Transparency"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC9162",
+    "revision": "5d8a4d1ecef6e85b87ec583c061249cb1e2eb6da3146735c8801e3b3ead0fee9",
+    "type": "source",
+    "title": "Certificate Transparency Version 2.0"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:NIST80057",
+    "revision": "ea4207ee4c99b08eba709748ef78a4af43982de99ab75c007bce762bff491a1b",
+    "type": "source",
+    "title": "Recommendation for Key Management, Part 1, Revision 5"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:NIST80090A",
+    "revision": "e1919127c94b695ddb53e46fb81f42a63922821313b2e4722a2ac9dfe6b670e4",
+    "type": "source",
+    "title": "Recommendation for Random Number Generation Using Deterministic Random Bit Generators"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:NIST800193",
+    "revision": "c6db651f4e89d001a60f281196272f2667d9aa30b90b8b732d2b205ac476fdcc",
+    "type": "source",
+    "title": "Platform Firmware Resiliency Guidelines"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:source:RFC4086",
+    "revision": "a0472c3326d2eb5544142c4ab9418b1d418c3b21d12e6721db859fb1e9ae3c49",
+    "type": "source",
+    "title": "Randomness Requirements for Security"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-01-concept",
+    "revision": "4a3838806ac94e8ab476a5f0e380a653fd1ac54235ddd9f6d7a6860b055ba17d",
+    "type": "concept",
+    "title": "Security goals and adversarial capabilities \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-01-claim",
+    "revision": "dfcac4ffc0a8c7b002b1965c66ba3ad9916fbc72574eaa365f0e4a1112e52582",
+    "type": "claim",
+    "title": "Security goals and adversarial capabilities \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-01-equation",
+    "revision": "da744c76383b7922d9849b2d0d49979d1a9bff3ab8f379a18121e7d4555baf15",
+    "type": "equation",
+    "title": "Security goals and adversarial capabilities \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-01-method",
+    "revision": "4789306822769bf18be30428d0812f5291922530a50c5df80dcd84bce5b89049",
+    "type": "method",
+    "title": "Security goals and adversarial capabilities \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-02-concept",
+    "revision": "ba3e4fbda7b431c657825ce74e3ee1b66f9cf95a27c7fab790971af30ff2ac23",
+    "type": "concept",
+    "title": "Canonical binary encoding and transcript ambiguity \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-02-claim",
+    "revision": "52588876eb6ae331bd95402b830e59661e484a8db703dbf3dc914e735a78f2f0",
+    "type": "claim",
+    "title": "Canonical binary encoding and transcript ambiguity \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-02-equation",
+    "revision": "0ce8ee3beda38a3b2c02280c75edeaa5e807a82021630e288b1468502a158584",
+    "type": "equation",
+    "title": "Canonical binary encoding and transcript ambiguity \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-02-method",
+    "revision": "f9961ff1e68f4858081a8ff3b6b97ddf7cfad306df43b014fede055d93f4def4",
+    "type": "method",
+    "title": "Canonical binary encoding and transcript ambiguity \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-03-concept",
+    "revision": "a56a8d41e01e452d0faf8c64ffe9a4332ce05cdd14c1a02899ac1ce50d791472",
+    "type": "concept",
+    "title": "Entropy, randomness, identifiers and nonces \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-03-claim",
+    "revision": "c306a5cc1e6aa14c4f90f9b580102add8444547ae773d358c7da7a7415d8d82e",
+    "type": "claim",
+    "title": "Entropy, randomness, identifiers and nonces \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-03-equation",
+    "revision": "097e3e6954c2ded8ea4a241e58f62319746d0699780e3c2610b28f3eca1324bd",
+    "type": "equation",
+    "title": "Entropy, randomness, identifiers and nonces \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-03-method",
+    "revision": "979bbea38ed6186cccc3da97bfe4268e9c0124df31194b3e8605825286e9cc9f",
+    "type": "method",
+    "title": "Entropy, randomness, identifiers and nonces \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-04-concept",
+    "revision": "50af6039ad42304e129bc876227ec7be81ad4ae9a9cc4f8d9f871ae8952eaf44",
+    "type": "concept",
+    "title": "HMAC-SHA-256 and message authentication \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-04-claim",
+    "revision": "a7a3d65e283225f410c88d7643df6bf232dca9508d107540ae9b81d120a044d7",
+    "type": "claim",
+    "title": "HMAC-SHA-256 and message authentication \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-04-equation",
+    "revision": "ab264f63e0dcd06f5ff493526e81ac16d16fcc47f590d9a505f30626fa9241e2",
+    "type": "equation",
+    "title": "HMAC-SHA-256 and message authentication \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-04-method",
+    "revision": "cd9ffe4b509c56f8044e09b5caf504fa5c6af48c6ea1b807927ccb7faffa949b",
+    "type": "method",
+    "title": "HMAC-SHA-256 and message authentication \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-05-concept",
+    "revision": "328773601dd0a4956c3b47d86df58ca44e44dc681a728ceede7908c4b2b51b38",
+    "type": "concept",
+    "title": "Extract-and-expand key derivation with HKDF \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-05-claim",
+    "revision": "d1dbf795c7a1b240bf65236c96cede4eb971e3fa3a40a908ff00ae4819c4839d",
+    "type": "claim",
+    "title": "Extract-and-expand key derivation with HKDF \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-05-equation",
+    "revision": "b9b6b315b076581df823fc43d0b0e75eae9c5380384b324223668b1c95b3e32a",
+    "type": "equation",
+    "title": "Extract-and-expand key derivation with HKDF \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-05-method",
+    "revision": "30b249bff61a0dcab490ceb25efb43746ea753cabb634efad206db45b07b3cbc",
+    "type": "method",
+    "title": "Extract-and-expand key derivation with HKDF \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-06-concept",
+    "revision": "9e42b2bf862a91b1af175a46dade9c764066f127f10841dd1172931b5e3c69c7",
+    "type": "concept",
+    "title": "Key schedule and role/domain separation \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-06-claim",
+    "revision": "05b3b11fa1aa12eb609cf334e353a256a2c4c5ea46f12124ff06cf8d50821b10",
+    "type": "claim",
+    "title": "Key schedule and role/domain separation \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-06-equation",
+    "revision": "d21338a38bc195627c915c126616cf40718b74c944f18ee2b036c07b8f4822a8",
+    "type": "equation",
+    "title": "Key schedule and role/domain separation \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-06-method",
+    "revision": "cc1cf9ebce23860e80ae907fdf04d9e7089144de0d79894c5734028f1527f83b",
+    "type": "method",
+    "title": "Key schedule and role/domain separation \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-07-concept",
+    "revision": "57f0bceb0d51c75d9d5093c90e24bb4232ba3901e2d465afc410c78928d14f94",
+    "type": "concept",
+    "title": "Authenticated encryption and nonce requirements \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-07-claim",
+    "revision": "b76f4849ab077e5782ff95c0d96dde9d3fc3186d9dfbdbc57f46e32530119a82",
+    "type": "claim",
+    "title": "Authenticated encryption and nonce requirements \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-07-equation",
+    "revision": "a8c315c5e7864991ac6996e50f6793bf7f9eeb92f9e9d9e1da22ca66003fb0c1",
+    "type": "equation",
+    "title": "Authenticated encryption and nonce requirements \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-07-method",
+    "revision": "3ca0b73a93612509a0c62258b6b8c580b66e147824a0c41f633b812153311e96",
+    "type": "method",
+    "title": "Authenticated encryption and nonce requirements \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-08-concept",
+    "revision": "93f4c867fce4303976b37b2abc62d1ee8f26c2599756de585e6e3067b0e580ef",
+    "type": "concept",
+    "title": "Anti-replay windows and authenticated sequence numbers \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-08-claim",
+    "revision": "77bb1ee5cd5106931c33c0effbc3a16fc52b8ee790278e1bff124902a0d362ee",
+    "type": "claim",
+    "title": "Anti-replay windows and authenticated sequence numbers \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-08-equation",
+    "revision": "72a0c4acbceda3edcbb9c3e57629a0da02f20e8b6515855c5644b816c0de6fb1",
+    "type": "equation",
+    "title": "Anti-replay windows and authenticated sequence numbers \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-08-method",
+    "revision": "eba3114162a3f597a6a9a809b6dcc4a0db573a67f31bdc3e77a28653668e9dae",
+    "type": "method",
+    "title": "Anti-replay windows and authenticated sequence numbers \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-09-concept",
+    "revision": "2dba2c73f92f1fa3180370928829a80ce65618af61a5336b5c22901e72b92893",
+    "type": "concept",
+    "title": "Authenticated handshakes, identity binding and key confirmation \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-09-claim",
+    "revision": "f049d30567e4d0ec6e6cfb0a5b9c15701fda28f5dc09729921eb3fcfa405295b",
+    "type": "claim",
+    "title": "Authenticated handshakes, identity binding and key confirmation \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-09-equation",
+    "revision": "3d16cb513c195f108c38e61bef2fb3e0431d68c1cc3e76af2ce6792b464ce5b6",
+    "type": "equation",
+    "title": "Authenticated handshakes, identity binding and key confirmation \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-09-method",
+    "revision": "6f276df670723c69a31b70c0657d16dbec5809291620dfe008d837d4c395b817",
+    "type": "method",
+    "title": "Authenticated handshakes, identity binding and key confirmation \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-10-concept",
+    "revision": "e91b7f512fe2d8a8d88c9123c1802c87d825c0ff410ed9a8ed39998fa749ebfa",
+    "type": "concept",
+    "title": "Digital signatures, identity anchors and certificate validation \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-10-claim",
+    "revision": "0260a40a6aba836712f4929864dc548561530fae1eed3bf55d1a058f5fc647f4",
+    "type": "claim",
+    "title": "Digital signatures, identity anchors and certificate validation \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-10-equation",
+    "revision": "eb194ef4c844fcafd6b0e434cb296a48c73fabef65c11af79565b21c5b57edb9",
+    "type": "equation",
+    "title": "Digital signatures, identity anchors and certificate validation \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-10-method",
+    "revision": "e8ffe3f7a26fc91b97d269f812dde8a415a6cfb9478b249ffc1820a8f636a107",
+    "type": "method",
+    "title": "Digital signatures, identity anchors and certificate validation \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-11-concept",
+    "revision": "ab1652570a4fa89cbca479b1ea41ab88d393e46ec9faa7550ea08b467ec19714",
+    "type": "concept",
+    "title": "Elliptic-curve key agreement and forward secrecy \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-11-claim",
+    "revision": "5e6ae87a38650d8a0b589aa4baf669ade0ffbf979713659a8649192790360bda",
+    "type": "claim",
+    "title": "Elliptic-curve key agreement and forward secrecy \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-11-equation",
+    "revision": "9ccbec3be8a606a7c4897a0088bd253bb463f13dbbd12665ab0de6d52397d2de",
+    "type": "equation",
+    "title": "Elliptic-curve key agreement and forward secrecy \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-11-method",
+    "revision": "ef8f1719e65c88a2450b2d281a8d871518e891598fa280efc1883c9fd765e549",
+    "type": "method",
+    "title": "Elliptic-curve key agreement and forward secrecy \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-12-concept",
+    "revision": "2800a35d9379f43406912343d428bcc794b03bf095fd54b5b4ee9968e4d91a70",
+    "type": "concept",
+    "title": "TLS 1.3 transcript, record layer and revision control \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-12-claim",
+    "revision": "d42b539f20b881013c76cd0a546ae80945de20d7b0c33306092d91d3408629ca",
+    "type": "claim",
+    "title": "TLS 1.3 transcript, record layer and revision control \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-12-equation",
+    "revision": "2f825bb389295ce92d5cb164883495a8303753a29ca61f7237408857ba88dd94",
+    "type": "equation",
+    "title": "TLS 1.3 transcript, record layer and revision control \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-12-method",
+    "revision": "e66e7da09cbb8f84422b19586634a526f5c715a887b68fa02aaef642d5f892a7",
+    "type": "method",
+    "title": "TLS 1.3 transcript, record layer and revision control \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-13-concept",
+    "revision": "a8fa5212816e44295c5dc3411f0bf489c445d0b48740c9bfe90a3079e6a19aed",
+    "type": "concept",
+    "title": "Hybrid Public Key Encryption and context separation \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-13-claim",
+    "revision": "1375e48a14ea32290ab32cd31ddbb52b180379c02bd6f1c0594971c615f4acf1",
+    "type": "claim",
+    "title": "Hybrid Public Key Encryption and context separation \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-13-equation",
+    "revision": "98b32385c151b98dcd131541035f3683778c361e9b0ea82154ef0f55a3521f73",
+    "type": "equation",
+    "title": "Hybrid Public Key Encryption and context separation \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-13-method",
+    "revision": "39b2ceb2b8591ab2817c1736922a13cb0acc2198b6031eb68c0727e0327ab618",
+    "type": "method",
+    "title": "Hybrid Public Key Encryption and context separation \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-14-concept",
+    "revision": "ed83995167dca7b767d92b34bd64216c912e5a387a5f30625610ac492ccf718b",
+    "type": "concept",
+    "title": "Key lifecycle, epochs, rotation and compromise response \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-14-claim",
+    "revision": "b78d35dcf16a357648a44ed72e39a9fd7a27531c9c15b462c3711020b30a1b1a",
+    "type": "claim",
+    "title": "Key lifecycle, epochs, rotation and compromise response \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-14-equation",
+    "revision": "b152c9e1b1679881ef4a4bea354da8536d34eb25686d42590cd670e911f21026",
+    "type": "equation",
+    "title": "Key lifecycle, epochs, rotation and compromise response \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-14-method",
+    "revision": "3ac7cbcf5cf639c3e3d0aeb11cc7c23aed21440589167038fc8d59d7af432d8e",
+    "type": "method",
+    "title": "Key lifecycle, epochs, rotation and compromise response \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-15-concept",
+    "revision": "9ad13921d892543302f954650fdfa25bad343c30e329b4da14870d1d24a41e26",
+    "type": "concept",
+    "title": "Merkle inclusion proofs and append-only evidence \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-15-claim",
+    "revision": "12b5e77287ac18cbe96afda293d17ab32fa064cb7098a8703f9034451504704e",
+    "type": "claim",
+    "title": "Merkle inclusion proofs and append-only evidence \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-15-equation",
+    "revision": "f0c9ba690aaad4dd88f8c8e80d6d45e545af71406fc8a5d1884777cd8ec5af9c",
+    "type": "equation",
+    "title": "Merkle inclusion proofs and append-only evidence \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-15-method",
+    "revision": "9509e7aee0f5e2251ecf6682bdecca126b5e5b59e8af384a69df8f23ace039ae",
+    "type": "method",
+    "title": "Merkle inclusion proofs and append-only evidence \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-16-concept",
+    "revision": "fd711776825619701a8f6293914c8438df365c663436a23257ff1d502a215652",
+    "type": "concept",
+    "title": "Authenticated software updates, rollback and threshold policy \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-16-claim",
+    "revision": "cc4fb7f345d7aba49abec55a501495f2280818f8a52afc1565a0222348ec34dc",
+    "type": "claim",
+    "title": "Authenticated software updates, rollback and threshold policy \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-16-equation",
+    "revision": "95f4645769bf25d580807f9bb7c5c5101fb67810210b85195ae1a30fc327cb14",
+    "type": "equation",
+    "title": "Authenticated software updates, rollback and threshold policy \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-16-method",
+    "revision": "b5648b36666981b90464a22a4d4f17f18e7cacaa3554cb0b6d4d3fc085b108ab",
+    "type": "method",
+    "title": "Authenticated software updates, rollback and threshold policy \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-17-concept",
+    "revision": "aaaab08d237107cb0aabdce00a5cfd7887fbcf3ee58a32e232d746106e223602",
+    "type": "concept",
+    "title": "Offline source provenance, deterministic archives and trust handoffs \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-17-claim",
+    "revision": "49364e3c62f59ddb5f887bff170e845a60e4f463fbd8813f8f0252fd14307bfe",
+    "type": "claim",
+    "title": "Offline source provenance, deterministic archives and trust handoffs \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-17-equation",
+    "revision": "af6ff6084bd582ad1f431c59f017178ad431724f39b994bd9e121845fc38b014",
+    "type": "equation",
+    "title": "Offline source provenance, deterministic archives and trust handoffs \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-17-method",
+    "revision": "a0168716bd57d528f0033ef91523839db0236aa0a481038fed105163df7bbab6",
+    "type": "method",
+    "title": "Offline source provenance, deterministic archives and trust handoffs \u2014 offline procedure"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-18-concept",
+    "revision": "7085f651fb55cf31875a53222f604bd0edcd24f0a301e70c841879143981dc25",
+    "type": "concept",
+    "title": "Independent vectors, negative controls and scientific acceptance \u2014 concept"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-18-claim",
+    "revision": "d53b330905fe54ad3815bce1ca1f76424dadf0f591d846f8cebe10963cbabc07",
+    "type": "claim",
+    "title": "Independent vectors, negative controls and scientific acceptance \u2014 bounded claim"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-18-equation",
+    "revision": "7787891a63c599de44420bee1a74fb77d70b25c5628e2510decf6337bfdaf864",
+    "type": "equation",
+    "title": "Independent vectors, negative controls and scientific acceptance \u2014 formal relation"
+  },
+  {
+    "record_id": "cryptographic-protocols-atlas:chapter-18-method",
+    "revision": "1ff218232925ab6418e3a698bcd2575daba810af5ce1214af45abe40aa041f13",
+    "type": "method",
+    "title": "Independent vectors, negative controls and scientific acceptance \u2014 offline procedure"
+  }
+]

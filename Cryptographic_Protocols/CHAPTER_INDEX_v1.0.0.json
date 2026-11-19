@@ -1,0 +1,197 @@
+[
+  {
+    "chapter": 1,
+    "id": "01_security_goals",
+    "title": "Security goals and adversarial capabilities",
+    "path": "docs/chapters/01_security_goals.md",
+    "sources": [
+      "RFC2104",
+      "RFC5116",
+      "NIST80057"
+    ]
+  },
+  {
+    "chapter": 2,
+    "id": "02_canonical_framing",
+    "title": "Canonical binary encoding and transcript ambiguity",
+    "path": "docs/chapters/02_canonical_framing.md",
+    "sources": [
+      "RFC9846",
+      "RFC9180"
+    ]
+  },
+  {
+    "chapter": 3,
+    "id": "03_entropy_and_nonce",
+    "title": "Entropy, randomness, identifiers and nonces",
+    "path": "docs/chapters/03_entropy_and_nonce.md",
+    "sources": [
+      "RFC4086",
+      "NIST80090A",
+      "RFC9846"
+    ]
+  },
+  {
+    "chapter": 4,
+    "id": "04_hmac_and_integrity",
+    "title": "HMAC-SHA-256 and message authentication",
+    "path": "docs/chapters/04_hmac_and_integrity.md",
+    "sources": [
+      "RFC2104",
+      "RFC4231"
+    ]
+  },
+  {
+    "chapter": 5,
+    "id": "05_hkdf",
+    "title": "Extract-and-expand key derivation with HKDF",
+    "path": "docs/chapters/05_hkdf.md",
+    "sources": [
+      "RFC5869",
+      "RFC2104"
+    ]
+  },
+  {
+    "chapter": 6,
+    "id": "06_key_schedule",
+    "title": "Key schedule and role/domain separation",
+    "path": "docs/chapters/06_key_schedule.md",
+    "sources": [
+      "RFC5869",
+      "RFC9846",
+      "RFC9180"
+    ]
+  },
+  {
+    "chapter": 7,
+    "id": "07_aead",
+    "title": "Authenticated encryption and nonce requirements",
+    "path": "docs/chapters/07_aead.md",
+    "sources": [
+      "RFC5116",
+      "RFC8439",
+      "RFC9846"
+    ]
+  },
+  {
+    "chapter": 8,
+    "id": "08_anti_replay",
+    "title": "Anti-replay windows and authenticated sequence numbers",
+    "path": "docs/chapters/08_anti_replay.md",
+    "sources": [
+      "RFC9846",
+      "RFC5116"
+    ]
+  },
+  {
+    "chapter": 9,
+    "id": "09_handshake",
+    "title": "Authenticated handshakes, identity binding and key confirmation",
+    "path": "docs/chapters/09_handshake.md",
+    "sources": [
+      "RFC9846",
+      "RFC5869",
+      "RFC7748"
+    ]
+  },
+  {
+    "chapter": 10,
+    "id": "10_digital_signatures",
+    "title": "Digital signatures, identity anchors and certificate validation",
+    "path": "docs/chapters/10_digital_signatures.md",
+    "sources": [
+      "RFC8032",
+      "NIST80057",
+      "RFC9846"
+    ]
+  },
+  {
+    "chapter": 11,
+    "id": "11_key_agreement",
+    "title": "Elliptic-curve key agreement and forward secrecy",
+    "path": "docs/chapters/11_key_agreement.md",
+    "sources": [
+      "RFC7748",
+      "RFC9846",
+      "RFC9180"
+    ]
+  },
+  {
+    "chapter": 12,
+    "id": "12_tls13",
+    "title": "TLS 1.3 transcript, record layer and revision control",
+    "path": "docs/chapters/12_tls13.md",
+    "sources": [
+      "RFC9846",
+      "RFC5869",
+      "RFC8439"
+    ]
+  },
+  {
+    "chapter": 13,
+    "id": "13_hpke",
+    "title": "Hybrid Public Key Encryption and context separation",
+    "path": "docs/chapters/13_hpke.md",
+    "sources": [
+      "RFC9180",
+      "RFC5869",
+      "RFC5116"
+    ]
+  },
+  {
+    "chapter": 14,
+    "id": "14_key_lifecycle",
+    "title": "Key lifecycle, epochs, rotation and compromise response",
+    "path": "docs/chapters/14_key_lifecycle.md",
+    "sources": [
+      "NIST80057",
+      "NIST800193",
+      "RFC9846"
+    ]
+  },
+  {
+    "chapter": 15,
+    "id": "15_merkle_inclusion",
+    "title": "Merkle inclusion proofs and append-only evidence",
+    "path": "docs/chapters/15_merkle_inclusion.md",
+    "sources": [
+      "RFC6962",
+      "RFC9162",
+      "RFC8032"
+    ]
+  },
+  {
+    "chapter": 16,
+    "id": "16_signed_updates",
+    "title": "Authenticated software updates, rollback and threshold policy",
+    "path": "docs/chapters/16_signed_updates.md",
+    "sources": [
+      "NIST80057",
+      "NIST800193",
+      "RFC8032"
+    ]
+  },
+  {
+    "chapter": 17,
+    "id": "17_offline_provenance",
+    "title": "Offline source provenance, deterministic archives and trust handoffs",
+    "path": "docs/chapters/17_offline_provenance.md",
+    "sources": [
+      "RFC8032",
+      "NIST80057",
+      "RFC6962"
+    ]
+  },
+  {
+    "chapter": 18,
+    "id": "18_verification_limits",
+    "title": "Independent vectors, negative controls and scientific acceptance",
+    "path": "docs/chapters/18_verification_limits.md",
+    "sources": [
+      "RFC4231",
+      "RFC5869",
+      "RFC9846",
+      "NIST80057"
+    ]
+  }
+]
