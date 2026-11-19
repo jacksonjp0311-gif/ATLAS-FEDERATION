@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.source-acquisition-ledger/1",
+  "edition": "1.0.0",
+  "purpose": "Separate cited scholarly knowledge from legally retained original source bytes",
+  "generated_at": "2026-11-13",
+  "default_source_status": "link_or_scoped_summary_until_byte_and_rights_provenance_verified",
+  "evidence_levels": ["L0_citation_locator", "L1_inspected_scoped_summary", "L2_licensed_archived_original_bytes", "L3_reproduced_analysis_from_documented_data", "L4_independent_scientific_corroboration"],
+  "original_transport_bytes_archive_completeness": false,
+  "broad_open_license_for_all_external_sources": false,
+  "independent_scientific_review_of_all_nodes": false,
+  "offline_readable_original_material": true,
+  "full_offline_primary_source_access": false,
+  "distributed_geographic_backup_verified": false,
+  "source_rights_policy": "Do not mirror copyrighted content without verified rights; preserve bibliographic metadata, original paraphrase, and explicit acquisition gaps",
+  "next_source_priorities": ["Resolve rights and archive exact primary bytes for high-value scientific sources where authorized", "Preserve raw measurements with acquisition and transformation hashes", "Obtain independent domain-expert review on release-critical claims", "Separate published datasets, source tables, new physical experiments and synthetic models"]
+}
