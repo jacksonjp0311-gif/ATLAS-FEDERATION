@@ -1,0 +1,148 @@
+{
+  "schema": "atlas.computer-at8-isa/1",
+  "edition": "0.1.0",
+  "design": "original ATLAS FORGE finite educational architecture",
+  "word_bits": 8,
+  "register_count": 4,
+  "register_bits": 8,
+  "ram_bytes": 256,
+  "max_rom_bytes": 256,
+  "instruction_bytes": 2,
+  "reset": {
+    "pc_byte_address": 0,
+    "registers": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "ram_initial_byte": 0,
+    "flags_ZNCV": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "halted": false
+  },
+  "machine_fields": [
+    "pc",
+    "R0..R3",
+    "RAM[0..255]",
+    "flags_ZNCV",
+    "input_tape_cursors",
+    "output_tape",
+    "halted"
+  ],
+  "encoding": {
+    "byte0": "bits 7..4 opcode 0..15, bits3..0 register 0..3 when applicable",
+    "byte1": "unsigned immediate/absolute target/address/register/port",
+    "operand_endianness": "not applicable, one byte"
+  },
+  "branch_semantics": "JNZ/JZ test the named register, not the Z flag; absolute even byte target < ROM length",
+  "halting": "HALT is mandatory for successful program termination; without HALT bounded run may stop with timeout or fetch trap",
+  "memory": "separate immutable ROM and mutable 256-byte RAM, byte-addressable",
+  "input_output": "0..3 pure scripted ports, no hardware side effects or network I/O",
+  "flags": "Z,N updated for writes and CMP, C,V defined for ADDI/CMP; preserved on STORE/branch/OUT/HALT/NOP",
+  "operations": [
+    {
+      "opcode": 0,
+      "mnemonic": "NOP",
+      "register_operand": false,
+      "operand_type": "reserved_zero"
+    },
+    {
+      "opcode": 1,
+      "mnemonic": "LDI",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 2,
+      "mnemonic": "ADDI",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 3,
+      "mnemonic": "XORI",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 4,
+      "mnemonic": "ANDI",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 5,
+      "mnemonic": "ORI",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 6,
+      "mnemonic": "LOAD",
+      "register_operand": true,
+      "operand_type": "address"
+    },
+    {
+      "opcode": 7,
+      "mnemonic": "STORE",
+      "register_operand": true,
+      "operand_type": "address"
+    },
+    {
+      "opcode": 8,
+      "mnemonic": "MOV",
+      "register_operand": true,
+      "operand_type": "reg"
+    },
+    {
+      "opcode": 9,
+      "mnemonic": "JNZ",
+      "register_operand": true,
+      "operand_type": "branch"
+    },
+    {
+      "opcode": 10,
+      "mnemonic": "JZ",
+      "register_operand": true,
+      "operand_type": "branch"
+    },
+    {
+      "opcode": 11,
+      "mnemonic": "JMP",
+      "register_operand": false,
+      "operand_type": "branch"
+    },
+    {
+      "opcode": 12,
+      "mnemonic": "CMP",
+      "register_operand": true,
+      "operand_type": "immediate"
+    },
+    {
+      "opcode": 13,
+      "mnemonic": "IN",
+      "register_operand": true,
+      "operand_type": "port"
+    },
+    {
+      "opcode": 14,
+      "mnemonic": "OUT",
+      "register_operand": true,
+      "operand_type": "port"
+    },
+    {
+      "opcode": 15,
+      "mnemonic": "HALT",
+      "register_operand": false,
+      "operand_type": "reserved_zero"
+    }
+  ],
+  "electronic_timing": "not calibrated; symbolic four microcycles per instruction is NOT physical time",
+  "not_risc_v_beta_hack": true,
+  "scientific_review": false
+}
