@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-neural-architectures-reference"
+version = "1.0.0"
+description = "ATLAS FORGE neural architectures reproducible numerical reference"
+requires-python = ">=3.10"
