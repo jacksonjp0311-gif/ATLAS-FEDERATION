@@ -1,0 +1,60 @@
+{
+  "Bitwork_router_modified": false,
+  "archive": {
+    "delta_bytes": 3102709,
+    "delta_sha256": "9513afd39bd9c563482121d021e0f085d465746dcb6212d20e5ac5019419984c",
+    "full_archive_bytes": 732539565,
+    "full_archive_stored_in_Library": false,
+    "full_sha256": "cfd36e91dd1a093bf1edbd8a752f1fd6505e66123c577d167ed0f687c1381ebd",
+    "predecessor_sha256": "13d8f5d19ed98d052dad9c424b22295599722b82a2938ec6f94f2a95122fe8c2",
+    "reconstructible_from_original_library_chain_and_delta": true
+  },
+  "date": "2026-11-19",
+  "desktop_transfer": false,
+  "inventory": {
+    "bibliographic_source_cards": 656,
+    "new_compiler_chapters": 12,
+    "new_records": 54,
+    "new_relations": 54,
+    "new_sources": 5,
+    "nodes": 24,
+    "original_30_domain_nodes_remaining": 12,
+    "original_30_domain_nodes_represented": 18,
+    "records": 4102,
+    "relations": 3337
+  },
+  "library_publication_state": "prepared_not_yet_published",
+  "next_milestone": "Compiler Design v0.2.0: independent parser and second backend with substantive differential tests",
+  "next_original_domain": "formal-verification-atlas",
+  "original_30_domain_queue_modified": false,
+  "predecessor": "Database_Optimization_v1.0.0",
+  "program": "ATLAS FORGE original single canonical federation",
+  "release": "Compiler_Design_v0.1.0",
+  "schema": "atlas.original-federation-compiler-v01-release/1",
+  "scientific_gates": {
+    "formal_all-program_semantic_preservation_proven": false,
+    "independent_expert_review": false,
+    "native_compiler_or_hardware_verified": false,
+    "original_publisher_bytes_authenticated": 0,
+    "scoped_v1_ready": false
+  },
+  "status": "verified_scoped_initial_technical_reference_not_scientific_v1",
+  "verification": {
+    "added_files": 262,
+    "full_source_and_fresh_tests_passed_each": 3384,
+    "historical_deletions": 0,
+    "independent_finite_comparisons": 26201,
+    "negative_bytecode_controls": 4,
+    "node_schema": "passed",
+    "old_23_node_registries_byte_identical": true,
+    "old_authorized_changes": 7,
+    "old_files_byte_identical": 11188,
+    "patch_members_sha256_verified": 270,
+    "source_and_fresh_reports_byte_identical": true,
+    "source_file_sha256_verified": 11457,
+    "test_report_sha256": "39520415bb385af782ea18228efc01da92ac23f80121e74060f81fa713ffd034",
+    "test_suites": 53,
+    "trap_comparisons": 4520,
+    "valid_source_contexts": 339
+  }
+}

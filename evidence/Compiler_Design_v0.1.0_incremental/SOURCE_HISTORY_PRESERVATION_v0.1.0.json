@@ -1,0 +1,20 @@
+{
+  "added_files": 262,
+  "authorized_integration_changes": [
+    "BUILD_POLICY.json",
+    "CURRENT_CHECKPOINT.json",
+    "README.md",
+    "START_HERE.md",
+    "common/registry.json",
+    "common/registry.lock.json",
+    "tools/check_collection.py"
+  ],
+  "deleted_files": 0,
+  "old_files_byte_identical": 11188,
+  "old_science_node_manifests_byte_identical": true,
+  "one_original_federation": true,
+  "original_30_domain_queue_byte_identical": true,
+  "previous_file_count": 11195,
+  "result": "passed",
+  "schema": "atlas.compiler-v01-original-federation-history/1"
+}

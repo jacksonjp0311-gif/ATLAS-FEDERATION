@@ -1,0 +1,9 @@
+{
+  "schema": "atlas.compiler-design-v01-independent-finite-oracle/1",
+  "seed": 18317,
+  "comparison_count": 26201,
+  "trapped_comparisons": 4520,
+  "negative_controls_rejected": 4,
+  "result": "passed",
+  "limitations": "Finite independent AST and arithmetic oracles only. No verified compiler proof, native binary ABI, concurrency or formal semantics for C/LLVM/Wasm."
+}

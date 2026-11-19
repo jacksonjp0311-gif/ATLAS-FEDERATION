@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "compiler-design-atlas",
+  "current_federation_release": "Compiler_Design_v0.1.0",
+  "date": "2026-11-19",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.1.0",
+  "following_original_domain": "formal-verification-atlas",
+  "independent_science_publisher_source_acceptance": "HOLD",
+  "next_content_domain": "compiler-design-atlas",
+  "next_content_milestone": "Compiler Design substantive v0.2.0",
+  "next_original_priority": 18,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 18,
+  "original_domain_count_unregistered": 12,
+  "schema": "atlas.active-priority-pointer/1"
+}

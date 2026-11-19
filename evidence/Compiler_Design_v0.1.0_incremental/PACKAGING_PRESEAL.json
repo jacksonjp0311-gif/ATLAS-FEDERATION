@@ -1,0 +1,24 @@
+{
+  "added_files": 262,
+  "archive_files_verified": 11457,
+  "authorized_changes": [
+    "BUILD_POLICY.json",
+    "CURRENT_CHECKPOINT.json",
+    "README.md",
+    "START_HERE.md",
+    "common/registry.json",
+    "common/registry.lock.json",
+    "tools/check_collection.py"
+  ],
+  "elapsed_sec": 12.49,
+  "historical_deleted": 0,
+  "patch_bytes": 3102709,
+  "patch_members": 270,
+  "patch_sha256": "9513afd39bd9c563482121d021e0f085d465746dcb6212d20e5ac5019419984c",
+  "predecessor_sha256": "13d8f5d19ed98d052dad9c424b22295599722b82a2938ec6f94f2a95122fe8c2",
+  "result": "passed",
+  "schema": "atlas.compiler-v01-preservation-packaging/1",
+  "target_bytes": 732539565,
+  "target_sha256": "cfd36e91dd1a093bf1edbd8a752f1fd6505e66123c577d167ed0f687c1381ebd",
+  "unchanged_prior_files": 11188
+}

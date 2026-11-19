@@ -1,0 +1,61 @@
+{
+  "Bitwork_router_modified": false,
+  "canonical_folder": "/ATLAS FORGE/",
+  "checkpoint_and_priority_readback_exact": true,
+  "critical_Library_readback": {
+    "ATLAS_COLLECTION_Compiler_Design_v0.1.0_DELTA_from_Database_Optimization_v1.0.0.zip": {
+      "exact_match": true,
+      "sha256": "9513afd39bd9c563482121d021e0f085d465746dcb6212d20e5ac5019419984c"
+    },
+    "ATLAS_FORGE_RELEASE_COMPILER_DESIGN_v0.1.0.json": {
+      "exact_match": true,
+      "sha256": "a2126b5ecc10d91df0b5b3d15cd05650cfc474e99e8fd0a9faedcf13a5b92bae"
+    },
+    "FRESH_ARCHIVE_FEDERATION_TESTS_v0.1.0.json": {
+      "exact_match": true,
+      "sha256": "39520415bb385af782ea18228efc01da92ac23f80121e74060f81fa713ffd034"
+    },
+    "PATCH_MANIFEST.json": {
+      "exact_match": true,
+      "sha256": "6eb5c1a910e7a2621a8a8ff9186426461d52e8ac487b638db51def70aba0a975"
+    },
+    "SOURCE_TREE_FEDERATION_TESTS_v0.1.0.json": {
+      "exact_match": true,
+      "sha256": "39520415bb385af782ea18228efc01da92ac23f80121e74060f81fa713ffd034"
+    }
+  },
+  "date": "2026-11-19",
+  "next_milestone": "Compiler_Design_v0.2.0: independent parser and second backend plus differential tests",
+  "one_original_federation_continued": true,
+  "original_30_queue_unchanged": true,
+  "release": "Compiler_Design_v0.1.0",
+  "result": "passed",
+  "schema": "atlas.compiler-design-v01-library-publication-verification/1",
+  "scientific_acceptance": "initial compiler reference only; independent expert review, native target code, hardware and publisher-original authentication remain HOLD",
+  "sha256": {
+    "active_priority_postseal": "2c8f3c46508b4d00443ca9ddd8eb84daaacfa0b1a2ab1429f5bcb1b4df55153b",
+    "checkpoint_postseal": "970691c60c3f458d9420751e45dbcd094bbdf58a3b65b063c639dadad9f0793f",
+    "full_reconstructed_archive": "cfd36e91dd1a093bf1edbd8a752f1fd6505e66123c577d167ed0f687c1381ebd",
+    "incremental_patch": "9513afd39bd9c563482121d021e0f085d465746dcb6212d20e5ac5019419984c",
+    "predecessor": "13d8f5d19ed98d052dad9c424b22295599722b82a2938ec6f94f2a95122fe8c2",
+    "regression_source_and_restored": "39520415bb385af782ea18228efc01da92ac23f80121e74060f81fa713ffd034"
+  },
+  "source_Library_readback": {
+    "DEPTH_MANUAL_v0.1.0.md": "4b07a0881861fd69c3c7c0b53b4e111820ccab3e96c7243dbb21ca31f3b102f5",
+    "atlas_manifest_v0.1.0.json": "dbd0f45adbc9cdd1e64ea156d9fdff94e88ee4facdf8ac6f1d0fab16dc77bda1",
+    "compiler_core_v0.1.0.py": "2e5ea0833ab4a9a8a7a317c053babe7e93632d3ecb17240c9f2cd1e506b19534",
+    "data_relations_v0.1.0.jsonl": "bbaf65a30fc88c534e128607c2caff66af70bbf2109eda352382e99d75745414",
+    "independent_oracle_v0.1.0.py": "a8299e386198120ab91d9136901cb23cac5d20c8d5bb209e3ab6970743a8de10"
+  },
+  "verification": {
+    "contexts": 339,
+    "finite_oracle_comparisons": 26201,
+    "historical_identical_files": 11188,
+    "historical_predecessor_file_deletions": 0,
+    "patch_members_checked": 270,
+    "source_files_hash_checked": 11457,
+    "suites": 53,
+    "tests_fresh": 3384,
+    "tests_source": 3384
+  }
+}
