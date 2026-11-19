@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.energy-v02-inventory/1",
+  "old_records": 176,
+  "new_records": 65,
+  "all_energy_records": 241,
+  "old_relations_standalone": 144,
+  "old_relations_full": 149,
+  "new_relations": 56,
+  "all_relations_standalone": 200,
+  "all_relations_full": 205,
+  "chapters_total": 50,
+  "new_investigations": 11,
+  "source_cards": 28,
+  "source_original_bytes_present": 0,
+  "scientifically_reviewed": false
+}
