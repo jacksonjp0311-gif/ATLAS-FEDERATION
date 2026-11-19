@@ -1,0 +1,9 @@
+{
+  "authoritative_full_source_archive_sha256": "0571f1376f380d90090890ae65c39c2f6a2085725038f32810d4992f00fef93f",
+  "empty_original_paths": {
+    "OS-INTERNALS-ATLAS/data/reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "note": "Files Library may reject zero-byte uploads. Original empty JSONL file remains present in exact source archive, independent SHA-256 manifest and verified incremental patch. This receipt does not replace the file in federation.",
+  "release": "OS_Internals_v1.0.0",
+  "schema": "atlas.library-empty-jsonl-readback/1"
+}
