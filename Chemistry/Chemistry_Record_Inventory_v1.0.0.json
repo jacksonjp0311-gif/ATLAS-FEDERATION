@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.chem-v1-inventory/1",
+  "old_chemistry_records": 237,
+  "new_chemistry_records": 68,
+  "chemistry_records": 305,
+  "old_chemistry_relations_full": 210,
+  "new_relations": 64,
+  "chemistry_relations_full": 274,
+  "chemistry_relations_standalone": 268,
+  "old_sources": 18,
+  "new_source_cards": 3,
+  "source_cards": 21,
+  "chapters": 67,
+  "old_cases": 39,
+  "new_cases": 14,
+  "total_cases": 53,
+  "authentic_original_pub_files_new": 0,
+  "human_laboratory_reviewers": 0
+}
