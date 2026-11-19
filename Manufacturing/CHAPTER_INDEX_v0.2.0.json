@@ -1,0 +1,131 @@
+{
+  "schema": "atlas.manufacturing-chapter-index/2",
+  "edition": "0.2.0",
+  "historical_chapters": 18,
+  "new_chapters": [
+    {
+      "number": 19,
+      "slug": "covariance_positive_semidefinite_and_uncertainty",
+      "title": "Why covariance must be positive semidefinite",
+      "path": "docs/chapters/19_covariance_positive_semidefinite_and_uncertainty.md",
+      "equation": "u_y\u00b2 = a\u1d40 \u03a3 a, and \u03a3 must be symmetric PSD",
+      "method": "covariance_budget_psd",
+      "source_card": "NIST-CALIBRATION-GMP13",
+      "limits": "Measurement covariance must be estimated from real calibration/control data, currently absent."
+    },
+    {
+      "number": 20,
+      "slug": "measurement_guardbands_and_false_acceptance",
+      "title": "Inspection guard bands and conditional false acceptance",
+      "path": "docs/chapters/20_measurement_guardbands_and_false_acceptance.md",
+      "equation": "P(accept | actual x)=\u03a6((USL\u2212g\u2212x)/\u03c3)\u2212\u03a6((LSL+g\u2212x)/\u03c3)",
+      "method": "normal_inspection_acceptance_risk",
+      "source_card": "NIST-STAT-CAPABILITY",
+      "limits": "This probability presumes Gaussian unbiased errors and a specified actual value; no observed error distribution is supplied."
+    },
+    {
+      "number": 21,
+      "slug": "stability_first_and_capability_indices",
+      "title": "Process stability is a prerequisite to capability",
+      "path": "docs/chapters/21_stability_first_and_capability_indices.md",
+      "equation": "Cp=(USL\u2212LSL)/(6s), Cpk=min(USL\u2212\u03bc,\u03bc\u2212LSL)/(3s)",
+      "method": "stable_process_capability",
+      "source_card": "NIST-STAT-CAPABILITY",
+      "limits": "Actual stability and distribution are not proved by boolean declarations; outside review remains required."
+    },
+    {
+      "number": 22,
+      "slug": "confidence_bounded_yield_and_sample_size",
+      "title": "Finite-sample yield is not guaranteed reliability",
+      "path": "docs/chapters/22_confidence_bounded_yield_and_sample_size.md",
+      "equation": "p_hat=k/n; Wilson 95% lower bound < 1 even when k=n",
+      "method": "wilson_yield_interval",
+      "source_card": "NIST-STAT-CAPABILITY",
+      "limits": "Wilson confidence requires independent representative observations; no physical trial data are included."
+    },
+    {
+      "number": 23,
+      "slug": "documented_calibration_chain_and_source_authenticity",
+      "title": "An unbroken metrology chain needs real evidence",
+      "path": "docs/chapters/23_documented_calibration_chain_and_source_authenticity.md",
+      "equation": "measurand \u2192 instrument \u2192 lab reference \u2192 SI realization, each with uncertainty",
+      "method": "traceability_chain_audit",
+      "source_card": "NIST-CALIBRATION-GMP13",
+      "limits": "The tool is a metadata integrity audit, not NIST accreditation or a device calibration."
+    },
+    {
+      "number": 24,
+      "slug": "coordinate_frames_datums_and_inspection_alignment",
+      "title": "Datum frames connect drawings to measured coordinates",
+      "path": "docs/chapters/24_coordinate_frames_datums_and_inspection_alignment.md",
+      "equation": "[X,Y]\u1d40 = t + s R(\u03b8)[x,y]\u1d40",
+      "method": "datum_rigid_transform_xy",
+      "source_card": "NIST-CALIBRATION-GMP13",
+      "limits": "A mathematical frame transform is not a physically calibrated CMM or machine-tool coordinate system."
+    },
+    {
+      "number": 25,
+      "slug": "finite_resources_process_route_and_schedule",
+      "title": "A feasible process plan is not an optimal factory schedule",
+      "path": "docs/chapters/25_finite_resources_process_route_and_schedule.md",
+      "equation": "start_i >= max(end_dependencies,resource_free_time); end_i=start_i+duration_i",
+      "method": "resource_bounded_schedule",
+      "source_card": "NIST-STAT-CAPABILITY",
+      "limits": "Schedule outputs are not shop-floor safety authorization or throughput forecasts."
+    },
+    {
+      "number": 26,
+      "slug": "materials_and_machine_energy_accounting",
+      "title": "Mass and energy constraints are reconstruction invariants",
+      "path": "docs/chapters/26_materials_and_machine_energy_accounting.md",
+      "equation": "m_in=m_part+m_scrap+m_recoverable+\u0394inventory; P=energy/time",
+      "method": "manufacturing_atlas.models.cutting_estimate; resource_bounded_schedule",
+      "source_card": "NIST-AM-QUAL",
+      "limits": "Reference energy and mass relationships are not validated machine setpoints or real tool performance."
+    },
+    {
+      "number": 27,
+      "slug": "evidence_gated_process_graph_and_failure_propagation",
+      "title": "Evidence-carrying process plans refuse unsupported completion",
+      "path": "docs/chapters/27_evidence_gated_process_graph_and_failure_propagation.md",
+      "equation": "ready_i = inputs_present \u2227 required_evidence_present \u2227 all_dependencies_ready",
+      "method": "manufacturing_evidence_gate",
+      "source_card": "NIST-CALIBRATION-GMP13",
+      "limits": "Recorded evidence metadata does not authenticate a lab, physical part or safety control."
+    },
+    {
+      "number": 28,
+      "slug": "semiconductor_fabrication_traceability_and_gate_qualification",
+      "title": "Manufacturing prerequisites for silicon gates and integrated circuits",
+      "path": "docs/chapters/28_semiconductor_fabrication_traceability_and_gate_qualification.md",
+      "equation": "materials\u2192geometry\u2192fabrication\u2192metrology\u2192device IV/CV\u2192cell delay\u2192logic",
+      "method": "manufacturing_evidence_gate; electronics-atlas method prerequisites",
+      "source_card": "NIST-CHIPS-OVERLAY",
+      "limits": "Physical fab processes and calibrated device measurements have not been performed."
+    },
+    {
+      "number": 29,
+      "slug": "repair_requalification_and_parts_interchangeability",
+      "title": "Repairs must regenerate qualification evidence",
+      "path": "docs/chapters/29_repair_requalification_and_parts_interchangeability.md",
+      "equation": "postrepair acceptance = spec \u2227 traceable_measurement \u2227 evidence_of_changed_components",
+      "method": "manufacturing_evidence_gate; covariance_budget_psd",
+      "source_card": "NIST-CALIBRATION-GMP13",
+      "limits": "Maintenance planning is not machine safety certification or control-system functional-safety testing."
+    },
+    {
+      "number": 30,
+      "slug": "reconstruction_challenge_from_parts_to_computers",
+      "title": "An auditable chain from physical parts to computing",
+      "path": "docs/chapters/30_reconstruction_challenge_from_parts_to_computers.md",
+      "equation": "reconstructible claim = science_reference \u2227 manufacturing_evidence \u2227 hardware_measurement \u2227 verified_computation",
+      "method": "manufacturing_evidence_gate; electronics_atlas.v1_scoped_models.EightBitAccumulator",
+      "source_card": "NIST-AM-QUAL",
+      "limits": "No physical reconstructed computer or certified manufacturing facility is part of this release."
+    }
+  ],
+  "total_chapters": 30,
+  "historical_cases": 14,
+  "new_constructed_cases": 12,
+  "total_constructed_cases": 26
+}

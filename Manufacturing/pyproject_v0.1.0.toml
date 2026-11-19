@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "manufacturing-atlas-research"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "ATLAS FORGE offline reproducible manufacturing science reference"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["manufacturing_atlas*"]
+[tool.setuptools.package-data]
+manufacturing_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

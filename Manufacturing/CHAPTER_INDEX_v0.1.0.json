@@ -1,0 +1,151 @@
+{
+  "schema": "atlas.manufacturing-chapter-index/1",
+  "edition": "0.1.0",
+  "node_id": "manufacturing-atlas",
+  "chapters": [
+    {
+      "number": 1,
+      "path": "docs/chapters/01_specifications_datum_frames_and_acceptance.md",
+      "title": "From product requirements to datums, inspection plans, and acceptance",
+      "equation": "Specification \u2192 measurable characteristic \u2192 calibrated comparison \u2192 documented decision",
+      "units": "categorical / mm",
+      "bibliographic_source_id": "NIST_METROLOGY"
+    },
+    {
+      "number": 2,
+      "path": "docs/chapters/02_si_traceability_length_and_temperature.md",
+      "title": "SI length and temperature traceability in precision production",
+      "equation": "L(T) \u2248 L(T_ref)[1+\u03b1(T\u2212T_ref)]",
+      "units": "m, K, K^-1",
+      "bibliographic_source_id": "NIST_TRACEABILITY"
+    },
+    {
+      "number": 3,
+      "path": "docs/chapters/03_tolerance_intervals_and_interchangeable_fits.md",
+      "title": "Tolerance intervals, clearance/interference, and interchangeable fits",
+      "equation": "C_min=H_min\u2212S_max; C_max=H_max\u2212S_min",
+      "units": "mm",
+      "bibliographic_source_id": "NIST_DIMENSIONAL"
+    },
+    {
+      "number": 4,
+      "path": "docs/chapters/04_assembly_stackups_and_correlations.md",
+      "title": "Dimensional stack-ups, worst case and correlated uncertainty",
+      "equation": "[\u03a3a_i, \u03a3b_i]; u_sum^2=\u03a3_i\u03a3_j Cov(X_i,X_j)",
+      "units": "mm, mm\u00b2",
+      "bibliographic_source_id": "NIST_UNCERTAINTY"
+    },
+    {
+      "number": 5,
+      "path": "docs/chapters/05_measurement_calibration_bias_and_repeatability.md",
+      "title": "Calibration models, bias, repeatability and residual uncertainty",
+      "equation": "y_indicated=a+b x_reference+\u03b5",
+      "units": "indication / reference units",
+      "bibliographic_source_id": "NIST_TRACEABILITY"
+    },
+    {
+      "number": 6,
+      "path": "docs/chapters/06_machine_kinematics_spindles_and_feed.md",
+      "title": "Machine coordinates, spindle kinematics and feed conversion",
+      "equation": "n[rpm]=1000 v_c[m/min]/(\u03c0D[mm]); v_f=n z f_z",
+      "units": "rpm, mm/min",
+      "bibliographic_source_id": "NIST_MANUFACTURING"
+    },
+    {
+      "number": 7,
+      "path": "docs/chapters/07_material_removal_power_and_energy.md",
+      "title": "Material-removal rate, specific cutting energy and power accounting",
+      "equation": "Q=v_f a_p a_e; P_cut=k_c Q/60000",
+      "units": "mm\u00b3/min, W",
+      "bibliographic_source_id": "NIST_MANUFACTURING"
+    },
+    {
+      "number": 8,
+      "path": "docs/chapters/08_machine_stiffness_and_tool_deflection.md",
+      "title": "Structural stiffness, elastic compliance and geometric error",
+      "equation": "\u03b4=F L\u00b3/(3EI) for slender linear-elastic cantilever",
+      "units": "N, m, Pa, m\u2074",
+      "bibliographic_source_id": "NIST_MANUFACTURING"
+    },
+    {
+      "number": 9,
+      "path": "docs/chapters/09_position_resolution_backlash_and_metrology.md",
+      "title": "Lead screws, step resolution, backlash and positioning uncertainty",
+      "equation": "\u0394x=p/N_steps; x\u2208[x_cmd\u2212b\u2212\u0394x/2,x_cmd+b+\u0394x/2]",
+      "units": "mm",
+      "bibliographic_source_id": "NIST_DIMENSIONAL"
+    },
+    {
+      "number": 10,
+      "path": "docs/chapters/10_statistical_process_control_and_capability.md",
+      "title": "Control charts, capability indices and nonstationarity",
+      "equation": "Cp=(USL\u2212LSL)/(6\u03c3); Cpk=min(USL\u2212\u03bc, \u03bc\u2212LSL)/(3\u03c3)",
+      "units": "dimensionless",
+      "bibliographic_source_id": "NIST_METROLOGY"
+    },
+    {
+      "number": 11,
+      "path": "docs/chapters/11_inspection_guard_bands_and_false_acceptance.md",
+      "title": "Uncertainty-aware inspection, guard bands and explicit non-decisions",
+      "equation": "accept if [y\u2212U,y+U] \u2286 [LSL,USL]",
+      "units": "mm",
+      "bibliographic_source_id": "NIST_UNCERTAINTY"
+    },
+    {
+      "number": 12,
+      "path": "docs/chapters/12_process_routes_dag_and_rework.md",
+      "title": "Process plans, dependency DAGs, checkpoints and rework",
+      "equation": "finish(v)=duration(v)+max_(u predecessor v) finish(u)",
+      "units": "min",
+      "bibliographic_source_id": "NIST_AM_DATA"
+    },
+    {
+      "number": 13,
+      "path": "docs/chapters/13_forming_casting_and_volume_change.md",
+      "title": "Casting/forming geometry, shrinkage, constraints and material evidence",
+      "equation": "L_finished\u2248L_pattern(1\u2212s)",
+      "units": "mm",
+      "bibliographic_source_id": "NIST_MANUFACTURING"
+    },
+    {
+      "number": 14,
+      "path": "docs/chapters/14_additive_layering_scale_and_defect_limits.md",
+      "title": "Additive layers, geometric error accumulation and qualification",
+      "equation": "H=N_layers h(1+\u03b5_scale)",
+      "units": "mm",
+      "bibliographic_source_id": "NIST_AM_MEAS"
+    },
+    {
+      "number": 15,
+      "path": "docs/chapters/15_surface_finish_sampling_and_function.md",
+      "title": "Surface texture, sampling limits, contact function and roughness",
+      "equation": "R_a,discrete=(1/N)\u03a3|z_i\u2212z\u0304|",
+      "units": "m",
+      "bibliographic_source_id": "NIST_DIMENSIONAL"
+    },
+    {
+      "number": 16,
+      "path": "docs/chapters/16_manufacturing_energy_and_thermal_process_response.md",
+      "title": "Heat balances in machines, toolrooms and thermal processes",
+      "equation": "T(t)=T_\u221e+[T(0)\u2212T_\u221e] exp[\u2212t/(RC)]",
+      "units": "K, W, J/K",
+      "bibliographic_source_id": "NIST_METROLOGY"
+    },
+    {
+      "number": 17,
+      "path": "docs/chapters/17_fabrication_dependencies_for_semiconductors.md",
+      "title": "Manufacturing dependencies for semiconductor devices and precision instruments",
+      "equation": "Process evidence = material state + tool state + environment + metrology + traceable data",
+      "units": "qualitative",
+      "bibliographic_source_id": "NIST_MICRO"
+    },
+    {
+      "number": 18,
+      "path": "docs/chapters/18_from_manufacturing_to_a_computing_platform.md",
+      "title": "Manufacturing a reconstructible computer: dependency closure and verification",
+      "equation": "materials \u2192 metrology \u2192 tool \u2192 part \u2192 assembly \u2192 circuit \u2192 processor \u2192 software",
+      "units": "qualitative",
+      "bibliographic_source_id": "NIST_MANUFACTURING"
+    }
+  ]
+}
