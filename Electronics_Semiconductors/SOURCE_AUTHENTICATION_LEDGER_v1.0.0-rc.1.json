@@ -1,0 +1,57 @@
+{
+  "schema": "atlas.source-acquisition-ledger/1",
+  "edition": "electronics-1.0.0-rc.1",
+  "source_refs": [
+    {
+      "id": "BIPM-SI",
+      "url": "https://www.bipm.org/en/publications/si-brochure/",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "MIT-6012",
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-spring-2009/pages/lecture-notes/",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "MIT-6374",
+      "url": "https://ocw.mit.edu/courses/6-374-analysis-and-design-of-digital-integrated-circuits-fall-2003/pages/lecture-notes/",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "NIST-HALL",
+      "url": "https://www.nist.gov/publications/fast-simple-wafer-level-hall-mobility-measurement-technique",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "NIST-DIELECTRIC",
+      "url": "https://www.nist.gov/publications/measuring-out-plane-permittivity-thin-films-millimeter-wave-frequencies",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "NIST-SEMICONDUCTOR",
+      "url": "https://www.nist.gov/mml/mmsd/primary-focus-areas/semiconductors",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    },
+    {
+      "id": "IBM-SEMICONDUCTOR",
+      "url": "https://www.ibm.com/think/topics/semiconductors",
+      "authentic_original_bytes": false,
+      "original_file_sha256": null,
+      "rights_verified_for_file": false
+    }
+  ],
+  "independent_review": false,
+  "physical_device_datasets": 0
+}

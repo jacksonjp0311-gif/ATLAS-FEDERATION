@@ -1,0 +1,185 @@
+{
+  "schema": "atlas.electronics-chapter-index-v1rc/1",
+  "new_chapters": [
+    {
+      "number": 35,
+      "title": "SI electrical constants, units and measurement traceability",
+      "slug": "si_constants_and_traceability",
+      "path": "docs/chapters/35_si_constants_and_traceability.md",
+      "equation": "V_T = k_B T/q",
+      "units": "V, K, J, C",
+      "methods": "thermal_voltage",
+      "bibliography_id": "BIPM-SI"
+    },
+    {
+      "number": 36,
+      "title": "Carrier statistics, neutrality and coupled charge",
+      "slug": "carrier_statistics_and_neutrality",
+      "path": "docs/chapters/36_carrier_statistics_and_neutrality.md",
+      "equation": "rho = q(p \u2212 n + N_D\u207a \u2212 N_A\u207b) + rho_fixed",
+      "units": "C/m\u00b3, m\u207b\u00b3",
+      "methods": "coupled_math_dependency",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 37,
+      "title": "Junction I\u2013V, diode stable numerics and missing parasitics",
+      "slug": "junction_diode_iv_and_stability",
+      "path": "docs/chapters/37_junction_diode_iv_and_stability.md",
+      "equation": "I = I_s expm1(V/(n V_T))",
+      "units": "A, V, K",
+      "methods": "ideal_diode_current",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 38,
+      "title": "MOS oxide capacitance and material thickness",
+      "slug": "mos_stack_capacitance",
+      "path": "docs/chapters/38_mos_stack_capacitance.md",
+      "equation": "C_ox = epsilon_0 epsilon_r A/t_ox",
+      "units": "F, F/m\u00b2, m",
+      "methods": "mos_oxide_capacitance",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 39,
+      "title": "MOS substrate body effect, threshold definition and signs",
+      "slug": "mos_threshold_body_effect",
+      "path": "docs/chapters/39_mos_threshold_body_effect.md",
+      "equation": "V_T(V_SB)=V_T0+gamma(sqrt(2phi_F+V_SB)-sqrt(2phi_F))",
+      "units": "V, sqrt(V)",
+      "methods": "mos_body_effect_threshold",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 40,
+      "title": "Long-channel MOSFET current regions and transconductance",
+      "slug": "nmos_regions_and_gm",
+      "path": "docs/chapters/40_nmos_regions_and_gm.md",
+      "equation": "I_D,linear=k[(V_GS\u2212V_T)V_DS\u2212V_DS\u00b2/2]",
+      "units": "A, V, S",
+      "methods": "long_channel_nmos",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 41,
+      "title": "Short-channel, subthreshold and device model limits",
+      "slug": "short_channel_and_leakage_limits",
+      "path": "docs/chapters/41_short_channel_and_leakage_limits.md",
+      "equation": "S_sub = (ln(10)) n_s V_T  [V/decade]",
+      "units": "V, A, K",
+      "methods": "none",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 42,
+      "title": "Diffusion equation and bounded dopant redistribution",
+      "slug": "dopant_diffusion_and_mass",
+      "path": "docs/chapters/42_dopant_diffusion_and_mass.md",
+      "equation": "C(x,t)=Q exp(-x\u00b2/(4Dt))/sqrt(pi D t)",
+      "units": "m\u207b\u00b3, m\u00b2/s, m\u207b\u00b2",
+      "methods": "half_space_gaussian_dopant",
+      "bibliography_id": "MIT-6012"
+    },
+    {
+      "number": 43,
+      "title": "Four-point probe, sheet resistance and Hall metrology",
+      "slug": "sheet_resistance_and_hall",
+      "path": "docs/chapters/43_sheet_resistance_and_hall.md",
+      "equation": "R_sheet=(pi/ln2)(V/I); n=|I B/(q t V_H)|",
+      "units": "Ohms/square, m\u207b\u00b3",
+      "methods": "four_point_sheet_resistance;hall_carrier_density",
+      "bibliography_id": "NIST-HALL"
+    },
+    {
+      "number": 44,
+      "title": "Capacitance\u2013voltage and current\u2013voltage parameter extraction",
+      "slug": "cv_iv_characterization",
+      "path": "docs/chapters/44_cv_iv_characterization.md",
+      "equation": "C/A = epsilon_0 epsilon_r/t_ox",
+      "units": "F, m, V",
+      "methods": "mos_oxide_capacitance",
+      "bibliography_id": "NIST-DIELECTRIC"
+    },
+    {
+      "number": 45,
+      "title": "Lithographic pattern transfer and overlay error budgets",
+      "slug": "lithography_overlay_and_cd",
+      "path": "docs/chapters/45_lithography_overlay_and_cd.md",
+      "equation": "CD approx k1 lambda/NA; err_max <= err_mask+err_overlay+err_etch",
+      "units": "nm, dimensionless",
+      "methods": "line_edge_overlay_budget",
+      "bibliography_id": "IBM-SEMICONDUCTOR"
+    },
+    {
+      "number": 46,
+      "title": "Oxidation, deposition, etch, doping and process order",
+      "slug": "semiconductor_process_dependency_graph",
+      "path": "docs/chapters/46_semiconductor_process_dependency_graph.md",
+      "equation": "gate_C = epsilon A/t; process steps preserve ordering dependencies",
+      "units": "F, m, s, K",
+      "methods": "none",
+      "bibliography_id": "IBM-SEMICONDUCTOR"
+    },
+    {
+      "number": 47,
+      "title": "Thermal conduction, self-heating and power budgeting",
+      "slug": "thermal_rc_power_limits",
+      "path": "docs/chapters/47_thermal_rc_power_limits.md",
+      "equation": "T(t)=T_amb+P R_th+(T0\u2212T_amb\u2212P R_th)exp(\u2212t/(R_th C_th))",
+      "units": "K, J/K, K/W, W",
+      "methods": "thermal_rc",
+      "bibliography_id": "MIT-6374"
+    },
+    {
+      "number": 48,
+      "title": "SRAM cell state, noise margins and read disturbance",
+      "slug": "sram_bitcell_and_noise_limits",
+      "path": "docs/chapters/48_sram_bitcell_and_noise_limits.md",
+      "equation": "static noise margin must derive from analog transfer curves",
+      "units": "V, s, bit error probability",
+      "methods": "prior_memory_models",
+      "bibliography_id": "MIT-6374"
+    },
+    {
+      "number": 49,
+      "title": "DRAM charge decay, sense thresholds and refresh policy",
+      "slug": "dram_retention_and_refresh",
+      "path": "docs/chapters/49_dram_retention_and_refresh.md",
+      "equation": "Q(t)=Q0 exp(\u2212t/tau); t_ref=tau ln(Q0/Q_min)",
+      "units": "C, s",
+      "methods": "dram_retention",
+      "bibliography_id": "MIT-6374"
+    },
+    {
+      "number": 50,
+      "title": "Defect statistics, yield and reliability boundaries",
+      "slug": "poisson_defects_and_yield",
+      "path": "docs/chapters/50_poisson_defects_and_yield.md",
+      "equation": "P(clean die)=exp(\u2212D_defects A_chip)",
+      "units": "cm\u207b\u00b2, cm\u00b2, probability",
+      "methods": "poisson_defect_free_yield",
+      "bibliography_id": "NIST-SEMICONDUCTOR"
+    },
+    {
+      "number": 51,
+      "title": "Interconnect, ESD, packaging and operational qualification",
+      "slug": "interconnect_packaging_and_reliability",
+      "path": "docs/chapters/51_interconnect_packaging_and_reliability.md",
+      "equation": "R_wire=rho L/A; P_dynamic~alpha C V\u00b2 f",
+      "units": "ohm, m, F, K",
+      "methods": "prior_timing_models",
+      "bibliography_id": "MIT-6374"
+    },
+    {
+      "number": 52,
+      "title": "From transistors to a reconstructible stored-program machine",
+      "slug": "logic_to_machine_bridge",
+      "path": "docs/chapters/52_logic_to_machine_bridge.md",
+      "equation": "state_next=decode(opcode,operand,state); acc_add=(a+b) mod 256",
+      "units": "bits, bytes, cycles",
+      "methods": "EightBitAccumulator",
+      "bibliography_id": "MIT-6374"
+    }
+  ]
+}
