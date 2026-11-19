@@ -1,0 +1,117 @@
+{
+  "bibliographic_source_records_total": 547,
+  "independent_expert_peer_review_verified_in_this_offline_check": 0,
+  "nodes": [
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 34,
+      "evidence_gap_records": 190,
+      "node": "agent-atlas",
+      "records": 190
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 34,
+      "evidence_gap_records": 125,
+      "node": "causal-atlas",
+      "records": 149
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 21,
+      "evidence_gap_records": 305,
+      "node": "chemistry-atlas",
+      "records": 305
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 21,
+      "evidence_gap_records": 87,
+      "node": "computation-atlas",
+      "records": 234
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 13,
+      "evidence_gap_records": 253,
+      "node": "computer-architecture-digital-hardware-atlas",
+      "records": 253
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 51,
+      "evidence_gap_records": 249,
+      "node": "control-atlas",
+      "records": 249
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 33,
+      "evidence_gap_records": 132,
+      "node": "cymatics-atlas",
+      "records": 132
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 17,
+      "evidence_gap_records": 225,
+      "node": "electronics-semiconductors-atlas",
+      "records": 225
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 31,
+      "evidence_gap_records": 301,
+      "node": "energy-atlas",
+      "records": 301
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 39,
+      "evidence_gap_records": 276,
+      "node": "language-atlas",
+      "records": 276
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 12,
+      "evidence_gap_records": 132,
+      "node": "manufacturing-atlas",
+      "records": 132
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 29,
+      "evidence_gap_records": 148,
+      "node": "materials-atlas",
+      "records": 148
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 18,
+      "evidence_gap_records": 268,
+      "node": "mathematics-physics-atlas",
+      "records": 268
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 44,
+      "evidence_gap_records": 141,
+      "node": "measurement-atlas",
+      "records": 141
+    },
+    {
+      "authenticated_publisher_bytes_locally_verified": 0,
+      "bibliographic_source_records": 150,
+      "evidence_gap_records": 232,
+      "node": "signal-atlas",
+      "records": 232
+    }
+  ],
+  "note": "Source-linked is not source-authenticated. Zero verified means no verification performed in this offline reader, not that no valid originals exist elsewhere.",
+  "physical_fabrication_verified_in_this_offline_check": 0,
+  "publisher_original_bytes_authenticated_in_this_offline_check": 0,
+  "rights_need_independent_review": 0,
+  "schema": "atlas.survival-evidence-gap-report/1",
+  "status": "evidence_gates_unresolved"
+}

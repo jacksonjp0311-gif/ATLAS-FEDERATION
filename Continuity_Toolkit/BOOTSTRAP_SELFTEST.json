@@ -1,0 +1,21 @@
+{
+  "boot_image_sha256": "6a56ebe167c0dd7f5e99731ef34cf1c1081f4e93a3b8413ee878f2d1dbc62fca",
+  "nand_netlist_sha256": "acfc3b62b787099ef909fdb6771901d75488cb63d0553c230a631e5104535697",
+  "not_demonstrated": [
+    "fabricated CPU",
+    "measured device timing",
+    "hardware firmware authentication",
+    "physical manufacturing acceptance"
+  ],
+  "output_events": [
+    [
+      0,
+      15
+    ]
+  ],
+  "receipt_sha256": "8f3cedad528fcdb61b8b06e22e465c578c8f83d958b0ff141138757482a7fb08",
+  "result": "software_reconstruction_passed",
+  "rom_sha256": "9c385619d8886080628f57455a77d885849e0a77d6c0d3755bb52ac1d7ceee74",
+  "schema": "atlas.survival-bootstrap-selftest/1",
+  "source_sha256": "e81052a173dc7e8e598a4e2e95a33789f23f511f78631b9374656a59615dec44"
+}
