@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bioelectric-atlas-research"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Original ATLAS FORGE bioelectric nonclinical SI membrane and excitable system reference"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bioelectric_atlas*"]
+
+[tool.setuptools.package-data]
+bioelectric_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]
