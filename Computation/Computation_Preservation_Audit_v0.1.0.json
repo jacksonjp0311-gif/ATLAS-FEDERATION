@@ -1,0 +1,40 @@
+{
+  "schema": "atlas.previous-release-preservation/1",
+  "edition": "computation-0.1.0",
+  "result": "passed",
+  "original_archive": "ATLAS_COLLECTION_Agent_v1.0.0.zip",
+  "original_archive_sha256": "57a2db9daea62f9cfcc0728e2b2ff61d7d2020ad1d423d93ba87f2177969d505",
+  "previous_files_protected": 2106,
+  "byte_identical": 2106,
+  "changed": [],
+  "missing": [],
+  "allowed_mutable_paths": [
+    "CURRENT_CHECKPOINT.json",
+    "DOMAIN_QUEUE.json",
+    "FILE_MANIFEST.json",
+    "README.md",
+    "START_HERE.md",
+    "common/registry.json",
+    "common/registry.lock.json",
+    "knowledge_preservation/SOURCE_ACQUISITION_LEDGER.json",
+    "tools/check_collection.py"
+  ],
+  "protected_groups": {
+    "AGENT-ATLAS/": 231,
+    "CAUSAL-ATLAS/": 253,
+    "MATERIALS-ATLAS/": 121,
+    "CONTROL-ATLAS/": 225,
+    "baseline/": 771,
+    "common/nodes/agent-atlas/": 9,
+    "common/nodes/causal-atlas/": 9,
+    "common/nodes/control-atlas/": 9,
+    "common/nodes/materials-atlas/": 9,
+    "common/nodes/measurement-atlas/": 9,
+    "common/nodes/signal-atlas/": 9,
+    "common/nodes/cymatics-atlas/": 9
+  },
+  "prior_nodes_changed": false,
+  "new_release_common_registry_must_change_for_new_node": true,
+  "does_not_prove_scientific_correctness": true,
+  "previous_full_archive_must_remain_immutable_in_library": true
+}

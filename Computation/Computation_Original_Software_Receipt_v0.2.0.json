@@ -1,0 +1,43 @@
+{
+  "schema": "atlas.source-acquisition/1",
+  "date": "2026-11-13",
+  "assets": [
+    {
+      "path": "searches/jump_search.py",
+      "local_path": "evidence/licensed_primary_software/TheAlgorithms-Python-30507bbe/searches/jump_search.py",
+      "size_bytes": 1875,
+      "sha256": "bb274db1e8952b5e3a924acd66dd2b6880ec49d9b74d354fec97fee4713786b2",
+      "git_blob_sha1": "1bd7493dbbfe3dca0d837da005c7830c10c9dc3e",
+      "repository": "https://github.com/TheAlgorithms/Python",
+      "commit": "30507bbe41397065728167fb09aa820f9fce8dc7",
+      "original_url": "https://github.com/TheAlgorithms/Python/blob/30507bbe41397065728167fb09aa820f9fce8dc7/searches/jump_search.py",
+      "license": "MIT; LICENSE.md included in same pinned revision",
+      "verification": "size + SHA1 Git blob from pinned GitHub tree; SHA256 for local integrity"
+    },
+    {
+      "path": "maths/extended_euclidean_algorithm.py",
+      "local_path": "evidence/licensed_primary_software/TheAlgorithms-Python-30507bbe/maths/extended_euclidean_algorithm.py",
+      "size_bytes": 2063,
+      "sha256": "932d502e02bc3a6fe680a8185159cba3757556f91427758d2cfe288ee6d07f16",
+      "git_blob_sha1": "b3b279581f388930fdea285c6421819cfcd58df0",
+      "repository": "https://github.com/TheAlgorithms/Python",
+      "commit": "30507bbe41397065728167fb09aa820f9fce8dc7",
+      "original_url": "https://github.com/TheAlgorithms/Python/blob/30507bbe41397065728167fb09aa820f9fce8dc7/maths/extended_euclidean_algorithm.py",
+      "license": "MIT; LICENSE.md included in same pinned revision",
+      "verification": "size + SHA1 Git blob from pinned GitHub tree; SHA256 for local integrity"
+    },
+    {
+      "path": "LICENSE.md",
+      "local_path": "evidence/licensed_primary_software/TheAlgorithms-Python-30507bbe/LICENSE.md",
+      "size_bytes": 1095,
+      "sha256": "4395a1dc4bda1d6054c45b4d1230c709c7398e6d66f1d0aff4b22d95973bea56",
+      "git_blob_sha1": "de631c3ef33374d91a78dca3a656806e4e3bb890",
+      "repository": "https://github.com/TheAlgorithms/Python",
+      "commit": "30507bbe41397065728167fb09aa820f9fce8dc7",
+      "original_url": "https://github.com/TheAlgorithms/Python/blob/30507bbe41397065728167fb09aa820f9fce8dc7/LICENSE.md",
+      "license": "MIT; LICENSE.md included in same pinned revision",
+      "verification": "size + SHA1 Git blob from pinned GitHub tree; SHA256 for local integrity"
+    }
+  ],
+  "claim": "two original program source files and original license bytes authenticated against their Git blobs; not primary research publications or universal scientific review"
+}

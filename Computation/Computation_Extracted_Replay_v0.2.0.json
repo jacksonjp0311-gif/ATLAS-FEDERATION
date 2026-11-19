@@ -1,0 +1,49 @@
+{
+  "result": "passed",
+  "source_tree": "passed",
+  "extracted": "passed",
+  "source_tree_tests": 1381,
+  "replay_tests": 1381,
+  "skipped": 0,
+  "schemas": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1457,
+      "relation": 677,
+      "node": 8,
+      "context": 32
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "contexts_valid": 32,
+  "historical_protected_files": 2106,
+  "original_licensed_assets": 3,
+  "archives": [
+    {
+      "filename": "ATLAS_COLLECTION_Computation_v0.2.0.zip",
+      "sha256": "05ff1791b0dc0826c1c5da664f0192c8e582dab42e488d3c33ff48d989348d7f",
+      "bytes": 68525946,
+      "entries": 2259,
+      "manifest_inventory_entries": 2258,
+      "zip_integrity": "passed",
+      "byte_manifest_check": "passed"
+    },
+    {
+      "filename": "COMPUTATION-ATLAS_v0.2.0.zip",
+      "sha256": "c40d47e492a586a385e08b3d94ba5ae499ffa60efbd4ceaabb92378e1ce376e0",
+      "bytes": 2565087,
+      "entries": 114,
+      "manifest_inventory_entries": 113,
+      "zip_integrity": "passed",
+      "byte_manifest_check": "passed"
+    }
+  ]
+}

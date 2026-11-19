@@ -1,0 +1,29 @@
+{
+  "schema": "atlas.numerical-oracle/2",
+  "model_version": "computation-0.2.0",
+  "seed": 20261313,
+  "comparisons": 17589,
+  "by_method": {
+    "scipy_exact_linear_solution": 1217,
+    "numpy_quadratic_roots": 1100,
+    "networkx_scc": 550,
+    "networkx_msf_total_weight": 520,
+    "networkx_msf_components": 520,
+    "networkx_floyd_rational": 11632,
+    "python_pow_no_inverse": 449,
+    "python_pow_inverse": 751,
+    "exhaustive_optimal_prefix_lengths": 400,
+    "numpy_polynomial_evaluation": 450
+  },
+  "source": "constructed deterministic examples",
+  "limitations": [
+    "Numerical/oracle agreement is not independent scientific peer review",
+    "Random case generation is not an exhaustive mathematical proof",
+    "A verified Git blob demonstrates byte correspondence to a pinned repository object, not correctness of its code"
+  ],
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "networkx": "3.6.1",
+  "status": "passed"
+}
