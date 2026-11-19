@@ -1,0 +1,35 @@
+{
+  "cannot_promote_to_canonical_release_without_full_restore": true,
+  "current_authoritative_release": "OS_Internals_v1.0.0",
+  "future_network_stacks_release": "HOLD",
+  "predecessor_records": [
+    {
+      "record_id": "os-internals-atlas:chapter-07-concept",
+      "revision": "61289f4f7c57be003cd093e7d4c387f222d0cb0375e1b0fd8810a333041fff52",
+      "title": "Demand paging, copy-on-write, protection faults and memory pressure \u2014 full technical concept"
+    },
+    {
+      "record_id": "os-internals-atlas:chapter-14-concept",
+      "revision": "6880e34d369f6380c97a348f9f5cdf80d62d332eee7754d64f0d9b4ad0aad3e8",
+      "title": "Write-ahead logging, ordering, fsync, namespace persistence and recovery \u2014 full technical concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-13-concept",
+      "revision": "0be6aaa38e82ff2bd2a30dd50b2527df5b7baa43f6c523b172c127176f399893",
+      "title": "Command identity and database-local idempotent effects \u2014 concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-14-concept",
+      "revision": "34b1cb4edad4d4c01b99413b66ea6a10e569cdacc8e8a9d5edc5762a9183de6b",
+      "title": "Unit of Work, SQLite transactions and rollback boundaries \u2014 concept"
+    },
+    {
+      "record_id": "software-design-patterns-atlas:chapter-21-concept",
+      "revision": "6043245b5cddd7f8c64abc4775171b43a6b17f777e74f0c6b0c9067de2a3ef5a",
+      "title": "Cache-aside, invalidation and the limits of stale knowledge \u2014 concept"
+    }
+  ],
+  "previous_full_archive_sha256": "0571f1376f380d90090890ae65c39c2f6a2085725038f32810d4992f00fef93f",
+  "role": "read-only exact anchors; valid only against recorded predecessor content",
+  "schema": "atlas.original-federation-staged-exact-dependency/1"
+}

@@ -1,0 +1,117 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "docs/chapters/01_relations_bags_null_and_query_meaning.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 2,
+      "file": "docs/chapters/02_physical_pages_rows_and_the_memory_hierarchy.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 3,
+      "file": "docs/chapters/03_sorted_indexes_and_b_tree_navigation.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 4,
+      "file": "docs/chapters/04_covering_composite_and_partial_indexes.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 5,
+      "file": "docs/chapters/05_cardinality_estimation_correlation_and_uncert.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 6,
+      "file": "docs/chapters/06_cost_based_access_path_decisions.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 7,
+      "file": "docs/chapters/07_equijoins_nested_hash_and_sort_merge.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 8,
+      "file": "docs/chapters/08_join_order_dynamic_programming_and_search_bou.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 9,
+      "file": "docs/chapters/09_external_sorting_run_generation_and_merge.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 10,
+      "file": "docs/chapters/10_buffer_replacement_and_cache_aware_reasoning.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 11,
+      "file": "docs/chapters/11_mvcc_visibility_snapshots_and_anomalies.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 12,
+      "file": "docs/chapters/12_wal_transactions_checkpoints_and_failure_boun.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 13,
+      "file": "docs/chapters/13_evidence_based_optimization_with_sqlite.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 14,
+      "file": "docs/chapters/14_offline_reconstruction_integrity_and_release_.md",
+      "title": "# ATLAS FORGE \u00b7 Database Optimization original #17 \u00b7 Scoped reference v1.0.0"
+    },
+    {
+      "chapter": 15,
+      "file": "docs/chapters/15_index_only_scans_visibility_maps_and_heap_fallback.md",
+      "title": "15 \u2014 Index-only scans, visibility maps, and heap fallback"
+    },
+    {
+      "chapter": 16,
+      "file": "docs/chapters/16_multivariate_cardinality_estimates_and_correlated_predicates.md",
+      "title": "16 \u2014 Multivariate cardinality estimates and correlated predicates"
+    },
+    {
+      "chapter": 17,
+      "file": "docs/chapters/17_left_deep_dynamic_programming_join_ordering.md",
+      "title": "17 \u2014 Left-deep dynamic-programming join ordering"
+    },
+    {
+      "chapter": 18,
+      "file": "docs/chapters/18_external_sorting_under_a_finite_memory_budget.md",
+      "title": "18 \u2014 External sorting under a finite memory budget"
+    },
+    {
+      "chapter": 19,
+      "file": "docs/chapters/19_wal_recovery_commit_markers_and_crash_prefix_limits.md",
+      "title": "19 \u2014 WAL recovery, commit markers, and crash-prefix limits"
+    },
+    {
+      "chapter": 20,
+      "file": "docs/chapters/20_snapshot_isolation_write_skew_and_dependency_hazards.md",
+      "title": "20 \u2014 Snapshot isolation, write skew, and dependency hazards"
+    },
+    {
+      "chapter": 21,
+      "file": "docs/chapters/21_cost_model_drift_regret_and_explain_plan_evidence.md",
+      "title": "21 \u2014 Cost-model drift, regret, and explain-plan evidence"
+    },
+    {
+      "chapter": 22,
+      "file": "docs/chapters/22_rebuilding_a_verified_database_research_reference_offline.md",
+      "title": "22 \u2014 Rebuilding a verified database-research reference offline"
+    }
+  ],
+  "domain": "database-optimization-atlas",
+  "edition": "1.0.0",
+  "schema": "atlas.database-optimization-chapter-index/1"
+}

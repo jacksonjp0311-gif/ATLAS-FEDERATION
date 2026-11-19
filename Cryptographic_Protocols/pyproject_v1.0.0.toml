@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-cryptographic-protocols-reference"
+version = "1.0.0"
+description = "ATLAS FORGE offline educational protocol reconstruction, not certified cryptography"
+requires-python = ">=3.10"

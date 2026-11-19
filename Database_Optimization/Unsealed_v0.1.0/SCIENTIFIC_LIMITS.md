@@ -1,0 +1,9 @@
+# Scientific acceptance and operational HOLD — Database Optimization #17 v0.1.0
+
+- **Release status:** unsealed developmental domain content; no registration in the authoritative federation; original domain #16 Network Stacks remains prior to #17 in the original queue.
+- **Verified here:** standard-library Python models, 30 unit tests, independent finite oracle, actual SQLite truth-table and inner-join comparisons, SQLite query plan inspection and ordinary reopen test.
+- **Not verified:** physically measured I/O, SSD/HDD timings, real workload benchmarks, external spill sort, persistent B+ tree split/merge, full query optimizer, production MVCC concurrency or SSI, real power loss, adversarial OS behavior, large-scale distribution, peer review, authenticated publisher PDF/source bytes.
+- **Cost-model status:** illustrative abstract cost estimates; not a predictive calibration for a given DBMS/host/storage. Never treat as milliseconds.
+- **Reference-model status:** Python `MVCCVisibility` implements version visibility but not transactional conflict resolution. `SortedLeafIndex` is an immutable educational fence/leaf structure, not a durable B+ tree. Sorting demonstrates algorithmic ordering but keeps runs in memory. SQL operators implement only a bounded subset.
+- **Rights:** original AI-assisted scientific prose and code. External official documentation supplied as bibliographic URL only; third-party source text/code not mirrored here.
+- **Next gates:** (1) finalize Network Stacks #16 against OS Internals v1.0.0; (2) register Database Optimization #17 as a node with exact revisions; (3) run full federation source-tree and fresh restored archive regression; (4) upload/readback to the single persistent `/ATLAS FORGE/` Library; (5) only after all checks advance checkpoint and original-domain pointer.

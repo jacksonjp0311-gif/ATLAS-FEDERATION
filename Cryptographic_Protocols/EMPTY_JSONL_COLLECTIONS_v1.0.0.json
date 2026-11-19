@@ -1,0 +1,16 @@
+{
+  "collections": {
+    "data/datasets.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reviews.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "edition": "Cryptographic_Protocols_v1.0.0",
+  "full_archive_sha256": "6801f779b9f50ab8318ff13a71608548f124ed9eb84fea95f0a7d7a41fbb8090",
+  "note": "Library loose-file upload does not accept zero-byte files; both original empty JSONL collections are included byte-exact inside the deterministic patch and fully restored archive. Empty collections are schema-valid.",
+  "schema": "atlas.cryptographic-protocols-empty-collections/1"
+}
