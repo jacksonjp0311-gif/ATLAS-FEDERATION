@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-distributed-systems-reference"
+version = "0.1.0"
+description = "ATLAS FORGE distributed systems reconstruction (bounded scientific reference)"
+requires-python = ">=3.10"
