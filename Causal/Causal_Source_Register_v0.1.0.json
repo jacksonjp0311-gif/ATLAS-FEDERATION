@@ -1,0 +1,585 @@
+{
+  "checked_at": "2026-11-12",
+  "sources": [
+    {
+      "id": "PEARL2010",
+      "title": "An Introduction to Causal Inference",
+      "authors": "Judea Pearl",
+      "publication_year": "2010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/",
+      "doi": "10.2202/1557-4679.1203",
+      "inspected_portion": "Sections 2.1, 3.1\u20133.3.1; definitions 1 and 3; equation 25",
+      "checked_at": "2026-11-12",
+      "capture": "primary HTML portions inspected; no full-text mirror or original-byte capture",
+      "rights": "Linked bibliographic reference and original bounded paraphrase only. Publisher text and figures not redistributed."
+    },
+    {
+      "id": "HR2006",
+      "title": "Estimating causal effects from epidemiological data",
+      "authors": "Miguel A. Hern\u00e1n and James M. Robins",
+      "publication_year": "2006",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2652882/",
+      "doi": "10.1136/jech.2004.029496",
+      "inspected_portion": "Conditional exchangeability; Standardisation; Confounding and identifiability; Bibliographical notes",
+      "checked_at": "2026-11-12",
+      "capture": "primary HTML portions inspected; no full-text mirror or original-byte capture",
+      "rights": "Linked bibliographic reference and original bounded paraphrase only. Publisher text and figures not redistributed."
+    },
+    {
+      "id": "CH2008",
+      "title": "Constructing Inverse Probability Weights for Marginal Structural Models",
+      "authors": "Stephen R. Cole and Miguel A. Hern\u00e1n",
+      "publication_year": "2008",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2732954/",
+      "doi": "10.1093/aje/kwn164",
+      "inspected_portion": "Abstract; Exchangeability; Positivity; Correct Model Specification; Appendix 2",
+      "checked_at": "2026-11-12",
+      "capture": "primary HTML portions inspected; no full-text mirror or original-byte capture",
+      "rights": "Linked bibliographic reference and original bounded paraphrase only. Publisher text and figures not redistributed."
+    },
+    {
+      "id": "HR2016",
+      "title": "Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available",
+      "authors": "Miguel A. Hern\u00e1n and James M. Robins",
+      "publication_year": "2016",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4832051/",
+      "doi": "10.1093/aje/kwv254",
+      "inspected_portion": "Table 1; Eligibility criteria; Outcome; Causal contrasts; Defining time zero",
+      "checked_at": "2026-11-12",
+      "capture": "primary HTML portions inspected; no full-text mirror or original-byte capture",
+      "rights": "Linked bibliographic reference and original bounded paraphrase only. Publisher text and figures not redistributed."
+    },
+    {
+      "id": "LTC2010",
+      "title": "Negative Controls: A Tool for Detecting Confounding and Bias in Observational Studies",
+      "authors": "Marc Lipsitch, Eric Tchetgen Tchetgen, and Ted Cohen",
+      "publication_year": "2010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3053408/",
+      "doi": "10.1097/EDE.0b013e3181d61eeb",
+      "inspected_portion": "Conditions for negative controls; U-comparability and limitations surrounding Figures 2 and 3",
+      "checked_at": "2026-11-12",
+      "capture": "primary HTML portions inspected; no full-text mirror or original-byte capture",
+      "rights": "Linked bibliographic reference and original bounded paraphrase only. Publisher text and figures not redistributed."
+    }
+  ],
+  "records": [
+    {
+      "id": "association-intervention",
+      "kind": "concept",
+      "title": "Association and intervention",
+      "source": "PEARL2010",
+      "locator": "\u00a72.1",
+      "text": "A conditional association alone does not specify the outcome distribution under an intervention.",
+      "assumptions": [
+        "Causal target explicitly defined."
+      ],
+      "limitations": [
+        "Additional causal assumptions are needed."
+      ],
+      "equation": "",
+      "tags": [
+        "association",
+        "intervention",
+        "causal",
+        "effect"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "do-operator",
+      "kind": "concept",
+      "title": "Intervention operator",
+      "source": "PEARL2010",
+      "locator": "\u00a73.2, equations 5\u20136",
+      "text": "A structural intervention replaces the treatment assignment mechanism while retaining the other stipulated mechanisms.",
+      "assumptions": [
+        "Modularity of the stipulated model."
+      ],
+      "limitations": [
+        "Observational conditioning is a different operation."
+      ],
+      "equation": "P(Y | do(A=a))",
+      "tags": [
+        "do",
+        "operator",
+        "structural",
+        "model",
+        "intervention"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "causal-dag",
+      "kind": "concept",
+      "title": "Causal directed acyclic graph",
+      "source": "PEARL2010",
+      "locator": "\u00a73.1",
+      "text": "A causal DAG records directional assumptions, including meaningful absent arrows.",
+      "assumptions": [
+        "Acyclic model with declared variables."
+      ],
+      "limitations": [
+        "Drawing arrows does not verify them."
+      ],
+      "equation": "",
+      "tags": [
+        "DAG",
+        "graph",
+        "assumptions"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "d-separation",
+      "kind": "method",
+      "title": "D-separation",
+      "source": "PEARL2010",
+      "locator": "\u00a73.1, Definition 1",
+      "text": "D-separation tests whether a conditioning set blocks all paths in a stated DAG.",
+      "assumptions": [
+        "Causal Markov interpretation when applied."
+      ],
+      "limitations": [
+        "D-connection need not yield empirical dependence."
+      ],
+      "equation": "",
+      "tags": [
+        "d-separation",
+        "path",
+        "independence"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "collider-conditioning",
+      "kind": "concept",
+      "title": "Collider conditioning",
+      "source": "PEARL2010",
+      "locator": "\u00a73.1, Definition 1 and following explanation",
+      "text": "Conditioning on a collider or its descendant can open a previously blocked path.",
+      "assumptions": [
+        "Evaluate the complete path."
+      ],
+      "limitations": [
+        "More adjustment is not automatically better."
+      ],
+      "equation": "",
+      "tags": [
+        "collider",
+        "selection",
+        "bias"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "backdoor",
+      "kind": "method",
+      "title": "Back-door adjustment check",
+      "source": "PEARL2010",
+      "locator": "\u00a73.3.1, Definition 3",
+      "text": "The standard back-door criterion excludes treatment descendants and blocks paths entering treatment.",
+      "assumptions": [
+        "Declared causal DAG is adequate."
+      ],
+      "limitations": [
+        "Failure does not rule out all identification methods."
+      ],
+      "equation": "",
+      "tags": [
+        "backdoor",
+        "confounding",
+        "adjustment"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "potential-outcomes",
+      "kind": "concept",
+      "title": "Potential outcomes",
+      "source": "HR2006",
+      "locator": "Bibliographical notes",
+      "text": "Potential outcomes describe outcomes under specified alternative treatment assignments.",
+      "assumptions": [
+        "Treatment and outcome well defined."
+      ],
+      "limitations": [
+        "Both alternatives are not observed for one unit."
+      ],
+      "equation": "Y(1), Y(0)",
+      "tags": [
+        "potential",
+        "outcomes",
+        "counterfactual"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "target-population",
+      "kind": "concept",
+      "title": "Target population and contrast",
+      "source": "HR2006",
+      "locator": "Conditional exchangeability and Standardisation",
+      "text": "Population-average comparisons depend on the population distribution used to combine strata.",
+      "assumptions": [
+        "Target population specified."
+      ],
+      "limitations": [
+        "Changing weights can change the target."
+      ],
+      "equation": "E[Y(1)] - E[Y(0)]",
+      "tags": [
+        "ATE",
+        "target",
+        "population",
+        "estimand"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "exchangeability",
+      "kind": "concept",
+      "title": "Conditional exchangeability",
+      "source": "HR2006",
+      "locator": "The randomised experiment paradigm for observational studies",
+      "text": "Within declared covariate strata, treatment groups are assumed comparable in their potential outcomes.",
+      "assumptions": [
+        "Sufficient confounders captured."
+      ],
+      "limitations": [
+        "Observed balance cannot establish this assumption."
+      ],
+      "equation": "Y(a) independent of A given L",
+      "tags": [
+        "exchangeability",
+        "confounding",
+        "assumption"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "standardization",
+      "kind": "method",
+      "title": "Standardized contrast",
+      "source": "HR2006",
+      "locator": "Standardisation; preceding two-step derivation",
+      "text": "Combine stratum-specific outcome rates using a common target-population distribution.",
+      "assumptions": [
+        "Identification conditions justify causal interpretation."
+      ],
+      "limitations": [
+        "Arithmetic alone establishes no causal effect."
+      ],
+      "equation": "mu(a) = sum_l E[Y | A=a,L=l] P_target(l)",
+      "tags": [
+        "standardization",
+        "g",
+        "formula",
+        "stratification"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "identification",
+      "kind": "concept",
+      "title": "Identification versus estimation",
+      "source": "HR2006",
+      "locator": "Confounding and identifiability of causal effects",
+      "text": "Observed distributions can support different causal effects when identifying assumptions are absent.",
+      "assumptions": [
+        "State the allowed model class."
+      ],
+      "limitations": [
+        "A precise estimate cannot repair nonidentification."
+      ],
+      "equation": "",
+      "tags": [
+        "identification",
+        "estimation",
+        "uncertainty"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "consistency",
+      "kind": "concept",
+      "title": "Consistency for a defined treatment",
+      "source": "CH2008",
+      "locator": "Appendix 2; introductory discussion",
+      "text": "Observed outcomes correspond to the potential outcome under the treatment actually received.",
+      "assumptions": [
+        "Relevant treatment versions specified."
+      ],
+      "limitations": [
+        "Do not merge materially different interventions."
+      ],
+      "equation": "A=a implies Y=Y(a)",
+      "tags": [
+        "consistency",
+        "treatment",
+        "versions"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "positivity",
+      "kind": "concept",
+      "title": "Positivity and support",
+      "source": "CH2008",
+      "locator": "Positivity",
+      "text": "Adjustment needs treatment support in covariate strata carrying target-population weight.",
+      "assumptions": [
+        "Specified treatment and target population."
+      ],
+      "limitations": [
+        "A fitted probability cannot create missing support."
+      ],
+      "equation": "0 < P(A=1 | L=l) < 1",
+      "tags": [
+        "positivity",
+        "overlap",
+        "support"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "ipw",
+      "kind": "method",
+      "title": "Inverse-probability weighting",
+      "source": "CH2008",
+      "locator": "Abstract; Introduction; Appendix 1",
+      "text": "Weight observations by reciprocals of their treatment-assignment probabilities to reweight the comparison.",
+      "assumptions": [
+        "Appropriate probability model and causal assumptions."
+      ],
+      "limitations": [
+        "Weights do not correct unmeasured confounding automatically."
+      ],
+      "equation": "w_i = A_i/e_i + (1-A_i)/(1-e_i)",
+      "tags": [
+        "IPW",
+        "propensity",
+        "weights"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "weight-diagnostics",
+      "kind": "concept",
+      "title": "Weight diagnostics",
+      "source": "CH2008",
+      "locator": "Positivity; Correct Model Specification; Abstract",
+      "text": "Extreme weights motivate support and model diagnostics; truncation trades bias against precision.",
+      "assumptions": [
+        "Inspect the actual assignment design."
+      ],
+      "limitations": [
+        "Do not silently clip inconvenient weights."
+      ],
+      "equation": "",
+      "tags": [
+        "weights",
+        "overlap",
+        "diagnostics",
+        "truncation"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "time-varying",
+      "kind": "concept",
+      "title": "Treatment-confounder feedback",
+      "source": "CH2008",
+      "locator": "Abstract and opening paragraphs",
+      "text": "Earlier treatment can affect later confounders, requiring methods suited to longitudinal structure.",
+      "assumptions": [
+        "Time order and histories specified."
+      ],
+      "limitations": [
+        "A baseline-only adjustment may not address this."
+      ],
+      "equation": "",
+      "tags": [
+        "time",
+        "varying",
+        "longitudinal",
+        "confounding"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "target-trial",
+      "kind": "method",
+      "title": "Specify a target trial",
+      "source": "HR2016",
+      "locator": "Table 1 and opening description",
+      "text": "Specify eligibility, strategies, assignment, follow-up, outcome, contrast, and analysis before emulation.",
+      "assumptions": [
+        "The causal question is operationalized."
+      ],
+      "limitations": [
+        "A completed template does not establish identification."
+      ],
+      "equation": "",
+      "tags": [
+        "target",
+        "trial",
+        "protocol"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "time-zero",
+      "kind": "concept",
+      "title": "Align time zero",
+      "source": "HR2016",
+      "locator": "Defining time zero",
+      "text": "Align eligibility, treatment-strategy assignment, and follow-up start to avoid inappropriate selection.",
+      "assumptions": [
+        "Relevant dates are available."
+      ],
+      "limitations": [
+        "Future information must not define baseline eligibility."
+      ],
+      "equation": "",
+      "tags": [
+        "time",
+        "zero",
+        "immortal",
+        "time",
+        "bias"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "baseline-eligibility",
+      "kind": "concept",
+      "title": "Baseline eligibility",
+      "source": "HR2016",
+      "locator": "Eligibility criteria",
+      "text": "Postbaseline events should not retroactively determine eligibility for the baseline trial.",
+      "assumptions": [
+        "Trial eligibility defined at baseline."
+      ],
+      "limitations": [
+        "Selection can alter the intended comparison."
+      ],
+      "equation": "",
+      "tags": [
+        "eligibility",
+        "selection",
+        "baseline"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "itt-per-protocol",
+      "kind": "concept",
+      "title": "Assignment and adherence contrasts",
+      "source": "HR2016",
+      "locator": "Causal contrast(s) of interest; Analysis plan",
+      "text": "Assignment effects and effects of following a strategy are distinct causal questions.",
+      "assumptions": [
+        "Define the intended contrast."
+      ],
+      "limitations": [
+        "Observed initiators are not automatically randomized groups."
+      ],
+      "equation": "",
+      "tags": [
+        "intention",
+        "to",
+        "treat",
+        "per",
+        "protocol"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "outcome-ascertainment",
+      "kind": "concept",
+      "title": "Outcome ascertainment",
+      "source": "HR2016",
+      "locator": "Outcome",
+      "text": "How outcomes are recorded can depend on treatment and change the estimand or introduce bias.",
+      "assumptions": [
+        "Specify the outcome and measurement process."
+      ],
+      "limitations": [
+        "Recorded outcomes need validation."
+      ],
+      "equation": "",
+      "tags": [
+        "outcome",
+        "measurement",
+        "bias"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "negative-control-outcome",
+      "kind": "method",
+      "title": "Negative-control outcome",
+      "source": "LTC2010",
+      "locator": "Conditions for negative controls; discussion surrounding Figure 2",
+      "text": "A suitable control outcome shares relevant bias pathways but is not caused by the exposure.",
+      "assumptions": [
+        "Justify comparability of bias pathways."
+      ],
+      "limitations": [
+        "Unexpected association is a diagnostic, not automatic proof."
+      ],
+      "equation": "",
+      "tags": [
+        "negative",
+        "control",
+        "outcome",
+        "bias"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "negative-control-exposure",
+      "kind": "method",
+      "title": "Negative-control exposure",
+      "source": "LTC2010",
+      "locator": "Discussion surrounding Figure 3",
+      "text": "A suitable control exposure shares relevant bias pathways without causing the studied outcome.",
+      "assumptions": [
+        "Justify the exclusion and comparability assumptions."
+      ],
+      "limitations": [
+        "An arbitrary unrelated exposure may be uninformative."
+      ],
+      "equation": "",
+      "tags": [
+        "negative",
+        "control",
+        "exposure"
+      ],
+      "origin": "methodological_reference"
+    },
+    {
+      "id": "negative-control-limits",
+      "kind": "concept",
+      "title": "Limits of null controls",
+      "source": "LTC2010",
+      "locator": "U-comparability limitations surrounding Figures 2 and 3",
+      "text": "A null control association can miss confounding pathways not shared by that control.",
+      "assumptions": [
+        "Diagnostic power and comparability assessed."
+      ],
+      "limitations": [
+        "A null result does not certify absence of bias."
+      ],
+      "equation": "",
+      "tags": [
+        "negative",
+        "control",
+        "sensitivity",
+        "limitations"
+      ],
+      "origin": "methodological_reference"
+    }
+  ],
+  "review_status": "assistant_checked_portions_not_independent_review"
+}
