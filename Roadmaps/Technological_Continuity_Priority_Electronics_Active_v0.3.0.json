@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.active-priority-pointer/1",
+  "date": "2026-11-16",
+  "active_content_node": "electronics-semiconductors-atlas",
+  "edition": "0.3.0",
+  "last_accepted_software_release": "Electronics_Semiconductors_0.3.0",
+  "active_content_priority": "Electronics & Semiconductors: complete content/measurement gates toward scoped v1",
+  "next_enabling_domains": [
+    "Manufacturing",
+    "Computer Architecture & Digital Hardware"
+  ],
+  "original_30_domain_queue_preserved": true,
+  "domain_libraries_before_Bitwork_router": true,
+  "integrated_validation_before_desktop_transfer": true,
+  "source_originals_authenticated": 0,
+  "independent_scientific_peer_review": false
+}

@@ -1,0 +1,19 @@
+{
+  "active_content_node": "manufacturing-atlas",
+  "authenticated_publisher_original_files": 0,
+  "current_goal": "Reconstruct precision metrology, tooling, machining, assembly, process qualification and fabrication dependencies needed for computer hardware",
+  "date": "2026-11-16",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.1.0",
+  "independent_expert_science_review": false,
+  "next_content_domain": "computer-architecture-digital-hardware-atlas",
+  "no_hardware_fabrication_claim": true,
+  "original_30_domain_queue_preserved": true,
+  "original_domain_slot": 10,
+  "previous_electronics_release": "Electronics_Semiconductors_0.4.0",
+  "real_manufacturing_experiments": 0,
+  "schema": "atlas.active-priority-pointer/1",
+  "shared_wire_contract": "1.0 unchanged",
+  "subsequent_domain": "supply-chain-dynamics-atlas"
+}

@@ -1,0 +1,15 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "computer-architecture-digital-hardware-atlas",
+  "current_content_priority": "Computer Architecture: verify gate/RTL correspondence, bootstrap runtime and original thirty-domain dependencies",
+  "date": "2026-11-17",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.2.0",
+  "last_verified_software_release": "Computer_Architecture_v0.2.0",
+  "original_30_domain_queue_preserved": true,
+  "previous_verified_release": "Computer_Architecture_v0.1.0",
+  "remaining_physical_gates": 12,
+  "schema": "atlas.active-priority-pointer/1",
+  "scientific_acceptance": "HOLD authenticated originals independent review and measured hardware"
+}

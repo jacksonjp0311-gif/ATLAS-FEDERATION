@@ -1,0 +1,23 @@
+{
+  "active_domain": "mathematics-physics-atlas",
+  "active_version": "0.3.0",
+  "bitwork_router_stage": "deferred_until_domain_content_completed",
+  "canonical_original_30_candidate_queue_sha256": "76e7bba0b069e8906b23260446bc779a6786b580df5ba7d7a91ab7d2155e09d1",
+  "canonical_original_30_modified": false,
+  "date": "2026-11-15",
+  "desktop_transfer_stage": "last",
+  "domain_maturity": "scoped_v1_not_yet_accepted",
+  "integrated_validation_stage": "after_router",
+  "next_domain": "electronics-semiconductors-atlas",
+  "next_math_tasks": [
+    "extend SVD numerical stability/rank behavior for larger matrices and compare independent LAPACK references",
+    "construct higher-dimensional Poisson and coupled field solvers with units and verification cases",
+    "acquire authenticated rights-cleared official original publication files and independent source-to-equation audits",
+    "obtain external reviewer/experimental validation separate from code tests",
+    "link mathematics to Electronics & Semiconductors prerequisite graph without building the Bitwork router"
+  ],
+  "prior_directive": "/ATLAS FORGE/Roadmaps/ATLAS_FORGE_TECHNOLOGICAL_CONTINUITY_DIRECTIVE_v2.0.md",
+  "priority": "preserve_reconstructible_mathematics_physics_science_for_hardware_and_AI",
+  "schema": "atlas.technological-continuity-priority-math-active/2",
+  "status": "active_reference_research_increment"
+}

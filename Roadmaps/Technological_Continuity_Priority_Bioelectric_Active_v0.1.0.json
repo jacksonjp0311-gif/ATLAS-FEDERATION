@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "bioelectric-atlas",
+  "current_bioelectric_science": "bounded nonclinical software models; physical/clinical qualification HOLD",
+  "current_federation_release": "Bioelectric_v0.1.0",
+  "date": "2026-11-17",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.1.0",
+  "manufacturing_priority_10_already_exists": true,
+  "next_content_domain": "software-design-patterns-atlas",
+  "next_original_priority": 11,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 10,
+  "original_domain_count_unregistered": 20,
+  "previous_release": "Computer_Architecture_v0.5.0_continuity",
+  "schema": "atlas.active-priority-pointer/1"
+}

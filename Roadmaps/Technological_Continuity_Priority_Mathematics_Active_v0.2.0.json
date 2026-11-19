@@ -1,0 +1,28 @@
+{
+  "active_directive": "/ATLAS FORGE/Roadmaps/ATLAS_FORGE_TECHNOLOGICAL_CONTINUITY_DIRECTIVE_v2.0.md",
+  "all_scientific_content_domains_before_Bitwork": true,
+  "content_v1_accepted": false,
+  "current_domain": "mathematics-physics-atlas",
+  "current_tasks": [
+    "rank-revealing general SVD with conditioning and numerical certificates",
+    "stiff/nonlinear ODE method evidence and conservative PDE solvers",
+    "rights-cleared publisher source-byte acquisition and independent source-formula inspection",
+    "external expert scientific review and empirical lab provenance if available"
+  ],
+  "current_verified_edition": "0.2.0",
+  "date": "2026-11-15",
+  "integrated_validation_then_desktop_transfer": true,
+  "next_dependency_chain": [
+    "electronics-semiconductors-atlas",
+    "manufacturing-atlas",
+    "computer-architecture-atlas",
+    "compiler-design-atlas",
+    "neural-architectures-atlas"
+  ],
+  "next_unbuilt_domain": "electronics-semiconductors-atlas",
+  "no_Bitwork_router_or_desktop_modifications": true,
+  "original_30_domains_immutable": true,
+  "prior_active_priority_queue_unchanged": true,
+  "schema": "atlas.technological-continuity-math-active/1",
+  "status": "verified-research-increment-active-not-scientific-v1"
+}

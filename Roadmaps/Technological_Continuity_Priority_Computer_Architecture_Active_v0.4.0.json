@@ -1,0 +1,13 @@
+{
+  "schema": "atlas.active-priority-pointer/1",
+  "date": "2026-11-17",
+  "current_federation_release": "Computer_Architecture_v0.4.0",
+  "previous_release": "Computer_Architecture_v0.3.0",
+  "active_content_domain": "computer-architecture-digital-hardware-atlas",
+  "next_scope": "Computer Architecture scoped v1 content; first gate-level HDL and independent electrical validation",
+  "original_30_domain_queue_preserved": true,
+  "domain_libraries_before_Bitwork_router": true,
+  "integrated_validation_before_desktop_transfer": true,
+  "scientific_independent_acceptance": "HOLD",
+  "fabricated_CPU_demonstrated": false
+}

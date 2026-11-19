@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "network-stacks-atlas",
+  "current_federation_release": "Network_Stacks_v1.0.0",
+  "date": "2026-11-19",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "1.0.0",
+  "next_content_domain": "database-optimization-atlas",
+  "next_original_priority": 17,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 16,
+  "original_domain_count_unregistered": 14,
+  "previous_verified_release": "OS_Internals_v1.0.0",
+  "publisher_source_authentication_and_independent_science_review": "HOLD",
+  "real_network_hardware_interoperability_test": "HOLD",
+  "schema": "atlas.active-priority-pointer/1"
+}

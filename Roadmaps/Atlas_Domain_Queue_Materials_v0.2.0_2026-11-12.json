@@ -1,0 +1,234 @@
+{
+  "schema": "atlas.domain-queue/2",
+  "current_domain": "materials-atlas",
+  "navigation_phase": "routing_last_after_all_domain_content",
+  "existing_nodes": [
+    "signal-atlas",
+    "cymatics-atlas"
+  ],
+  "candidates": [
+    {
+      "priority": 1,
+      "name": "Measurement Atlas",
+      "node_id": "measurement-atlas",
+      "track": "foundational",
+      "status": "reference_candidate_preserved",
+      "version": "1.0.0-rc.1",
+      "final_acceptance": false
+    },
+    {
+      "priority": 2,
+      "name": "Causal Atlas",
+      "node_id": "causal-atlas",
+      "track": "foundational",
+      "status": "scoped_reference_content_v1_preserved",
+      "version": "1.0.0",
+      "final_acceptance": false,
+      "content_ready": true
+    },
+    {
+      "priority": 3,
+      "name": "Materials Atlas",
+      "node_id": "materials-atlas",
+      "track": "foundational",
+      "status": "content_development_active",
+      "version": "0.2.0",
+      "content_ready": false,
+      "final_acceptance": false
+    },
+    {
+      "priority": 4,
+      "name": "Control Atlas",
+      "node_id": "control-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 5,
+      "name": "Agent Atlas",
+      "node_id": "agent-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 6,
+      "name": "Computation Atlas",
+      "node_id": "computation-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 7,
+      "name": "Language Atlas",
+      "node_id": "language-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 8,
+      "name": "Energy Atlas",
+      "node_id": "energy-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 9,
+      "name": "Bioelectric Atlas",
+      "node_id": "bioelectric-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 10,
+      "name": "Manufacturing Atlas",
+      "node_id": "manufacturing-atlas",
+      "track": "foundational",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 11,
+      "name": "Software design patterns Atlas",
+      "node_id": "software-design-patterns-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 12,
+      "name": "Distributed systems Atlas",
+      "node_id": "distributed-systems-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 13,
+      "name": "Neural architectures Atlas",
+      "node_id": "neural-architectures-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 14,
+      "name": "Cryptographic protocols Atlas",
+      "node_id": "cryptographic-protocols-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 15,
+      "name": "OS internals Atlas",
+      "node_id": "os-internals-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 16,
+      "name": "Network stacks Atlas",
+      "node_id": "network-stacks-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 17,
+      "name": "Database optimization Atlas",
+      "node_id": "database-optimization-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 18,
+      "name": "Compiler design Atlas",
+      "node_id": "compiler-design-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 19,
+      "name": "Formal verification Atlas",
+      "node_id": "formal-verification-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 20,
+      "name": "Reinforcement learning Atlas",
+      "node_id": "reinforcement-learning-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 21,
+      "name": "Knowledge graphs Atlas",
+      "node_id": "knowledge-graphs-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 22,
+      "name": "Multi-agent coordination Atlas",
+      "node_id": "multi-agent-coordination-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 23,
+      "name": "Quantum algorithms Atlas",
+      "node_id": "quantum-algorithms-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 24,
+      "name": "Bioinformatics pipelines Atlas",
+      "node_id": "bioinformatics-pipelines-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 25,
+      "name": "Energy systems modeling Atlas",
+      "node_id": "energy-systems-modeling-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 26,
+      "name": "Supply chain dynamics Atlas",
+      "node_id": "supply-chain-dynamics-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 27,
+      "name": "Regulatory compliance Atlas",
+      "node_id": "regulatory-compliance-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 28,
+      "name": "Cognitive architectures Atlas",
+      "node_id": "cognitive-architectures-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 29,
+      "name": "Simulation and digital twins Atlas",
+      "node_id": "simulation-and-digital-twins-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    },
+    {
+      "priority": 30,
+      "name": "Metacognitive control loops Atlas",
+      "node_id": "metacognitive-control-loops-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built"
+    }
+  ],
+  "content_build_continuation_allowed": true,
+  "final_collection_release_accepted": false,
+  "policy_file": "BUILD_POLICY.json",
+  "routing_phase": "after_all_30_domain_content",
+  "desktop_transfer_phase": "after_all_30_content_and_routing"
+}

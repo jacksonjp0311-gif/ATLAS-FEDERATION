@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "neural-architectures-atlas",
+  "current_federation_release": "Distributed_Systems_v1.0.0",
+  "date": "2026-11-18",
+  "desktop_transfer": false,
+  "edition": "1.0.0",
+  "last_completed_content_node": "distributed-systems-atlas",
+  "next_content_domain": "neural-architectures-atlas",
+  "next_original_priority": 13,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 12,
+  "original_domain_count_unregistered": 18,
+  "physical_outage_durability_review": "HOLD",
+  "previous_verified_release": "Distributed_Systems_v0.1.0",
+  "schema": "atlas.active-priority-pointer/1",
+  "source_authentication_and_independent_science_review": "HOLD"
+}

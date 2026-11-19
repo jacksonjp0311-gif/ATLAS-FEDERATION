@@ -1,0 +1,12 @@
+{
+  "schema": "atlas.technological-continuity-manufacturing/2",
+  "date": "2026-11-16",
+  "active": "manufacturing-atlas",
+  "release": "0.2.0-reconciled",
+  "next_domain": "computer-architecture-digital-hardware-atlas",
+  "original_30_queue_preserved": true,
+  "Bitwork_router_modified": false,
+  "desktop_transfer": false,
+  "physical_manufacturing_evidence": "HOLD",
+  "historical_two_parent_reconciliation": true
+}

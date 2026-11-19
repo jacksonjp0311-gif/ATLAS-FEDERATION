@@ -1,0 +1,30 @@
+{
+  "schema": "atlas.technological-continuity-math-active/1",
+  "date": "2026-11-16",
+  "edition": "Mathematics_Physics_v1.0.0-rc.1",
+  "active_content_node": "mathematics-physics-atlas",
+  "previous_verified_release": "0.5.0",
+  "latest_verified_software_candidate": "v1.0.0-rc.1",
+  "scientific_scoped_v1_accepted": false,
+  "original_domain_queue": "DOMAIN_QUEUE.json",
+  "original_30_unchanged": true,
+  "priority_work_order": [
+    "Finish authenticated publisher-original sources and source-to-equation review",
+    "Obtain independent scientific review and disposition of corrections",
+    "Define independent empirical calibration boundary",
+    "Promote Math/Physics scoped v1 only with accepted evidence",
+    "Electronics and Semiconductors Atlas",
+    "Manufacturing and Computer Architecture",
+    "Remaining domain content libraries",
+    "Bitwork router after domain libraries",
+    "Integrated validation then desktop transfer"
+  ],
+  "compiler_and_neural_science_seed": "crosslink via records only, no early router",
+  "blocked_not_faked": [
+    "publisher source original bytes",
+    "independent scientific expert review",
+    "physical laboratory device calibration"
+  ],
+  "bitwork_router_modified": false,
+  "desktop_transfer": false
+}

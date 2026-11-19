@@ -1,0 +1,445 @@
+{
+  "schema": "atlas.technological-continuity-priority-overlay/2",
+  "issued": "2026-11-14",
+  "version": "2.0.0",
+  "active": true,
+  "supersedes": "ATLAS_FORGE_SURVIVAL_PRIORITY_QUEUE_v1.0.json",
+  "reason_for_revision": "User clarified that survival means preservation of foundational science and the ability to continue developing advanced AI and tools, not an emergency/prepper manual",
+  "mission": "Preserve the minimum sufficient, verifiable knowledge to reconstruct scientific instruments, hardware, software, machine learning and advanced technological civilization, with humanitarian continuity included as applied coverage",
+  "objective_function": "Maximize recoverable enabling knowledge, downstream technological dependencies, future AI research capability, source reliability, and offline reproducibility under uncertain completion time",
+  "canonical_original_30_sha256": "76e7bba0b069e8906b23260446bc779a6786b580df5ba7d7a91ab7d2155e09d1",
+  "canonical_original_30_count": 30,
+  "canonical_original_30_modified": false,
+  "existing_scientific_domain_nodes": [
+    {
+      "node_id": "measurement-atlas",
+      "original_slot": 1,
+      "status": "reference_candidate_preserved",
+      "version": "1.0.0-rc.1",
+      "content_ready": false
+    },
+    {
+      "node_id": "causal-atlas",
+      "original_slot": 2,
+      "status": "scoped_reference_content_v1_preserved",
+      "version": "1.0.0",
+      "content_ready": true
+    },
+    {
+      "node_id": "materials-atlas",
+      "original_slot": 3,
+      "status": "scoped_reference_content_v1_preserved",
+      "version": "1.0.0",
+      "content_ready": true
+    },
+    {
+      "node_id": "control-atlas",
+      "original_slot": 4,
+      "status": "v1_scoped_content_release_candidate",
+      "version": "1.0.0-rc.1",
+      "content_ready": false
+    },
+    {
+      "node_id": "agent-atlas",
+      "original_slot": 5,
+      "status": "scoped_reference_content_v1",
+      "version": "1.0.0",
+      "content_ready": true
+    },
+    {
+      "node_id": "computation-atlas",
+      "original_slot": 6,
+      "status": "scoped_reference_content_v1",
+      "version": "1.0.0",
+      "content_ready": true
+    },
+    {
+      "node_id": "language-atlas",
+      "original_slot": 7,
+      "status": "scoped_reference_content_v1",
+      "version": "1.0.0",
+      "content_ready": true
+    },
+    {
+      "node_id": "energy-atlas",
+      "original_slot": 8,
+      "status": "scoped_reference_content_v1",
+      "version": "1.0.0",
+      "content_ready": true
+    }
+  ],
+  "existing_companion_nodes": [
+    "signal-atlas",
+    "cymatics-atlas"
+  ],
+  "remaining_original_unbuilt_count": 22,
+  "new_missing_scientific_gap_count": 4,
+  "ordered_workstreams": [
+    {
+      "rank": 1,
+      "tier": "P0",
+      "node_id": "chemistry-atlas",
+      "name": "Chemistry & Chemical Engineering Atlas",
+      "kind": "new_scientific_dependency_gap",
+      "canonical_original_slot": null,
+      "status": "content_research_active",
+      "scientific_scope": "Chemistry, electrochemistry, thermodynamics, catalysis, chemical analysis, polymers, corrosion and process knowledge; safety and lawful source provenance",
+      "dependencies": [
+        "measurement-atlas",
+        "materials-atlas",
+        "energy-atlas"
+      ],
+      "reason": "Electrochemical and chemical engineering reasoning that supports batteries, materials and semiconductor processing",
+      "need_separate_scoped_slot_decision": true,
+      "version": "0.1.0",
+      "scoped_content_v1_ready": false
+    },
+    {
+      "rank": 2,
+      "tier": "P0",
+      "node_id": "mathematics-physics-atlas",
+      "name": "Mathematics & Fundamental Physics Atlas",
+      "kind": "new_scientific_dependency_gap",
+      "canonical_original_slot": null,
+      "status": "not_built",
+      "scientific_scope": "Algebra, calculus, differential equations, linear algebra, probability, optimization, electromagnetic theory and quantum foundations, with numerical verification",
+      "dependencies": [
+        "measurement-atlas",
+        "computation-atlas",
+        "causal-atlas"
+      ],
+      "reason": "A shared formal language for reconstructing physical science and implementing machine-learning models",
+      "need_separate_scoped_slot_decision": true
+    },
+    {
+      "rank": 3,
+      "tier": "P0",
+      "node_id": "electronics-semiconductors-atlas",
+      "name": "Electronics & Semiconductor Devices Atlas",
+      "kind": "new_scientific_dependency_gap",
+      "canonical_original_slot": null,
+      "status": "not_built",
+      "scientific_scope": "Circuit analysis, device physics, diodes/transistors, CMOS, analog-to-digital conversion, sensors, manufacturing interfaces and memory electronics",
+      "dependencies": [
+        "materials-atlas",
+        "energy-atlas",
+        "control-atlas"
+      ],
+      "reason": "From matter and electricity to transistors and digital signals",
+      "need_separate_scoped_slot_decision": true
+    },
+    {
+      "rank": 4,
+      "tier": "P0",
+      "node_id": "manufacturing-atlas",
+      "name": "Manufacturing Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 10,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 5,
+      "tier": "P0",
+      "node_id": "computer-architecture-atlas",
+      "name": "Computer Architecture & Digital Hardware Atlas",
+      "kind": "new_scientific_dependency_gap",
+      "canonical_original_slot": null,
+      "status": "not_built",
+      "scientific_scope": "Logic gates, CPU instruction sets, memory hierarchy, buses, accelerators, numeric formats, storage, parallelism and data movement",
+      "dependencies": [
+        "computation-atlas",
+        "electronics-semiconductors-atlas"
+      ],
+      "reason": "Recreate computers capable of executing and training advanced AI",
+      "need_separate_scoped_slot_decision": true
+    },
+    {
+      "rank": 6,
+      "tier": "P0",
+      "node_id": "supply-chain-dynamics-atlas",
+      "name": "Supply chain dynamics Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 26,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 7,
+      "tier": "P0",
+      "node_id": "compiler-design-atlas",
+      "name": "Compiler design Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 18,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 8,
+      "tier": "P0",
+      "node_id": "neural-architectures-atlas",
+      "name": "Neural architectures Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 13,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 9,
+      "tier": "P0",
+      "node_id": "os-internals-atlas",
+      "name": "OS internals Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 15,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 10,
+      "tier": "P0",
+      "node_id": "software-design-patterns-atlas",
+      "name": "Software design patterns Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 11,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 11,
+      "tier": "P1",
+      "node_id": "distributed-systems-atlas",
+      "name": "Distributed systems Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 12,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 12,
+      "tier": "P1",
+      "node_id": "network-stacks-atlas",
+      "name": "Network stacks Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 16,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 13,
+      "tier": "P1",
+      "node_id": "database-optimization-atlas",
+      "name": "Database optimization Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 17,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 14,
+      "tier": "P1",
+      "node_id": "knowledge-graphs-atlas",
+      "name": "Knowledge graphs Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 21,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 15,
+      "tier": "P1",
+      "node_id": "formal-verification-atlas",
+      "name": "Formal verification Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 19,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 16,
+      "tier": "P1",
+      "node_id": "cryptographic-protocols-atlas",
+      "name": "Cryptographic protocols Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 14,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 17,
+      "tier": "P1",
+      "node_id": "multi-agent-coordination-atlas",
+      "name": "Multi-agent coordination Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 22,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 18,
+      "tier": "P1",
+      "node_id": "energy-systems-modeling-atlas",
+      "name": "Energy systems modeling Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 25,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 19,
+      "tier": "P1",
+      "node_id": "simulation-and-digital-twins-atlas",
+      "name": "Simulation and digital twins Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 29,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 20,
+      "tier": "P2",
+      "node_id": "reinforcement-learning-atlas",
+      "name": "Reinforcement learning Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 20,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 21,
+      "tier": "P2",
+      "node_id": "cognitive-architectures-atlas",
+      "name": "Cognitive architectures Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 28,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 22,
+      "tier": "P2",
+      "node_id": "metacognitive-control-loops-atlas",
+      "name": "Metacognitive control loops Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 30,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 23,
+      "tier": "P2",
+      "node_id": "bioelectric-atlas",
+      "name": "Bioelectric Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 9,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 24,
+      "tier": "P2",
+      "node_id": "bioinformatics-pipelines-atlas",
+      "name": "Bioinformatics pipelines Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 24,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 25,
+      "tier": "P2",
+      "node_id": "regulatory-compliance-atlas",
+      "name": "Regulatory compliance Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 27,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    },
+    {
+      "rank": 26,
+      "tier": "P2",
+      "node_id": "quantum-algorithms-atlas",
+      "name": "Quantum algorithms Atlas",
+      "kind": "original_30_unbuilt",
+      "canonical_original_slot": 23,
+      "status": "queued_not_built",
+      "need_separate_scoped_slot_decision": false
+    }
+  ],
+  "retained_original_30_domain_ids": [
+    "agent-atlas",
+    "bioelectric-atlas",
+    "bioinformatics-pipelines-atlas",
+    "causal-atlas",
+    "cognitive-architectures-atlas",
+    "compiler-design-atlas",
+    "computation-atlas",
+    "control-atlas",
+    "cryptographic-protocols-atlas",
+    "database-optimization-atlas",
+    "distributed-systems-atlas",
+    "energy-atlas",
+    "energy-systems-modeling-atlas",
+    "formal-verification-atlas",
+    "knowledge-graphs-atlas",
+    "language-atlas",
+    "manufacturing-atlas",
+    "materials-atlas",
+    "measurement-atlas",
+    "metacognitive-control-loops-atlas",
+    "multi-agent-coordination-atlas",
+    "network-stacks-atlas",
+    "neural-architectures-atlas",
+    "os-internals-atlas",
+    "quantum-algorithms-atlas",
+    "regulatory-compliance-atlas",
+    "reinforcement-learning-atlas",
+    "simulation-and-digital-twins-atlas",
+    "software-design-patterns-atlas",
+    "supply-chain-dynamics-atlas"
+  ],
+  "new_gap_policy": "Four proposed scientific/technical enabling nodes are additional workstreams; do not silently delete or overwrite any of the canonical thirty slots. Decide explicit approved scope remapping before formal thirty-node reallocation.",
+  "survival_prepper_overlay_policy": "Superseded as active build order. Water, food, shelter, sanitation and public health remain essential applications and foundational sections within Chemistry, Energy, Materials, Bioelectric/Bioinformatics and Manufacturing; develop specialized packets only if evidence gaps require them, rather than prioritizing prepper guides.",
+  "build_strategy": {
+    "first_phase": "Preserve short working seeds of chemistry, math/physics, semiconductor electronics, manufacturing, computer architecture and neural architectures in parallel, even before all are polished",
+    "then": "Complete computing toolchain and machine learning system dependencies",
+    "later": "Deepen specialized agentic AI, bio-computation, frontier fields and regulatory coverage",
+    "router": "Only after all domain content is built, as previously agreed",
+    "desktop_transfer": "Only after integrated evaluation and archive restoration; no automatic transfer now"
+  },
+  "minimum_reconstructible_node_contract": [
+    "original explanatory text plus definitions and SI/other declared units",
+    "dependency and prerequisites map with the lowest feasible starting resources",
+    "equations, derivations and algorithms with constrained assumptions",
+    "at least one runnable/offline worked example, plus counterexample and failure mode",
+    "source authors/editions/rights and original-byte hashes only when actually acquired",
+    "tested source code, file checksums, independent verification and offline restore instructions",
+    "explicit separate evidence statuses for mathematical proof, physical implementation, expert review and source-byte survival"
+  ],
+  "horizon_checkpoints": [
+    {
+      "if_work_stops_after": "Now",
+      "must_survive": "Existing ten-node archive, accurate 30-domain queue, scope gaps, restoration/verification steps, short core chemistry-electronics-neural seed"
+    },
+    {
+      "if_work_stops_after": "Early P0",
+      "must_survive": "Chemical and mathematical foundations, electronics hardware model, manufacturing/precision methods and reproducible compiler/model examples"
+    },
+    {
+      "if_work_stops_after": "Full P0",
+      "must_survive": "An intelligible chain from fundamental materials and energy through computers, software, and neural architectures"
+    },
+    {
+      "if_work_stops_after": "P1",
+      "must_survive": "Distributed computing, data integrity, networks, cryptography, evaluation and coordinated agent tools"
+    },
+    {
+      "if_work_stops_after": "All planned domains",
+      "must_survive": "Broader AI/science reference, then tested Bitwork router, integrated evaluation and desktop restore"
+    }
+  ],
+  "current_complete_reference": "Energy Atlas 1.0.0 scoped content and nine prior/companion nodes; not independently scientifically peer-reviewed",
+  "next_domain": "chemistry-atlas",
+  "change_type": "planning_priority_only_no_modification_of_30_node_archive_or_runtime",
+  "latest_chemistry_release": "0.1.0",
+  "scientific_foundation_ready": false
+}

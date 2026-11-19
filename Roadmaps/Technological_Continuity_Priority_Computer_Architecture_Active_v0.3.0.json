@@ -1,0 +1,17 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "computer-architecture-digital-hardware-atlas",
+  "current_content_priority": "Computer Architecture: evidence-qualified boot, compiler-to-runtime, gate/RTL timing correspondence toward scoped v1",
+  "date": "2026-11-17",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.3.0",
+  "independent_scientific_acceptance": false,
+  "last_verified_software_release": "Computer_Architecture_v0.3.0",
+  "next_content_goal": "Finish Computer Architecture scoped software references while progressing original domain roadmap; verify hardware on actual devices",
+  "original_30_domain_queue_preserved": true,
+  "physical_evidence_required_types_unverified": 12,
+  "previous_verified_release": "Computer_Architecture_v0.2.0",
+  "schema": "atlas.active-priority-pointer/1",
+  "source_originals_authenticated": 0
+}

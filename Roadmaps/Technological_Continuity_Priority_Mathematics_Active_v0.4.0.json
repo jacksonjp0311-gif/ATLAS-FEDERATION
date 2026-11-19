@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.technological-continuity-math-active/1",
+  "date": "2026-11-15",
+  "edition": "Mathematics_Physics_0.4.0",
+  "active_content_node": "mathematics-physics-atlas",
+  "prior_active_overlay": "roadmaps/TECHNOLOGICAL_CONTINUITY_PRIORITY_v2.1_math_v03_active.json",
+  "original_domain_queue": "DOMAIN_QUEUE.json",
+  "original_30_unchanged": true,
+  "work_order": [
+    "Mathematics/Physics scoped content v1 gaps",
+    "Electronics/Semiconductors Atlas",
+    "Manufacturing and Computer Architecture",
+    "additional full domain content",
+    "Bitwork router after domains",
+    "integration and desktop transfer last"
+  ],
+  "scientific_unmet_gates": [
+    "authenticated publisher source transport",
+    "external scientific peer review",
+    "measured dielectric/semiconductor calibration",
+    "broad nonlinear multiphysics with tested uncertainty propagation"
+  ],
+  "bitwork_router_modified": false,
+  "desktop_transfer": false
+}

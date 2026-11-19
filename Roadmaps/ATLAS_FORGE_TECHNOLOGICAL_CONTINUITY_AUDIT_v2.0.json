@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "source_queue_sha256": "76e7bba0b069e8906b23260446bc779a6786b580df5ba7d7a91ab7d2155e09d1",
+  "ranked_workstreams": 26,
+  "original_unbuilt_preserved": 22,
+  "new_gaps": 4,
+  "initial_priority": "chemistry-atlas",
+  "prior_survival_overlay_superseded": true,
+  "canonical_30_unchanged": true,
+  "revision_applies_to": "editorial priority only"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "atlas.technological-continuity-electronics-active/1",
+  "date": "2026-11-16",
+  "active_content_domain": "electronics-semiconductors-atlas",
+  "edition": "0.2.0",
+  "prior_edition": "0.1.0",
+  "original_domain_queue_unchanged": true,
+  "prior_nodes_unchanged": true,
+  "bitwork_router_modified": false,
+  "next_queued": [
+    "Electronics & Semiconductors deepen to scoped evidence maturity",
+    "Manufacturing Atlas",
+    "Computer Architecture & Digital Hardware Atlas",
+    "other scientific content domains",
+    "Bitwork routing only after content domains",
+    "integration and desktop transfer last"
+  ],
+  "scientific_gates_open": [
+    "independent external review",
+    "authentic publisher originals",
+    "calibrated physical devices",
+    "fabrication processes"
+  ]
+}

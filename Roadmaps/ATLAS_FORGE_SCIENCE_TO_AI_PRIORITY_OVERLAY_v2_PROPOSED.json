@@ -1,0 +1,354 @@
+{
+  "schema": "atlas.science-ai-priority-overlay/2",
+  "issued": "2026-11-14",
+  "status": "proposed_pending_review",
+  "purpose": "civilization_scientific_and_advanced_ai_continuity",
+  "supersedes_editorial_priorities": "ATLAS_FORGE_SURVIVAL_PRIORITY_QUEUE_v1.0.json",
+  "canonical_original_30_sha256": "76e7bba0b069e8906b23260446bc779a6786b580df5ba7d7a91ab7d2155e09d1",
+  "canonical_30_roster_modified": false,
+  "prior_node_data_modified": false,
+  "prior_eight_nodes": [
+    {
+      "node_id": "measurement-atlas",
+      "name": "Measurement Atlas",
+      "version": "1.0.0-rc.1",
+      "content_ready": false,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "causal-atlas",
+      "name": "Causal Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "materials-atlas",
+      "name": "Materials Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "control-atlas",
+      "name": "Control Atlas",
+      "version": "1.0.0-rc.1",
+      "content_ready": false,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "agent-atlas",
+      "name": "Agent Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "computation-atlas",
+      "name": "Computation Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "language-atlas",
+      "name": "Language Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    },
+    {
+      "node_id": "energy-atlas",
+      "name": "Energy Atlas",
+      "version": "1.0.0",
+      "content_ready": true,
+      "final_acceptance": false
+    }
+  ],
+  "companions_preserved": [
+    "signal-atlas",
+    "cymatics-atlas"
+  ],
+  "original_unbuilt_domain_count": 22,
+  "proposed_new_foundational_domain_count": 4,
+  "proposed_unbuilt_tracks_count": 26,
+  "resulting_content_domains_if_all_new_adopted": 34,
+  "ranked_unbuilt_tracks": [
+    {
+      "node_id": "chemistry-atlas",
+      "name": "Chemistry Atlas",
+      "kind": "proposed_scientific_gap",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": "Atomic/molecular structure, periodic behavior, stoichiometry, reaction kinetics/thermodynamics, electrochemistry, catalysis, polymers, biochemistry and safe laboratory metrology.",
+      "original_slot": null,
+      "rank": 1
+    },
+    {
+      "node_id": "mathematics-numerical-methods-atlas",
+      "name": "Mathematics & Numerical Methods Atlas",
+      "kind": "proposed_scientific_gap",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": "Logic and proofs, calculus, linear algebra, probability/statistics, optimization, differential equations, numerical stability and reproducible solvers.",
+      "original_slot": null,
+      "rank": 2
+    },
+    {
+      "node_id": "physics-electronics-atlas",
+      "name": "Physics & Electronics Atlas",
+      "kind": "proposed_scientific_gap",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": "Mechanics, fields, waves, electromagnetism, solid-state foundations, circuit/network theory, measurement and signal processing.",
+      "original_slot": null,
+      "rank": 3
+    },
+    {
+      "node_id": "semiconductor-hardware-atlas",
+      "name": "Semiconductor & Computer Hardware Atlas",
+      "kind": "proposed_scientific_gap",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": "Transistors, logic gates, memory, processors, interconnects, storage, physical design, manufacture, repair constraints and test methods.",
+      "original_slot": null,
+      "rank": 4
+    },
+    {
+      "node_id": "manufacturing-atlas",
+      "name": "Manufacturing Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 10,
+      "rank": 5
+    },
+    {
+      "node_id": "compiler-design-atlas",
+      "name": "Compiler design Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 18,
+      "rank": 6
+    },
+    {
+      "node_id": "os-internals-atlas",
+      "name": "OS internals Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 15,
+      "rank": 7
+    },
+    {
+      "node_id": "software-design-patterns-atlas",
+      "name": "Software design patterns Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 11,
+      "rank": 8
+    },
+    {
+      "node_id": "network-stacks-atlas",
+      "name": "Network stacks Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 16,
+      "rank": 9
+    },
+    {
+      "node_id": "distributed-systems-atlas",
+      "name": "Distributed systems Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 12,
+      "rank": 10
+    },
+    {
+      "node_id": "database-optimization-atlas",
+      "name": "Database optimization Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 17,
+      "rank": 11
+    },
+    {
+      "node_id": "neural-architectures-atlas",
+      "name": "Neural architectures Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P0",
+      "purpose": null,
+      "original_slot": 13,
+      "rank": 12
+    },
+    {
+      "node_id": "formal-verification-atlas",
+      "name": "Formal verification Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 19,
+      "rank": 13
+    },
+    {
+      "node_id": "knowledge-graphs-atlas",
+      "name": "Knowledge graphs Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 21,
+      "rank": 14
+    },
+    {
+      "node_id": "multi-agent-coordination-atlas",
+      "name": "Multi-agent coordination Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 22,
+      "rank": 15
+    },
+    {
+      "node_id": "cryptographic-protocols-atlas",
+      "name": "Cryptographic protocols Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 14,
+      "rank": 16
+    },
+    {
+      "node_id": "simulation-and-digital-twins-atlas",
+      "name": "Simulation and digital twins Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 29,
+      "rank": 17
+    },
+    {
+      "node_id": "reinforcement-learning-atlas",
+      "name": "Reinforcement learning Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 20,
+      "rank": 18
+    },
+    {
+      "node_id": "bioelectric-atlas",
+      "name": "Bioelectric Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 9,
+      "rank": 19
+    },
+    {
+      "node_id": "bioinformatics-pipelines-atlas",
+      "name": "Bioinformatics pipelines Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 24,
+      "rank": 20
+    },
+    {
+      "node_id": "energy-systems-modeling-atlas",
+      "name": "Energy systems modeling Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P1",
+      "purpose": null,
+      "original_slot": 25,
+      "rank": 21
+    },
+    {
+      "node_id": "supply-chain-dynamics-atlas",
+      "name": "Supply chain dynamics Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P2",
+      "purpose": null,
+      "original_slot": 26,
+      "rank": 22
+    },
+    {
+      "node_id": "cognitive-architectures-atlas",
+      "name": "Cognitive architectures Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P2",
+      "purpose": null,
+      "original_slot": 28,
+      "rank": 23
+    },
+    {
+      "node_id": "metacognitive-control-loops-atlas",
+      "name": "Metacognitive control loops Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P2",
+      "purpose": null,
+      "original_slot": 30,
+      "rank": 24
+    },
+    {
+      "node_id": "regulatory-compliance-atlas",
+      "name": "Regulatory compliance Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P2",
+      "purpose": null,
+      "original_slot": 27,
+      "rank": 25
+    },
+    {
+      "node_id": "quantum-algorithms-atlas",
+      "name": "Quantum algorithms Atlas",
+      "kind": "original_30_unbuilt",
+      "status": "not_built",
+      "tier": "P2",
+      "purpose": null,
+      "original_slot": 23,
+      "rank": 26
+    }
+  ],
+  "execution": "minimum_reconstructible_kernel_across_top_domains_before_deep_v1_polish",
+  "minimum_seed_contents": [
+    "definitions_and_science",
+    "mathematical_derivation_or_mechanism",
+    "reproducible_example",
+    "limits_and_counterexamples",
+    "provenance_and_rights",
+    "machine_readable_versioned_records",
+    "offline_restore",
+    "explicit_unknowns"
+  ],
+  "next_content_track": "chemistry-atlas",
+  "routing_phase": "after_all_revised_content_domains_complete",
+  "desktop_transfer_phase": "after_routing_and_integrated_evaluation",
+  "science_acceptance_separate_from_software_tests": true,
+  "note": "A proposal for priorities, not a modification of the original canonical queue. Approval and separate versioned scope mapping needed for a permanent 34-node domain roster."
+}

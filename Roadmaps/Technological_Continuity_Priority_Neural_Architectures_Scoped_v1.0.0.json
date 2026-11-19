@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "neural-architectures-atlas",
+  "current_federation_release": "Neural_Architectures_v1.0.0",
+  "date": "2026-11-18",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "1.0.0",
+  "model_training_and_hardware_validation": "HOLD",
+  "next_content_domain": "cryptographic-protocols-atlas",
+  "next_original_priority": 14,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 13,
+  "original_domain_count_unregistered": 17,
+  "previous_verified_release": "Distributed_Systems_v1.0.0",
+  "schema": "atlas.active-priority-pointer/1",
+  "source_authentication_and_independent_science_review": "HOLD"
+}

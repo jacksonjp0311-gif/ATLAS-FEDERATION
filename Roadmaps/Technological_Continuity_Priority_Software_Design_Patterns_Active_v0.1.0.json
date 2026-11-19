@@ -1,0 +1,18 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "software-design-patterns-atlas",
+  "current_federation_release": "Software_Design_Patterns_v0.1.0",
+  "date": "2026-11-17",
+  "desktop_transfer": false,
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "0.1.0",
+  "next_content_domain": "distributed-systems-atlas",
+  "next_original_priority": 12,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 11,
+  "original_domain_count_unregistered": 19,
+  "physical_outage_durability_review": "HOLD",
+  "previous_verified_release": "Bioelectric_v0.1.0",
+  "schema": "atlas.active-priority-pointer/1",
+  "source_authentication_and_independent_science_review": "HOLD"
+}

@@ -1,0 +1,25 @@
+{
+  "active_content_node": "mathematics-physics-atlas",
+  "bitwork_router_modified": false,
+  "date": "2026-11-16",
+  "desktop_transfer": false,
+  "edition": "Mathematics_Physics_0.5.0",
+  "original_30_unchanged": true,
+  "original_domain_queue": "DOMAIN_QUEUE.json",
+  "prior_active_overlay": "/ATLAS FORGE/Roadmaps/Technological_Continuity_Priority_Mathematics_Active_v0.4.0.json",
+  "schema": "atlas.technological-continuity-math-active/1",
+  "scientific_unmet_gates": [
+    "publisher-original source bytes and rights",
+    "independent scientific review",
+    "measured semiconductor device calibration",
+    "coupled nonlinear carrier continuity and electrostatics with verified uncertainty"
+  ],
+  "work_order": [
+    "Mathematics/Physics scoped content v1: validated nonlinear numerical foundations and original source acquisition",
+    "Electronics/Semiconductors Atlas",
+    "Manufacturing and Computer Architecture",
+    "Complete remaining domains",
+    "Build Bitwork router after domain content",
+    "Integrated validation then desktop transfer"
+  ]
+}
