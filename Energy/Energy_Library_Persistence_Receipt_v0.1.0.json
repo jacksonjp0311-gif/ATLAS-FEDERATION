@@ -1,0 +1,69 @@
+{
+  "schema": "atlas.energy-library-persistence/1",
+  "version": "0.1.0",
+  "date": "2026-11-14",
+  "status": "completed_multipart_restore_verified",
+  "full_archive_name": "ATLAS_COLLECTION_Energy_v0.1.0.zip",
+  "full_archive_sha256": "14f3ed75e27ac0c6649d4e7ea6dc8cb5fa8557d11e3257c06c3195806c9dd173",
+  "full_archive_bytes": 585118030,
+  "original_conversation_artifact": "sandbox:/mnt/data/ATLAS_COLLECTION_Energy_v0.1.0.zip",
+  "single_library_zip_upload": "failed_file_too_large",
+  "persistent_library_root": "/ATLAS FORGE/Releases/Energy_v0.1.0_full_archive_parts",
+  "parts": [
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part001",
+      "size_bytes": 67108864,
+      "sha256": "309e3d5b384b53d2f4fcc886f00c848b2aa9f739507298419667dda8ad142c3e"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part002",
+      "size_bytes": 67108864,
+      "sha256": "764e47ed8e740062dc7395b2911eca22c9f362f2eb017283414bab3341b885f9"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part003",
+      "size_bytes": 67108864,
+      "sha256": "0677b8fdc4337b814424397ebd19a6d0b98aa8e4e27189d1cc253086c0caa2e4"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part004",
+      "size_bytes": 67108864,
+      "sha256": "c6aec665212b811c5b49abaea98de611b984f15018a87c644990d48163192297"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part005",
+      "size_bytes": 67108864,
+      "sha256": "3b8d97c50a4ceac37fca111e948251f8a0d84b4748f41b9331f51c123b697d5a"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part006",
+      "size_bytes": 67108864,
+      "sha256": "a8052865b51628bccc61417298e6db7227538418268c60629863f2651b875649"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part007",
+      "size_bytes": 67108864,
+      "sha256": "4f83b455d94fb60c8570bb97747d69152273fd7645cbfdebcf76d97c27f73a9a"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part008",
+      "size_bytes": 67108864,
+      "sha256": "9608f94f44b6ff53093b2cd1f83ec5f8ab48c428877329862832b10b4f88c6f4"
+    },
+    {
+      "name": "ATLAS_COLLECTION_Energy_v0.1.0.zip.part009",
+      "size_bytes": 48247118,
+      "sha256": "fd4f0d0b3ec02857591b1a5fd27d2aa6d63a3b4c5be160662c89889af87a9765"
+    }
+  ],
+  "source_integrity": "exact_byte_chunks_from_final_verified_archive",
+  "restore_procedure": "Place all nine parts and MULTIPART_MANIFEST.json and RESTORE_FULL_COLLECTION.py together, then python RESTORE_FULL_COLLECTION.py .",
+  "restoration_actually_executed": "passed",
+  "reconstructed_sha256": "14f3ed75e27ac0c6649d4e7ea6dc8cb5fa8557d11e3257c06c3195806c9dd173",
+  "reconstructed_zip_integrity": "passed",
+  "standalone_energy_release_in_library": true,
+  "full_release_receipt_in_library": true,
+  "all_other_uploaded_scientific_documents_in_library": true,
+  "scientific_review": false,
+  "authenticated_publisher_primary_sources": 0
+}

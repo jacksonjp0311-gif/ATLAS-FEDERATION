@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.energy-v1-preservation/1",
+  "status": "passed",
+  "previous_archive_filename": "ATLAS_COLLECTION_Energy_v0.2.0.zip",
+  "previous_archive_sha256": "7625b52e79e01acc226f018cc6480b519c148ac142850f615afc0162b447ed35",
+  "protected_prior_archive_files_byte_identical": 2327,
+  "protected_files_changed": [],
+  "snapshot_files": 283,
+  "old_v0.2_tests_unmodified": true,
+  "prior_archive_available_from_user_library_nine_parts": true,
+  "snapshot_sha256_file_list": "history/energy_v0.2.0_test_snapshot/FILE_CHECKSUMS.json",
+  "limitations": [
+    "Checksum preservation is not independent scientific validation or host authentication",
+    "Snapshot contains only historical suite dependencies, not all earlier nested archives"
+  ]
+}

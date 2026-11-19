@@ -1,0 +1,22 @@
+{
+  "schema": "atlas.energy-derived-constants/1",
+  "edition": "0.1.0",
+  "sources": [
+    "https://physics.nist.gov/cuu/Constants/",
+    "https://www.bipm.org/en/publications/si-brochure"
+  ],
+  "source_scope": "Original compact project-created values table assembled from published SI definitions and NIST CODATA 2022 public page; NOT original publisher transport bytes and NOT independently validated",
+  "primary_publisher_source_bytes_archived": false,
+  "reproduction_note": "Confirm original recommended constants, date/version, units and defining-value status at the publisher before high-precision measurements",
+  "constants": {
+    "c": {"value": 299792458, "unit": "m/s", "defining_exact": true},
+    "h": {"value": 6.62607015e-34, "unit": "J s", "defining_exact": true},
+    "e": {"value": 1.602176634e-19, "unit": "C", "defining_exact": true},
+    "k_B": {"value": 1.380649e-23, "unit": "J/K", "defining_exact": true},
+    "N_A": {"value": 6.02214076e23, "unit": "mol^-1", "defining_exact": true},
+    "g_n": {"value": 9.80665, "unit": "m/s^2", "defining_exact": true, "note": "conventional standard acceleration, NOT the local gravitational acceleration"},
+    "sigma": {"value": 5.670374419e-8, "unit": "W m^-2 K^-4", "defining_exact": false, "note": "decimal approximation to derived constant"}
+  },
+  "rights": "Project-authored compact source-derived metadata; NIST/BIPM original source rights not independently cleared for mirroring",
+  "independent_expert_review": false
+}
