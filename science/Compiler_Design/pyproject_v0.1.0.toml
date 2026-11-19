@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-compiler-design-reference"
+version = "0.1.0"
+description = "ATLAS FORGE original federation's bounded educational typed compiler"
+requires-python = ">=3.11"
+[tool.setuptools.packages.find]
+include = ["compiler_atlas*"]
