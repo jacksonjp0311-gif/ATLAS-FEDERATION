@@ -1,0 +1,9 @@
+Feature,Nominal_design_mm,Actual_measured_mm,Required_functional_tolerance_mm,Status,Notes
+Flange outer diameter,40.0,,,UNVERIFIED,
+Overall height,33.0,,,UNVERIFIED,
+Core winding diameter,16.0,,,UNVERIFIED,
+Through bore diameter,8.4,,,UNVERIFIED,Measure actual mating shaft if used
+Upper sloped shoulder,12.0 rise,,,UNVERIFIED,Check print support and warping
+Interlayer adhesion,not numerically specified,,,UNVERIFIED,Inspect material bonding visually; no load rating
+Heat exposure,not qualified,,,HOLD,Never install near high temperature sources
+Functional coil behavior,not modeled,,,HOLD,Requires low-voltage instrumented experiment

@@ -1,0 +1,38 @@
+{
+  "canonical_checkpoint_sha256": "f6920a47f0c6cd088e61b8df466172c0cbf9dc2e62a99848eb799ea1b4a1c3cd",
+  "canonical_checkpoint_unchanged": true,
+  "canonical_original_30_domain_queue_unchanged": true,
+  "companion_clean_extraction_verified_files": 29,
+  "companion_tests_passed_twice": 23,
+  "date": "2026-11-17",
+  "digital_STL_watertight_and_independently_rendered": true,
+  "full_federation_offline_regression_tests_passed": 2706,
+  "library_path": "/ATLAS FORGE/Continuity_Toolkit/Offline_Fabrication_Readiness_v0.1.0/",
+  "local_power_system_tested": false,
+  "physical_print_validated": false,
+  "readback_files": {
+    "ATLAS_BLACKOUT_FIELD_CARD.pdf": {
+      "readback_exact": true,
+      "sha256": "cbd22563d0978014283821259c06294f5d56050fb839967c80d9fe3a63bbe621"
+    },
+    "ATLAS_COIL_FORMER.stl": {
+      "readback_exact": true,
+      "sha256": "3eb16babdb932d521f1a4cdbaef220d42cb9d9251d39c58b33c432e3f7d44edb"
+    },
+    "ATLAS_FABRICATION_READINESS_RELEASE_RECEIPT.json": {
+      "readback_exact": true,
+      "sha256": "49bf0fdca9257c35c3fbe923ce4c9ff3f8047b9e46f45cfe3a68a5ca8335652d"
+    },
+    "ATLAS_OFFLINE_FABRICATION_READINESS_v0.1.0.zip": {
+      "readback_exact": true,
+      "sha256": "733598042933abc5195b18e6ef7e3b7ef561c15012dd27ff5c2cb0d03c28a53b"
+    },
+    "READINESS_ASSESSMENT.md": {
+      "readback_exact": true,
+      "sha256": "4894f9076f91bd0d3be89bd731b81e1be7ef72716bcef7dd76a2747c252f63e0"
+    }
+  },
+  "result": "PASSED_LIBRARY_PUBLICATION_READBACK",
+  "schema": "atlas.original-federation-offline-fabrication-publication/1",
+  "slicer_generated_gcode": false
+}

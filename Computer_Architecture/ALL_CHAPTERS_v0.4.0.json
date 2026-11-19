@@ -1,0 +1,307 @@
+{
+  "schema": "atlas.computer-v04-all-chapter-index/1",
+  "edition": "0.4.0",
+  "count": 60,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "01. Architecture, microarchitecture, and reconstruction contracts",
+      "path": "docs/chapters/01_architecture_microarchitecture_and_evidence.md"
+    },
+    {
+      "number": 2,
+      "title": "02. Binary words, two\u2019s complement, carry, and signed overflow",
+      "path": "docs/chapters/02_binary_words_sign_overflow_and_flags.md"
+    },
+    {
+      "number": 3,
+      "title": "03. NAND gates, XOR, full adders, and compositional arithmetic",
+      "path": "docs/chapters/03_nand_combinational_primitives_and_adders.md"
+    },
+    {
+      "number": 4,
+      "title": "04. Four-register file, reset state, and instruction atomicity",
+      "path": "docs/chapters/04_register_file_state_reset_and_read_write.md"
+    },
+    {
+      "number": 5,
+      "title": "05. ALU functions and the register-to-register datapath",
+      "path": "docs/chapters/05_alu_operations_flags_and_datapath.md"
+    },
+    {
+      "number": 6,
+      "title": "06. AT8 encoding: fixed 2-byte instructions and strict decoder",
+      "path": "docs/chapters/06_fixed_instruction_encoding_and_reserved_bits.md"
+    },
+    {
+      "number": 7,
+      "title": "07. An auditable two-pass assembler with labels and diagnostics",
+      "path": "docs/chapters/07_assembler_two_pass_labels_and_relocation.md"
+    },
+    {
+      "number": 8,
+      "title": "08. Program ROM, data RAM, and the memory address map",
+      "path": "docs/chapters/08_program_rom_and_data_ram_separation.md"
+    },
+    {
+      "number": 9,
+      "title": "09. Fetch, decode, execute, commit: a finite control unit",
+      "path": "docs/chapters/09_control_microstates_fetch_decode_execute_commit.md"
+    },
+    {
+      "number": 10,
+      "title": "10. Program counter, conditional branches, and bounded termination",
+      "path": "docs/chapters/10_pc_relative_execution_branches_and_termination.md"
+    },
+    {
+      "number": 11,
+      "title": "11. Input/output ports as deterministic recorded event tapes",
+      "path": "docs/chapters/11_deterministic_io_ports_and_event_tapes.md"
+    },
+    {
+      "number": 12,
+      "title": "12. Traps, illegal opcodes, and failure atomicity",
+      "path": "docs/chapters/12_traps_illegal_instructions_and_atomic_failure.md"
+    },
+    {
+      "number": 13,
+      "title": "13. Reset vector, boot ROM, and immutable firmware checksums",
+      "path": "docs/chapters/13_boot_reset_firmware_image_and_integrity.md"
+    },
+    {
+      "number": 14,
+      "title": "14. Offline programming pipeline from assembly to ROM and execution trace",
+      "path": "docs/chapters/14_assembly_to_machine_code_reproducible_toolchain.md"
+    },
+    {
+      "number": 15,
+      "title": "15. Differential testing: atomic model, microcycles, and third oracle",
+      "path": "docs/chapters/15_differential_verification_and_independent_oracles.md"
+    },
+    {
+      "number": 16,
+      "title": "16. Clock timing from digital control to physical register requirements",
+      "path": "docs/chapters/16_clock_timing_setup_hold_and_physical_limits.md"
+    },
+    {
+      "number": 17,
+      "title": "17. Memory reliability: parity, SECDED, retention and fault detection",
+      "path": "docs/chapters/17_memory_reliability_ecc_and_fault_injection.md"
+    },
+    {
+      "number": 18,
+      "title": "18. Constructing loops, branching programs, and stateful computations",
+      "path": "docs/chapters/18_finite_state_loops_and_structured_programs.md"
+    },
+    {
+      "number": 19,
+      "title": "19. Interrupts, privilege, timers, and memory-mapped I/O: missing architecture",
+      "path": "docs/chapters/19_interrupts_traps_privilege_and_mmio_future.md"
+    },
+    {
+      "number": 20,
+      "title": "20. Pipelines, dependencies, caches and memory hierarchy: research extensions",
+      "path": "docs/chapters/20_pipelines_hazards_and_memory_hierarchy_future.md"
+    },
+    {
+      "number": 21,
+      "title": "21. Architectural invariants, refinement obligations, and finite exhaustive testing",
+      "path": "docs/chapters/21_formal_properties_invariants_and_testability.md"
+    },
+    {
+      "number": 22,
+      "title": "22. Evidence-gated bridge from mathematical CPU to manufactured electronics",
+      "path": "docs/chapters/22_manufacturing_evidence_gates_and_physical_chip.md"
+    },
+    {
+      "number": 23,
+      "title": "23. Offline preservation: exact revisions, rights, sources, and reproducible builds",
+      "path": "docs/chapters/23_long_term_preservation_checksums_rights_and_rebuild.md"
+    },
+    {
+      "number": 24,
+      "title": "24. From an 8-bit computer contract to compilers, operating systems, and AI",
+      "path": "docs/chapters/24_architecture_to_compiler_os_ai_reconstruction_roadmap.md"
+    },
+    {
+      "number": 25,
+      "title": "25. Preserving byte-exact AT8 semantics and an explicit programming contract",
+      "path": "docs/chapters/25_isa_compatibility_and_machine_abi.md"
+    },
+    {
+      "number": 26,
+      "title": "26. A bounded structured-language compiler from source to AT8 ROM",
+      "path": "docs/chapters/26_structured_source_to_bytecode_compiler.md"
+    },
+    {
+      "number": 27,
+      "title": "27. Nested counted loops and compiler-owned register allocation",
+      "path": "docs/chapters/27_nested_loops_register_allocation_and_counter_safety.md"
+    },
+    {
+      "number": 28,
+      "title": "28. Static control-flow graphs, unreachable code and conservative halting analysis",
+      "path": "docs/chapters/28_control_flow_static_reachability_and_conservative_halting.md"
+    },
+    {
+      "number": 29,
+      "title": "29. Reproducible source-to-ROM builds, content hashes and provenance",
+      "path": "docs/chapters/29_source_rom_rebuild_receipts_and_canonical_identity.md"
+    },
+    {
+      "number": 30,
+      "title": "30. Byte-wide SECDED (13,8) error control for executable ROM",
+      "path": "docs/chapters/30_ecc_13_8_memory_rom_error_protection.md"
+    },
+    {
+      "number": 31,
+      "title": "31. ROM recovery, failure reporting and verification boundaries",
+      "path": "docs/chapters/31_rom_recovery_corruption_detection_and_limits.md"
+    },
+    {
+      "number": 32,
+      "title": "32. Instruction retirement, staged side effects and differential machine execution",
+      "path": "docs/chapters/32_retirement_equivalence_and_microcycle_state.md"
+    },
+    {
+      "number": 33,
+      "title": "33. Precise traps, finite watchdog budgets and deterministic I/O tapes",
+      "path": "docs/chapters/33_traps_watchdogs_and_deterministic_io.md"
+    },
+    {
+      "number": 34,
+      "title": "34. Independent source-language semantics and bounded compilation comparisons",
+      "path": "docs/chapters/34_bootstrap_compiler_correctness_and_independent_semantics.md"
+    },
+    {
+      "number": 35,
+      "title": "35. Physical manufacturing dependencies and the limits of metadata-based assurance",
+      "path": "docs/chapters/35_physical_manufacturing_evidence_requirements.md"
+    },
+    {
+      "number": 36,
+      "title": "36. From a finite AT8 compiler to operating systems and scientific AI",
+      "path": "docs/chapters/36_full_stack_computer_bootstrap_and_future_domains.md"
+    },
+    {
+      "number": 37,
+      "title": "37. Immutable boot-image structure and AT8 machine-code identity",
+      "path": "docs/chapters/37_immutable_boot_image_and_binary_schema.md"
+    },
+    {
+      "number": 38,
+      "title": "38. ROM verification, corruption detection, and the limits of checksums",
+      "path": "docs/chapters/38_rom_integrity_crc_sha_and_trust_boundaries.md"
+    },
+    {
+      "number": 39,
+      "title": "39. Two-slot boot recovery, staged updates, and version monotonicity",
+      "path": "docs/chapters/39_dual_slot_interrupted_update_and_rollback.md"
+    },
+    {
+      "number": 40,
+      "title": "40. SECDED ROM redundancy, fault injection, and byte-identity restoration",
+      "path": "docs/chapters/40_secded_correction_and_rom_recovery.md"
+    },
+    {
+      "number": 41,
+      "title": "41. Instruction reachability, structural termination, and proof conservatism",
+      "path": "docs/chapters/41_conservative_control_flow_reachability_and_termination.md"
+    },
+    {
+      "number": 42,
+      "title": "42. Compiler-to-ISA verification by three independently motivated semantics",
+      "path": "docs/chapters/42_source_compilation_and_three_reference_semantics.md"
+    },
+    {
+      "number": 43,
+      "title": "43. A minimal job monitor with explicit failure isolation and durable receipts",
+      "path": "docs/chapters/43_bounded_job_batch_failure_isolation_and_receipts.md"
+    },
+    {
+      "number": 44,
+      "title": "44. Cache lines, address tags, write-through coherence, and memory locality",
+      "path": "docs/chapters/44_direct_mapped_cache_locality_and_reference_coherence.md"
+    },
+    {
+      "number": 45,
+      "title": "45. Instruction atomicity, input tapes, traps and replayable I/O",
+      "path": "docs/chapters/45_atomic_traps_input_tapes_and_replayable_io.md"
+    },
+    {
+      "number": 46,
+      "title": "46. Byte-exact release replay, checkpoint identity and software evidence chains",
+      "path": "docs/chapters/46_checkpoint_replay_and_byte_reproducible_release_receipts.md"
+    },
+    {
+      "number": 47,
+      "title": "47. Physical measurement requirements for a trusted booting computer",
+      "path": "docs/chapters/47_manufacturing_trust_boundaries_and_hardware_evidence.md"
+    },
+    {
+      "number": 48,
+      "title": "48. Full-stack reconstruction ladder: from source program to trustworthy physical system",
+      "path": "docs/chapters/48_end_to_end_bootstrap_and_future_compiler_os_boundary.md"
+    },
+    {
+      "number": 49,
+      "title": "Chapter 49 \u2014 A reconstructible NAND netlist from the Boolean adder",
+      "path": "docs/chapters/49_nand_gate_netlist_from_boolean_equations.md"
+    },
+    {
+      "number": 50,
+      "title": "Chapter 50 \u2014 Unknown-state propagation without invented register certainty",
+      "path": "docs/chapters/50_three_valued_unknowns_and_limits.md"
+    },
+    {
+      "number": 51,
+      "title": "Chapter 51 \u2014 NAND arithmetic, unsigned carry, and subtraction borrow conventions",
+      "path": "docs/chapters/51_integer_arithmetic_and_carry_refinement.md"
+    },
+    {
+      "number": 52,
+      "title": "Chapter 52 \u2014 Verifying gate arithmetic at each AT8 instruction retirement",
+      "path": "docs/chapters/52_hardware_isa_retirement_refinement.md"
+    },
+    {
+      "number": 53,
+      "title": "Chapter 53 \u2014 Structural gate depth and hypothetical timing envelopes",
+      "path": "docs/chapters/53_structural_gate_depth_timing_envelopes.md"
+    },
+    {
+      "number": 54,
+      "title": "Chapter 54 \u2014 Harvard ROM/RAM separation and addressing boundaries",
+      "path": "docs/chapters/54_harvard_rom_ram_addressing_and_isolation.md"
+    },
+    {
+      "number": 55,
+      "title": "Chapter 55 \u2014 Parity byte memory: detection, correction limits, and false confidence",
+      "path": "docs/chapters/55_parity_fault_detection_vs_ecc.md"
+    },
+    {
+      "number": 56,
+      "title": "Chapter 56 \u2014 Finite fair bus arbitration and its assumptions",
+      "path": "docs/chapters/56_bounded_round_robin_bus_arbitration.md"
+    },
+    {
+      "number": 57,
+      "title": "Chapter 57 \u2014 Source-to-boot reproduction and explicit trust boundaries",
+      "path": "docs/chapters/57_source_boot_image_execution_hash_contract.md"
+    },
+    {
+      "number": 58,
+      "title": "Chapter 58 \u2014 Finite refinement receipts and fail-closed test batches",
+      "path": "docs/chapters/58_refinement_receipts_failure_isolation.md"
+    },
+    {
+      "number": 59,
+      "title": "Chapter 59 \u2014 Manufacturing evidence required to move from NAND models to physical processors",
+      "path": "docs/chapters/59_manufacturing_measurement_for_nand_to_CPU.md"
+    },
+    {
+      "number": 60,
+      "title": "Chapter 60 \u2014 Reconstructible computing runtime: what still separates AT8 from a general machine",
+      "path": "docs/chapters/60_bootstrap_to_runtime_technological_continuity.md"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Item,Status,Why needed,Physical readiness evidence
+Extracted Atlas v0.5 full archive,verified in test environment not user machine,offline knowledge lookup,local copy + hash and open test
+Independent local backup,unknown on user's machine,avoid single-point storage failure,second separately verified drive
+Offline Python 3.10+,present in test environment unknown on user machine,generate and verify STL,offline self-test log
+Working local CAD/OpenSCAD,available in test environment unknown on user machine,editable parametric model,locally opens SCAD
+Machine-specific slicer and saved profiles,not demonstrated,STL-to-G-code generation,offline slicer print preview
+FDM 3D printer and firmware,model not provided,physical manufacture,tested print disconnected
+PLA or PETG filament,inventory not provided,feedstock,measured suitable dry quantity
+Backup electrical supply,ratings not provided,PC/printer and lighting power,measured continuous+surge watts and verified safe battery/inverter
+Calipers or micrometer,availability not provided,dimensional acceptance,observed measurements entered in build receipt
+Copper insulated wire,availability not provided,optional low-voltage coil experiment,material measurement and inspection
+Known safe low-voltage regulated supply,availability not provided,optional demonstration circuit,regulated and current limited test evidence
+Physical workshop ventilation,unverified,heated FDM process safety,manufacturer-specified ventilation compliance

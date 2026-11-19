@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.computer-v02-local-versioned-tests/1",
+  "result": "passed",
+  "historical_v01": {
+    "ran": 86,
+    "passed": 86,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "current_v02_new": {
+    "ran": 56,
+    "passed": 56,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "total_edition_partitioned_passes": 142,
+  "historical_snapshot_is_immutable": true,
+  "real_hardware_tested": false
+}

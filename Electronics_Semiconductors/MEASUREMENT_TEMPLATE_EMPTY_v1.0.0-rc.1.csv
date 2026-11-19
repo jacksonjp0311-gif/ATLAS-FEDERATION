@@ -1,0 +1,1 @@
+device_id,lot_id,measurand,unit,instrument,calibration_certificate,timestamp_iso8601,temperature_K,bias_V,measured_value,standard_uncertainty,replicates,source_file_sha256,reviewer

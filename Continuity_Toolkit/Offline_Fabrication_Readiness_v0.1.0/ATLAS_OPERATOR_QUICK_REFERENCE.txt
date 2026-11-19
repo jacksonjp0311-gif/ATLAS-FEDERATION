@@ -1,0 +1,20 @@
+ATLAS FORGE - OFFLINE BUILD QUICK REFERENCE
+
+1. Save a verified local copy of all 11 v0.5 archive parts, plus the manifest
+   and RESTORE_FULL_ATLAS.py, on independent media. Cloud-only files cannot be
+   retrieved in an outage without connectivity.
+2. Use a connected or powered computer with Python 3.10+ already installed.
+3. Extract full ATLAS and test: python tools/atlas_offline.py audit
+4. In the offline printing companion, run (substitute actual Atlas path):
+   python atlas_print_bridge.py --atlas-root /my/ATLAS_collection --out out
+   python verify_mesh.py out/ATLAS_COIL_FORMER.stl
+5. Use an OFFLINE slicer with an actual saved printer + filament profile.
+6. Confirm adequate, safe power before printing, then measure actual part fit.
+7. No actual printer was used in our digital verification. Mark print HOLD
+   until measured. Never install untested polymer pieces into pressure, mains,
+   water-treatment, medical or load-bearing critical equipment.
+
+ATLAS full archive v0.5 SHA256:
+ea4b1f70eeaabeec0ea5b553c27bf4b3e094efc1280b1067c3c4754247b3bf8e
+
+Original 30-domain roadmap unchanged; do not promote software tests to physical evidence.

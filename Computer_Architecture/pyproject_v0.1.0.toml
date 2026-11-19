@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "computer-architecture-atlas-research"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Original ATLAS FORGE offline AT8 architecture: ISA, assembler, NAND ALU, atomic and microcycle models"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["computer_atlas*"]
+
+[tool.setuptools.package-data]
+computer_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

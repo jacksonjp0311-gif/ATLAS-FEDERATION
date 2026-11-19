@@ -1,0 +1,33 @@
+{
+  "all_edges_have_two_incident_faces": true,
+  "bounds_mm": [
+    [
+      -20.0,
+      -20.0,
+      0.0
+    ],
+    [
+      20.0,
+      20.0,
+      33.0
+    ]
+  ],
+  "bytes": 76884,
+  "extents_mm": [
+    40.0,
+    40.0,
+    33.0
+  ],
+  "file": "ATLAS_COIL_FORMER.stl",
+  "fit_measured": false,
+  "outward_face_normals_verified": true,
+  "physical_print_tested": false,
+  "result": "passed_digital_geometry_only",
+  "schema": "atlas.offline-print-mesh-audit/1",
+  "sha256": "3eb16babdb932d521f1a4cdbaef220d42cb9d9251d39c58b33c432e3f7d44edb",
+  "signed_volume_mm3": 16556.556,
+  "slicer_gcode_generated": false,
+  "triangles": 1536,
+  "unique_edges": 2304,
+  "vertices_merged_0_001_mm": 768
+}

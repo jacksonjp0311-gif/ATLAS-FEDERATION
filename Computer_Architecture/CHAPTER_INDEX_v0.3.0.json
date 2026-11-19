@@ -1,0 +1,139 @@
+{
+  "schema": "atlas.computer-chapter-index-v03/1",
+  "version": "0.3.0",
+  "new_chapters": [
+    {
+      "chapter": 37,
+      "slug": "immutable_boot_image_and_binary_schema",
+      "title": "Immutable boot-image structure and AT8 machine-code identity",
+      "path": "docs/chapters/37_immutable_boot_image_and_binary_schema.md",
+      "equation": "image=header(magic,version,flags,length,CRC32,SHA256) || ROM",
+      "methods": "encode_boot_image, decode_boot_image",
+      "bibliography_id": "NIST-800193",
+      "units": "bytes, bit strings, aligned instruction PCs",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 38,
+      "slug": "rom_integrity_crc_sha_and_trust_boundaries",
+      "title": "ROM verification, corruption detection, and the limits of checksums",
+      "path": "docs/chapters/38_rom_integrity_crc_sha_and_trust_boundaries.md",
+      "equation": "CRC32(ROM)==header_crc and SHA256(ROM)==header_hash",
+      "methods": "decode_boot_image, ecc_recover_image_payload",
+      "bibliography_id": "NIST-800193",
+      "units": "CRC polynomial, bytes, hexadecimal digests",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 39,
+      "slug": "dual_slot_interrupted_update_and_rollback",
+      "title": "Two-slot boot recovery, staged updates, and version monotonicity",
+      "path": "docs/chapters/39_dual_slot_interrupted_update_and_rollback.md",
+      "equation": "selected = argmax_generation(committed AND checksum_valid slots)",
+      "methods": "BootSlot, stage_update, select_boot_slot",
+      "bibliography_id": "NIST-800193",
+      "units": "generation uint32, exact byte images",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 40,
+      "slug": "secded_correction_and_rom_recovery",
+      "title": "SECDED ROM redundancy, fault injection, and byte-identity restoration",
+      "path": "docs/chapters/40_secded_correction_and_rom_recovery.md",
+      "equation": "extended Hamming(13,8): 1-bit correction, 2-bit detection",
+      "methods": "ecc_encode_image_payload, ecc_recover_image_payload",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "13-bit codewords; eight data bits per codeword",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 41,
+      "slug": "conservative_control_flow_reachability_and_termination",
+      "title": "Instruction reachability, structural termination, and proof conservatism",
+      "path": "docs/chapters/41_conservative_control_flow_reachability_and_termination.md",
+      "equation": "CFG successors: JMP -> target; JZ/JNZ -> target and fallthrough; HALT -> none",
+      "methods": "control_flow_certificate",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "byte-addressed program counters and instruction counts",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 42,
+      "slug": "source_compilation_and_three_reference_semantics",
+      "title": "Compiler-to-ISA verification by three independently motivated semantics",
+      "path": "docs/chapters/42_source_compilation_and_three_reference_semantics.md",
+      "equation": "compile(source)=ROM; evaluator(source,input)=SpecMachine(ROM,input)=MicrocodedMachine(ROM,input)",
+      "methods": "verify_program, evaluate_source, differential_retirement",
+      "bibliography_id": "NAND2TETRIS-PROJECTS",
+      "units": "AT8 bytes, bounded operation counts, deterministic I/O traces",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 43,
+      "slug": "bounded_job_batch_failure_isolation_and_receipts",
+      "title": "A minimal job monitor with explicit failure isolation and durable receipts",
+      "path": "docs/chapters/43_bounded_job_batch_failure_isolation_and_receipts.md",
+      "equation": "Batch pass = AND_i(valid_software_receipt_i); failures must not be dropped",
+      "methods": "verify_job_batch, canonical_json_bytes",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "job counts, deterministic hashes, bounded instruction budgets",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 44,
+      "slug": "direct_mapped_cache_locality_and_reference_coherence",
+      "title": "Cache lines, address tags, write-through coherence, and memory locality",
+      "path": "docs/chapters/44_direct_mapped_cache_locality_and_reference_coherence.md",
+      "equation": "line=floor(address/line_size), index=line mod line_count, tag=floor(address/line_size)",
+      "methods": "SmallRAMCache",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "bytes, lines, tags, read hits/misses",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 45,
+      "slug": "atomic_traps_input_tapes_and_replayable_io",
+      "title": "Instruction atomicity, input tapes, traps and replayable I/O",
+      "path": "docs/chapters/45_atomic_traps_input_tapes_and_replayable_io.md",
+      "equation": "valid instruction -> one committed state transition; trap -> no committed change",
+      "methods": "SpecMachine, MicrocodedMachine, differential_retirement",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "instruction retirements, input bytes, output events",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 46,
+      "slug": "checkpoint_replay_and_byte_reproducible_release_receipts",
+      "title": "Byte-exact release replay, checkpoint identity and software evidence chains",
+      "path": "docs/chapters/46_checkpoint_replay_and_byte_reproducible_release_receipts.md",
+      "equation": "receipt=SHA256(canonical JSON excluding own receipt field); replay results must agree",
+      "methods": "verify_program, canonical_json_bytes",
+      "bibliography_id": "NIST-800193",
+      "units": "SHA256 hashes, archive byte identities, immutable revisions",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 47,
+      "slug": "manufacturing_trust_boundaries_and_hardware_evidence",
+      "title": "Physical measurement requirements for a trusted booting computer",
+      "path": "docs/chapters/47_manufacturing_trust_boundaries_and_hardware_evidence.md",
+      "equation": "hardware_acceptance = AND(material, device, gate, clock, memory, boot, independent_trace)",
+      "methods": "physical_evidence_matrix",
+      "bibliography_id": "MIT-6004-2009",
+      "units": "SI voltage, time, temperature, geometry and verification receipts",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    },
+    {
+      "chapter": 48,
+      "slug": "end_to_end_bootstrap_and_future_compiler_os_boundary",
+      "title": "Full-stack reconstruction ladder: from source program to trustworthy physical system",
+      "path": "docs/chapters/48_end_to_end_bootstrap_and_future_compiler_os_boundary.md",
+      "equation": "source\u2192compiler\u2192ISA ROM\u2192boot image\u2192ECC\u2192boot slot\u2192CPU models\u2192receipt\u2192physical evidence gate",
+      "methods": "verify_program, verify_job_batch, select_boot_slot",
+      "bibliography_id": "NAND2TETRIS-PROJECTS",
+      "units": "AT8 bytes, bounded run budgets, explicit evidence-state labels",
+      "evidence_grade": "original software reconstruction; physical measurement absent"
+    }
+  ],
+  "total_chapters": 48
+}

@@ -1,0 +1,79 @@
+{
+  "analytic_solid_volume_mm3": 16568.383,
+  "atlas_evidence": {
+    "atlas_checked": true,
+    "edition": "Computer_Architecture_v0.5.0_continuity",
+    "exact_graph_relationships": 2415,
+    "node_count": 15,
+    "records": 3235,
+    "source_link_not_material_property_certification": true,
+    "source_records": [
+      {
+        "node": "manufacturing-atlas",
+        "record_id": "manufacturing-atlas:chapter-14-concept",
+        "review_status": "not_independently_peer_reviewed",
+        "revision": "84daf6fc344e681e0233f45bc637d4266993eab3cdba4ed833e89d34b83df0b1",
+        "title": "Additive layers, geometric error accumulation and qualification — reconstructible concept"
+      },
+      {
+        "node": "manufacturing-atlas",
+        "record_id": "manufacturing-atlas:chapter-24-concept",
+        "review_status": "AI_assisted_original_not_expert_reviewed",
+        "revision": "5de1617dfe42e04fb8d1a4b5d4b4f810c6b5c52d1b6b19897c12872559698ded",
+        "title": "Datum frames connect drawings to measured coordinates — concept"
+      },
+      {
+        "node": "manufacturing-atlas",
+        "record_id": "manufacturing-atlas:chapter-23-concept",
+        "review_status": "AI_assisted_original_not_expert_reviewed",
+        "revision": "0068be54ff788dca972365ad063b8840a87d077bdc8f42c6316538f552c1a27f",
+        "title": "An unbroken metrology chain needs real evidence — concept"
+      },
+      {
+        "node": "materials-atlas",
+        "record_id": "materials-atlas:process-structure-property",
+        "review_status": "primary_portion_checked_by_assistant",
+        "revision": "8a91418a8ae60b96c7b57a304dad7fa7fcd326d7ed90e70316d098b8a3edb7e6",
+        "title": "Processing changes material state"
+      },
+      {
+        "node": "energy-atlas",
+        "record_id": "energy-atlas:chapter-14-concept",
+        "review_status": "assistant_selected_scope_only_not_independently_reviewed",
+        "revision": "a615ddeef5b7e80e0faa286b554f3a2d740b598f31695731d8a719860289261e",
+        "title": "Balanced three-phase electricity and transformers — concept"
+      },
+      {
+        "node": "electronics-semiconductors-atlas",
+        "record_id": "electronics-semiconductors-atlas:chapter-47-concept",
+        "review_status": "author_and_AI_assisted_not_independently_reviewed",
+        "revision": "15e735136fadc9c70589834533787194a2612c7b183eb9054b9e95190920f612",
+        "title": "Thermal conduction, self-heating and power budgeting — concept"
+      }
+    ]
+  },
+  "coil_electrical_performance_measured": false,
+  "dimensions_mm": {
+    "bore_diameter": 8.4,
+    "core_diameter": 16.0,
+    "flange_diameter": 40.0,
+    "total_height": 33.0
+  },
+  "edition": "0.1.0",
+  "gcode_generated": false,
+  "intended_orientation": "flat broad base flange on printer bed, z axis vertical",
+  "load_bearing_certification": false,
+  "material_recommendation": "PLA or PETG for demonstration; not heat-rated or load-rated",
+  "maximum_nominal_design_envelope_mm": [
+    40.0,
+    40.0,
+    33.0
+  ],
+  "physical_print_observed": false,
+  "printer_profile_verified": false,
+  "scad_sha256": "83316cb8ec3708786285ed2466dec77464faff3e34b0459e488ebf888d888009",
+  "schema": "atlas.offline-coil-former-design/1",
+  "segments": 96,
+  "stl_sha256": "3eb16babdb932d521f1a4cdbaef220d42cb9d9251d39c58b33c432e3f7d44edb",
+  "triangle_count": 1536
+}
