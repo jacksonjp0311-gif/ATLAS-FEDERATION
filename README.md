@@ -1,35 +1,31 @@
 # ATLAS FEDERATION
 
-**Scientific and technological continuity federation** — formerly **ATLAS FORGE**.
+**A versioned scientific knowledge federation for technological continuity and offline reconstruction.**
 
-The original canonical project remains preserved, unchanged, in the ChatGPT Library at `/ATLAS FORGE/`. This repository is the public publishing destination, **not** a second scientific federation.
+Atlas Federation is the public name of the original **ATLAS FORGE** research program. Its canonical source of truth remains the original Library federation; historical artifact names, exact revisions and recorded verification receipts are not renamed or rewritten.
 
-## What is available here
+## Scope
 
-- Audited, exact-byte copies of Compiler Design v0.2.0 research source, chapter texts, data records and tests are being published in `Compiler_Design/`.
-- Original verification and restoration receipts are under `releases/compiler-design-v0.2.0/`.
-- The historical 24-node archive is **not yet uploaded as a GitHub Release asset**; do not mistake this browsable source export for the full federation.
+The Compiler Design v0.2.0 canonical checkpoint records 24 federation nodes, 4,120 scientific records, 3,357 versioned relations and 657 source cards. Eighteen of the original 30 domain candidates are represented. These figures describe the verified canonical Library snapshot, **not necessarily the current GitHub import**.
 
-## Canonical Compiler Design v0.2.0 checkpoint
+The Compiler Design node includes a Tiny-I32 compiler, independent reference parser, typed register IR, register verifier, differential oracles and regression tests. All 16 compiler chapters and their historical versions live under [Compiler_Design](Compiler_Design/).
 
-| Property | Verified Library checkpoint |
-| --- | --- |
-| Research nodes | 24 |
-| Scientific records | 4,120 |
-| Exact-revision relationships | 3,357 |
-| Source cards | 657 |
-| Tests | 3,405 across 54 suites (source and fresh-restored) |
-| Full archive size | 735,193,042 bytes |
-| Expected SHA-256 | `0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7` |
+## Verification and limitations
 
-The numbers above are sourced from original Library verification receipts, **not** from a completed GitHub Release verification. See `PUBLICATION_STATUS.md` for current public artifact status and integrity caveats.
+The canonical v0.2.0 Library receipt records 3,405 passing tests over 54 suites, 11,733 file SHA-256 comparisons, and a fresh-restored full-federation regression report identical to the source-tree report. These are historical Library verification results, **not newly executed GitHub CI**.
 
-## Research scope
+Scientific v1 has **not** been accepted. There is no certified native backend, full compiler correctness proof, authenticated original publisher source deposit or independent expert validation.
 
-Compiler Design v0.2.0 includes a Tiny-I32 compiler model, independent parsing and finite register-machine comparisons. These are research models, **not** verified native code generation or proof of universal compiler correctness. Scientific v1 has not been accepted.
+## Releases and restoration
 
-Historical names, file names, record revisions and evidence are retained where exported. New branding is limited to the public repository's presentation.
+Read [RESTORATION.md](RESTORATION.md) and [RELEASE_STATUS.md](RELEASE_STATUS.md). The original deterministic full archive is **735,193,042 bytes**, SHA-256 `0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7`. This checksum describes the **canonical original archive**; until an asset is actually uploaded and publicly verified it must not be presented as a GitHub-hosted release.
 
-## Licensing and external references
+Incremental v0.2.0 restoration receipts and the preservation audit live in [Releases/Compiler_Design_v0.2.0_incremental](Releases/Compiler_Design_v0.2.0_incremental/).
 
-Public bibliographic references are pointers to external standards and publications, not deposits of those publishers' original files. No rights to third-party content are implied. Unreviewed material and the complete historical ZIP are not redistributed here until an explicit rights audit is complete.
+## Publication policy
+
+This repository holds browsable original scientific source and verifiable receipts as released. External scientific publications and standards cited by the research are **references**, not an implied license to redistribute publisher-owned files or copyrighted datasets. No third-party redistribution clearance or scientific endorsement is asserted. The legacy name ATLAS FORGE remains intact in provenance records.
+
+## Status
+
+The import is progressing by small verified file batches. Do not treat a partial GitHub tree as a complete byte-for-byte restoration of the original 735 MB federation. The original Library federation has not been modified.

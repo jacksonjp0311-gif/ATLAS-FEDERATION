@@ -1,0 +1,6 @@
+*.zip
+*.tar
+*.7z
+*.part
+__pycache__/
+.pytest_cache/
