@@ -1,0 +1,188 @@
+{
+  "schema": "atlas.electronics-chapter-index/1",
+  "version": "0.3.0",
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "docs/chapters/01_si_constants_scaling_and_thermal_voltage.md",
+      "title": "01. SI charge, energy, dielectric permittivity and thermal voltage",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 2,
+      "file": "docs/chapters/02_carriers_doping_charge_neutrality.md",
+      "title": "02. Doping, equilibrium carrier mass action and intrinsic concentration",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 3,
+      "file": "docs/chapters/03_drift_diffusion_current_and_continuity.md",
+      "title": "03. Carrier drift, diffusion currents and conservative continuity",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 4,
+      "file": "docs/chapters/04_abrupt_pn_junction_depletion_approximation.md",
+      "title": "04. Abrupt p-n junction potential and depletion width",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 5,
+      "file": "docs/chapters/05_diode_current_and_inverse_bias.md",
+      "title": "05. Ideal Shockley diode current and stable log/exponential arithmetic",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 6,
+      "file": "docs/chapters/06_mos_dielectric_gate_capacitance.md",
+      "title": "06. Gate dielectric, capacitance and field energy",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 7,
+      "file": "docs/chapters/07_ideal_mosfet_regions_and_limits.md",
+      "title": "07. Ideal MOSFET square-law model and region continuity",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 8,
+      "file": "docs/chapters/08_rc_switching_delay_and_power.md",
+      "title": "08. RC response, CMOS switching energy and dynamic power",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 9,
+      "file": "docs/chapters/09_boolean_logic_and_validity_windows.md",
+      "title": "09. Boolean inverter and idealized static logic versus analog margins",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 10,
+      "file": "docs/chapters/10_measurement_fabrication_dependencies_and_ai_hardware.md",
+      "title": "10. Semiconductor measurement chain and AI hardware reconstruction dependencies",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 11,
+      "file": "docs/chapters/11_constant_field_carrier_flux_and_stable_bernoulli.md",
+      "title": "11. Constant-field drift\u2013diffusion and exponential-fitted charge flux",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 12,
+      "file": "docs/chapters/12_minority_carrier_diffusion_recombination.md",
+      "title": "12. Minority-carrier diffusion, recombination and discrete conservation",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 13,
+      "file": "docs/chapters/13_resistor_network_nodal_analysis_and_power.md",
+      "title": "13. Nodal circuit analysis, conductance matrices and power accounting",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 14,
+      "file": "docs/chapters/14_cmos_inverter_load_line_and_nonuniqueness.md",
+      "title": "14. CMOS inverter DC load lines and the indeterminate saturation plateau",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 15,
+      "file": "docs/chapters/15_logic_voltage_levels_noise_and_switching.md",
+      "title": "15. Logic voltage thresholds, noise margins and simplified RC switching",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 16,
+      "file": "docs/chapters/16_electrical_metrology_sensitivity_and_covariance.md",
+      "title": "16. Electrical metrology, sensitivity derivatives and covariance propagation",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 17,
+      "file": "docs/chapters/17_transistors_to_full_adders_and_ripple_carry.md",
+      "title": "17. From CMOS gates to a full adder and n-bit ripple-carry arithmetic",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 18,
+      "file": "docs/chapters/18_continuity_handoff_semiconductor_to_computer.md",
+      "title": "18. Technological continuity: interfaces from semiconductor equations to computer architecture",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 19,
+      "file": "docs/chapters/19_rc_network_backward_euler_and_kcl.md",
+      "title": "Chapter 19: From resistor-capacitor networks to timed node voltages",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 20,
+      "file": "docs/chapters/20_capacitive_switching_energy_and_activity.md",
+      "title": "Chapter 20: Energy from charging a digital node",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 21,
+      "file": "docs/chapters/21_nand_gates_and_combinational_addition.md",
+      "title": "Chapter 21: Reconstruct Boolean arithmetic from a single universal gate",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 22,
+      "file": "docs/chapters/22_registers_clock_edges_and_unknown_states.md",
+      "title": "Chapter 22: State storage is not equivalent to combinational logic",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 23,
+      "file": "docs/chapters/23_clock_setup_hold_skew_and_timing_paths.md",
+      "title": "Chapter 23: Timing inequalities for a synchronous circuit",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 24,
+      "file": "docs/chapters/24_extended_hamming_error_detection_and_correction.md",
+      "title": "Chapter 24: Preserving data integrity with a small error-correcting code",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 25,
+      "file": "docs/chapters/25_register_banks_state_transitions_and_memory_abstraction.md",
+      "title": "Chapter 25: A minimal register bank with explicit unknown-state propagation",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    },
+    {
+      "chapter": 26,
+      "file": "docs/chapters/26_from_timed_circuits_to_reconstructible_computers.md",
+      "title": "Chapter 26: Evidence-driven handoff to computer architecture",
+      "node": "electronics-semiconductors-atlas",
+      "evidence": "original_synthesis_constructed_software_not_device_measurement"
+    }
+  ]
+}
