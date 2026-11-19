@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.language-model-oracle/1",
+  "result": "passed",
+  "seed": 20261114,
+  "comparisons": 2640,
+  "by_algorithm": {
+    "independent_segmentation_enumeration": 350,
+    "independent_recursive_CYK_counts": 390,
+    "independent_bigram_probability": 450,
+    "independent_three_valued_quantifiers": 840,
+    "unicode_canonical_and_raw_byte_integrity": 360,
+    "conllu_independent_tree_shape": 250
+  },
+  "numpy_installed": true,
+  "data_origin": "original_author_generated_synthetic_fixtures",
+  "published_corpus_rows_loaded": 0,
+  "natural_language_grammar_validated": false,
+  "normative_unicode_conformance_tested": false,
+  "independent_human_linguistic_review": false,
+  "limitations": [
+    "Independent enumeration and reference arithmetic on selected finite fixtures, not a general theorem prover",
+    "No live speaker, audio, sign-language video, translation or authentic annotated corpus examined",
+    "Unicode normalization checks use runtime Unicode database, not independent Unicode 18.0 test files"
+  ]
+}

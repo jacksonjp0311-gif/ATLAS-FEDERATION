@@ -1,0 +1,102 @@
+# Language Atlas v0.2.0 — Scientific Reading Directory
+
+**Observed form → Structural analysis → Meaning in context → Community interpretation → Reproducible, rights-qualified evidence.**
+This library includes structured original scientific explanations, mathematical examples and access/rights cautions, not actual speech, sign-language video or an independent universal language model.
+
+## Scientific chapters (50)
+- [Chapter 01. What a human language is and what a language model is not](chapters/01_what_a_human_language_is_and_what_a_language_model_is_not.md)
+- [Chapter 02. Speech articulation and the production of linguistic sound](chapters/02_speech_articulation_and_the_production_of_linguistic_sound.md)
+- [Chapter 03. Acoustic phonetics, speech signals and uncertainty](chapters/03_acoustic_phonetics_speech_signals_and_uncertainty.md)
+- [Chapter 04. Signed languages, gesture, and visual linguistic form](chapters/04_signed_languages_gesture_and_visual_linguistic_form.md)
+- [Chapter 05. Phonemes, phones, and allophonic distribution](chapters/05_phonemes_phones_and_allophonic_distribution.md)
+- [Chapter 06. Prosody: stress, tone, timing, and intonation](chapters/06_prosody_stress_tone_timing_and_intonation.md)
+- [Chapter 07. Phonotactics, syllables, and sound-pattern restrictions](chapters/07_phonotactics_syllables_and_sound_pattern_restrictions.md)
+- [Chapter 08. Morphology: words, lexemes, morphemes and segmentation](chapters/08_morphology_words_lexemes_morphemes_and_segmentation.md)
+- [Chapter 09. Inflection, derivation, and nonconcatenative morphology](chapters/09_inflection_derivation_and_nonconcatenative_morphology.md)
+- [Chapter 10. Grammatical categories and cross-linguistic typology](chapters/10_grammatical_categories_and_cross_linguistic_typology.md)
+- [Chapter 11. Lexemes, polysemy and lexical semantic networks](chapters/11_lexemes_polysemy_and_lexical_semantic_networks.md)
+- [Chapter 12. Word boundaries are analytical choices, not whitespace](chapters/12_word_boundaries_are_analytical_choices_not_whitespace.md)
+- [Chapter 13. Writing systems, orthography, scripts and transliteration](chapters/13_writing_systems_orthography_scripts_and_transliteration.md)
+- [Chapter 14. Unicode scalar values, UTF-8, and exact source bytes](chapters/14_unicode_scalar_values_utf_8_and_exact_source_bytes.md)
+- [Chapter 15. Canonical and compatibility normalization are different](chapters/15_canonical_and_compatibility_normalization_are_different.md)
+- [Chapter 16. Grapheme clusters and segmentation across scripts](chapters/16_grapheme_clusters_and_segmentation_across_scripts.md)
+- [Chapter 17. Interlinear glossing, transcripts and scientific accountability](chapters/17_interlinear_glossing_transcripts_and_scientific_accountability.md)
+- [Chapter 18. Formal grammars, constituency and derivation](chapters/18_formal_grammars_constituency_and_derivation.md)
+- [Chapter 19. Dependency syntax and Universal Dependencies](chapters/19_dependency_syntax_and_universal_dependencies.md)
+- [Chapter 20. Word order, head direction and cross-language diversity](chapters/20_word_order_head_direction_and_cross_language_diversity.md)
+- [Chapter 21. Ambiguity in attachment, ellipsis and scope](chapters/21_ambiguity_in_attachment_ellipsis_and_scope.md)
+- [Chapter 22. Compositional semantics and structured meanings](chapters/22_compositional_semantics_and_structured_meanings.md)
+- [Chapter 23. Reference, deixis, anaphora, and shared context](chapters/23_reference_deixis_anaphora_and_shared_context.md)
+- [Chapter 24. Quantification, negation and unknown propositions](chapters/24_quantification_negation_and_unknown_propositions.md)
+- [Chapter 25. Pragmatics, implicature, and cooperative inference](chapters/25_pragmatics_implicature_and_cooperative_inference.md)
+- [Chapter 26. Speech acts, commitments, and conversation structure](chapters/26_speech_acts_commitments_and_conversation_structure.md)
+- [Chapter 27. Discourse coherence, information structure and repair](chapters/27_discourse_coherence_information_structure_and_repair.md)
+- [Chapter 28. Language acquisition, developmental change and learning](chapters/28_language_acquisition_developmental_change_and_learning.md)
+- [Chapter 29. Dialect, register, social variation and linguistic equality](chapters/29_dialect_register_social_variation_and_linguistic_equality.md)
+- [Chapter 30. Historical change, sound correspondence and reconstruction](chapters/30_historical_change_sound_correspondence_and_reconstruction.md)
+- [Chapter 31. Language documentation, endangerment and community control](chapters/31_language_documentation_endangerment_and_community_control.md)
+- [Chapter 32. Corpora, sampling and annotation disagreement](chapters/32_corpora_sampling_and_annotation_disagreement.md)
+- [Chapter 33. N-gram language models, smoothing and perplexity](chapters/33_n_gram_language_models_smoothing_and_perplexity.md)
+- [Chapter 34. Neural language models, transformers and inference limits](chapters/34_neural_language_models_transformers_and_inference_limits.md)
+- [Chapter 35. Translation, equivalence and culturally grounded evaluation](chapters/35_translation_equivalence_and_culturally_grounded_evaluation.md)
+- [Chapter 36. Language identification, tags and multilingual metadata](chapters/36_language_identification_tags_and_multilingual_metadata.md)
+- [Chapter 37. Linguistic uncertainty, misinformation and tool instruction boundaries](chapters/37_linguistic_uncertainty_misinformation_and_tool_instruction_boundaries.md)
+- [Chapter 38. Human knowledge survival: rebuilding language science offline](chapters/38_human_knowledge_survival_rebuilding_language_science_offline.md)
+- [39. Cross-language comparison requires a sampling design](chapters/39_why_cross_language_comparison_needs_explicit_sampling.md)
+- [40. BLEU evaluates token overlap under explicit reference conditions](chapters/40_bleu_translation_evaluation_and_its_limits.md)
+- [41. Alignment error rates depend on segmentation and evidence](chapters/41_token_alignment_and_error_metrics.md)
+- [42. Probabilistic grammars and the difference between likelihood and truth](chapters/42_probabilistic_grammars_inside_algorithm_and_ambiguity.md)
+- [43. Historical sound correspondence: recurrence is evidence, not proof by resemblance](chapters/43_historical_correspondence_without_false_cognacy.md)
+- [44. Genealogical and geographic dependence in language typology](chapters/44_language_typology_areal_genealogical_dependencies.md)
+- [45. Cross-Linguistic Data Formats and reproducible scholarly evidence](chapters/45_cldf_machine_readable_linguistic_source_lineage.md)
+- [46. Community rights are a condition of language preservation](chapters/46_community_rights_consent_and_endangered_languages.md)
+- [47. Signed languages require simultaneous, not merely sequential, representation](chapters/47_signed_language_multimodal_timing_tiers.md)
+- [48. Unicode 18 and the requirement to version text segmentation](chapters/48_unicode_18_graphemes_and_versioned_segmentation.md)
+- [49. Predictive metrics are not communicative intelligence](chapters/49_language_model_metrics_versus_communicative_intelligence.md)
+- [50. Language Atlas v0.2 — scientific scope and the road to content v1](chapters/50_language_atlas_v02_scientific_scope_and_path_to_v1.md)
+
+## Worked investigations (30)
+- [Investigation 01: Canonical equivalent strings](investigations/01_canonical_norm.md)
+- [Investigation 02: Compatibility normalization is not reversible](investigations/02_compatibility_loss_warning.md)
+- [Investigation 03: Preserve every source byte](investigations/03_utf8_roundtrip.md)
+- [Investigation 04: Reject silent Unicode corruption](investigations/04_invalid_utf8_refusal.md)
+- [Investigation 05: A lexicon creates alternatives](investigations/05_word_boundary_ambiguity.md)
+- [Investigation 06: Segmentation versus morphology](investigations/06_segmentation_compositional.md)
+- [Investigation 07: One surface can have two analyses](investigations/07_morphological_ambiguity.md)
+- [Investigation 08: A feature distance is not acoustic similarity](investigations/08_phonemic_feature_contrast.md)
+- [Investigation 09: Two parse trees, one token sequence](investigations/09_attachment_ambiguity.md)
+- [Investigation 10: Reject under this grammar only](investigations/10_grammar_rejection_not_human_rejection.md)
+- [Investigation 11: A counterexample can refute a universal proposition](investigations/11_finite_quantifier_false.md)
+- [Investigation 12: Unknown is not a negative label](investigations/12_unreported_fact_unknown.md)
+- [Investigation 13: Tree structure is weaker than annotation correctness](investigations/13_ud_basic_dependency_shape.md)
+- [Investigation 14: A tree cannot parent itself](investigations/14_dependency_cycle_refusal.md)
+- [Investigation 15: Predictive likelihood is not language understanding](investigations/15_smoothing_and_probability.md)
+- [Investigation 16: Explicit task exposure breaks the split](investigations/16_training_id_leakage_refusal.md)
+- [Investigation 17: A plausible tag is not registry validation](investigations/17_language_tag_skeleton_only.md)
+- [Investigation 18: Equivalent Unicode can conceal exact duplicates](investigations/18_canonical_text_leakage.md)
+- [Investigation 19: Absence of overlap evidence is not independence](investigations/19_clean_does_not_prove_holdout.md)
+- [Investigation 20: Token alignment versus communicative adequacy](investigations/20_optimal_token_alignment_is_not_translation.md)
+- [Investigation 21: BLEU scores are not semantic correctness](investigations/21_bleu_surface_match_not_semantic_truth.md)
+- [Investigation 22: Inside mass versus maximum derivation](investigations/22_pcfg_inside_vs_single_best_parse.md)
+- [Investigation 23: A language-family sample changes the estimated fraction](investigations/23_typological_family_imbalance.md)
+- [Investigation 24: Recurring segment pairs do not prove a family tree](investigations/24_sound_correspondence_not_reconstruction.md)
+- [Investigation 25: Community or speaker denial blocks public release](investigations/25_access_denial_is_not_data_loss_to_fix.md)
+- [Investigation 26: Parallel signed-language channels are not transcription errors](investigations/26_simultaneous_signed_language_tiers.md)
+- [Investigation 27: Counting code points is not Unicode grapheme segmentation](investigations/27_unicode_version_and_unreliable_character_count.md)
+- [Investigation 28: A missing lexicon entry is unknown, not ungrammatical](investigations/28_unknown_form_not_bad_language.md)
+- [Investigation 29: Source-aligned tables must distinguish unknown from absent observations](investigations/29_cldf_missingness_and_source_provenance.md)
+- [Investigation 30: Content maturity is separate from linguistic and cultural review](investigations/30_content_maturity_not_community_review.md)
+
+## Offline reproduction
+```sh
+python -m language_atlas
+python -m language_atlas advanced
+python -m unittest discover -s tests -q
+python tools/numerical_oracle_v0.2.0.py
+```
+
+[Full scientific manual](DEPTH_MANUAL_v0.2.0.md) · [Sources and licensing](SOURCE_REGISTER.md) · [Coverage and open gates](COVERAGE_MATRIX.md) · [Validation](VALIDATION_v0.2.0.md) · [Research program](RESEARCH_ROADMAP_v0.2.0.md)
+
+The syntax and translation examples are synthetic teaching models. A model returning a correct arithmetic result does not verify human language science, linguistic universals, consent or cultural appropriateness.
+
+**Work sequence:** all 30 scientific domain libraries → Bitwork router → integrated evaluation → desktop transfer.

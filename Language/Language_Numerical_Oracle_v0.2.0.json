@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.language-v02-oracle/1",
+  "status": "passed",
+  "seed": 20261114,
+  "counts": {
+    "edit_distance": 500,
+    "bleu_precision": 800,
+    "bleu_brevity": 400,
+    "bleu_unsmoothed": 400,
+    "typology_family_weight": 444,
+    "typology_naive": 444,
+    "pcfg_inside": 600,
+    "multimodal_overlap": 819
+  },
+  "total_comparisons": 4407,
+  "max_absolute_difference": 1.1102230246251565e-16,
+  "numpy_version": "2.3.5",
+  "authentic_language_or_speaker_data_loaded": 0,
+  "external_translation_systems_evaluated": 0,
+  "independently_reviewed_scientific_hypotheses": 0,
+  "limitations": [
+    "Independent formulas/checks on authored synthetic data are software evidence, not human language universals",
+    "Small grammar demonstrates stipulated probability mass and not real syntactic competence"
+  ]
+}
