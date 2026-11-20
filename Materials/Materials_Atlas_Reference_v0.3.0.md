@@ -344,15 +344,15 @@ This chapter adds a concrete distinction between (1) a physical specimen measure
 
 Our source report identifies the predictor as temperature in kelvin and the response as a coefficient of thermal expansion. NIST's displayed table does **not** assign a clear physical unit or scale to the response. The Atlas therefore stores the original numeric response with `response_scale_unresolved` and refuses to calculate a physical length change from it. In particular, the values 16–21 must not be silently relabeled `10^-6 K^-1`, even if that interpretation seems chemically plausible. Property semantics must come from a checked source, not inference.
 
-The source dataset is transcribed from a public HTML/text representation because a direct original-byte download failed in the current runtime. `materials_atlas/resources/hahn1/capture.json` identifies the upstream URL, the unavailable upstream byte hash, the SHA-256 hash of our own normalized transcription and the exact validation scope. The 236 rows are in source order (not temperature-sorted), because acquisition order may matter when assessing batch effects. Both the file and the parser assert 236 rows; the calculation covers the actual observed range [14.13, 851.61] K.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
-The benchmark computes the squared residuals at **NIST's published coefficients** for the cubic-over-cubic rational model. It reproduces the certified sum of squares (1.5324382854) and residual SD (0.081803852243), both to less than 5×10^-9 in their native reported scales. That verifies numerical consistency of the transcription and model evaluation. It does not mean this runtime has directly reproduced the original measurement, discovered the true physical law, or obtained the full precision source-file bits. `tools/hahn1_oracle.py` optionally refits by two SciPy algorithms, explicitly initialized near the certified optimum; that check is not an independently designed blind benchmark.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## What remains before material qualification
 
 Obtain verified original source bytes or independent publisher confirmation of the values, documentary response units, instrument/method metadata, uncertainty, specimen purity, grain history, and independent scientific review. NIST notes a lower-quality quadratic/quadratic rational model can produce structured residuals even when plotted data look close; model fit is not model adequacy. A new copper lot may behave differently from this experiment, and an equation calibrated only in the published range must not be extrapolated.
 
-**Source locators:** NIST Handbook §4.6.4.1 (data); §4.6.4.4 (quadratic model diagnostics); NIST StRD Hahn1 certified values and certification method. The original documents are linked rather than mirrored.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 
 ---
@@ -588,7 +588,7 @@ Record specimen identifier, composition, processing history, scan date, radiatio
 
 **Layer 1 — source-reported observations.** NIST publishes 236 temperature/response pairs for the Hahn1 copper thermal-expansion benchmark. The Atlas stores the numeric values in original published order as a checked transcription. The predictor temperature is in kelvin; the numerical response scale remains unresolved in our inspected material. A local SHA-256 identifies our transcription, not the original upstream bytes.
 
-**Layer 2 — numerical regression certification.** NIST publishes certified parameters and residual statistics for a seven-parameter rational function. Re-evaluating those parameters on the 236 observations reproduces the residual sum of squares approximately `1.53243828536062`, compared with the certified `1.5324382854`. This is a valuable software/numerical check; it does not determine a physical coefficient uncertainty or the trustworthiness of the material model.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 **Layer 3 — physical validity and prediction.** To use the fit to predict expansion in a real specimen, we would need to establish response units, reference specimen and processing conditions, the model's physical applicability, measurement uncertainty, calibration, and temperature range. The Atlas does not infer any of these from the fact that a residual sum of squares matches.
 
@@ -696,21 +696,15 @@ A materials selection answer from this first Atlas edition should therefore read
 
 **Data origin:** NIST reported experimental data; reproduced analysis with a local, checked text transcription. **No new physical measurements.**
 
-NIST Hahn1 contains 236 temperature and response pairs. The observed predictor range is 14.13 to 851.61 K. Both the NIST Statistical Reference Datasets collection and the e-Handbook associate the data with a copper thermal-expansion study by Thomas Hahn; they are not independent experimental replications. The units and magnitude scale of the reported response are not established to a level sufficient for engineering length predictions in this package.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## Step-by-step protocol
 
-1. Confirm source identity and column semantics: the handbook presentation lists coefficient versus kelvin, while the Dataplot file displays temperature then response as numeric pairs. The local normalized TSV columns are explicitly `temperature_k`, `response_as_published`.
-2. Preserve row order, row count, original decimal token precision and provenance. Here the 236 rows were transcribed from a publisher text view because direct source-byte retrieval was blocked. The TSV's SHA-256 authenticates the local transcription alone.
-3. Define the seven-parameter NIST model: `y=(b0+b1*T+b2*T^2+b3*T^3)/(1+b4*T+b5*T^2+b6*T^3)`.
-4. Evaluate the model at the **published certified coefficients**, compute `RSS = Σ[y_i-f(T_i;b)]²` and `RSD = sqrt(RSS/(236-7))`.
-5. Compare with NIST certified `RSS=1.5324382854`, `RSD=0.081803852243`, residual degrees freedom 229. Do not silently rescale the response or convert the coefficient to reciprocal kelvin.
-6. Run the separate SciPy least-squares oracle with Levenberg–Marquardt and trust-region reflective numerical algorithms. It initializes near the certified coefficients and is not a global-search proof.
-7. Preserve assumptions, lack of source-level uncertainty, missing original byte hash and absence of physical replication in the exported AI context.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## Numerical outcome
 
-`python -m materials_atlas published-hahn1` calculates RSS about **1.53243828536062**, differing from the certified number by about **3.94×10⁻¹¹**, and RSD about **0.08180385224272**. The checks use predeclared absolute tolerances of 5×10⁻⁹ and pass. The separately executed SciPy fits also return the same benchmark within that tolerance.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## Interpretation
 
@@ -798,7 +792,7 @@ The combined uncertainty has **two** parts: random angle uncertainty, which may 
 
 **Question:** Does reproducing a published fit prove it is a physically reliable predictor? **Origin:** computational reanalysis of 236 source-reported NIST Hahn1 copper observations transcribed in the previous Materials release.
 
-The published seven-parameter rational function evaluated on the local checked transcription reproduces NIST's certified RSS (about 1.5324382854). That verifies a specific numerical calculation at supplied parameters. It does not independently verify the source acquisition, model adequacy, coefficient units, sample processing or measurement uncertainty.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 This increment adds descriptive residual bins ordered by temperature, not by time. For eight bins, each contains a nearly equal number of observations; each reports its temperature range, mean residual and RMSE. We also report a temperature-neighbor residual correlation but explicitly **do not** label it temporal autocorrelation or evidence of instrument drift. A residual pattern can be a reason to investigate model inadequacy, not proof of a particular physical mechanism.
 

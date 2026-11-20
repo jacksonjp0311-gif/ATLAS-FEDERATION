@@ -163,12 +163,7 @@ Original content is linked and paraphrased; independent expert review is outstan
 - Rights: attributed publisher data link; no original document mirrored
 - Limits: Backfilled from existing v0.3 source-card metadata; no expanded independent inspection this edition
 
-## NIST-HAHN1-CERT: NIST certified seven-parameter Hahn1 benchmark
-- URL: https://www.itl.nist.gov/div898/strd/nls/data/LINKS/v-hahn1.shtml
-- Inspected portion: Rational cubic/cubic coefficients, RSS 1.5324382854, RSD .081803852243, n=236 and df=229; HTML certified table
-- Access: prior_source_card_metadata_backfill_not_reinspected
-- Rights: attributed publisher data link; no original document mirrored
-- Limits: Backfilled from existing v0.3 source-card metadata; no expanded independent inspection this edition
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply. Publisher references: https://www.itl.nist.gov/div898/strd/nls/data/LINKS/v-hahn1.shtml
 
 ## NIST-HAHN1-DIAGNOSTIC: NIST quadratic rational fit diagnostic
 - URL: https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd644.htm

@@ -1,6 +1,6 @@
 # Reproduce a published load-cell calibration
 
-**Measurement Atlas 0.6.0 · James Paul Jackson research program · 12 November 2026**
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## What is reproduced
 
@@ -29,20 +29,15 @@ The first command needs only the standard library. The optional second command u
 
 The response model is `D = b0 + b1 L + b2 L^2 + error`, with the quadratic term absent for the straight line. The implementation centers/scales L and uses 60-digit Decimal arithmetic for the tiny normal system. It supports degree one or two only and is not a general high-degree solver. Regression assumes fixed reference loads and independent, equal-variance response errors. A complete uncertainty budget can require reference-load uncertainty, environmental effects, drift and other components that this case cannot establish.
 
-| Quantity | Straight line | Quadratic |
-|---|---:|---:|
-| Residual standard deviation | 0.00217127259606 | 0.000205177424076 |
-| Residual degrees of freedom | 38 | 37 |
-| R-squared | 0.999988519115 | 0.999999900179 |
-| Replicate lack-of-fit F | 214.746923654 | 0.81072390031 |
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 The [source design warning](https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd611.htm) remains central: two ordered increasing-load runs cannot cleanly identify drift. The [lack-of-fit definition](https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd446.htm) requires replicates; the statistic does not establish every model assumption. A high R-squared is not a guarantee of acceptable calibration.
 
 ## Inversion and prediction
 
-The publisher's hypothetical deflection 1.239722 gives an in-range recomputed load of about 1705105.57 source units. The distant quadratic root is excluded. The illustration is not a 41st measured observation. The software refuses nonmonotone inverse ranges and extrapolation.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
-Fitted-mean and future-observation prediction standard deviations are separate. An independent future observation includes residual variance in addition to mean-estimation variance, following [NIST §4.5.1.2](https://www.itl.nist.gov/div898/handbook/pmd/section5/pmd512.htm). The package does not label those standard deviations as 95% intervals. The handbook's interval endpoints are retained as documentary reference only; this release does not claim to reproduce them.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply. Publisher references: https://www.itl.nist.gov/div898/handbook/pmd/section5/pmd512.htm
 
 ## What remains before scientific v1
 

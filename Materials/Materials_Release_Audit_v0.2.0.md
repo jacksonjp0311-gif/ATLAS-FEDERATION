@@ -4,14 +4,7 @@
 
 ## Executed checks on source tree
 
-- Forge 188, Measurement 218, Causal 233, Materials 73 tests: **712 passed, zero skipped**.
-- Shared Atlas common contract: five enabled nodes, 743 records, 142 typed relations; schema and exact source closure pass.
-- Materials records: 89 total, 21 bibliographic source cards, 68 other reference records, 44 Materials relations. Old 52 record revisions unchanged.
-- Old Materials numerical oracle: 1,200 comparisons passed against NumPy/SciPy.
-- New advanced oracle: 1,440 comparisons passed against separate NumPy formulas, largest scaled discrepancy 6.97e-14.
-- Hahn1: 236 source-report observations (local checked decimal transcription), residual sum of squares 1.53243828536062, certified 1.5324382854. LM/TRF SciPy refits near certified initialization agree numerically.
-- Clean virtual environment installed all four wheels; installed Materials code and data worked from outside source tree.
-- The previous 771-file baseline is preserved by hashes and prior Materials 52 record revisions by exact reference checks. The other nodes and existing routing code are not changed.
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## Known nonconclusions
 

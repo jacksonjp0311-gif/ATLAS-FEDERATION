@@ -70,6 +70,186 @@
         }
       ],
       "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Investigation_11_Hahn1_v0.3.0.md",
+      "original_sha256": "8ef9413c0f077d32e9f207083684acb640a78a3da1520a7d8a0847a1567aa2f3",
+      "public_sha256": "731f7b609e13a5b25f95523b74f1370872441709297450605f24799a3e2457be",
+      "original_bytes": 1777,
+      "public_bytes": 1722,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "8ef9413c0f077d32e9f207083684acb640a78a3da1520a7d8a0847a1567aa2f3"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Materials_Atlas_Reference_v0.2.0.md",
+      "original_sha256": "a2e2e4ceb07bfb865067c20ef196d5cf993aa36c9cc2ec7ce8bafe23a07ad96f",
+      "public_sha256": "31ff1fc21930b614ad30a392e5a3fc4bc3c46d9dc80b679615cedd1fbcb92812",
+      "original_bytes": 74289,
+      "public_bytes": 72499,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "a2e2e4ceb07bfb865067c20ef196d5cf993aa36c9cc2ec7ce8bafe23a07ad96f"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Materials_Atlas_Reference_v0.3.0.md",
+      "original_sha256": "f988c391aae3d78f99bbeebf3e9468302040129831771e230be4924dd0a595e0",
+      "public_sha256": "fcf7886653f5659f9810d01f3dc5525bb9a3ad61999b5a4696fc45bba8085a5b",
+      "original_bytes": 111546,
+      "public_bytes": 109529,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "f988c391aae3d78f99bbeebf3e9468302040129831771e230be4924dd0a595e0"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Materials_Atlas_Reference_v0.3.0_verified.md",
+      "original_sha256": "9f85302f7e276f1de2963f4f7542fda235f5c3f8907cf3f8a1364b5385321826",
+      "public_sha256": "748c34d1b7683fb1c268a8625ebef194db09a9a0df0fe6898b9de971f131263a",
+      "original_bytes": 94249,
+      "public_bytes": 92232,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "9f85302f7e276f1de2963f4f7542fda235f5c3f8907cf3f8a1364b5385321826"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Materials_Release_Audit_v0.2.0.md",
+      "original_sha256": "86f0bc6e46992813463ce3063e70af9d80f654c2adb392e2d6060189271d201d",
+      "public_sha256": "5fad888fb98f2887a3ae09c87b7bcb81229caadb57227949225641ce37216737",
+      "original_bytes": 2699,
+      "public_bytes": 1919,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "86f0bc6e46992813463ce3063e70af9d80f654c2adb392e2d6060189271d201d"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/Materials_Source_Register_v1.0.0.md",
+      "original_sha256": "0b8a059dd8660d9ef63b5eccd224b2db6f565f0fa97e767a1dc8a7ac0435700e",
+      "public_sha256": "c3df08dab8dfa1317239d728fd6d6a7aef41f163ec4a7b068d169ea6abfcc751",
+      "original_bytes": 13898,
+      "public_bytes": 13771,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "0b8a059dd8660d9ef63b5eccd224b2db6f565f0fa97e767a1dc8a7ac0435700e"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Materials/NIST_Hahn1_Copper_Reanalysis_v0.2.0.md",
+      "original_sha256": "5c217b5c72b94c978f8f42655fc8031d71672c1d108e201309cab100a9175955",
+      "public_sha256": "405f8d291d84ae6e6b48365dd4bf1e23473986818d4355a47858d34098a7e214",
+      "original_bytes": 3372,
+      "public_bytes": 2165,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "5c217b5c72b94c978f8f42655fc8031d71672c1d108e201309cab100a9175955"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Measurement/Pontius_Calibration_Case_v0.6.0.md",
+      "original_sha256": "121658ec3248d0e3ad1ca4a123c9b094f2b467beae4b4fe60c8f49cd7125f89f",
+      "public_sha256": "39e6f3726e64ecbc8c500a6fb9b1712e265d72ade9fd84a562cf4d6dfbe7a1da",
+      "original_bytes": 5032,
+      "public_bytes": 5209,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "121658ec3248d0e3ad1ca4a123c9b094f2b467beae4b4fe60c8f49cd7125f89f"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Measurement/Pontius_Inverse_Interval_v0.7.0.md",
+      "original_sha256": "283c024c751d6f85af699a446e366c5ada4bbb2da29e1cc5fdf6d0194ba98c23",
+      "public_sha256": "61cb30637530668eb8666e951ff6f59a7f2040ea1b8d080edce7b4a7acce2c80",
+      "original_bytes": 3131,
+      "public_bytes": 3314,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "283c024c751d6f85af699a446e366c5ada4bbb2da29e1cc5fdf6d0194ba98c23"
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Measurement/Pontius_Source_Discrepancies_v0.6.0.md",
+      "original_sha256": "4dc2ec96f779c97567349231c54c76330658e9faaa06543bb34cb8f2d9e9686f",
+      "public_sha256": "3997fa586332831ee41bfb01b1c9ac65e610fdd32bf0aed0cc673e734f306e11",
+      "original_bytes": 2555,
+      "public_bytes": 2346,
+      "reason_codes": [
+        "nist_srd140_redistribution_grant_unresolved"
+      ],
+      "impact": "Source-dependent values/results withheld; separable original methods and reference links retained. Historical acceptance is not current derivative validation.",
+      "operations": [
+        {
+          "operation": "targeted_source_redaction",
+          "original_sha256": "4dc2ec96f779c97567349231c54c76330658e9faaa06543bb34cb8f2d9e9686f"
+        }
+      ],
+      "public_history_rewritten": false
     }
   ]
 }

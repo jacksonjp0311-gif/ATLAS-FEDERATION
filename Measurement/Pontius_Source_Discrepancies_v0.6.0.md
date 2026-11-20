@@ -8,14 +8,7 @@ A subsequent check used NIST StRD certified numerical regression statistics, whi
 
 ## Comparisons exceeding handbook display rounding
 
-| Model | Quantity | Handbook | Recomputed | Original absolute tolerance |
-|---|---|---:|---:|---:|
-| linear | beta_0 | 0.00614969 | 0.00614968421052632 | 5e-09 |
-| linear | residual_sd | 0.0021712694 | 0.00217127259605675 | 5e-11 |
-| linear | lack_of_fit_F | 214.7464 | 214.746923653909 | 5e-05 |
-| quadratic | beta_0 | 0.000673618 | 0.000673565789473684 | 5e-10 |
-| quadratic | beta_2 | -3.16081e-15 | -3.16081871345029e-15 | 5e-21 |
-| quadratic | residual_sd | 0.0002051768 | 0.000205177424076185 | 5e-11 |
+[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.
 
 ## Interpretation
 
