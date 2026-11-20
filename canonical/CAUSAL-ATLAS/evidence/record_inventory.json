@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "total_records": 149,
+  "source_records": 34,
+  "new_sources": 11,
+  "new_records": 44,
+  "typed_relations": 65,
+  "original_records_retained": 105,
+  "all_old_revision_ids_retained": true,
+  "independent_scientific_review": false,
+  "release_status": "scoped_reference_content_v1; final_platform_scientific_acceptance_outstanding",
+  "scientific_v1_accepted": false
+}

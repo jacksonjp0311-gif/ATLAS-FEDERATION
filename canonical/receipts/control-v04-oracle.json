@@ -1,0 +1,26 @@
+{
+  "schema": "atlas.control-v04-independent-numeric-oracle/1",
+  "result": "passed",
+  "source": "author_generated_models_not_physical_measurements",
+  "seed": 61426,
+  "comparison_counts": {
+    "MIMO singular value": 500,
+    "MIMO condition": 250,
+    "MIMO S inverse": 1000,
+    "common P vertex min Q": 1920,
+    "LQR cost from optimize": 90,
+    "LQR Riccati identity": 90,
+    "grid minimum objective": 140,
+    "NIS solve": 280,
+    "ARX a fit": 120,
+    "ARX b fit": 120,
+    "ARX later RMS": 120
+  },
+  "total_comparisons": 4630,
+  "maximum_relative_to_one_scaled_error": 3.560056558214278e-14,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "independent_scientific_review": false,
+  "hardware_actuated": false,
+  "heldout_ai_evaluation": false
+}

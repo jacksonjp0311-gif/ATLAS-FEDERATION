@@ -1,0 +1,1070 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "regression discontinuity local linear",
+    "node_ids": [
+      "causal-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "79b96c29d1f3f9f2bbfc0b6e5da00120b4d51e532396da8815a108cd4ab8d21c",
+  "registry_revision": "06cc5ddcfc1a3cc29e0b8e16f90b57c966e0e6c09ad35c1c6ee208d66effa861",
+  "node_versions": {
+    "causal-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "d5cb543ebeda4c2d7295ba0c62b153067892f25eda7a45561eabad5f74dab0c4",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "A curated bounded content-release reference with assistant-checked publisher pages/abstracts, original derivations, transparent cases, attributed authentic aggregate counts and explicit unresolved reviewer and live-evaluation gaps; no independent scientific sign-off."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "causal-atlas:rd-local-linear",
+      "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d"
+    },
+    {
+      "record_id": "causal-atlas:rd-assignment-rule",
+      "revision": "95b83ed82fdb2d09695c0f60988da151cf5b5098633abc0919a80dc86b61899a"
+    },
+    {
+      "record_id": "causal-atlas:scope-maturity",
+      "revision": "5f4765956f8d8917aa2ec528a8dfddc748ac76e59fc3325fae4f33123d5a8a5d"
+    },
+    {
+      "record_id": "causal-atlas:rd-line-normal-equations",
+      "revision": "9f72461a2c76687357bad657017cfd1367b48085b5a801f5ac16cc11379c0806"
+    },
+    {
+      "record_id": "causal-atlas:constant-outcome-test",
+      "revision": "d18444f9bb7d6cafe6ad696a5a30a39a778b04959d3a792e1c5645bc8cf0d644"
+    },
+    {
+      "record_id": "causal-atlas:rd-curvature-sensitivity",
+      "revision": "c3c180a45a017d544c49df4302b2aa04bb10cb2dd971ce5e218a9588c585d831"
+    },
+    {
+      "record_id": "causal-atlas:rd-local-randomization",
+      "revision": "d0dd8da7f8a0ffc72370a889f214468b3d5402c91c1f7def732e3975ee18ee5e"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "causal-atlas:constant-outcome-test",
+      "revision": "d18444f9bb7d6cafe6ad696a5a30a39a778b04959d3a792e1c5645bc8cf0d644"
+    },
+    {
+      "record_id": "causal-atlas:rd-assignment-rule",
+      "revision": "95b83ed82fdb2d09695c0f60988da151cf5b5098633abc0919a80dc86b61899a"
+    },
+    {
+      "record_id": "causal-atlas:rd-curvature-sensitivity",
+      "revision": "c3c180a45a017d544c49df4302b2aa04bb10cb2dd971ce5e218a9588c585d831"
+    },
+    {
+      "record_id": "causal-atlas:rd-cutoff-target",
+      "revision": "b19a85faf3326d4f1f91c96eea52ea7a873a2d4c954895f77908a98c8af6c4f4"
+    },
+    {
+      "record_id": "causal-atlas:rd-fuzzy-target",
+      "revision": "9ece16be97dedab5826ae4dfd332e37fa79621e04f38b996f8b915b164612598"
+    },
+    {
+      "record_id": "causal-atlas:rd-implementation-support",
+      "revision": "407673aedbf8efefc68e8aa9d4b82a2135d9d64330c35be61a228ab6fb659db8"
+    },
+    {
+      "record_id": "causal-atlas:rd-inference-boundary",
+      "revision": "887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b"
+    },
+    {
+      "record_id": "causal-atlas:rd-line-normal-equations",
+      "revision": "9f72461a2c76687357bad657017cfd1367b48085b5a801f5ac16cc11379c0806"
+    },
+    {
+      "record_id": "causal-atlas:rd-local-linear",
+      "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d"
+    },
+    {
+      "record_id": "causal-atlas:rd-local-randomization",
+      "revision": "d0dd8da7f8a0ffc72370a889f214468b3d5402c91c1f7def732e3975ee18ee5e"
+    },
+    {
+      "record_id": "causal-atlas:scope-maturity",
+      "revision": "5f4765956f8d8917aa2ec528a8dfddc748ac76e59fc3325fae4f33123d5a8a5d"
+    },
+    {
+      "record_id": "causal-atlas:source:CCT2014",
+      "revision": "29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0"
+    },
+    {
+      "record_id": "causal-atlas:source:CT2022",
+      "revision": "57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde"
+    },
+    {
+      "record_id": "causal-atlas:source:IL2007",
+      "revision": "b353a238be6d34e8c1a2a4b9f471f8b0c4797296017e98d242d88d668c62da54"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Declared target and data-generating conditions only."
+          ],
+          "assumptions": [
+            "The example’s stated mechanism or the protocol’s declared scope."
+          ],
+          "domain": "causal-investigation",
+          "equation": "",
+          "limitations": [
+            "Not independent empirical validation or a general identification result."
+          ],
+          "tags": [
+            "constant outcome test",
+            "investigation"
+          ],
+          "text": "Set Y=m0=m1=c for every unit. Residuals vanish and AIPW must return zero. A test that fails this condition has an implementation or formula error; passing it alone does not prove complete correctness.",
+          "uncertainty": [
+            "No sample confidence interval or independent scientific certification is supplied."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent scientific review pending.",
+            "Original constructed mechanism or proposed workflow, not an empirical finding."
+          ],
+          "locators": [],
+          "origin": "authored_derivation_or_protocol",
+          "review_status": "authored_mathematical_teaching_material",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "constant-outcome-test",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "tests/test_estimation.py::test_same_constant_outcome_aipw_zero",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:constant-outcome-test",
+        "revision": "d18444f9bb7d6cafe6ad696a5a30a39a778b04959d3a792e1c5645bc8cf0d644",
+        "rights": {
+          "note": "Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "A useful algebraic regression test",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "New source inspection is abstract-only; this record does not verify any particular assignment system."
+          ],
+          "tags": [
+            "regression discontinuity",
+            "assignment",
+            "threshold"
+          ],
+          "text": "RD uses treatment assignment determined at least partly by which side of a fixed score threshold a unit occupies.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Primary-site indexed abstract and publication metadata",
+              "locator": "Primary-site indexed abstract and publication metadata",
+              "source_id": "causal-atlas:source:IL2007"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-assignment-rule",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-assignment-rule",
+        "revision": "95b83ed82fdb2d09695c0f60988da151cf5b5098633abc0919a80dc86b61899a",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:IL2007",
+            "revision": "b353a238be6d34e8c1a2a4b9f471f8b0c4797296017e98d242d88d668c62da54"
+          }
+        ],
+        "status": "active",
+        "title": "RD starts with a documented threshold assignment",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "No sampling noise in this case; smaller bandwidth is not generally optimal."
+          ],
+          "tags": [
+            "bandwidth",
+            "curvature",
+            "synthetic"
+          ],
+          "text": "On the authored curved grid the exact limiting jump is five; triangular local-line estimates are 4.925, 4.775 and about 4.3901 for three fixed bandwidths.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "synthetic",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-curvature-sensitivity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi_cases.py:curved_rd_rows; docs/investigations/06_support_and_sensitivity.md",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-curvature-sensitivity",
+        "revision": "c3c180a45a017d544c49df4302b2aa04bb10cb2dd971ce5e218a9588c585d831",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "A fixed local-line window can retain curvature bias",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [
+            "Appropriate continuity and support at the cutoff."
+          ],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Conditions must be justified, not inferred from a smooth-looking plot."
+          ],
+          "tags": [
+            "sharp RD",
+            "local effect",
+            "continuity"
+          ],
+          "text": "Under the specified continuity conditions, the boundary contrast targets an effect at the cutoff, not an unrestricted population effect.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Section 2.1, printed p. 824",
+              "locator": "Section 2.1, printed p. 824",
+              "source_id": "causal-atlas:source:CT2022"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-cutoff-target",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-cutoff-target",
+        "revision": "b19a85faf3326d4f1f91c96eea52ea7a873a2d4c954895f77908a98c8af6c4f4",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:CT2022",
+            "revision": "57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde"
+          }
+        ],
+        "status": "active",
+        "title": "Sharp continuity-based RD has a cutoff target",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Ratio arithmetic does not validate exclusion or monotonicity."
+          ],
+          "tags": [
+            "fuzzy RD",
+            "compliance",
+            "local Wald"
+          ],
+          "text": "Imperfect receipt yields separate outcome and treatment jumps. A local complier interpretation of their ratio needs additional assumptions.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Section 2.2, printed pp. 827-828",
+              "locator": "Section 2.2, printed pp. 827-828",
+              "source_id": "causal-atlas:source:CT2022"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-fuzzy-target",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-fuzzy-target",
+        "revision": "9ece16be97dedab5826ae4dfd332e37fa79621e04f38b996f8b915b164612598",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:CT2022",
+            "revision": "57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde"
+          }
+        ],
+        "status": "active",
+        "title": "Fuzzy RD distinguishes assignment from treatment receipt",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "This arithmetic minimum is not a recommended inferential sample size or proof of continuity."
+          ],
+          "tags": [
+            "score support",
+            "RD",
+            "rank deficiency"
+          ],
+          "text": "The bounded tool requires three positive-weight rows and two distinct scores per side; identical repeated scores alone cannot determine independent local slopes.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "authored_derivation",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-implementation-support",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi.py:_fit_side",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-implementation-support",
+        "revision": "407673aedbf8efefc68e8aa9d4b82a2135d9d64330c35be61a228ab6fb659db8",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Distinct score support is an arithmetic requirement",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "That inferential procedure is not implemented by this Atlas point estimator."
+          ],
+          "tags": [
+            "RD",
+            "bias correction",
+            "confidence interval"
+          ],
+          "text": "Bandwidth-dependent bias affects RD confidence intervals. Robust bias-corrected inference also accounts for variability added by bias estimation.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Introduction, printed pp. 2296-2297",
+              "locator": "Introduction, printed pp. 2296-2297",
+              "source_id": "causal-atlas:source:CCT2014"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-inference-boundary",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-inference-boundary",
+        "revision": "887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:CCT2014",
+            "revision": "29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0"
+          }
+        ],
+        "status": "active",
+        "title": "A point fit is not robust bias-corrected inference",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "a=(S2*T0-S1*T1)/(S0*S2-S1^2)",
+          "limitations": [
+            "Exact arithmetic for bounded inputs is not error-free causal inference."
+          ],
+          "tags": [
+            "local linear",
+            "normal equations",
+            "RD"
+          ],
+          "text": "With positive kernel weights and two distinct scaled scores, the intercept follows from weighted normal equations; the reported jump subtracts left from right intercept.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "authored_derivation",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-line-normal-equations",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "docs/chapters/11_regression_discontinuity.md; causal_atlas/quasi.py:_fit_side",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-line-normal-equations",
+        "revision": "9f72461a2c76687357bad657017cfd1367b48085b5a801f5ac16cc11379c0806",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Exact weighted two-by-two boundary fit",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Point calculation only; no automatic bandwidth selection or confidence interval."
+          ],
+          "tags": [
+            "local linear",
+            "RD",
+            "triangular kernel"
+          ],
+          "text": "Local polynomial RD estimates use separate regressions near the cutoff. The implemented subset fits weighted lines with a user-declared window and reports their intercept difference.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Introduction, printed p. 2296",
+              "locator": "Introduction, printed p. 2296",
+              "source_id": "causal-atlas:source:CCT2014"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-local-linear",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-local-linear",
+        "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:CCT2014",
+            "revision": "29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0"
+          }
+        ],
+        "status": "active",
+        "title": "Separate local weighted regressions at a cutoff",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Randomization inference and window selection are not implemented here."
+          ],
+          "tags": [
+            "RD",
+            "local randomization",
+            "window"
+          ],
+          "text": "Local randomization posits a justified assignment structure within a neighborhood; narrowing a bandwidth alone does not establish it.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Section 2.1, printed p. 826",
+              "locator": "Section 2.1, printed p. 826",
+              "source_id": "causal-atlas:source:CT2022"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-local-randomization",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-local-randomization",
+        "revision": "d0dd8da7f8a0ffc72370a889f214468b3d5402c91c1f7def732e3975ee18ee5e",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:CT2022",
+            "revision": "57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde"
+          }
+        ],
+        "status": "active",
+        "title": "A finite-window randomization model is a separate assumption",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared target and data-generating conditions only."
+          ],
+          "assumptions": [
+            "The example’s stated mechanism or the protocol’s declared scope."
+          ],
+          "domain": "causal-investigation",
+          "equation": "",
+          "limitations": [
+            "Not independent empirical validation or a general identification result."
+          ],
+          "tags": [
+            "scope maturity",
+            "investigation"
+          ],
+          "text": "This release deepens point-exposure investigation and documents design extensions. Instrumental variables, regression discontinuity, general mediation, longitudinal estimation, survival analysis, transport estimators and causal discovery remain content/implementation gaps. Their names on a roadmap do not imply tested coverage.",
+          "uncertainty": [
+            "No sample confidence interval or independent scientific certification is supplied."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent scientific review pending.",
+            "Original constructed mechanism or proposed workflow, not an empirical finding."
+          ],
+          "locators": [],
+          "origin": "authored_derivation_or_protocol",
+          "review_status": "authored_mathematical_teaching_material",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "scope-maturity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "docs/COVERAGE_MATRIX.md",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:scope-maturity",
+        "revision": "5f4765956f8d8917aa2ec528a8dfddc748ac76e59fc3325fae4f33123d5a8a5d",
+        "rights": {
+          "note": "Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Reference coverage is not estimator implementation",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Only the specifically inspected portions."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.",
+            "Not independent reproduction or rights clearance for source redistribution."
+          ],
+          "tags": [
+            "bibliography",
+            "cct2014"
+          ],
+          "text": "Sebastian Calonico; Matias D. Cattaneo; Rocio Titiunik. Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs. Econometrica 82(6), 2014, 2295-2326.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent human review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion",
+              "locator": "Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion",
+              "source_id": "causal-atlas:source:CCT2014"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "CCT2014",
+        "provenance": {
+          "access": "Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.",
+          "authors": "Sebastian Calonico; Matias D. Cattaneo; Rocio Titiunik",
+          "checked_at": "2026-11-12",
+          "doi": "10.3982/ECTA11757",
+          "edition_added": "0.3.0",
+          "inspected_scope": "Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion",
+          "publication_or_version": "Econometrica 82(6), 2014, 2295-2326",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf"
+        },
+        "record_id": "causal-atlas:source:CCT2014",
+        "revision": "29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0",
+        "rights": {
+          "note": "Bibliographic metadata, original short descriptions and links only; linked full text not bundled.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Only the specifically inspected portions."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.",
+            "Not independent reproduction or rights clearance for source redistribution."
+          ],
+          "tags": [
+            "bibliography",
+            "ct2022"
+          ],
+          "text": "Matias D. Cattaneo; Rocio Titiunik. Regression Discontinuity Designs. Annual Review of Economics 14, 2022, 821-851.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent human review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)",
+              "locator": "Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)",
+              "source_id": "causal-atlas:source:CT2022"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "CT2022",
+        "provenance": {
+          "access": "Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.",
+          "authors": "Matias D. Cattaneo; Rocio Titiunik",
+          "checked_at": "2026-11-12",
+          "doi": "10.1146/annurev-economics-051520-021409",
+          "edition_added": "0.3.0",
+          "inspected_scope": "Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)",
+          "publication_or_version": "Annual Review of Economics 14, 2022, 821-851",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://rdpackages.github.io/references/Cattaneo-Titiunik_2022_ARE.pdf"
+        },
+        "record_id": "causal-atlas:source:CT2022",
+        "revision": "57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde",
+        "rights": {
+          "note": "Bibliographic metadata, original short descriptions and links only; linked full text not bundled.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Regression Discontinuity Designs",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Only the specifically inspected portions."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.",
+            "Not independent reproduction or rights clearance for source redistribution."
+          ],
+          "tags": [
+            "bibliography",
+            "il2007"
+          ],
+          "text": "Guido Imbens; Thomas Lemieux. Regression Discontinuity Designs: A Guide to Practice. NBER Working Paper 13039, April 2007; journal version 2008.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent human review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Primary-site indexed abstract and publication metadata",
+              "locator": "Primary-site indexed abstract and publication metadata",
+              "source_id": "causal-atlas:source:IL2007"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "indexed_primary_abstract_only",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "IL2007",
+        "provenance": {
+          "access": "Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.",
+          "authors": "Guido Imbens; Thomas Lemieux",
+          "checked_at": "2026-11-12",
+          "doi": "10.3386/w13039",
+          "edition_added": "0.3.0",
+          "inspected_scope": "Primary-site indexed abstract and publication metadata",
+          "publication_or_version": "NBER Working Paper 13039, April 2007; journal version 2008",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://www.nber.org/papers/w13039"
+        },
+        "record_id": "causal-atlas:source:IL2007",
+        "revision": "b353a238be6d34e8c1a2a4b9f471f8b0c4797296017e98d242d88d668c62da54",
+        "rights": {
+          "note": "Bibliographic metadata, original short descriptions and links only; linked full text not bundled.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Regression Discontinuity Designs: A Guide to Practice",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "causal-atlas:rd-fuzzy-target",
+          "revision": "9ece16be97dedab5826ae4dfd332e37fa79621e04f38b996f8b915b164612598"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:rd-fuzzy-target:qualifies:rd-inference-boundary",
+        "revision": "97e2457c9c48ea8438ea6ca9d09af344571c4e99f7b07403647f8fe67ccd4064",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:rd-inference-boundary",
+          "revision": "887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:rd-local-linear",
+          "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:rd-local-linear:qualifies:rd-cutoff-target",
+        "revision": "91cea8ec3d06bafd0897c0d561b5f49133ccc9ed7fb25489b1691e93238be5d3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:rd-cutoff-target",
+          "revision": "b19a85faf3326d4f1f91c96eea52ea7a873a2d4c954895f77908a98c8af6c4f4"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:rd-local-linear",
+          "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:rd-local-linear:qualifies:rd-implementation-support",
+        "revision": "9e79b19da9d1cce48a8388314b2efbc6388430ad5da888c947011ba2b970d6cf",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:rd-implementation-support",
+          "revision": "407673aedbf8efefc68e8aa9d4b82a2135d9d64330c35be61a228ab6fb659db8"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:rd-local-linear",
+          "revision": "8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:rd-local-linear:qualifies:rd-inference-boundary",
+        "revision": "b8514d61279be47261c59a5835f6555110a302c41d8f7d4fc1bf18582637868d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:rd-inference-boundary",
+          "revision": "887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Declared target and data-generating conditions only.\"],\"assumptions\":[\"The example’s stated mechanism or the protocol’s declared scope.\"],\"domain\":\"causal-investigation\",\"equation\":\"\",\"limitations\":[\"Not independent empirical validation or a general identification result.\"],\"tags\":[\"constant outcome test\",\"investigation\"],\"text\":\"Set Y=m0=m1=c for every unit. Residuals vanish and AIPW must return zero. A test that fails this condition has an implementation or formula error; passing it alone does not prove complete correctness.\",\"uncertainty\":[\"No sample confidence interval or independent scientific certification is supplied.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent scientific review pending.\",\"Original constructed mechanism or proposed workflow, not an empirical finding.\"],\"locators\":[],\"origin\":\"authored_derivation_or_protocol\",\"review_status\":\"authored_mathematical_teaching_material\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"constant-outcome-test\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"tests/test_estimation.py::test_same_constant_outcome_aipw_zero\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:constant-outcome-test\",\"revision\":\"d18444f9bb7d6cafe6ad696a5a30a39a778b04959d3a792e1c5645bc8cf0d644\",\"rights\":{\"note\":\"Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"A useful algebraic regression test\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"New source inspection is abstract-only; this record does not verify any particular assignment system.\"],\"tags\":[\"regression discontinuity\",\"assignment\",\"threshold\"],\"text\":\"RD uses treatment assignment determined at least partly by which side of a fixed score threshold a unit occupies.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Primary-site indexed abstract and publication metadata\",\"locator\":\"Primary-site indexed abstract and publication metadata\",\"source_id\":\"causal-atlas:source:IL2007\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-assignment-rule\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-assignment-rule\",\"revision\":\"95b83ed82fdb2d09695c0f60988da151cf5b5098633abc0919a80dc86b61899a\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:IL2007\",\"revision\":\"b353a238be6d34e8c1a2a4b9f471f8b0c4797296017e98d242d88d668c62da54\"}],\"status\":\"active\",\"title\":\"RD starts with a documented threshold assignment\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"No sampling noise in this case; smaller bandwidth is not generally optimal.\"],\"tags\":[\"bandwidth\",\"curvature\",\"synthetic\"],\"text\":\"On the authored curved grid the exact limiting jump is five; triangular local-line estimates are 4.925, 4.775 and about 4.3901 for three fixed bandwidths.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"synthetic\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-curvature-sensitivity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi_cases.py:curved_rd_rows; docs/investigations/06_support_and_sensitivity.md\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-curvature-sensitivity\",\"revision\":\"c3c180a45a017d544c49df4302b2aa04bb10cb2dd971ce5e218a9588c585d831\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"A fixed local-line window can retain curvature bias\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[\"Appropriate continuity and support at the cutoff.\"],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Conditions must be justified, not inferred from a smooth-looking plot.\"],\"tags\":[\"sharp RD\",\"local effect\",\"continuity\"],\"text\":\"Under the specified continuity conditions, the boundary contrast targets an effect at the cutoff, not an unrestricted population effect.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Section 2.1, printed p. 824\",\"locator\":\"Section 2.1, printed p. 824\",\"source_id\":\"causal-atlas:source:CT2022\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-cutoff-target\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-cutoff-target\",\"revision\":\"b19a85faf3326d4f1f91c96eea52ea7a873a2d4c954895f77908a98c8af6c4f4\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:CT2022\",\"revision\":\"57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde\"}],\"status\":\"active\",\"title\":\"Sharp continuity-based RD has a cutoff target\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Ratio arithmetic does not validate exclusion or monotonicity.\"],\"tags\":[\"fuzzy RD\",\"compliance\",\"local Wald\"],\"text\":\"Imperfect receipt yields separate outcome and treatment jumps. A local complier interpretation of their ratio needs additional assumptions.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Section 2.2, printed pp. 827-828\",\"locator\":\"Section 2.2, printed pp. 827-828\",\"source_id\":\"causal-atlas:source:CT2022\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-fuzzy-target\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-fuzzy-target\",\"revision\":\"9ece16be97dedab5826ae4dfd332e37fa79621e04f38b996f8b915b164612598\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:CT2022\",\"revision\":\"57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde\"}],\"status\":\"active\",\"title\":\"Fuzzy RD distinguishes assignment from treatment receipt\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"This arithmetic minimum is not a recommended inferential sample size or proof of continuity.\"],\"tags\":[\"score support\",\"RD\",\"rank deficiency\"],\"text\":\"The bounded tool requires three positive-weight rows and two distinct scores per side; identical repeated scores alone cannot determine independent local slopes.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"authored_derivation\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-implementation-support\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi.py:_fit_side\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-implementation-support\",\"revision\":\"407673aedbf8efefc68e8aa9d4b82a2135d9d64330c35be61a228ab6fb659db8\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Distinct score support is an arithmetic requirement\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"That inferential procedure is not implemented by this Atlas point estimator.\"],\"tags\":[\"RD\",\"bias correction\",\"confidence interval\"],\"text\":\"Bandwidth-dependent bias affects RD confidence intervals. Robust bias-corrected inference also accounts for variability added by bias estimation.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Introduction, printed pp. 2296-2297\",\"locator\":\"Introduction, printed pp. 2296-2297\",\"source_id\":\"causal-atlas:source:CCT2014\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-inference-boundary\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-inference-boundary\",\"revision\":\"887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:CCT2014\",\"revision\":\"29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0\"}],\"status\":\"active\",\"title\":\"A point fit is not robust bias-corrected inference\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"a=(S2*T0-S1*T1)/(S0*S2-S1^2)\",\"limitations\":[\"Exact arithmetic for bounded inputs is not error-free causal inference.\"],\"tags\":[\"local linear\",\"normal equations\",\"RD\"],\"text\":\"With positive kernel weights and two distinct scaled scores, the intercept follows from weighted normal equations; the reported jump subtracts left from right intercept.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"authored_derivation\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-line-normal-equations\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"docs/chapters/11_regression_discontinuity.md; causal_atlas/quasi.py:_fit_side\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-line-normal-equations\",\"revision\":\"9f72461a2c76687357bad657017cfd1367b48085b5a801f5ac16cc11379c0806\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Exact weighted two-by-two boundary fit\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Point calculation only; no automatic bandwidth selection or confidence interval.\"],\"tags\":[\"local linear\",\"RD\",\"triangular kernel\"],\"text\":\"Local polynomial RD estimates use separate regressions near the cutoff. The implemented subset fits weighted lines with a user-declared window and reports their intercept difference.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Introduction, printed p. 2296\",\"locator\":\"Introduction, printed p. 2296\",\"source_id\":\"causal-atlas:source:CCT2014\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-local-linear\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-local-linear\",\"revision\":\"8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:CCT2014\",\"revision\":\"29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0\"}],\"status\":\"active\",\"title\":\"Separate local weighted regressions at a cutoff\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Randomization inference and window selection are not implemented here.\"],\"tags\":[\"RD\",\"local randomization\",\"window\"],\"text\":\"Local randomization posits a justified assignment structure within a neighborhood; narrowing a bandwidth alone does not establish it.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Section 2.1, printed p. 826\",\"locator\":\"Section 2.1, printed p. 826\",\"source_id\":\"causal-atlas:source:CT2022\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-local-randomization\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-local-randomization\",\"revision\":\"d0dd8da7f8a0ffc72370a889f214468b3d5402c91c1f7def732e3975ee18ee5e\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:CT2022\",\"revision\":\"57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde\"}],\"status\":\"active\",\"title\":\"A finite-window randomization model is a separate assumption\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared target and data-generating conditions only.\"],\"assumptions\":[\"The example’s stated mechanism or the protocol’s declared scope.\"],\"domain\":\"causal-investigation\",\"equation\":\"\",\"limitations\":[\"Not independent empirical validation or a general identification result.\"],\"tags\":[\"scope maturity\",\"investigation\"],\"text\":\"This release deepens point-exposure investigation and documents design extensions. Instrumental variables, regression discontinuity, general mediation, longitudinal estimation, survival analysis, transport estimators and causal discovery remain content/implementation gaps. Their names on a roadmap do not imply tested coverage.\",\"uncertainty\":[\"No sample confidence interval or independent scientific certification is supplied.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent scientific review pending.\",\"Original constructed mechanism or proposed workflow, not an empirical finding.\"],\"locators\":[],\"origin\":\"authored_derivation_or_protocol\",\"review_status\":\"authored_mathematical_teaching_material\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"scope-maturity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"docs/COVERAGE_MATRIX.md\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:scope-maturity\",\"revision\":\"5f4765956f8d8917aa2ec528a8dfddc748ac76e59fc3325fae4f33123d5a8a5d\",\"rights\":{\"note\":\"Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Reference coverage is not estimator implementation\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Only the specifically inspected portions.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.\",\"Not independent reproduction or rights clearance for source redistribution.\"],\"tags\":[\"bibliography\",\"cct2014\"],\"text\":\"Sebastian Calonico; Matias D. Cattaneo; Rocio Titiunik. Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs. Econometrica 82(6), 2014, 2295-2326.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent human review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion\",\"locator\":\"Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion\",\"source_id\":\"causal-atlas:source:CCT2014\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"CCT2014\",\"provenance\":{\"access\":\"Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.\",\"authors\":\"Sebastian Calonico; Matias D. Cattaneo; Rocio Titiunik\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.3982/ECTA11757\",\"edition_added\":\"0.3.0\",\"inspected_scope\":\"Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion\",\"publication_or_version\":\"Econometrica 82(6), 2014, 2295-2326\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf\"},\"record_id\":\"causal-atlas:source:CCT2014\",\"revision\":\"29d725bc3b51d6715fe1be380b2bd6ec79a6a97e7bf6509ca69f97b8e4cb2aa0\",\"rights\":{\"note\":\"Bibliographic metadata, original short descriptions and links only; linked full text not bundled.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Only the specifically inspected portions.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.\",\"Not independent reproduction or rights clearance for source redistribution.\"],\"tags\":[\"bibliography\",\"ct2022\"],\"text\":\"Matias D. Cattaneo; Rocio Titiunik. Regression Discontinuity Designs. Annual Review of Economics 14, 2022, 821-851.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent human review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)\",\"locator\":\"Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)\",\"source_id\":\"causal-atlas:source:CT2022\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"CT2022\",\"provenance\":{\"access\":\"Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.\",\"authors\":\"Matias D. Cattaneo; Rocio Titiunik\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.1146/annurev-economics-051520-021409\",\"edition_added\":\"0.3.0\",\"inspected_scope\":\"Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)\",\"publication_or_version\":\"Annual Review of Economics 14, 2022, 821-851\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://rdpackages.github.io/references/Cattaneo-Titiunik_2022_ARE.pdf\"},\"record_id\":\"causal-atlas:source:CT2022\",\"revision\":\"57f6fdeea12dcedc1333cd8e79b7b5121af2d5152763045d074b6ae88767bbde\",\"rights\":{\"note\":\"Bibliographic metadata, original short descriptions and links only; linked full text not bundled.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Regression Discontinuity Designs\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Only the specifically inspected portions.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.\",\"Not independent reproduction or rights clearance for source redistribution.\"],\"tags\":[\"bibliography\",\"il2007\"],\"text\":\"Guido Imbens; Thomas Lemieux. Regression Discontinuity Designs: A Guide to Practice. NBER Working Paper 13039, April 2007; journal version 2008.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent human review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Primary-site indexed abstract and publication metadata\",\"locator\":\"Primary-site indexed abstract and publication metadata\",\"source_id\":\"causal-atlas:source:IL2007\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"indexed_primary_abstract_only\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"IL2007\",\"provenance\":{\"access\":\"Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.\",\"authors\":\"Guido Imbens; Thomas Lemieux\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.3386/w13039\",\"edition_added\":\"0.3.0\",\"inspected_scope\":\"Primary-site indexed abstract and publication metadata\",\"publication_or_version\":\"NBER Working Paper 13039, April 2007; journal version 2008\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://www.nber.org/papers/w13039\"},\"record_id\":\"causal-atlas:source:IL2007\",\"revision\":\"b353a238be6d34e8c1a2a4b9f471f8b0c4797296017e98d242d88d668c62da54\",\"rights\":{\"note\":\"Bibliographic metadata, original short descriptions and links only; linked full text not bundled.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Regression Discontinuity Designs: A Guide to Practice\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"causal-atlas:rd-fuzzy-target\",\"revision\":\"9ece16be97dedab5826ae4dfd332e37fa79621e04f38b996f8b915b164612598\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:rd-fuzzy-target:qualifies:rd-inference-boundary\",\"revision\":\"97e2457c9c48ea8438ea6ca9d09af344571c4e99f7b07403647f8fe67ccd4064\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:rd-inference-boundary\",\"revision\":\"887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:rd-local-linear\",\"revision\":\"8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:rd-local-linear:qualifies:rd-cutoff-target\",\"revision\":\"91cea8ec3d06bafd0897c0d561b5f49133ccc9ed7fb25489b1691e93238be5d3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:rd-cutoff-target\",\"revision\":\"b19a85faf3326d4f1f91c96eea52ea7a873a2d4c954895f77908a98c8af6c4f4\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:rd-local-linear\",\"revision\":\"8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:rd-local-linear:qualifies:rd-implementation-support\",\"revision\":\"9e79b19da9d1cce48a8388314b2efbc6388430ad5da888c947011ba2b970d6cf\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:rd-implementation-support\",\"revision\":\"407673aedbf8efefc68e8aa9d4b82a2135d9d64330c35be61a228ab6fb659db8\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:rd-local-linear\",\"revision\":\"8f26f465dcdaad8b47f33b8bf362b61fbffb38d9b406c79c11e6cd739a96232d\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:rd-local-linear:qualifies:rd-inference-boundary\",\"revision\":\"b8514d61279be47261c59a5835f6555110a302c41d8f7d4fc1bf18582637868d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:rd-inference-boundary\",\"revision\":\"887f31a5f7a4d90f6edd9db5fb20d2215c082ee75ac810a00da120057ee70a0b\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 27593,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "causal-atlas:iv-late-target",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "ac6a576db5e714f032d5c326a214e8b8ad4cf4ee14b12054408f74d7c0b2fdc8"
+}

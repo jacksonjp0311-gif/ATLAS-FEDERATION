@@ -1,0 +1,121 @@
+{
+  "schema": "measurement.casebook/1",
+  "data_origin": "synthetic_only",
+  "result": "passed",
+  "cases": [
+    {
+      "id": "repeat_readings",
+      "data_origin": "synthetic_teaching_example",
+      "unit": "mm",
+      "assumptions": [
+        "independent stable readings",
+        "values invented for arithmetic"
+      ],
+      "result": {
+        "n": 5,
+        "mean": 10.0,
+        "sample_sd": 0.15811388300841842,
+        "standard_uncertainty_mean": 0.0707106781186545,
+        "assumptions": [
+          "independent repeat measurements",
+          "stable process",
+          "sample standard deviation model"
+        ]
+      }
+    },
+    {
+      "id": "uniform_bound",
+      "data_origin": "synthetic_teaching_example",
+      "unit": "mm",
+      "assumptions": [
+        "symmetric uniform distribution is justified by caller"
+      ],
+      "result": {
+        "standard_uncertainty": 0.17320508075688773,
+        "distribution": "uniform",
+        "half_width": 0.3,
+        "limitations": "Distribution and symmetric bounds must be justified by source or experiment."
+      }
+    },
+    {
+      "id": "independent_budget",
+      "data_origin": "synthetic_teaching_example",
+      "unit": "mm",
+      "assumptions": [
+        "uncorrelated inputs",
+        "units already harmonized",
+        "first-order model"
+      ],
+      "result": {
+        "schema": "measurement-atlas.budget.v1",
+        "output_unit": "mm",
+        "combined_standard_uncertainty": 0.223606797749979,
+        "combined_variance": 0.05000000000000001,
+        "signed_variance_contributions": {
+          "repeatability": 0.010000000000000002,
+          "calibration": 0.04000000000000001
+        },
+        "components": [
+          {
+            "name": "repeatability",
+            "standard_uncertainty": 0.1,
+            "sensitivity": 1,
+            "output_unit": "mm"
+          },
+          {
+            "name": "calibration",
+            "standard_uncertainty": 0.2,
+            "sensitivity": 1,
+            "output_unit": "mm"
+          }
+        ],
+        "correlation_matrix": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "assumptions": [
+          "first-order linear propagation",
+          "input standard uncertainties and sensitivities supplied by caller",
+          "correlation is specified or set to independence",
+          "all component uncertainties represented in compatible output units"
+        ],
+        "decision": "no coverage probability or conformity decision inferred"
+      }
+    },
+    {
+      "id": "correlated_difference",
+      "data_origin": "synthetic_teaching_example",
+      "unit": "mm",
+      "assumptions": [
+        "supplied covariance .03 mm^2",
+        "no conformity decision without a rule"
+      ],
+      "result": {
+        "difference": 0.10000000000000142,
+        "standard_uncertainty_difference": 0.2645751311064591,
+        "decision": "requires an explicit decision rule and coverage model"
+      }
+    },
+    {
+      "id": "expanded",
+      "data_origin": "synthetic_teaching_example",
+      "unit": "mm",
+      "assumptions": [
+        "coverage factor chosen as 2",
+        "no probability inferred"
+      ],
+      "result": {
+        "expanded_uncertainty": 0.4,
+        "coverage_factor": 2.0,
+        "warning": "Do not infer confidence probability from k without distribution and degrees-of-freedom assumptions."
+      }
+    }
+  ],
+  "real_laboratory_reproduction": false
+}

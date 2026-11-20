@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.mathematics-physics-content-inventory-v04/1",
+  "edition": "0.4.0",
+  "chapters": 52,
+  "new_v04_chapters": 4,
+  "constructed_cases_total": 38,
+  "v04_cases": 6,
+  "node_records": 224,
+  "local_relations": 208,
+  "full_federation_relations_of_node": 216,
+  "local_bibliography_cards": 14,
+  "new_bibliography_cards": 1,
+  "original_publisher_transport_files_authenticated": 0,
+  "field_physics_experiments": 0,
+  "independent_scientific_peer_review": false
+}

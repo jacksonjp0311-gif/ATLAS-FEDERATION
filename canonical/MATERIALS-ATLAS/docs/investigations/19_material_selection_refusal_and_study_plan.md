@@ -1,0 +1,9 @@
+# Investigation 19 — A material recommendation requires a study, not just property rankings
+
+A manufacturing engineer asks whether to switch to an alternative alloy for a hot corrosive component. The available material entries show nominal thermal conductivity, published room-temperature tensile strength, a synthetic corrosion rate, and an uncalibrated steady-creep formula. No heat/lot certification, temperature-resolved creep measurements, service chemistry, geometry, loading spectrum, local damage inspection, or design-code requirements are provided.
+
+**What can be calculated:** a heat-flow ranking under supplied one-dimensional assumptions, an equivalent mass-loss corrosion rate from corrected coupon values, and a conditional strain-rate from chosen creep parameters. **What cannot be established:** which alloy is safer, if the part meets service life, or whether corrosion is localized. A DFT formation-energy hull cannot supply this missing evidence either.
+
+**Study design:** (1) define the failure modes and load/temperature history; (2) identify exact candidate alloys, product form, condition and lot; (3) measure or source suitably comparable temperature-dependent properties; (4) evaluate corrosion under representative medium and flow with local morphology; (5) review welds and manufacturing effects; (6) model coupled thermal, mechanical and chemical conditions with sensitivity analyses; (7) compare against applicable qualification requirements; (8) run independent engineering review and specimen tests where warranted.
+
+**Decision record:** `insufficient_evidence_for_material_substitution`. Missing entries remain blank, and neither source ratings nor test counts are substitutes for traceability. This refusal is a useful scientific output: it identifies the observations and assumptions required to turn a plausible model into a defensible engineering conclusion.

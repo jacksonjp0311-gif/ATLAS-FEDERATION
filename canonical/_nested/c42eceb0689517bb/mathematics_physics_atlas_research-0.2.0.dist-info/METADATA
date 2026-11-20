@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: mathematics-physics-atlas-research
+Version: 0.2.0
+Summary: Offline scientific reconstruction mathematics and fundamental physics for computing and AI
+Requires-Python: >=3.10
+License-File: NOTICE.md
+Dynamic: license-file

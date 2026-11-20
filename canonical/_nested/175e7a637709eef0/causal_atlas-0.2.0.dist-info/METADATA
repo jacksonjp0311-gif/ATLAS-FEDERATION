@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: causal-atlas
+Version: 0.2.0
+Summary: Source-linked causal reference with bounded DAG and finite-model teaching tools
+Requires-Python: >=3.10
+License-File: NOTICE.md
+Dynamic: license-file

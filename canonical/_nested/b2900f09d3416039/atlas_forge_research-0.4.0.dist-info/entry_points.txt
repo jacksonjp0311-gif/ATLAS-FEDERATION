@@ -1,0 +1,2 @@
+[console_scripts]
+atlas-forge = atlas_forge.cli:main

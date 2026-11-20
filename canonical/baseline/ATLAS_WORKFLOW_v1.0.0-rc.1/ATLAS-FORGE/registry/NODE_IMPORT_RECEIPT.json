@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-11",
+  "forge_version": "0.2.0",
+  "nodes": [
+    {
+      "node_id": "signal-atlas",
+      "version": "1.0",
+      "upstream": {
+        "repository": "jacksonjp0311-gif/SIGNAL-ATLAS",
+        "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+        "release_label": "v1.0",
+        "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS"
+      },
+      "manifest_sha256": "ffac8aa5053d86e529ab2be90f7ded60e49841bf8d95f9a225e9e5341c976562",
+      "snapshot_files": [
+        {
+          "path": "raw/claims.jsonl",
+          "upstream_path": "data/claims.jsonl",
+          "sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051",
+          "size_bytes": 34228,
+          "git_blob_sha1": "72ec1a96dad642df297a937324caefd434fff684",
+          "git_blob_verified": true
+        },
+        {
+          "path": "raw/sources.jsonl",
+          "upstream_path": "data/sources.jsonl",
+          "sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580",
+          "size_bytes": 113798,
+          "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+          "git_blob_verified": true
+        }
+      ],
+      "acquisition": "Retained owner archive plus GitHub-fetched tail records; completed raw files including line endings match the pinned upstream Git blob identities."
+    },
+    {
+      "node_id": "cymatics-atlas",
+      "version": "1.0.0",
+      "upstream": {
+        "repository": "jacksonjp0311-gif/CYMATICS-ATLAS",
+        "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+        "release_label": "v1.0.0",
+        "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS"
+      },
+      "manifest_sha256": "649d0e9465d0b705b1218845c634bcb7767ae8321a639baee5ed1850a557723e",
+      "snapshot_files": [
+        {
+          "path": "raw/corpus.json",
+          "upstream_path": "src/cymatics_atlas/resources/corpus.json",
+          "sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6",
+          "size_bytes": 83444,
+          "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+          "git_blob_verified": true
+        },
+        {
+          "path": "raw/claim_audits.json",
+          "upstream_path": "src/cymatics_atlas/resources/claim_audits.json",
+          "sha256": "7ea43999bea80f371c1d6928b930fd2d5f611c6990df88b77e1437dfc923c9bb",
+          "size_bytes": 14158,
+          "git_blob_sha1": "ee24fabe646817d013d3d57fe57931ee3ed37248",
+          "git_blob_verified": true
+        },
+        {
+          "path": "raw/publisher_evidence.json",
+          "upstream_path": "src/cymatics_atlas/resources/publisher_evidence.json",
+          "sha256": "16ec4a968484dba0de9b5247a14422211d99547d9ee42eeca185fc1682a095c2",
+          "size_bytes": 8011,
+          "git_blob_sha1": "c3264f8ee3e2dd5c45a73deec5c7c18d45b25916",
+          "git_blob_verified": true
+        },
+        {
+          "path": "raw/external_experiments.json",
+          "upstream_path": "src/cymatics_atlas/resources/external_experiments.json",
+          "sha256": "d59a4004d230d836abf1b9be13399e52b4d534da1f3487e262a01c921389c7f5",
+          "size_bytes": 2296,
+          "git_blob_sha1": "b46d0ee4abe55e2b1fe7e98035c7c377bb873a85",
+          "git_blob_verified": true
+        }
+      ],
+      "acquisition": "Retained v0.6.0 reference bytes reused only after each Git blob identity was compared to the published v1.0.0 commit; all four reference files are identical."
+    },
+    {
+      "node_id": "measurement-atlas",
+      "version": "0.1.0",
+      "upstream": {
+        "repository": null,
+        "commit": null,
+        "release_label": "v0.1.0 starter",
+        "url": null
+      },
+      "manifest_sha256": "9d6cb2466d9a41069d85c2816135386f2e30034a39ad632903f4bf8a9d30db1d",
+      "snapshot_files": [
+        {
+          "path": "raw/atlas_manifest.json",
+          "upstream_path": "atlas_manifest.json",
+          "sha256": "16321001283dfa7b4f5c23024789f0b6faa415ebc581c8294a8b79f6edf28308",
+          "size_bytes": 481,
+          "git_blob_sha1": null,
+          "git_blob_verified": false
+        },
+        {
+          "path": "raw/packets.jsonl",
+          "upstream_path": "data/packets.jsonl",
+          "sha256": "f5cd0eca2d31981d1ef819e893278b106744ede59a98f230a29ac651e488a394",
+          "size_bytes": 4287,
+          "git_blob_sha1": null,
+          "git_blob_verified": false
+        },
+        {
+          "path": "raw/sources.json",
+          "upstream_path": "data/sources.json",
+          "sha256": "0aa25a531ae04c9666309e7cc7d8e90fa0cb8906350baf4be5ef30fcbf045d38",
+          "size_bytes": 426,
+          "git_blob_sha1": null,
+          "git_blob_verified": false
+        }
+      ],
+      "acquisition": "Existing local Measurement Atlas starter in ATLAS FORGE v0.1.0; preserved unchanged."
+    }
+  ],
+  "scientific_revalidation_performed": false,
+  "remote_repositories_modified": false
+}

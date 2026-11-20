@@ -1,0 +1,59 @@
+RESULT_JSON={"ran": 188, "passed": 188, "failures": 0, "errors": 0, "skipped": 0}
+
+.......................................................................................----------------------------------------
+.Exception occurred during processing of request from ('127.0.0.1', 32812)
+Traceback (most recent call last):
+  File "/mnt/data/energy_v01_work/ATLAS_COLLECTION_Energy_v0.1.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/ATLAS-FORGE/src/atlas_forge/server.py", line 42, in do_GET
+    self._send(200,(files('atlas_forge')/'resources'/'hero.png').read_bytes(),'image/png')
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/energy_v01_work/ATLAS_COLLECTION_Energy_v0.1.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/ATLAS-FORGE/src/atlas_forge/server.py", line 21, in _send
+    self.end_headers();self.wfile.write(data)
+                       ~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/mnt/data/energy_v01_work/ATLAS_COLLECTION_Energy_v0.1.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/ATLAS-FORGE/src/atlas_forge/server.py", line 69, in do_GET
+    except (ValueError,OSError,TypeError,KeyError) as exc:self._json(400,{'error':str(exc)})
+                                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/energy_v01_work/ATLAS_COLLECTION_Energy_v0.1.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/ATLAS-FORGE/src/atlas_forge/server.py", line 22, in _json
+    def _json(self,status,obj):self._send(status,json.dumps(obj,ensure_ascii=False).encode('utf-8'))
+                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/energy_v01_work/ATLAS_COLLECTION_Energy_v0.1.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/ATLAS-FORGE/src/atlas_forge/server.py", line 21, in _send
+    self.end_headers();self.wfile.write(data)
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+....................................................................................................
+----------------------------------------------------------------------
+Ran 188 tests in 8.142s
+
+OK

@@ -1,0 +1,102 @@
+[
+  {
+    "rank": 1,
+    "slug": "measurement",
+    "title": "Measurement Atlas",
+    "initial_scope": "Units, uncertainty, calibration, traceability, repeatability and comparison",
+    "reuse_value": "Shared measurement foundation for every empirical Atlas",
+    "starter_source_description": "NIST TN 1297; SI Brochure",
+    "starter_source_url": "https://www.nist.gov/pml/nist-technical-note-1297",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 2,
+    "slug": "causal",
+    "title": "Causal Atlas",
+    "initial_scope": "Confounding, interventions, experiment design, counterfactuals",
+    "reuse_value": "Improve how agents decide which explanations survive tests",
+    "starter_source_description": "Hernán and Robins, Causal Inference: What If",
+    "starter_source_url": "https://miguelhernan.org/whatifbook",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 3,
+    "slug": "materials",
+    "title": "Materials Atlas",
+    "initial_scope": "Physical properties, phase diagrams, uncertainty, measurement versus prediction",
+    "reuse_value": "Bridge cymatics, fabrication and physical reasoning",
+    "starter_source_description": "Materials Project property documentation",
+    "starter_source_url": "https://docs.materialsproject.org/",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 4,
+    "slug": "control",
+    "title": "Control Atlas",
+    "initial_scope": "System dynamics, feedback, stability, observability and system identification",
+    "reuse_value": "Reusable engineering patterns and defensible agent-control analogies",
+    "starter_source_description": "Åström and Murray, Feedback Systems",
+    "starter_source_url": "https://authors.library.caltech.edu/records/yzs24-xsx88",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 5,
+    "slug": "agents",
+    "title": "Agent Atlas",
+    "initial_scope": "Agent orchestration, tool contracts, memory, evaluation and failure recovery",
+    "reuse_value": "Reusable reference for PEGASUS and SYMBIOTE",
+    "starter_source_description": "Published agent engineering practices; open-source frameworks",
+    "starter_source_url": "https://www.anthropic.com/research/building-effective-agents",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 6,
+    "slug": "computation",
+    "title": "Computation Atlas",
+    "initial_scope": "Numerical analysis, conditioning, solvers, error budgets and optimization",
+    "reuse_value": "Reproducible tools for low-compute discovery",
+    "starter_source_description": "NIST DLMF and validated numerical references",
+    "starter_source_url": "https://dlmf.nist.gov/",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 7,
+    "slug": "language",
+    "title": "Language Atlas",
+    "initial_scope": "Grammar, semantics, pragmatics, multilingual annotation and grounding",
+    "reuse_value": "Support Percy and language-bridge experiments",
+    "starter_source_description": "Universal Dependencies",
+    "starter_source_url": "https://universaldependencies.org/introduction.html",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 8,
+    "slug": "energy",
+    "title": "Energy Atlas",
+    "initial_scope": "Thermodynamics, energy balances, efficiency, losses and storage",
+    "reuse_value": "Energy research with explicit boundaries and comparable metrics",
+    "starter_source_description": "US DOE open data",
+    "starter_source_url": "https://www.energy.gov/data/open-energy-data",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 9,
+    "slug": "bioelectric",
+    "title": "Bioelectric Atlas",
+    "initial_scope": "Membrane potentials, channels, morphogenesis and organism-specific regeneration",
+    "reuse_value": "Source-grounded hypothesis map alongside regenerative research",
+    "starter_source_description": "Peer-reviewed bioelectric regeneration research",
+    "starter_source_url": "https://pubmed.ncbi.nlm.nih.gov/30799071/",
+    "status": "proposed_not_built"
+  },
+  {
+    "rank": 10,
+    "slug": "manufacturing",
+    "title": "Manufacturing Atlas",
+    "initial_scope": "Process variation, root-cause tests, equipment diagnostics, measurement systems",
+    "reuse_value": "Reusable manufacturing failure analysis",
+    "starter_source_description": "NIST Smart Manufacturing Systems Test Bed",
+    "starter_source_url": "https://www.nist.gov/laboratories/tools-instruments/smart-manufacturing-systems-sms-test-bed",
+    "status": "proposed_not_built"
+  }
+]

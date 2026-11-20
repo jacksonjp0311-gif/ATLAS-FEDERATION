@@ -1,0 +1,9 @@
+{
+  "schema": "atlas.curation-check/1",
+  "valid": true,
+  "records": 50,
+  "sources": 26,
+  "errors": [],
+  "scientific_support_verified_by_this_tool": false,
+  "check_scope": "required fields, source linkage and explicit limitations only"
+}

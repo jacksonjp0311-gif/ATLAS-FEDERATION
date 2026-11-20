@@ -1,0 +1,11 @@
+{
+  "result": "passed",
+  "version": "0.2.0",
+  "records": 237,
+  "local_relations": 204,
+  "source_closed_query": "passed",
+  "advanced_casebook_cases": 14,
+  "external_network_access": false,
+  "source_checkout_imported": false,
+  "actual_chemical_samples": 0
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "kind": "context_integrity",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "42bd02e11321462b1d013386d2cac8ddb84f7f4cb56546b9d10470cf6f995e18",
+  "measurement_subject_sha256": "cb236d9e736577d903dc019b3008b2fe27ee45a8b48f92cdadc63a72032f1cf6",
+  "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+  "recorded_at": "2026-11-12T19:45:19.130553+00:00",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "Regression checks for qualifiers, source closure, conflicts, byte budgets, correction invalidation and hostile text. Authored diagnostics, not independent AI evaluation.",
+  "independent_human_review": false,
+  "scientific_v1_accepted": false,
+  "evidence": [
+    {
+      "path": "ATLAS-FORGE_unit_verified.log",
+      "sha256": "7178c85a55f45d2f7a8ec2bcca4595b0cde1823ae99433902d2030ed235e9e18"
+    },
+    {
+      "path": "context.json",
+      "sha256": "0a846af8b84bb12bd933a0982dcc7eb883c70c74d552dc806e55930a18c6b5bd"
+    }
+  ]
+}

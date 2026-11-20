@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "version": "0.1.0",
+  "standalone_records": 164,
+  "internal_relations": 152,
+  "casebook": 22,
+  "installed_from_wheel": true,
+  "used_source_checkout": false
+}

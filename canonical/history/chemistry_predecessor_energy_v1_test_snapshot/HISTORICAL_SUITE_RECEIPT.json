@@ -1,0 +1,15 @@
+{
+  "schema": "atlas.chemistry-historical-suite-snapshot/1",
+  "historical_release": "energy-atlas-1.0.0",
+  "date": "2026-11-14",
+  "old_energy_v1_records": 301,
+  "original_10_node_federation_records": 2052,
+  "original_10_node_relations": 1245,
+  "includes_full_11_node_routing": false,
+  "previous_archive_bytes_preserved_separately": true,
+  "purpose": "Run unchanged Energy v1 unit assertions with exact previous common registry and data while chemistry node is new",
+  "source_old_complete_archive_sha256": "cb896893ee984ebc0d7b92af8c921e1ce4da75891a90101c052e109029e462f2",
+  "old_energy_manifest_sha256": "a5cc3b3e17006af15e9489a540c8dcefede06469b4c1fb5937e012a3c128037d",
+  "historical_registry_source": "exact earlier Energy v1 archive, not expanded 11-node registry",
+  "old_ten_node_common_export_authenticated": true
+}

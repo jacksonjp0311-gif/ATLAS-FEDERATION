@@ -1,0 +1,10 @@
+{
+  "browser": "Chromium via Playwright",
+  "test_mode": "set_content with real Federation data through a local test adapter; browser live HTTP blocked by environment administrator policy",
+  "node_cards": 3,
+  "cross_node_query_groups": 2,
+  "mobile_overflow": false,
+  "starter_opt_in": "passed",
+  "page_errors": [],
+  "http_api": "separately exercised in unittest on loopback"
+}

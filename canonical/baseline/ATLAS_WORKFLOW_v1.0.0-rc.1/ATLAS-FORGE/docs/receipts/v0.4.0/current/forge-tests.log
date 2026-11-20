@@ -1,0 +1,222 @@
+test_bad_source_url_type_is_rejected (test_atlas_forge.ForgeTests.test_bad_source_url_type_is_rejected) ... ok
+test_does_not_overwrite (test_atlas_forge.ForgeTests.test_does_not_overwrite) ... ok
+test_empty_query_abstains (test_atlas_forge.ForgeTests.test_empty_query_abstains) ... ok
+test_example_release_valid (test_atlas_forge.ForgeTests.test_example_release_valid) ... ok
+test_hash_detects_changed_claim (test_atlas_forge.ForgeTests.test_hash_detects_changed_claim) ... ok
+test_invalid_domain_rejected (test_atlas_forge.ForgeTests.test_invalid_domain_rejected) ... ok
+test_malformed_source_id_is_rejected_without_exception (test_atlas_forge.ForgeTests.test_malformed_source_id_is_rejected_without_exception) ... ok
+test_manifest_count_tamper (test_atlas_forge.ForgeTests.test_manifest_count_tamper) ... ok
+test_measured_requires_instrument (test_atlas_forge.ForgeTests.test_measured_requires_instrument) ... ok
+test_missing_source_registry_fails (test_atlas_forge.ForgeTests.test_missing_source_registry_fails) ... ok
+test_packet_duplicate_rejected (test_atlas_forge.ForgeTests.test_packet_duplicate_rejected) ... ok
+test_packet_hash_deterministic (test_atlas_forge.ForgeTests.test_packet_hash_deterministic) ... ok
+test_query_hit_carries_provenance (test_atlas_forge.ForgeTests.test_query_hit_carries_provenance) ... ok
+test_rank_has_ten_distinct (test_atlas_forge.ForgeTests.test_rank_has_ten_distinct) ... ok
+test_review_needs_artifact (test_atlas_forge.ForgeTests.test_review_needs_artifact) ... ok
+test_scaffold_valid (test_atlas_forge.ForgeTests.test_scaffold_valid) ... ok
+test_source_mismatch_fails (test_atlas_forge.ForgeTests.test_source_mismatch_fails) ... ok
+test_synthetic_cannot_claim_reproduced (test_atlas_forge.ForgeTests.test_synthetic_cannot_claim_reproduced) ... ok
+test_unrelated_query_abstains (test_atlas_forge.ForgeTests.test_unrelated_query_abstains) ... ok
+test_all_contexts_validate (test_common.CommonTests.test_all_contexts_validate) ... ok
+test_all_three_nodes_same_contract (test_common.CommonTests.test_all_three_nodes_same_contract) ... ok
+test_budget_exact_bytes (test_common.CommonTests.test_budget_exact_bytes) ... ok
+test_changed_dependency_rejected (test_common.CommonTests.test_changed_dependency_rejected) ... ok
+test_changes_since_unchanged (test_common.CommonTests.test_changes_since_unchanged) ... ok
+test_context_exact_source_closure (test_common.CommonTests.test_context_exact_source_closure) ... ok
+test_coverage_qualifier_retained (test_common.CommonTests.test_coverage_qualifier_retained) ... ok
+test_deterministic (test_common.CommonTests.test_deterministic) ... ok
+test_duplicate_json_rejected (test_common.CommonTests.test_duplicate_json_rejected) ... ok
+test_empty_question_rejected (test_common.CommonTests.test_empty_question_rejected) ... ok
+test_every_record_fetchable (test_common.CommonTests.test_every_record_fetchable) ... ok
+test_false_independent_review_rejected (test_common.CommonTests.test_false_independent_review_rejected) ... ok
+test_false_sufficiency_rejected (test_common.CommonTests.test_false_sufficiency_rejected) ... ok
+test_fetch_requires_revision (test_common.CommonTests.test_fetch_requires_revision) ... ok
+test_inventory (test_common.CommonTests.test_inventory) ... ok
+test_legacy_labels_preserved (test_common.CommonTests.test_legacy_labels_preserved) ... ok
+test_limit_bool_rejected (test_common.CommonTests.test_limit_bool_rejected) ... ok
+test_measurement_new_primary_portions (test_common.CommonTests.test_measurement_new_primary_portions) ... ok
+test_nan_canonical_rejected (test_common.CommonTests.test_nan_canonical_rejected) ... ok
+test_nan_json_rejected (test_common.CommonTests.test_nan_json_rejected) ... ok
+test_negative_depth_rejected (test_common.CommonTests.test_negative_depth_rejected) ... ok
+test_neighbors_bounded (test_common.CommonTests.test_neighbors_bounded) ... ok
+test_no_match (test_common.CommonTests.test_no_match) ... ok
+test_non_source_no_evidence_requires_gap (test_common.CommonTests.test_non_source_no_evidence_requires_gap) ... ok
+test_question_size_bound (test_common.CommonTests.test_question_size_bound) ... ok
+test_rehashed_qualifier_removal_rejected (test_common.CommonTests.test_rehashed_qualifier_removal_rejected) ... ok
+test_rehashed_source_removal_rejected (test_common.CommonTests.test_rehashed_source_removal_rejected) ... ok
+test_returned_copy_is_isolated (test_common.CommonTests.test_returned_copy_is_isolated) ... ok
+test_safe_path (test_common.CommonTests.test_safe_path) ... ok
+test_search_faraday (test_common.CommonTests.test_search_faraday) ... ok
+test_search_measurement (test_common.CommonTests.test_search_measurement) ... ok
+test_small_budget_whole_units (test_common.CommonTests.test_small_budget_whole_units) ... ok
+test_stop_only_rejected (test_common.CommonTests.test_stop_only_rejected) ... ok
+test_tamper_rejected (test_common.CommonTests.test_tamper_rejected) ... ok
+test_unknown_node_rejected (test_common.CommonTests.test_unknown_node_rejected) ... ok
+test_unknown_record_fields_rejected (test_common.CommonTests.test_unknown_record_fields_rejected) ... ok
+test_version_tamper_rejected (test_common.CommonTests.test_version_tamper_rejected) ... ok
+test_unknown_context_field_rejected (test_common.EnvelopeTests.test_unknown_context_field_rejected) ... ok
+test_unknown_payload_field_rejected (test_common.EnvelopeTests.test_unknown_payload_field_rejected) ... ok
+test_unknown_routing_field_rejected (test_common.EnvelopeTests.test_unknown_routing_field_rejected) ... ok
+test_conflicts_travel_with_claim (test_common.FixtureTests.test_conflicts_travel_with_claim) ... ok
+test_corpus_update_invalidates_old_context (test_common.FixtureTests.test_corpus_update_invalidates_old_context) ... ok
+test_injection_stays_data (test_common.FixtureTests.test_injection_stays_data) ... ok
+test_mandatory_extension_rejected (test_common.FixtureTests.test_mandatory_extension_rejected) ... ok
+test_manifest_tamper (test_common.FixtureTests.test_manifest_tamper) ... ok
+test_missing_collection (test_common.FixtureTests.test_missing_collection) ... ok
+test_new_node_no_domain_branch (test_common.FixtureTests.test_new_node_no_domain_branch) ... ok
+test_registry_tamper (test_common.FixtureTests.test_registry_tamper) ... ok
+test_symlink_rejected (test_common.FixtureTests.test_symlink_rejected) ... ok
+test_tamper_detected_after_loading (test_common.FixtureTests.test_tamper_detected_after_loading) ... ok
+test_withdrawn_required_qualifier_excludes_claim (test_common.FixtureTests.test_withdrawn_required_qualifier_excludes_claim) ... ok
+test_changes_rejects_altered_prior (test_common.ReplayTests.test_changes_rejects_altered_prior) ... ok
+test_fallback_package_validates (test_common.ReplayTests.test_fallback_package_validates) ... ok
+test_rehashed_live_claim_rejected (test_common.ReplayTests.test_rehashed_live_claim_rejected) ... ok
+test_rehashed_query_swap_rejected (test_common.ReplayTests.test_rehashed_query_swap_rejected) ... ok
+test_rehashed_status_promotion_rejected (test_common.ReplayTests.test_rehashed_status_promotion_rejected) ... ok
+test_abstention_fallback (test_common.RoutingTests.test_abstention_fallback) ... ok
+test_duplicate_candidates_rejected (test_common.RoutingTests.test_duplicate_candidates_rejected) ... ok
+test_foreign_receipt_fallback (test_common.RoutingTests.test_foreign_receipt_fallback) ... ok
+test_missing_encoder_rejected (test_common.RoutingTests.test_missing_encoder_rejected) ... ok
+test_nan_score_rejected (test_common.RoutingTests.test_nan_score_rejected) ... ok
+test_receipt_accepted_but_not_attested (test_common.RoutingTests.test_receipt_accepted_but_not_attested) ... ok
+test_receipt_cannot_execute_command (test_common.RoutingTests.test_receipt_cannot_execute_command) ... ok
+test_unknown_id_fallback (test_common.RoutingTests.test_unknown_id_fallback) ... ok
+test_wrong_revision_fallback (test_common.RoutingTests.test_wrong_revision_fallback) ... ok
+test_common_budget (test_common_http.CommonHTTPTests.test_common_budget) ... ok
+test_common_context_valid (test_common_http.CommonHTTPTests.test_common_context_valid) ... ok
+test_common_discovery (test_common_http.CommonHTTPTests.test_common_discovery) ... ok
+test_common_portal_assets (test_common_http.CommonHTTPTests.test_common_portal_assets) ... ok
+test_common_search (test_common_http.CommonHTTPTests.test_common_search) ... ----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56228)
+Traceback (most recent call last):
+  File "/mnt/data/ATLAS-FORGE_v0.4.0/src/atlas_forge/server.py", line 42, in do_GET
+    self._send(200,(files('atlas_forge')/'resources'/'hero.png').read_bytes(),'image/png')
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ATLAS-FORGE_v0.4.0/src/atlas_forge/server.py", line 21, in _send
+    self.end_headers();self.wfile.write(data)
+                       ~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/mnt/data/ATLAS-FORGE_v0.4.0/src/atlas_forge/server.py", line 69, in do_GET
+    except (ValueError,OSError,TypeError,KeyError) as exc:self._json(400,{'error':str(exc)})
+                                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ATLAS-FORGE_v0.4.0/src/atlas_forge/server.py", line 22, in _json
+    def _json(self,status,obj):self._send(status,json.dumps(obj,ensure_ascii=False).encode('utf-8'))
+                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ATLAS-FORGE_v0.4.0/src/atlas_forge/server.py", line 21, in _send
+    self.end_headers();self.wfile.write(data)
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+ok
+test_common_unknown_endpoint (test_common_http.CommonHTTPTests.test_common_unknown_endpoint) ... ok
+test_duplicate_query_rejected (test_common_http.CommonHTTPTests.test_duplicate_query_rejected) ... ok
+test_unknown_parameter_rejected (test_common_http.CommonHTTPTests.test_unknown_parameter_rejected) ... ok
+test_all_six_remote_blobs_match (test_federation.FederationTests.test_all_six_remote_blobs_match) ... ok
+test_audit_locator_preserved (test_federation.FederationTests.test_audit_locator_preserved) ... ok
+test_bad_limits (test_federation.FederationTests.test_bad_limits) ... ok
+test_bad_query (test_federation.FederationTests.test_bad_query) ... ok
+test_catalog_is_not_measurement (test_federation.FederationTests.test_catalog_is_not_measurement) ... ok
+test_citations_and_rights (test_federation.FederationTests.test_citations_and_rights) ... ok
+test_cli_bad_node_error (test_federation.FederationTests.test_cli_bad_node_error) ... ok
+test_cli_export_no_overwrite (test_federation.FederationTests.test_cli_export_no_overwrite) ... ok
+test_cli_nodes (test_federation.FederationTests.test_cli_nodes) ... ok
+test_corrupt_one_node_isolated (test_federation.FederationTests.test_corrupt_one_node_isolated) ... ok
+test_cross_atlas_uncertainty (test_federation.FederationTests.test_cross_atlas_uncertainty) ... ok
+test_data_not_executed (test_federation.FederationTests.test_data_not_executed) ... ok
+test_deterministic (test_federation.FederationTests.test_deterministic) ... ok
+test_empty_node_selection_rejected (test_federation.FederationTests.test_empty_node_selection_rejected) ... ok
+test_empty_unresolved (test_federation.FederationTests.test_empty_unresolved) ... ok
+test_exact_node_counts (test_federation.FederationTests.test_exact_node_counts) ... ok
+test_export_all_count (test_federation.FederationTests.test_export_all_count) ... ok
+test_export_default_count (test_federation.FederationTests.test_export_default_count) ... ok
+test_export_one_node (test_federation.FederationTests.test_export_one_node) ... ok
+test_faraday_routes_to_cymatics (test_federation.FederationTests.test_faraday_routes_to_cymatics) ... ok
+test_federation_membership_not_causality (test_federation.FederationTests.test_federation_membership_not_causality) ... ok
+test_lossless_original_claim (test_federation.FederationTests.test_lossless_original_claim) ... ok
+test_manifest_tamper_rejected (test_federation.FederationTests.test_manifest_tamper_rejected) ... ok
+test_measurement_now_enabled (test_federation.FederationTests.test_measurement_now_enabled) ... ok
+test_namespaced_ids_unique (test_federation.FederationTests.test_namespaced_ids_unique) ... ok
+test_no_unbuilt_nodes (test_federation.FederationTests.test_no_unbuilt_nodes) ... ok
+test_noaa_routes_to_signal (test_federation.FederationTests.test_noaa_routes_to_signal) ... ok
+test_node_filter (test_federation.FederationTests.test_node_filter) ... ok
+test_partial_not_verified (test_federation.FederationTests.test_partial_not_verified) ... ok
+test_path_traversal_rejected (test_federation.FederationTests.test_path_traversal_rejected) ... ok
+test_per_node_limit (test_federation.FederationTests.test_per_node_limit) ... ok
+test_record_locator_not_evidence_locator (test_federation.FederationTests.test_record_locator_not_evidence_locator) ... ok
+test_registry_tamper_rejected (test_federation.FederationTests.test_registry_tamper_rejected) ... ok
+test_selected_measurement_is_enabled (test_federation.FederationTests.test_selected_measurement_is_enabled) ... ok
+test_shared_citations_not_corroboration (test_federation.FederationTests.test_shared_citations_not_corroboration) ... ok
+test_starter_explicit (test_federation.FederationTests.test_starter_explicit) ... ok
+test_stopwords_unresolved (test_federation.FederationTests.test_stopwords_unresolved) ... ok
+test_symlink_escape_rejected (test_federation.FederationTests.test_symlink_escape_rejected) ... ok
+test_three_nodes_only (test_federation.FederationTests.test_three_nodes_only) ... ok
+test_unknown_node_rejected (test_federation.FederationTests.test_unknown_node_rejected) ... ok
+test_unmatched_unresolved (test_federation.FederationTests.test_unmatched_unresolved) ... ok
+test_upstream_pins (test_federation.FederationTests.test_upstream_pins) ... ok
+test_cross_origin_rejected (test_federation.HTTPTests.test_cross_origin_rejected) ... ok
+test_csp_and_no_cors (test_federation.HTTPTests.test_csp_and_no_cors) ... ok
+test_discovery (test_federation.HTTPTests.test_discovery) ... ok
+test_empty_search (test_federation.HTTPTests.test_empty_search) ... ok
+test_invalid_query_parameter (test_federation.HTTPTests.test_invalid_query_parameter) ... ok
+test_invalid_starter_parameter (test_federation.HTTPTests.test_invalid_starter_parameter) ... ok
+test_portal_and_resources (test_federation.HTTPTests.test_portal_and_resources) ... ok
+test_rebinding_host_rejected (test_federation.HTTPTests.test_rebinding_host_rejected) ... ok
+test_search (test_federation.HTTPTests.test_search) ... ok
+test_unknown_path (test_federation.HTTPTests.test_unknown_path) ... ok
+test_writes_rejected (test_federation.HTTPTests.test_writes_rejected) ... ok
+test_default_search (test_measurement_v03.MeasurementNodeTests.test_default_search) ... ok
+test_discover_v03 (test_measurement_v03.MeasurementNodeTests.test_discover_v03) ... ok
+test_original_limited (test_measurement_v03.MeasurementNodeTests.test_original_limited) ... ok
+test_active_scaffold_uses_shared_kernel (test_scaffold.ScaffoldTests.test_active_scaffold_uses_shared_kernel) ... ok
+test_no_overwrite (test_scaffold.ScaffoldTests.test_no_overwrite) ... ok
+test_other_domain_blocked (test_scaffold.ScaffoldTests.test_other_domain_blocked) ... ok
+test_path_injection (test_scaffold.ScaffoldTests.test_path_injection) ... ok
+test_active_domain_allowed (test_workflow.WorkflowTests.test_active_domain_allowed) ... ok
+test_default_no_promotion (test_workflow.WorkflowTests.test_default_no_promotion) ... ok
+test_evidence_tamper_rejected (test_workflow.WorkflowTests.test_evidence_tamper_rejected) ... ok
+test_fake_runtime_fixture_cannot_pass (test_workflow.WorkflowTests.test_fake_runtime_fixture_cannot_pass) ... ok
+test_gate_invalidates_on_source_change (test_workflow.WorkflowTests.test_gate_invalidates_on_source_change) ... ok
+test_legacy_generator_obeys_active_domain (test_workflow.WorkflowTests.test_legacy_generator_obeys_active_domain) ... ok
+test_missing_gate_rejected (test_workflow.WorkflowTests.test_missing_gate_rejected) ... ok
+test_next_domain_refused (test_workflow.WorkflowTests.test_next_domain_refused) ... ok
+test_pass_without_evidence_invalid (test_workflow.WorkflowTests.test_pass_without_evidence_invalid) ... ok
+test_receipts_do_not_change_subject (test_workflow.WorkflowTests.test_receipts_do_not_change_subject) ... ok
+test_subject_changes_with_source (test_workflow.WorkflowTests.test_subject_changes_with_source) ... ok
+test_valid_conformance_receipt (test_workflow.WorkflowTests.test_valid_conformance_receipt) ... ok
+test_wrong_kind_cannot_pass (test_workflow.WorkflowTests.test_wrong_kind_cannot_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 165 tests in 5.309s
+
+OK

@@ -1,0 +1,112 @@
+{
+  "schema": "atlas.workflow-execution/1",
+  "result": "passed",
+  "stages": [
+    {
+      "name": "forge_unit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 9.821564778000038,
+      "log": "forge_unit.log",
+      "sha256": "21843e584dadb704b9be4d886c40511e1fbf2f71bdde876a7dcb168ec40743e1"
+    },
+    {
+      "name": "measurement_unit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.9260139479999907,
+      "log": "measurement_unit.log",
+      "sha256": "ea2a1f654de1caac2d10b6956d27485f22c18ba42bff316071662a4e908d67e3"
+    },
+    {
+      "name": "conformance",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "conform"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8448951559998932,
+      "log": "conformance.log",
+      "sha256": "98a0351f21e282930880bd119afa88bf28a80413b81404fdeebdc793ad982088"
+    },
+    {
+      "name": "skills",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "skills-check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.5123367070000313,
+      "log": "skills.log",
+      "sha256": "5784cf81d459b4d9e5a6221ed906aee6fd882ec7371f8af1c9a4109b7249a11b"
+    },
+    {
+      "name": "curation",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/check_curation.py",
+        "/mnt/data/MEASUREMENT-ATLAS_v0.4.0/evidence/primary_reference_additions.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.0897261229999913,
+      "log": "curation.log",
+      "sha256": "fbea217f0227302fb4e280e0e0f7444ed7d60c2335961083d0636c6c8248c203"
+    },
+    {
+      "name": "context_diagnostic",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/evaluate_common.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.602854091000154,
+      "log": "context_diagnostic.log",
+      "sha256": "6a436e4f6c59e4cd08dfe00699c6958b8651bd71730662714f5d0f527e5e02f4"
+    },
+    {
+      "name": "synthetic_casebook",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/casebook.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.1242663519999496,
+      "log": "synthetic_casebook.log",
+      "sha256": "af461febf66884cb7c6916ee0a71de65bfa49a01a968ae84ef3478b74eec0359"
+    },
+    {
+      "name": "gate_status",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.2712765430001127,
+      "log": "gate_status.log",
+      "sha256": "937260e60f7aaf91ea2eb09ce66353e0da229662d763fed031a3f78717d5f9cc"
+    }
+  ],
+  "next_domain_guard_worked": true,
+  "measurement_v1_accepted": false,
+  "host_skills_installed": false,
+  "remote_changes": false
+}

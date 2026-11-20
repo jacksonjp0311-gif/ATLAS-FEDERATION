@@ -1,0 +1,13 @@
+{
+  "schema": "measurement.content-audit/1",
+  "valid": true,
+  "record_count": 92,
+  "primary_source_pages": 43,
+  "chapters": 8,
+  "review_questions": 30,
+  "errors": [],
+  "check_scope": "current docs only: structure, local links, source references, assumptions and limits; archived historical relative-link contexts excluded",
+  "scientific_truth_validated": false,
+  "ai_questions_executed": false,
+  "independent_review": false
+}

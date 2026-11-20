@@ -1,0 +1,17 @@
+{
+  "schema": "measurement.independent-review-request/1",
+  "version": "1.0.0rc1",
+  "reviewer": null,
+  "reviewed_at": null,
+  "result": "not_run",
+  "scope": "docs/V1_RELEASE_SCOPE.md",
+  "source_register": "docs/PRIMARY_SOURCE_REGISTER.md",
+  "requested_checks": [
+    "claim-to-locator support",
+    "applicability and qualifiers",
+    "unit/model conventions",
+    "known disagreements",
+    "data-origin separation"
+  ],
+  "not_a_completed_review": true
+}

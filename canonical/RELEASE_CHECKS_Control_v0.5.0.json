@@ -1,0 +1,93 @@
+{
+  "schema": "atlas.control-content-release-check/1",
+  "date": "2026-11-13",
+  "edition": "0.5.0",
+  "status": "research_content_checkpoint_control_v1_not_complete",
+  "active_domain": "control-atlas",
+  "inventory": {
+    "nodes": 6,
+    "forge_records": 993,
+    "forge_relations": 289,
+    "control_records": 191,
+    "control_source_cards": 42,
+    "control_relations": 107,
+    "control_chapters": 46,
+    "control_investigations": 36,
+    "control_casebook_new_cases": 7,
+    "prior_control_records_preserved": 173,
+    "prior_control_relation_revisions_preserved": 96,
+    "protected_baseline_and_other_node_files_identical": 1190
+  },
+  "tests": {
+    "Forge": 188,
+    "Measurement": 218,
+    "Causal": 233,
+    "Materials": 122,
+    "Control": 181
+  },
+  "tests_total_passed": 942,
+  "skips": 0,
+  "full_contract_and_context": {
+    "source_closure": true,
+    "schema": "passed",
+    "context_queries_checked": 25,
+    "result": "passed"
+  },
+  "oracles": {
+    "new_invariance_model": {
+      "schema": "atlas.control-invariance-oracle/1",
+      "result": "passed",
+      "seed": 20261113,
+      "comparisons": 5160,
+      "per_method": {
+        "vertex_bound": 240,
+        "scalar": 120,
+        "simulation": 4800
+      },
+      "max_abs_error": 4.440892098500626e-16,
+      "numpy_version": "2.3.5",
+      "declared_tolerance_scaled": 2e-11,
+      "data_origin": "authored_seeded_synthetic_only",
+      "physical_plant_evidence": false,
+      "independent_human_science_review": false,
+      "no_actuation": true
+    },
+    "prior_advanced_v04": {
+      "result": "passed",
+      "comparisons": 4630,
+      "maximum_relative_to_one_scaled_error": 3.560056558214278e-14
+    }
+  },
+  "source_types": {
+    "publisher_limited_HTML": true,
+    "new_real_world_plant_records": 0,
+    "new_original_experiments": 0,
+    "human_scientific_review": false
+  },
+  "scope_limits": [
+    "offline exact finite interval model only, independent parameter rectangles and bounded additive disturbances",
+    "no true state availability, physical actuator response or uncertainty bounds established on hardware",
+    "no timing-jitter, slew-rate, observer-error, nonlinear or hybrid safety model solved"
+  ],
+  "workflow": {
+    "all_30_domains_first": true,
+    "routing_last": true,
+    "desktop_transfer_last": true,
+    "control_content_ready_for_v1": false,
+    "control_scientific_v1_accepted": false,
+    "native_windows_run": false,
+    "live_bitwork_AI_evaluation": false,
+    "next_domain_agent_started": false
+  },
+  "preservation": {
+    "historical_file_comparisons": 1190,
+    "historical_file_mismatches": [],
+    "prior_record_revisions_preserved": 173,
+    "prior_relation_revisions_preserved": 96,
+    "common_routing_code_changed": false
+  },
+  "audit_notes": [
+    "Initial full check found four documentation-regression failures (missing chapter links and exact no-driver phrasing). Corrected, reran full suite and all 942 passed.",
+    "Mathematical corner enumeration/NumPy agreement validates code over authored synthetic models only."
+  ]
+}

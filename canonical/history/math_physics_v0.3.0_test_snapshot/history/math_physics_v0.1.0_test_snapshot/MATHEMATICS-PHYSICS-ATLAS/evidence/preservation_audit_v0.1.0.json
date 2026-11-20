@@ -1,0 +1,27 @@
+{
+  "schema": "atlas.math-physics-previous-release-preservation/1",
+  "status": "passed",
+  "prior_release": "Chemistry Atlas 1.0.0 verified, full manifest referenced without changed bytes",
+  "prior_manifest_sha256": "d926d6538afb0572dab885afc77d8fc9394834a713e369fd9b2fa56387566dc4",
+  "prior_file_inventory": 4282,
+  "allowed_changed_release_metadata": [
+    "BUILD_POLICY.json",
+    "CURRENT_CHECKPOINT.json",
+    "DOMAIN_QUEUE.json",
+    "README.md",
+    "START_HERE.md",
+    "common/registry.json",
+    "common/registry.lock.json",
+    "roadmaps/TECHNOLOGICAL_CONTINUITY_PRIORITY_v2.0_active.json",
+    "tools/check_collection.py"
+  ],
+  "protected_files_byte_identical": 4273,
+  "changed_protected_files": [],
+  "previous_records_same_revision": 2357,
+  "previous_relationships_same_revision": 1519,
+  "previous_node_count": 11,
+  "new_node_count": 12,
+  "historical_tests_remain_original": true,
+  "primary_source_authentication": false,
+  "physical_science_certification": false
+}

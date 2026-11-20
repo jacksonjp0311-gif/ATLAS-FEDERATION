@@ -1,0 +1,105 @@
+{
+  "schema": "atlas.energy-v02-release-preflight/1",
+  "edition": "0.2.0",
+  "date": "2026-11-14",
+  "result": "passed_source_tree_not_yet_final_archive",
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "test_total": 1702,
+  "numerical_checks": 4670,
+  "nodes": 10,
+  "records": 1992,
+  "relations": 1189,
+  "source_cards": 463,
+  "energy_records": 241,
+  "energy_source_cards": 28,
+  "energy_local_relations": 200,
+  "energy_full_relations": 205,
+  "chapters": 50,
+  "investigations": 36,
+  "historic_energy_scope_passed": true,
+  "old_protected_files": 2074,
+  "unacquired_original_primary_sources": 463,
+  "live_field_trials": 0,
+  "independent_review": false,
+  "full_zip_extracted_replay": "pending",
+  "router_changes": false,
+  "desktop_transfer": false
+}

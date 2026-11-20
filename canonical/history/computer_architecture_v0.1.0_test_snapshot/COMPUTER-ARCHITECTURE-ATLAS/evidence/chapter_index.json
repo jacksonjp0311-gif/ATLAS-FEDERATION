@@ -1,0 +1,223 @@
+{
+  "schema": "atlas.computer-chapter-index/1",
+  "edition": "0.1.0",
+  "chapter_count": 24,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Architecture, microarchitecture, and reconstruction contracts",
+      "file": "docs/chapters/01_architecture_microarchitecture_and_evidence.md",
+      "source_id": "MIT-6004",
+      "equation": "S_(t+1)=ISA_step(S_t, instruction_at_PC); implementation != architectural specification",
+      "methods": "computer_atlas.spec.SpecMachine and computer_atlas.microcoded.MicrocodedMachine",
+      "units": "bits, bytes, finite state"
+    },
+    {
+      "number": 2,
+      "title": "Binary words, two\u2019s complement, carry, and signed overflow",
+      "file": "docs/chapters/02_binary_words_sign_overflow_and_flags.md",
+      "source_id": "MIT-6004",
+      "equation": "ADD8(a,b)= (a+b) mod 256; C=[a+b>=256]; V=signs_equal(a,b) AND signs_differ(a,result)",
+      "methods": "computer_atlas.gates.alu8 and computer_atlas.spec.SpecMachine",
+      "units": "8-bit words, Boolean flags"
+    },
+    {
+      "number": 3,
+      "title": "NAND gates, XOR, full adders, and compositional arithmetic",
+      "file": "docs/chapters/03_nand_combinational_primitives_and_adders.md",
+      "source_id": "NAND2TETRIS",
+      "equation": "s=a XOR b XOR cin; cout=(a AND b) OR (cin AND (a XOR b))",
+      "methods": "computer_atlas.gates.nand, full_adder, ripple_add",
+      "units": "bits, logic delay unspecified"
+    },
+    {
+      "number": 4,
+      "title": "Four-register file, reset state, and instruction atomicity",
+      "file": "docs/chapters/04_register_file_state_reset_and_read_write.md",
+      "source_id": "MIT-6004",
+      "equation": "architectural_state_after = commit(architectural_state_before, decoded_operation)",
+      "methods": "computer_atlas.spec.SpecMachine.snapshot; computer_atlas.microcoded.MicrocodedMachine.tick",
+      "units": "bits, bytes, abstract instruction cycles"
+    },
+    {
+      "number": 5,
+      "title": "ALU functions and the register-to-register datapath",
+      "file": "docs/chapters/05_alu_operations_flags_and_datapath.md",
+      "source_id": "MIT-6004",
+      "equation": "ALUout = f(register_byte, immediate_byte); flags_next=flag_function(ALUout, operands)",
+      "methods": "computer_atlas.gates.alu8; computer_atlas.spec.SpecMachine; computer_atlas.microcoded.MicrocodedMachine",
+      "units": "8-bit words, 4 Boolean flags"
+    },
+    {
+      "number": 6,
+      "title": "AT8 encoding: fixed 2-byte instructions and strict decoder",
+      "file": "docs/chapters/06_fixed_instruction_encoding_and_reserved_bits.md",
+      "source_id": "RISCV-MANUAL",
+      "equation": "word0 = (opcode << 4) OR reg4; word1 = unsigned_operand8; PC_next = PC+2 unless branch",
+      "methods": "computer_atlas.isa.encode, decode, validate_rom",
+      "units": "bytes, bit fields, PC byte addresses"
+    },
+    {
+      "number": 7,
+      "title": "An auditable two-pass assembler with labels and diagnostics",
+      "file": "docs/chapters/07_assembler_two_pass_labels_and_relocation.md",
+      "source_id": "MIT-6004",
+      "equation": "assemble(disassemble(valid_ROM)) == valid_ROM",
+      "methods": "computer_atlas.isa.assemble and computer_atlas.isa.disassemble",
+      "units": "UTF-8 assembly, ROM bytes"
+    },
+    {
+      "number": 8,
+      "title": "Program ROM, data RAM, and the memory address map",
+      "file": "docs/chapters/08_program_rom_and_data_ram_separation.md",
+      "source_id": "MIT-6004",
+      "equation": "ROM read: instruction=ROM[PC:PC+2]; RAM store: RAM[address]=register; PC byte aligned",
+      "methods": "computer_atlas.spec.SpecMachine, computer_atlas.microcoded.MicrocodedMachine",
+      "units": "ROM/RAM bytes, PC addresses"
+    },
+    {
+      "number": 9,
+      "title": "Fetch, decode, execute, commit: a finite control unit",
+      "file": "docs/chapters/09_control_microstates_fetch_decode_execute_commit.md",
+      "source_id": "MIT-6004",
+      "equation": "microstate sequence FETCH -> DECODE -> EXECUTE -> COMMIT -> FETCH",
+      "methods": "computer_atlas.microcoded.MicrocodedMachine.tick and step_instruction",
+      "units": "symbolic phases, instruction steps"
+    },
+    {
+      "number": 10,
+      "title": "Program counter, conditional branches, and bounded termination",
+      "file": "docs/chapters/10_pc_relative_execution_branches_and_termination.md",
+      "source_id": "MIT-6004",
+      "equation": "PC_next = branch_condition ? target : PC+2; bounded run stops at max_steps",
+      "methods": "computer_atlas.spec.SpecMachine.step; computer_atlas.isa.assemble",
+      "units": "byte addresses, step counts"
+    },
+    {
+      "number": 11,
+      "title": "Input/output ports as deterministic recorded event tapes",
+      "file": "docs/chapters/11_deterministic_io_ports_and_event_tapes.md",
+      "source_id": "MIT-6004",
+      "equation": "IN: R[r]=tape[port][cursor]; cursor++ on COMMIT; OUT: tape_out.append((port,R[r]))",
+      "methods": "computer_atlas.spec.SpecMachine and computer_atlas.microcoded.MicrocodedMachine",
+      "units": "byte ports, event order"
+    },
+    {
+      "number": 12,
+      "title": "Traps, illegal opcodes, and failure atomicity",
+      "file": "docs/chapters/12_traps_illegal_instructions_and_atomic_failure.md",
+      "source_id": "MIT-6004",
+      "equation": "on trap: S_after = S_before (architectural effects); event=structured trap(code,PC)",
+      "methods": "computer_atlas.spec.AT8Trap and computer_atlas.microcoded.MicrocodedMachine",
+      "units": "machine state, error classes"
+    },
+    {
+      "number": 13,
+      "title": "Reset vector, boot ROM, and immutable firmware checksums",
+      "file": "docs/chapters/13_boot_reset_firmware_image_and_integrity.md",
+      "source_id": "MIT-6004",
+      "equation": "boot_pc=0; reset_regs=(0,0,0,0); program_SHA256=SHA256(ROM_bytes)",
+      "methods": "computer_atlas.isa.validate_rom; computer_atlas.spec.SpecMachine",
+      "units": "ROM bytes, SHA-256 digest"
+    },
+    {
+      "number": 14,
+      "title": "Offline programming pipeline from assembly to ROM and execution trace",
+      "file": "docs/chapters/14_assembly_to_machine_code_reproducible_toolchain.md",
+      "source_id": "MIT-6004",
+      "equation": "assembly -> two_pass_assemble -> ROM -> validate -> execute -> deterministic trace",
+      "methods": "computer_atlas.isa.assemble/disassemble; computer_atlas.spec.SpecMachine; evidence/independent_oracle.py",
+      "units": "UTF-8 text, bytes, execution events"
+    },
+    {
+      "number": 15,
+      "title": "Differential testing: atomic model, microcycles, and third oracle",
+      "file": "docs/chapters/15_differential_verification_and_independent_oracles.md",
+      "source_id": "MIT-6004",
+      "equation": "forall test_program: state_Spec == state_Micro == state_Independent_reference",
+      "methods": "evidence/independent_oracle.py; tests/test_microcoded.py",
+      "units": "finite test cases, SHA-256 receipts"
+    },
+    {
+      "number": 16,
+      "title": "Clock timing from digital control to physical register requirements",
+      "file": "docs/chapters/16_clock_timing_setup_hold_and_physical_limits.md",
+      "source_id": "MIT-65900-2026",
+      "equation": "T+skew >= t_cq_max+t_pd+t_setup+uncertainty; t_cq_min+t_cd >= t_hold+skew+uncertainty",
+      "methods": "Electronics v0.4 timing context + AT8 microstate DAG (no measured clock)",
+      "units": "seconds, hertz, voltage, temperature"
+    },
+    {
+      "number": 17,
+      "title": "Memory reliability: parity, SECDED, retention and fault detection",
+      "file": "docs/chapters/17_memory_reliability_ecc_and_fault_injection.md",
+      "source_id": "NAND2TETRIS",
+      "equation": "RAM_next[a] = STORE ? R[r] : RAM_old[a]; ECC_correctable_errors <= defined bound",
+      "methods": "Electronics v0.3 Hamming SECDED and computer_atlas.spec.SpecMachine",
+      "units": "bits, bytes, BER and time (unmeasured)"
+    },
+    {
+      "number": 18,
+      "title": "Constructing loops, branching programs, and stateful computations",
+      "file": "docs/chapters/18_finite_state_loops_and_structured_programs.md",
+      "source_id": "NAND2TETRIS",
+      "equation": "R0_(k+1)=(R0_k+255) mod 256; JNZ(R0)->loop if R0 != 0",
+      "methods": "computer_atlas.programs.COUNTDOWN; computer_atlas.spec.SpecMachine.run",
+      "units": "instruction counts, state variables"
+    },
+    {
+      "number": 19,
+      "title": "Interrupts, privilege, timers, and memory-mapped I/O: missing architecture",
+      "file": "docs/chapters/19_interrupts_traps_privilege_and_mmio_future.md",
+      "source_id": "RISCV-MANUAL",
+      "equation": "interrupt_pending -> trap_entry(PC, flags, cause) [NOT IMPLEMENTED IN AT8/0.1]",
+      "methods": "Future ISA extension contract; no executable interrupt model in v0.1",
+      "units": "bytes, interrupt vectors, time (future)"
+    },
+    {
+      "number": 20,
+      "title": "Pipelines, dependencies, caches and memory hierarchy: research extensions",
+      "file": "docs/chapters/20_pipelines_hazards_and_memory_hierarchy_future.md",
+      "source_id": "MIT-65900-2026",
+      "equation": "forall retired instruction k: state_pipeline(k)==state_sequential_AT8(k) [FUTURE REQUIREMENT]",
+      "methods": "Future pipeline/register-transfer-level reference, explicitly not implemented",
+      "units": "clock cycles, bytes, access latencies (future)"
+    },
+    {
+      "number": 21,
+      "title": "Architectural invariants, refinement obligations, and finite exhaustive testing",
+      "file": "docs/chapters/21_formal_properties_invariants_and_testability.md",
+      "source_id": "RISCV-MANUAL",
+      "equation": "invariant: regs, RAM \u2208 Byte; PC mod 2=0; ROM_after=ROM_before; commit_effects_only",
+      "methods": "computer_atlas.isa.validate_rom; tests/test_spec.py; evidence/independent_oracle.py",
+      "units": "Boolean predicates, finite state counts"
+    },
+    {
+      "number": 22,
+      "title": "Evidence-gated bridge from mathematical CPU to manufactured electronics",
+      "file": "docs/chapters/22_manufacturing_evidence_gates_and_physical_chip.md",
+      "source_id": "NAND2TETRIS",
+      "equation": "software_verified AND physical_evidence_missing -> physical_reconstruction_status=HOLD",
+      "methods": "evidence/continuity_challenge.py; Manufacturing manufacturing_evidence_gate",
+      "units": "source files, measured SI units pending"
+    },
+    {
+      "number": 23,
+      "title": "Offline preservation: exact revisions, rights, sources, and reproducible builds",
+      "file": "docs/chapters/23_long_term_preservation_checksums_rights_and_rebuild.md",
+      "source_id": "RISCV-MANUAL",
+      "equation": "SHA256(restored_full_archive)==SHA256(expected_release_archive) AND immutable_prior_revisions",
+      "methods": "ATLAS FORGE common.registry, file manifests, incremental restore and full regression",
+      "units": "bytes, file hashes, revision identifiers"
+    },
+    {
+      "number": 24,
+      "title": "From an 8-bit computer contract to compilers, operating systems, and AI",
+      "file": "docs/chapters/24_architecture_to_compiler_os_ai_reconstruction_roadmap.md",
+      "source_id": "MIT-65900-2026",
+      "equation": "verified_software_model -> physical_gate_evidence -> measured_CPU -> runtime -> scientific_computation",
+      "methods": "COMPUTER-ARCHITECTURE-ATLAS docs/SCOPED_V1_GATES.md; Manufacturing/Electronics evidence lattice",
+      "units": "capability dependencies, hardware evidence gaps"
+    }
+  ]
+}

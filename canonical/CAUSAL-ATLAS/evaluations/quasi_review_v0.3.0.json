@@ -1,0 +1,144 @@
+{
+  "version": "0.3.0",
+  "kind": "authored_visible_development_rubric",
+  "held_out": false,
+  "model_evaluation_run": false,
+  "items": [
+    {
+      "id": "quasi-review-01",
+      "question": "A random invitation also changes motivation. Does randomness establish exclusion?",
+      "expected_record_id": "causal-atlas:iv-identification-conditions",
+      "required_points": [
+        "No. Assignment independence and exclusion are separate.",
+        "Request evidence about direct outcome pathways."
+      ]
+    },
+    {
+      "id": "quasi-review-02",
+      "question": "The first stage is positive. Are defiers ruled out?",
+      "expected_record_id": "causal-atlas:iv-monotonicity",
+      "required_points": [
+        "No. Average uptake can increase with both compliers and defiers."
+      ]
+    },
+    {
+      "id": "quasi-review-03",
+      "question": "Why are 0.30 and 0.14 both correct in the training fixture?",
+      "expected_record_id": "causal-atlas:iv-late-target",
+      "required_points": [
+        "Local complier effect differs from full-population effect.",
+        "The complete potential values are known only in the fixture."
+      ]
+    },
+    {
+      "id": "quasi-review-04",
+      "question": "Is the denominator guard a weak-instrument F test?",
+      "expected_record_id": "causal-atlas:iv-denominator-guard",
+      "required_points": [
+        "No. It is a declared operational threshold.",
+        "No sampling inference is calculated."
+      ]
+    },
+    {
+      "id": "quasi-review-05",
+      "question": "A direct contribution range gives [0.30,0.40]. Is this a 95% interval?",
+      "expected_record_id": "causal-atlas:iv-exclusion-sensitivity",
+      "required_points": [
+        "No. It is conditional sensitivity arithmetic under a stipulated additive equation."
+      ]
+    },
+    {
+      "id": "quasi-review-06",
+      "question": "Can all types benefit while the IV ratio is negative?",
+      "expected_record_id": "causal-atlas:iv-defier-reversal",
+      "required_points": [
+        "Yes in the constructed defier model.",
+        "Monotonicity deliberately fails; no contradiction of the conditional theorem."
+      ]
+    },
+    {
+      "id": "quasi-review-07",
+      "question": "Do many copies of one score on each side identify separate local slopes?",
+      "expected_record_id": "causal-atlas:rd-implementation-support",
+      "required_points": [
+        "No. Distinct support is missing.",
+        "This is a limit of the implemented estimator, not all possible designs."
+      ]
+    },
+    {
+      "id": "quasi-review-08",
+      "question": "Why can a threshold estimate not be applied to everyone?",
+      "expected_record_id": "causal-atlas:rd-cutoff-target",
+      "required_points": [
+        "It targets the boundary; transport needs additional assumptions."
+      ]
+    },
+    {
+      "id": "quasi-review-09",
+      "question": "Is a narrow window automatically randomized?",
+      "expected_record_id": "causal-atlas:rd-local-randomization",
+      "required_points": [
+        "No. A finite-window assignment model must be justified."
+      ]
+    },
+    {
+      "id": "quasi-review-10",
+      "question": "A precise jump of five follows two simultaneous policies. Which policy caused it?",
+      "expected_record_id": "causal-atlas:rd-two-policy-equivalence",
+      "required_points": [
+        "The observed table alone does not separate the two mechanisms."
+      ]
+    },
+    {
+      "id": "quasi-review-11",
+      "question": "Does local-line fitting implement robust bias-corrected intervals?",
+      "expected_record_id": "causal-atlas:rd-inference-boundary",
+      "required_points": [
+        "No. This release is point-only.",
+        "Bias correction and its additional variability are not calculated."
+      ]
+    },
+    {
+      "id": "quasi-review-12",
+      "question": "Which bandwidth should be selected from the synthetic grid?",
+      "expected_record_id": "causal-atlas:rd-curvature-sensitivity",
+      "required_points": [
+        "The tool selects none.",
+        "Known synthetic truth is not an empirical tuning oracle."
+      ]
+    },
+    {
+      "id": "quasi-review-13",
+      "question": "The treatment-probability jump is zero. What should fuzzy RD return?",
+      "expected_record_id": "causal-atlas:rd-fuzzy-target",
+      "required_points": [
+        "An unresolved ratio with retained numerator/denominator.",
+        "No fabricated finite effect."
+      ]
+    },
+    {
+      "id": "quasi-review-14",
+      "question": "Are negative equivalent intercept weights removed?",
+      "expected_record_id": "causal-atlas:rd-equivalent-weights",
+      "required_points": [
+        "No. They arise in the local-line intercept formula and are reported."
+      ]
+    },
+    {
+      "id": "quasi-review-15",
+      "question": "Does a successful placebo test certify all RD assumptions?",
+      "expected_record_id": "causal-atlas:rd-design-diagnostics",
+      "required_points": [
+        "No. Falsification evidence is indirect and test power matters."
+      ]
+    },
+    {
+      "id": "quasi-review-16",
+      "question": "Was the McCrary density-test implementation audited here?",
+      "expected_record_id": "causal-atlas:rd-density-test-scope",
+      "required_points": [
+        "No. Source access was abstract-level and no density test was implemented."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "atlas.original-federation-computer-architecture-continuity/1",
+  "program_hex": "1005200770003003e000f000",
+  "rom_sha256": "9c385619d8886080628f57455a77d885849e0a77d6c0d3755bb52ac1d7ceee74",
+  "trace_sha256": "e5ef1d84580dbd981694bc89d34390e0e8d2d09af8831282381d1578f53c885b",
+  "prior_electronics_accumulator_halted": true,
+  "prior_electronics_ram0": 12,
+  "new_architecture_implementations_agree": true,
+  "new_at8_halted": true,
+  "new_at8_instruction_steps": 6,
+  "new_at8_microcycles": 24,
+  "new_at8_ram0": 12,
+  "new_at8_port0_output": [
+    [
+      0,
+      15
+    ]
+  ],
+  "physical_stages_blocked": 6,
+  "missing_physical_evidence_types": [
+    "device_IV_CV_sweeps",
+    "doping_profile",
+    "independently_recorded_hardware_trace",
+    "lithography_overlay_report",
+    "memory_retention_ECC_tests",
+    "noise_margins_at_PVT",
+    "oxide_metrology",
+    "setup_hold_metastability_tests",
+    "signed_external_reviewer",
+    "standard_cell_timing_power",
+    "traceable_mobility_measurement",
+    "wafer_assay"
+  ],
+  "synthetic_metadata_structurally_complete": true,
+  "synthetic_metadata_independently_certified": false,
+  "physical_CPU_fabricated": false,
+  "physical_device_measurements": 0,
+  "independent_hardware_review": false,
+  "publisher_originals_authenticated": 0,
+  "verdict": "PASS finite reproducible software; HOLD physical technology reconstruction"
+}

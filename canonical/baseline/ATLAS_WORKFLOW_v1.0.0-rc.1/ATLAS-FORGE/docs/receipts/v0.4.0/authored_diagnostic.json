@@ -1,0 +1,602 @@
+{
+  "schema": "atlas.authored-diagnostic/1",
+  "test_set_sha256": "16d4f19c21fbdbadee0a20cc337fc0f2814ccb15c223421be72b136287d44af1",
+  "registry_revision": "079044d2d8f142416b6c6ac1bcf236d74fcc01f791384cdfd734a2c8657726c9",
+  "evaluation_kind": "author_curated_seen_regression",
+  "independently_blinded": false,
+  "actual_ai_run": false,
+  "live_bitwork_run": false,
+  "metrics": {
+    "bm25": {
+      "answerable": 20,
+      "hit5": 20,
+      "unsupported": 5,
+      "no_match": 5,
+      "hit5_fraction": 1.0,
+      "mrr5": 1.0,
+      "no_match_fraction": 1.0
+    },
+    "lexical_overlap": {
+      "answerable": 20,
+      "hit5": 20,
+      "unsupported": 5,
+      "no_match": 5,
+      "hit5_fraction": 1.0,
+      "mrr5": 0.925,
+      "no_match_fraction": 1.0
+    }
+  },
+  "context_integrity_passed": 25,
+  "cases": 25,
+  "rows": [
+    {
+      "id": "D01",
+      "question": "Type A uncertainty of mean",
+      "expected_ids": [
+        "measurement-atlas:method:type-a-mean"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:type-a-mean",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:starter_packet:measure-type-a-evaluation",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:concept:evaluation-methods"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:method:type-a-mean",
+          "measurement-atlas:starter_packet:measure-type-a-evaluation",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:concept:coverage-conditions"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 31421
+    },
+    {
+      "id": "D02",
+      "question": "first-order uncertainty propagation",
+      "expected_ids": [
+        "measurement-atlas:equation:linear-propagation"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:equation:linear-propagation",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:method:uniform-bounds"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:equation:linear-propagation",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:fitness-for-purpose"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 25745
+    },
+    {
+      "id": "D03",
+      "question": "correlated measurement inputs covariance",
+      "expected_ids": [
+        "measurement-atlas:concept:covariance"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:covariance",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:method:traceability-documentation",
+          "measurement-atlas:method:measurement-difference"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:covariance",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:evaluation-methods"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 31281
+    },
+    {
+      "id": "D04",
+      "question": "uncertainty difference correlated values",
+      "expected_ids": [
+        "measurement-atlas:method:measurement-difference"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:measurement-difference",
+          "measurement-atlas:concept:covariance",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:method:measurement-difference",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:covariance",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 25745
+    },
+    {
+      "id": "D05",
+      "question": "uniform bounded uncertainty",
+      "expected_ids": [
+        "measurement-atlas:method:uniform-bounds"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:uniform-bounds",
+          "measurement-atlas:method:triangular-bounds",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:method:uniform-bounds",
+          "measurement-atlas:method:triangular-bounds",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 27696
+    },
+    {
+      "id": "D06",
+      "question": "triangular bounded uncertainty",
+      "expected_ids": [
+        "measurement-atlas:method:triangular-bounds"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:triangular-bounds",
+          "measurement-atlas:method:uniform-bounds",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:method:triangular-bounds",
+          "measurement-atlas:method:uniform-bounds",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 27696
+    },
+    {
+      "id": "D07",
+      "question": "convert reported uncertainty multiplier",
+      "expected_ids": [
+        "measurement-atlas:method:certificate-multiplier"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:certificate-multiplier",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:method:uniform-bounds"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:method:certificate-multiplier",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:fitness-for-purpose"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 25745
+    },
+    {
+      "id": "D08",
+      "question": "Type B information sources",
+      "expected_ids": [
+        "measurement-atlas:concept:type-b-information"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:type-b-information",
+          "measurement-atlas:concept:evaluation-methods",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:starter_packet:measure-type-a-evaluation"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:type-b-information",
+          "measurement-atlas:concept:evaluation-methods",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:concept:type-a-methods"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 25937
+    },
+    {
+      "id": "D09",
+      "question": "expanded uncertainty",
+      "expected_ids": [
+        "measurement-atlas:equation:expanded-uncertainty"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:starter_packet:measure-expanded-uncertainty",
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:starter_packet:measure-expanded-uncertainty",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 27998
+    },
+    {
+      "id": "D10",
+      "question": "coverage factor probability",
+      "expected_ids": [
+        "measurement-atlas:concept:coverage-conditions"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:equation:expanded-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:equation:expanded-uncertainty"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 9753
+    },
+    {
+      "id": "D11",
+      "question": "traceability belongs measurement result",
+      "expected_ids": [
+        "measurement-atlas:concept:traceability-result"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:method:traceability-documentation",
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:covariance"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:method:traceability-documentation",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:combined-uncertainty"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 29758
+    },
+    {
+      "id": "D12",
+      "question": "traceability documentation requirements",
+      "expected_ids": [
+        "measurement-atlas:method:traceability-documentation"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:method:traceability-documentation",
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:concept:fitness-for-purpose"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:method:traceability-documentation",
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:traceability-result"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 9632
+    },
+    {
+      "id": "D13",
+      "question": "traceability fitness purpose",
+      "expected_ids": [
+        "measurement-atlas:concept:fitness-for-purpose"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:method:traceability-documentation"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:traceability-result",
+          "measurement-atlas:method:traceability-documentation"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 9632
+    },
+    {
+      "id": "D14",
+      "question": "report uncertainty basis",
+      "expected_ids": [
+        "measurement-atlas:concept:uncertainty-reporting"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:method:uniform-bounds"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:fitness-for-purpose"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 29201
+    },
+    {
+      "id": "D15",
+      "question": "error not uncertainty",
+      "expected_ids": [
+        "measurement-atlas:concept:error-not-uncertainty"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:standard-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:error-not-uncertainty",
+          "measurement-atlas:concept:coverage-conditions",
+          "measurement-atlas:concept:fitness-for-purpose",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:evaluation-methods"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 24463
+    },
+    {
+      "id": "D16",
+      "question": "systematic corrections",
+      "expected_ids": [
+        "measurement-atlas:concept:systematic-corrections"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:systematic-corrections",
+          "measurement-atlas:concept:evaluation-methods"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:systematic-corrections",
+          "measurement-atlas:concept:evaluation-methods"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 7290
+    },
+    {
+      "id": "D17",
+      "question": "Type A Type B evaluation methods",
+      "expected_ids": [
+        "measurement-atlas:concept:evaluation-methods"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:evaluation-methods",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:concept:type-b-information",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:starter_packet:measure-type-a-evaluation"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:evaluation-methods",
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:type-b-information",
+          "measurement-atlas:starter_packet:measure-type-b-evaluation",
+          "measurement-atlas:concept:type-a-methods"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 29393
+    },
+    {
+      "id": "D18",
+      "question": "combined uncertainty components",
+      "expected_ids": [
+        "measurement-atlas:concept:combined-uncertainty"
+      ],
+      "ranked": {
+        "bm25": [
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:starter_packet:measure-combined-uncertainty",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:concept:covariance"
+        ],
+        "lexical_overlap": [
+          "measurement-atlas:concept:combined-uncertainty",
+          "measurement-atlas:concept:uncertainty-reporting",
+          "measurement-atlas:equation:expanded-uncertainty",
+          "measurement-atlas:starter_packet:measure-combined-uncertainty",
+          "measurement-atlas:concept:covariance"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 29395
+    },
+    {
+      "id": "D19",
+      "question": "Faraday waves",
+      "expected_ids": [
+        "cymatics-atlas:concept:fluid-faraday"
+      ],
+      "ranked": {
+        "bm25": [
+          "cymatics-atlas:concept:fluid-faraday",
+          "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+          "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+          "cymatics-atlas:publisher_portion:primary-dryad-faraday-data",
+          "cymatics-atlas:source_audit:a-benjamin-stability"
+        ],
+        "lexical_overlap": [
+          "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+          "cymatics-atlas:concept:fluid-faraday",
+          "cymatics-atlas:concept:fluid-mathieu-instability",
+          "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+          "cymatics-atlas:publisher_portion:primary-dryad-faraday-data"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 30870
+    },
+    {
+      "id": "D20",
+      "question": "NOAA GOES",
+      "expected_ids": [
+        "signal-atlas:claim:C-082"
+      ],
+      "ranked": {
+        "bm25": [
+          "signal-atlas:claim:C-082",
+          "signal-atlas:claim:C-069",
+          "signal-atlas:claim:C-059",
+          "signal-atlas:claim:C-057",
+          "signal-atlas:claim:C-058"
+        ],
+        "lexical_overlap": [
+          "signal-atlas:claim:C-082",
+          "signal-atlas:claim:C-057",
+          "signal-atlas:claim:C-058",
+          "signal-atlas:claim:C-059",
+          "signal-atlas:claim:C-069"
+        ]
+      },
+      "context_valid": true,
+      "context_status": "context_available",
+      "context_bytes": 31521
+    },
+    {
+      "id": "D21",
+      "question": "zxqv7788 fluxxabc",
+      "expected_ids": [],
+      "ranked": {
+        "bm25": [],
+        "lexical_overlap": []
+      },
+      "context_valid": true,
+      "context_status": "no_match",
+      "context_bytes": 269
+    },
+    {
+      "id": "D22",
+      "question": "marshmallow unicorn recipe",
+      "expected_ids": [],
+      "ranked": {
+        "bm25": [],
+        "lexical_overlap": []
+      },
+      "context_valid": true,
+      "context_status": "no_match",
+      "context_bytes": 269
+    },
+    {
+      "id": "D23",
+      "question": "volcano ticket reservation",
+      "expected_ids": [],
+      "ranked": {
+        "bm25": [],
+        "lexical_overlap": []
+      },
+      "context_valid": true,
+      "context_status": "no_match",
+      "context_bytes": 269
+    },
+    {
+      "id": "D24",
+      "question": "qvjsjzlp 77889551",
+      "expected_ids": [],
+      "ranked": {
+        "bm25": [],
+        "lexical_overlap": []
+      },
+      "context_valid": true,
+      "context_status": "no_match",
+      "context_bytes": 269
+    },
+    {
+      "id": "D25",
+      "question": "cryptic rainbow pancakes",
+      "expected_ids": [],
+      "ranked": {
+        "bm25": [],
+        "lexical_overlap": []
+      },
+      "context_valid": true,
+      "context_status": "no_match",
+      "context_bytes": 269
+    }
+  ],
+  "limitations": [
+    "Small authored test set; used during development.",
+    "No neural semantic or actual Bitwork comparison.",
+    "Lexical baseline shares corpus and excludes the same inadmissible record types.",
+    "No-match is lexical behavior, not semantic out-of-domain detection.",
+    "No answer quality, energy saving or model improvement established."
+  ]
+}

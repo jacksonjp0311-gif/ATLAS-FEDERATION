@@ -1,0 +1,8 @@
+{
+  "reduced_form": "1/5",
+  "first_stage": "1/2",
+  "direct_lower": 0,
+  "direct_upper": "1/20",
+  "minimum_first_stage": 0,
+  "data_origin": "synthetic_constructed"
+}

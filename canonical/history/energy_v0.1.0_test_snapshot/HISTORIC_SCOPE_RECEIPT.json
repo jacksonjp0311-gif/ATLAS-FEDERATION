@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.history-scope-snapshot/1",
+  "prior": "Energy Atlas v0.1.0",
+  "date": "2026-11-14",
+  "historical_source": "ATLAS_COLLECTION_Energy_v0.1.0.zip",
+  "saved_scope": [
+    "original Energy package tests/models/data",
+    "original ten-node common registry/data",
+    "original Forge common runtime"
+  ],
+  "original_node_count": 10,
+  "original_energy_records": 176,
+  "original_energy_relations_local": 144,
+  "original_full_records": 1927,
+  "original_full_relations": 1133,
+  "no_historical_tests_rewritten": true,
+  "new_v0.2_current_package_tested_separately": true,
+  "limitation": "Lightweight offline test scope snapshot is not a second byte-identical copy of the entire ~585 MB prior archive; prior full archive is preserved separately in the Library multipart release"
+}

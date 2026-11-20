@@ -1,0 +1,44 @@
+{
+  "result": "passed",
+  "kind": "clean_installed_wheel_smoke",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "forge_version": "1.0.0rc1",
+  "measurement_version": "1.0.0rc1",
+  "forge_records": 505,
+  "context_valid": true,
+  "source_tree_imports": false,
+  "loaded_modules": {
+    "forge": "/mnt/data/atlas_v1_checks/clean_env/lib/python3.13/site-packages/atlas_forge/__init__.py",
+    "measurement": "/mnt/data/atlas_v1_checks/clean_env/lib/python3.13/site-packages/measurement_atlas/__init__.py"
+  },
+  "unit_conversion": {
+    "schema": "measurement.quantity-conversion/1",
+    "value": 298.15,
+    "standard_uncertainty": 0.2,
+    "from_unit": "degC",
+    "unit": "K",
+    "quantity_kind": "temperature",
+    "dimensions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "temperature_interval": false,
+    "quantity_kind_basis": "explicit_caller_declaration_not_inferred",
+    "limitations": [
+      "Finite unit catalog and explicit product/quotient/integer-power grammar only.",
+      "Unit compatibility is not validation of a physical measurement or calibration."
+    ]
+  },
+  "conformance_probability": 0.6626297864953079,
+  "missing_certificate_factor_detected": true,
+  "published_case_status": "passed_with_source_discrepancies",
+  "publisher_interval_all_matched": false,
+  "windows_run": false,
+  "live_bitwork_or_model_run": false
+}

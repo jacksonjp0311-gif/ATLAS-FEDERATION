@@ -1,0 +1,115 @@
+{
+  "schema": "atlas.computer-chapter-index/2",
+  "prior_chapters": 24,
+  "new_chapters": [
+    {
+      "number": 25,
+      "slug": "isa_compatibility_and_machine_abi",
+      "title": "Preserving byte-exact AT8 semantics and an explicit programming contract",
+      "path": "docs/chapters/25_isa_compatibility_and_machine_abi.md",
+      "source_id": "MIT-6004",
+      "invariant": "For a program P with inputs I, define architectural trace T(P,I) as the sequence of committed (PC, register file, RAM changes, flags, output events) records. An ABI is a convention over this ISA: v0.2 structured programs use R0 as source-vi",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 26,
+      "slug": "structured_source_to_bytecode_compiler",
+      "title": "A bounded structured-language compiler from source to AT8 ROM",
+      "path": "docs/chapters/26_structured_source_to_bytecode_compiler.md",
+      "source_id": "NAND2TETRIS",
+      "invariant": "Let \u27e6S\u27e7 be the reference source interpreter state transformation and C(S) the compiler output. The desirable finite property is `project(Exec_AT8(C(S),I)) == \u27e6S\u27e7(I)`, where project selects R0, RAM, output stream, consumed input cursors and ",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 27,
+      "slug": "nested_loops_register_allocation_and_counter_safety",
+      "title": "Nested counted loops and compiler-owned register allocation",
+      "path": "docs/chapters/27_nested_loops_register_allocation_and_counter_safety.md",
+      "source_id": "NAND2TETRIS",
+      "invariant": "For a loop `REPEAT n {B}`, the emitted structure is `LDI Rc,n; L: C(B); ADDI Rc,255; JNZ Rc,L`. Because addition is modulo 256, decrementing 1 by 1 produces zero, and JNZ tests register value, not flags. With 1\u2264n\u2264255 and no modification of ",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 28,
+      "slug": "control_flow_static_reachability_and_conservative_halting",
+      "title": "Static control-flow graphs, unreachable code and conservative halting analysis",
+      "path": "docs/chapters/28_control_flow_static_reachability_and_conservative_halting.md",
+      "source_id": "MIT-6004",
+      "invariant": "Let Reach be the least fixed point from PC=0 over all graph successors. A conservative structural guarantee that *all graph paths terminate at HALT* holds if the reachable subgraph is acyclic, has no fall-off traps, and every reachable sink",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 29,
+      "slug": "source_rom_rebuild_receipts_and_canonical_identity",
+      "title": "Reproducible source-to-ROM builds, content hashes and provenance",
+      "path": "docs/chapters/29_source_rom_rebuild_receipts_and_canonical_identity.md",
+      "source_id": "RISCV-MANUAL",
+      "invariant": "A reproducible build statement is `H(C(S)) == H(rom_reference)` for the exact compiler/assembler release, source S, and byte representation. If the input language treats whitespace/comments differently, hashing original text is distinct fro",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 30,
+      "slug": "ecc_13_8_memory_rom_error_protection",
+      "title": "Byte-wide SECDED (13,8) error control for executable ROM",
+      "path": "docs/chapters/30_ecc_13_8_memory_rom_error_protection.md",
+      "source_id": "NAND2TETRIS",
+      "invariant": "Construct four parity-check bits from the binary positions. On reading, compute syndrome s\u2208[0,15] and overall parity p. (s,p)=(0,0) means no detected error. Nonzero syndrome with odd overall parity identifies a candidate corrupted location ",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 31,
+      "slug": "rom_recovery_corruption_detection_and_limits",
+      "title": "ROM recovery, failure reporting and verification boundaries",
+      "path": "docs/chapters/31_rom_recovery_corruption_detection_and_limits.md",
+      "source_id": "NAND2TETRIS",
+      "invariant": "For encoded words c_i, decode each independently; if any word reports detected_double, abort before executing *any* recovered program. After successful decoding, calculate `H(ROM_recovered)` and compare with a pinned expected hash when one ",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 32,
+      "slug": "retirement_equivalence_and_microcycle_state",
+      "title": "Instruction retirement, staged side effects and differential machine execution",
+      "path": "docs/chapters/32_retirement_equivalence_and_microcycle_state.md",
+      "source_id": "MIT-6004",
+      "invariant": "Let S_n be architectural state after retiring n instructions. For a valid instruction i, `SpecStep(S_n,i)=MicroRetire(S_n,i)` is the key bisimulation-style finite condition. A trapped instruction should not partially commit registers, RAM o",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 33,
+      "slug": "traps_watchdogs_and_deterministic_io",
+      "title": "Precise traps, finite watchdog budgets and deterministic I/O tapes",
+      "path": "docs/chapters/33_traps_watchdogs_and_deterministic_io.md",
+      "source_id": "RISCV-MANUAL",
+      "invariant": "Define `Snapshot(S)` as architectural state. A failed instruction should satisfy `Snapshot_after_trap = Snapshot_before_instruction`; this preserves precisely observable state so a debugger or recovery process can diagnose without guessing ",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 34,
+      "slug": "bootstrap_compiler_correctness_and_independent_semantics",
+      "title": "Independent source-language semantics and bounded compilation comparisons",
+      "path": "docs/chapters/34_bootstrap_compiler_correctness_and_independent_semantics.md",
+      "source_id": "NAND2TETRIS",
+      "invariant": "The key comparison is between the AST evaluator and the compiled machine, after projecting away reserved compiler counters. Compare the source accumulator, full 256-byte memory image, output trace, input consumption and termination. It is n",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 35,
+      "slug": "physical_manufacturing_evidence_requirements",
+      "title": "Physical manufacturing dependencies and the limits of metadata-based assurance",
+      "path": "docs/chapters/35_physical_manufacturing_evidence_requirements.md",
+      "source_id": "MIT-6004",
+      "invariant": "The physical evidence condition is a conjunction of necessary verified predicates: `AcceptedHardware = AND_i VerifiedByQualifiedProcess(E_i)`. A text field named `verified`, a copied SHA-256, or an AI-generated report is not an external cal",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    },
+    {
+      "number": 36,
+      "slug": "full_stack_computer_bootstrap_and_future_domains",
+      "title": "From a finite AT8 compiler to operating systems and scientific AI",
+      "path": "docs/chapters/36_full_stack_computer_bootstrap_and_future_domains.md",
+      "source_id": "RISCV-MANUAL",
+      "invariant": "The reconstruction contract must avoid collapsing distinct proof tiers. A deterministic simulator establishes software transition equivalence. Independent finite oracles constrain software errors. A content hash protects byte identity. Scie",
+      "evidence_grade": "original finite software reference; no physical experiment"
+    }
+  ],
+  "total_chapters": 36
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "atlas.math-physics-v01-preflight/1",
+  "result": "passed_source_tree_pending_archive",
+  "tests_passed": 1987,
+  "skips": 0,
+  "suites": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "ran": 41,
+      "passed": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Chemistry": {
+      "ran": 68,
+      "passed": 68,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ChemistryV02": {
+      "ran": 60,
+      "passed": 60,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ChemistryV1": {
+      "ran": 52,
+      "passed": 52,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "MathPhysics": {
+      "ran": 64,
+      "passed": 64,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "numeric_comparisons": 10124,
+  "contexts": 89,
+  "nodes": 12,
+  "records": 2521,
+  "relations": 1679,
+  "source_cards": 497,
+  "math_records": 164,
+  "math_sources": 10,
+  "math_internal_relations": 152,
+  "math_full_relations": 160,
+  "chapters": 38,
+  "constructed_cases": 22,
+  "manual_words": 18131,
+  "older_byte_identical_files": 4273,
+  "clean_wheel_install": "passed",
+  "fresh_archive_replay": "pending",
+  "original_primary_source_files": 0,
+  "independent_scientific_peer_review": false,
+  "router_modified": false,
+  "desktop_transfer": false
+}

@@ -1,39 +1,17 @@
-# Cleared domain source — partial public export
+# Public derivative source — repository navigation
 
-> Supplementary publication guide, added for this public mirror. It is not an original historical science document.
+> Supplementary guide for this repository. This guide is not an original scientific document or a claim that the complete private archive is public. It is repository navigation, covered by the browsable inventory rather than treated as an original scientific artifact.
 
-This incremental batch publishes **1,948 cleared original files from 19 domain roots** in their original archive-relative layout. The source bytes are preserved exactly from the verified Compiler Design v0.2.0 archive. The [batch receipt](../evidence/publication/cleared-domain-source-batch-2026-11-20.json) records the included paths, hashes, and verification scope.
+This directory retains the original federation layout for the **cleared public derivative** of Compiler Design v0.2.0. Browse the [24-node source directory](../PUBLIC_SOURCE_DIRECTORY.md), then inspect the [browsable notice](PUBLIC_BROWSABLE_NOTICE.md), [omission inventory](PUBLIC_OMISSION_MANIFEST.json), [browsable file manifest](BROWSABLE_FILE_MANIFEST.json), and [verification receipt](../evidence/publication/PUBLIC_DERIVATIVE_VERIFICATION.json). Distinct eligible [nested sources](_nested/README.md) are exposed separately with [archive/member provenance](_nested/PROVENANCE.json).
 
-This is a **partial source-only export**. It does not include the complete shared runtime, baseline, historical collection, or binary release archive. This batch excludes Measurement, Materials, Causal, shared `common/` records, `history/`, `baseline/`, manifest/registry metadata, and archive containers. Existing [24-domain navigation](../README.md#domain-directory) and earlier public source directories remain available; their presence does not fill these omissions in the `canonical/` layout.
+Omissions, documented redactions, and rebuilt metadata distinguish this derivative from the unchanged private original. Unmodified files retain their bytes; transformed files have new hashes, and examples dependent on removed data remain unavailable. Use `BROWSABLE_FILE_MANIFEST.json` for this repository export. The [archive file manifest](FILE_MANIFEST.json) describes the release package, including eligible nested archive containers that are excluded from Git. The [original file manifest](FILE_MANIFEST.original-historical.json) is preserved for historical context; it cannot certify omitted files or serve as either active derivative manifest. Earlier scientific records, edition names, and evidence boundaries retain their source identities.
 
-## Included roots
+## Publication history
 
-| Domain | Original source root | Files in this batch |
-| :--- | :--- | ---: |
-| Agents | [Browse](AGENT-ATLAS/) | 217 |
-| Bioelectricity | [Browse](BIOELECTRIC-ATLAS/) | 51 |
-| Chemistry | [Browse](CHEMISTRY-ATLAS/) | 136 |
-| Compiler design | [Browse](COMPILER-DESIGN-ATLAS/) | 53 |
-| Computation | [Browse](COMPUTATION-ATLAS/) | 126 |
-| Computer architecture and digital hardware | [Browse](COMPUTER-ARCHITECTURE-ATLAS/) | 161 |
-| Control | [Browse](CONTROL-ATLAS/) | 210 |
-| Cryptographic protocols | [Browse](CRYPTOGRAPHIC-PROTOCOLS-ATLAS/) | 44 |
-| Database optimization | [Browse](DATABASE-OPTIMIZATION-ATLAS/) | 56 |
-| Distributed systems | [Browse](DISTRIBUTED-SYSTEMS-ATLAS/) | 55 |
-| Electronics and semiconductors | [Browse](ELECTRONICS-SEMICONDUCTORS-ATLAS/) | 116 |
-| Energy | [Browse](ENERGY-ATLAS/) | 134 |
-| Language | [Browse](LANGUAGE-ATLAS/) | 173 |
-| Manufacturing | [Browse](MANUFACTURING-ATLAS/) | 69 |
-| Mathematics and fundamental physics | [Browse](MATHEMATICS-PHYSICS-ATLAS/) | 151 |
-| Network stacks | [Browse](NETWORK-STACKS-ATLAS/) | 48 |
-| Neural architectures | [Browse](NEURAL-ARCHITECTURES-ATLAS/) | 36 |
-| OS internals | [Browse](OS-INTERNALS-ATLAS/) | 51 |
-| Software design patterns | [Browse](SOFTWARE-DESIGN-PATTERNS-ATLAS/) | 61 |
+The earlier [source-only batch](../evidence/publication/cleared-domain-source-batch-2026-11-20.json) published 1,948 original files from 19 roots. This directory now follows the broader derivative manifest. The [four-domain export](../evidence/publication/four-domains-2026-11-20-manifest.json) separately preserves Computer Architecture, Mathematics / Physics, Signal, and Cymatics in the familiar root-level navigation. The receipts retain their original scopes.
 
-## How to use this export
+## Use and limits
 
-Begin with each domain's original README, source register, scientific scope notes, and tests. Their historical statements retain the context of the edition in which they were written. Commands may expect shared files or historical inputs absent from this partial export. Historical receipts are not fresh tests of this published subset, and finite software models are not physical or scientific certification.
+Original READMEs, tests, and historical commands can refer to omitted content or their original complete collection layout. Inspect source before execution and check the public inventory before expecting a historical command to work. Historical receipts describe past runs; they are not fresh evidence for the derivative. Software tests do not establish physical reconstruction or scientific certification.
 
-The complete original remains private and unchanged. A separately identified public derivative is still being prepared, with a full omission inventory and its own checksum. **No full public release asset or public re-download verification is claimed by this source batch.** See [publication status](../PUBLICATION_STATUS.md) and [release status](../RELEASE_STATUS.md).
-
-Per-source rights and evidence limits remain applicable. Source links do not grant redistribution rights to external publications. This guide adds navigation without changing the scientific source.
+The derivative ZIP remains **staged locally**, with public release upload and re-download verification pending. The complete original archive remains private and unchanged. See [restoration instructions](../RESTORATION.md), [publication status](../PUBLICATION_STATUS.md), and [release status](../RELEASE_STATUS.md).

@@ -1,0 +1,22 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "compiler-design-atlas",
+  "active_original_domain_priority": 18,
+  "current_federation_release": "Compiler_Design_v0.2.0",
+  "desktop_transfer": false,
+  "next_content_milestone": "Compiler Design further scoped v1 research; specific gates not all closed",
+  "next_original_domain": "formal-verification-atlas",
+  "next_original_domain_priority": 19,
+  "nodes": 24,
+  "original_30_candidate_nodes_missing": 12,
+  "original_30_candidate_nodes_represented": 18,
+  "previous_checkpoint": "Compiler_Design_v0.1.0",
+  "records": 4120,
+  "relations": 3357,
+  "schema": "atlas.collection-checkpoint/2",
+  "scientific_v1_accepted": false,
+  "scoped_software_content_v1_ready": false,
+  "source_cards": 657,
+  "status": "preseal_only_not_authoritative",
+  "version": "compiler-design-0.2.0-preseal-development"
+}

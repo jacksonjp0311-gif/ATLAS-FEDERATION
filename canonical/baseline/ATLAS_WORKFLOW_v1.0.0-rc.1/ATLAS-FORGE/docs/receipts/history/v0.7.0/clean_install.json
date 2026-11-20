@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "forge_version": "0.7.0",
+  "measurement_version": "0.7.0",
+  "forge_records": 486,
+  "measurement_records": 122,
+  "context_valid": true,
+  "context_status": "conflicting_context",
+  "publisher_interval_all_matched": false,
+  "certified_values_passed": 11,
+  "source_tree_imports": false,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

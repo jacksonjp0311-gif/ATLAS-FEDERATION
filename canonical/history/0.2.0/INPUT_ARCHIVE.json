@@ -1,0 +1,7 @@
+{
+  "schema": "atlas.build-input/1",
+  "collection": "0.2.0",
+  "archive_sha256": "3d6db5030cccd4651bfe5a1231c0f89017b921e19be10072e584e6fa244257c3",
+  "archive_bytes": 19903351,
+  "expected_sha256": "3d6db5030cccd4651bfe5a1231c0f89017b921e19be10072e584e6fa244257c3"
+}

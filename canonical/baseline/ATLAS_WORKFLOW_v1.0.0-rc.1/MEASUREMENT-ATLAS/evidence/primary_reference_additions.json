@@ -1,0 +1,2720 @@
+{
+  "schema": "measurement.reference-additions/1",
+  "revision": "1.0.0rc1",
+  "checked_at": "2026-11-12",
+  "review": "assistant primary HTML portion inspection; not independent scientific review",
+  "sources": [
+    {
+      "id": "TN2",
+      "title": "Classification of uncertainty components",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty",
+      "inspected_scope": "TN 1297 §2.1–2.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN3",
+      "title": "Type A evaluation",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-3-type-evaluation-standard-uncertainty",
+      "inspected_scope": "TN 1297 §3, opening paragraph",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN4",
+      "title": "Type B evaluation",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-4-type-b-evaluation-standard-uncertainty",
+      "inspected_scope": "TN 1297 §4.1–4.6",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN5",
+      "title": "Combined standard uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-5-combined-standard-uncertainty",
+      "inspected_scope": "TN 1297 §5.1–5.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN6",
+      "title": "Expanded uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-6-expanded-uncertainty",
+      "inspected_scope": "TN 1297 §6.1–6.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN7",
+      "title": "Reporting uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-7-reporting-uncertainty",
+      "inspected_scope": "TN 1297 §7.1–7.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored.",
+      "freshness_note": "The NIST page displays a no-longer-updated warning, observed 2026-11-12. Use only as the stated historical TN 1297 guidance, not a current accreditation requirement."
+    },
+    {
+      "id": "TNA",
+      "title": "Law of propagation of uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty",
+      "inspected_scope": "TN 1297 Appendix A, A.1–A.5",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TRACE",
+      "title": "Metrological traceability FAQ",
+      "url": "https://www.nist.gov/metrology/metrological-traceability",
+      "inspected_scope": "FAQ §5.1.1, §5.1.4 and §5.2.1",
+      "publisher": "NIST",
+      "publication": "NIST web reference",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "POLICY",
+      "title": "NIST policy on metrological traceability",
+      "url": "https://www.nist.gov/calibrations/traceability",
+      "inspected_scope": "Policy statement items 1–5",
+      "publisher": "NIST",
+      "publication": "NIST web reference",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "VMEAS",
+      "title": "Measurand and measurement intervention",
+      "url": "https://jcgm.bipm.org/vim/en/2.3.html",
+      "inspected_scope": "Entry 2.3, definition and notes 1 and 3",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry, inspected 2026-11-12",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VACC",
+      "title": "Measurement accuracy",
+      "url": "https://jcgm.bipm.org/vim/en/2.13.html",
+      "inspected_scope": "Entry 2.13, definition and notes 1–2",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VPREC",
+      "title": "Measurement precision",
+      "url": "https://jcgm.bipm.org/vim/en/2.15.html",
+      "inspected_scope": "Entry 2.15, definition and notes 1–4",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VREP",
+      "title": "Repeatability conditions",
+      "url": "https://jcgm.bipm.org/vim/en/2.20.html",
+      "inspected_scope": "Entry 2.20, definition and note 1",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VREPRO",
+      "title": "Reproducibility conditions",
+      "url": "https://jcgm.bipm.org/vim/en/2.24.html",
+      "inspected_scope": "Entry 2.24, definition and notes 1–2",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VUNC",
+      "title": "Measurement uncertainty",
+      "url": "https://jcgm.bipm.org/vim/en/2.26.html",
+      "inspected_scope": "Entry 2.26, definition and notes 1–4",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VCAL",
+      "title": "Calibration",
+      "url": "https://jcgm.bipm.org/vim/en/2.39.html",
+      "inspected_scope": "Entry 2.39, definition and notes 1–3",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VTRACE",
+      "title": "Metrological traceability",
+      "url": "https://jcgm.bipm.org/vim/en/2.41.html",
+      "inspected_scope": "Entry 2.41, definition and notes 3–5",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VRES",
+      "title": "Resolution",
+      "url": "https://jcgm.bipm.org/vim/en/4.14.html",
+      "inspected_scope": "Entry 4.14, definition and note",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VINFL",
+      "title": "Influence quantity",
+      "url": "https://jcgm.bipm.org/vim/en/2.52.html",
+      "inspected_scope": "Entry 2.52, definition, example 3 and note 2",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "VCOMP",
+      "title": "Metrological compatibility",
+      "url": "https://jcgm.bipm.org/vim/en/2.47.html",
+      "inspected_scope": "Entry 2.47, definition and note 2",
+      "publisher": "JCGM/BIPM",
+      "publication": "VIM3 online annotated entry",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "SI330",
+      "title": "SI quantities, dimensions and units",
+      "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2",
+      "inspected_scope": "SP 330 §§2.1, 2.3.1 kelvin/Celsius passage, 2.3.3–2.3.4",
+      "publisher": "NIST",
+      "publication": "SP 330 ninth edition (2019), HTML; not a claim of latest BIPM edition",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "SI811",
+      "title": "Reporting values and units",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values",
+      "inspected_scope": "SP 811 §§7.1–7.2",
+      "publisher": "NIST",
+      "publication": "SP 811 (2008), HTML; notation only, not old base-unit definitions",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "TNB",
+      "title": "Coverage factors and effective degrees of freedom",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-b-coverage-factors",
+      "inspected_scope": "TN 1297 B.1–B.3, equation B-1 and independence condition",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "CALINV",
+      "title": "Inverse calibration of future measurements",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section3/mpc366.htm",
+      "inspected_scope": "§2.3.6.6, Purpose and Linear calibration line only",
+      "publisher": "NIST/SEMATECH",
+      "publication": "e-Handbook of Statistical Methods, HTML snapshot inspected 2026-11-12",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "CALFAIL",
+      "title": "Calibration failure modes",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section3/mpc364.htm",
+      "inspected_scope": "§2.3.6.4, Lack of precision, Lack of system control, day-to-day differences",
+      "publisher": "NIST/SEMATECH",
+      "publication": "e-Handbook of Statistical Methods, HTML",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "CALCHECK",
+      "title": "Check standards for a linear calibration",
+      "url": "https://www.itl.nist.gov/div898/handbook/mpc/section3/mpc37.htm",
+      "inspected_scope": "§2.3.7, check standards and data collection paragraphs",
+      "publisher": "NIST/SEMATECH",
+      "publication": "e-Handbook of Statistical Methods, HTML",
+      "rights": "Link and original bounded paraphrase only. No third-party full text mirrored or relicensed."
+    },
+    {
+      "id": "PONTDATA",
+      "title": "Pontius load-cell observations",
+      "url": "https://www.itl.nist.gov/div898/handbook/datasets/PONTIUS.DAT",
+      "inspected_scope": "Header and all 40 numeric rows; compared with §4.6.1.1 HTML table",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTDESIGN",
+      "title": "Load-cell calibration collection design",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd611.htm",
+      "inspected_scope": "§4.6.1.1 Description of Data Collection and Resulting Data",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTLINEAR",
+      "title": "Load-cell initial straight-line fit",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd613.htm",
+      "inspected_scope": "§4.6.1.3 regression function and displayed fit statistics",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTQUAD",
+      "title": "Load-cell quadratic fit",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd617.htm",
+      "inspected_scope": "§4.6.1.7 displayed regression coefficients and fit statistics",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTINVERSE",
+      "title": "Load-cell inverse calibration example",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd61a.htm",
+      "inspected_scope": "§4.6.1.10 hypothetical response, numerical inversion, root selection and interval discussion",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "LOF",
+      "title": "Replicate-based lack-of-fit assessment",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd446.htm",
+      "inspected_scope": "§4.4.4.6 replication, pure error, model lack-of-fit and F-ratio definitions",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTCERT",
+      "title": "Pontius certified numerical regression values",
+      "url": "https://www.itl.nist.gov/div898/strd/lls/data/LINKS/v-Pontius.shtml",
+      "inspected_scope": "Certified Regression Statistics and Analysis of Variance tables",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PONTCERTMETHOD",
+      "title": "Pontius numerical certification methodology",
+      "url": "https://www.itl.nist.gov/div898/strd/lls/data/LINKS/c-Pontius.shtml",
+      "inspected_scope": "Methodology, ordinary least squares definition and standard deviations of estimates",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "PREDICT",
+      "title": "Mean response and single-response prediction uncertainty",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section5/pmd512.htm",
+      "inspected_scope": "§4.5.1.2 Uncertainties Do Differ and Standard Deviation of Prediction",
+      "publisher": "NIST",
+      "publication": "NIST/SEMATECH e-Handbook or NIST/ITL StRD, specified HTML/text portion checked 2026-11-12",
+      "rights": "Source link and original bounded paraphrase. Pontius numeric capture has a separate attributed NIST reuse notice; no blanket license for other linked works."
+    },
+    {
+      "id": "TDIST",
+      "title": "Student t density and numerical quantiles",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3664.htm",
+      "inspected_scope": "§1.3.6.6.4 Probability Density Function, Percent Point Function and Comments",
+      "publisher": "NIST",
+      "publication": "Named NIST HTML reference portion checked 2026-11-12",
+      "rights": "Link and original bounded paraphrase only; no source full-text mirror.",
+      "freshness_note": "Access date is not an assertion of independent scientific review."
+    },
+    {
+      "id": "MEANCI",
+      "title": "Confidence limits for a mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+      "inspected_scope": "§1.3.5.2 Purpose and Definition: Confidence Interval",
+      "publisher": "NIST",
+      "publication": "Named NIST HTML reference portion checked 2026-11-12",
+      "rights": "Link and original bounded paraphrase only; no source full-text mirror.",
+      "freshness_note": "Access date is not an assertion of independent scientific review."
+    },
+    {
+      "id": "TTABLE",
+      "title": "Central Student t coverage factors",
+      "url": "https://www.nist.gov/pml/nist-tn-1297-guidelines-appendix-b-table-b1",
+      "inspected_scope": "Table B.1 central fraction heading and rows df=1,4,8,37-adjacent, infinity; no current-service claim",
+      "publisher": "NIST",
+      "publication": "Named NIST HTML reference portion checked 2026-11-12",
+      "rights": "Link and original bounded paraphrase only; no source full-text mirror.",
+      "freshness_note": "Table B.1 carries a no-longer-updated warning; used as historical numerical reference only."
+    },
+    {
+      "id": "DLMFBETA",
+      "title": "Incomplete beta function representations",
+      "url": "https://dlmf.nist.gov/8.17",
+      "inspected_scope": "§8.17(i) definitions E1–E4 and §8.17(v) continued fraction",
+      "publisher": "NIST",
+      "publication": "Named NIST HTML reference portion checked 2026-11-12",
+      "rights": "Link and original bounded paraphrase only; no source full-text mirror.",
+      "freshness_note": "Access date is not an assertion of independent scientific review."
+    },
+    {
+      "id": "REGMEAN",
+      "title": "Confidence interval for a fitted mean response",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section5/pmd511.htm",
+      "inspected_scope": "§4.5.1.1 interval for estimated average response; pointwise interpretation",
+      "publisher": "NIST",
+      "publication": "Named NIST HTML reference portion checked 2026-11-12",
+      "rights": "Link and original bounded paraphrase only; no source full-text mirror.",
+      "freshness_note": "Access date is not an assertion of independent scientific review."
+    },
+    {
+      "id": "SI8118",
+      "title": "NIST SI guide: temperature intervals and quantity meaning",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-8",
+      "publisher": "NIST",
+      "publication": "SP 811 (2008), HTML edition",
+      "inspected_scope": "Section 8.5, temperature intervals and differences",
+      "rights": "Link and original bounded paraphrase only; no source mirrored."
+    },
+    {
+      "id": "CALPOL",
+      "title": "NIST calibration policies: scope and reporting",
+      "url": "https://www.nist.gov/calibrations/policies",
+      "publisher": "NIST",
+      "publication": "Living calibration policy page, checked 2026-11-12",
+      "inspected_scope": "Reports of Calibration/Test Results and Reporting Measurement Uncertainty",
+      "rights": "Link and original bounded paraphrase only; customer calibration reports are not copied."
+    },
+    {
+      "id": "J106",
+      "title": "Measurement uncertainty in conformity assessment",
+      "url": "https://www.bipm.org/documents/20126/2071204/JCGM_106_2012_E.pdf/fe9537d2-e7d7-e146-5abb-2649c3450b25",
+      "publisher": "JCGM / BIPM",
+      "publication": "JCGM 106:2012; DOI 10.59161/JCGM106-2012",
+      "inspected_scope": "Sections 3.3, 7.1-7.5, 8.1-8.3 and 9.3-9.4; formulas/screenshots checked on printed pp.13-16 and19",
+      "rights": "Copyright JCGM. Link, locators, mathematical implementation and original brief paraphrases only; PDF not redistributed."
+    }
+  ],
+  "records": [
+    {
+      "id": "evaluation-methods",
+      "title": "Type A and Type B describe evaluation methods",
+      "source": "TN2",
+      "locator": "§2.2–2.3",
+      "text": "Type A uses statistical evaluation; Type B uses other information. These categories do not map one-to-one onto random and systematic effects.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Do not classify an effect solely by whether it appears random or systematic."
+      ],
+      "tags": [
+        "type",
+        "a",
+        "and",
+        "type",
+        "b",
+        "describe",
+        "evaluation",
+        "methods"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "standard-uncertainty",
+      "title": "Standard uncertainty",
+      "source": "TN2",
+      "locator": "§2.4",
+      "text": "Standard uncertainty represents an uncertainty component as an estimated standard deviation.",
+      "equation": "u = sqrt(estimated variance)",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "This reference is not a laboratory calibration or independent replication."
+      ],
+      "tags": [
+        "standard",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "error-not-uncertainty",
+      "title": "Error is not uncertainty",
+      "source": "TN2",
+      "locator": "§2.3 note",
+      "text": "A result can have a small unknown error yet substantial uncertainty. Uncertainty is not the realized error.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The true error is generally not known from an uncertainty estimate."
+      ],
+      "tags": [
+        "error",
+        "is",
+        "not",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "type-a-methods",
+      "title": "Type A methods beyond repeated means",
+      "source": "TN3",
+      "locator": "§3 opening paragraph",
+      "text": "Type A evaluations can use valid statistical analyses such as least squares or analysis of variance, not only repeated-reading means.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The appropriate statistical design depends on the measurement process."
+      ],
+      "tags": [
+        "type",
+        "a",
+        "methods",
+        "beyond",
+        "repeated",
+        "means"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "type-a-mean",
+      "title": "Uncertainty of a repeated-reading mean",
+      "source": "TNA",
+      "locator": "A.4, equations A-4 and A-5",
+      "text": "For independent observations under the same conditions, estimate the mean uncertainty from their sample dispersion.",
+      "equation": "u(mean) = s/sqrt(n)",
+      "assumptions": [
+        "n >= 2 independent observations under the same measurement conditions."
+      ],
+      "limitations": [
+        "Autocorrelation and drift can invalidate this calculation."
+      ],
+      "tags": [
+        "uncertainty",
+        "of",
+        "a",
+        "repeated-reading",
+        "mean"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "linear-propagation",
+      "title": "First-order uncertainty propagation",
+      "source": "TNA",
+      "locator": "A.3, equation A-3",
+      "text": "Combine input variances and covariances using local sensitivities.",
+      "equation": "u_c^2 = c^T Sigma c",
+      "assumptions": [
+        "First-order Taylor approximation; sensitivities evaluated at input estimates."
+      ],
+      "limitations": [
+        "Nonlinearity may require another method."
+      ],
+      "tags": [
+        "first-order",
+        "uncertainty",
+        "propagation"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "covariance",
+      "title": "Correlated measurement inputs",
+      "source": "TNA",
+      "locator": "A.3, covariance term in A-3",
+      "text": "Covariance terms contribute to the combined variance when inputs are correlated.",
+      "equation": "",
+      "assumptions": [
+        "Covariance estimates describe the joint input uncertainty."
+      ],
+      "limitations": [
+        "Zero correlation must not be silently inferred from missing metadata."
+      ],
+      "tags": [
+        "correlated",
+        "measurement",
+        "inputs"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "measurement-difference",
+      "title": "Uncertainty of a difference",
+      "source": "TNA",
+      "locator": "A.3; local substitution f(x,y)=x-y",
+      "text": "Substituting sensitivities +1 and -1 gives the variance of a difference.",
+      "equation": "u^2(x-y) = u_x^2 + u_y^2 - 2 cov(x,y)",
+      "assumptions": [
+        "Both inputs describe comparable quantities in compatible units."
+      ],
+      "limitations": [
+        "No acceptance decision follows without a declared decision rule."
+      ],
+      "tags": [
+        "uncertainty",
+        "of",
+        "a",
+        "difference"
+      ],
+      "kind": "method",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "type-b-information",
+      "title": "Type B information sources",
+      "source": "TN4",
+      "locator": "§4.1",
+      "text": "Type B evaluation may use previous data, specifications, calibration reports, experience, and reference information.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "A source must be relevant to the actual measurement conditions."
+      ],
+      "tags": [
+        "type",
+        "b",
+        "information",
+        "sources"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "uniform-bounds",
+      "title": "Uniform bounded uncertainty",
+      "source": "TN4",
+      "locator": "§4.6",
+      "text": "For a symmetric uniform model with half-width a, the standard uncertainty is a divided by sqrt(3).",
+      "equation": "u = a/sqrt(3)",
+      "assumptions": [
+        "Equal probability within justified symmetric bounds."
+      ],
+      "limitations": [
+        "Bounds alone do not establish a uniform distribution."
+      ],
+      "tags": [
+        "uniform",
+        "bounded",
+        "uncertainty"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "triangular-bounds",
+      "title": "Triangular bounded uncertainty",
+      "source": "TN4",
+      "locator": "§4.6 final paragraph",
+      "text": "For a symmetric triangular model with half-width a, use a divided by sqrt(6).",
+      "equation": "u = a/sqrt(6)",
+      "assumptions": [
+        "A symmetric triangular probability model is justified."
+      ],
+      "limitations": [
+        "Do not select this model merely to obtain a smaller uncertainty."
+      ],
+      "tags": [
+        "triangular",
+        "bounded",
+        "uncertainty"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "certificate-multiplier",
+      "title": "Convert a reported uncertainty multiplier",
+      "source": "TN4",
+      "locator": "§4.2",
+      "text": "Divide an uncertainty stated as a multiple of a standard deviation by its stated multiplier.",
+      "equation": "u = U/k",
+      "assumptions": [
+        "The report supplies the multiplier and meaning of U."
+      ],
+      "limitations": [
+        "A missing multiplier cannot be guessed."
+      ],
+      "tags": [
+        "convert",
+        "a",
+        "reported",
+        "uncertainty",
+        "multiplier"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "systematic-corrections",
+      "title": "Corrections for systematic effects",
+      "source": "TN5",
+      "locator": "§5.2 and note 1",
+      "text": "Recognized significant systematic effects should be corrected where possible; the correction carries its own uncertainty.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The uncertainty of a correction is not the systematic error itself."
+      ],
+      "tags": [
+        "corrections",
+        "for",
+        "systematic",
+        "effects"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "combined-uncertainty",
+      "title": "Combine Type A and Type B components",
+      "source": "TN5",
+      "locator": "§5.1",
+      "text": "Components from either evaluation method enter a combined standard uncertainty with covariance where appropriate.",
+      "equation": "",
+      "assumptions": [
+        "Components use standard uncertainties and a defensible measurement model."
+      ],
+      "limitations": [
+        "This reference is not a laboratory calibration or independent replication."
+      ],
+      "tags": [
+        "combine",
+        "type",
+        "a",
+        "and",
+        "type",
+        "b",
+        "components"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "expanded-uncertainty",
+      "title": "Expanded uncertainty",
+      "source": "TN6",
+      "locator": "§6.1",
+      "text": "Expanded uncertainty multiplies combined standard uncertainty by a chosen coverage factor.",
+      "equation": "U = k u_c",
+      "assumptions": [
+        "Coverage factor k is explicit and justified."
+      ],
+      "limitations": [
+        "Multiplication alone does not establish a coverage probability."
+      ],
+      "tags": [
+        "expanded",
+        "uncertainty"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "coverage-conditions",
+      "title": "Coverage factor is not a universal probability",
+      "source": "TN6",
+      "locator": "§6.2–6.3",
+      "text": "A factor of two corresponds to approximately 95 percent coverage under the stated normal-distribution and negligible-uncertainty conditions.",
+      "equation": "",
+      "assumptions": [
+        "Normal approximation applies and uncertainty in u_c is negligible for that interpretation."
+      ],
+      "limitations": [
+        "Do not label every k=2 interval as 95 percent."
+      ],
+      "tags": [
+        "coverage",
+        "factor",
+        "is",
+        "not",
+        "a",
+        "universal",
+        "probability"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "uncertainty-reporting",
+      "title": "Report uncertainty with its basis",
+      "source": "TN7",
+      "locator": "§7.1–7.2",
+      "text": "Report components, their evaluation methods, and the coverage factor when expanded uncertainty is used. State the basis of any probability interpretation.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Keep referenced measurement procedures consistent with the process used.",
+        "TN 1297 section 7 is a historical guidance page marked no longer updated; this is not a current compliance certification."
+      ],
+      "tags": [
+        "report",
+        "uncertainty",
+        "with",
+        "its",
+        "basis"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "traceability-result",
+      "title": "Traceability belongs to a measurement result",
+      "source": "TRACE",
+      "locator": "§5.1.1",
+      "text": "Metrological traceability relates a measurement result to a reference through a documented calibration chain with uncertainty contributions.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "An instrument calibration by itself does not establish traceability of every subsequent result."
+      ],
+      "tags": [
+        "traceability",
+        "belongs",
+        "to",
+        "a",
+        "measurement",
+        "result"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "traceability-documentation",
+      "title": "Traceability documentation requirements",
+      "source": "TRACE",
+      "locator": "§5.2.1",
+      "text": "Document the measurand, measurement system, result and uncertainty, reference calibration, and relevant measurement assurance.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Checking graph links cannot authenticate certificates or establish competence."
+      ],
+      "tags": [
+        "traceability",
+        "documentation",
+        "requirements"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "fitness-for-purpose",
+      "title": "Traceability is not fitness for purpose",
+      "source": "POLICY",
+      "locator": "Policy statement item 5",
+      "text": "A traceable result can still be unsuitable for an application when its uncertainty is too large.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Application requirements must be evaluated separately."
+      ],
+      "tags": [
+        "traceability",
+        "is",
+        "not",
+        "fitness",
+        "for",
+        "purpose"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "measurand-definition",
+      "title": "Specify the measurand before calculating",
+      "source": "VMEAS",
+      "locator": "2.3, definition and note 1",
+      "text": "Identify the intended quantity together with the object, state and relevant conditions; a number and an instrument name do not fully specify a measurand.",
+      "equation": "",
+      "assumptions": [
+        "The intended use and object are specified."
+      ],
+      "limitations": [
+        "A different condition may define a different measurand, not a repeat of the same measurement."
+      ],
+      "tags": [
+        "specify",
+        "the",
+        "measurand",
+        "before",
+        "calculating"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "measurement-intervention",
+      "title": "Measurement may disturb the target",
+      "source": "VMEAS",
+      "locator": "2.3, note 3",
+      "text": "Instrument interaction can change the quantity being observed. A justified correction may be needed to estimate the originally intended quantity.",
+      "equation": "",
+      "assumptions": [
+        "The interaction has a defensible measurement model."
+      ],
+      "limitations": [
+        "The record does not provide a universal correction for arbitrary instruments."
+      ],
+      "tags": [
+        "measurement",
+        "may",
+        "disturb",
+        "the",
+        "target"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "accuracy-qualitative",
+      "title": "Accuracy is not a numerical uncertainty specification",
+      "source": "VACC",
+      "locator": "2.13, notes 1–2",
+      "text": "Accuracy is a qualitative comparison with the quantity value sought. It is not interchangeable with precision or a numerical uncertainty budget.",
+      "equation": "",
+      "assumptions": [
+        "VIM3 terminology is being used."
+      ],
+      "limitations": [
+        "A manufacturer label such as accuracy ±x must be interpreted from its stated specification rather than treated as standard uncertainty."
+      ],
+      "tags": [
+        "accuracy",
+        "is",
+        "not",
+        "a",
+        "numerical",
+        "uncertainty",
+        "specification"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "precision-conditions",
+      "title": "Precision requires stated measurement conditions",
+      "source": "VPREC",
+      "locator": "2.15, definition and notes 1–4",
+      "text": "Replicate dispersion characterizes precision under stated conditions. Standard deviation, variance or a coefficient of variation describes imprecision, not automatically accuracy.",
+      "equation": "",
+      "assumptions": [
+        "Replicates and their operating conditions are identified."
+      ],
+      "limitations": [
+        "A small spread does not demonstrate absence of common bias."
+      ],
+      "tags": [
+        "precision",
+        "requires",
+        "stated",
+        "measurement",
+        "conditions"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "repeatability-conditions",
+      "title": "Repeatability conditions",
+      "source": "VREP",
+      "locator": "2.20, definition and note 1",
+      "text": "A repeatability study holds the procedure, operators, system, operating conditions and location fixed over a short period.",
+      "equation": "",
+      "assumptions": [
+        "The scope of what remains unchanged is documented."
+      ],
+      "limitations": [
+        "This study alone does not estimate variation across laboratories or long time periods."
+      ],
+      "tags": [
+        "repeatability",
+        "conditions"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "reproducibility-conditions",
+      "title": "Reproducibility conditions",
+      "source": "VREPRO",
+      "locator": "2.24, definition and note 2",
+      "text": "A reproducibility study declares which locations, operators, systems or procedures differ and which conditions remain fixed.",
+      "equation": "",
+      "assumptions": [
+        "The same or similar objects and a comparable measurand are used."
+      ],
+      "limitations": [
+        "Re-running a software script is not, by itself, metrological reproducibility."
+      ],
+      "tags": [
+        "reproducibility",
+        "conditions"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "uncertainty-information",
+      "title": "Uncertainty belongs to the result and information used",
+      "source": "VUNC",
+      "locator": "2.26, definition and notes 1–4",
+      "text": "Measurement uncertainty characterizes the dispersion assigned to a result using available information, including appropriate systematic-effect and reference-value components.",
+      "equation": "",
+      "assumptions": [
+        "The measurement model and information set are explicit."
+      ],
+      "limitations": [
+        "Repeated-reading scatter is only one potential component."
+      ],
+      "tags": [
+        "uncertainty",
+        "belongs",
+        "to",
+        "the",
+        "result",
+        "and",
+        "information",
+        "used"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "calibration-two-stages",
+      "title": "Calibration relates standards, indications and results",
+      "source": "VCAL",
+      "locator": "2.39, definition and notes 1 and 3",
+      "text": "Calibration establishes a relationship with standards and uncertainties, then uses that relationship to obtain results from indications.",
+      "equation": "",
+      "assumptions": [
+        "Specified conditions and applicable standards are identified."
+      ],
+      "limitations": [
+        "A calibration curve without uncertainty information does not supply a complete result."
+      ],
+      "tags": [
+        "calibration",
+        "relates",
+        "standards,",
+        "indications",
+        "and",
+        "results"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "calibration-not-adjustment",
+      "title": "Calibration is not adjustment or verification",
+      "source": "VCAL",
+      "locator": "2.39, note 2",
+      "text": "Calibration, changing an instrument response, and checking requirements are distinct operations. Record separately which operation was performed.",
+      "equation": "",
+      "assumptions": [
+        "Operation names are interpreted using VIM3."
+      ],
+      "limitations": [
+        "A calibration entry does not automatically mean an instrument was adjusted or passed a tolerance."
+      ],
+      "tags": [
+        "calibration",
+        "is",
+        "not",
+        "adjustment",
+        "or",
+        "verification"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "traceability-network",
+      "title": "Traceability can involve several input chains",
+      "source": "VTRACE",
+      "locator": "2.41, notes 3–5",
+      "text": "Multi-input measurements may require a network of calibration chains. Traceability and adequate uncertainty for the intended task are separate questions.",
+      "equation": "",
+      "assumptions": [
+        "The inputs, reference identities and applicable dates are retained."
+      ],
+      "limitations": [
+        "A connected document graph does not establish calibration authenticity or fitness for purpose."
+      ],
+      "tags": [
+        "traceability",
+        "can",
+        "involve",
+        "several",
+        "input",
+        "chains"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "resolution-meaning",
+      "title": "Resolution is not total uncertainty",
+      "source": "VRES",
+      "locator": "4.14, definition and note",
+      "text": "Resolution concerns a detectable change in indication and can depend on noise, operating value and mechanism. It does not account for every uncertainty contribution.",
+      "equation": "",
+      "assumptions": [
+        "The instrument and operating conditions are specified."
+      ],
+      "limitations": [
+        "Display digits alone do not justify a full uncertainty statement."
+      ],
+      "tags": [
+        "resolution",
+        "is",
+        "not",
+        "total",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "influence-quantity",
+      "title": "Influence quantity depends on the measurement definition",
+      "source": "VINFL",
+      "locator": "2.52, definition, example 3 and note 2",
+      "text": "A quantity affecting the indication-to-result relationship may be an influence quantity. Object temperature can instead belong to the measurand definition; VIM3 and GUM use different scope here.",
+      "equation": "",
+      "assumptions": [
+        "The vocabulary edition and direct/indirect measurement context are declared."
+      ],
+      "limitations": [
+        "Do not merge vocabulary editions into a single supposedly identical definition."
+      ],
+      "tags": [
+        "influence",
+        "quantity",
+        "depends",
+        "on",
+        "the",
+        "measurement",
+        "definition"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "compatibility-rule",
+      "title": "Compatibility of results needs a chosen multiplier",
+      "source": "VCOMP",
+      "locator": "2.47, definition and note 2",
+      "text": "Comparing a difference with a chosen multiple of its standard uncertainty requires a specified measurand and covariance-aware difference uncertainty.",
+      "equation": "abs(x1-x2) < k * u(x1-x2)",
+      "assumptions": [
+        "A multiplier and its intended interpretation are declared."
+      ],
+      "limitations": [
+        "Compatibility is not proof of equality or an automatic product-conformity decision."
+      ],
+      "tags": [
+        "compatibility",
+        "of",
+        "results",
+        "needs",
+        "a",
+        "chosen",
+        "multiplier"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "quantity-value-unit",
+      "title": "A quantity value includes its unit",
+      "source": "SI330",
+      "locator": "§2.1",
+      "text": "A measurement value is represented by a numerical value and a unit; the stated absolute uncertainty uses that same unit.",
+      "equation": "Q = {Q}_u * u",
+      "assumptions": [
+        "The quantity being reported is identified."
+      ],
+      "limitations": [
+        "Numerical values in different units cannot be compared directly."
+      ],
+      "tags": [
+        "a",
+        "quantity",
+        "value",
+        "includes",
+        "its",
+        "unit"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "dimensions-not-kind",
+      "title": "Dimensions alone do not identify a quantity",
+      "source": "SI330",
+      "locator": "§§2.3.3–2.3.4",
+      "text": "Different quantity kinds can have the same dimension or unit. Dimensional agreement is necessary for many calculations, but is not a complete semantic check.",
+      "equation": "",
+      "assumptions": [
+        "Use the declared SI dimensional convention."
+      ],
+      "limitations": [
+        "Energy and torque must not be treated as interchangeable merely because their dimensions match."
+      ],
+      "tags": [
+        "dimensions",
+        "alone",
+        "do",
+        "not",
+        "identify",
+        "a",
+        "quantity"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "celsius-temperature-interval",
+      "title": "Absolute Celsius conversion differs from an interval",
+      "source": "SI330",
+      "locator": "§2.3.1, kelvin and Celsius paragraphs",
+      "text": "Celsius temperature and kelvin temperature differ by an offset; a temperature interval has the same numerical magnitude in °C and K.",
+      "equation": "T/K = t/degC + 273.15; deltaT/K = deltat/degC",
+      "assumptions": [
+        "Values refer to the stated thermodynamic/Celsius scale relationship."
+      ],
+      "limitations": [
+        "Do not add 273.15 to a temperature difference or its absolute uncertainty."
+      ],
+      "tags": [
+        "absolute",
+        "celsius",
+        "conversion",
+        "differs",
+        "from",
+        "an",
+        "interval"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "angular-frequency-unit",
+      "title": "Cyclic and angular frequency are different quantities",
+      "source": "SI330",
+      "locator": "§2.3.4, final frequency paragraph",
+      "text": "Frequency in hertz and angular frequency in radians per second differ by a factor of 2π, even though both can be expressed using inverse seconds.",
+      "equation": "omega = 2*pi*f",
+      "assumptions": [
+        "The signal has a defined cycle or angular rate."
+      ],
+      "limitations": [
+        "Do not relabel Hz as rad/s without conversion."
+      ],
+      "tags": [
+        "cyclic",
+        "and",
+        "angular",
+        "frequency",
+        "are",
+        "different",
+        "quantities"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "dimensionless-meaning",
+      "title": "Dimension one does not remove quantity meaning",
+      "source": "SI330",
+      "locator": "§2.3.3, dimension-one discussion",
+      "text": "Ratios and counts with unit one still need their quantity meaning and reference basis identified.",
+      "equation": "",
+      "assumptions": [
+        "The numerator, denominator or counted entity is defined."
+      ],
+      "limitations": [
+        "A fraction, a radian measure and a count are not interchangeable context."
+      ],
+      "tags": [
+        "dimension",
+        "one",
+        "does",
+        "not",
+        "remove",
+        "quantity",
+        "meaning"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "quantity-notation",
+      "title": "Write values and units without ambiguity",
+      "source": "SI811",
+      "locator": "§§7.1–7.2",
+      "text": "Write the unit with the numerical value; column headings can use a quantity divided by its unit. A space separates a value from °C.",
+      "equation": "",
+      "assumptions": [
+        "SI reporting notation is used; plane-angle notation has specified exceptions."
+      ],
+      "limitations": [
+        "Formatting correctness alone does not validate a measurement."
+      ],
+      "tags": [
+        "write",
+        "values",
+        "and",
+        "units",
+        "without",
+        "ambiguity"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "coverage-degrees-of-freedom",
+      "title": "Coverage depends on uncertainty-estimate reliability",
+      "source": "TNB",
+      "locator": "B.1–B.2",
+      "text": "A coverage factor intended to approximate a specified probability must account for distributional conditions and the reliability of the estimated uncertainty.",
+      "equation": "",
+      "assumptions": [
+        "The conventional approximation and its distributional conditions apply."
+      ],
+      "limitations": [
+        "The number k=2 is not a universal 95-percent guarantee."
+      ],
+      "tags": [
+        "coverage",
+        "depends",
+        "on",
+        "uncertainty-estimate",
+        "reliability"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "effective-degrees-of-freedom",
+      "title": "Welch–Satterthwaite effective degrees of freedom",
+      "source": "TNB",
+      "locator": "B.3, equation B-1 and following independence condition",
+      "text": "The conventional effective-degree calculation combines independent uncertainty contributions and their degrees of freedom.",
+      "equation": "nu_eff = u_c**4 / sum((c_i*u_i)**4/nu_i)",
+      "assumptions": [
+        "The component uncertainty estimates meet the stated statistical-independence and approximation conditions."
+      ],
+      "limitations": [
+        "Do not apply this formula unmodified to a correlated-component budget; it does not by itself choose k."
+      ],
+      "tags": [
+        "welch–satterthwaite",
+        "effective",
+        "degrees",
+        "of",
+        "freedom"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "inverse-linear-calibration",
+      "title": "Invert a fitted response model in its valid range",
+      "source": "CALINV",
+      "locator": "§2.3.6.6, Linear calibration line",
+      "text": "For a response model y=a+b*x with nonzero b, the corresponding input estimate is (y-a)/b.",
+      "equation": "x = (y-a)/b",
+      "assumptions": [
+        "The fitted linear response is applicable at the new indication; b is nonzero."
+      ],
+      "limitations": [
+        "This arithmetic does not justify extrapolation, stability or neglected calibration uncertainty."
+      ],
+      "tags": [
+        "invert",
+        "a",
+        "fitted",
+        "response",
+        "model",
+        "in",
+        "its",
+        "valid",
+        "range"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "inverse-calibration-sensitivities",
+      "title": "Sensitivities of inverse linear calibration",
+      "source": "CALINV",
+      "locator": "§2.3.6.6 linear inverse; Atlas differentiation",
+      "text": "Differentiating the linear inverse gives sensitivities to the indication, intercept and slope; propagate their complete covariance matrix.",
+      "equation": "dx/dy=1/b; dx/da=-1/b; dx/db=-(y-a)/b**2",
+      "assumptions": [
+        "First-order propagation is adequate; parameter/input units are consistent."
+      ],
+      "limitations": [
+        "These are locally derived derivatives, not extra measurements from the source."
+      ],
+      "tags": [
+        "sensitivities",
+        "of",
+        "inverse",
+        "linear",
+        "calibration"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "calibration-stability",
+      "title": "Calibration must remain applicable over time",
+      "source": "CALFAIL",
+      "locator": "§2.3.6.4, Lack of system control and day-to-day differences",
+      "text": "Drift or day-specific changes can invalidate a calibration relationship. Aggregated data may hide differences visible when measurements are examined by day.",
+      "equation": "",
+      "assumptions": [
+        "Repeated checks concern the same specified response regime."
+      ],
+      "limitations": [
+        "A certificate date alone does not establish current statistical control."
+      ],
+      "tags": [
+        "calibration",
+        "must",
+        "remain",
+        "applicable",
+        "over",
+        "time"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "calibration-not-precision-fix",
+      "title": "Calibration does not inherently improve precision",
+      "source": "CALFAIL",
+      "locator": "§2.3.6.4, Lack of precision",
+      "text": "Bias correction through calibration is not inherently a reduction of replicate scatter; assess performance in the intended environment.",
+      "equation": "",
+      "assumptions": [
+        "The distinction between bias and dispersion is retained."
+      ],
+      "limitations": [
+        "A smaller correction after adjustment does not prove better repeatability."
+      ],
+      "tags": [
+        "calibration",
+        "does",
+        "not",
+        "inherently",
+        "improve",
+        "precision"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "check-standard-regime",
+      "title": "Monitor a linear calibration across its range",
+      "source": "CALCHECK",
+      "locator": "§2.3.7, Check standards and Data collection",
+      "text": "The cited linear-calibration procedure uses check standards near the lower, middle and upper parts of the range, with frequency informed by observed stability.",
+      "equation": "",
+      "assumptions": [
+        "The linear-calibration control setting of the source applies."
+      ],
+      "limitations": [
+        "Three points are not a universal assurance for arbitrary nonlinear or unstable systems."
+      ],
+      "tags": [
+        "monitor",
+        "a",
+        "linear",
+        "calibration",
+        "across",
+        "its",
+        "range"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "correlated-mean",
+      "title": "Variance of a mean with correlated inputs",
+      "source": "TNA",
+      "locator": "A.3; local substitution c_i=1/n",
+      "text": "For the arithmetic mean, propagation with sensitivities 1/n gives the sum of all covariance entries divided by n squared.",
+      "equation": "Var(mean) = sum_ij(Sigma_ij)/n**2",
+      "assumptions": [
+        "The supplied covariance describes the readings; averaging is a linear model."
+      ],
+      "limitations": [
+        "The familiar variance/n reduction follows only with the appropriate zero-covariance and equal-variance conditions."
+      ],
+      "tags": [
+        "variance",
+        "of",
+        "a",
+        "mean",
+        "with",
+        "correlated",
+        "inputs"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "shared-offset-average",
+      "title": "A common offset does not average away",
+      "source": "TNA",
+      "locator": "A.3; local model x_i=mu+b+epsilon_i",
+      "text": "With an uncertain common offset independent of independent reading noise, averaging reduces the noise contribution but leaves the offset variance.",
+      "equation": "Var(mean) = u_b**2 + sigma**2/n",
+      "assumptions": [
+        "Var(b)=u_b^2; Var(epsilon_i)=sigma^2; all stated independence conditions hold."
+      ],
+      "limitations": [
+        "This is a model identity, not a diagnosis of a particular sensor."
+      ],
+      "tags": [
+        "a",
+        "common",
+        "offset",
+        "does",
+        "not",
+        "average",
+        "away"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "quantization-assumption",
+      "title": "Quantization uncertainty needs an explicit model",
+      "source": "TNA",
+      "locator": "A.5, equation A-7; local a=step/2 substitution",
+      "text": "Assuming a uniform rounding error within half a display step gives standard uncertainty step/sqrt(12).",
+      "equation": "u_round = step/sqrt(12)",
+      "assumptions": [
+        "Rounding, not truncation; the uniform model is justified independently of the display specification."
+      ],
+      "limitations": [
+        "Resolution alone does not establish this distribution; avoid counting the same effect twice."
+      ],
+      "tags": [
+        "quantization",
+        "uncertainty",
+        "needs",
+        "an",
+        "explicit",
+        "model"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "linearization-counterexample",
+      "title": "A zero derivative can hide nonlinear uncertainty",
+      "source": "TNA",
+      "locator": "A.3 first-order limit; local three-point counterexample",
+      "text": "For equally likely X=-1,0,1 and Y=X squared, the derivative at the input mean is zero, but exact enumeration gives output mean 2/3 and variance 2/9.",
+      "equation": "E[X]=0; f(E[X])=0; E[X**2]=2/3; Var(X**2)=2/9",
+      "assumptions": [
+        "The three-point distribution and nonlinear function are declared synthetic mathematics."
+      ],
+      "limitations": [
+        "This counterexample disproves universal adequacy of first-order propagation; it does not diagnose every nonlinear model."
+      ],
+      "tags": [
+        "a",
+        "zero",
+        "derivative",
+        "can",
+        "hide",
+        "nonlinear",
+        "uncertainty"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation"
+    },
+    {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "pontius-published-observations"
+    },
+    {
+      "id": "run-order-drift-confounding",
+      "kind": "claim",
+      "title": "Run order can confound calibration drift with load",
+      "source": "PONTDESIGN",
+      "locator": "§4.6.1.1 Description of Data Collection",
+      "text": "Because both Pontius runs progress through increasing loads, the source warns that load dependence and time-dependent drift cannot be cleanly separated from the run order alone.",
+      "equation": "",
+      "assumptions": [
+        "The same recorded order is relevant to the fitted calibration case."
+      ],
+      "limitations": [
+        "A good polynomial fit does not establish absence of drift.",
+        "No time stamps or independent drift controls are supplied."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "run",
+        "order",
+        "can",
+        "confound",
+        "calibration",
+        "drift",
+        "with",
+        "load"
+      ]
+    },
+    {
+      "id": "replicate-pure-error",
+      "kind": "method",
+      "title": "Replicate measurements estimate pure error",
+      "source": "LOF",
+      "locator": "§4.4.4.6 Testing Model Adequacy Requires Replicate Measurements; estimating sigma from replicates",
+      "text": "Within-level squared deviations from replicate means provide a model-independent pure-error estimate. They supply the comparison denominator for a replicate-based lack-of-fit test.",
+      "equation": "SS_PE = sum_i sum_j (y_ij - mean_i)^2; df_PE = n - number_of_distinct_levels",
+      "assumptions": [
+        "Replicates represent the same predictor settings and experimental conditions.",
+        "Classical F interpretation needs its error assumptions."
+      ],
+      "limitations": [
+        "Replicates differing in unmodeled conditions do not automatically meet those assumptions.",
+        "No replicates means this pure-error comparison is unavailable."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "replicate",
+        "measurements",
+        "estimate",
+        "pure",
+        "error"
+      ]
+    },
+    {
+      "id": "lack-of-fit-partition",
+      "kind": "equation",
+      "title": "Residual error separates into pure error and lack of fit",
+      "source": "LOF",
+      "locator": "§4.4.4.6 pure error, model error and F-ratio definitions",
+      "text": "For least squares with replicated predictor levels, residual sum of squares separates into within-level pure error and weighted deviations of replicate means from the fitted function. Their mean-square ratio gives the lack-of-fit statistic.",
+      "equation": "SS_RES = SS_PE + SS_LOF; F_LOF = [SS_LOF/(m-p)]/[SS_PE/(n-m)]",
+      "assumptions": [
+        "p is the number of fitted coefficients.",
+        "n is the number of readings and m the number of distinct settings.",
+        "Both n-m and m-p must be positive, and the pure-error variance nonzero."
+      ],
+      "limitations": [
+        "A zero denominator or missing degrees of freedom is reported explicitly, not replaced by a passing verdict."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "residual",
+        "error",
+        "separates",
+        "into",
+        "pure",
+        "error",
+        "and",
+        "lack",
+        "of",
+        "fit"
+      ]
+    },
+    {
+      "id": "lack-of-fit-limits",
+      "kind": "claim",
+      "title": "Lack-of-fit testing is not complete model validation",
+      "source": "LOF",
+      "locator": "§4.4.4.6 opening paragraphs and interpretation",
+      "text": "A lack-of-fit test assesses the specified mean-response function under assumptions. It does not replace residual examination or establish all aspects of model quality.",
+      "equation": "",
+      "assumptions": [
+        "The replication structure and variance assumptions are appropriate."
+      ],
+      "limitations": [
+        "Failure to reject is not proof of correctness.",
+        "A numerical F ratio alone does not validate traceability, constant variance, independence or drift."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "lack",
+        "of",
+        "fit",
+        "testing",
+        "is",
+        "not",
+        "complete",
+        "model",
+        "validation"
+      ]
+    },
+    {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "pontius-handbook-intercept"
+    },
+    {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "pontius-certified-intercept"
+    },
+    {
+      "id": "numerical-certification-scope",
+      "kind": "claim",
+      "title": "Certified regression values certify arithmetic rather than an instrument",
+      "source": "PONTCERTMETHOD",
+      "locator": "Methodology and definitions of the ordinary least squares statistics",
+      "text": "StRD reference statistics were computed in multiple precision and then reported to fifteen significant digits. They are targets for numerical calculations on the specified dataset, not calibration certificates for an instrument.",
+      "equation": "",
+      "assumptions": [
+        "Comparison uses the same model and data."
+      ],
+      "limitations": [
+        "A match does not test future measurement accuracy, SI traceability, or the completeness of an uncertainty budget.",
+        "This Atlas comparison was selected after the handbook discrepancies were observed; it is not a blind held-out evaluation."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "certified",
+        "regression",
+        "values",
+        "certify",
+        "arithmetic",
+        "rather",
+        "than",
+        "an",
+        "instrument"
+      ]
+    },
+    {
+      "id": "inverse-root-domain",
+      "kind": "method",
+      "title": "Inverse calibration needs an admissible domain",
+      "source": "PONTINVERSE",
+      "locator": "§4.6.1.10 Which Solution",
+      "text": "The quadratic inverse in the Pontius illustration has more than one mathematical root. The source restricts the usable solution to the measured load range; the distant root is not a valid calibration result.",
+      "equation": "",
+      "assumptions": [
+        "The fitted relation is appropriate over the declared calibration interval.",
+        "The chosen branch is monotone and identifies a unique in-range solution."
+      ],
+      "limitations": [
+        "This implementation rejects nonmonotone intervals and extrapolation.",
+        "[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "inverse",
+        "calibration",
+        "root",
+        "quadratic",
+        "range",
+        "Pontius"
+      ],
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    {
+      "id": "prediction-versus-mean",
+      "kind": "method",
+      "title": "Future response uncertainty includes new observation variation",
+      "source": "PREDICT",
+      "locator": "§4.5.1.2 Uncertainties Do Differ and Standard Deviation of Prediction",
+      "text": "A fitted mean response and a single future response can have the same point estimate but different uncertainty. For an independent new response, prediction variance includes both fitted-mean variance and residual response variance.",
+      "equation": "s_prediction^2 = s_mean^2 + s_residual^2",
+      "assumptions": [
+        "The new response is independent of the fitting data and follows the same response-error variance model."
+      ],
+      "limitations": [
+        "This is model-based uncertainty, not a complete metrological budget.",
+        "Prediction SD by itself is not a confidence or coverage interval."
+      ],
+      "origin": "source_reported",
+      "tags": [
+        "future",
+        "response",
+        "uncertainty",
+        "includes",
+        "new",
+        "observation",
+        "variation"
+      ]
+    },
+    {
+      "id": "ols-exact-predictor-boundary",
+      "kind": "claim",
+      "title": "Ordinary least squares reproduction omits predictor uncertainty",
+      "source": "PONTCERTMETHOD",
+      "locator": "Ordinary least squares definition; local statement of the fitted model boundary",
+      "text": "This reproduction fits response variation conditional on supplied load values. It contains no model or uncertainty term for errors in those reference loads.",
+      "equation": "",
+      "assumptions": [
+        "Predictor values are treated as fixed and exact for the calculation."
+      ],
+      "limitations": [
+        "Treating x as exact computationally does not establish uncertainty-free reference loads physically.",
+        "An errors-in-variables analysis or a complete calibration budget would require more information."
+      ],
+      "origin": "formal_derivation",
+      "tags": [
+        "ordinary",
+        "least",
+        "squares",
+        "reproduction",
+        "omits",
+        "predictor",
+        "uncertainty"
+      ]
+    },
+    {
+      "id": "high-r2-not-fit-proof",
+      "kind": "claim",
+      "title": "High R-squared does not settle calibration model adequacy",
+      "source": "PONTLINEAR",
+      "locator": "§4.6.1.3 fitted straight-line model; local R-squared recomputation on the published rows",
+      "text": "The recomputed straight-line Pontius fit has a high R-squared yet a large replicate-based lack-of-fit statistic. These summarize different aspects of the fit; high explained variation is not proof of adequate calibration.",
+      "equation": "",
+      "assumptions": [
+        "This is a calculation from the captured 40-row dataset under the declared OLS model."
+      ],
+      "limitations": [
+        "The case does not imply an R-squared threshold that guarantees quality for other instruments."
+      ],
+      "origin": "formal_derivation",
+      "tags": [
+        "R-squared",
+        "calibration",
+        "lack of fit",
+        "Pontius",
+        "model adequacy"
+      ]
+    },
+    {
+      "id": "student-t-central-factor",
+      "kind": "equation",
+      "title": "A two-sided coverage level needs a central t quantile",
+      "source": "TDIST",
+      "locator": "§1.3.6.6.4 density and Percent Point Function; equal-tail substitution",
+      "text": "For a symmetric Student t model, central probability p selects the quantile at (1+p)/2. The numerical factor depends on the degrees of freedom.",
+      "equation": "k = F_t,nu^(-1)((1+p)/2)",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation."
+      ],
+      "limitations": [
+        "The distribution must be justified. This implementation supports finite 1≤nu≤10000 and 0.5≤p≤0.9999; infinity is an explicit normal-limit choice."
+      ],
+      "tags": [
+        "Student t",
+        "coverage",
+        "quantile",
+        "equal tails"
+      ],
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "confidence-procedure-not-posterior",
+      "kind": "claim",
+      "title": "Frequentist coverage describes the procedure",
+      "source": "MEANCI",
+      "locator": "§1.3.5.2 Purpose: Interval Estimate for Mean",
+      "text": "A confidence coefficient describes the long-run fraction of intervals containing the fixed target under the model. It is not a posterior probability assigned to one realized interval.",
+      "equation": "",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation."
+      ],
+      "limitations": [
+        "A Bayesian credible probability requires a separate model and is not produced by this method."
+      ],
+      "tags": [
+        "confidence",
+        "interpretation",
+        "coverage",
+        "probability"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "normal-mean-t-interval",
+      "kind": "equation",
+      "title": "A normal-sample mean uses estimated standard error and n minus one degrees of freedom",
+      "source": "MEANCI",
+      "locator": "§1.3.5.2 Definition: Confidence Interval",
+      "text": "For independent normal readings, a mean interval uses sample standard deviation divided by the square root of sample size and a Student t factor.",
+      "equation": "mean ± t_(1-alpha/2,n-1) s/sqrt(n)",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation."
+      ],
+      "limitations": [
+        "Shared offsets and unknown biases are not supplied by the within-sample standard error."
+      ],
+      "tags": [
+        "sample mean",
+        "normal",
+        "Student t",
+        "standard error"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "eight-df-factor-not-two",
+      "kind": "claim",
+      "title": "Eight degrees of freedom gives a 95 percent factor near 2.31",
+      "source": "TTABLE",
+      "locator": "Table B.1: df=8, central fraction 95 column",
+      "text": "The table gives 2.31 for a central 95 percent interval at eight degrees of freedom. Taking k=2 is a different interval.",
+      "equation": "",
+      "assumptions": [
+        "Use the stated central t model and eight degrees of freedom."
+      ],
+      "limitations": [
+        "Table values are rounded; a numerical quantile is not an empirical coverage validation."
+      ],
+      "tags": [
+        "eight degrees",
+        "2.31",
+        "coverage factor",
+        "k=2"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "type-b-df-justification",
+      "kind": "method",
+      "title": "Type B does not automatically mean infinite reliability",
+      "source": "TNB",
+      "locator": "Appendix B.3, Type B discussion after B-2",
+      "text": "An infinite degrees-of-freedom assignment for a Type B component needs a reliability justification. The toolkit requires the choice explicitly rather than inferring it from the Type B label.",
+      "equation": "",
+      "assumptions": [
+        "The uncertainty estimate and its reliability have a defensible basis."
+      ],
+      "limitations": [
+        "Uncertain bounds or an unjustified distribution can invalidate the choice."
+      ],
+      "tags": [
+        "Type B",
+        "effective degrees",
+        "reliability"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "ws-approximation-ceiling",
+      "kind": "claim",
+      "title": "Effective degrees of freedom do not prove exact coverage",
+      "source": "TNB",
+      "locator": "B.1 caution and B.3 equation B-1",
+      "text": "The conventional effective-degree method is approximate and assumes independent uncertainty components. It is not a general solution for correlated budgets.",
+      "equation": "",
+      "assumptions": [
+        "All contributions refer to the same output unit after sensitivity scaling."
+      ],
+      "limitations": [
+        "The software refuses a declaration of non-independence and does not infer the output distribution."
+      ],
+      "tags": [
+        "Welch Satterthwaite",
+        "approximation",
+        "independence",
+        "covariance"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "regression-pointwise-mean-ci",
+      "kind": "equation",
+      "title": "Pointwise uncertainty in the fitted regression mean",
+      "source": "REGMEAN",
+      "locator": "§4.5.1.1 confidence interval construction; local polynomial-vector notation",
+      "text": "A fitted mean interval uses coefficient covariance at the stated predictor, with the residual degrees of freedom. It is pointwise, not a simultaneous band.",
+      "equation": "fhat(x) ± t_(1-alpha/2,n-p) sqrt(h(x)^T Cov(beta) h(x))",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation.",
+        "Predictors are treated as exact; the declared regression form is adequate."
+      ],
+      "limitations": [
+        "Model error, uncertain reference inputs and drift need additional treatment."
+      ],
+      "tags": [
+        "fitted mean",
+        "covariance",
+        "pointwise",
+        "regression"
+      ],
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "future-response-t-interval",
+      "kind": "equation",
+      "title": "A future response includes residual variation",
+      "source": "PREDICT",
+      "locator": "§4.5.1.2 Coverage Factor and Prediction Interval Formula",
+      "text": "A prediction interval for one independent future response adds residual variance to fitted-mean variance before applying the t factor.",
+      "equation": "fhat(x) ± t_(1-alpha/2,n-p) sqrt(s_residual^2 + h^T Cov(beta) h)",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation.",
+        "The future response follows the same variance model as the calibration."
+      ],
+      "limitations": [
+        "No multiple-use coverage guarantee or complete metrological uncertainty budget is implied."
+      ],
+      "tags": [
+        "prediction",
+        "future response",
+        "interval",
+        "residual"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "single-use-inverse-interval",
+      "kind": "method",
+      "title": "Inverse calibration can invert prediction bounds",
+      "source": "PONTINVERSE",
+      "locator": "§4.6.1.10 +/- What? and the two endpoint equations",
+      "text": "A single-use load interval is obtained by solving the upper and lower response prediction equations for load. The example response is hypothetical, not an additional observed row.",
+      "equation": "y_new = fhat(x) ± t_(1-alpha/2,n-p) s_prediction(x)",
+      "assumptions": [
+        "Independent normally distributed errors with constant variance; applicability is supplied by the caller, not inferred from a passing calculation.",
+        "The admissible calibration branch is identified."
+      ],
+      "limitations": [
+        "A point estimate and symmetric derivative shortcut are not automatically the same inverse confidence set."
+      ],
+      "tags": [
+        "inverse calibration",
+        "single use",
+        "confidence interval",
+        "Pontius"
+      ],
+      "origin": "source_reported"
+    },
+    {
+      "id": "inverse-band-slope-condition",
+      "kind": "method",
+      "title": "A sufficient monotonicity check prevents ambiguous inverse bounds",
+      "source": "PREDICT",
+      "locator": "§4.5.1.2 variance formula; original derivative-bound derivation in docs/COVERAGE_METHODS.md",
+      "text": "For the supported degree-one/two models, a lower bound on mean slope can exceed the largest slope contribution of prediction uncertainty. This is a sufficient condition for monotone interval boundaries.",
+      "equation": "min|fprime(z)| > k max sqrt(hprime(z)^T Cov(beta) hprime(z))",
+      "assumptions": [
+        "Coefficient covariance is positive semidefinite and the calibration curve is monotone on the stated range."
+      ],
+      "limitations": [
+        "Failure of this conservative test means the limited solver refuses; it does not prove that an inverse confidence set cannot exist."
+      ],
+      "tags": [
+        "inverse",
+        "monotonicity",
+        "derivative",
+        "sufficient condition"
+      ],
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "inverse-range-intersection",
+      "kind": "claim",
+      "title": "Clipping an inverse interval does not validate extrapolation",
+      "source": "PONTINVERSE",
+      "locator": "§4.6.1.10 admissible load range; local intersection rule",
+      "text": "The computed inverse confidence set may extend beyond the calibrated range. Restricting it to that range must be marked as clipping rather than reported as a complete unrestricted interval.",
+      "equation": "reported_set = inverse_set ∩ calibrated_range",
+      "assumptions": [
+        "The calibration is supported only on its declared predictor interval."
+      ],
+      "limitations": [
+        "The default toolkit call refuses out-of-range endpoints; opt-in clipping is labeled and preserves the limitation."
+      ],
+      "tags": [
+        "range",
+        "clipping",
+        "inverse",
+        "extrapolation"
+      ],
+      "origin": "formal_derivation"
+    },
+    {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "pontius-upper-handbook"
+    },
+    {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "pontius-upper-recomputed"
+    },
+    {
+      "id": "incomplete-beta-t-calculation",
+      "kind": "method",
+      "title": "Numerical t tails retain an inspectable calculation path",
+      "source": "DLMFBETA",
+      "locator": "§8.17 E1–E4 and §8.17(v); substitution into Student t density",
+      "text": "The t survival function can be reduced to a regularized incomplete beta evaluation. The toolkit evaluates that representation and brackets the inverse numerically.",
+      "equation": "P(T>t)=0.5 I_(nu/(nu+t^2))(nu/2,1/2), for t>0",
+      "assumptions": [
+        "Finite positive degrees of freedom; documented numerical range and convergence checks."
+      ],
+      "limitations": [
+        "A numerical cross-check is not scientific review. Probabilities outside the tested interface range are refused."
+      ],
+      "tags": [
+        "incomplete beta",
+        "Student t",
+        "numerical method",
+        "survival"
+      ],
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "temperature-uncertainty-scale",
+      "title": "Temperature uncertainty uses scale not offset",
+      "source": "SI8118",
+      "locator": "§8.5; affine-map derivative",
+      "text": "Temperature differences use the same scale in Celsius and kelvin. Uncertainty conversion uses the derivative, not the absolute-temperature offset.",
+      "equation": "T = t + 273.15; u(T) = u(t)",
+      "assumptions": [
+        "Same underlying temperature quantity and compatible uncertainty convention."
+      ],
+      "limitations": [
+        "Does not validate temperature realization or sensor calibration."
+      ],
+      "tags": [
+        "temperature",
+        "uncertainty",
+        "uses",
+        "scale",
+        "not",
+        "offset"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "conversion-kind-declaration",
+      "title": "Unit conversion requires an explicit quantity kind",
+      "source": "SI330",
+      "locator": "Section 2: quantity kinds and dimensions; local conversion policy",
+      "text": "Matching dimensions do not identify the quantity kind. The converter requires a caller-declared kind and refuses frequency-to-activity substitutions.",
+      "equation": "",
+      "assumptions": [
+        "The caller supplies the intended physical quantity."
+      ],
+      "limitations": [
+        "A finite parser is not a universal units ontology."
+      ],
+      "tags": [
+        "unit",
+        "conversion",
+        "requires",
+        "an",
+        "explicit",
+        "quantity",
+        "kind"
+      ],
+      "kind": "method",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "certificate-k-absent",
+      "title": "A missing certificate factor is unresolved",
+      "source": "TN4",
+      "locator": "§4.2; local interpretation boundary",
+      "text": "Recovering standard uncertainty from a reported multiple requires that multiplier. This importer does not infer a missing factor from an unexplained 95 percent label.",
+      "equation": "u = U / k",
+      "assumptions": [
+        "The report explicitly defines U and k as corresponding quantities."
+      ],
+      "limitations": [
+        "Asymmetric intervals and unreported distributions require a different model."
+      ],
+      "tags": [
+        "a",
+        "missing",
+        "certificate",
+        "factor",
+        "is",
+        "unresolved"
+      ],
+      "kind": "method",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "certificate-time-instrument-scope",
+      "title": "Calibration results have instrument and time scope",
+      "source": "CALPOL",
+      "locator": "Reports of Calibration/Test Results",
+      "text": "NIST calibration results apply to the specified instrument or standard at its test time unless the report states otherwise.",
+      "equation": "",
+      "assumptions": [
+        "Use the conditions and scope of the particular report."
+      ],
+      "limitations": [
+        "No perpetual validity or automatic next-calibration date follows."
+      ],
+      "tags": [
+        "calibration",
+        "results",
+        "have",
+        "instrument",
+        "and",
+        "time",
+        "scope"
+      ],
+      "kind": "concept",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "certificate-use-effects",
+      "title": "Using a calibrated standard can add uncertainty",
+      "source": "TN7",
+      "locator": "§7.5–7.6",
+      "text": "Transport, later drift and a changed operating environment can require uncertainty contributions beyond the reported calibration result.",
+      "equation": "",
+      "assumptions": [
+        "Evaluate the actual later-use conditions."
+      ],
+      "limitations": [
+        "Do not add contributions already included without checking overlap."
+      ],
+      "tags": [
+        "using",
+        "a",
+        "calibrated",
+        "standard",
+        "can",
+        "add",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "certificate-structure-not-authenticity",
+      "title": "Certificate completeness is not authenticity",
+      "source": "TRACE",
+      "locator": "FAQ §5.2.1; local software-boundary inference",
+      "text": "A complete transcribed report is input for review; checking its fields does not verify its signatory, authenticity or the claimed traceability chain.",
+      "equation": "",
+      "assumptions": [
+        "The structure check has no access to external identity or laboratory verification."
+      ],
+      "limitations": [
+        "Never label a successful field check as accreditation or traceability certification."
+      ],
+      "tags": [
+        "certificate",
+        "completeness",
+        "is",
+        "not",
+        "authenticity"
+      ],
+      "kind": "concept",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "specification-additive-model",
+      "title": "Additive specification bounds need explicit meaning",
+      "source": "TN4",
+      "locator": "§4.1 and §4.6; declared local additive model",
+      "text": "An explicit additive bound can combine a reading term, range term and resolution-count term before a separately justified distribution assumption.",
+      "equation": "a = |x| p_read/100 + range p_range/100 + counts resolution",
+      "assumptions": [
+        "The source specification really defines these terms additively."
+      ],
+      "limitations": [
+        "No automatic manufacturer-document interpretation; guard against duplicate effects."
+      ],
+      "tags": [
+        "additive",
+        "specification",
+        "bounds",
+        "need",
+        "explicit",
+        "meaning"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "specification-uniform-standard",
+      "title": "A uniform additive bound is a conditional component",
+      "source": "TN4",
+      "locator": "§4.6; substitution of the explicit additive bound",
+      "text": "A justified symmetric uniform bound with half-width a has standard uncertainty a divided by the square root of three.",
+      "equation": "u = a / sqrt(3)",
+      "assumptions": [
+        "Uniform distribution over the stated finite interval is justified."
+      ],
+      "limitations": [
+        "This component is not the full measurement uncertainty."
+      ],
+      "tags": [
+        "a",
+        "uniform",
+        "additive",
+        "bound",
+        "is",
+        "a",
+        "conditional",
+        "component"
+      ],
+      "kind": "equation",
+      "origin": "formal_derivation",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "tolerance-not-uncertainty",
+      "title": "Tolerance and uncertainty answer different questions",
+      "source": "J106",
+      "locator": "§3.3.4–3.3.9 and §7.1",
+      "text": "Specification limits describe permissible values; uncertainty describes knowledge about a value.",
+      "equation": "",
+      "assumptions": [
+        "One scalar property and explicit limits."
+      ],
+      "limitations": [
+        "Neither a tolerance nor a resolution automatically supplies a standard uncertainty."
+      ],
+      "tags": [
+        "tolerance",
+        "and",
+        "uncertainty",
+        "answer",
+        "different",
+        "questions"
+      ],
+      "kind": "concept",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "normal-conformance-model",
+      "title": "Conformance probability needs a declared distribution",
+      "source": "J106",
+      "locator": "§7.1–7.2, equations (4)–(6), printed p.13",
+      "text": "Conformance probability integrates a justified post-measurement distribution over the specification interval.",
+      "equation": "p_c = integral_[L,U] g(y | data) dy",
+      "assumptions": [
+        "The supplied distribution represents the stated state of knowledge."
+      ],
+      "limitations": [
+        "An uncertainty number alone is insufficient to select that distribution."
+      ],
+      "tags": [
+        "conformance",
+        "probability",
+        "needs",
+        "a",
+        "declared",
+        "distribution"
+      ],
+      "kind": "equation",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "normal-conformance-two-sided",
+      "title": "Normal two-sided conformance probability",
+      "source": "J106",
+      "locator": "§7.4, equation (11), printed p.16",
+      "text": "For a declared normal model, subtract normal cumulative probabilities at the standardized limits.",
+      "equation": "p_c = Phi((U-y)/u) - Phi((L-y)/u)",
+      "assumptions": [
+        "Normal state-of-knowledge model, u > 0, same quantity and units."
+      ],
+      "limitations": [
+        "Not a blanket frequentist interpretation or regulatory decision."
+      ],
+      "tags": [
+        "normal",
+        "two",
+        "sided",
+        "conformance",
+        "probability"
+      ],
+      "kind": "equation",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "normal-conformance-one-sided",
+      "title": "Normal one-sided conformance probability",
+      "source": "J106",
+      "locator": "§7.3, equations (8)–(9), printed p.14",
+      "text": "A single upper or lower limit uses the corresponding normal tail.",
+      "equation": "upper: Phi((U-y)/u); lower: Phi((y-L)/u)",
+      "assumptions": [
+        "The normal knowledge model and uncertainty are justified."
+      ],
+      "limitations": [
+        "No probability is calculated for an unspecified distribution."
+      ],
+      "tags": [
+        "normal",
+        "one",
+        "sided",
+        "conformance",
+        "probability"
+      ],
+      "kind": "equation",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "explicit-acceptance-rule",
+      "title": "Acceptance requires a stated decision rule",
+      "source": "J106",
+      "locator": "§8.1–8.3, printed pp.19–21",
+      "text": "A guard band changes acceptance limits; the rule and its justification must be stated.",
+      "equation": "A_L = L + w; A_U = U - w",
+      "assumptions": [
+        "Explicit nonnegative inward guard width and endpoint convention."
+      ],
+      "limitations": [
+        "This local calculator does not infer a legally applicable rule."
+      ],
+      "tags": [
+        "acceptance",
+        "requires",
+        "a",
+        "stated",
+        "decision",
+        "rule"
+      ],
+      "kind": "method",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "rejection-not-physical-proof",
+      "title": "Not accepted is not proved nonconforming",
+      "source": "J106",
+      "locator": "§9.3–9.4",
+      "text": "An acceptance decision can be wrong; a rejected item may still meet its specification.",
+      "equation": "",
+      "assumptions": [
+        "Decision outcomes and true conformity remain separate events."
+      ],
+      "limitations": [
+        "An output label is not a calibration certificate or proof of physical state."
+      ],
+      "tags": [
+        "not",
+        "accepted",
+        "is",
+        "not",
+        "proved",
+        "nonconforming"
+      ],
+      "kind": "concept",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "specific-not-global-risk",
+      "title": "Specific risk is not global process risk",
+      "source": "J106",
+      "locator": "§9.3.2–9.4.3",
+      "text": "An item-specific probability does not determine process-wide error rates without process and measurement distributions.",
+      "equation": "",
+      "assumptions": [
+        "The item probability is conditional on its measured information."
+      ],
+      "limitations": [
+        "The new tool reports global consumer and producer risks as unavailable."
+      ],
+      "tags": [
+        "specific",
+        "risk",
+        "is",
+        "not",
+        "global",
+        "process",
+        "risk"
+      ],
+      "kind": "concept",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    },
+    {
+      "id": "report-mass-illustration",
+      "title": "Published reporting examples are illustrations",
+      "source": "TN7",
+      "locator": "§7.3, nominal 100 g example",
+      "text": "NIST illustrates reporting a nominal mass with its estimate, standard uncertainty, coverage factor and probability basis; replaying that arithmetic does not create a real certificate.",
+      "equation": "U = k u_c",
+      "assumptions": [
+        "The source explicitly presents reporting examples under stated assumptions."
+      ],
+      "limitations": [
+        "Do not reclassify an illustrative example as new laboratory observations."
+      ],
+      "tags": [
+        "published",
+        "reporting",
+        "examples",
+        "are",
+        "illustrations"
+      ],
+      "kind": "method",
+      "origin": "source_reported",
+      "inspected_scope": "Named source portion; JCGM PDF equations checked visually where referenced. Local implications and implementations are explicitly bounded."
+    }
+  ],
+  "relations": [
+    {
+      "from": "expanded-uncertainty",
+      "to": "coverage-conditions",
+      "type": "qualifies",
+      "note": "Coverage interpretation is an indispensable qualifier of the formula."
+    },
+    {
+      "from": "type-a-mean",
+      "to": "type-a-methods",
+      "type": "related_to",
+      "note": "One example within the broader Type A family."
+    },
+    {
+      "from": "covariance",
+      "to": "linear-propagation",
+      "type": "depends_on",
+      "note": "Covariance term interpreted within the stated propagation model."
+    },
+    {
+      "from": "measurement-difference",
+      "to": "covariance",
+      "type": "qualifies",
+      "note": "Difference computation must retain correlation assumptions."
+    },
+    {
+      "from": "traceability-result",
+      "to": "fitness-for-purpose",
+      "type": "qualifies",
+      "note": "Traceability alone does not establish suitability."
+    },
+    {
+      "from": "traceability-documentation",
+      "to": "traceability-result",
+      "type": "related_to",
+      "note": "Documentation supports a claim but is not certification."
+    },
+    {
+      "from": "uniform-bounds",
+      "to": "triangular-bounds",
+      "type": "related_to",
+      "note": "Alternative declared models, not interchangeable assumptions."
+    },
+    {
+      "from": "combined-uncertainty",
+      "to": "linear-propagation",
+      "type": "related_to",
+      "note": "Common first-order computational model."
+    },
+    {
+      "from": "calibration-two-stages",
+      "to": "calibration-not-adjustment",
+      "type": "qualifies",
+      "note": "Calibration is not an automatic adjustment or conformity statement."
+    },
+    {
+      "from": "quantity-value-unit",
+      "to": "dimensions-not-kind",
+      "type": "related_to",
+      "note": "Unit matching and quantity-kind matching are distinct."
+    },
+    {
+      "from": "inverse-linear-calibration",
+      "to": "inverse-calibration-sensitivities",
+      "type": "related_to",
+      "note": "The result and its parameter sensitivities are separate records."
+    },
+    {
+      "from": "correlated-mean",
+      "to": "shared-offset-average",
+      "type": "related_to",
+      "note": "A shared-offset model is one explicit correlated-mean example."
+    },
+    {
+      "from": "quantization-assumption",
+      "to": "resolution-meaning",
+      "type": "qualifies",
+      "note": "The rounding model must not be confused with the definition of resolution."
+    },
+    {
+      "from": "compatibility-rule",
+      "to": "measurement-difference",
+      "type": "related_to",
+      "note": "Use an explicit chosen comparison rule with difference uncertainty."
+    },
+    {
+      "from": "effective-degrees-of-freedom",
+      "to": "coverage-degrees-of-freedom",
+      "type": "qualifies",
+      "note": "Approximation conditions are part of the formula."
+    },
+    {
+      "from": "calibration-stability",
+      "to": "check-standard-regime",
+      "type": "related_to",
+      "note": "A specific monitoring design supports ongoing checks."
+    },
+    {
+      "from": "run-order-drift-confounding",
+      "to": "pontius-published-observations",
+      "type": "qualifies",
+      "note": "Source collection-design restriction travels with the data description."
+    },
+    {
+      "from": "lack-of-fit-limits",
+      "to": "lack-of-fit-partition",
+      "type": "qualifies",
+      "note": "The statistic does not establish all model assumptions."
+    },
+    {
+      "from": "replicate-pure-error",
+      "to": "lack-of-fit-partition",
+      "type": "related_to",
+      "note": "Replicates supply a pure-error denominator."
+    },
+    {
+      "from": "pontius-handbook-intercept",
+      "to": "pontius-certified-intercept",
+      "type": "contradicts",
+      "note": "Numerical presentations disagree beyond handbook display rounding. Preserve both; cause unresolved."
+    },
+    {
+      "from": "numerical-certification-scope",
+      "to": "pontius-certified-intercept",
+      "type": "qualifies",
+      "note": "Certified numerical reference is not a calibration certificate."
+    },
+    {
+      "from": "inverse-root-domain",
+      "to": "pontius-published-observations",
+      "type": "related_to",
+      "note": "Observed range bounds inversion; illustrative inverse is not a new observation."
+    },
+    {
+      "from": "ols-exact-predictor-boundary",
+      "to": "prediction-versus-mean",
+      "type": "qualifies",
+      "note": "This prediction model omits uncertainty in reference loads."
+    },
+    {
+      "from": "confidence-procedure-not-posterior",
+      "to": "normal-mean-t-interval",
+      "type": "qualifies",
+      "note": "Coverage interpretation remains attached to the interval formula."
+    },
+    {
+      "from": "ws-approximation-ceiling",
+      "to": "effective-degrees-of-freedom",
+      "type": "qualifies",
+      "note": "Independent-component approximation, not a general correlated solver."
+    },
+    {
+      "from": "future-response-t-interval",
+      "to": "ols-exact-predictor-boundary",
+      "type": "qualifies",
+      "note": "Predictor uncertainty is omitted by this OLS model."
+    },
+    {
+      "from": "single-use-inverse-interval",
+      "to": "inverse-range-intersection",
+      "type": "qualifies",
+      "note": "Do not turn a calibrated-range intersection into an extrapolation guarantee."
+    },
+    {
+      "from": "inverse-band-slope-condition",
+      "to": "single-use-inverse-interval",
+      "type": "related_to",
+      "note": "Sufficient monotone-band test for this implementation, not a universal inversion method."
+    },
+    {
+      "from": "pontius-upper-handbook",
+      "to": "pontius-upper-recomputed",
+      "type": "contradicts",
+      "note": "Displayed integer versus retained recomputation differ by 0.7636 source units; original tolerance 0.5 is not changed."
+    },
+    {
+      "from": "normal-conformance-two-sided",
+      "to": "normal-conformance-model",
+      "type": "qualifies",
+      "note": "Distribution assumptions must accompany the probability formula."
+    },
+    {
+      "from": "normal-conformance-one-sided",
+      "to": "normal-conformance-model",
+      "type": "qualifies",
+      "note": "The one-sided formula has the same distribution condition."
+    },
+    {
+      "from": "explicit-acceptance-rule",
+      "to": "rejection-not-physical-proof",
+      "type": "qualifies",
+      "note": "Decision labels do not prove underlying conformity."
+    },
+    {
+      "from": "certificate-k-absent",
+      "to": "certificate-use-effects",
+      "type": "qualifies",
+      "note": "Normalizing a certificate component does not close later-use uncertainty."
+    }
+  ],
+  "build_focus": "measurement_v1_release_candidate_content_first_navigation_unchanged",
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "atlas.domain-roadmap/1",
+  "updated_at": "2026-11-12",
+  "active_domain": "measurement-atlas",
+  "next_domain_allowed": false,
+  "navigation_phase": "deferred_until_content_milestone",
+  "shared_contract": "1.0",
+  "existing_nodes": [
+    "signal-atlas",
+    "cymatics-atlas"
+  ],
+  "domains": [
+    {
+      "priority": 1,
+      "node_id": "measurement-atlas",
+      "name": "Measurement Atlas",
+      "scope": "Units, calibration, traceability, uncertainty and comparisons",
+      "status": "active_toward_v1",
+      "start_gate": "current"
+    },
+    {
+      "priority": 2,
+      "node_id": "causal-atlas",
+      "name": "Causal Atlas",
+      "scope": "Interventions, confounding, experiments and counterfactuals",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 3,
+      "node_id": "materials-atlas",
+      "name": "Materials Atlas",
+      "scope": "Properties, structure, phases and measurement versus prediction",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 4,
+      "node_id": "control-atlas",
+      "name": "Control Atlas",
+      "scope": "Feedback, stability, state estimation and identification",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 5,
+      "node_id": "agent-atlas",
+      "name": "Agent Atlas",
+      "scope": "Orchestration, tools, memory, failure recovery and evaluation",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 6,
+      "node_id": "computation-atlas",
+      "name": "Computation Atlas",
+      "scope": "Numerical analysis, algorithms, error and optimization",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 7,
+      "node_id": "language-atlas",
+      "name": "Language Atlas",
+      "scope": "Grammar, semantics, pragmatics and communication",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 8,
+      "node_id": "energy-atlas",
+      "name": "Energy Atlas",
+      "scope": "Thermodynamics, balances, losses, conversion and storage",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 9,
+      "node_id": "bioelectric-atlas",
+      "name": "Bioelectric Atlas",
+      "scope": "Cellular electrical signaling and organism-specific regeneration",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 10,
+      "node_id": "manufacturing-atlas",
+      "name": "Manufacturing Atlas",
+      "scope": "Process variation, defect diagnosis, reliability and equipment",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+All scientific explanations and worked datasets in this package are newly authored. Source references are links and bounded paraphrases; copyrights and dataset rights remain with their publishers. ASTM complete standard text is not included. No independent material experiment, sample measurement, phase identification or original external dataset is contained.

@@ -1,0 +1,14 @@
+{
+  "schema": "atlas.technological-continuity-active/1",
+  "edition": "electronics-semiconductors-1.0.0-rc.1",
+  "active_content_node": "electronics-semiconductors-atlas",
+  "scientific_acceptance": "hold_external_source_review_and_device_calibration",
+  "content_scope": "52 original chapters and executable reference kernels",
+  "next_content_domains": [
+    "manufacturing-atlas",
+    "computer-architecture-digital-hardware-atlas"
+  ],
+  "canonical_original_30_preserved": true,
+  "router_after_domain_libraries": true,
+  "desktop_transfer_last": true
+}

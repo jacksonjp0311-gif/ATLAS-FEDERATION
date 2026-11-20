@@ -1,0 +1,514 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Common context v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request",
+    "request_sha256",
+    "registry_revision",
+    "node_versions",
+    "policy_version",
+    "status",
+    "evidence_sufficiency",
+    "selected_roots",
+    "dependencies",
+    "payload",
+    "context_text",
+    "context_bytes",
+    "budget_unit",
+    "exclusions",
+    "conflicts",
+    "routing",
+    "missing_information",
+    "package_sha256"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas.context/1"
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question",
+        "node_ids",
+        "max_context_bytes",
+        "limit"
+      ],
+      "properties": {
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "node_ids": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          ]
+        },
+        "max_context_bytes": {
+          "type": "integer",
+          "minimum": 512,
+          "maximum": 1048576
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        }
+      }
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "registry_revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "node_versions": {
+      "type": "object"
+    },
+    "policy_version": {
+      "const": "whole-evidence-unit-1"
+    },
+    "status": {
+      "enum": [
+        "context_available",
+        "conflicting_context",
+        "budget_exhausted",
+        "evidence_unavailable",
+        "no_match"
+      ]
+    },
+    "evidence_sufficiency": {
+      "const": "not_assessed"
+    },
+    "selected_roots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "revision"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "revision"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "notice",
+        "records",
+        "relations"
+      ],
+      "properties": {
+        "notice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema",
+              "node_id",
+              "record_id",
+              "original_id",
+              "revision",
+              "type",
+              "title",
+              "content",
+              "evidence",
+              "sources",
+              "status",
+              "rights",
+              "provenance",
+              "extensions"
+            ],
+            "properties": {
+              "schema": {
+                "const": "atlas.record/1"
+              },
+              "node_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "record_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "original_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "type": {
+                "enum": [
+                  "concept",
+                  "claim",
+                  "source",
+                  "method",
+                  "equation",
+                  "dataset",
+                  "review"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "content": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags",
+                  "domain",
+                  "equation",
+                  "assumptions",
+                  "applicability",
+                  "limitations",
+                  "units",
+                  "uncertainty"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "domain": {
+                    "type": "string"
+                  },
+                  "equation": {
+                    "type": "string"
+                  },
+                  "assumptions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "applicability": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "limitations": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "units": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "uncertainty": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "evidence": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "origin",
+                  "review_status",
+                  "locators",
+                  "gaps",
+                  "upstream_labels"
+                ],
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "review_status": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "locators": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "source_id",
+                        "locator",
+                        "inspected_scope",
+                        "checked_at",
+                        "checker"
+                      ],
+                      "properties": {
+                        "source_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "locator": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "inspected_scope": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "checked_at": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "checker": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  },
+                  "gaps": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "upstream_labels": {
+                    "type": "object"
+                  }
+                }
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "record_id",
+                    "revision"
+                  ],
+                  "properties": {
+                    "record_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "revision": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    }
+                  }
+                }
+              },
+              "status": {
+                "enum": [
+                  "active",
+                  "withdrawn",
+                  "superseded",
+                  "disputed"
+                ]
+              },
+              "rights": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "status",
+                  "note"
+                ],
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "local_reference",
+                      "restricted",
+                      "unknown"
+                    ]
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "provenance": {
+                "type": "object"
+              },
+              "extensions": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema",
+              "relation_id",
+              "revision",
+              "type",
+              "from",
+              "to",
+              "provenance"
+            ],
+            "properties": {
+              "schema": {
+                "const": "atlas.relation/1"
+              },
+              "relation_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "type": {
+                "enum": [
+                  "related_to",
+                  "depends_on",
+                  "qualifies",
+                  "contradicts",
+                  "supports",
+                  "supersedes"
+                ]
+              },
+              "from": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "record_id",
+                  "revision"
+                ],
+                "properties": {
+                  "record_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                }
+              },
+              "to": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "record_id",
+                  "revision"
+                ],
+                "properties": {
+                  "record_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                }
+              },
+              "provenance": {
+                "type": "object",
+                "minProperties": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "context_text": {
+      "type": "string"
+    },
+    "context_bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "budget_unit": {
+      "const": "utf8_bytes_of_context_text"
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "routing": {
+      "type": "object"
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "package_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Bitwork_router_modified": false,
+  "active_content_node": "neural-architectures-atlas",
+  "current_federation_release": "Neural_Architectures_v1.0.0",
+  "domain_libraries_before_Bitwork_router": true,
+  "edition": "1.0.0",
+  "next_content_domain": "cryptographic-protocols-atlas",
+  "next_original_priority": 14,
+  "original_30_domain_queue_unchanged": true,
+  "original_domain_count_present": 13,
+  "original_domain_count_unregistered": 17,
+  "physical_AI_hardware": "HOLD",
+  "schema": "atlas.active-priority-pointer/1",
+  "scientific_external_review": "HOLD"
+}

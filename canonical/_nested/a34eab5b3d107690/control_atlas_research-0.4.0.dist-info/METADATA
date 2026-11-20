@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: control-atlas-research
+Version: 0.4.0
+Summary: Evidence-preserving control theory atlas with bounded pure-Python mathematical reference tools
+Requires-Python: >=3.10
+License-File: NOTICE.md
+Dynamic: license-file

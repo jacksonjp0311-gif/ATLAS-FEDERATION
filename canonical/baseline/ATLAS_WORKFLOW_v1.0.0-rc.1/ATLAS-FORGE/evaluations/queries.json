@@ -1,0 +1,225 @@
+{
+  "schema": "atlas.diagnostic-queries/1",
+  "status": "authored_seen_not_independent",
+  "cases": [
+    {
+      "id": "D01",
+      "question": "Type A uncertainty of mean",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:type-a-mean"
+      ]
+    },
+    {
+      "id": "D02",
+      "question": "first-order uncertainty propagation",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:equation:linear-propagation"
+      ]
+    },
+    {
+      "id": "D03",
+      "question": "correlated measurement inputs covariance",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:covariance"
+      ]
+    },
+    {
+      "id": "D04",
+      "question": "uncertainty difference correlated values",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:measurement-difference"
+      ]
+    },
+    {
+      "id": "D05",
+      "question": "uniform bounded uncertainty",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:uniform-bounds"
+      ]
+    },
+    {
+      "id": "D06",
+      "question": "triangular bounded uncertainty",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:triangular-bounds"
+      ]
+    },
+    {
+      "id": "D07",
+      "question": "convert reported uncertainty multiplier",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:certificate-multiplier"
+      ]
+    },
+    {
+      "id": "D08",
+      "question": "Type B information sources",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:type-b-information"
+      ]
+    },
+    {
+      "id": "D09",
+      "question": "expanded uncertainty",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:equation:expanded-uncertainty"
+      ]
+    },
+    {
+      "id": "D10",
+      "question": "coverage factor probability",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:coverage-conditions"
+      ]
+    },
+    {
+      "id": "D11",
+      "question": "traceability belongs measurement result",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:traceability-result"
+      ]
+    },
+    {
+      "id": "D12",
+      "question": "traceability documentation requirements",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:method:traceability-documentation"
+      ]
+    },
+    {
+      "id": "D13",
+      "question": "traceability fitness purpose",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:fitness-for-purpose"
+      ]
+    },
+    {
+      "id": "D14",
+      "question": "report uncertainty basis",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:uncertainty-reporting"
+      ]
+    },
+    {
+      "id": "D15",
+      "question": "error not uncertainty",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:error-not-uncertainty"
+      ]
+    },
+    {
+      "id": "D16",
+      "question": "systematic corrections",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:systematic-corrections"
+      ]
+    },
+    {
+      "id": "D17",
+      "question": "Type A Type B evaluation methods",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:evaluation-methods"
+      ]
+    },
+    {
+      "id": "D18",
+      "question": "combined uncertainty components",
+      "node_ids": [
+        "measurement-atlas"
+      ],
+      "expected_ids": [
+        "measurement-atlas:concept:combined-uncertainty"
+      ]
+    },
+    {
+      "id": "D19",
+      "question": "Faraday waves",
+      "expected_ids": [
+        "cymatics-atlas:concept:fluid-faraday"
+      ]
+    },
+    {
+      "id": "D20",
+      "question": "NOAA GOES",
+      "expected_ids": [
+        "signal-atlas:claim:C-082"
+      ]
+    },
+    {
+      "id": "D21",
+      "question": "zxqv7788 fluxxabc",
+      "expected_ids": []
+    },
+    {
+      "id": "D22",
+      "question": "marshmallow unicorn recipe",
+      "expected_ids": []
+    },
+    {
+      "id": "D23",
+      "question": "volcano ticket reservation",
+      "expected_ids": []
+    },
+    {
+      "id": "D24",
+      "question": "qvjsjzlp 77889551",
+      "expected_ids": []
+    },
+    {
+      "id": "D25",
+      "question": "cryptic rainbow pancakes",
+      "expected_ids": []
+    }
+  ]
+}

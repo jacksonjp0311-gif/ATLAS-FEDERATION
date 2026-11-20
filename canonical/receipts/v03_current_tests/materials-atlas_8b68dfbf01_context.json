@@ -1,0 +1,725 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "weakest link Weibull mechanism",
+    "node_ids": [
+      "materials-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "bd78f131c7728d388183bd0edc96e39382e20e9865187dc5754285cc5f3081cc",
+  "registry_revision": "aaccc52c284b271a9fdef1b1202865e002c4184ed509fb19f7cf6bb3672a1e2b",
+  "node_versions": {
+    "materials-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "6152d4337a90f9e846bddf31313f643ce7f73c76834424bb4161d966b3f28b49",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Selected publisher HTML and text-extracted PDF scopes checked; two numerical reanalyses including one transcribed source dataset; independent human review, authenticated upstream file bytes, physical experiments, standards certification, live model and Bitwork testing absent."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "materials-atlas:ordinary-weibull-vs-fracture",
+      "revision": "64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395"
+    },
+    {
+      "record_id": "materials-atlas:weakest-link-explicit-assumption",
+      "revision": "db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08"
+    },
+    {
+      "record_id": "materials-atlas:weakest-link-model",
+      "revision": "2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec"
+    },
+    {
+      "record_id": "materials-atlas:diffusion-paths",
+      "revision": "21a060053a85ad4154d404a23bede564bdf891b0eff01c19a3ad53f960eadb6e"
+    },
+    {
+      "record_id": "materials-atlas:arrhenius-diffusion",
+      "revision": "f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572"
+    },
+    {
+      "record_id": "materials-atlas:arrhenius-model",
+      "revision": "b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "materials-atlas:arrhenius-diffusion",
+      "revision": "f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572"
+    },
+    {
+      "record_id": "materials-atlas:arrhenius-model",
+      "revision": "b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6"
+    },
+    {
+      "record_id": "materials-atlas:diffusion-paths",
+      "revision": "21a060053a85ad4154d404a23bede564bdf891b0eff01c19a3ad53f960eadb6e"
+    },
+    {
+      "record_id": "materials-atlas:ordinary-weibull-vs-fracture",
+      "revision": "64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395"
+    },
+    {
+      "record_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW",
+      "revision": "6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474"
+    },
+    {
+      "record_id": "materials-atlas:source:NIST-DIFFUSION-RES",
+      "revision": "a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902"
+    },
+    {
+      "record_id": "materials-atlas:weakest-link-explicit-assumption",
+      "revision": "db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08"
+    },
+    {
+      "record_id": "materials-atlas:weakest-link-model",
+      "revision": "2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "D(T)=D0 exp[-Q/(R*T)]",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-15",
+            "0.2.0",
+            "arrhenius-diffusion"
+          ],
+          "text": "A model with supplied D0 and Q gives D(T)=D0 exp[-Q/(RT)] only where the mechanism and phase are valid.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched",
+              "source_id": "materials-atlas:source:NIST-DIFFUSION-RES"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "arrhenius-diffusion",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-15",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:arrhenius-diffusion",
+        "revision": "f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-DIFFUSION-RES",
+            "revision": "a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902"
+          }
+        ],
+        "status": "active",
+        "title": "Single-regime Arrhenius diffusion",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-15",
+            "0.2.0",
+            "arrhenius-model"
+          ],
+          "text": "Requires D0, Q, T, mechanism and validity supplied externally; supports no experimental discovery.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched",
+              "source_id": "materials-atlas:source:NIST-DIFFUSION-RES"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "arrhenius-model",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-15",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:arrhenius-model",
+        "revision": "b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-DIFFUSION-RES",
+            "revision": "a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902"
+          }
+        ],
+        "status": "active",
+        "title": "Apply given Arrhenius parameters in supported range",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-15",
+            "0.2.0",
+            "diffusion-paths"
+          ],
+          "text": "Self-diffusion, grain-boundary and surface transport cannot be substituted without matching species, phase, microstructure, temperature and method.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched",
+              "source_id": "materials-atlas:source:NIST-DIFFUSION-RES"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "diffusion-paths",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-15",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:diffusion-paths",
+        "revision": "21a060053a85ad4154d404a23bede564bdf891b0eff01c19a3ad53f960eadb6e",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-DIFFUSION-RES",
+            "revision": "a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902"
+          }
+        ],
+        "status": "active",
+        "title": "Diffusion mechanism and path govern measured coefficients",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Publisher abstract inspected; full paper not reviewed"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No inherent volume law or component failure probability follows from empirical curve fitting"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-1.0.0",
+            "ordinary-weibull-vs-fracture"
+          ],
+          "text": "An ordinary Weibull distribution can fit strength samples without justifying a physical independent-flaw weakest-link model or size scaling.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+              "source_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "ordinary-weibull-vs-fracture",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-29",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:ordinary-weibull-vs-fracture",
+        "revision": "64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW",
+            "revision": "6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474"
+          }
+        ],
+        "status": "active",
+        "title": "Empirical Weibull distribution is not the same as physical fracture theory",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Source locator and provenance; not certification"
+          ],
+          "assumptions": [
+            "Source interpretation constrained to access record"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Abstract-level check; no independent physical validation or article-wide review.",
+            "Only the stated inspected scope is included; no full third-party text mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-1.0.0"
+          ],
+          "text": "Source navigation: Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Abstract-level check; no independent physical validation or article-wide review."
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "source:CERAMICS-WEIBULL-REVIEW",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "source",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "inspected_scope": "Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+          "source_bytes_archived": false,
+          "source_release": "CERAMICS-WEIBULL-REVIEW",
+          "source_terms": "link only, new original paraphrase; no copyrighted full paper mirrored",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0272884220313092"
+        },
+        "record_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW",
+        "revision": "6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Statistics of ceramic strength: ordinary Weibull distribution or fracture theory?",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Educational/research use in the explicit model, condition, source or specimen context"
+          ],
+          "assumptions": [
+            "Declared source and context; no universal material identity or performance inference"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Source was checked only in the stated public HTML/text portion; no independent human review",
+            "A published table or fitted model does not certify a new specimen"
+          ],
+          "tags": [
+            "source",
+            "edition-0.2.0"
+          ],
+          "text": "Source navigation: Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist source audit.",
+            "No new experimental observation or external simulation."
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "source_navigation_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "source:NIST-DIFFUSION-RES",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "source",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched",
+          "source_bytes_archived": false,
+          "source_release": "NIST-DIFFUSION-RES",
+          "source_terms": "attributed publisher data link; no original document mirrored",
+          "url": "https://www.nist.gov/mgi/materials-data-resources"
+        },
+        "record_id": "materials-atlas:source:NIST-DIFFUSION-RES",
+        "revision": "a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST materials data resources and diffusion directories",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Caller must assert physical weakest-link hypothesis"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Assertion is not empirical validation; no component reliability certification"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-1.0.0",
+            "weakest-link-explicit-assumption"
+          ],
+          "text": "Refuse to scale an empirical fitted Weibull distribution by volume unless caller explicitly asserts the physical independent bulk-flaw model.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+              "source_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "weakest-link-explicit-assumption",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-29",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:weakest-link-explicit-assumption",
+        "revision": "db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW",
+            "revision": "6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474"
+          }
+        ],
+        "status": "active",
+        "title": "Require explicit physical hypothesis before volume scaling",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Assume bulk volume flaws, homogeneous stress, independent subvolumes, stationary microstructure"
+          ],
+          "domain": "materials-science",
+          "equation": "S=exp(-(V/V0)*(sigma/sigma0)^m)",
+          "limitations": [
+            "Surface-flaw/area scaling, stress gradients and physical validation are not implemented"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-1.0.0",
+            "weakest-link-model"
+          ],
+          "text": "Only under a declared independent identical bulk-flaw population and uniform stress, S=exp[-(V/V0)(sigma/sigma0)^m].",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+              "source_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "weakest-link-model",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-29",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:weakest-link-model",
+        "revision": "2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:CERAMICS-WEIBULL-REVIEW",
+            "revision": "6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474"
+          }
+        ],
+        "status": "active",
+        "title": "Conditional uniform bulk-flaw volume survival",
+        "type": "equation"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "materials-atlas:arrhenius-model",
+          "revision": "b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6"
+        },
+        "provenance": {
+          "basis": "Domain-method dependence, not experimentally discovered physical relationship",
+          "independent_review": false,
+          "origin": "authored_topic_dependency"
+        },
+        "relation_id": "materials-atlas:arrhenius-model:depends_on:arrhenius-diffusion",
+        "revision": "5640b67e3bab4971b4c875464d9364cdce24da3325758c164f36f7180b36ce81",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:arrhenius-diffusion",
+          "revision": "f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "materials-atlas:weakest-link-explicit-assumption",
+          "revision": "db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08"
+        },
+        "provenance": {
+          "basis": "Authored method dependency or qualification, not discovered physical effect",
+          "independent_review": false,
+          "origin": "authored_scoped_dependency"
+        },
+        "relation_id": "materials-atlas:weakest-link-explicit-assumption:depends_on:weakest-link-model",
+        "revision": "972322f0bc3c3c01b76031d89398140cb32fb97e0d93e3f639d88961c571df53",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:weakest-link-model",
+          "revision": "2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "materials-atlas:weakest-link-model",
+          "revision": "2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec"
+        },
+        "provenance": {
+          "basis": "Authored method dependency or qualification, not discovered physical effect",
+          "independent_review": false,
+          "origin": "authored_scoped_dependency"
+        },
+        "relation_id": "materials-atlas:weakest-link-model:depends_on:ordinary-weibull-vs-fracture",
+        "revision": "47d5efd16d054487c9391701fca8568d0c4c5dbd167d6fcfa3c22c26e7c4b222",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:ordinary-weibull-vs-fracture",
+          "revision": "64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395"
+        },
+        "type": "depends_on"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"D(T)=D0 exp[-Q/(R*T)]\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-15\",\"0.2.0\",\"arrhenius-diffusion\"],\"text\":\"A model with supplied D0 and Q gives D(T)=D0 exp[-Q/(RT)] only where the mechanism and phase are valid.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched\",\"source_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"arrhenius-diffusion\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-15\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:arrhenius-diffusion\",\"revision\":\"f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\",\"revision\":\"a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902\"}],\"status\":\"active\",\"title\":\"Single-regime Arrhenius diffusion\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-15\",\"0.2.0\",\"arrhenius-model\"],\"text\":\"Requires D0, Q, T, mechanism and validity supplied externally; supports no experimental discovery.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched\",\"source_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"arrhenius-model\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-15\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:arrhenius-model\",\"revision\":\"b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\",\"revision\":\"a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902\"}],\"status\":\"active\",\"title\":\"Apply given Arrhenius parameters in supported range\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-15\",\"0.2.0\",\"diffusion-paths\"],\"text\":\"Self-diffusion, grain-boundary and surface transport cannot be substituted without matching species, phase, microstructure, temperature and method.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched\",\"source_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"diffusion-paths\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-15\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:diffusion-paths\",\"revision\":\"21a060053a85ad4154d404a23bede564bdf891b0eff01c19a3ad53f960eadb6e\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\",\"revision\":\"a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902\"}],\"status\":\"active\",\"title\":\"Diffusion mechanism and path govern measured coefficients\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Publisher abstract inspected; full paper not reviewed\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No inherent volume law or component failure probability follows from empirical curve fitting\"],\"tags\":[\"chapter-29\",\"edition-1.0.0\",\"ordinary-weibull-vs-fracture\"],\"text\":\"An ordinary Weibull distribution can fit strength samples without justifying a physical independent-flaw weakest-link model or size scaling.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model\",\"source_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"ordinary-weibull-vs-fracture\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-29\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:ordinary-weibull-vs-fracture\",\"revision\":\"64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\",\"revision\":\"6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474\"}],\"status\":\"active\",\"title\":\"Empirical Weibull distribution is not the same as physical fracture theory\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Source locator and provenance; not certification\"],\"assumptions\":[\"Source interpretation constrained to access record\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Abstract-level check; no independent physical validation or article-wide review.\",\"Only the stated inspected scope is included; no full third-party text mirrored\"],\"tags\":[\"source\",\"edition-1.0.0\"],\"text\":\"Source navigation: Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"Abstract-level check; no independent physical validation or article-wide review.\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"source:CERAMICS-WEIBULL-REVIEW\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"source\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"inspected_scope\":\"Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model\",\"source_bytes_archived\":false,\"source_release\":\"CERAMICS-WEIBULL-REVIEW\",\"source_terms\":\"link only, new original paraphrase; no copyrighted full paper mirrored\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0272884220313092\"},\"record_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\",\"revision\":\"6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Statistics of ceramic strength: ordinary Weibull distribution or fracture theory?\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Educational/research use in the explicit model, condition, source or specimen context\"],\"assumptions\":[\"Declared source and context; no universal material identity or performance inference\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Source was checked only in the stated public HTML/text portion; no independent human review\",\"A published table or fitted model does not certify a new specimen\"],\"tags\":[\"source\",\"edition-0.2.0\"],\"text\":\"Source navigation: Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist source audit.\",\"No new experimental observation or external simulation.\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"source_navigation_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"source:NIST-DIFFUSION-RES\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"source\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Experimental and computational materials diffusion sources distinguished in public overview; no individual dataset fetched\",\"source_bytes_archived\":false,\"source_release\":\"NIST-DIFFUSION-RES\",\"source_terms\":\"attributed publisher data link; no original document mirrored\",\"url\":\"https://www.nist.gov/mgi/materials-data-resources\"},\"record_id\":\"materials-atlas:source:NIST-DIFFUSION-RES\",\"revision\":\"a717114278f5e4cce4bbaafbf05ce09bb2250d0f704e7735b925042083c8d902\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST materials data resources and diffusion directories\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Caller must assert physical weakest-link hypothesis\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Assertion is not empirical validation; no component reliability certification\"],\"tags\":[\"chapter-29\",\"edition-1.0.0\",\"weakest-link-explicit-assumption\"],\"text\":\"Refuse to scale an empirical fitted Weibull distribution by volume unless caller explicitly asserts the physical independent bulk-flaw model.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model\",\"source_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"weakest-link-explicit-assumption\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-29\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:weakest-link-explicit-assumption\",\"revision\":\"db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\",\"revision\":\"6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474\"}],\"status\":\"active\",\"title\":\"Require explicit physical hypothesis before volume scaling\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Assume bulk volume flaws, homogeneous stress, independent subvolumes, stationary microstructure\"],\"domain\":\"materials-science\",\"equation\":\"S=exp(-(V/V0)*(sigma/sigma0)^m)\",\"limitations\":[\"Surface-flaw/area scaling, stress gradients and physical validation are not implemented\"],\"tags\":[\"chapter-29\",\"edition-1.0.0\",\"weakest-link-model\"],\"text\":\"Only under a declared independent identical bulk-flaw population and uniform stress, S=exp[-(V/V0)(sigma/sigma0)^m].\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model\",\"source_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"weakest-link-model\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-29\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:weakest-link-model\",\"revision\":\"2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:CERAMICS-WEIBULL-REVIEW\",\"revision\":\"6722653465d7df4bac4900dbd60b11042cb87ffbf059a44f631b6144f0550474\"}],\"status\":\"active\",\"title\":\"Conditional uniform bulk-flaw volume survival\",\"type\":\"equation\"}],\"relations\":[{\"from\":{\"record_id\":\"materials-atlas:arrhenius-model\",\"revision\":\"b6ca7e47e24f759b14623dbdda7aa894699484c8fc7dea11e40fbbea5fd2dcb6\"},\"provenance\":{\"basis\":\"Domain-method dependence, not experimentally discovered physical relationship\",\"independent_review\":false,\"origin\":\"authored_topic_dependency\"},\"relation_id\":\"materials-atlas:arrhenius-model:depends_on:arrhenius-diffusion\",\"revision\":\"5640b67e3bab4971b4c875464d9364cdce24da3325758c164f36f7180b36ce81\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:arrhenius-diffusion\",\"revision\":\"f26586e7ebefecf8789570f65e63233dc183efa266951ba18ab4bc7f232da572\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"materials-atlas:weakest-link-explicit-assumption\",\"revision\":\"db783b78b9c9ea849b9fbf41ba3338fbc6703e2e8a817c26d8360556876c8e08\"},\"provenance\":{\"basis\":\"Authored method dependency or qualification, not discovered physical effect\",\"independent_review\":false,\"origin\":\"authored_scoped_dependency\"},\"relation_id\":\"materials-atlas:weakest-link-explicit-assumption:depends_on:weakest-link-model\",\"revision\":\"972322f0bc3c3c01b76031d89398140cb32fb97e0d93e3f639d88961c571df53\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:weakest-link-model\",\"revision\":\"2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"materials-atlas:weakest-link-model\",\"revision\":\"2ced630a159769027f412808396e60802d303370718aaec1f64d64b3d32d92ec\"},\"provenance\":{\"basis\":\"Authored method dependency or qualification, not discovered physical effect\",\"independent_review\":false,\"origin\":\"authored_scoped_dependency\"},\"relation_id\":\"materials-atlas:weakest-link-model:depends_on:ordinary-weibull-vs-fracture\",\"revision\":\"47d5efd16d054487c9391701fca8568d0c4c5dbd167d6fcfa3c22c26e7c4b222\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:ordinary-weibull-vs-fracture\",\"revision\":\"64d45989923258e0956af907a3fae12a404b16f8bc8204cb1c3c98610ad3e395\"},\"type\":\"depends_on\"}]}",
+  "context_bytes": 21125,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "b477c3f09f56f255e1ff4483b4c1ce6033ca906723a050e2694b3045f07798a0"
+}

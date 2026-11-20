@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.technological-continuity-computer-active/1",
+  "date": "2026-11-16",
+  "active_node": "computer-architecture-digital-hardware-atlas",
+  "edition": "0.1.0",
+  "original_30_domain_queue_unchanged": true,
+  "auxiliary_enabling_node": true,
+  "prior_nodes_unchanged": 14,
+  "Bitwork_router_modified": false,
+  "desktop_transfer": false,
+  "next_technical_work": [
+    "extend AT8 to complete clocked RTL/HDL and test vectors",
+    "formal ISA equivalence and interrupted CPU boot",
+    "assembler/boot/stack/branching and memory ordering",
+    "integrate measurement and manufacturing evidence",
+    "finish original domain-content queue before routing"
+  ],
+  "physical_hardware_review": "HOLD",
+  "independent_expert_science_review": "HOLD"
+}

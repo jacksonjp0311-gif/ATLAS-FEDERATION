@@ -1,0 +1,99 @@
+{
+  "schema": "atlas.gate-report/1",
+  "active_node": "measurement-atlas",
+  "target": "1.0.0",
+  "subject_sha256": "d4737fddac5a6fdf1deb17967d4650225ef96918a4295e7a3e78fc8854ee74a9",
+  "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+  "v1_ready": false,
+  "next_domain_allowed": false,
+  "criteria_frozen": false,
+  "gates": [
+    {
+      "gate": "G1",
+      "title": "Declared scope and frozen question families",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Declared eight topic families, exclusions, a frozen evaluation plan and reviewer-approved scope."
+      ]
+    },
+    {
+      "gate": "G2",
+      "title": "Primary-source evidence and explicit coverage gaps",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Every release-critical claim has a checked primary locator or derivation; navigation excluded from release-critical set; independent review separately declared."
+      ]
+    },
+    {
+      "gate": "G3",
+      "title": "Scientific methods, units and edge cases",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Declared model tests and independent numerical oracle cases pass; unit/assumption errors are rejected."
+      ]
+    },
+    {
+      "gate": "G4",
+      "title": "Generic common-contract conformance across enabled nodes",
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G4.json",
+          "sha256": "e7b322b55a078c20f26bf0f53fb4106075adf1b8b33248ee783c5a367718a0e9"
+        }
+      ],
+      "errors": [],
+      "remaining": []
+    },
+    {
+      "gate": "G5",
+      "title": "Exact, budgeted, evidence-preserving context",
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G5.json",
+          "sha256": "acec9e39bfb2bca82bc6b72b5cc7439bbf1502850d220e7ee24de33bcd0293ec"
+        }
+      ],
+      "errors": [],
+      "remaining": []
+    },
+    {
+      "gate": "G6",
+      "title": "Pinned real Bitwork to Atlas to actual AI execution",
+      "status": "blocked",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Pinned actual Bitwork returns exact Atlas records; a real consuming model uses the package; retained failures and traces. No mock route receipts."
+      ]
+    },
+    {
+      "gate": "G7",
+      "title": "Frozen held-out comparative retrieval and answer evaluation",
+      "status": "not_run",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Frozen independently authored test set; same-corpus same-budget BM25, semantic and Bitwork arms; retrieval and answer-quality scoring with uncertainty."
+      ]
+    },
+    {
+      "gate": "G8",
+      "title": "Clean builds, supported platforms and release integrity",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Clean install/archive/manifest checks and supported Windows/Linux platform runs, no critical failures."
+      ]
+    }
+  ],
+  "review_authenticity": "local operator record; no third-party identity attestation"
+}

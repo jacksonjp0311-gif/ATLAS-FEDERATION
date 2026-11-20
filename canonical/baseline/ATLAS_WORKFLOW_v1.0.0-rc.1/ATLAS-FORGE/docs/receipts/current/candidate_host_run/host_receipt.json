@@ -1,0 +1,46 @@
+{
+  "schema": "atlas.candidate-host-check/1",
+  "execution_kind": "local_actual",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sys_platform": "linux",
+  "python": "3.13.5",
+  "recorded_at": "2026-11-12T19:46:25.568001+00:00",
+  "result": "passed",
+  "stages": [
+    {
+      "name": "workflow",
+      "exit_code": 0,
+      "log": "workflow.log",
+      "sha256": "a7515ef17c72aea67250644455d76ae2926b5632ef12c5cf6fc6c2dceefba41f"
+    },
+    {
+      "name": "practical_cases",
+      "exit_code": 0,
+      "log": "practical_cases.log",
+      "sha256": "eea88cbf407519727f166e55f6cecad65a3b5e64cca533f97c0d05017a5a0fa3"
+    },
+    {
+      "name": "source_content",
+      "exit_code": 0,
+      "log": "source_content.log",
+      "sha256": "d729abfc1e441d9bf69b1c6c139b2679bb4706a190354ff16e3544bf93bff2bc"
+    },
+    {
+      "name": "domain_queue",
+      "exit_code": 0,
+      "log": "domain_queue.log",
+      "sha256": "7c63e127bdf68eb86c3ed63ae56f90e85e30c1fc0fd81fb760d414396bb877e6"
+    },
+    {
+      "name": "readiness",
+      "exit_code": 0,
+      "log": "readiness.log",
+      "sha256": "e0390d2065e3cb234543594afdea25e2b5921816c4262c5e243f0c9c84f67c4f"
+    }
+  ],
+  "checks_are_not_final_v1_acceptance": true,
+  "independent_review": false,
+  "live_bitwork_run": false,
+  "heldout_model_comparison": false,
+  "desktop_or_remote_changes": false
+}

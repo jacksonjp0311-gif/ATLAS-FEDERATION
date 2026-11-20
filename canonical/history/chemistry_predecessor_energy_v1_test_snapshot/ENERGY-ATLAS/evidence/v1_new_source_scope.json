@@ -1,0 +1,34 @@
+{
+  "schema": "atlas.energy-v1-source-scope/1",
+  "sources": [
+    {
+      "title": "Sandia National Laboratories, Microgrid Design Toolkit",
+      "id": "SANDIA-MICROGRID-TOOLKIT",
+      "url": "https://energy.sandia.gov/programs/electric-grid/advanced-microgrids/microgrid-design-toolkit/",
+      "inspected_scope": "Official description of early-stage multiobjective microgrid design, cost-performance-reliability tradeoffs",
+      "rights": "Official public page; source code and complete manual not acquired; site and artifacts may carry separate rights",
+      "original_publisher_bytes_acquired": false
+    },
+    {
+      "title": "CDC, How to Disinfect Wells After an Emergency",
+      "id": "CDC-FLOODED-WELL",
+      "url": "https://www.cdc.gov/water-emergency/about/how-to-disinfect-wells-after-an-emergency.html",
+      "inspected_scope": "Safety page warning against electrical well repairs without qualification and against chemical contaminated water",
+      "rights": "Government public-health guidance; exact original transport file not saved",
+      "original_publisher_bytes_acquired": false
+    },
+    {
+      "title": "NIST, Version History of the Fundamental Constants Database",
+      "id": "NIST-CODATA-VERSION",
+      "url": "https://physics.nist.gov/cuu/Reference/versioncon.shtml",
+      "inspected_scope": "2022 CODATA adjustment version 9.0; NIST recommended values and historical data versions",
+      "rights": "NIST public data rights vary by marked source; direct authoritative ASCII file acquisition attempted and failed",
+      "original_publisher_bytes_acquired": false
+    }
+  ],
+  "new_source_count": 3,
+  "total_energy_source_count": 31,
+  "source_bytes_authenticated": 0,
+  "attempted_acquisition": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt, failed due to blocked download",
+  "independent_expert_review": false
+}

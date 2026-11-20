@@ -1,0 +1,20 @@
+{
+  "atlas_id": "measurement-atlas",
+  "title": "Measurement Atlas",
+  "version": "0.3.0",
+  "schema_version": "1.0",
+  "created_date": "2026-11-11",
+  "purpose": "Evidence-preserving scientific reference",
+  "mission": "Units, uncertainty, calibration, traceability, repeatability and comparison",
+  "status": "mathematical_models_documentation_audits_editorial_navigation",
+  "packet_count": 5,
+  "source_count": 1,
+  "interfaces": [
+    "jsonl",
+    "python-cli",
+    "local-python-math",
+    "documented-calibration-graph-audit"
+  ],
+  "external_sources_mirrored": false,
+  "model_count": 6
+}

@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Forge Node Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "title",
+    "version",
+    "adapter",
+    "status",
+    "enabled_by_default",
+    "description",
+    "upstream",
+    "counts",
+    "acquisition",
+    "captured_at",
+    "evidence_boundary",
+    "supporting_raw_measurements_bundled",
+    "rights",
+    "snapshot_files"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas-forge.node.v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adapter": {
+      "enum": [
+        "signal-v1",
+        "cymatics-v1",
+        "forge-v1"
+      ]
+    },
+    "status": {
+      "enum": [
+        "reference_snapshot",
+        "starter_heading_inventory"
+      ]
+    },
+    "enabled_by_default": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "commit",
+        "release_label",
+        "url"
+      ],
+      "properties": {
+        "repository": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "commit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "release_label": {
+          "type": "string"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "sources",
+        "searchable_records"
+      ],
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "acquisition": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence_boundary": {
+      "type": "string"
+    },
+    "supporting_raw_measurements_bundled": {
+      "const": false
+    },
+    "rights": {
+      "type": "string"
+    },
+    "snapshot_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "upstream_path",
+          "sha256",
+          "size_bytes",
+          "git_blob_sha1",
+          "git_blob_verified"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*[\\\\:]).+$"
+          },
+          "upstream_path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*[\\\\:]).+$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "git_blob_sha1": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "git_blob_verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

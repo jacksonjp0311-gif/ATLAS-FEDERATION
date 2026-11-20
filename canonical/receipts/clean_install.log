@@ -1,0 +1,7 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/ATLAS_COLLECTION_v0.3.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/wheels/atlas_forge_research-1.0.0rc1-py3-none-any.whl
+Processing /mnt/data/ATLAS_COLLECTION_v0.3.0/baseline/ATLAS_WORKFLOW_v1.0.0-rc.1/wheels/measurement_atlas-1.0.0rc1-py3-none-any.whl
+Processing /mnt/data/ATLAS_COLLECTION_v0.3.0/wheels/causal_atlas-0.3.0-py3-none-any.whl
+Installing collected packages: measurement-atlas, causal-atlas, atlas-forge-research
+
+Successfully installed atlas-forge-research-1.0.0rc1 causal-atlas-0.3.0 measurement-atlas-1.0.0rc1

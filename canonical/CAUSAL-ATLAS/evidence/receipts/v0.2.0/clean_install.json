@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "versions": {
+    "causal-atlas": "0.2.0",
+    "atlas-forge-research": "1.0.0rc1",
+    "measurement-atlas": "1.0.0rc1"
+  },
+  "import_paths": {
+    "causal_atlas": "/mnt/data/causal02_clean_venv/lib/python3.13/site-packages/causal_atlas/__init__.py",
+    "atlas_forge": "/mnt/data/causal02_clean_venv/lib/python3.13/site-packages/atlas_forge/__init__.py",
+    "measurement_atlas": "/mnt/data/causal02_clean_venv/lib/python3.13/site-packages/measurement_atlas/__init__.py"
+  },
+  "causal_records": 73,
+  "context_valid": true,
+  "investigations": 12,
+  "source_tree_imports": false,
+  "independent_scientific_review": false
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "measurement.authored-review/1",
+  "independently_held_out": false,
+  "model_answers_executed": false,
+  "cases": [
+    {
+      "id": "data-origin",
+      "question": "What does the Pontius capture establish?",
+      "required_points": [
+        "published observations",
+        "checked transcription",
+        "not physical replication"
+      ],
+      "prohibited_inferences": [
+        "upstream byte identity",
+        "new experiment"
+      ],
+      "reference_ids": [
+        "pontius-published-observations"
+      ]
+    },
+    {
+      "id": "units",
+      "question": "May the loads be called newtons?",
+      "required_points": [
+        "physical unit unspecified",
+        "retain source units"
+      ],
+      "prohibited_inferences": [
+        "invent SI unit"
+      ],
+      "reference_ids": [
+        "pontius-published-observations"
+      ]
+    },
+    {
+      "id": "drift",
+      "question": "Does the quadratic prove there was no drift?",
+      "required_points": [
+        "ordered runs confound time and load",
+        "separate controls needed"
+      ],
+      "prohibited_inferences": [
+        "no drift proved"
+      ],
+      "reference_ids": [
+        "run-order-drift-confounding"
+      ]
+    },
+    {
+      "id": "source-disagreement",
+      "question": "Which intercept should be used in a reproducible numerical check?",
+      "required_points": [
+        "retain both displays",
+        "StRD numerical target",
+        "report mismatch"
+      ],
+      "prohibited_inferences": [
+        "silent source replacement"
+      ],
+      "reference_ids": [
+        "pontius-handbook-intercept",
+        "pontius-certified-intercept"
+      ]
+    },
+    {
+      "id": "certificate",
+      "question": "Does numerical certification certify a load cell?",
+      "required_points": [
+        "certified arithmetic targets",
+        "not traceability certificate"
+      ],
+      "prohibited_inferences": [
+        "NIST endorsement"
+      ],
+      "reference_ids": [
+        "numerical-certification-scope"
+      ]
+    },
+    {
+      "id": "replication",
+      "question": "What is missing when pure error cannot be computed?",
+      "required_points": [
+        "replicated settings",
+        "positive degrees of freedom"
+      ],
+      "prohibited_inferences": [
+        "invent denominator"
+      ],
+      "reference_ids": [
+        "replicate-pure-error",
+        "lack-of-fit-partition"
+      ]
+    },
+    {
+      "id": "inverse",
+      "question": "Why not use the other quadratic root?",
+      "required_points": [
+        "valid observed range",
+        "unique admissible branch"
+      ],
+      "prohibited_inferences": [
+        "accept every algebraic root"
+      ],
+      "reference_ids": [
+        "inverse-root-domain"
+      ]
+    },
+    {
+      "id": "prediction",
+      "question": "Why is future-response uncertainty larger than mean-response uncertainty?",
+      "required_points": [
+        "extra independent observation variance",
+        "model assumptions"
+      ],
+      "prohibited_inferences": [
+        "automatic 95 percent claim"
+      ],
+      "reference_ids": [
+        "prediction-versus-mean"
+      ]
+    }
+  ]
+}

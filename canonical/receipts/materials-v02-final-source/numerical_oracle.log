@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.materials-numerical-oracle/1",
+  "result": "passed",
+  "counts": {
+    "lever": 300,
+    "mixtures": 300,
+    "hull_linprog": 200,
+    "density": 200,
+    "bragg": 200
+  },
+  "total": 1200,
+  "worst_scaled_absolute_error": 1.1368683772161603e-13,
+  "failures": [],
+  "seed": 71226,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "independent_algorithm_not_independent_scientific_review": true
+}
+

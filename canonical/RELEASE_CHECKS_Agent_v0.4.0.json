@@ -1,0 +1,155 @@
+{
+  "schema": "atlas.agent-v04-release-check/1",
+  "date": "2026-11-13",
+  "version": "0.4.0",
+  "status": "tested_research_content_not_scoped_agent_v1",
+  "result": "passed",
+  "nodes": 7,
+  "common_records": 1209,
+  "common_relations": 430,
+  "agent_records": 158,
+  "agent_source_cards": 30,
+  "agent_relations": 101,
+  "chapters": 38,
+  "investigations": 24,
+  "old_agent_record_revisions_retained": 128,
+  "old_agent_relation_revisions_retained": 83,
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 216,
+      "passed": 216,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "test_total_passed": 1221,
+  "test_skips": 0,
+  "source_schema": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1209,
+      "relation": 430,
+      "node": 7,
+      "context": 19
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "context_queries_validated": 19,
+  "source_code_casebooks": {
+    "agent_casebook": "passed",
+    "agent_advanced_casebook": "passed",
+    "agent_v03_casebook": "passed",
+    "agent_v04_casebook": "passed"
+  },
+  "numerical_oracle": {
+    "schema": "atlas.agent-v04-numeric-oracle/1",
+    "status": "passed",
+    "comparisons": 6000,
+    "categories": {
+      "proof_precedence": 1800,
+      "paired_exact_tail": 450,
+      "paired_missingness": 450,
+      "annotation_confusions": 2100,
+      "memory_review_precedence": 1200
+    },
+    "seed": 3141626,
+    "numpy_version": "2.3.5",
+    "scipy_binom_tail": true,
+    "MAST_original_rows_imported": 0,
+    "agent_invocations": 0,
+    "independent_ground_truth": false,
+    "causal_improvement_demonstrated": false,
+    "limitations": [
+      "Deterministic author-generated fixtures, not held-out tasks",
+      "Separately implemented precedence and binomial arithmetic is software verification only"
+    ]
+  },
+  "preservation": {
+    "schema": "atlas.agent-preservation-audit/4",
+    "result": "passed",
+    "previous_release": "Agent 0.3.0",
+    "protected_other_node_and_baseline_files_identical": 1424,
+    "original_baseline_files_identical": 771,
+    "previous_agent_records_revision_identical": 128,
+    "previous_agent_relations_revision_identical": 83,
+    "other_runtime_and_navigation_code_changed": false,
+    "comparison": "source contents byte compared to immutable v0.3 ZIP; hash revision comparisons for Agent records and relations",
+    "limitations": [
+      "Equal historical bytes prove preservation, not source accuracy or scientific review"
+    ]
+  },
+  "clean_wheel_installation": {
+    "agent_version": "0.4.0",
+    "installed_agent_records": 158,
+    "installed_agent_relations": 101,
+    "installed_node_count": 1,
+    "casebook_status": "passed",
+    "context_valid": true,
+    "context_status": "context_available",
+    "installed_packages": [
+      "1.0.0rc1",
+      "1.0.0rc1",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0rc1",
+      "0.4.0"
+    ],
+    "source_tree_imported": false
+  },
+  "scientific_gates": {
+    "independent_scientific_review": false,
+    "MAST_original_rows_retrieved": false,
+    "live_agent_runs": false,
+    "verified_task_outcomes": false,
+    "demonstrated_out_of_sample_agent_improvement": false,
+    "Bitwork_router_modified": false,
+    "desktop_transferred": false,
+    "all_30_scientific_content_domains_built": false,
+    "Agent_scoped_content_v1_ready": false
+  },
+  "limitations": "Schema conformance, source closure, synthetic author-generated numerical agreement and artifact hash consistency are software evidence; no real agent improvement, host authenticity, data-source science or live tool authorization is established."
+}

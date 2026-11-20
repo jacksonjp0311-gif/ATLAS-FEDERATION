@@ -1,0 +1,12 @@
+{
+  "schema": "atlas.chemistry-v01-test-snapshot/1",
+  "from": "verified Chemistry v0.1.0 exact delta restoration, 3652 sha256-verified source files",
+  "original_chemistry_records": 168,
+  "original_full_records": 2220,
+  "original_full_relationships": 1391,
+  "source_tests_preserved_unmodified": true,
+  "no_previous_content_revised": true,
+  "original_chemistry_package": "Original immutable standalone CHEMISTRY-ATLAS_v0.1.0.zip, checksum-verified, not copied from current v0.2 worktree",
+  "original_chemistry_package_tests_unmodified": true,
+  "standalone_members": 84
+}

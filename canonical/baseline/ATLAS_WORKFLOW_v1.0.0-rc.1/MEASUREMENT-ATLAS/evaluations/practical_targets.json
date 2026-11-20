@@ -1,0 +1,49 @@
+{
+  "schema": "measurement.practical-targets/1",
+  "created_at": "2026-11-12",
+  "purpose": "authored published-illustration checks, not held-out evaluation",
+  "cases": [
+    {
+      "id": "jcgm-upper",
+      "source": "JCGM106 §7.3.3 example 1",
+      "value": -5.47,
+      "standard_uncertainty": 0.05,
+      "upper": -5.4,
+      "unit": "V",
+      "quantity_kind": "voltage",
+      "target_probability": 0.92,
+      "absolute_tolerance": 0.005
+    },
+    {
+      "id": "jcgm-lower",
+      "source": "JCGM106 §7.3.3 example 2",
+      "value": 509.7,
+      "standard_uncertainty": 8.6,
+      "lower": 490,
+      "unit": "kPa",
+      "quantity_kind": "pressure",
+      "target_probability": 0.99,
+      "absolute_tolerance": 0.005
+    },
+    {
+      "id": "jcgm-two-sided",
+      "source": "JCGM106 §7.4 example",
+      "value": 13.6,
+      "standard_uncertainty": 1.8,
+      "lower": 12.5,
+      "upper": 16.3,
+      "unit": "mm^2/s",
+      "quantity_kind": "kinematic_viscosity",
+      "target_probability": 0.66,
+      "absolute_tolerance": 0.005
+    }
+  ],
+  "uncertainty_reporting": {
+    "source": "NIST TN1297 §7.3",
+    "standard_uncertainty_mg": 0.35,
+    "coverage_factor": 2.26,
+    "displayed_expanded_uncertainty_g": 0.00079,
+    "absolute_tolerance_g": 5e-06
+  },
+  "data_origin": "publisher_illustrations_not_new_measurements"
+}

@@ -1,0 +1,1933 @@
+{
+  "concepts": [
+    {
+      "aliases": [
+        "what is cymatics",
+        "sound visualization",
+        "visible vibration",
+        "cymatics patterns"
+      ],
+      "applicability": "Scientific interpretation of resonant visualization demonstrations and studies.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "cymatics-definition",
+      "limitations": "A beautiful geometric figure does not establish the same frequency-to-shape mapping across media, or any health effect.",
+      "related_ids": [
+        "wave-resonance",
+        "chladni-method",
+        "fluid-faraday"
+      ],
+      "source_ids": [
+        "colorado",
+        "faraday",
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Cymatics is a broad descriptive term for visible patterns produced by vibration or acoustically driven motion in plates, surfaces, fluids or particles. Different experiments involve different physical mechanisms; the name does not identify a single universal geometry-producing force.",
+      "title": "Cymatics as visualized vibration"
+    },
+    {
+      "aliases": [
+        "interference",
+        "standing waves",
+        "phase"
+      ],
+      "applicability": "Small-amplitude linear-wave approximation.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "wave-superposition",
+      "limitations": "In nonlinear media, superposition may fail and harmonics, mode coupling or instabilities may dominate.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "For linear wave equations the displacement from multiple solutions is their sum. Relative phase determines constructive and destructive interference; apparent stationary structure can be produced by counterpropagating components.",
+      "title": "Wave superposition"
+    },
+    {
+      "aliases": [
+        "nodal pattern",
+        "pressure nodes",
+        "antinodes"
+      ],
+      "applicability": "Specify which field is measured: displacement, velocity or acoustic pressure.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "wave-nodes",
+      "limitations": "A camera image of deposited grains is not a direct map of pressure; particle transport is an additional process.",
+      "related_ids": [],
+      "source_ids": [
+        "colorado",
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A node is a location of zero displacement for a standing displacement field; an antinode is a region of high displacement amplitude. A pressure node is not automatically the same location as a displacement node.",
+      "title": "Nodes and antinodes"
+    },
+    {
+      "aliases": [
+        "eigenfrequencies",
+        "standing modes",
+        "natural frequencies"
+      ],
+      "applicability": "Small-signal linear model for discrete resonances.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "wave-resonance",
+      "limitations": "Not every visible pattern is an undamped eigenmode, and a resonance peak depends on drive placement and losses.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A structure has normal modes determined by its geometry, material properties and constraints. Near some modal frequencies a driven response can be amplified, with magnitude shaped by damping and forcing configuration.",
+      "title": "Resonance and normal modes"
+    },
+    {
+      "aliases": [
+        "Hz",
+        "angular frequency",
+        "omega",
+        "period"
+      ],
+      "applicability": "Periodic steady-state measurements.",
+      "domain": "wave-foundations",
+      "equation": "T = 1/f; omega = 2*pi*f",
+      "id": "wave-frequency",
+      "limitations": "Do not confuse driving frequency with a structure’s eigenfrequency or a subharmonic response.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Frequency f is cycles per second in hertz; period T=1/f for a periodic signal, and angular frequency omega=2*pi*f. A frequency alone does not encode field geometry.",
+      "title": "Frequency, period and angular frequency"
+    },
+    {
+      "aliases": [
+        "wave number",
+        "phase velocity",
+        "wavelength"
+      ],
+      "applicability": "Each material and geometry requires its own wave model.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "wave-dispersion",
+      "limitations": "Faraday-wave forcing and dissipation can alter wavenumber selection beyond the free-wave approximation.",
+      "related_ids": [],
+      "source_ids": [
+        "faraday",
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A dispersion relation links angular frequency and wavenumber. Bending waves and gravity-capillary surface waves have different relations, so identical excitation frequencies do not imply identical wavelengths or patterns.",
+      "title": "Dispersion"
+    },
+    {
+      "aliases": [
+        "free edge",
+        "clamped edge",
+        "simply supported",
+        "centre mount"
+      ],
+      "applicability": "Boundary values must reflect physical mounting.",
+      "domain": "wave-foundations",
+      "equation": null,
+      "id": "wave-boundaries",
+      "limitations": "A centre-clamped demonstration plate is not equivalent to a plate supported on every edge.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Fixed, free, clamped and simply supported boundaries impose different constraints on displacement, slope, bending moment or force; they change accessible normal modes.",
+      "title": "Boundary conditions"
+    },
+    {
+      "aliases": [
+        "plate equation",
+        "thin plate",
+        "flexural rigidity"
+      ],
+      "applicability": "Thickness much smaller than in-plane spans; small deflections; negligible transverse shear in the thin-plate regime.",
+      "domain": "plate-mechanics",
+      "equation": "D = E*h^3 / (12*(1-nu^2))",
+      "id": "plate-kirchhoff",
+      "limitations": "Thick plates, anisotropy, pre-stress, fluid loading and nonlinear deflections need different models.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Thin, uniform, homogeneous, isotropic plates can be represented by a linear bending equation relating flexural rigidity, areal mass and transverse displacement.",
+      "title": "Kirchhoff–Love plate approximation"
+    },
+    {
+      "aliases": [
+        "rectangular plate",
+        "modal formula",
+        "Kirchhoff Love"
+      ],
+      "applicability": "Uniform plate; exact simply supported boundary conditions.",
+      "domain": "plate-mechanics",
+      "equation": "f_mn = (pi/2)*sqrt(D/(rho*h))*((m/Lx)^2 + (n/Ly)^2)",
+      "id": "plate-square",
+      "limitations": "This analytical expression is NOT a prediction for a centre-clamped free-edge Chladni plate.",
+      "related_ids": [
+        "plate-mode-shapes",
+        "plate-degenerate",
+        "wave-boundaries"
+      ],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "For a thin isotropic rectangle simply supported on all four edges, sinusoidal separable modes yield frequencies proportional to [(m/Lx)^2+(n/Ly)^2] times sqrt(D/(rho*h)).",
+      "title": "Rectangular simply supported plate spectrum"
+    },
+    {
+      "aliases": [
+        "eigenfunctions",
+        "nodal lines",
+        "mode numbers"
+      ],
+      "applicability": "Only exact for the idealized simply supported rectangle.",
+      "domain": "plate-mechanics",
+      "equation": "W_mn(x,y) = sin(m*pi*x/Lx)*sin(n*pi*y/Ly)",
+      "id": "plate-mode-shapes",
+      "limitations": "Grain accumulation requires dynamics not supplied by this eigenfunction alone.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "The modal displacement basis has the form sin(m*pi*x/Lx)*sin(n*pi*y/Ly) for positive integer m,n. Nodes occur where the amplitude vanishes; the entire boundary is nodal for this support condition.",
+      "title": "Mode shapes on a simply supported rectangle"
+    },
+    {
+      "aliases": [
+        "scaling law",
+        "thickness changes"
+      ],
+      "applicability": "Keep material and support model fixed while varying thickness.",
+      "domain": "plate-mechanics",
+      "equation": "f proportional to h",
+      "id": "plate-thickness",
+      "limitations": "Thicker specimens may violate thin-plate assumptions or alter mounting.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "In the Kirchhoff–Love expression with fixed E, nu, rho and in-plane dimensions, the natural frequency scales linearly with plate thickness because D scales with h^3 while mass per area scales with h.",
+      "title": "Thickness scaling invariant"
+    },
+    {
+      "aliases": [
+        "scale invariance",
+        "length scaling"
+      ],
+      "applicability": "Geometrically similar plate in-plane dimensions, fixed thickness.",
+      "domain": "plate-mechanics",
+      "equation": "f(sLx,sLy) = f(Lx,Ly)/s^2",
+      "id": "plate-span",
+      "limitations": "Does not describe a full similarity transform that scales thickness too.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Scaling both plate spans by s with fixed material, thickness and support yields f proportional to 1/s^2 in the ideal simply supported bending model.",
+      "title": "In-plane geometric scaling invariant"
+    },
+    {
+      "aliases": [
+        "degeneracy",
+        "same frequency different pattern",
+        "orthogonal modes"
+      ],
+      "applicability": "Exact geometric and material symmetry.",
+      "domain": "plate-mechanics",
+      "equation": null,
+      "id": "plate-degenerate",
+      "limitations": "A frequency-to-picture lookup need not be unique; tiny imperfections can split degenerate frequencies.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "In a square isotropic simply supported plate, modes indexed (m,n) and (n,m) share a natural frequency. Their linear combinations can have different nodal geometries at the same frequency.",
+      "title": "Degenerate modes and pattern ambiguity"
+    },
+    {
+      "aliases": [
+        "Q factor",
+        "damped resonance",
+        "linewidth"
+      ],
+      "applicability": "Approximately linear response with identifiable modes.",
+      "domain": "plate-mechanics",
+      "equation": null,
+      "id": "plate-damping",
+      "limitations": "Peak widths depend on instrument response, forcing, overlaps and nonlinearities; a high-Q assumption may fail.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Damping limits the amplitude of driven resonances and broadens response peaks; a quality factor or damping ratio can summarize the sharpness of a sufficiently isolated mode.",
+      "title": "Damping and resonance width"
+    },
+    {
+      "aliases": [
+        "directional stiffness",
+        "composites",
+        "orthotropic"
+      ],
+      "applicability": "Wood, composites and rolled sheets may be directionally stiff.",
+      "domain": "plate-mechanics",
+      "equation": null,
+      "id": "plate-anisotropy",
+      "limitations": "Do not fit an isotropic model and infer material identity without examining anisotropy.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "When stiffness varies by direction, mode shapes and frequencies differ from isotropic formulas, even at the same dimensions and mass density.",
+      "title": "Orthotropic and anisotropic plates"
+    },
+    {
+      "aliases": [
+        "shaker",
+        "speaker",
+        "driver position",
+        "observability"
+      ],
+      "applicability": "Driven, linear regime with a specified excitation point and amplitude.",
+      "domain": "plate-mechanics",
+      "equation": null,
+      "id": "plate-driving",
+      "limitations": "A weak or missing resonance in one setup is not proof the corresponding eigenmode is absent.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Driving a plate near a nodal region of a particular mode can excite that mode weakly; the observed response is determined by the modal coupling of the forcing distribution.",
+      "title": "Excitation position and modal observability"
+    },
+    {
+      "aliases": [
+        "sand patterns",
+        "Chladni figures",
+        "vibration geometry"
+      ],
+      "applicability": "A suitable plate, low-mass particles, and sufficient drive.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "chladni-method",
+      "limitations": "Not a direct reconstruction of the underlying displacement phase or pressure field; grain size, friction and acceleration matter.",
+      "related_ids": [
+        "wave-nodes",
+        "chladni-grains",
+        "plate-mode-shapes"
+      ],
+      "source_ids": [
+        "colorado",
+        "harvard"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Dispersed grains on a vibrating plate can migrate and settle near low-motion nodal regions, creating visible Chladni figures that vary with frequency and geometry.",
+      "title": "Chladni plate method"
+    },
+    {
+      "aliases": [
+        "powder",
+        "granular physics",
+        "sand migration",
+        "Chladni grains accumulate nodal lines",
+        "grain migration nodal patterns"
+      ],
+      "applicability": "Granular demonstration with particles on a solid surface.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "chladni-grains",
+      "limitations": "A pure structural eigenmode solver does not calculate particle trajectories or final grain densities.",
+      "related_ids": [],
+      "source_ids": [
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "The time-dependent grain pattern reflects repeated contact, sliding, impact, airflow, friction and vibration; the stabilized image depends on both plate dynamics and particle dynamics.",
+      "title": "Granular transport mechanisms"
+    },
+    {
+      "aliases": [
+        "Ernst Chladni",
+        "history",
+        "acoustic history"
+      ],
+      "applicability": "History of acoustic demonstrations.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "chladni-historical",
+      "limitations": "Different plates, supports and frequencies do not encode universal symbols independent of the apparatus.",
+      "related_ids": [],
+      "source_ids": [
+        "smithsonian",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Chladni figures are named for the experiments that made vibrational modes visible with fine particles on plates. The historical method is a demonstration of mechanical modes, not evidence of a universal hidden geometric code.",
+      "title": "Ernst Chladni and historical context"
+    },
+    {
+      "aliases": [
+        "computer vision",
+        "mask extraction",
+        "photo segmentation"
+      ],
+      "applicability": "Controlled camera images with known plate geometry.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "chladni-photogrammetry",
+      "limitations": "A compelling photograph without raw capture and a reference scale does not establish quantitative mode geometry.",
+      "related_ids": [],
+      "source_ids": [
+        "colorado",
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "An image-based comparison should register the plate boundary, correct lens perspective, record illumination and provide segmentation uncertainty before extracting spatial signatures.",
+      "title": "Image acquisition of nodal patterns"
+    },
+    {
+      "aliases": [
+        "Faraday patterns",
+        "parametric waves",
+        "liquid cymatics"
+      ],
+      "applicability": "Fluid depth, viscosity, surface tension and drive amplitude are specified.",
+      "domain": "fluid-and-surface-waves",
+      "equation": null,
+      "id": "fluid-faraday",
+      "limitations": "Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.",
+      "related_ids": [
+        "fluid-threshold",
+        "fluid-dispersion",
+        "fluid-nonlinearity"
+      ],
+      "source_ids": [
+        "faraday",
+        "biopattern"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.",
+      "title": "Faraday waves and parametric forcing"
+    },
+    {
+      "aliases": [
+        "threshold",
+        "bifurcation",
+        "surface vibration"
+      ],
+      "applicability": "Driven surface-wave experiment.",
+      "domain": "fluid-and-surface-waves",
+      "equation": null,
+      "id": "fluid-threshold",
+      "limitations": "A visible onset threshold must be measured and cannot be read from simple free-wave dispersion alone.",
+      "related_ids": [],
+      "source_ids": [
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A flat liquid surface can remain stable at low forcing and develop periodic waves after an instability threshold depending on depth, viscosity, frequency and surface tension.",
+      "title": "Instability threshold"
+    },
+    {
+      "aliases": [
+        "capillary waves",
+        "surface tension",
+        "water wave dispersion"
+      ],
+      "applicability": "Linear surface gravity-capillary waves when forcing and viscosity are negligible.",
+      "domain": "fluid-and-surface-waves",
+      "equation": "omega^2 = (g*k + sigma*k^3/rho)*tanh(k*depth)  [free inviscid case]",
+      "id": "fluid-dispersion",
+      "limitations": "Do not substitute a free-wave expression as a full Faraday-wave model.",
+      "related_ids": [],
+      "source_ids": [
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Surface waves are shaped by both gravity and surface tension, with wavenumber and finite depth affecting frequency; viscous and parametrically driven cases need extended treatments.",
+      "title": "Gravity-capillary dispersion"
+    },
+    {
+      "aliases": [
+        "symmetry",
+        "bifurcations",
+        "nonlinear waves"
+      ],
+      "applicability": "Driven fluids near pattern formation thresholds.",
+      "domain": "fluid-and-surface-waves",
+      "equation": null,
+      "id": "fluid-nonlinearity",
+      "limitations": "Avoid treating every visible multi-fold surface shape as a linear eigenmode.",
+      "related_ids": [],
+      "source_ids": [
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Near or beyond parametric onset, multiple surface modes can interact and compete. Bifurcations may be supercritical or subcritical depending on physical parameters.",
+      "title": "Nonlinear mode competition"
+    },
+    {
+      "aliases": [
+        "pressure antinode",
+        "ultrasound",
+        "fluid acoustics"
+      ],
+      "applicability": "Linear small-amplitude acoustics.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-pressure",
+      "limitations": "Sound pressure measurement in air does not directly reveal a plate’s displacement field.",
+      "related_ids": [],
+      "source_ids": [
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "In gases and liquids, sound fields are often characterized by time-varying pressure and particle velocity. Standing pressure fields are distinct from plate displacement modes and require fluid acoustics modeling.",
+      "title": "Acoustic pressure field"
+    },
+    {
+      "aliases": [
+        "Gor kov potential",
+        "radiation force",
+        "acoustophoresis"
+      ],
+      "applicability": "Small particles and acoustic field regimes specified by a suitable force model.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-radiation",
+      "limitations": "Particles do not always move toward pressure nodes; acoustic contrast and other forces matter.",
+      "related_ids": [
+        "acoustic-streaming",
+        "acoustic-levitation",
+        "acoustofluidic-sorting"
+      ],
+      "source_ids": [
+        "bruus",
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Time-averaged momentum transfer from an acoustic wave can exert forces on particles; its direction and strength depend on particle properties, fluid and wave geometry.",
+      "title": "Acoustic radiation force"
+    },
+    {
+      "aliases": [
+        "streaming",
+        "viscous effects",
+        "particle motion"
+      ],
+      "applicability": "Viscous-fluid acoustics.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-streaming",
+      "limitations": "Do not interpret all particle trajectories as radiation-force phenomena.",
+      "related_ids": [],
+      "source_ids": [
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Absorption and boundary layers can generate steady or slowly varying fluid flows in an oscillating acoustic field; these flows can transport particles independently of radiation forces.",
+      "title": "Acoustic streaming"
+    },
+    {
+      "aliases": [
+        "added mass",
+        "fluid loaded resonance",
+        "coupled system"
+      ],
+      "applicability": "Coupled structural-fluid system.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-coupling",
+      "limitations": "Uncoupled vacuum-plate eigenfrequencies are not necessarily valid when immersed in water.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A vibrating structure can drive an adjacent fluid and the fluid can load and shift the structure’s response, especially in immersed or thin structures.",
+      "title": "Fluid-structure coupling"
+    },
+    {
+      "aliases": [
+        "ultrasonic levitation",
+        "acoustic tweezers",
+        "particle trapping"
+      ],
+      "applicability": "Suitable object size, acoustic contrast, power and geometry.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-levitation",
+      "limitations": "Levitation evidence does not imply unrestricted manipulation of arbitrary objects or medical efficacy.",
+      "related_ids": [],
+      "source_ids": [
+        "levitation",
+        "tweezers"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Structured acoustic pressure fields can stably position some small objects using radiation forces; phased arrays and holographic fields enable advanced field control.",
+      "title": "Acoustic levitation and trapping"
+    },
+    {
+      "aliases": [
+        "acoustic field synthesis",
+        "holographic transducer"
+      ],
+      "applicability": "Coherent acoustic drive and correctly designed holographic element.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-holography",
+      "limitations": "An acoustic hologram is a phase-engineering method, not a spontaneous Chladni code.",
+      "related_ids": [
+        "field-design",
+        "acoustic-levitation"
+      ],
+      "source_ids": [
+        "holograms"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A spatially patterned transmission or reflection element can shape ultrasonic phase and amplitude, producing designed acoustic fields for experimental manipulation.",
+      "title": "Acoustic holograms"
+    },
+    {
+      "aliases": [
+        "FAIR data",
+        "raw measurement",
+        "experiment provenance"
+      ],
+      "applicability": "Scientific observation intended for later reanalysis.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-raw",
+      "limitations": "A derived spectrum or image alone may omit calibration and procedural confounders.",
+      "related_ids": [
+        "experiment-calibration",
+        "experiment-uncertainty",
+        "evidence-packet"
+      ],
+      "source_ids": [
+        "gum",
+        "prov"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A reproducible run should preserve original waveform, camera frames, sensor traces, equipment settings, timestamps, sample geometry, units and raw-file hashes.",
+      "title": "Raw data and provenance"
+    },
+    {
+      "aliases": [
+        "metrology",
+        "traceability",
+        "measurement standards"
+      ],
+      "applicability": "Well-defined measurands and calibrated instruments.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-calibration",
+      "limitations": "A label such as \"calibrated\" without a certificate, date, range or uncertainty is not sufficient.",
+      "related_ids": [],
+      "source_ids": [
+        "gum",
+        "gum2026"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Instrument calibration links a measured quantity to reference standards and a stated uncertainty through an unbroken documented chain, where applicable.",
+      "title": "Calibration and traceability"
+    },
+    {
+      "aliases": [
+        "standard uncertainty",
+        "GUM",
+        "measurement error"
+      ],
+      "applicability": "Measured frequency, length, thickness, acceleration, temperature, etc.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-uncertainty",
+      "limitations": "Uncertainty is not the same as an error or a confidence score assigned by an agent.",
+      "related_ids": [],
+      "source_ids": [
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A measurement result is incomplete for quantitative comparison without a statement of uncertainty appropriate to its method; both repeatability and systematic components may matter.",
+      "title": "Measurement uncertainty"
+    },
+    {
+      "aliases": [
+        "repeatability",
+        "replication",
+        "reproducibility"
+      ],
+      "applicability": "Predeclared measurement protocol and comparisons.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-replication",
+      "limitations": "Re-running a deterministic formula does not validate its physical model.",
+      "related_ids": [],
+      "source_ids": [
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Repeatability holds conditions nearly constant; reproducibility deliberately changes conditions such as operator, equipment, batch or lab. Both help identify sensitivity and robustness.",
+      "title": "Repeatability and reproducibility"
+    },
+    {
+      "aliases": [
+        "blind study",
+        "held out",
+        "leakage",
+        "benchmark"
+      ],
+      "applicability": "Supervised evaluation with access to held-out ground truth.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-blinding",
+      "limitations": "Training and evaluating on the same nominal patterns exaggerates generalization.",
+      "related_ids": [],
+      "source_ids": [
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "To test pattern identification fairly, register expected labels and scoring methods, hide the test condition from the classifier, then evaluate held-out plates or repeats.",
+      "title": "Blinded mode identification"
+    },
+    {
+      "aliases": [
+        "accelerometer",
+        "drive amplitude",
+        "temperature",
+        "equipment safety"
+      ],
+      "applicability": "Controlled experiments with documented apparatus and safety procedure.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "experiment-exposure",
+      "limitations": "Ultrasonic systems and high-amplitude mechanical shakers require hardware-specific precautions; this atlas is not a safety certification.",
+      "related_ids": [],
+      "source_ids": [
+        "colorado",
+        "microfluidics"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Record acoustic power, voltage, peak acceleration, mounting pressure, temperature, fluid properties and exposure conditions, because these can change observed patterns.",
+      "title": "Drive level, environmental conditions and safety"
+    },
+    {
+      "aliases": [
+        "FFT",
+        "digitization",
+        "Nyquist",
+        "sample rate"
+      ],
+      "applicability": "Digitized time signals with known sampling chain.",
+      "domain": "signal-processing",
+      "equation": null,
+      "id": "signal-sampling",
+      "limitations": "A peak below Nyquist can still be an alias when higher-frequency content is present.",
+      "related_ids": [],
+      "source_ids": [
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Uniform sampling at rate Fs can only represent certain bandlimited signal content without aliasing. Anti-alias filtering and sufficient bandwidth are essential when estimating frequencies.",
+      "title": "Sampling rate and aliasing"
+    },
+    {
+      "aliases": [
+        "FFT leakage",
+        "Hann window",
+        "spectral resolution"
+      ],
+      "applicability": "Finite-time Fourier spectral estimates.",
+      "domain": "signal-processing",
+      "equation": null,
+      "id": "signal-window",
+      "limitations": "Peak magnitude depends on window normalization and bin alignment; do not compare arbitrary FFT plots without metadata.",
+      "related_ids": [],
+      "source_ids": [
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A finite observation interval can spread sinusoidal energy across spectral bins; windows trade resolution, leakage behavior and amplitude calibration.",
+      "title": "Spectral leakage and window functions"
+    },
+    {
+      "aliases": [
+        "frequency sweep",
+        "transfer function",
+        "FRF",
+        "resonance peaks"
+      ],
+      "applicability": "Linear or specified nonlinear experiment.",
+      "domain": "signal-processing",
+      "equation": null,
+      "id": "signal-sweep",
+      "limitations": "A spectrogram of a sweep is not by itself a mode-shape measurement; drive drift confounds peak comparisons.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A controlled frequency sweep records response versus drive frequency and can reveal resonance peaks. Each sample should include actual input amplitude and timing.",
+      "title": "Frequency response sweep"
+    },
+    {
+      "aliases": [
+        "modal fingerprint",
+        "spectral spatial",
+        "diagnostic signature"
+      ],
+      "applicability": "Testable research design rather than a proven unique fingerprint.",
+      "domain": "signal-processing",
+      "equation": null,
+      "id": "signal-signature",
+      "limitations": "Isospectral or nearly degenerate cases and uncertain supports can defeat unique identification.",
+      "related_ids": [
+        "signal-feature",
+        "inverse-identity",
+        "inverse-residual"
+      ],
+      "source_ids": [
+        "leissa",
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A useful resonance signature may combine a calibrated spectrum with registered displacement maps, instrument context, modal uncertainty and provenance, rather than a bare frequency list.",
+      "title": "Spectral-spatial resonance signature"
+    },
+    {
+      "aliases": [
+        "spatial descriptors",
+        "modal assurance criterion",
+        "MAC"
+      ],
+      "applicability": "Images or laser-scanned mode maps after coordinate registration.",
+      "domain": "signal-processing",
+      "equation": null,
+      "id": "signal-feature",
+      "limitations": "Visual similarity need not imply matching material or boundary conditions.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "colorado"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Useful spatial descriptors can include connected nodal regions, symmetry class, registered spatial frequencies and mode-shape correlations. Their robustness should be measured under image noise and alignment errors.",
+      "title": "Nodal-pattern feature extraction"
+    },
+    {
+      "aliases": [
+        "nonidentifiability",
+        "inverse resonances",
+        "parameter estimation"
+      ],
+      "applicability": "Inverse estimation from limited measurements.",
+      "domain": "inverse-problems",
+      "equation": null,
+      "id": "inverse-identity",
+      "limitations": "A single observed Chladni pattern or tone cannot reliably reveal arbitrary material composition.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Different combinations of geometry, material, thickness, supports and loading may produce similar or overlapping spectral information, creating non-identifiability.",
+      "title": "Inverse identification is often non-unique"
+    },
+    {
+      "aliases": [
+        "model comparison",
+        "priors",
+        "Bayesian inference"
+      ],
+      "applicability": "Bayesian or constrained inverse inference.",
+      "domain": "inverse-problems",
+      "equation": null,
+      "id": "inverse-priors",
+      "limitations": "A model fit without out-of-sample evidence or residual checks is not a scientific identification.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Specify plausible material, plate thickness, geometry and boundary conditions before fitting; compare alternative model families rather than forcing a single favorite explanation.",
+      "title": "Prior constraints and model selection"
+    },
+    {
+      "aliases": [
+        "prediction errors",
+        "residual map",
+        "validation"
+      ],
+      "applicability": "Matched observations and forward predictions.",
+      "domain": "inverse-problems",
+      "equation": null,
+      "id": "inverse-residual",
+      "limitations": "Small residuals alone do not prove the assumed physical model is unique or correctly calibrated.",
+      "related_ids": [],
+      "source_ids": [
+        "gum",
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Compare predicted and observed frequencies and mode shapes with error bars, recording discrepancies and systematic trends. Residual structure can reveal wrong support or material assumptions.",
+      "title": "Residual and uncertainty diagnostics"
+    },
+    {
+      "aliases": [
+        "microfluidic sorting",
+        "biomedical application",
+        "cells"
+      ],
+      "applicability": "Specific device geometry, particle contrasts and controlled biocompatibility.",
+      "domain": "applications",
+      "equation": null,
+      "id": "acoustofluidic-sorting",
+      "limitations": "These methods are application-dependent and do not demonstrate universal frequency-specific biological effects.",
+      "related_ids": [],
+      "source_ids": [
+        "microfluidics",
+        "applied"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Acoustofluidic devices exploit ultrasound-induced forces and flows to align or transport selected particles and cells in microfluidic channels.",
+      "title": "Particle and cell sorting by acoustics"
+    },
+    {
+      "aliases": [
+        "biofabrication",
+        "tissue engineering",
+        "cell patterning"
+      ],
+      "applicability": "Engineered in-vitro experimental systems.",
+      "domain": "applications",
+      "equation": null,
+      "id": "acoustofluidic-pattern",
+      "limitations": "Application research is not a claim that audible music cures disease or recodes DNA.",
+      "related_ids": [],
+      "source_ids": [
+        "biopattern",
+        "applied"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Peer-reviewed studies investigate acoustic assembly and spatial organization of particles, cells and biofabrication materials using standing waves.",
+      "title": "Patterned biological assembly"
+    },
+    {
+      "aliases": [
+        "fault detection",
+        "structural health monitoring",
+        "mechanical testing"
+      ],
+      "applicability": "Instrumented structure with comparable baseline configurations.",
+      "domain": "applications",
+      "equation": null,
+      "id": "nondestructive-testing",
+      "limitations": "Detecting a modal shift is not automatically a unique diagnosis of the root cause.",
+      "related_ids": [],
+      "source_ids": [
+        "leissa",
+        "gum"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Modal measurements can reveal changes in stiffness, damping or constraints and support engineering condition-monitoring hypotheses when calibrated against reference data.",
+      "title": "Vibration-based structural diagnostics"
+    },
+    {
+      "aliases": [
+        "ultrasonic phase arrays",
+        "wavefront control"
+      ],
+      "applicability": "Laboratory transducers with specified wavelength, phase control and operating environment.",
+      "domain": "applications",
+      "equation": null,
+      "id": "field-design",
+      "limitations": "These techniques should not be conflated with ordinary visible Chladni figures.",
+      "related_ids": [],
+      "source_ids": [
+        "holograms",
+        "tweezers"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Acoustic holograms and phased ultrasound can produce selected spatial pressure patterns for manipulation, levitation and laboratory instrumentation.",
+      "title": "Designed acoustic field manipulation"
+    },
+    {
+      "aliases": [
+        "knowledge status",
+        "source evidence",
+        "candidate",
+        "admitted"
+      ],
+      "applicability": "All knowledge services and agent retrieval tasks.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-state",
+      "limitations": "Document hashes detect changes but do not establish that a claim is true.",
+      "related_ids": [],
+      "source_ids": [
+        "prov"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A linked reference summary, mathematical derivation, synthetic computation and physical measurement have different evidentiary standing. Agent-generated summaries must remain candidates until reviewed.",
+      "title": "Evidence levels must remain distinct"
+    },
+    {
+      "aliases": [
+        "research amortization",
+        "EPRA",
+        "citation packet",
+        "knowledge reuse"
+      ],
+      "applicability": "Local research amortization workflows.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-packet",
+      "limitations": "A packet is not an unrestricted answer, and an admitted packet can still later be revised or retracted.",
+      "related_ids": [
+        "evidence-freshness",
+        "evidence-state",
+        "evidence-interop"
+      ],
+      "source_ids": [
+        "prov",
+        "mcp"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A source-linked research packet can preserve a bounded claim, assumptions, scope, timestamp, rights, provenance and review decision so multiple systems reuse the same qualified evidence.",
+      "title": "Evidence packets as reusable atomic units"
+    },
+    {
+      "aliases": [
+        "stale data",
+        "revision history",
+        "claim lifecycle"
+      ],
+      "applicability": "Repositories integrating time-sensitive publications.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-freshness",
+      "limitations": "A retrieval hit or recently generated answer does not refresh a source itself.",
+      "related_ids": [],
+      "source_ids": [
+        "prov"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Reference metadata should track checked versions, retractions, conflicts, and freshness. Unknown or stale evidence should be disclosed and routed to fresh research instead of cited as current fact.",
+      "title": "Refresh and invalidation"
+    },
+    {
+      "aliases": [
+        "JSONL",
+        "MCP",
+        "agent knowledge",
+        "interoperability"
+      ],
+      "applicability": "Connected local models, agents and tools.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-interop",
+      "limitations": "Serialization alone does not guarantee the receiving model applies source limitations correctly.",
+      "related_ids": [],
+      "source_ids": [
+        "mcp",
+        "prov"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Versioned machine-readable records and read-only retrieval routes let independent agents request the same scoped scientific context with stable identifiers and explicit citations.",
+      "title": "Cross-system transport contracts"
+    },
+    {
+      "aliases": [
+        "universal sound code",
+        "369",
+        "miracle frequency",
+        "healing cymatics"
+      ],
+      "applicability": "Scientific interpretation of cymatics demonstrations.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-claims",
+      "limitations": "Absence of a universal law does not diminish valid applications of resonant patterning.",
+      "related_ids": [
+        "cymatics-definition",
+        "inverse-identity"
+      ],
+      "source_ids": [
+        "leissa",
+        "colorado",
+        "faraday"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Identical frequencies do not necessarily create the same pattern across materials and boundaries. Unsupported claims about universal number codes, disease cures or specific material transformations should be left unverified.",
+      "title": "Avoiding universal-frequency claims"
+    },
+    {
+      "aliases": [
+        "faraday instability chart",
+        "Benjamin Ursell",
+        "Mathieu instability",
+        "parametric tongues"
+      ],
+      "applicability": "For vertically oscillated liquid layers within the assumptions of the model; quantitative thresholds depend on viscosity, depth, geometry and forcing.",
+      "domain": "fluid-and-surface-waves",
+      "equation": null,
+      "id": "fluid-mathieu-instability",
+      "limitations": "The classical ideal-fluid stability model cannot be treated as a calibrated prediction for an arbitrary real fluid or container.",
+      "related_ids": [
+        "fluid-faraday",
+        "fluid-threshold"
+      ],
+      "source_ids": [
+        "benjamin-ursell-1954"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Parametric excitation of a liquid surface can be analyzed through stability of periodically forced modes; instability regions depend on forcing amplitude and frequency. This is a threshold phenomenon rather than a one-frequency one-pattern rule.",
+      "title": "Mathieu-type parametrically driven free-surface instability"
+    },
+    {
+      "aliases": [
+        "viscous radiation force",
+        "Settnes Bruus",
+        "acoustic boundary layer"
+      ],
+      "applicability": "Ultrasonic particle manipulation with particle radius and boundary-layer thickness both small compared with wavelength.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-viscous-scattering",
+      "limitations": "Not a general solution for arbitrary particles, elastic shapes, wavelengths or turbulence.",
+      "related_ids": [
+        "acoustic-radiation",
+        "acoustic-streaming"
+      ],
+      "source_ids": [
+        "settnes-bruus-2012"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Radiation-force models for small compressible spheres in viscous fluids include a viscous boundary layer and can differ from ideal-fluid approximations.",
+      "title": "Viscous corrections to acoustic radiation force"
+    },
+    {
+      "aliases": [
+        "thermoviscous contrast",
+        "particle size sign reversal",
+        "Karlsen Bruus"
+      ],
+      "applicability": "Small spheres relative to wavelength; thermoviscous fluid and appropriately described particle material.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-thermoviscous-contrast",
+      "limitations": "The cited paper provides conditional theoretical predictions; a reversal is not guaranteed for all experiments.",
+      "related_ids": [
+        "acoustic-viscous-scattering",
+        "acoustic-radiation"
+      ],
+      "source_ids": [
+        "karlsen-bruus-2015"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Thermoviscous theory predicts that dissipative fluid and particle properties can alter the direction and magnitude of the acoustic radiation force, including size-dependent sign changes in some material systems.",
+      "title": "Thermoviscous size-dependent particle contrast"
+    },
+    {
+      "aliases": [
+        "Gorkov potential",
+        "acoustic potential",
+        "ideal fluid radiation force"
+      ],
+      "applicability": "Ideal-fluid, long-wavelength, small-particle regime; analyze departures from these assumptions separately.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustic-gorkov-limit",
+      "limitations": "A bibliographic record establishes the historical work, not the range of agreement with a particular viscous experiment.",
+      "related_ids": [
+        "acoustic-radiation",
+        "acoustic-viscous-scattering"
+      ],
+      "source_ids": [
+        "gorkov-1961",
+        "settnes-bruus-2012"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Gor'kov's classic treatment concerns forces on small particles in ideal acoustic fluids and motivates later radiation-force approximations.",
+      "title": "Gor'kov ideal-fluid small-particle force model"
+    },
+    {
+      "aliases": [
+        "acoustic hologram",
+        "Melde 2016",
+        "phase mask",
+        "3d printed ultrasound hologram"
+      ],
+      "applicability": "Spatial wavefront design using the acoustic medium, source and fabricated hologram configuration of the research.",
+      "domain": "applications",
+      "equation": null,
+      "id": "acoustic-hologram-reconstruction",
+      "limitations": "Not every Chladni pattern is an acoustic hologram; field reconstruction efficiency and resolution depend on device conditions.",
+      "related_ids": [
+        "acoustic-holography",
+        "field-design"
+      ],
+      "source_ids": [
+        "melde-2016"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A fabricated holographic phase profile can reconstruct a complex acoustic field when illuminated by an appropriate coherent source. Acoustic holograms have been demonstrated for contact-free field shaping.",
+      "title": "Phase-encoded acoustic hologram reconstruction"
+    },
+    {
+      "aliases": [
+        "NIST TN 1297",
+        "combined standard uncertainty",
+        "error budget"
+      ],
+      "applicability": "Measurements with a defined procedure, repeatability statistics, instrument calibration and traceability where applicable.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "measurement-nist-uncertainty",
+      "limitations": "Uncertainty is not the same as error or experimental proof; a poorly specified measurand cannot be repaired by extra decimal places.",
+      "related_ids": [
+        "experiment-uncertainty",
+        "experiment-calibration"
+      ],
+      "source_ids": [
+        "nist-tn1297"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "NIST TN 1297 provides guidance for evaluating and expressing measurement uncertainty. Report the measurand, units, identified uncertainty contributors and the method used to combine them.",
+      "title": "Measurement uncertainty and stated error budget"
+    },
+    {
+      "aliases": [
+        "BIPM 2026",
+        "SI ninth edition",
+        "unit conventions"
+      ],
+      "applicability": "Scientific reporting in SI or clearly documented conversion units.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "measurement-si-2026",
+      "limitations": "The existence of a current brochure does not validate calibration or measurements in an individual experiment.",
+      "related_ids": [
+        "experiment-uncertainty",
+        "measurement-nist-uncertainty"
+      ],
+      "source_ids": [
+        "bipm-si-2026"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "The BIPM SI Brochure ninth edition has a revised version published in June 2026; unit definitions and presentation should cite the appropriate dated revision.",
+      "title": "SI standard: latest revision and unit conventions"
+    },
+    {
+      "aliases": [
+        "PROV-O",
+        "W3C provenance",
+        "prov Entity Activity Agent"
+      ],
+      "applicability": "Machine-readable research lineage, transform metadata, author/reviewer attributions and versioned exports.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-prov-graph",
+      "limitations": "A provenance graph proves only recorded relationships when authenticated; it does not certify scientific correctness or the actor's true identity.",
+      "related_ids": [
+        "evidence-packet",
+        "experiment-raw"
+      ],
+      "source_ids": [
+        "w3c-prov-2013"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "W3C PROV-O defines interoperable vocabulary for representing entities, activities, agents and relations between the artifacts and processes of research.",
+      "title": "Provenance graph: entities, activities and agents"
+    },
+    {
+      "aliases": [
+        "publisher abstract",
+        "bibliographic record",
+        "claim audit",
+        "source anchor"
+      ],
+      "applicability": "Science-literature synthesis consumed by agents without automatic source access.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-public-abstract",
+      "limitations": "Verifying a source abstract is not equivalent to reading full methods or independently confirming an empirical result.",
+      "related_ids": [
+        "evidence-state",
+        "evidence-claims"
+      ],
+      "source_ids": [
+        "w3c-prov-2013",
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A bibliographic catalog entry, publisher abstract, full-text method passage, replicated experiment and independently evaluated measurement warrant different levels of inference. Store the exact evidence-access tier for each claim.",
+      "title": "Claim-to-source support levels and public abstracts"
+    },
+    {
+      "aliases": [
+        "abstention",
+        "retrieval insufficient",
+        "unknown question"
+      ],
+      "applicability": "Model and agent workflows combining cached reference summaries with question answering.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "evidence-research-fallback",
+      "limitations": "Matching a word in a concept title does not establish a source supporting the requested conclusion.",
+      "related_ids": [
+        "evidence-freshness",
+        "evidence-interop"
+      ],
+      "source_ids": [
+        "w3c-prov-2013"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A reusable reference must explicitly abstain or request additional investigation when topical lexical retrieval does not cover the question. A related reference cannot substantiate a causal, therapeutic, or universal claim outside its scope.",
+      "title": "Research fallback when scoped references are insufficient"
+    },
+    {
+      "aliases": [
+        "EPRA benchmarking",
+        "cost break even",
+        "eligible reuse rate"
+      ],
+      "applicability": "Repeated research tasks with known cost accounting and predeclared quality metrics.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "research-validated-reuse",
+      "limitations": "The EPRA example is synthetic and no energy or GPU savings are demonstrated for this repository.",
+      "related_ids": [
+        "evidence-packet",
+        "evidence-freshness"
+      ],
+      "source_ids": [
+        "w3c-prov-2013"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A reusable evidence layer is useful when construction and maintenance costs are amortized across enough eligible queries without reducing answer quality, freshness or citation fidelity relative to appropriate baselines.",
+      "title": "Measure amortization with answer-quality constraints"
+    },
+    {
+      "aliases": [
+        "isospectral",
+        "inverse eigenvalue",
+        "modal fingerprint nonuniqueness"
+      ],
+      "applicability": "Parameter inference from plate or acoustic resonance patterns, with experimental boundary conditions noted.",
+      "domain": "inverse-problems",
+      "equation": null,
+      "id": "inverse-nodal-degeneracy",
+      "limitations": "An identifiability claim must be demonstrated for the chosen model and observation set; this record is a general caution.",
+      "related_ids": [
+        "inverse-identity",
+        "plate-degenerate"
+      ],
+      "source_ids": [
+        "leissa"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A modal frequency or nodal image need not uniquely determine support type or material parameters; distinct physical systems may exhibit overlapping spectra and similar mode shapes.",
+      "title": "Non-unique inversion from resonance geometry"
+    },
+    {
+      "aliases": [
+        "NIST TN 1297 reporting uncertainty",
+        "coverage factor",
+        "standard uncertainty"
+      ],
+      "applicability": "Reporting measured modal frequency, displacement, drive or sensor response.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "measurement-reporting-uncertainty",
+      "limitations": "These are metrological reporting principles, not a claim that the Atlas has calibrated any hardware.",
+      "related_ids": [
+        "experiment-uncertainty",
+        "measurement-nist-uncertainty"
+      ],
+      "source_ids": [
+        "nist-tn1297"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "An experimental result should state uncertainty components and how they were estimated. If expanded uncertainty is reported, identify the coverage factor and basis for its interpretation.",
+      "title": "Standard uncertainty and coverage factors"
+    },
+    {
+      "aliases": [
+        "instrument metadata",
+        "calibration certificate",
+        "response sensor"
+      ],
+      "applicability": "Importing experimental spectra, especially when comparing excitation and observed resonances.",
+      "domain": "measurement-and-metrology",
+      "equation": null,
+      "id": "measurement-instrument-provenance",
+      "limitations": "Metadata supplied by an operator do not independently establish that the instrument was actually calibrated.",
+      "related_ids": [
+        "experiment-calibration",
+        "experiment-raw"
+      ],
+      "source_ids": [
+        "nist-tn1297",
+        "wilkinson-fair-2016"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A frequency-response observation must carry its collection method, instrument identity, calibration reference, units, sample uncertainty, apparatus and boundary conditions to remain interpretable across systems.",
+      "title": "Instrument and calibration provenance"
+    },
+    {
+      "aliases": [
+        "FAIR metadata",
+        "data portability",
+        "interoperable provenance"
+      ],
+      "applicability": "Machine-readable exports and research archive exchange across independent agents.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "research-fair-data",
+      "limitations": "FAIR is a design guideline. Content rights, authentication and actual semantic compatibility still require checks.",
+      "related_ids": [
+        "evidence-interop",
+        "evidence-packet"
+      ],
+      "source_ids": [
+        "wilkinson-fair-2016"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "The FAIR principles call for persistent identifiers, rich metadata, interoperable representation, qualified links and reusable provenance. They guide the design of Atlas exports, not proof that every record is compliant.",
+      "title": "Findable interoperable reusable scientific records"
+    },
+    {
+      "aliases": [
+        "Crossmark updates",
+        "retraction notices",
+        "source health"
+      ],
+      "applicability": "Maintaining the trust status and refresh policy of cited research sources.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "research-publication-updates",
+      "limitations": "An absent update flag in a local snapshot is not evidence that the article has never been updated or retracted.",
+      "related_ids": [
+        "evidence-freshness",
+        "evidence-state"
+      ],
+      "source_ids": [
+        "crossref-crossmark-2026",
+        "crossref-versioning-2025"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Scholarly records may be updated by separately identified corrections, concerns, withdrawals or retractions; a reader should follow authoritative notices and not assume a prior PDF is up-to-date.",
+      "title": "Publisher corrections and retraction notices"
+    },
+    {
+      "aliases": [
+        "evidence correction",
+        "publication integrity",
+        "Crossref update"
+      ],
+      "applicability": "Source-change monitoring and alert propagation in a reusable reference library.",
+      "domain": "research-epra",
+      "equation": null,
+      "id": "research-update-ambiguity",
+      "limitations": "Metadata checks can be incomplete; local operator-submitted notices are not independently authenticated.",
+      "related_ids": [
+        "research-publication-updates",
+        "evidence-public-abstract"
+      ],
+      "source_ids": [
+        "crossref-crossmark-2026",
+        "crossref-versioning-2025"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A report about a publication update is a lead for adjudication. Notice identity, target work, update type, publication date and scope must be checked before changing the scientific standing of dependent claims.",
+      "title": "Update signals versus verified conclusions"
+    },
+    {
+      "aliases": [
+        "Faraday 1831 acoustical figures",
+        "Faraday particles vibrating surfaces"
+      ],
+      "applicability": "History of experimental cymatics and interpretation of visually observed particle patterns.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "historical-faraday-figures",
+      "limitations": "The archival catalog verifies publication provenance, not a new experimental replication or a full reading of the manuscript.",
+      "related_ids": [
+        "chladni-method",
+        "cymatics-definition"
+      ],
+      "source_ids": [
+        "faraday-1831-royalsociety"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Faraday documented historical observations of fine particles forming distinct configurations on vibrating elastic surfaces. This is a primary historical account of particle motion and patterns, not a universal pattern-frequency formula.",
+      "title": "Faraday 1831: observing particles on vibrating elastic surfaces"
+    },
+    {
+      "aliases": [
+        "perturbation theory fluids ultrasound",
+        "first order and second order acoustofluidics"
+      ],
+      "applicability": "Analytical treatment of ultrasound resonance and acoustically driven fluid motion in microchannels under small-perturbation assumptions.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "microfluidic-perturbation-expansion",
+      "limitations": "This model is not interchangeable with elastic plate modes or free-surface parametric Faraday waves; material and thermal assumptions matter.",
+      "related_ids": [],
+      "source_ids": [
+        "bruus-2012-perturbation"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Small-amplitude sound fields in fluids can be modeled through perturbation expansions of density, pressure and velocity, separating first-order oscillations from second-order time-averaged motion.",
+      "title": "First- and second-order perturbation models in acoustofluidics"
+    },
+    {
+      "aliases": [
+        "acoustophoresis scaling law",
+        "acoustofluidics ten scaling laws"
+      ],
+      "applicability": "Comparisons and design calculations for microchannel particle motion under sound fields.",
+      "domain": "acoustic-fields",
+      "equation": null,
+      "id": "acoustophoresis-scaling-laws",
+      "limitations": "Source is a tutorial-level publisher abstract; specific formulas and device performance must be verified in the full paper and with actual device conditions.",
+      "related_ids": [],
+      "source_ids": [
+        "bruus-2012-scaling"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Acoustophoretic particle manipulation can be analyzed by scaling physical forces and characteristic lengths, times and amplitudes relevant to microfluidic systems.",
+      "title": "Scaling laws for acoustophoretic device design"
+    },
+    {
+      "aliases": [
+        "speaker excited Chladni brass plate",
+        "mounting thickness changes Chladni patterns"
+      ],
+      "applicability": "Planning reproducible plate experiments and comparing arrangements with different actuation and supports.",
+      "domain": "chladni-and-grains",
+      "equation": null,
+      "id": "thin-plate-support-excitation-dependence",
+      "limitations": "Specific thickness observations were reported for the original brass samples; they cannot be generalized to every plate and material.",
+      "related_ids": [
+        "chladni-method"
+      ],
+      "source_ids": [
+        "colwell-1932"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Experimental plates with different thickness, mounting, and vibration excitation can produce different or distorted nodal figures. Historical measurements by Colwell describe using speaker-driven excitation of thin brass plates.",
+      "title": "Chladni plate patterns depend on excitation and mounting"
+    },
+    {
+      "aliases": [
+        "Dryad Strickland Faraday wave surfactant 2015",
+        "measured height field Faraday waves dataset"
+      ],
+      "applicability": "External reproducibility research in wave-surface observations, imaging and inference.",
+      "domain": "fluid-and-surface-waves",
+      "equation": null,
+      "id": "faraday-surfacant-experimental-dataset",
+      "limitations": "Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.",
+      "related_ids": [
+        "fluid-faraday"
+      ],
+      "source_ids": [
+        "dryad-strickland-2015"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.",
+      "title": "Published Faraday-wave surface-height and surfactant measurements"
+    },
+    {
+      "aliases": [
+        "drum membrane measured modal frequencies dataset",
+        "Zenodo Wijnand tom tom Chladni videos"
+      ],
+      "applicability": "External empirical comparisons of membrane vibration, frequency shifts and feedback-control studies.",
+      "domain": "applications",
+      "equation": null,
+      "id": "drum-membrane-physical-data",
+      "limitations": "The Zenodo dataset is external; no video, audio or numeric measurement files were imported, checked or reproduced in this release.",
+      "related_ids": [
+        "chladni-method"
+      ],
+      "source_ids": [
+        "zenodo-drum-2026"
+      ],
+      "status": "curated_reference_not_experimentally_verified",
+      "summary": "A 2026 Zenodo research deposit describes pressure, membrane-frequency and control measurements and supplementary Chladni-figure videos for an experimental tom-tom drum vibration system.",
+      "title": "Published drum membrane mode-shift measurements and Chladni video"
+    }
+  ],
+  "corpus_version": "2026-11-11.2",
+  "maintainer": "James Paul Jackson",
+  "mission": "Reusable, source-linked, uncertainty-aware scientific reference infrastructure for any authorized agent, model or software system.",
+  "policy": {
+    "reference_status": "curated editorial synopsis, not independent experimental validation",
+    "source_status": "Source records carry individual metadata_checked dates (2026-11-10 and 2026-11-11); source pages may change and publication statuses are not monitored live.",
+    "update": "Append new version, preserve the old exported manifest and investigate conflicts",
+    "usage": "Cite provided source URLs; honor conditions and limitations; do not silently upgrade to verified experiment"
+  },
+  "schema": "cymatics.atlas.knowledge.v1",
+  "sources": [
+    {
+      "claim_review": "source_metadata_only",
+      "id": "leissa",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Public NASA metadata; linked external document rights govern any reuse",
+      "title": "Arthur W. Leissa, Vibration of Plates, NASA SP-160",
+      "type": "government technical monograph",
+      "url": "https://ntrs.nasa.gov/search.jsp?R=19700009156",
+      "year": 1969
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "colorado",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External university page, link only",
+      "title": "University of Colorado Boulder, Chladni Figures",
+      "type": "university demonstration",
+      "url": "https://physicslabs.colorado.edu/demos/oscillations-and-waves/instruments/resonance-in-plates-bars-solids/chladni-figures/",
+      "year": 2026
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "harvard",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External university page, link only",
+      "title": "Harvard Natural Sciences, Chladni Plates",
+      "type": "university demonstration",
+      "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/chladni-plates",
+      "year": null
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "smithsonian",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External museum page, link only; link may redirect",
+      "title": "Smithsonian, Chladni Plates",
+      "type": "museum collection",
+      "url": "https://americanhistory.si.edu/acoustics/chladni-plates",
+      "year": null
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "faraday",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Publisher rights apply; link and original synopsis only",
+      "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+      "type": "peer-reviewed research",
+      "url": "https://doi.org/10.1017/jfm.2015.382",
+      "year": 2015
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "bruus",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Publisher rights apply; link and original synopsis only",
+      "title": "Henrik Bruus, Acoustofluidics 7: The acoustic radiation force on small particles",
+      "type": "peer-reviewed tutorial",
+      "url": "https://doi.org/10.1039/C2LC21068A",
+      "year": 2012
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "microfluidics",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Check the original work license before text/media reuse; metadata links only",
+      "title": "Acoustic Microfluidics, open-access review",
+      "type": "peer-reviewed review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7415005/",
+      "year": 2020
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "biopattern",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External CC BY source; no verbatim passages mirrored",
+      "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+      "type": "peer-reviewed review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/",
+      "year": 2021
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "holograms",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Publisher rights apply; link and original synopsis only",
+      "title": "Melde et al., Holograms for acoustics",
+      "type": "peer-reviewed research",
+      "url": "https://doi.org/10.1038/nature19755",
+      "year": 2016
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "tweezers",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External source may be CC BY-NC-ND; do not rehost without permission",
+      "title": "Holographic acoustic tweezers, PNAS 2019",
+      "type": "peer-reviewed research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6320506/",
+      "year": 2019
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "gum",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External rights; use the original publication for details",
+      "title": "JCGM 100:2008, Guide to the Expression of Uncertainty in Measurement",
+      "type": "metrology standard",
+      "url": "https://doi.org/10.59161/JCGM100-2008E",
+      "year": 2008
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "gum2026",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External rights and amendments; verify document version",
+      "title": "BIPM JCGM guides and 2026 GUM amendment",
+      "type": "metrology publication catalog",
+      "url": "https://www.bipm.org/en/web/guest/publications/guides",
+      "year": 2026
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "prov",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "W3C document and its license are separate from Atlas",
+      "title": "W3C PROV-O: The PROV Ontology",
+      "type": "web standard",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "year": 2013
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "mcp",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "External specification; consult version before integration",
+      "title": "Model Context Protocol, official 2026-07-28 tools documentation",
+      "type": "interoperability standard",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/server/tools.mdx",
+      "year": 2026
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "applied",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Publisher rights apply; source metadata only",
+      "title": "Acoustofluidics for biomedical applications, Nature Reviews Methods Primers",
+      "type": "peer-reviewed methods primer",
+      "url": "https://doi.org/10.1038/s43586-022-00109-7",
+      "year": 2022
+    },
+    {
+      "claim_review": "source_metadata_only",
+      "id": "levitation",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Use original rights notice for copying",
+      "title": "Holographic acoustic elements for manipulation of levitated objects",
+      "type": "peer-reviewed research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4627579/",
+      "year": 2015
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "benjamin-ursell-1954",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "T. B. Benjamin and F. Ursell, Stability of the Plane Free Surface of a Liquid in Vertical Periodic Motion",
+      "type": "journal article",
+      "url": "https://doi.org/10.1098/rspa.1954.0218",
+      "year": 1954
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "settnes-bruus-2012",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "M. Settnes and H. Bruus, Forces Acting on a Small Particle in an Acoustical Field in a Viscous Fluid",
+      "type": "journal article",
+      "url": "https://doi.org/10.1103/PhysRevE.85.016327",
+      "year": 2012
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "karlsen-bruus-2015",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "J. T. Karlsen and H. Bruus, Forces Acting on a Small Particle in an Acoustical Field in a Thermoviscous Fluid",
+      "type": "journal article",
+      "url": "https://doi.org/10.1103/PhysRevE.92.043010",
+      "year": 2015
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "nist-tn1297",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "B. N. Taylor and C. E. Kuyatt, NIST Technical Note 1297, Guidelines for Evaluating and Expressing Uncertainty",
+      "type": "measurement guideline",
+      "url": "https://www.nist.gov/publications/guidelines-evaluating-and-expressing-uncertainty-nist-measurement-results-1994-edition",
+      "year": 1994
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "bipm-si-2026",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "BIPM, The International System of Units, 9th Edition, June 2026 Revision",
+      "type": "international measurement standard",
+      "url": "https://doi.org/10.59161/AUEZ1291",
+      "year": 2026
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "melde-2016",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "K. Melde, A. Mark, T. Qiu et al., Holograms for Acoustics, Nature 537, 518–522",
+      "type": "journal article",
+      "url": "https://doi.org/10.1038/nature19755",
+      "year": 2016
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "gorkov-1961",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "L. P. Gor'kov, Forces Acting on a Small Particle in an Acoustic Field within an Ideal Fluid",
+      "type": "journal article",
+      "url": "https://www.mathnet.ru/eng/dan25473",
+      "year": 1961
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "w3c-prov-2013",
+      "metadata_checked": "2026-11-10",
+      "rights_note": "Link and paraphrase only; publisher or standards body controls full-text reuse.",
+      "title": "W3C Recommendation, PROV-O: The PROV Ontology",
+      "type": "technical standard",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "year": 2013
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "crossref-crossmark-2026",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Link and paraphrase only; check the original publisher license before reusing full text.",
+      "title": "Crossref, Crossmark publication status service",
+      "type": "standards service documentation",
+      "url": "https://www.crossref.org/services/crossmark/",
+      "year": 2026
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "crossref-versioning-2025",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Link and paraphrase only; check the original publisher license before reusing full text.",
+      "title": "Crossref, Version control, corrections, and retractions",
+      "type": "technical guidance",
+      "url": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning/",
+      "year": 2025
+    },
+    {
+      "claim_review": "public_abstract_or_bibliographic_record_checked",
+      "id": "wilkinson-fair-2016",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Link and paraphrase only; check the original publisher license before reusing full text.",
+      "title": "Wilkinson et al., FAIR Guiding Principles for scientific data management and stewardship",
+      "type": "peer-reviewed publication",
+      "url": "https://doi.org/10.1038/sdata.2016.18",
+      "year": 2016
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "faraday-1831-royalsociety",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Primary historical manuscript catalog; access and reproduction subject to Royal Society terms",
+      "title": "Michael Faraday, On a Peculiar Class of Acoustical Figures (1831), Royal Society manuscript",
+      "type": "historical archival publication",
+      "url": "https://makingscience.royalsociety.org/items/PT_19_3",
+      "year": 1831
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "bruus-2012-perturbation",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Copyright of Royal Society of Chemistry; only scoped summary and source URL stored",
+      "title": "H. Bruus, Acoustofluidics 2: perturbation theory and ultrasound resonance modes",
+      "type": "publisher full-text article",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2012/lc/c1lc20770a",
+      "year": 2012
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "bruus-2012-scaling",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Copyright of Royal Society of Chemistry; only scoped summary and source URL stored",
+      "title": "H. Bruus, Acoustofluidics 10: scaling laws in acoustophoresis",
+      "type": "publisher landing page",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2012/lc/c2lc21261g",
+      "year": 2012
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "colwell-1932",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "Nature publisher abstract is accessible; full article rights restricted",
+      "title": "R. C. Colwell, Higher Vibrations of Chladni Plates, Nature 130, 701",
+      "type": "publisher abstract",
+      "url": "https://www.nature.com/articles/130701b0",
+      "year": 1932
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "dryad-strickland-2015",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+      "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+      "type": "external dataset registry",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+      "year": 2015
+    },
+    {
+      "claim_review": "primary_public_record_inspected_limited_scope",
+      "id": "zenodo-drum-2026",
+      "metadata_checked": "2026-11-11",
+      "rights_note": "External Zenodo dataset; check license and rights before redistribution; raw data not mirrored",
+      "title": "Wijnand et al., experimental axisymmetric drum membrane modes (Zenodo data)",
+      "type": "external dataset registry",
+      "url": "https://zenodo.org/records/22344228",
+      "year": 2026
+    }
+  ]
+}

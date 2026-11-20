@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "causal-atlas"
+version = "1.0.0"
+description = "Source-linked causal reference with bounded, source-linked causal design and finite-model reference tools"
+requires-python = ">=3.10"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["causal_atlas*"]
+[tool.setuptools.package-data]
+causal_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

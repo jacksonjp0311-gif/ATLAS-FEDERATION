@@ -1,0 +1,82 @@
+{
+  "schema": "atlas.control-merge-release/1",
+  "date": "2026-11-12",
+  "version": "0.2.0",
+  "status": "verified_content_checkpoint_not_scientific_v1",
+  "origin": "non_destructive_merge_of_two_distinct_control_v0.1.0_research_lineages",
+  "control": {
+    "records": 117,
+    "source_cards": 27,
+    "relations": 64,
+    "chapters": 26,
+    "investigations": 18,
+    "old_records_retained_exact": 60,
+    "old_relations_retained_exact": 36,
+    "new_records": 57,
+    "new_relations": 28,
+    "source_id_conflicts_remapped": 2,
+    "module_1": "control_atlas.models",
+    "module_2": "control_atlas.methods",
+    "source_execution": false,
+    "hardware_actions": false
+  },
+  "collection": {
+    "nodes": 6,
+    "records": 919,
+    "routing_changed": false,
+    "all_30_domains_complete": false,
+    "desktop_transfer_performed": false
+  },
+  "test_suites": {
+    "Forge": 188,
+    "Measurement": 218,
+    "Causal": 233,
+    "Materials": 122,
+    "Control": 92
+  },
+  "total_tests_passed": 853,
+  "total_tests_skipped": 0,
+  "numerical_oracle": {
+    "result": "passed",
+    "synthetic_comparisons": 7280,
+    "seed": 261112,
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0",
+    "not_independent_material_or_industrial_validation": true
+  },
+  "wheel": {
+    "version": "0.2.0",
+    "installed_cleanly": true,
+    "standalone_records": 117,
+    "both_method_modules_and_casebooks": "passed",
+    "context_validation": "passed",
+    "other_dist_versions_unchanged": true
+  },
+  "previous_release_preservation": {
+    "protected_files_identical": {
+      "baseline": 771,
+      "CAUSAL-ATLAS": 253,
+      "MATERIALS-ATLAS": 121,
+      "common/nodes/signal-atlas": 9,
+      "common/nodes/cymatics-atlas": 9,
+      "common/nodes/measurement-atlas": 9,
+      "common/nodes/causal-atlas": 9,
+      "common/nodes/materials-atlas": 9
+    },
+    "control_old_models_py_identical": true,
+    "control_old_cases_py_identical": true,
+    "control_old_tests_models_identical": true,
+    "prior_library_control_v0.1_unmodified": true
+  },
+  "scientific_gates": {
+    "independent_expert_review": false,
+    "real_control_plant_data": false,
+    "hardware_or_HIL_validation": false,
+    "controller_safety_certification": false,
+    "live_bitwork_or_AI_evaluation": false,
+    "native_windows_test": false,
+    "control_content_v1_ready": false
+  },
+  "next_content_domain": "control-atlas_active; agent-atlas_queued",
+  "owner_sequence": "Build all thirty scientific domain libraries first, then Bitwork/router, then full integration & desktop transfer."
+}

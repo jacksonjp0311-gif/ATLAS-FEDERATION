@@ -1,0 +1,1 @@
+New, original computation research text and algorithms; source citations are bibliography only. Other nodes and earlier baseline retain their separate notices and licenses. No scientific peer review or live hardware results are claimed.

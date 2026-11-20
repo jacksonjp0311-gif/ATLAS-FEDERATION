@@ -1,0 +1,923 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "Faraday waves",
+    "node_ids": [
+      "cymatics-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "86687e46b270605a1c18686b544f3ed923a015ecb9b4b2d49068f255791947c8",
+  "registry_revision": "06cc5ddcfc1a3cc29e0b8e16f90b57c966e0e6c09ad35c1c6ee208d66effa861",
+  "node_versions": {
+    "cymatics-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "cc58f12b88fd6175026ca5b624f69aa128e07897d6e8e66cb8e8498873f05486",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "legacy imported; upstream labels preserved without new scientific review"
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "cymatics-atlas:concept:fluid-faraday",
+      "revision": "c21a3b2fa0d6a29fd88a33d38d2118da6a9f46bdf378055b570d9d62433b4600"
+    },
+    {
+      "record_id": "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+      "revision": "e6f94081fa41722fc7ba0bda2ad743a5b0fb55c1057f7fa577753983ffef08bd"
+    },
+    {
+      "record_id": "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+      "revision": "bd85a1226e30bca7981168285095e18c914d0f0fb14c97c705d7e06d7f988a67"
+    },
+    {
+      "record_id": "cymatics-atlas:publisher_portion:primary-dryad-faraday-data",
+      "revision": "a2a6176adda1fbd6c31210362731c3af2b1fedb0a3aaa13935a8a6c184959467"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+      "revision": "e6f94081fa41722fc7ba0bda2ad743a5b0fb55c1057f7fa577753983ffef08bd"
+    },
+    {
+      "record_id": "cymatics-atlas:concept:fluid-faraday",
+      "revision": "c21a3b2fa0d6a29fd88a33d38d2118da6a9f46bdf378055b570d9d62433b4600"
+    },
+    {
+      "record_id": "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+      "revision": "bd85a1226e30bca7981168285095e18c914d0f0fb14c97c705d7e06d7f988a67"
+    },
+    {
+      "record_id": "cymatics-atlas:publisher_portion:primary-dryad-faraday-data",
+      "revision": "a2a6176adda1fbd6c31210362731c3af2b1fedb0a3aaa13935a8a6c184959467"
+    },
+    {
+      "record_id": "cymatics-atlas:source_card:biopattern",
+      "revision": "d155c8ed45ec24c206583da357e7fa60a7429f66f28b505c4aa5d34754c92e3a"
+    },
+    {
+      "record_id": "cymatics-atlas:source_card:dryad-strickland-2015",
+      "revision": "4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719"
+    },
+    {
+      "record_id": "cymatics-atlas:source_card:faraday",
+      "revision": "dd1457030c17cd5b4f7417ce15ff9a200e7c0f55c7bd3c2922aee7eede4f9ec1"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "External reproducibility research in wave-surface observations, imaging and inference."
+          ],
+          "assumptions": [],
+          "domain": "fluid-and-surface-waves",
+          "equation": "",
+          "limitations": [
+            "Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here."
+          ],
+          "tags": [
+            "Dryad Strickland Faraday wave surfactant 2015",
+            "measured height field Faraday waves dataset"
+          ],
+          "text": "Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "curated_reference_not_experimentally_verified"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "faraday-surfacant-experimental-dataset",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": "External reproducibility research in wave-surface observations, imaging and inference.",
+            "domain": "fluid-and-surface-waves",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "concept",
+            "limitations": "Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "faraday-surfacant-experimental-dataset",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+              "snapshot_sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6"
+            },
+            "record_locator": {
+              "position": "/concepts/74",
+              "upstream_file": "src/cymatics_atlas/resources/corpus.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json"
+            },
+            "record_uid": "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                "source_id": "dryad-strickland-2015",
+                "source_uid": "cymatics-atlas:source:dryad-strickland-2015",
+                "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                "upstream_record": {
+                  "claim_review": "primary_public_record_inspected_limited_scope",
+                  "id": "dryad-strickland-2015",
+                  "metadata_checked": "2026-11-11",
+                  "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                  "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                  "type": "external dataset registry",
+                  "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+                  "year": 2015
+                },
+                "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "Dryad Strickland Faraday wave surfactant 2015",
+              "measured height field Faraday waves dataset"
+            ],
+            "text": "Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.",
+            "title": "Published Faraday-wave surface-height and surfactant measurements",
+            "upstream_record": {
+              "aliases": [
+                "Dryad Strickland Faraday wave surfactant 2015",
+                "measured height field Faraday waves dataset"
+              ],
+              "applicability": "External reproducibility research in wave-surface observations, imaging and inference.",
+              "domain": "fluid-and-surface-waves",
+              "equation": null,
+              "id": "faraday-surfacant-experimental-dataset",
+              "limitations": "Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.",
+              "related_ids": [
+                "fluid-faraday"
+              ],
+              "source_ids": [
+                "dryad-strickland-2015"
+              ],
+              "status": "curated_reference_not_experimentally_verified",
+              "summary": "Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.",
+              "title": "Published Faraday-wave surface-height and surfactant measurements"
+            },
+            "upstream_status": "curated_reference_not_experimentally_verified"
+          }
+        },
+        "record_id": "cymatics-atlas:concept:faraday-surfacant-experimental-dataset",
+        "revision": "e6f94081fa41722fc7ba0bda2ad743a5b0fb55c1057f7fa577753983ffef08bd",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "cymatics-atlas:source_card:dryad-strickland-2015",
+            "revision": "4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719"
+          }
+        ],
+        "status": "active",
+        "title": "Published Faraday-wave surface-height and surfactant measurements",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Fluid depth, viscosity, surface tension and drive amplitude are specified."
+          ],
+          "assumptions": [],
+          "domain": "fluid-and-surface-waves",
+          "equation": "",
+          "limitations": [
+            "Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central."
+          ],
+          "tags": [
+            "Faraday patterns",
+            "parametric waves",
+            "liquid cymatics"
+          ],
+          "text": "When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "curated_reference_not_experimentally_verified"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "fluid-faraday",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": "Fluid depth, viscosity, surface tension and drive amplitude are specified.",
+            "domain": "fluid-and-surface-waves",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "concept",
+            "limitations": "Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "fluid-faraday",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+              "snapshot_sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6"
+            },
+            "record_locator": {
+              "position": "/concepts/20",
+              "upstream_file": "src/cymatics_atlas/resources/corpus.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json"
+            },
+            "record_uid": "cymatics-atlas:concept:fluid-faraday",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "Publisher rights apply; link and original synopsis only",
+                "source_id": "faraday",
+                "source_uid": "cymatics-atlas:source:faraday",
+                "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+                "upstream_record": {
+                  "claim_review": "source_metadata_only",
+                  "id": "faraday",
+                  "metadata_checked": "2026-11-10",
+                  "rights_note": "Publisher rights apply; link and original synopsis only",
+                  "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+                  "type": "peer-reviewed research",
+                  "url": "https://doi.org/10.1017/jfm.2015.382",
+                  "year": 2015
+                },
+                "url": "https://doi.org/10.1017/jfm.2015.382"
+              },
+              {
+                "rights": "External CC BY source; no verbatim passages mirrored",
+                "source_id": "biopattern",
+                "source_uid": "cymatics-atlas:source:biopattern",
+                "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+                "upstream_record": {
+                  "claim_review": "source_metadata_only",
+                  "id": "biopattern",
+                  "metadata_checked": "2026-11-10",
+                  "rights_note": "External CC BY source; no verbatim passages mirrored",
+                  "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+                  "type": "peer-reviewed review",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/",
+                  "year": 2021
+                },
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "Faraday patterns",
+              "parametric waves",
+              "liquid cymatics"
+            ],
+            "text": "When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.",
+            "title": "Faraday waves and parametric forcing",
+            "upstream_record": {
+              "aliases": [
+                "Faraday patterns",
+                "parametric waves",
+                "liquid cymatics"
+              ],
+              "applicability": "Fluid depth, viscosity, surface tension and drive amplitude are specified.",
+              "domain": "fluid-and-surface-waves",
+              "equation": null,
+              "id": "fluid-faraday",
+              "limitations": "Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.",
+              "related_ids": [
+                "fluid-threshold",
+                "fluid-dispersion",
+                "fluid-nonlinearity"
+              ],
+              "source_ids": [
+                "faraday",
+                "biopattern"
+              ],
+              "status": "curated_reference_not_experimentally_verified",
+              "summary": "When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.",
+              "title": "Faraday waves and parametric forcing"
+            },
+            "upstream_status": "curated_reference_not_experimentally_verified"
+          }
+        },
+        "record_id": "cymatics-atlas:concept:fluid-faraday",
+        "revision": "c21a3b2fa0d6a29fd88a33d38d2118da6a9f46bdf378055b570d9d62433b4600",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "cymatics-atlas:source_card:faraday",
+            "revision": "dd1457030c17cd5b4f7417ce15ff9a200e7c0f55c7bd3c2922aee7eede4f9ec1"
+          },
+          {
+            "record_id": "cymatics-atlas:source_card:biopattern",
+            "revision": "d155c8ed45ec24c206583da357e7fa60a7429f66f28b505c4aa5d34754c92e3a"
+          }
+        ],
+        "status": "active",
+        "title": "Faraday waves and parametric forcing",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "",
+          "equation": "",
+          "limitations": [
+            "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here."
+          ],
+          "tags": [],
+          "text": "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "remote_catalogued_unretrieved"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "external-strickland-2015",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "external_dataset_catalog",
+            "limitations": "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "external-strickland-2015",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "b46d0ee4abe55e2b1fe7e98035c7c377bb873a85",
+              "snapshot_sha256": "d59a4004d230d836abf1b9be13399e52b4d534da1f3487e262a01c921389c7f5"
+            },
+            "record_locator": {
+              "position": "/records/0",
+              "upstream_file": "src/cymatics_atlas/resources/external_experiments.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/external_experiments.json"
+            },
+            "record_uid": "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                "source_id": "dryad-strickland-2015",
+                "source_uid": "cymatics-atlas:source:dryad-strickland-2015",
+                "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                "upstream_record": {
+                  "claim_review": "primary_public_record_inspected_limited_scope",
+                  "id": "dryad-strickland-2015",
+                  "metadata_checked": "2026-11-11",
+                  "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                  "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                  "type": "external dataset registry",
+                  "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+                  "year": 2015
+                },
+                "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.",
+            "title": "Spatiotemporal measurement of surfactant distribution on gravity-capillary waves",
+            "upstream_record": {
+              "data_modalities": [
+                "MATLAB numeric arrays",
+                "surface-height measurements",
+                "surfactant fluorescence-density measurements"
+              ],
+              "doi": "10.5061/dryad.5v8m0",
+              "id": "external-strickland-2015",
+              "independently_validated_by_atlas": false,
+              "locally_imported": false,
+              "notes": "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.",
+              "physical_measurements_by_original_authors": true,
+              "reported_archive_size_mb": 601.08,
+              "repository": "Dryad",
+              "rights_note": "Review Dryad repository licensing and individual file terms before any mirroring or reuse.",
+              "source_id": "dryad-strickland-2015",
+              "status": "remote_catalogued_unretrieved",
+              "title": "Spatiotemporal measurement of surfactant distribution on gravity-capillary waves",
+              "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+              "year": 2015
+            },
+            "upstream_status": "remote_catalogued_unretrieved"
+          }
+        },
+        "record_id": "cymatics-atlas:external_dataset_catalog:external-strickland-2015",
+        "revision": "bd85a1226e30bca7981168285095e18c914d0f0fb14c97c705d7e06d7f988a67",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "cymatics-atlas:source_card:dryad-strickland-2015",
+            "revision": "4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719"
+          }
+        ],
+        "status": "active",
+        "title": "Spatiotemporal measurement of surfactant distribution on gravity-capillary waves",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "",
+          "equation": "",
+          "limitations": [
+            "Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper."
+          ],
+          "tags": [],
+          "text": "The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "source_reported",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "public_source_portion_checked"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "primary-dryad-faraday-data",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "",
+            "equation": null,
+            "evidence_locator": "Dryad 10.5061/dryad.5v8m0, Abstract and Usage Notes, Aug 31 2015",
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "publisher_portion",
+            "limitations": "Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "primary-dryad-faraday-data",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "c3264f8ee3e2dd5c45a73deec5c7c18d45b25916",
+              "snapshot_sha256": "16ec4a968484dba0de9b5247a14422211d99547d9ee42eeca185fc1682a095c2"
+            },
+            "record_locator": {
+              "position": "/records/6",
+              "upstream_file": "src/cymatics_atlas/resources/publisher_evidence.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/publisher_evidence.json"
+            },
+            "record_uid": "cymatics-atlas:publisher_portion:primary-dryad-faraday-data",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                "source_id": "dryad-strickland-2015",
+                "source_uid": "cymatics-atlas:source:dryad-strickland-2015",
+                "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                "upstream_record": {
+                  "claim_review": "primary_public_record_inspected_limited_scope",
+                  "id": "dryad-strickland-2015",
+                  "metadata_checked": "2026-11-11",
+                  "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                  "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                  "type": "external dataset registry",
+                  "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+                  "year": 2015
+                },
+                "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.",
+            "title": "primary-dryad-faraday-data",
+            "upstream_record": {
+              "anchor": "surface height and surfactant concentration profiles",
+              "basis": "repository_dataset_metadata",
+              "checked_at": "2026-11-11",
+              "claim": "The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.",
+              "concept_ids": [
+                "faraday-surfacant-experimental-dataset"
+              ],
+              "full_experiment_replicated": false,
+              "id": "primary-dryad-faraday-data",
+              "independently_reviewed": false,
+              "locator": "Dryad 10.5061/dryad.5v8m0, Abstract and Usage Notes, Aug 31 2015",
+              "rights": "Short locator-only anchor for navigation; original source rights retained.",
+              "scope_limit": "Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.",
+              "source_id": "dryad-strickland-2015",
+              "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+              "status": "public_source_portion_checked"
+            },
+            "upstream_status": "public_source_portion_checked"
+          }
+        },
+        "record_id": "cymatics-atlas:publisher_portion:primary-dryad-faraday-data",
+        "revision": "a2a6176adda1fbd6c31210362731c3af2b1fedb0a3aaa13935a8a6c184959467",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "cymatics-atlas:source_card:dryad-strickland-2015",
+            "revision": "4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719"
+          }
+        ],
+        "status": "active",
+        "title": "primary-dryad-faraday-data",
+        "type": "review"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [],
+          "text": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "source_metadata_only"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "biopattern",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "biopattern",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+              "snapshot_sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6"
+            },
+            "record_locator": {
+              "position": "/sources/7",
+              "upstream_file": "src/cymatics_atlas/resources/corpus.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json"
+            },
+            "record_uid": "cymatics-atlas:source_card:biopattern",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "External CC BY source; no verbatim passages mirrored",
+                "source_id": "biopattern",
+                "source_uid": "cymatics-atlas:source:biopattern",
+                "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+                "upstream_record": {
+                  "claim_review": "source_metadata_only",
+                  "id": "biopattern",
+                  "metadata_checked": "2026-11-10",
+                  "rights_note": "External CC BY source; no verbatim passages mirrored",
+                  "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+                  "type": "peer-reviewed review",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/",
+                  "year": 2021
+                },
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+            "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+            "upstream_record": {
+              "claim_review": "source_metadata_only",
+              "id": "biopattern",
+              "metadata_checked": "2026-11-10",
+              "rights_note": "External CC BY source; no verbatim passages mirrored",
+              "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+              "type": "peer-reviewed review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/",
+              "year": 2021
+            },
+            "upstream_status": "source_metadata_only"
+          }
+        },
+        "record_id": "cymatics-atlas:source_card:biopattern",
+        "revision": "d155c8ed45ec24c206583da357e7fa60a7429f66f28b505c4aa5d34754c92e3a",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "The waves that make the pattern: a review on acoustic manipulation in biomedical research",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [],
+          "text": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "primary_public_record_inspected_limited_scope"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "dryad-strickland-2015",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "dryad-strickland-2015",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+              "snapshot_sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6"
+            },
+            "record_locator": {
+              "position": "/sources/31",
+              "upstream_file": "src/cymatics_atlas/resources/corpus.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json"
+            },
+            "record_uid": "cymatics-atlas:source_card:dryad-strickland-2015",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                "source_id": "dryad-strickland-2015",
+                "source_uid": "cymatics-atlas:source:dryad-strickland-2015",
+                "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                "upstream_record": {
+                  "claim_review": "primary_public_record_inspected_limited_scope",
+                  "id": "dryad-strickland-2015",
+                  "metadata_checked": "2026-11-11",
+                  "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+                  "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+                  "type": "external dataset registry",
+                  "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+                  "year": 2015
+                },
+                "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+            "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+            "upstream_record": {
+              "claim_review": "primary_public_record_inspected_limited_scope",
+              "id": "dryad-strickland-2015",
+              "metadata_checked": "2026-11-11",
+              "rights_note": "External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored",
+              "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+              "type": "external dataset registry",
+              "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+              "year": 2015
+            },
+            "upstream_status": "primary_public_record_inspected_limited_scope"
+          }
+        },
+        "record_id": "cymatics-atlas:source_card:dryad-strickland-2015",
+        "revision": "4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [],
+          "text": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "source_metadata_only"
+          }
+        },
+        "extensions": {},
+        "node_id": "cymatics-atlas",
+        "original_id": "faraday",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "cymatics-atlas",
+            "node_version": "1.0.0",
+            "original_id": "faraday",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+              "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+              "snapshot_sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6"
+            },
+            "record_locator": {
+              "position": "/sources/4",
+              "upstream_file": "src/cymatics_atlas/resources/corpus.json",
+              "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json"
+            },
+            "record_uid": "cymatics-atlas:source_card:faraday",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "Publisher rights apply; link and original synopsis only",
+                "source_id": "faraday",
+                "source_uid": "cymatics-atlas:source:faraday",
+                "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+                "upstream_record": {
+                  "claim_review": "source_metadata_only",
+                  "id": "faraday",
+                  "metadata_checked": "2026-11-10",
+                  "rights_note": "Publisher rights apply; link and original synopsis only",
+                  "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+                  "type": "peer-reviewed research",
+                  "url": "https://doi.org/10.1017/jfm.2015.382",
+                  "year": 2015
+                },
+                "url": "https://doi.org/10.1017/jfm.2015.382"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+            "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+            "upstream_record": {
+              "claim_review": "source_metadata_only",
+              "id": "faraday",
+              "metadata_checked": "2026-11-10",
+              "rights_note": "Publisher rights apply; link and original synopsis only",
+              "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+              "type": "peer-reviewed research",
+              "url": "https://doi.org/10.1017/jfm.2015.382",
+              "year": 2015
+            },
+            "upstream_status": "source_metadata_only"
+          }
+        },
+        "record_id": "cymatics-atlas:source_card:faraday",
+        "revision": "dd1457030c17cd5b4f7417ce15ff9a200e7c0f55c7bd3c2922aee7eede4f9ec1",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited",
+        "type": "source"
+      }
+    ],
+    "relations": []
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"External reproducibility research in wave-surface observations, imaging and inference.\"],\"assumptions\":[],\"domain\":\"fluid-and-surface-waves\",\"equation\":\"\",\"limitations\":[\"Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.\"],\"tags\":[\"Dryad Strickland Faraday wave surfactant 2015\",\"measured height field Faraday waves dataset\"],\"text\":\"Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"curated_reference_not_experimentally_verified\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"faraday-surfacant-experimental-dataset\",\"provenance\":{\"legacy_envelope\":{\"applicability\":\"External reproducibility research in wave-surface observations, imaging and inference.\",\"domain\":\"fluid-and-surface-waves\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"concept\",\"limitations\":\"Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"faraday-surfacant-experimental-dataset\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf\",\"snapshot_sha256\":\"dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6\"},\"record_locator\":{\"position\":\"/concepts/74\",\"upstream_file\":\"src/cymatics_atlas/resources/corpus.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json\"},\"record_uid\":\"cymatics-atlas:concept:faraday-surfacant-experimental-dataset\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"source_id\":\"dryad-strickland-2015\",\"source_uid\":\"cymatics-atlas:source:dryad-strickland-2015\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"upstream_record\":{\"claim_review\":\"primary_public_record_inspected_limited_scope\",\"id\":\"dryad-strickland-2015\",\"metadata_checked\":\"2026-11-11\",\"rights_note\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"external dataset registry\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"Dryad Strickland Faraday wave surfactant 2015\",\"measured height field Faraday waves dataset\"],\"text\":\"Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.\",\"title\":\"Published Faraday-wave surface-height and surfactant measurements\",\"upstream_record\":{\"aliases\":[\"Dryad Strickland Faraday wave surfactant 2015\",\"measured height field Faraday waves dataset\"],\"applicability\":\"External reproducibility research in wave-surface observations, imaging and inference.\",\"domain\":\"fluid-and-surface-waves\",\"equation\":null,\"id\":\"faraday-surfacant-experimental-dataset\",\"limitations\":\"Only Dryad public descriptive metadata was inspected; its 601 MB archive is not downloaded or analyzed by this Atlas. Dataset status is external and unvalidated here.\",\"related_ids\":[\"fluid-faraday\"],\"source_ids\":[\"dryad-strickland-2015\"],\"status\":\"curated_reference_not_experimentally_verified\",\"summary\":\"Strickland and collaborators deposited experimental surface-height and fluorescent surfactant-density measurements for driven gravity-capillary waves, including standing Faraday and traveling meniscus components.\",\"title\":\"Published Faraday-wave surface-height and surfactant measurements\"},\"upstream_status\":\"curated_reference_not_experimentally_verified\"}},\"record_id\":\"cymatics-atlas:concept:faraday-surfacant-experimental-dataset\",\"revision\":\"e6f94081fa41722fc7ba0bda2ad743a5b0fb55c1057f7fa577753983ffef08bd\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"cymatics-atlas:source_card:dryad-strickland-2015\",\"revision\":\"4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719\"}],\"status\":\"active\",\"title\":\"Published Faraday-wave surface-height and surfactant measurements\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Fluid depth, viscosity, surface tension and drive amplitude are specified.\"],\"assumptions\":[],\"domain\":\"fluid-and-surface-waves\",\"equation\":\"\",\"limitations\":[\"Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.\"],\"tags\":[\"Faraday patterns\",\"parametric waves\",\"liquid cymatics\"],\"text\":\"When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"curated_reference_not_experimentally_verified\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"fluid-faraday\",\"provenance\":{\"legacy_envelope\":{\"applicability\":\"Fluid depth, viscosity, surface tension and drive amplitude are specified.\",\"domain\":\"fluid-and-surface-waves\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"concept\",\"limitations\":\"Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"fluid-faraday\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf\",\"snapshot_sha256\":\"dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6\"},\"record_locator\":{\"position\":\"/concepts/20\",\"upstream_file\":\"src/cymatics_atlas/resources/corpus.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json\"},\"record_uid\":\"cymatics-atlas:concept:fluid-faraday\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"Publisher rights apply; link and original synopsis only\",\"source_id\":\"faraday\",\"source_uid\":\"cymatics-atlas:source:faraday\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"faraday\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"Publisher rights apply; link and original synopsis only\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"type\":\"peer-reviewed research\",\"url\":\"https://doi.org/10.1017/jfm.2015.382\",\"year\":2015},\"url\":\"https://doi.org/10.1017/jfm.2015.382\"},{\"rights\":\"External CC BY source; no verbatim passages mirrored\",\"source_id\":\"biopattern\",\"source_uid\":\"cymatics-atlas:source:biopattern\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"biopattern\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"External CC BY source; no verbatim passages mirrored\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"type\":\"peer-reviewed review\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/\",\"year\":2021},\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"Faraday patterns\",\"parametric waves\",\"liquid cymatics\"],\"text\":\"When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.\",\"title\":\"Faraday waves and parametric forcing\",\"upstream_record\":{\"aliases\":[\"Faraday patterns\",\"parametric waves\",\"liquid cymatics\"],\"applicability\":\"Fluid depth, viscosity, surface tension and drive amplitude are specified.\",\"domain\":\"fluid-and-surface-waves\",\"equation\":null,\"id\":\"fluid-faraday\",\"limitations\":\"Surface wave behavior is not equivalent to Chladni plate bending; forcing and dissipation are central.\",\"related_ids\":[\"fluid-threshold\",\"fluid-dispersion\",\"fluid-nonlinearity\"],\"source_ids\":[\"faraday\",\"biopattern\"],\"status\":\"curated_reference_not_experimentally_verified\",\"summary\":\"When a fluid container is driven vertically at sufficient acceleration, the free surface may develop standing patterns through parametric instability; a subharmonic response is often encountered.\",\"title\":\"Faraday waves and parametric forcing\"},\"upstream_status\":\"curated_reference_not_experimentally_verified\"}},\"record_id\":\"cymatics-atlas:concept:fluid-faraday\",\"revision\":\"c21a3b2fa0d6a29fd88a33d38d2118da6a9f46bdf378055b570d9d62433b4600\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"cymatics-atlas:source_card:faraday\",\"revision\":\"dd1457030c17cd5b4f7417ce15ff9a200e7c0f55c7bd3c2922aee7eede4f9ec1\"},{\"record_id\":\"cymatics-atlas:source_card:biopattern\",\"revision\":\"d155c8ed45ec24c206583da357e7fa60a7429f66f28b505c4aa5d34754c92e3a\"}],\"status\":\"active\",\"title\":\"Faraday waves and parametric forcing\",\"type\":\"concept\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"\",\"equation\":\"\",\"limitations\":[\"Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.\"],\"tags\":[],\"text\":\"Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"remote_catalogued_unretrieved\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"external-strickland-2015\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"external_dataset_catalog\",\"limitations\":\"Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"external-strickland-2015\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"b46d0ee4abe55e2b1fe7e98035c7c377bb873a85\",\"snapshot_sha256\":\"d59a4004d230d836abf1b9be13399e52b4d534da1f3487e262a01c921389c7f5\"},\"record_locator\":{\"position\":\"/records/0\",\"upstream_file\":\"src/cymatics_atlas/resources/external_experiments.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/external_experiments.json\"},\"record_uid\":\"cymatics-atlas:external_dataset_catalog:external-strickland-2015\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"source_id\":\"dryad-strickland-2015\",\"source_uid\":\"cymatics-atlas:source:dryad-strickland-2015\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"upstream_record\":{\"claim_review\":\"primary_public_record_inspected_limited_scope\",\"id\":\"dryad-strickland-2015\",\"metadata_checked\":\"2026-11-11\",\"rights_note\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"external dataset registry\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.\",\"title\":\"Spatiotemporal measurement of surfactant distribution on gravity-capillary waves\",\"upstream_record\":{\"data_modalities\":[\"MATLAB numeric arrays\",\"surface-height measurements\",\"surfactant fluorescence-density measurements\"],\"doi\":\"10.5061/dryad.5v8m0\",\"id\":\"external-strickland-2015\",\"independently_validated_by_atlas\":false,\"locally_imported\":false,\"notes\":\"Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.\",\"physical_measurements_by_original_authors\":true,\"reported_archive_size_mb\":601.08,\"repository\":\"Dryad\",\"rights_note\":\"Review Dryad repository licensing and individual file terms before any mirroring or reuse.\",\"source_id\":\"dryad-strickland-2015\",\"status\":\"remote_catalogued_unretrieved\",\"title\":\"Spatiotemporal measurement of surfactant distribution on gravity-capillary waves\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"upstream_status\":\"remote_catalogued_unretrieved\"}},\"record_id\":\"cymatics-atlas:external_dataset_catalog:external-strickland-2015\",\"revision\":\"bd85a1226e30bca7981168285095e18c914d0f0fb14c97c705d7e06d7f988a67\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"cymatics-atlas:source_card:dryad-strickland-2015\",\"revision\":\"4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719\"}],\"status\":\"active\",\"title\":\"Spatiotemporal measurement of surfactant distribution on gravity-capillary waves\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"\",\"equation\":\"\",\"limitations\":[\"Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.\"],\"tags\":[],\"text\":\"The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"source_reported\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"public_source_portion_checked\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"primary-dryad-faraday-data\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"\",\"equation\":null,\"evidence_locator\":\"Dryad 10.5061/dryad.5v8m0, Abstract and Usage Notes, Aug 31 2015\",\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"publisher_portion\",\"limitations\":\"Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"primary-dryad-faraday-data\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"c3264f8ee3e2dd5c45a73deec5c7c18d45b25916\",\"snapshot_sha256\":\"16ec4a968484dba0de9b5247a14422211d99547d9ee42eeca185fc1682a095c2\"},\"record_locator\":{\"position\":\"/records/6\",\"upstream_file\":\"src/cymatics_atlas/resources/publisher_evidence.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/publisher_evidence.json\"},\"record_uid\":\"cymatics-atlas:publisher_portion:primary-dryad-faraday-data\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"source_id\":\"dryad-strickland-2015\",\"source_uid\":\"cymatics-atlas:source:dryad-strickland-2015\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"upstream_record\":{\"claim_review\":\"primary_public_record_inspected_limited_scope\",\"id\":\"dryad-strickland-2015\",\"metadata_checked\":\"2026-11-11\",\"rights_note\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"external dataset registry\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.\",\"title\":\"primary-dryad-faraday-data\",\"upstream_record\":{\"anchor\":\"surface height and surfactant concentration profiles\",\"basis\":\"repository_dataset_metadata\",\"checked_at\":\"2026-11-11\",\"claim\":\"The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.\",\"concept_ids\":[\"faraday-surfacant-experimental-dataset\"],\"full_experiment_replicated\":false,\"id\":\"primary-dryad-faraday-data\",\"independently_reviewed\":false,\"locator\":\"Dryad 10.5061/dryad.5v8m0, Abstract and Usage Notes, Aug 31 2015\",\"rights\":\"Short locator-only anchor for navigation; original source rights retained.\",\"scope_limit\":\"Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.\",\"source_id\":\"dryad-strickland-2015\",\"source_url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"status\":\"public_source_portion_checked\"},\"upstream_status\":\"public_source_portion_checked\"}},\"record_id\":\"cymatics-atlas:publisher_portion:primary-dryad-faraday-data\",\"revision\":\"a2a6176adda1fbd6c31210362731c3af2b1fedb0a3aaa13935a8a6c184959467\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"cymatics-atlas:source_card:dryad-strickland-2015\",\"revision\":\"4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719\"}],\"status\":\"active\",\"title\":\"primary-dryad-faraday-data\",\"type\":\"review\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[],\"text\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"source_metadata_only\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"biopattern\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"biopattern\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf\",\"snapshot_sha256\":\"dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6\"},\"record_locator\":{\"position\":\"/sources/7\",\"upstream_file\":\"src/cymatics_atlas/resources/corpus.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json\"},\"record_uid\":\"cymatics-atlas:source_card:biopattern\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"External CC BY source; no verbatim passages mirrored\",\"source_id\":\"biopattern\",\"source_uid\":\"cymatics-atlas:source:biopattern\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"biopattern\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"External CC BY source; no verbatim passages mirrored\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"type\":\"peer-reviewed review\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/\",\"year\":2021},\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"biopattern\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"External CC BY source; no verbatim passages mirrored\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"type\":\"peer-reviewed review\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8094912/\",\"year\":2021},\"upstream_status\":\"source_metadata_only\"}},\"record_id\":\"cymatics-atlas:source_card:biopattern\",\"revision\":\"d155c8ed45ec24c206583da357e7fa60a7429f66f28b505c4aa5d34754c92e3a\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"The waves that make the pattern: a review on acoustic manipulation in biomedical research\",\"type\":\"source\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[],\"text\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"primary_public_record_inspected_limited_scope\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"dryad-strickland-2015\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"dryad-strickland-2015\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf\",\"snapshot_sha256\":\"dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6\"},\"record_locator\":{\"position\":\"/sources/31\",\"upstream_file\":\"src/cymatics_atlas/resources/corpus.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json\"},\"record_uid\":\"cymatics-atlas:source_card:dryad-strickland-2015\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"source_id\":\"dryad-strickland-2015\",\"source_uid\":\"cymatics-atlas:source:dryad-strickland-2015\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"upstream_record\":{\"claim_review\":\"primary_public_record_inspected_limited_scope\",\"id\":\"dryad-strickland-2015\",\"metadata_checked\":\"2026-11-11\",\"rights_note\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"external dataset registry\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"upstream_record\":{\"claim_review\":\"primary_public_record_inspected_limited_scope\",\"id\":\"dryad-strickland-2015\",\"metadata_checked\":\"2026-11-11\",\"rights_note\":\"External Dryad dataset; check individual file permissions and cite authors; raw data not mirrored\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"external dataset registry\",\"url\":\"https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0\",\"year\":2015},\"upstream_status\":\"primary_public_record_inspected_limited_scope\"}},\"record_id\":\"cymatics-atlas:source_card:dryad-strickland-2015\",\"revision\":\"4c1a4fdbe9885b8888eb609a1927129f38baadff93043c75a46e2f07cafe6719\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Strickland, Shearer and Daniels, gravity-capillary wave measurements (Dryad dataset)\",\"type\":\"source\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[],\"text\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"source_metadata_only\"}},\"extensions\":{},\"node_id\":\"cymatics-atlas\",\"original_id\":\"faraday\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"cymatics-atlas\",\"node_version\":\"1.0.0\",\"original_id\":\"faraday\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"21fba3ec77225d14ef81a6d761fa0922d8002d56\",\"git_blob_sha1\":\"9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf\",\"snapshot_sha256\":\"dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6\"},\"record_locator\":{\"position\":\"/sources/4\",\"upstream_file\":\"src/cymatics_atlas/resources/corpus.json\",\"url\":\"https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS/blob/21fba3ec77225d14ef81a6d761fa0922d8002d56/src/cymatics_atlas/resources/corpus.json\"},\"record_uid\":\"cymatics-atlas:source_card:faraday\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"Publisher rights apply; link and original synopsis only\",\"source_id\":\"faraday\",\"source_uid\":\"cymatics-atlas:source:faraday\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"faraday\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"Publisher rights apply; link and original synopsis only\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"type\":\"peer-reviewed research\",\"url\":\"https://doi.org/10.1017/jfm.2015.382\",\"year\":2015},\"url\":\"https://doi.org/10.1017/jfm.2015.382\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"upstream_record\":{\"claim_review\":\"source_metadata_only\",\"id\":\"faraday\",\"metadata_checked\":\"2026-11-10\",\"rights_note\":\"Publisher rights apply; link and original synopsis only\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"type\":\"peer-reviewed research\",\"url\":\"https://doi.org/10.1017/jfm.2015.382\",\"year\":2015},\"upstream_status\":\"source_metadata_only\"}},\"record_id\":\"cymatics-atlas:source_card:faraday\",\"revision\":\"dd1457030c17cd5b4f7417ce15ff9a200e7c0f55c7bd3c2922aee7eede4f9ec1\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Rajchenbach and Clamond, Faraday waves: their dispersion relation, nature of bifurcation and wavenumber selection revisited\",\"type\":\"source\"}],\"relations\":[]}",
+  "context_bytes": 30870,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "cymatics-atlas:source_audit:a-benjamin-stability",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "cymatics-atlas:concept:historical-faraday-figures",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "cymatics-atlas:concept:fluid-mathieu-instability",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "cymatics-atlas:concept:fluid-dispersion",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "78fb9bef514f12bdb52ebb64419f72cc009bcf421fd28f83d61a7b42581cd824"
+}

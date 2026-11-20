@@ -1,0 +1,2 @@
+# Preserve exact snapshot and release-manifest bytes on every checkout.
+* -text

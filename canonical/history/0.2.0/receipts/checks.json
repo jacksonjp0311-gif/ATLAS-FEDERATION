@@ -1,0 +1,155 @@
+{
+  "schema": "atlas.collection-checks/1",
+  "checkpoint": "0.1.0",
+  "date": "2026-11-12",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 75,
+      "passed": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "stages": {
+    "conformance": {
+      "result": "passed",
+      "nodes": 4,
+      "records": 539,
+      "relations": 43
+    },
+    "context": [
+      {
+        "node": "causal-atlas",
+        "query": "standardization positivity",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "measurement-atlas",
+        "query": "expanded uncertainty",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "cymatics-atlas",
+        "query": "Faraday waves",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "signal-atlas",
+        "query": "NOAA GOES",
+        "status": "context_available",
+        "valid": true
+      }
+    ],
+    "casebook": {
+      "schema": "atlas.causal-casebook/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "confounded-process",
+          "data_origin": "synthetic_constructed_population",
+          "crude_difference": "-13/50",
+          "standardized_difference": "1/10",
+          "known_model_intervention_difference": "1/10",
+          "expected": {
+            "crude_difference": "-13/50",
+            "standardized_difference": "1/10"
+          },
+          "passed": true,
+          "limitations": [
+            "The generating graph and probabilities are stipulated, not learned from factory data.",
+            "No sampling uncertainty is estimated."
+          ]
+        },
+        {
+          "id": "collider-selection",
+          "data_origin": "synthetic_finite_model",
+          "marginal_A1_given_B1": "1/2",
+          "A1_given_B0_selected": "1",
+          "A1_given_B1_selected": "1/2",
+          "passed": true,
+          "limitations": [
+            "Selection is explicitly defined as logical OR; other mechanisms can produce different magnitudes."
+          ]
+        },
+        {
+          "id": "mediator-conditioning",
+          "data_origin": "synthetic_graph",
+          "chain_blocked_by_M": true,
+          "total_effect_backdoor_adjust_M": {
+            "criterion": "single-exposure-backdoor-sufficient",
+            "valid_under_supplied_graph": false,
+            "descendants_of_exposure_in_set": [
+              "M"
+            ],
+            "blocks_backdoor_paths": true,
+            "graph_truth_checked": false,
+            "no_causal_effect_claim_from_graph_alone": true,
+            "failure_does_not_prove_nonidentifiability": true
+          },
+          "passed": true,
+          "limitations": [
+            "Rejecting M for this sufficient total-effect criterion is not a claim about every direct-effect method."
+          ]
+        },
+        {
+          "id": "missing-treatment-support",
+          "data_origin": "synthetic_grouped_counts",
+          "missing_positive_target_stratum_rejected": true,
+          "passed": true,
+          "limitations": [
+            "Empty sample cells alone do not distinguish structural impossibility from finite-sample sparsity."
+          ]
+        },
+        {
+          "id": "unobserved-common-cause",
+          "data_origin": "synthetic_graph",
+          "observed_adjustment_sets": [],
+          "passed": true,
+          "limitations": [
+            "No observed back-door set was found; this is not a complete nonidentifiability proof."
+          ]
+        }
+      ],
+      "physical_observations": false,
+      "independent_review": false,
+      "causal_discovery": false
+    },
+    "baseline_preservation": {
+      "result": "passed",
+      "members": 771,
+      "changed": [],
+      "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+    },
+    "json_schema": {
+      "result": "passed",
+      "errors": [],
+      "records": 539
+    }
+  },
+  "scientific_v1_accepted": false,
+  "live_bitwork_run": false,
+  "user_desktop_run": false,
+  "independent_human_review": false,
+  "result": "passed",
+  "baseline_logging_note": "Inherited Forge HTTP aborted-client tests may log BrokenPipeError while passing; no repair is claimed."
+}

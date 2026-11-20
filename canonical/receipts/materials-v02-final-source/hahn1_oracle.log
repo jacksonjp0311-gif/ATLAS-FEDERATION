@@ -1,0 +1,7 @@
+{
+  "public_edition_status": "unavailable",
+  "reason_code": "nist_srd140_redistribution_grant_unresolved",
+  "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+  "scientific_revalidation": false,
+  "source_case": "NIST Hahn1 copper 236 published observations"
+}

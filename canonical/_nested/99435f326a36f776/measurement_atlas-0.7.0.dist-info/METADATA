@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: measurement-atlas
+Version: 0.7.0
+Summary: Uncertainty teaching methods with evidence-aware measurement reference
+Requires-Python: >=3.10

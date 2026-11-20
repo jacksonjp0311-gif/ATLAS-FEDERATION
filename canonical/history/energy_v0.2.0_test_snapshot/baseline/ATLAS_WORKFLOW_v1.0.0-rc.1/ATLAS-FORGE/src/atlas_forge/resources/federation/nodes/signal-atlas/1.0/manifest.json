@@ -1,0 +1,44 @@
+{
+  "id": "signal-atlas",
+  "title": "Signal Atlas",
+  "version": "1.0",
+  "adapter": "signal-v1",
+  "status": "reference_snapshot",
+  "enabled_by_default": true,
+  "description": "Electromagnetic signals, measurement science, public historical sources and bounded scientific claims.",
+  "upstream": {
+    "repository": "jacksonjp0311-gif/SIGNAL-ATLAS",
+    "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+    "release_label": "v1.0",
+    "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS"
+  },
+  "counts": {
+    "claims": 82,
+    "sources": 150,
+    "searchable_records": 232
+  },
+  "acquisition": "Retained owner archive plus GitHub-fetched tail records; completed raw files including line endings match the pinned upstream Git blob identities.",
+  "schema": "atlas-forge.node.v1",
+  "snapshot_files": [
+    {
+      "path": "raw/claims.jsonl",
+      "upstream_path": "data/claims.jsonl",
+      "sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051",
+      "size_bytes": 34228,
+      "git_blob_sha1": "72ec1a96dad642df297a937324caefd434fff684",
+      "git_blob_verified": true
+    },
+    {
+      "path": "raw/sources.jsonl",
+      "upstream_path": "data/sources.jsonl",
+      "sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580",
+      "size_bytes": 113798,
+      "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+      "git_blob_verified": true
+    }
+  ],
+  "captured_at": "2026-11-11",
+  "evidence_boundary": "Frozen reference subset, not the upstream application. No independent scientific review performed by importing. Third-party papers and raw measurements are not bundled. No automatic upstream refresh.",
+  "supporting_raw_measurements_bundled": false,
+  "rights": "Project-authored reference metadata only; per-source rights retained. See NOTICE.md and original repositories. No third-party full texts or external dataset bytes are mirrored."
+}

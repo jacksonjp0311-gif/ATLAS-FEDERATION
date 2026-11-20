@@ -1,0 +1,17 @@
+ATLAS FORGE — HUMAN CONTINUITY CARD
+
+One original 15-node federation. Only 9 of the original 30 planned
+scientific-domain IDs are represented; substantial work remains.
+
+CAN YOU OPEN THE RECORDS WITHOUT CHATGPT OR THE INTERNET?
+
+1. Restore all complete ZIP volumes with RESTORE_FULL_ATLAS.py.
+2. Verify the trusted external full SHA-256 and each member digest.
+3. Open SURVIVAL/ATLAS_OFFLINE_PORTAL.html in a local browser.
+4. Use tools/atlas_offline.py to find exact records and evidence gaps.
+5. Run tools/atlas_offline.py challenge to reproduce a tiny AT8 program.
+6. Seek independent source verification and physical lab results.
+7. Preserve all corrections as append-only scientific history.
+
+A MATCHING FILE HASH IS NOT SCIENTIFIC TRUTH OR A SAFETY CERTIFICATE.
+The scientific aim is to preserve what can be tested and what remains unknown.

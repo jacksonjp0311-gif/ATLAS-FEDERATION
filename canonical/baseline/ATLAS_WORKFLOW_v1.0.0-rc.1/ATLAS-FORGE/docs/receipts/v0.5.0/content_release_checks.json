@@ -1,0 +1,70 @@
+{
+  "release": "ATLAS_WORKFLOW_v0.5.0",
+  "date": "2026-11-12",
+  "result": "passed",
+  "phase": "content_first_navigation_deferred",
+  "active_domain": "measurement-atlas",
+  "versions": {
+    "forge": "0.5.0",
+    "measurement": "0.5.0",
+    "contract": "1.0"
+  },
+  "inventory": {
+    "forge_common_records": 446,
+    "measurement_records": 82,
+    "bounded_reference_records": 50,
+    "source_cards": 27,
+    "preserved_starter_records": 5,
+    "new_bounded_records": 30,
+    "new_source_pages": 17,
+    "chapters": 8,
+    "individual_reference_pages": 50,
+    "review_templates": 4,
+    "authored_review_questions": 24
+  },
+  "tests": {
+    "forge": 170,
+    "measurement": 75,
+    "total": 245
+  },
+  "casebooks": {
+    "retained_synthetic_cases": 5,
+    "new_synthetic_cases": 12,
+    "total": 17
+  },
+  "numerical_oracle": {
+    "kind": "numpy_numerical_crosscheck",
+    "result": "passed",
+    "seed": 86422,
+    "numpy_version": "2.3.5",
+    "positive_definite_cases": 600,
+    "invalid_cases_rejected": 5,
+    "max_relative_error": 2.3171296437844394e-15,
+    "independent_human_review": false,
+    "physical_measurements": false
+  },
+  "clean_install": {
+    "result": "passed",
+    "kind": "clean_installed_wheel_smoke",
+    "forge": "0.5.0",
+    "measurement": "0.5.0",
+    "forge_records": 446,
+    "measurement_records": 82,
+    "context_valid": true,
+    "source_tree_imports": false,
+    "live_bitwork_or_model_run": false,
+    "python": "3.13.5"
+  },
+  "source_structure_and_schema_checks_passed": true,
+  "navigation_runtime_files_unchanged": 8,
+  "signal_cymatics_nodes_unchanged": true,
+  "scientific_v1_accepted": false,
+  "next_domain_allowed": false,
+  "new_real_measurements": false,
+  "independent_scientific_review": false,
+  "live_bitwork_or_ai_run": false,
+  "windows_run": false,
+  "github_changes": false,
+  "browser_run_this_release": false,
+  "evaluation_limit": "Author-created tests and review rubrics; not independent held-out or model-quality evidence."
+}

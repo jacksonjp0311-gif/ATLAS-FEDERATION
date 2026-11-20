@@ -1,0 +1,943 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "OTel trace metadata tool call privacy unknown submission",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "f1dc4b39e9e6a2083c06ebd4764c097c286bf1d9b42321d5055bf5f32989ce9a",
+  "registry_revision": "094033ece2ccfca0f9d7c088dc3f4f6fe8253c7dbff3a2f60e67dea8db0706e4",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "ab05f7bfde5622959ad27d86caf1b0575524c0ed9c11a2746659bd7fc5ff7b83",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-scoped publisher abstracts/docs; original offline bounded methods with 9 synthetic casebook scenarios. No original MAST row, live agent run, independent human review or authenticated provider effects."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:retry-reconcile-precedence",
+      "revision": "0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591"
+    },
+    {
+      "record_id": "agent-atlas:unknown-submission-order",
+      "revision": "852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:no-effect-replay",
+      "revision": "b3c9536a9679ab8a5b28c22c4b1d22e97d0ed1cf5832c59239dc34ea2aa9b4e7"
+    },
+    {
+      "record_id": "agent-atlas:operator-stop-priority",
+      "revision": "de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906"
+    },
+    {
+      "record_id": "agent-atlas:outbox-reconciliation-gate",
+      "revision": "e43f985ed058837081707caf3d42cc725bf3c78f654b365ec502181c31fe01fe"
+    },
+    {
+      "record_id": "agent-atlas:recovery-boundary-priorities",
+      "revision": "fd6a2921d2f93360073a5772167725f7b636a28cf11fbf1c9c48065ce24705c8"
+    },
+    {
+      "record_id": "agent-atlas:request-id-vs-payload-hash",
+      "revision": "f643c989bb20a501d586455ca58f18e481553e981b67aad69c76d923eedb81e2"
+    },
+    {
+      "record_id": "agent-atlas:retry-reconcile-precedence",
+      "revision": "0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591"
+    },
+    {
+      "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+      "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+    },
+    {
+      "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+      "revision": "0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958"
+    },
+    {
+      "record_id": "agent-atlas:source:OTEL-AGENT-2026",
+      "revision": "f0e0660c7b43d0e1de956f2b7427ad25ed23ccd6da3a84c6ed3653403c5b8ee9"
+    },
+    {
+      "record_id": "agent-atlas:unknown-submission-order",
+      "revision": "852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-33",
+            "concept",
+            "no-effect-replay"
+          ],
+          "text": "An uncertain response can reflect lost acknowledgment after a successful provider mutation; retry without an idempotency/reconciliation contract risks duplicate effects.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "no-effect-replay",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-33",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:no-effect-replay",
+        "revision": "b3c9536a9679ab8a5b28c22c4b1d22e97d0ed1cf5832c59239dc34ea2aa9b4e7",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          }
+        ],
+        "status": "active",
+        "title": "A timeout cannot establish lack of external effect",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-24",
+            "method"
+          ],
+          "text": "An offline recovery decision model first honors host Stop, then uncertain submitted effects, missing dispatch lineage, blocked dependencies, unverified worker results and attempt budgets.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation",
+              "source_id": "agent-atlas:source:OTEL-AGENT-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "operator-stop-priority",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-24",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:operator-stop-priority",
+        "revision": "de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          },
+          {
+            "record_id": "agent-atlas:source:OTEL-AGENT-2026",
+            "revision": "f0e0660c7b43d0e1de956f2b7427ad25ed23ccd6da3a84c6ed3653403c5b8ee9"
+          }
+        ],
+        "status": "active",
+        "title": "An operator stop outranks agent attempts to recover",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-33",
+            "method",
+            "outbox-reconciliation-gate"
+          ],
+          "text": "Block automatic retry or evidence admission if side_effect_state is submitted_unknown, even if the worker reports success or the artifact hash appears to match.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+              "source_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "outbox-reconciliation-gate",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-33",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:outbox-reconciliation-gate",
+        "revision": "e43f985ed058837081707caf3d42cc725bf3c78f654b365ec502181c31fe01fe",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          },
+          {
+            "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+            "revision": "0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958"
+          }
+        ],
+        "status": "active",
+        "title": "Do not authorize a duplicate provider mutation from a model conclusion",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-27",
+            "method"
+          ],
+          "text": "Offline decision order: Stop > unknown external side effect > missing parent dispatch > blocked dependency > verified terminal > verification needed > running > attempt limit > retry consideration. No branch causes actual side effects.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "recovery-boundary-priorities",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:recovery-boundary-priorities",
+        "revision": "fd6a2921d2f93360073a5772167725f7b636a28cf11fbf1c9c48065ce24705c8",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          }
+        ],
+        "status": "active",
+        "title": "Recovery precedence should be explicit and testable",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-24",
+            "concept"
+          ],
+          "text": "A caller-provided request ID enables provider deduplication; hashing identical payloads may merge distinct intended operations. Durable idempotency requires provider contract and atomic state handling.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+              "source_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "request-id-vs-payload-hash",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-24",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:request-id-vs-payload-hash",
+        "revision": "f643c989bb20a501d586455ca58f18e481553e981b67aad69c76d923eedb81e2",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          },
+          {
+            "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+            "revision": "0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958"
+          }
+        ],
+        "status": "active",
+        "title": "Idempotency key expresses intent, not mere payload equality",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-33",
+            "concept",
+            "retry-reconcile-precedence"
+          ],
+          "text": "After a potentially mutating operation is submitted without an authoritative outcome, provider reconciliation precedes retry; operator Stop still overrides all unapproved continuations.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+              "source_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "retry-reconcile-precedence",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-33",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:retry-reconcile-precedence",
+        "revision": "0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          },
+          {
+            "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+            "revision": "0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958"
+          }
+        ],
+        "status": "active",
+        "title": "Unknown external submission overrides ordinary retry",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Historical technical navigation; not an independent validation of real agent behavior"
+          ],
+          "assumptions": [
+            "Use only the identified published documentation portion"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Documentation is evolving and may change after this check",
+            "No original publisher full text mirrored or independent source audit"
+          ],
+          "tags": [
+            "source",
+            "agent-0.3.0"
+          ],
+          "text": "Making retries safe with idempotent APIs — Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+          "uncertainty": [
+            "Applicability and implementation uncertainty remain open"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent source-review panel, real provider testing or live model evaluation"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:AWS-IDEMPOTENCY",
+        "provenance": {
+          "author": "Amazon Builders Library, Malcolm Featonby",
+          "checked_at": "2026-11-13",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+          "source_bytes_archived": false,
+          "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+        },
+        "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+        "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb",
+        "rights": {
+          "note": "Original brief bibliography and paraphrase only; external rights preserved",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Making retries safe with idempotent APIs",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Historical technical navigation; not an independent validation of real agent behavior"
+          ],
+          "assumptions": [
+            "Use only the identified published documentation portion"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Documentation is evolving and may change after this check",
+            "No original publisher full text mirrored or independent source audit"
+          ],
+          "tags": [
+            "source",
+            "agent-0.3.0"
+          ],
+          "text": "AWS Well Architected: make responses idempotent — Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+          "uncertainty": [
+            "Applicability and implementation uncertainty remain open"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent source-review panel, real provider testing or live model evaluation"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:AWS-WA-IDEMPOTENCY",
+        "provenance": {
+          "author": "AWS Well Architected Framework",
+          "checked_at": "2026-11-13",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+          "source_bytes_archived": false,
+          "url": "https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/rel_prevent_interaction_failure_idempotent.html"
+        },
+        "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+        "revision": "0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958",
+        "rights": {
+          "note": "Original brief bibliography and paraphrase only; external rights preserved",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "AWS Well Architected: make responses idempotent",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Historical technical navigation; not an independent validation of real agent behavior"
+          ],
+          "assumptions": [
+            "Use only the identified published documentation portion"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Documentation is evolving and may change after this check",
+            "No original publisher full text mirrored or independent source audit"
+          ],
+          "tags": [
+            "source",
+            "agent-0.3.0"
+          ],
+          "text": "OpenTelemetry GenAI agent and framework span conventions — Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation",
+          "uncertainty": [
+            "Applicability and implementation uncertainty remain open"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent source-review panel, real provider testing or live model evaluation"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:OTEL-AGENT-2026",
+        "provenance": {
+          "author": "OpenTelemetry contributors",
+          "checked_at": "2026-11-13",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation",
+          "source_bytes_archived": false,
+          "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md"
+        },
+        "record_id": "agent-atlas:source:OTEL-AGENT-2026",
+        "revision": "f0e0660c7b43d0e1de956f2b7427ad25ed23ccd6da3a84c6ed3653403c5b8ee9",
+        "rights": {
+          "note": "Original brief bibliography and paraphrase only; external rights preserved",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "OpenTelemetry GenAI agent and framework span conventions",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-24",
+            "concept"
+          ],
+          "text": "When a mutating call may have reached the provider, subsequent network failure can leave the outcome unknown; retry requires provider idempotency semantics or explicit reconciliation.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+              "source_id": "agent-atlas:source:AWS-IDEMPOTENCY"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "unknown-submission-order",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-24",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:unknown-submission-order",
+        "revision": "852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+            "revision": "bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb"
+          }
+        ],
+        "status": "active",
+        "title": "Unknown submitted side effects outrank blind retry attempts",
+        "type": "concept"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:operator-stop-priority",
+          "revision": "de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual evidence/assumption dependency, not a newly discovered physical effect"
+        },
+        "relation_id": "agent-atlas:operator-stop-priority:qualifies:unknown-submission-order",
+        "revision": "96a21dd7276d4d0f1a3673fd749a9ba078974e4c474b54ed1c54cc04a44aee14",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:unknown-submission-order",
+          "revision": "852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:outbox-reconciliation-gate",
+          "revision": "e43f985ed058837081707caf3d42cc725bf3c78f654b365ec502181c31fe01fe"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:outbox-reconciliation-gate:qualifies:retry-reconcile-precedence",
+        "revision": "96d0728e05639a4eb1693ac866e66dd46f4eadcd91ad31e650c4e7e3fd1e8346",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:retry-reconcile-precedence",
+          "revision": "0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:recovery-boundary-priorities",
+          "revision": "fd6a2921d2f93360073a5772167725f7b636a28cf11fbf1c9c48065ce24705c8"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual evidence/assumption dependency, not a newly discovered physical effect"
+        },
+        "relation_id": "agent-atlas:recovery-boundary-priorities:qualifies:operator-stop-priority",
+        "revision": "253c4add5af36e9d17ba8c1b148dc5562eda54c80b68ae9617fa92b05b8975cf",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:operator-stop-priority",
+          "revision": "de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:retry-reconcile-precedence",
+          "revision": "0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:retry-reconcile-precedence:qualifies:no-effect-replay",
+        "revision": "f0b56f0d31df2f970790609903d1801a788d899b14559156ac3a2cc497f4ba35",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:no-effect-replay",
+          "revision": "b3c9536a9679ab8a5b28c22c4b1d22e97d0ed1cf5832c59239dc34ea2aa9b4e7"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:unknown-submission-order",
+          "revision": "852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual evidence/assumption dependency, not a newly discovered physical effect"
+        },
+        "relation_id": "agent-atlas:unknown-submission-order:qualifies:request-id-vs-payload-hash",
+        "revision": "91e6b65a7220462b365feaf261887b25e3488cd34b6427ec17bcb825ec5a206b",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:request-id-vs-payload-hash",
+          "revision": "f643c989bb20a501d586455ca58f18e481553e981b67aad69c76d923eedb81e2"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-33\",\"concept\",\"no-effect-replay\"],\"text\":\"An uncertain response can reflect lost acknowledgment after a successful provider mutation; retry without an idempotency/reconciliation contract risks duplicate effects.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"no-effect-replay\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-33\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:no-effect-replay\",\"revision\":\"b3c9536a9679ab8a5b28c22c4b1d22e97d0ed1cf5832c59239dc34ea2aa9b4e7\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"}],\"status\":\"active\",\"title\":\"A timeout cannot establish lack of external effect\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-24\",\"method\"],\"text\":\"An offline recovery decision model first honors host Stop, then uncertain submitted effects, missing dispatch lineage, blocked dependencies, unverified worker results and attempt budgets.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation\",\"source_id\":\"agent-atlas:source:OTEL-AGENT-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"operator-stop-priority\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-24\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:operator-stop-priority\",\"revision\":\"de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"},{\"record_id\":\"agent-atlas:source:OTEL-AGENT-2026\",\"revision\":\"f0e0660c7b43d0e1de956f2b7427ad25ed23ccd6da3a84c6ed3653403c5b8ee9\"}],\"status\":\"active\",\"title\":\"An operator stop outranks agent attempts to recover\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-33\",\"method\",\"outbox-reconciliation-gate\"],\"text\":\"Block automatic retry or evidence admission if side_effect_state is submitted_unknown, even if the worker reports success or the artifact hash appears to match.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent\",\"source_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"outbox-reconciliation-gate\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-33\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:outbox-reconciliation-gate\",\"revision\":\"e43f985ed058837081707caf3d42cc725bf3c78f654b365ec502181c31fe01fe\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"},{\"record_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\",\"revision\":\"0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958\"}],\"status\":\"active\",\"title\":\"Do not authorize a duplicate provider mutation from a model conclusion\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-27\",\"method\"],\"text\":\"Offline decision order: Stop > unknown external side effect > missing parent dispatch > blocked dependency > verified terminal > verification needed > running > attempt limit > retry consideration. No branch causes actual side effects.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"recovery-boundary-priorities\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:recovery-boundary-priorities\",\"revision\":\"fd6a2921d2f93360073a5772167725f7b636a28cf11fbf1c9c48065ce24705c8\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"}],\"status\":\"active\",\"title\":\"Recovery precedence should be explicit and testable\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-24\",\"concept\"],\"text\":\"A caller-provided request ID enables provider deduplication; hashing identical payloads may merge distinct intended operations. Durable idempotency requires provider contract and atomic state handling.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent\",\"source_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"request-id-vs-payload-hash\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-24\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:request-id-vs-payload-hash\",\"revision\":\"f643c989bb20a501d586455ca58f18e481553e981b67aad69c76d923eedb81e2\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"},{\"record_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\",\"revision\":\"0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958\"}],\"status\":\"active\",\"title\":\"Idempotency key expresses intent, not mere payload equality\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-33\",\"concept\",\"retry-reconcile-precedence\"],\"text\":\"After a potentially mutating operation is submitted without an authoritative outcome, provider reconciliation precedes retry; operator Stop still overrides all unapproved continuations.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent\",\"source_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"retry-reconcile-precedence\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-33\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:retry-reconcile-precedence\",\"revision\":\"0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"},{\"record_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\",\"revision\":\"0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958\"}],\"status\":\"active\",\"title\":\"Unknown external submission overrides ordinary retry\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Historical technical navigation; not an independent validation of real agent behavior\"],\"assumptions\":[\"Use only the identified published documentation portion\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Documentation is evolving and may change after this check\",\"No original publisher full text mirrored or independent source audit\"],\"tags\":[\"source\",\"agent-0.3.0\"],\"text\":\"Making retries safe with idempotent APIs — Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"uncertainty\":[\"Applicability and implementation uncertainty remain open\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent source-review panel, real provider testing or live model evaluation\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:AWS-IDEMPOTENCY\",\"provenance\":{\"author\":\"Amazon Builders Library, Malcolm Featonby\",\"checked_at\":\"2026-11-13\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_bytes_archived\":false,\"url\":\"https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/\"},\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\",\"rights\":{\"note\":\"Original brief bibliography and paraphrase only; external rights preserved\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Making retries safe with idempotent APIs\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Historical technical navigation; not an independent validation of real agent behavior\"],\"assumptions\":[\"Use only the identified published documentation portion\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Documentation is evolving and may change after this check\",\"No original publisher full text mirrored or independent source audit\"],\"tags\":[\"source\",\"agent-0.3.0\"],\"text\":\"AWS Well Architected: make responses idempotent — Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent\",\"uncertainty\":[\"Applicability and implementation uncertainty remain open\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent source-review panel, real provider testing or live model evaluation\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:AWS-WA-IDEMPOTENCY\",\"provenance\":{\"author\":\"AWS Well Architected Framework\",\"checked_at\":\"2026-11-13\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent\",\"source_bytes_archived\":false,\"url\":\"https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/rel_prevent_interaction_failure_idempotent.html\"},\"record_id\":\"agent-atlas:source:AWS-WA-IDEMPOTENCY\",\"revision\":\"0b6b28df8f3c819c2d6aaead184e936fac98e5eff2956756833059c80f28d958\",\"rights\":{\"note\":\"Original brief bibliography and paraphrase only; external rights preserved\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"AWS Well Architected: make responses idempotent\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Historical technical navigation; not an independent validation of real agent behavior\"],\"assumptions\":[\"Use only the identified published documentation portion\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Documentation is evolving and may change after this check\",\"No original publisher full text mirrored or independent source audit\"],\"tags\":[\"source\",\"agent-0.3.0\"],\"text\":\"OpenTelemetry GenAI agent and framework span conventions — Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation\",\"uncertainty\":[\"Applicability and implementation uncertainty remain open\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent source-review panel, real provider testing or live model evaluation\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:OTEL-AGENT-2026\",\"provenance\":{\"author\":\"OpenTelemetry contributors\",\"checked_at\":\"2026-11-13\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation\",\"source_bytes_archived\":false,\"url\":\"https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md\"},\"record_id\":\"agent-atlas:source:OTEL-AGENT-2026\",\"revision\":\"f0e0660c7b43d0e1de956f2b7427ad25ed23ccd6da3a84c6ed3653403c5b8ee9\",\"rights\":{\"note\":\"Original brief bibliography and paraphrase only; external rights preserved\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"OpenTelemetry GenAI agent and framework span conventions\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-24\",\"concept\"],\"text\":\"When a mutating call may have reached the provider, subsequent network failure can leave the outcome unknown; retry requires provider idempotency semantics or explicit reconciliation.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts\",\"source_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"unknown-submission-order\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-24\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:unknown-submission-order\",\"revision\":\"852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:AWS-IDEMPOTENCY\",\"revision\":\"bc6c222fab5ace474554f2ccc86552b2bd8fd96efac2b6a29bcbf1e210e81edb\"}],\"status\":\"active\",\"title\":\"Unknown submitted side effects outrank blind retry attempts\",\"type\":\"concept\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:operator-stop-priority\",\"revision\":\"de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual evidence/assumption dependency, not a newly discovered physical effect\"},\"relation_id\":\"agent-atlas:operator-stop-priority:qualifies:unknown-submission-order\",\"revision\":\"96a21dd7276d4d0f1a3673fd749a9ba078974e4c474b54ed1c54cc04a44aee14\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:unknown-submission-order\",\"revision\":\"852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:outbox-reconciliation-gate\",\"revision\":\"e43f985ed058837081707caf3d42cc725bf3c78f654b365ec502181c31fe01fe\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:outbox-reconciliation-gate:qualifies:retry-reconcile-precedence\",\"revision\":\"96d0728e05639a4eb1693ac866e66dd46f4eadcd91ad31e650c4e7e3fd1e8346\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:retry-reconcile-precedence\",\"revision\":\"0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:recovery-boundary-priorities\",\"revision\":\"fd6a2921d2f93360073a5772167725f7b636a28cf11fbf1c9c48065ce24705c8\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual evidence/assumption dependency, not a newly discovered physical effect\"},\"relation_id\":\"agent-atlas:recovery-boundary-priorities:qualifies:operator-stop-priority\",\"revision\":\"253c4add5af36e9d17ba8c1b148dc5562eda54c80b68ae9617fa92b05b8975cf\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:operator-stop-priority\",\"revision\":\"de31bc38c9edeb39bbeb6e76e8bded96070034d606af0e060b6380a6f3a34906\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:retry-reconcile-precedence\",\"revision\":\"0713f3e532deeb7819240f730e75682675ebea220aab8df360f7baab1b1db591\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:retry-reconcile-precedence:qualifies:no-effect-replay\",\"revision\":\"f0b56f0d31df2f970790609903d1801a788d899b14559156ac3a2cc497f4ba35\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:no-effect-replay\",\"revision\":\"b3c9536a9679ab8a5b28c22c4b1d22e97d0ed1cf5832c59239dc34ea2aa9b4e7\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:unknown-submission-order\",\"revision\":\"852a642e4fbf560d34cceed8be1c647e2d373e3a9b5f56adbc6c245a2b1c9694\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual evidence/assumption dependency, not a newly discovered physical effect\"},\"relation_id\":\"agent-atlas:unknown-submission-order:qualifies:request-id-vs-payload-hash\",\"revision\":\"91e6b65a7220462b365feaf261887b25e3488cd34b6427ec17bcb825ec5a206b\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:request-id-vs-payload-hash\",\"revision\":\"f643c989bb20a501d586455ca58f18e481553e981b67aad69c76d923eedb81e2\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 27838,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:otel-metadata-strict",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:safe-evidence-observation-only",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:otel-span-lineage",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:text-hash-limit",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:otel-sanitization",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:trace-privacy-boundary",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "0af5e6e64a642385687a4df2e5cb86df99472ff49fcb531b025e88177595fe40"
+}

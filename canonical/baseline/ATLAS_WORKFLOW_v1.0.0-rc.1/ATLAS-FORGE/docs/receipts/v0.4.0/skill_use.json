@@ -1,0 +1,31 @@
+{
+  "schema": "atlas.skill-use/1",
+  "host_installation": false,
+  "checks": [
+    {
+      "skill": "atlas-build",
+      "actual_runner": "tools/run_workflow.py",
+      "receipt": "workflow-summary.json"
+    },
+    {
+      "skill": "atlas-source-curation",
+      "actual_runner": "tools/check_curation.py",
+      "receipt": "curation.json"
+    },
+    {
+      "skill": "atlas-node-conformance",
+      "actual_runner": "tools/workflow.py conform",
+      "receipt": "conformance.json"
+    },
+    {
+      "skill": "atlas-context-audit",
+      "actual_runner": "tools/evaluate_common.py and unittest tests/test_common.py",
+      "receipt": "authored_diagnostic.json"
+    },
+    {
+      "skill": "atlas-release-gate",
+      "actual_runner": "tools/workflow.py advance --node causal-atlas",
+      "receipt": "next_domain_guard.log"
+    }
+  ]
+}

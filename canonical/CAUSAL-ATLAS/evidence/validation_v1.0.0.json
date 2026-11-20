@@ -1,0 +1,105 @@
+{
+  "scoped_causal_content_version": "1.0.0",
+  "status": "scoped_reference_content_release_not_final_scientific_platform_acceptance",
+  "result": "partially_redacted_historical_evidence",
+  "inventory": {
+    "nodes": 4,
+    "common_records": 654,
+    "causal_records": 149,
+    "source_cards": 34,
+    "non_source_records": 115,
+    "causal_relations": 65,
+    "chapters": 24,
+    "investigations": 13,
+    "blank_templates": 6,
+    "historical_real_observational_case": 1,
+    "new_advanced_cases": 7,
+    "retained_prior_causal_revisions": 105
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "numerical_oracle": {
+    "schema": "atlas.causal-v1-numerical-oracle/1",
+    "result": "passed",
+    "python": "3.13.5",
+    "numpy_version": "2.3.5",
+    "seed": 971126,
+    "comparisons": 1323,
+    "methods": {
+      "longitudinal": 480,
+      "mediation": 360,
+      "transport": 240,
+      "binomial": 240,
+      "berkeley": 3
+    },
+    "maximum_scaled_absolute_error": 2.220446049250313e-16,
+    "tolerance": 1e-11,
+    "data_origin": "seeded_synthetic_models_and_attributed_historical_counts",
+    "causal_identification_verified": false,
+    "independent_science_review": false,
+    "held_out_evaluation": false
+  },
+  "clean_wheel_installation": {
+    "versions": {
+      "atlas-forge-research": "1.0.0rc1",
+      "measurement-atlas": "1.0.0rc1",
+      "causal-atlas": "1.0.0"
+    },
+    "source_tree_imports": false,
+    "causal_package_file": "/mnt/data/causal1_build/venv/lib/python3.13/site-packages/causal_atlas/__init__.py",
+    "common_records": 149,
+    "case_count": 7,
+    "context_valid": true,
+    "context_status": "context_available"
+  },
+  "preservation": {
+    "baseline_files_retained_exact": 771,
+    "baseline_changed": [],
+    "prior_causal_revisions_retained": 105,
+    "other_node_and_artwork_comparisons": 28,
+    "other_node_and_artwork_all_identical": true
+  },
+  "historical_observational_dataset": {
+    "status": "unavailable_pending_dataset_redistribution_clearance",
+    "reason": "ucb_admissions_redistribution_unresolved"
+  },
+  "scientific_approval": {
+    "human_peer_review": false,
+    "empirical_causal_replication": false,
+    "generally_valid_identification": false,
+    "blinded_ai_evaluation": false,
+    "native_windows_host_testing": false,
+    "live_bitwork_ai_integration": false
+  },
+  "limitations": "Developer-written tests and numerical oracles support implementation, not causal truth, method completeness, source redistribution rights or independent validation.",
+  "public_derivative_original_historical_outcome": {
+    "result": "passed"
+  },
+  "public_derivative_not_revalidated": true,
+  "public_derivative_redactions": {
+    "reason": "ucb_admissions_redistribution_unresolved",
+    "original_validation_not_repeated": true,
+    "note": "Historical evidence was selectively redacted and is not a validation receipt for altered bytes."
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "schema": "measurement.reference-additions/1",
+  "revision": "0.4.0",
+  "checked_at": "2026-11-12",
+  "review": "assistant primary HTML portion inspection; not independent scientific review",
+  "sources": [
+    {
+      "id": "TN2",
+      "title": "Classification of uncertainty components",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty",
+      "inspected_scope": "TN 1297 §2.1–2.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN3",
+      "title": "Type A evaluation",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-3-type-evaluation-standard-uncertainty",
+      "inspected_scope": "TN 1297 §3, opening paragraph",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN4",
+      "title": "Type B evaluation",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-4-type-b-evaluation-standard-uncertainty",
+      "inspected_scope": "TN 1297 §4.1–4.6",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN5",
+      "title": "Combined standard uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-5-combined-standard-uncertainty",
+      "inspected_scope": "TN 1297 §5.1–5.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN6",
+      "title": "Expanded uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-6-expanded-uncertainty",
+      "inspected_scope": "TN 1297 §6.1–6.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TN7",
+      "title": "Reporting uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-7-reporting-uncertainty",
+      "inspected_scope": "TN 1297 §7.1–7.4",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TNA",
+      "title": "Law of propagation of uncertainty",
+      "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty",
+      "inspected_scope": "TN 1297 Appendix A, A.1–A.5",
+      "publisher": "NIST",
+      "publication": "TN 1297 (1994), HTML edition",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "TRACE",
+      "title": "Metrological traceability FAQ",
+      "url": "https://www.nist.gov/metrology/metrological-traceability",
+      "inspected_scope": "FAQ §5.1.1, §5.1.4 and §5.2.1",
+      "publisher": "NIST",
+      "publication": "NIST web reference",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    },
+    {
+      "id": "POLICY",
+      "title": "NIST policy on metrological traceability",
+      "url": "https://www.nist.gov/calibrations/traceability",
+      "inspected_scope": "Policy statement items 1–5",
+      "publisher": "NIST",
+      "publication": "NIST web reference",
+      "rights": "Link and original bounded paraphrase only; no source page or publication mirrored."
+    }
+  ],
+  "records": [
+    {
+      "id": "evaluation-methods",
+      "title": "Type A and Type B describe evaluation methods",
+      "source": "TN2",
+      "locator": "§2.2–2.3",
+      "text": "Type A uses statistical evaluation; Type B uses other information. These categories do not map one-to-one onto random and systematic effects.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Do not classify an effect solely by whether it appears random or systematic."
+      ],
+      "tags": [
+        "type",
+        "a",
+        "and",
+        "type",
+        "b",
+        "describe",
+        "evaluation",
+        "methods"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "standard-uncertainty",
+      "title": "Standard uncertainty",
+      "source": "TN2",
+      "locator": "§2.4",
+      "text": "Standard uncertainty represents an uncertainty component as an estimated standard deviation.",
+      "equation": "u = sqrt(estimated variance)",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "This reference is not a laboratory calibration or independent replication."
+      ],
+      "tags": [
+        "standard",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "error-not-uncertainty",
+      "title": "Error is not uncertainty",
+      "source": "TN2",
+      "locator": "§2.3 note",
+      "text": "A result can have a small unknown error yet substantial uncertainty. Uncertainty is not the realized error.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The true error is generally not known from an uncertainty estimate."
+      ],
+      "tags": [
+        "error",
+        "is",
+        "not",
+        "uncertainty"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "type-a-methods",
+      "title": "Type A methods beyond repeated means",
+      "source": "TN3",
+      "locator": "§3 opening paragraph",
+      "text": "Type A evaluations can use valid statistical analyses such as least squares or analysis of variance, not only repeated-reading means.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The appropriate statistical design depends on the measurement process."
+      ],
+      "tags": [
+        "type",
+        "a",
+        "methods",
+        "beyond",
+        "repeated",
+        "means"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "type-a-mean",
+      "title": "Uncertainty of a repeated-reading mean",
+      "source": "TNA",
+      "locator": "A.4, equations A-4 and A-5",
+      "text": "For independent observations under the same conditions, estimate the mean uncertainty from their sample dispersion.",
+      "equation": "u(mean) = s/sqrt(n)",
+      "assumptions": [
+        "n >= 2 independent observations under the same measurement conditions."
+      ],
+      "limitations": [
+        "Autocorrelation and drift can invalidate this calculation."
+      ],
+      "tags": [
+        "uncertainty",
+        "of",
+        "a",
+        "repeated-reading",
+        "mean"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "linear-propagation",
+      "title": "First-order uncertainty propagation",
+      "source": "TNA",
+      "locator": "A.3, equation A-3",
+      "text": "Combine input variances and covariances using local sensitivities.",
+      "equation": "u_c^2 = c^T Sigma c",
+      "assumptions": [
+        "First-order Taylor approximation; sensitivities evaluated at input estimates."
+      ],
+      "limitations": [
+        "Nonlinearity may require another method."
+      ],
+      "tags": [
+        "first-order",
+        "uncertainty",
+        "propagation"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "covariance",
+      "title": "Correlated measurement inputs",
+      "source": "TNA",
+      "locator": "A.3, covariance term in A-3",
+      "text": "Covariance terms contribute to the combined variance when inputs are correlated.",
+      "equation": "",
+      "assumptions": [
+        "Covariance estimates describe the joint input uncertainty."
+      ],
+      "limitations": [
+        "Zero correlation must not be silently inferred from missing metadata."
+      ],
+      "tags": [
+        "correlated",
+        "measurement",
+        "inputs"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "measurement-difference",
+      "title": "Uncertainty of a difference",
+      "source": "TNA",
+      "locator": "A.3; local substitution f(x,y)=x-y",
+      "text": "Substituting sensitivities +1 and -1 gives the variance of a difference.",
+      "equation": "u^2(x-y) = u_x^2 + u_y^2 - 2 cov(x,y)",
+      "assumptions": [
+        "Both inputs describe comparable quantities in compatible units."
+      ],
+      "limitations": [
+        "No acceptance decision follows without a declared decision rule."
+      ],
+      "tags": [
+        "uncertainty",
+        "of",
+        "a",
+        "difference"
+      ],
+      "kind": "method",
+      "origin": "formal_derivation"
+    },
+    {
+      "id": "type-b-information",
+      "title": "Type B information sources",
+      "source": "TN4",
+      "locator": "§4.1",
+      "text": "Type B evaluation may use previous data, specifications, calibration reports, experience, and reference information.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "A source must be relevant to the actual measurement conditions."
+      ],
+      "tags": [
+        "type",
+        "b",
+        "information",
+        "sources"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "uniform-bounds",
+      "title": "Uniform bounded uncertainty",
+      "source": "TN4",
+      "locator": "§4.6",
+      "text": "For a symmetric uniform model with half-width a, the standard uncertainty is a divided by sqrt(3).",
+      "equation": "u = a/sqrt(3)",
+      "assumptions": [
+        "Equal probability within justified symmetric bounds."
+      ],
+      "limitations": [
+        "Bounds alone do not establish a uniform distribution."
+      ],
+      "tags": [
+        "uniform",
+        "bounded",
+        "uncertainty"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "triangular-bounds",
+      "title": "Triangular bounded uncertainty",
+      "source": "TN4",
+      "locator": "§4.6 final paragraph",
+      "text": "For a symmetric triangular model with half-width a, use a divided by sqrt(6).",
+      "equation": "u = a/sqrt(6)",
+      "assumptions": [
+        "A symmetric triangular probability model is justified."
+      ],
+      "limitations": [
+        "Do not select this model merely to obtain a smaller uncertainty."
+      ],
+      "tags": [
+        "triangular",
+        "bounded",
+        "uncertainty"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "certificate-multiplier",
+      "title": "Convert a reported uncertainty multiplier",
+      "source": "TN4",
+      "locator": "§4.2",
+      "text": "Divide an uncertainty stated as a multiple of a standard deviation by its stated multiplier.",
+      "equation": "u = U/k",
+      "assumptions": [
+        "The report supplies the multiplier and meaning of U."
+      ],
+      "limitations": [
+        "A missing multiplier cannot be guessed."
+      ],
+      "tags": [
+        "convert",
+        "a",
+        "reported",
+        "uncertainty",
+        "multiplier"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "systematic-corrections",
+      "title": "Corrections for systematic effects",
+      "source": "TN5",
+      "locator": "§5.2 and note 1",
+      "text": "Recognized significant systematic effects should be corrected where possible; the correction carries its own uncertainty.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "The uncertainty of a correction is not the systematic error itself."
+      ],
+      "tags": [
+        "corrections",
+        "for",
+        "systematic",
+        "effects"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "combined-uncertainty",
+      "title": "Combine Type A and Type B components",
+      "source": "TN5",
+      "locator": "§5.1",
+      "text": "Components from either evaluation method enter a combined standard uncertainty with covariance where appropriate.",
+      "equation": "",
+      "assumptions": [
+        "Components use standard uncertainties and a defensible measurement model."
+      ],
+      "limitations": [
+        "This reference is not a laboratory calibration or independent replication."
+      ],
+      "tags": [
+        "combine",
+        "type",
+        "a",
+        "and",
+        "type",
+        "b",
+        "components"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "expanded-uncertainty",
+      "title": "Expanded uncertainty",
+      "source": "TN6",
+      "locator": "§6.1",
+      "text": "Expanded uncertainty multiplies combined standard uncertainty by a chosen coverage factor.",
+      "equation": "U = k u_c",
+      "assumptions": [
+        "Coverage factor k is explicit and justified."
+      ],
+      "limitations": [
+        "Multiplication alone does not establish a coverage probability."
+      ],
+      "tags": [
+        "expanded",
+        "uncertainty"
+      ],
+      "kind": "equation",
+      "origin": "source_reported"
+    },
+    {
+      "id": "coverage-conditions",
+      "title": "Coverage factor is not a universal probability",
+      "source": "TN6",
+      "locator": "§6.2–6.3",
+      "text": "A factor of two corresponds to approximately 95 percent coverage under the stated normal-distribution and negligible-uncertainty conditions.",
+      "equation": "",
+      "assumptions": [
+        "Normal approximation applies and uncertainty in u_c is negligible for that interpretation."
+      ],
+      "limitations": [
+        "Do not label every k=2 interval as 95 percent."
+      ],
+      "tags": [
+        "coverage",
+        "factor",
+        "is",
+        "not",
+        "a",
+        "universal",
+        "probability"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "uncertainty-reporting",
+      "title": "Report uncertainty with its basis",
+      "source": "TN7",
+      "locator": "§7.1–7.2",
+      "text": "Report components, their evaluation methods, and the coverage factor when expanded uncertainty is used. State the basis of any probability interpretation.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Keep referenced measurement procedures consistent with the process used."
+      ],
+      "tags": [
+        "report",
+        "uncertainty",
+        "with",
+        "its",
+        "basis"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "traceability-result",
+      "title": "Traceability belongs to a measurement result",
+      "source": "TRACE",
+      "locator": "§5.1.1",
+      "text": "Metrological traceability relates a measurement result to a reference through a documented calibration chain with uncertainty contributions.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "An instrument calibration by itself does not establish traceability of every subsequent result."
+      ],
+      "tags": [
+        "traceability",
+        "belongs",
+        "to",
+        "a",
+        "measurement",
+        "result"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    },
+    {
+      "id": "traceability-documentation",
+      "title": "Traceability documentation requirements",
+      "source": "TRACE",
+      "locator": "§5.2.1",
+      "text": "Document the measurand, measurement system, result and uncertainty, reference calibration, and relevant measurement assurance.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Checking graph links cannot authenticate certificates or establish competence."
+      ],
+      "tags": [
+        "traceability",
+        "documentation",
+        "requirements"
+      ],
+      "kind": "method",
+      "origin": "source_reported"
+    },
+    {
+      "id": "fitness-for-purpose",
+      "title": "Traceability is not fitness for purpose",
+      "source": "POLICY",
+      "locator": "Policy statement item 5",
+      "text": "A traceable result can still be unsuitable for an application when its uncertainty is too large.",
+      "equation": "",
+      "assumptions": [
+        "The stated model and source scope apply to the task."
+      ],
+      "limitations": [
+        "Application requirements must be evaluated separately."
+      ],
+      "tags": [
+        "traceability",
+        "is",
+        "not",
+        "fitness",
+        "for",
+        "purpose"
+      ],
+      "kind": "concept",
+      "origin": "source_reported"
+    }
+  ],
+  "relations": [
+    {
+      "from": "expanded-uncertainty",
+      "to": "coverage-conditions",
+      "type": "qualifies",
+      "note": "Coverage interpretation is an indispensable qualifier of the formula."
+    },
+    {
+      "from": "type-a-mean",
+      "to": "type-a-methods",
+      "type": "related_to",
+      "note": "One example within the broader Type A family."
+    },
+    {
+      "from": "covariance",
+      "to": "linear-propagation",
+      "type": "depends_on",
+      "note": "Covariance term interpreted within the stated propagation model."
+    },
+    {
+      "from": "measurement-difference",
+      "to": "covariance",
+      "type": "qualifies",
+      "note": "Difference computation must retain correlation assumptions."
+    },
+    {
+      "from": "traceability-result",
+      "to": "fitness-for-purpose",
+      "type": "qualifies",
+      "note": "Traceability alone does not establish suitability."
+    },
+    {
+      "from": "traceability-documentation",
+      "to": "traceability-result",
+      "type": "related_to",
+      "note": "Documentation supports a claim but is not certification."
+    },
+    {
+      "from": "uniform-bounds",
+      "to": "triangular-bounds",
+      "type": "related_to",
+      "note": "Alternative declared models, not interchangeable assumptions."
+    },
+    {
+      "from": "combined-uncertainty",
+      "to": "linear-propagation",
+      "type": "related_to",
+      "note": "Common first-order computational model."
+    }
+  ]
+}

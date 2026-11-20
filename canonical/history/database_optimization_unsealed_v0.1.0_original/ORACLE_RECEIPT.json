@@ -1,0 +1,29 @@
+{
+  "comparisons": 54018,
+  "counts": {
+    "correlated_selectivity_negative_control": 1000,
+    "external_merge_sort": 7000,
+    "fence_lookup": 7000,
+    "fence_range": 7000,
+    "fifo_naive": 7000,
+    "hash_join_naive": 5000,
+    "join_sqlite": 5000,
+    "lru_naive": 7000,
+    "merge_join_naive": 5000,
+    "mvcc_naive_replay": 2000,
+    "nonnegative_heuristic_cost": 1000,
+    "sqlite_truth": 18
+  },
+  "domain": "database-optimization-atlas",
+  "failures": 0,
+  "limitations": [
+    "Oracle covers finite, bounded inputs only",
+    "Not database performance or production concurrency certification",
+    "No storage/power-failure tests",
+    "No claim of independent peer review"
+  ],
+  "original_priority": 17,
+  "schema": "atlas.db-optimization.independent-finite-oracle/1",
+  "scientific_v1_accepted": false,
+  "status": "constructed_offline_finite_reference_only"
+}

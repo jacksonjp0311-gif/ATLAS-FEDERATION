@@ -1,0 +1,22 @@
+{
+  "schema": "atlas.energy-survival-oracle/1",
+  "result": "passed",
+  "comparisons": 4670,
+  "counts": {
+    "water_lift": 500,
+    "sensible_heating": 500,
+    "shelter_heat": 500,
+    "fuel_account": 500,
+    "reserve_energy": 500,
+    "priority_allocation": 1170,
+    "profile_energy_balance": 500,
+    "profile_unserved": 500
+  },
+  "seed": 131114,
+  "max_absolute_error": 5.684341886080802e-14,
+  "numpy_version": "2.3.5",
+  "source": "independently implemented author-created examples",
+  "real_equipment_operated": false,
+  "statistical_outage_probability_inferred": false,
+  "independent_scientific_review": false
+}

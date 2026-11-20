@@ -1,0 +1,352 @@
+[
+  {
+    "number": 1,
+    "title": "Matter, chemical identities, and traceable units",
+    "file": "01_matter_chemical_identities_and_traceable_units.md",
+    "area": "Foundations",
+    "sources": [
+      "BIPM-MOLE",
+      "CIAAW-WEIGHTS"
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Atomic nuclei, electrons, isotopes, and the periodic table",
+    "file": "02_atomic_nuclei_electrons_isotopes_and_the_periodic_table.md",
+    "area": "Foundations",
+    "sources": [
+      "CIAAW-WEIGHTS",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Electronic structure and chemical bonding",
+    "file": "03_electronic_structure_and_chemical_bonding.md",
+    "area": "Quantum and bonding",
+    "sources": [
+      "BIPM-SI",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Chemical formulas and exact atom conservation",
+    "file": "04_chemical_formulas_and_exact_atom_conservation.md",
+    "area": "Stoichiometry",
+    "sources": [
+      "OPENSTAX-CHEM2E",
+      "IUPAC-EQUIL"
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Molar mass, limiting reagents, and theoretical yield",
+    "file": "05_molar_mass_limiting_reagents_and_theoretical_yield.md",
+    "area": "Stoichiometry",
+    "sources": [
+      "OPENSTAX-CHEM2E",
+      "BIPM-MOLE"
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Chemical solutions, concentration, and activities",
+    "file": "06_chemical_solutions_concentration_and_activities.md",
+    "area": "Solution science",
+    "sources": [
+      "IUPAC-EQUIL",
+      "OPENSTAX-CHEM2E"
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Thermodynamic states, enthalpy, and heat capacity",
+    "file": "07_thermodynamic_states_enthalpy_and_heat_capacity.md",
+    "area": "Thermodynamics",
+    "sources": [
+      "NIST-WEBBOOK",
+      "BIPM-SI"
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Entropy, Gibbs energy, and chemical potential",
+    "file": "08_entropy_gibbs_energy_and_chemical_potential.md",
+    "area": "Thermodynamics",
+    "sources": [
+      "IUPAC-EQUIL",
+      "NIST-WEBBOOK"
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Equilibrium constants and free-energy provenance",
+    "file": "09_equilibrium_constants_and_free_energy_provenance.md",
+    "area": "Thermodynamics",
+    "sources": [
+      "IUPAC-EQUIL",
+      "IUPAC-GOLD"
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Reaction kinetics and Arrhenius approximations",
+    "file": "10_reaction_kinetics_and_arrhenius_approximations.md",
+    "area": "Chemical kinetics",
+    "sources": [
+      "NIST-KINETICS",
+      "OPENSTAX-CHEM2E"
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Acids, bases, pH, and measurement conventions",
+    "file": "11_acids_bases_ph_and_measurement_conventions.md",
+    "area": "Solution science",
+    "sources": [
+      "IUPAC-GOLD",
+      "OPENSTAX-CHEM2E"
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Buffer equilibria and Henderson\u2013Hasselbalch limits",
+    "file": "12_buffer_equilibria_and_henderson_hasselbalch_limits.md",
+    "area": "Solution science",
+    "sources": [
+      "IUPAC-GOLD",
+      "OPENSTAX-CHEM2E"
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Electrochemical charge and Faraday constant",
+    "file": "13_electrochemical_charge_and_faraday_constant.md",
+    "area": "Electrochemistry",
+    "sources": [
+      "BIPM-SI",
+      "IUPAC-NERNST"
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Nernst potential, standard electrode references, and activity",
+    "file": "14_nernst_potential_standard_electrode_references_and_activity.md",
+    "area": "Electrochemistry",
+    "sources": [
+      "IUPAC-NERNST",
+      "IUPAC-GOLD"
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Battery chemistry and the difference between capacity and reaction extent",
+    "file": "15_battery_chemistry_and_the_difference_between_capacity_and_reaction_extent.md",
+    "area": "Electrochemistry",
+    "sources": [
+      "MIT-SOLID",
+      "IUPAC-NERNST"
+    ]
+  },
+  {
+    "number": 16,
+    "title": "Chemical process boundaries and mass conservation",
+    "file": "16_chemical_process_boundaries_and_mass_conservation.md",
+    "area": "Chemical engineering",
+    "sources": [
+      "NIST-WEBBOOK",
+      "ACS-LAB-SAFETY"
+    ]
+  },
+  {
+    "number": 17,
+    "title": "Reaction engineering, transport, and residence time",
+    "file": "17_reaction_engineering_transport_and_residence_time.md",
+    "area": "Chemical engineering",
+    "sources": [
+      "NIST-KINETICS",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 18,
+    "title": "Catalysis, activation barriers, and selectivity",
+    "file": "18_catalysis_activation_barriers_and_selectivity.md",
+    "area": "Chemical kinetics",
+    "sources": [
+      "NIST-KINETICS",
+      "IUPAC-GOLD"
+    ]
+  },
+  {
+    "number": 19,
+    "title": "Phase diagrams, chemical potentials, and crystallization",
+    "file": "19_phase_diagrams_chemical_potentials_and_crystallization.md",
+    "area": "Materials and phases",
+    "sources": [
+      "MIT-SOLID",
+      "NIST-WEBBOOK"
+    ]
+  },
+  {
+    "number": 20,
+    "title": "Crystal lattices, defects, and structure\u2013property relations",
+    "file": "20_crystal_lattices_defects_and_structure_property_relations.md",
+    "area": "Materials and phases",
+    "sources": [
+      "MIT-SOLID",
+      "NIST-WEBBOOK"
+    ]
+  },
+  {
+    "number": 21,
+    "title": "Corrosion, passivation, and materials durability",
+    "file": "21_corrosion_passivation_and_materials_durability.md",
+    "area": "Materials and phases",
+    "sources": [
+      "MIT-SOLID",
+      "IUPAC-NERNST"
+    ]
+  },
+  {
+    "number": 22,
+    "title": "Polymers, molecular distributions, and soft materials",
+    "file": "22_polymers_molecular_distributions_and_soft_materials.md",
+    "area": "Materials and phases",
+    "sources": [
+      "MIT-SOLID",
+      "OPENSTAX-CHEM2E"
+    ]
+  },
+  {
+    "number": 23,
+    "title": "Diffusion, transport, and dimensional time scales",
+    "file": "23_diffusion_transport_and_dimensional_time_scales.md",
+    "area": "Materials and phases",
+    "sources": [
+      "MIT-SEMICONDUCTOR",
+      "NIST-KINETICS"
+    ]
+  },
+  {
+    "number": 24,
+    "title": "Semiconductors: intrinsic versus extrinsic carriers",
+    "file": "24_semiconductors_intrinsic_versus_extrinsic_carriers.md",
+    "area": "Electronics-enabling chemistry",
+    "sources": [
+      "MIT-SEMICONDUCTOR",
+      "BIPM-SI"
+    ]
+  },
+  {
+    "number": 25,
+    "title": "Material purity, contamination, and semiconductor yield",
+    "file": "25_material_purity_contamination_and_semiconductor_yield.md",
+    "area": "Electronics-enabling chemistry",
+    "sources": [
+      "MIT-SEMICONDUCTOR",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "number": 26,
+    "title": "Oxidation, dielectric interfaces, and thin films",
+    "file": "26_oxidation_dielectric_interfaces_and_thin_films.md",
+    "area": "Electronics-enabling chemistry",
+    "sources": [
+      "MIT-SEMICONDUCTOR",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 27,
+    "title": "Photochemistry, wavelength, and photoactive materials",
+    "file": "27_photochemistry_wavelength_and_photoactive_materials.md",
+    "area": "Electronics-enabling chemistry",
+    "sources": [
+      "BIPM-SI",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 28,
+    "title": "Spectroscopy, analytical fingerprints, and measurement uncertainty",
+    "file": "28_spectroscopy_analytical_fingerprints_and_measurement_uncertainty.md",
+    "area": "Metrology",
+    "sources": [
+      "NIST-WEBBOOK",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "number": 29,
+    "title": "Thermochemical datasets and machine-readable scientific memory",
+    "file": "29_thermochemical_datasets_and_machine_readable_scientific_memory.md",
+    "area": "Metrology",
+    "sources": [
+      "NIST-WEBBOOK",
+      "IUPAC-GOLD"
+    ]
+  },
+  {
+    "number": 30,
+    "title": "Laboratory reproducibility, contamination control, and safety",
+    "file": "30_laboratory_reproducibility_contamination_control_and_safety.md",
+    "area": "Metrology",
+    "sources": [
+      "ACS-LAB-SAFETY",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "number": 31,
+    "title": "Chemistry to AI hardware: dependencies and missing links",
+    "file": "31_chemistry_to_ai_hardware_dependencies_and_missing_links.md",
+    "area": "AI infrastructure",
+    "sources": [
+      "MIT-SEMICONDUCTOR",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 32,
+    "title": "Chemistry to machine learning: representations and validation",
+    "file": "32_chemistry_to_machine_learning_representations_and_validation.md",
+    "area": "AI infrastructure",
+    "sources": [
+      "PUBCHEM-PUG",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 33,
+    "title": "Scientific data interoperability: compounds, identifiers, and provenance",
+    "file": "33_scientific_data_interoperability_compounds_identifiers_and_provenance.md",
+    "area": "AI infrastructure",
+    "sources": [
+      "PUBCHEM-PUG",
+      "IUPAC-GOLD"
+    ]
+  },
+  {
+    "number": 34,
+    "title": "Chemistry reconstruction without industry-specific procedures",
+    "file": "34_chemistry_reconstruction_without_industry_specific_procedures.md",
+    "area": "Technological continuity",
+    "sources": [
+      "BIPM-SI",
+      "MIT-SOLID"
+    ]
+  },
+  {
+    "number": 35,
+    "title": "Separation science, membranes, and purity limits",
+    "file": "35_separation_science_membranes_and_purity_limits.md",
+    "area": "Chemical engineering",
+    "sources": [
+      "MIT-SOLID",
+      "NIST-WEBBOOK"
+    ]
+  }
+]

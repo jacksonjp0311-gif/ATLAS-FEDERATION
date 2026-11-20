@@ -1,0 +1,21 @@
+{
+  "schema": "atlas-forge.directory.v1",
+  "authoritative_registry": "src/atlas_forge/resources/federation/registry.json",
+  "nodes": [
+    {
+      "id": "signal-atlas",
+      "version": "1.0",
+      "repository": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS"
+    },
+    {
+      "id": "cymatics-atlas",
+      "version": "1.0.0",
+      "repository": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS"
+    },
+    {
+      "id": "measurement-atlas",
+      "version": "0.3.0",
+      "repository": null
+    }
+  ]
+}

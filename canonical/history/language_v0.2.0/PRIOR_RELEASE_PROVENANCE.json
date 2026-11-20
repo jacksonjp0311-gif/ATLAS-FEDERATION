@@ -1,0 +1,7 @@
+{
+  "schema": "atlas.language-v02-prior-snapshot/1",
+  "source": "Verified language v0.2.0 full ZIP, before new v1 changes",
+  "archived_original_sha256": "e858f3889cbdbcb58cbee6d2f2ed3c9d1cfa4d9a551ca01354d0bff2916c4537",
+  "old_language_test_bytes_modified": false,
+  "goal": "Run the release-specific 135-test Language v0.2 suite unchanged in its original nine-node context"
+}

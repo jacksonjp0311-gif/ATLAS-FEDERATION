@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.control-numerical-oracle/1",
+  "status": "passed",
+  "seed": 6101126,
+  "method_counts": {
+    "zoh_via_matrix_exponential": 300,
+    "two_state_matrix_rank": 300,
+    "scalar_lqr_via_scipy_optimizer": 80,
+    "scalar_kalman_via_separate_recursion": 200
+  },
+  "comparisons": 880,
+  "maximum_scaled_absolute_error": 2.9656813730391697e-15,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "validation": "separate numerical algorithms on synthetic parameters, not independent scientific review, physical experiment, or real agent behavior"
+}

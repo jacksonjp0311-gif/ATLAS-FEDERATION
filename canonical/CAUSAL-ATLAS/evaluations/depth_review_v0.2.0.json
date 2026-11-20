@@ -1,0 +1,128 @@
+{
+  "schema": "atlas.authored-development-rubric/1",
+  "independently_authored": false,
+  "held_out": false,
+  "model_evaluation_run": false,
+  "items": [
+    {
+      "id": "DEPTH-01",
+      "question": "When can two populations have different average effects with identical stratum effects?",
+      "expected_record_id": "causal-atlas:target-population-example",
+      "rubric": "Name the target distribution and recalculate0.16 versus0.34; do not call it estimator failure."
+    },
+    {
+      "id": "DEPTH-02",
+      "question": "Can identical observations imply different intervention results?",
+      "expected_record_id": "causal-atlas:observational-equivalence-example",
+      "rubric": "Describe hidden-common-cause and direct-effect models; effects0 and1; extra assumptions/evidence needed."
+    },
+    {
+      "id": "DEPTH-03",
+      "question": "Why label measurement times on covariates?",
+      "expected_record_id": "causal-atlas:time-labelled-variables",
+      "rubric": "Separate baseline from postassignment information and explain why timing alone does not guarantee a valid set."
+    },
+    {
+      "id": "DEPTH-04",
+      "question": "Do HT and Hajek always give the same sample estimate?",
+      "expected_record_id": "causal-atlas:ipw-estimator-choices",
+      "rubric": "State their denominators and distinguish finite-sample estimates from population identities."
+    },
+    {
+      "id": "DEPTH-05",
+      "question": "What does one balanced mean fail to establish?",
+      "expected_record_id": "causal-atlas:balance-audit",
+      "rubric": "Mention distributional and unmeasured differences; no causal certification from balance."
+    },
+    {
+      "id": "DEPTH-06",
+      "question": "Is clipping a harmless repair for large weights?",
+      "expected_record_id": "causal-atlas:truncation-tradeoff",
+      "rubric": "Describe changed analysis/bias-variance tradeoff and retain unclipped primary diagnostics."
+    },
+    {
+      "id": "DEPTH-07",
+      "question": "What does weight ESS near1 mean?",
+      "expected_record_id": "causal-atlas:weight-concentration",
+      "rubric": "Reproduce126002/125001; concentration, not independent information or truth."
+    },
+    {
+      "id": "DEPTH-08",
+      "question": "Derive the augmented score without quoting a rendered equation.",
+      "expected_record_id": "causal-atlas:aipw-residual-identity",
+      "rubric": "Use m1-m0 plus treated residual minus control residual."
+    },
+    {
+      "id": "DEPTH-09",
+      "question": "When does the population AIPW bias vanish?",
+      "expected_record_id": "causal-atlas:aipw-bias-identity",
+      "rubric": "Derive product identity and name either true propensity or both true outcome means."
+    },
+    {
+      "id": "DEPTH-10",
+      "question": "What does double robustness not guarantee?",
+      "expected_record_id": "causal-atlas:double-robust-limits",
+      "rubric": "No protection against identification violations or finite-sample exactness; fitting/inference limits."
+    },
+    {
+      "id": "DEPTH-11",
+      "question": "What happens when both working models in the case are wrong?",
+      "expected_record_id": "causal-atlas:aipw-bias-identity",
+      "rubric": "Report\u22120.26 versus+0.10 truth and\u22120.36 bias as a preserved failure."
+    },
+    {
+      "id": "DEPTH-12",
+      "question": "How should a source correction be handled?",
+      "expected_record_id": "causal-atlas:aipw-correction",
+      "rubric": "Keep notice, inspected scope and local derivation; do not assume every rendering/code verified."
+    },
+    {
+      "id": "DEPTH-13",
+      "question": "Why is the missing-outcome interval not a confidence interval?",
+      "expected_record_id": "causal-atlas:binary-missing-bounds",
+      "rubric": "Counted-population bounds from unknown outcomes; sampling and confounding separate."
+    },
+    {
+      "id": "DEPTH-14",
+      "question": "Compute the missing-outcome bounds in the case.",
+      "expected_record_id": "causal-atlas:binary-missing-bounds",
+      "rubric": "Treated[.48,.88],control[.54,.64],difference[\u2212.16,.34]; sign unresolved."
+    },
+    {
+      "id": "DEPTH-15",
+      "question": "Does a null negative control prove no bias?",
+      "expected_record_id": "causal-atlas:negative-control-null",
+      "rubric": "No; suitability, mechanism and precision limit diagnosis."
+    },
+    {
+      "id": "DEPTH-16",
+      "question": "Why can future survival distort a baseline comparison?",
+      "expected_record_id": "causal-atlas:survivor-restriction",
+      "rubric": "Group membership uses postbaseline information; repair design before estimator."
+    },
+    {
+      "id": "DEPTH-17",
+      "question": "Explain the trend-sensitivity scenario.",
+      "expected_record_id": "causal-atlas:did-trend-sensitivity",
+      "rubric": "Observed contrast.05; assumed delta.08 gives\u2212.03; delta not identified by four means."
+    },
+    {
+      "id": "DEPTH-18",
+      "question": "Can the point-exposure calculator analyze repeated treatment histories?",
+      "expected_record_id": "causal-atlas:longitudinal-warning",
+      "rubric": "No; time-varying histories and dependence need a different declared method."
+    },
+    {
+      "id": "DEPTH-19",
+      "question": "What should be done when estimators disagree?",
+      "expected_record_id": "causal-atlas:conflicting-method-results",
+      "rubric": "Audit target, normalization, support, nuisance fitting and assumptions; no result shopping."
+    },
+    {
+      "id": "DEPTH-20",
+      "question": "What remains before Causal content readiness?",
+      "expected_record_id": "causal-atlas:scope-maturity",
+      "rubric": "Use coverage gaps, not test counts; no v1 or next-domain completion claim."
+    }
+  ]
+}

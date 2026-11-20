@@ -1,0 +1,977 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "Kalman covariance sensor noise",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "e396705a261a791485b13b807e0c3c536a7842503168fb9c798b61172ac4ca5c",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:kalman-conditional",
+      "revision": "adc2b1c329ff3f65215b2882bcdc36a8e37c45418f6fbddade2e10c55b28c484"
+    },
+    {
+      "record_id": "control-atlas:scalar-kalman-calculator",
+      "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60"
+    },
+    {
+      "record_id": "control-atlas:kalman-covariance",
+      "revision": "5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0"
+    },
+    {
+      "record_id": "control-atlas:kalman-bias",
+      "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+    },
+    {
+      "record_id": "control-atlas:kalman-scalar",
+      "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791"
+    },
+    {
+      "record_id": "control-atlas:feedback-disturbance",
+      "revision": "2c3839f38c5553895d425bddccbaf8240fc80bbcf995170629368881947964b7"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:feedback-disturbance",
+      "revision": "2c3839f38c5553895d425bddccbaf8240fc80bbcf995170629368881947964b7"
+    },
+    {
+      "record_id": "control-atlas:kalman-bias",
+      "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+    },
+    {
+      "record_id": "control-atlas:kalman-conditional",
+      "revision": "adc2b1c329ff3f65215b2882bcdc36a8e37c45418f6fbddade2e10c55b28c484"
+    },
+    {
+      "record_id": "control-atlas:kalman-covariance",
+      "revision": "5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0"
+    },
+    {
+      "record_id": "control-atlas:kalman-scalar",
+      "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791"
+    },
+    {
+      "record_id": "control-atlas:scalar-kalman",
+      "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004"
+    },
+    {
+      "record_id": "control-atlas:scalar-kalman-calculator",
+      "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60"
+    },
+    {
+      "record_id": "control-atlas:source:ASTROM-2E",
+      "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-WIKI",
+      "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-STATE",
+      "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+    },
+    {
+      "record_id": "control-atlas:source:PYCTR-LQE",
+      "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-03",
+            "concept",
+            "feedback-disturbance"
+          ],
+          "text": "Higher nominal feedback gain does not automatically improve robust disturbance rejection under unknown sensor noise, actuator limits and delay.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "feedback-disturbance",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "03",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:feedback-disturbance",
+        "revision": "2c3839f38c5553895d425bddccbaf8240fc80bbcf995170629368881947964b7",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Feedback trades tracking against effort and noise",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-09",
+            "kalman-bias"
+          ],
+          "text": "An unmodeled sensor bias can defeat a seemingly small posterior variance. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-bias",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:kalman-bias",
+        "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "An unmodeled sensor bias can defeat a seemingly small posterior variance",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-09",
+            "kalman-conditional"
+          ],
+          "text": "A Kalman covariance is conditional on specified process and measurement noises. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-conditional",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:kalman-conditional",
+        "revision": "adc2b1c329ff3f65215b2882bcdc36a8e37c45418f6fbddade2e10c55b28c484",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "A Kalman covariance is conditional on specified process and measurement noises",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-10",
+            "concept",
+            "kalman-covariance"
+          ],
+          "text": "A small posterior variance is conditional on Q/R and model assumptions, not proof the state estimate is accurate under bias or mismatched noise.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+              "source_id": "control-atlas:source:PYCTR-LQE"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-covariance",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "10",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:kalman-covariance",
+        "revision": "5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-LQE",
+            "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+          }
+        ],
+        "status": "active",
+        "title": "Estimated covariance assumes a valid noise model",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "P-=a^2P+Q; S=c^2P-+R; K=P-c/S; P+=(1-Kc)^2P-+K^2R",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-09",
+            "kalman-scalar"
+          ],
+          "text": "A scalar linear-Gaussian filter uses prediction, innovation and correction. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-scalar",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:kalman-scalar",
+        "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "A scalar linear-Gaussian filter uses prediction, innovation and correction",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "Pminus=a*a*P+Q; K=Pminus/(Pminus+R)",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-10",
+            "equation",
+            "scalar-kalman"
+          ],
+          "text": "Given P−=a²P+Q and R>0, gain K=P−/(P−+R), posterior mean predicted+K innovation and posterior variance (1−K)P−.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+              "source_id": "control-atlas:source:PYCTR-LQE"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-kalman",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "10",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-kalman",
+        "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-LQE",
+            "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar Kalman prediction and measurement update",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Read-only executed numerical exercises, no physical device"
+          ],
+          "assumptions": [
+            "Caller supplies a validated mathematical model and exact input units; physical model identification is external"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking"
+          ],
+          "tags": [
+            "chapter-10",
+            "explicit-tool"
+          ],
+          "text": "Compute mean and covariance for explicitly supplied independent noise model; no bias or sensor calibration inference.",
+          "uncertainty": [
+            "No physical uncertainty distribution or measurement certification inferred"
+          ],
+          "units": [
+            "Sample interval seconds; other units explicit per method"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Full scientific peer review and actual plant validation outstanding"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public documentation of related method, not a review of actual control software or physical test",
+              "locator": "Selected reference topic One-step scalar Kalman update",
+              "source_id": "control-atlas:source:PYCTR-LQE"
+            }
+          ],
+          "origin": "authored_bounded_tool",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-kalman-calculator",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted code and text",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build"
+        },
+        "record_id": "control-atlas:scalar-kalman-calculator",
+        "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60",
+        "rights": {
+          "note": "Original educational code/interface, external source remains linked",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-LQE",
+            "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+          }
+        ],
+        "status": "active",
+        "title": "One-step scalar Kalman update",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "publisher_scope_only",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "astrom-2e"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_scope_only",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:ASTROM-2E",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:ASTROM-2E",
+        "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed., Åström and Murray (2021)",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-WIKI",
+        "provenance": {
+          "access_mode": "author-maintained home and topic overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "FBS-WIKI",
+          "url": "https://fbswiki.org/"
+        },
+        "record_id": "control-atlas:source:FBS-WIKI",
+        "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed. author-maintained wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-STATE",
+        "provenance": {
+          "access_mode": "author online chapter overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MIT-STATE",
+          "url": "https://underactuated.mit.edu/state_estimation.html"
+        },
+        "record_id": "control-atlas:source:MIT-STATE",
+        "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Underactuated Robotics, State Estimation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "api_documentation_related_model",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "pyctr-lqe"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "api_documentation_related_model",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:PYCTR-LQE",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://python-control.readthedocs.io/en/latest/generated/control.lqe.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:PYCTR-LQE",
+        "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Python Control Systems Library linear quadratic estimator reference",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:kalman-scalar",
+          "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791"
+        },
+        "provenance": {
+          "basis": "Qualifying methods within one authored chapter, not new experimental control finding",
+          "independent_review": false,
+          "origin": "authored_method_scope_dependency"
+        },
+        "relation_id": "control-atlas:kalman-scalar:qualifies:kalman-bias",
+        "revision": "d825f9e1e42387a0b5ce9c06be09fc3e71a4e8f69e158316362732610ea23bb3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:kalman-bias",
+          "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-kalman-calculator",
+          "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:scalar-kalman-calculator:depends_on:scalar-kalman",
+        "revision": "3448a6965e1e5bfaa2e93591af5f8d2d46bb4efa10bd02ecb406e36e86e0ec48",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-kalman",
+          "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-kalman-calculator",
+          "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:scalar-kalman-calculator:qualifies:kalman-covariance",
+        "revision": "6afac26daf0298e3ee5160d2b46e8596b73e0b74dd384bf0f0acc701befea470",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:kalman-covariance",
+          "revision": "5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-03\",\"concept\",\"feedback-disturbance\"],\"text\":\"Higher nominal feedback gain does not automatically improve robust disturbance rejection under unknown sensor noise, actuator limits and delay.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"feedback-disturbance\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"03\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:feedback-disturbance\",\"revision\":\"2c3839f38c5553895d425bddccbaf8240fc80bbcf995170629368881947964b7\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Feedback trades tracking against effort and noise\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-09\",\"kalman-bias\"],\"text\":\"An unmodeled sensor bias can defeat a seemingly small posterior variance. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-bias\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:kalman-bias\",\"revision\":\"29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"An unmodeled sensor bias can defeat a seemingly small posterior variance\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-09\",\"kalman-conditional\"],\"text\":\"A Kalman covariance is conditional on specified process and measurement noises. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-conditional\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:kalman-conditional\",\"revision\":\"adc2b1c329ff3f65215b2882bcdc36a8e37c45418f6fbddade2e10c55b28c484\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"A Kalman covariance is conditional on specified process and measurement noises\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-10\",\"concept\",\"kalman-covariance\"],\"text\":\"A small posterior variance is conditional on Q/R and model assumptions, not proof the state estimate is accurate under bias or mismatched noise.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"source_id\":\"control-atlas:source:PYCTR-LQE\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-covariance\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"10\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:kalman-covariance\",\"revision\":\"5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\"}],\"status\":\"active\",\"title\":\"Estimated covariance assumes a valid noise model\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"P-=a^2P+Q; S=c^2P-+R; K=P-c/S; P+=(1-Kc)^2P-+K^2R\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-09\",\"kalman-scalar\"],\"text\":\"A scalar linear-Gaussian filter uses prediction, innovation and correction. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-scalar\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:kalman-scalar\",\"revision\":\"aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"A scalar linear-Gaussian filter uses prediction, innovation and correction\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"Pminus=a*a*P+Q; K=Pminus/(Pminus+R)\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-10\",\"equation\",\"scalar-kalman\"],\"text\":\"Given P−=a²P+Q and R>0, gain K=P−/(P−+R), posterior mean predicted+K innovation and posterior variance (1−K)P−.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"source_id\":\"control-atlas:source:PYCTR-LQE\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-kalman\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"10\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-kalman\",\"revision\":\"1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\"}],\"status\":\"active\",\"title\":\"Scalar Kalman prediction and measurement update\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Read-only executed numerical exercises, no physical device\"],\"assumptions\":[\"Caller supplies a validated mathematical model and exact input units; physical model identification is external\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking\"],\"tags\":[\"chapter-10\",\"explicit-tool\"],\"text\":\"Compute mean and covariance for explicitly supplied independent noise model; no bias or sensor calibration inference.\",\"uncertainty\":[\"No physical uncertainty distribution or measurement certification inferred\"],\"units\":[\"Sample interval seconds; other units explicit per method\"]},\"evidence\":{\"gaps\":[\"Full scientific peer review and actual plant validation outstanding\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public documentation of related method, not a review of actual control software or physical test\",\"locator\":\"Selected reference topic One-step scalar Kalman update\",\"source_id\":\"control-atlas:source:PYCTR-LQE\"}],\"origin\":\"authored_bounded_tool\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-kalman-calculator\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted code and text\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\"},\"record_id\":\"control-atlas:scalar-kalman-calculator\",\"revision\":\"88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60\",\"rights\":{\"note\":\"Original educational code/interface, external source remains linked\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\"}],\"status\":\"active\",\"title\":\"One-step scalar Kalman update\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"publisher_scope_only\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"astrom-2e\"],\"text\":\"Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_scope_only\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:ASTROM-2E\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed., Åström and Murray (2021)\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-WIKI\",\"provenance\":{\"access_mode\":\"author-maintained home and topic overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"FBS-WIKI\",\"url\":\"https://fbswiki.org/\"},\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed. author-maintained wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-STATE\",\"provenance\":{\"access_mode\":\"author online chapter overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MIT-STATE\",\"url\":\"https://underactuated.mit.edu/state_estimation.html\"},\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Underactuated Robotics, State Estimation\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"api_documentation_related_model\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"pyctr-lqe\"],\"text\":\"Publisher/documentation reference. Inspected scope: Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"api_documentation_related_model\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:PYCTR-LQE\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://python-control.readthedocs.io/en/latest/generated/control.lqe.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Python Control Systems Library linear quadratic estimator reference\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:kalman-scalar\",\"revision\":\"aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791\"},\"provenance\":{\"basis\":\"Qualifying methods within one authored chapter, not new experimental control finding\",\"independent_review\":false,\"origin\":\"authored_method_scope_dependency\"},\"relation_id\":\"control-atlas:kalman-scalar:qualifies:kalman-bias\",\"revision\":\"d825f9e1e42387a0b5ce9c06be09fc3e71a4e8f69e158316362732610ea23bb3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:kalman-bias\",\"revision\":\"29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:scalar-kalman-calculator\",\"revision\":\"88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:scalar-kalman-calculator:depends_on:scalar-kalman\",\"revision\":\"3448a6965e1e5bfaa2e93591af5f8d2d46bb4efa10bd02ecb406e36e86e0ec48\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-kalman\",\"revision\":\"1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:scalar-kalman-calculator\",\"revision\":\"88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:scalar-kalman-calculator:qualifies:kalman-covariance\",\"revision\":\"6afac26daf0298e3ee5160d2b46e8596b73e0b74dd384bf0f0acc701befea470\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:kalman-covariance\",\"revision\":\"5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 28748,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:two-sensor-NIS-equation",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:two-sensor-NIS-calculator",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "ba246709cd7e425d2c5aab43382a6bf184ee33885e8120c188b1a519d324b48a"
+}

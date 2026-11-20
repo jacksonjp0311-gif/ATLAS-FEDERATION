@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/MEASUREMENT-ATLAS_v0.4.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: measurement-atlas
+  Building wheel for measurement-atlas (pyproject.toml): started
+  Building wheel for measurement-atlas (pyproject.toml): finished with status 'done'
+  Created wheel for measurement-atlas: filename=measurement_atlas-0.4.0-py3-none-any.whl size=25115 sha256=88a007459bfad55f68189d6160c1a478e468ed632da4fcf32da8b5b4056d0990
+  Stored in directory: /tmp/pip-ephem-wheel-cache-icxjc0xh/wheels/56/09/4d/1a4acbc562f0737c004f3af5b171c8cbf87d91fdf26f10b5c0
+Successfully built measurement-atlas

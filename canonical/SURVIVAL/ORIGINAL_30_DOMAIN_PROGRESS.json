@@ -1,0 +1,172 @@
+{
+  "Bitwork_router_modified": false,
+  "additional_scientific_or_enabling_nodes": [
+    "chemistry-atlas",
+    "computer-architecture-digital-hardware-atlas",
+    "cymatics-atlas",
+    "electronics-semiconductors-atlas",
+    "mathematics-physics-atlas",
+    "signal-atlas"
+  ],
+  "final_domain_acceptance": "not established by node presence",
+  "not_yet_present": [
+    {
+      "node": "bioelectric-atlas",
+      "priority": 9,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "software-design-patterns-atlas",
+      "priority": 11,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "distributed-systems-atlas",
+      "priority": 12,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "neural-architectures-atlas",
+      "priority": 13,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "cryptographic-protocols-atlas",
+      "priority": 14,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "os-internals-atlas",
+      "priority": 15,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "network-stacks-atlas",
+      "priority": 16,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "database-optimization-atlas",
+      "priority": 17,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "compiler-design-atlas",
+      "priority": 18,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "formal-verification-atlas",
+      "priority": 19,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "reinforcement-learning-atlas",
+      "priority": 20,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "knowledge-graphs-atlas",
+      "priority": 21,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "multi-agent-coordination-atlas",
+      "priority": 22,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "quantum-algorithms-atlas",
+      "priority": 23,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "bioinformatics-pipelines-atlas",
+      "priority": 24,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "energy-systems-modeling-atlas",
+      "priority": 25,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "supply-chain-dynamics-atlas",
+      "priority": 26,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "regulatory-compliance-atlas",
+      "priority": 27,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "cognitive-architectures-atlas",
+      "priority": 28,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "simulation-and-digital-twins-atlas",
+      "priority": 29,
+      "recorded_queue_status": "queued_not_built"
+    },
+    {
+      "node": "metacognitive-control-loops-atlas",
+      "priority": 30,
+      "recorded_queue_status": "queued_not_built"
+    }
+  ],
+  "original_candidate_count": 30,
+  "original_candidate_nodes_not_present": 21,
+  "original_candidate_nodes_represented": 9,
+  "recorded_original_30_queue_sha256": "9b3ceb5d942fa556e17cb3b731ed9a95b0468e795ed2c1ff8e21864c3e264c33",
+  "represented": [
+    {
+      "node": "measurement-atlas",
+      "priority": 1,
+      "recorded_queue_status": "reference_candidate_preserved"
+    },
+    {
+      "node": "causal-atlas",
+      "priority": 2,
+      "recorded_queue_status": "scoped_reference_content_v1_preserved"
+    },
+    {
+      "node": "materials-atlas",
+      "priority": 3,
+      "recorded_queue_status": "scoped_reference_content_v1_preserved"
+    },
+    {
+      "node": "control-atlas",
+      "priority": 4,
+      "recorded_queue_status": "v1_scoped_content_release_candidate"
+    },
+    {
+      "node": "agent-atlas",
+      "priority": 5,
+      "recorded_queue_status": "scoped_reference_content_v1"
+    },
+    {
+      "node": "computation-atlas",
+      "priority": 6,
+      "recorded_queue_status": "scoped_reference_content_v1"
+    },
+    {
+      "node": "language-atlas",
+      "priority": 7,
+      "recorded_queue_status": "scoped_reference_content_v1"
+    },
+    {
+      "node": "energy-atlas",
+      "priority": 8,
+      "recorded_queue_status": "scoped_reference_content_v1"
+    },
+    {
+      "node": "manufacturing-atlas",
+      "priority": 10,
+      "recorded_queue_status": "queued_not_built"
+    }
+  ],
+  "schema": "atlas.survival-original-roadmap-status/1",
+  "unresolved_discrepancy": "Frozen original queue records manufacturing-atlas as queued_not_built even though its node exists; priority overlays supersede this for active status. Do not rewrite the original queue."
+}

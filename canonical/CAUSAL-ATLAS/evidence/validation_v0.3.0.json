@@ -1,0 +1,198 @@
+{
+  "display_version": "0.3.0",
+  "date": "2026-11-12",
+  "inventory": {
+    "nodes": 4,
+    "common_records": 610,
+    "causal_records": 105,
+    "bounded_literature_records": 52,
+    "authored_derivation_example_protocol_records": 30,
+    "source_cards": 23,
+    "causal_relations": 43,
+    "chapters": 12,
+    "chapter_words": 8363,
+    "investigations": 6,
+    "investigation_words": 2905,
+    "templates": 6,
+    "authored_review_questions": 48,
+    "synthetic_checks": 29,
+    "new_literature_records": 14,
+    "new_authored_records": 11,
+    "new_sources": 7,
+    "new_chapters": 4,
+    "new_investigations": 3
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 193,
+      "passed": 193,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "quasi_oracle": {
+    "schema": "atlas.causal-quasi-oracle/1",
+    "result": "passed",
+    "seed": 3132026,
+    "weighted_line_datasets": 240,
+    "weighted_line_fits": 480,
+    "stipulated_populations": 200,
+    "fuzzy_datasets": 1,
+    "scalar_numeric_comparisons": 3758,
+    "scaled_absolute_tolerance": 1e-10,
+    "max_scaled_absolute_error": 2.3658663744245647e-14,
+    "failures": [],
+    "numpy_version": "2.3.5",
+    "python": "3.13.5",
+    "comparison_method": "NumPy SVD least squares and explicit population enumeration",
+    "independent_human_review": false,
+    "empirical_observations": false,
+    "causal_assumptions_validated": false,
+    "limits": "Author-generated development cases. No participant study, robust interval implementation or AI evaluation."
+  },
+  "estimation_oracle": {
+    "schema": "atlas.causal-estimation-oracle/1",
+    "result": "passed",
+    "seed": 12112026,
+    "sample_cases": 250,
+    "synthetic_population_cases": 150,
+    "scalar_numeric_comparisons": 1700,
+    "exhaustive_missing_bound_cases": 196,
+    "scaled_absolute_tolerance": 1e-12,
+    "max_scaled_absolute_error": 9.43689570931383e-15,
+    "failures": [],
+    "numpy_version": "2.3.5",
+    "python": "3.13.5",
+    "independent_numerical_implementation": true,
+    "independent_human_review": false,
+    "empirical_observations": false,
+    "limits": "Author-generated test distributions; no fitted-model benchmark, real causal effect, sampling coverage or AI quality evaluation."
+  },
+  "graph_oracle": {
+    "result": "passed",
+    "exhaustive_forward_order_four_node_graphs": 64,
+    "four_node_comparisons": 1536,
+    "seeded_seven_node_comparisons": 1000,
+    "total_comparisons": 2536,
+    "seed": 121126,
+    "failures": [],
+    "oracle": "NetworkX is_d_separator",
+    "networkx_version": "3.6.1",
+    "local_algorithm": "ancestral_moral_graph",
+    "independent_human_review": false,
+    "causal_graph_truth_validated": false,
+    "python": "3.13.5"
+  },
+  "installed_wheel_smoke": {
+    "result": "passed",
+    "versions": {
+      "atlas-forge-research": "1.0.0rc1",
+      "measurement-atlas": "1.0.0rc1",
+      "causal-atlas": "0.3.0"
+    },
+    "causal_records": 105,
+    "collection_records": 610,
+    "context_status": "context_available",
+    "context_valid": true,
+    "synthetic_cases": "passed",
+    "synthetic_population": "7/50",
+    "package_paths": [
+      "/mnt/data/causal03_build/clean_env/lib/python3.13/site-packages/causal_atlas/__init__.py",
+      "/mnt/data/causal03_build/clean_env/lib/python3.13/site-packages/atlas_forge/__init__.py",
+      "/mnt/data/causal03_build/clean_env/lib/python3.13/site-packages/measurement_atlas/__init__.py"
+    ],
+    "source_tree_imports": false,
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "live_model_run": false,
+    "independent_review": false
+  },
+  "source_inspections": [
+    {
+      "source_id": "causal-atlas:source:IA1991",
+      "url": "https://www.nber.org/system/files/working_papers/t0118/t0118.pdf",
+      "doi": "10.3386/t0118",
+      "portion": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+      "date": "2026-11-12",
+      "access": "Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:SS1997",
+      "url": "https://scholar.harvard.edu/files/stock/files/instrumental_variables_regression_with_weak_instruments.pdf",
+      "doi": "10.2307/2171753",
+      "portion": "Introduction, pp. 557-559",
+      "date": "2026-11-12",
+      "access": "Parsed PDF introduction; web screenshot failed with 503 twice. No visual equation audit or full theorem review.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:CT2022",
+      "url": "https://rdpackages.github.io/references/Cattaneo-Titiunik_2022_ARE.pdf",
+      "doi": "10.1146/annurev-economics-051520-021409",
+      "portion": "Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)",
+      "date": "2026-11-12",
+      "access": "Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:CCT2014",
+      "url": "https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf",
+      "doi": "10.3982/ECTA11757",
+      "portion": "Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion",
+      "date": "2026-11-12",
+      "access": "Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:GI2014",
+      "url": "https://www.nber.org/papers/w20405",
+      "doi": "10.3386/w20405",
+      "portion": "Primary-site indexed abstract",
+      "date": "2026-11-12",
+      "access": "Direct page/PDF access returned 403; indexed primary abstract only, not full text.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:MC2007",
+      "url": "https://www.nber.org/papers/t0334",
+      "doi": "10.3386/t0334",
+      "portion": "Primary-site indexed abstract and publisher abstract",
+      "date": "2026-11-12",
+      "access": "Direct NBER PDF returned 403. Scope limited to indexed primary abstract and publisher abstract; test equations not audited.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    },
+    {
+      "source_id": "causal-atlas:source:IL2007",
+      "url": "https://www.nber.org/papers/w13039",
+      "doi": "10.3386/w13039",
+      "portion": "Primary-site indexed abstract and publication metadata",
+      "date": "2026-11-12",
+      "access": "Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.",
+      "full_text_mirrored": false,
+      "independent_review": false
+    }
+  ],
+  "validation_limits": "Authored numerical/software checks and source-portion inspection, not independent scientific validation or a model-quality benchmark."
+}

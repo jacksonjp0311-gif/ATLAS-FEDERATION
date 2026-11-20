@@ -1,0 +1,61 @@
+{
+  "schema": "atlas.materials-primary-checks/1",
+  "checked_date": "2026-11-12",
+  "sources": [
+    {
+      "id": "NIST-CU-SHOMATE",
+      "title": "NIST WebBook SRD 69 Copper Solid Phase Heat Capacity",
+      "organization": "NIST",
+      "url": "https://webbook.nist.gov/cgi/inchi?ID=C7440508&Table=on&Type=JANAFS",
+      "inspected_scope": "Solid Shomate formulas/coefficients 298–1358 K and six selected displayed table rows",
+      "access": "public_html_checked",
+      "rights": "bounded numeric facts and attribution only; publisher compilation has copyright notice; full table not copied",
+      "checked_date": "2026-11-12",
+      "source_bytes_archived": false,
+      "independent_review": false,
+      "confidence_boundary": "Source display checked; no physical heat-capacity measurements repeated; no coefficient covariance or validated specimen grade."
+    },
+    {
+      "id": "NIST-CORROSION-MASSLOSS",
+      "title": "NIST-hosted Sowards and Mansfield corrosion presentation",
+      "organization": "NIST",
+      "url": "https://www.nist.gov/system/files/documents/mml/acmd/2013-07-22-Corrosion-of-Copper-and-Steel-Alloys-Sowards.pdf",
+      "inspected_scope": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+      "access": "pdf_text_extracted_screenshot_failed",
+      "rights": "link only, limited equation/units; no licensed ASTM text mirrored",
+      "checked_date": "2026-11-12",
+      "source_bytes_archived": false,
+      "independent_review": false,
+      "confidence_boundary": "Publisher text extraction only. PDF page visual verification and full ASTM standards inspection not completed."
+    },
+    {
+      "id": "CERAMICS-WEIBULL-REVIEW",
+      "title": "Statistics of ceramic strength: ordinary Weibull distribution or fracture theory?",
+      "organization": "Ceramics International",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0272884220313092",
+      "inspected_scope": "Published 2020 article abstract distinguishes empirical distribution from physical weakest-link model",
+      "access": "publisher_abstract_only",
+      "rights": "link only, new original paraphrase; no copyrighted full paper mirrored",
+      "checked_date": "2026-11-12",
+      "source_bytes_archived": false,
+      "independent_review": false,
+      "confidence_boundary": "Abstract-level check; no independent physical validation or article-wide review."
+    },
+    {
+      "id": "MP-HULL-PHYSICAL",
+      "title": "Materials Project methodology for phase diagrams",
+      "organization": "Materials Project",
+      "url": "https://docs.materialsproject.org/methodology/materials-methodology/thermodynamic-stability/phase-diagrams-pds",
+      "inspected_scope": "0 K formation-energy hull conditions and finite-temperature limitations; publisher HTML",
+      "access": "public_html_checked",
+      "rights": "linked paraphrase only",
+      "checked_date": "2026-11-12",
+      "source_bytes_archived": false,
+      "independent_review": false,
+      "confidence_boundary": "Not a DFT calculation, phase assessment, or real material synthesis."
+    }
+  ],
+  "upstream_http_bytes_archived": false,
+  "scientific_review_independent": false,
+  "source_copyright_disclaimer": "NIST copper WebBook displays a rights-reserved compilation; only selected factual coefficients used with attribution and no full third-party text copied."
+}

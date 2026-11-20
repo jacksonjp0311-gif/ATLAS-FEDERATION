@@ -1,0 +1,54 @@
+{
+  "schema": "atlas.math-v04-independent-numpy-oracle/1",
+  "result": "passed",
+  "seed": 20261115,
+  "dense_independent_systems": 144,
+  "independently_compared_potential_values": 3356,
+  "independent_operator_residuals": 144,
+  "independent_boundary_gauss_checks": 144,
+  "max_absolute_potential_difference": 1.21051502155467e-11,
+  "max_relative_dense_operator_residual": 1.9948401107893453e-11,
+  "manufactured_sine_refinement": {
+    "cases": [
+      {
+        "n": 7,
+        "h_m": 0.125,
+        "error_linf_volts": 0.012950746721879236,
+        "solver_residual_l2": 1.1404363088037324e-13,
+        "iterations": 1
+      },
+      {
+        "n": 15,
+        "h_m": 0.0625,
+        "error_linf_volts": 0.003218964440079519,
+        "solver_residual_l2": 1.199784952876483e-12,
+        "iterations": 1
+      },
+      {
+        "n": 31,
+        "h_m": 0.03125,
+        "error_linf_volts": 0.0008035776793722249,
+        "solver_residual_l2": 8.24446854941765e-12,
+        "iterations": 1
+      },
+      {
+        "n": 63,
+        "h_m": 0.015625,
+        "error_linf_volts": 0.0002008218097049319,
+        "solver_residual_l2": 7.699045908454798e-11,
+        "iterations": 1
+      }
+    ],
+    "error_ratios": [
+      4.023264923535256,
+      4.005791254175023,
+      4.001446260009926
+    ],
+    "scope": "manufactured analytic sine solution; truncation error not model-form or physical uncertainty"
+  },
+  "numpy_version": "2.3.5",
+  "physical_measurements": 0,
+  "experimental_validation": false,
+  "independent_peer_review": false,
+  "scope": "NumPy direct solves of independently assembled small-grid systems; these are software/numerical checks, not laboratory experiments"
+}

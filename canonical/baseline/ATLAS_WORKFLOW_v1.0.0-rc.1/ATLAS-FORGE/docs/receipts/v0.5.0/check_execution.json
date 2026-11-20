@@ -1,0 +1,71 @@
+{
+  "schema": "atlas.content-execution/1",
+  "result": "passed",
+  "date": "2026-11-12",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "checks": [
+    {
+      "name": "forge-tests",
+      "exit_code": 0,
+      "log": "forge-tests.log",
+      "sha256": "3e93b262c2326df03e12ad494f84b76422896423d12d9096afa5f781e9d8bbad"
+    },
+    {
+      "name": "measurement-tests",
+      "exit_code": 0,
+      "log": "measurement-tests.log",
+      "sha256": "6a91f187d9bc35dbb9f9ea5230c63d35b684cd7e026abb5d486bca0d126549c6"
+    },
+    {
+      "name": "conformance",
+      "exit_code": 0,
+      "log": "conformance.log",
+      "sha256": "f41eff4796e81f6fe4bdc9af0407e57a6dc2e7934634fac7cae153008b52521e"
+    },
+    {
+      "name": "schemas",
+      "exit_code": 0,
+      "log": "schemas.log",
+      "sha256": "a94f1b76e0a1e4b262629314377793ab8bc161daf0824960738f83ff1814258a"
+    },
+    {
+      "name": "curation",
+      "exit_code": 0,
+      "log": "curation.log",
+      "sha256": "ce5ad0282f54ca7f77e9f8750b99c536f1b27bb514452b5b19669d40a7b5741f"
+    },
+    {
+      "name": "skills",
+      "exit_code": 0,
+      "log": "skills.log",
+      "sha256": "5784cf81d459b4d9e5a6221ed906aee6fd882ec7371f8af1c9a4109b7249a11b"
+    },
+    {
+      "name": "content",
+      "exit_code": 0,
+      "log": "content.log",
+      "sha256": "dc7f4bb95810b20fb51121df5e73b8351238c7f15c72e8afe3f8ba35bc6c3d26"
+    },
+    {
+      "name": "content-casebook",
+      "exit_code": 0,
+      "log": "content-casebook.log",
+      "sha256": "82c15a24098ef41882df25fa9bf19ff7a7716289877cd381548e95db2eb520bb"
+    },
+    {
+      "name": "original-casebook",
+      "exit_code": 0,
+      "log": "original-casebook.log",
+      "sha256": "af461febf66884cb7c6916ee0a71de65bfa49a01a968ae84ef3478b74eec0359"
+    },
+    {
+      "name": "numerical-oracle",
+      "exit_code": 0,
+      "log": "numerical-oracle.log",
+      "sha256": "8c9484350c50934f3521b83a75962d57b4f7529964701cd76ef87124e32f7860"
+    }
+  ],
+  "independent_review": false,
+  "real_experimental_data": false
+}

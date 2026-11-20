@@ -1,0 +1,18 @@
+{
+  "strata": [
+    {
+      "id": "easy",
+      "source_share": "3/4",
+      "target_share": "1/4",
+      "source_mean_0": "1/5",
+      "source_mean_1": "3/10"
+    },
+    {
+      "id": "difficult",
+      "source_share": "1/4",
+      "target_share": "3/4",
+      "source_mean_0": "1/10",
+      "source_mean_1": "2/5"
+    }
+  ]
+}

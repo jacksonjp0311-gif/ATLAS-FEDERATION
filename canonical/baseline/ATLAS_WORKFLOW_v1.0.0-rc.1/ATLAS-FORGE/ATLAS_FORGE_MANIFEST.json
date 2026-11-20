@@ -1,0 +1,37 @@
+{
+  "package": "ATLAS FORGE",
+  "version": "0.7.0",
+  "release_date": "2026-11-12",
+  "status": "local_reference_federation_not_published",
+  "installed_nodes": 3,
+  "default_reference_nodes": 3,
+  "starter_nodes": 0,
+  "default_searchable_records": 370,
+  "all_searchable_records": 370,
+  "proposed_domains": 10,
+  "implemented_interfaces": [
+    "Python",
+    "CLI",
+    "JSON/JSONL",
+    "loopback HTTP",
+    "local node portal"
+  ],
+  "not_implemented": [
+    "native Forge MCP",
+    "live remote federation",
+    "automatic ingestion or synchronization",
+    "independent science certification"
+  ],
+  "research_method": "Evidence-Preserving Research Amortization",
+  "registry": "src/atlas_forge/resources/federation/registry.json",
+  "common_contract": "atlas.common/1",
+  "common_records": 486,
+  "legacy_records": 370,
+  "active_node": "measurement-atlas",
+  "measurement_target": "1.0.0",
+  "v1_ready": false,
+  "skills": 5,
+  "bitwork_integration": "receipt_contract_only_not_live",
+  "current_focus": "measurement_reference_content",
+  "navigation_development": "deferred_no_runtime_change"
+}

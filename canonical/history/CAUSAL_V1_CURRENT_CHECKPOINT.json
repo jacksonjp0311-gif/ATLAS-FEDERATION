@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.collection-checkpoint/2",
+  "date": "2026-11-12",
+  "version": "causal-v1.0.0-content",
+  "active_content_node": "causal-atlas",
+  "causal_scoped_content_ready": true,
+  "scientific_final_v1_accepted": false,
+  "collection_final_accepted": false,
+  "materials_started": false,
+  "navigation_changes": false,
+  "common_records": 654,
+  "causal_records": 149,
+  "tests_passed": 639,
+  "tests_skipped": 0,
+  "previous_checkpoint": "causal-0.3.0",
+  "planned_collection_transfer": "after_domain_builds"
+}

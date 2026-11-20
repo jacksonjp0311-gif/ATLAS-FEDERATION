@@ -1,0 +1,99 @@
+{
+  "schema": "measurement.practical-casebook/1",
+  "result": "passed",
+  "cases": [
+    {
+      "id": "jcgm-upper",
+      "source": "JCGM106 \u00a77.3.3 example 1",
+      "actual": 0.9192433407662272,
+      "display_target": 0.92,
+      "absolute_error": 0.0007566592337728828,
+      "absolute_tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "id": "jcgm-lower",
+      "source": "JCGM106 \u00a77.3.3 example 2",
+      "actual": 0.9890095473848222,
+      "display_target": 0.99,
+      "absolute_error": 0.0009904526151778281,
+      "absolute_tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "id": "jcgm-two-sided",
+      "source": "JCGM106 \u00a77.4 example",
+      "actual": 0.6626297864953079,
+      "display_target": 0.66,
+      "absolute_error": 0.002629786495307873,
+      "absolute_tolerance": 0.005,
+      "passed": true
+    },
+    {
+      "id": "nist-reporting-illustration",
+      "actual_expanded_g": 0.0007909999999999999,
+      "display_target_g": 0.00079,
+      "absolute_tolerance_g": 5e-06,
+      "passed": true
+    },
+    {
+      "id": "synthetic-complete-certificate",
+      "passed": true
+    },
+    {
+      "id": "synthetic-missing-factor",
+      "passed": true
+    },
+    {
+      "id": "synthetic-specification",
+      "actual": {
+        "schema": "measurement.specification-component/1",
+        "half_width": 0.007,
+        "standard_uncertainty": 0.004041451884327381,
+        "unit": "V",
+        "quantity_kind": "voltage",
+        "distribution_assumption": "uniform",
+        "interpretation_basis": "Synthetic additive 0.1 percent reading plus two counts",
+        "combination_model": "sum_of_nonnegative_additive_limits",
+        "complete_measurement_uncertainty": false,
+        "limitations": [
+          "Terms and distribution are caller-justified assumptions, not inferred from a manufacturer document.",
+          "Do not independently count overlapping specifications or assume this exhausts a measurement budget."
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic-guard-band",
+      "actual": {
+        "schema": "measurement.guard-band-decision/1",
+        "rule_id": "synthetic-rule-1",
+        "decision": "not_accepted_under_declared_rule",
+        "acceptance_lower": 0.1,
+        "acceptance_upper": 0.9,
+        "inclusive_endpoints": true,
+        "specification_lower": 0.0,
+        "specification_upper": 1.0,
+        "guard_width": 0.1,
+        "value": 0.95,
+        "unit": "mm",
+        "quantity_kind": "length",
+        "conformity_certified": false,
+        "risk_bound_established": false,
+        "limitations": [
+          "Not accepted under a rule does not prove that the underlying item is nonconforming.",
+          "The guard width and its risk justification must be supplied externally.",
+          "A decision rule is not a probability distribution or an accreditation finding."
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "case_count": 8,
+  "target_sha256": "d04b2077623b88b3519e7eaeb0c35450230d077d70bb83d917542438ed98fc4d",
+  "data_origin": "publisher_illustrations_and_synthetic_examples",
+  "new_measured_observations": 0,
+  "independent_human_review": false,
+  "heldout_evaluation": false,
+  "calibration_certification": false
+}

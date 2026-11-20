@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.workflow/1",
+  "active_node": "measurement-atlas",
+  "active_software_version": "1.0.0rc1",
+  "target": "1.0.0",
+  "next_domain": "causal-atlas",
+  "advance_only_after_all_gates": true,
+  "source": "Explicit project-owner instruction: finish each Atlas to v1 and keep common setup.",
+  "current_focus": "Measurement v1 release candidate: units, certificate interpretation, decision models and remaining acceptance evidence",
+  "navigation_work": "deferred_by_owner_not_waived"
+}

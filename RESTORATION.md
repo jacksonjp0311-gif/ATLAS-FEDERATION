@@ -1,38 +1,44 @@
-# Atlas Federation — deterministic offline restoration
+# Atlas Federation — restoration and byte verification
 
-Original program: ATLAS FORGE. Public display name: Atlas Federation.
+Original program: **ATLAS FORGE**. Public display name: **Atlas Federation**.
 
-## Canonical checkpoints
+## Choose the correct artifact
 
-- Compiler Design v0.1.0 full base SHA-256: `cfd36e91dd1a093bf1edbd8a752f1fd6505e66123c577d167ed0f687c1381ebd`.
-- Compiler Design v0.2.0 delta: 3,233,432 bytes; SHA-256 `4cbe54fe29729c8895670f1efa31628d1501a848593a677798424dd03e46b3ed`.
-- Compiler Design v0.2.0 complete deterministic ZIP: 735,193,042 bytes; SHA-256 `0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7`.
+The public derivative `ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip` is distinct from the complete original. It preserves cleared material with explicit omissions, documented redactions, and separately identified manifests. It cannot reconstruct excluded content or serve as the original predecessor for historical delta restoration.
 
-## Reconstruct from authenticated original predecessor and delta
+**Current delivery status:** the derivative is staged locally; a public release asset and public re-download verification are still pending. See [release status](RELEASE_STATUS.md). The steps below apply once the exact candidate and its matching checksum sidecar are publicly available.
 
-Obtain the **exact** original v0.1.0 complete archive and v0.2.0 delta (not merely files from this GitHub import). The published restoration script and patch manifest live in `Releases/Compiler_Design_v0.2.0_incremental/`. Run:
+## Verify and open the public derivative
 
-```sh
-python Releases/Compiler_Design_v0.2.0_incremental/RESTORE_ATLAS_FORGE_COMPILER_V02.py \
-  /path/to/Compiler_Design_v0.1.0.zip \
-  /path/to/ATLAS_COLLECTION_Compiler_Design_v0.2.0_DELTA_from_Compiler_Design_v0.1.0.zip \
-  ./ATLAS_COLLECTION_Compiler_Design_v0.2.0.zip
-```
-
-Verify the resulting SHA-256 before extraction:
+Download the ZIP and its `.zip.sha256` sidecar from the same verified `compiler-design-v0.2.0-public` release. Keep their filenames unchanged. In their download directory:
 
 ```sh
-python -c "import hashlib,sys; p=sys.argv[1]; print(hashlib.sha256(open(p,'rb').read()).hexdigest())" ATLAS_COLLECTION_Compiler_Design_v0.2.0.zip
+sha256sum --check ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip.sha256
 ```
 
-In a fresh extracted directory, run the historical verification entry points (when present):
+Stop if the check fails. Compare the asset byte length with its [published verification receipt](evidence/publication/PUBLIC_DERIVATIVE_VERIFICATION.json) as well. A checksum establishes byte identity; it does not independently establish scientific validity, rights, or who produced the file.
+
+Inspect the archive listing, then extract it into a new empty directory:
 
 ```sh
-python tools/check_manifest.py verify .
-python tools/survival_audit.py --root . --check-files
-python tools/check_collection.py --out /new/empty/directory
+python -m zipfile -l ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip
+python -m zipfile -e ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip ./atlas-public-restore
 ```
 
-Historical receipts report 3,405 tests and identical source/fresh replay reports, but those results are not a substitute for a new reproducible run.
+Start with `ATLAS_COLLECTION_Compiler_Design_v0.2.0-public/PUBLIC_DERIVATIVE_NOTICE.md`, `PUBLIC_OMISSION_MANIFEST.json`, and `FILE_MANIFEST.json`. Original documents and receipts retain their historical meaning. Source programs should be reviewed before execution; some historical commands expect the original collection layout, omitted content, or additional dependencies. Examples and tests that depend on removed data remain unavailable. A successful extraction is not a successful scientific regression or a full original restoration.
 
-**Note:** Browsable GitHub source and checksums alone cannot reconstruct the complete federation without its original full predecessor ZIP and delta.
+The browsable export is mapped in [PUBLIC_SOURCE_DIRECTORY.md](PUBLIC_SOURCE_DIRECTORY.md). It excludes ZIP/WHL containers and uses a separate [browsable manifest](canonical/BROWSABLE_FILE_MANIFEST.json); use the archive `FILE_MANIFEST.json` for extracted release-package verification. Read [publication status](PUBLICATION_STATUS.md) for remaining access and rights limits.
+
+## Original preservation record
+
+The complete original Library artifact remains unchanged privately. It is **735,193,042 bytes** with SHA-256:
+
+```text
+0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7
+```
+
+The [original release receipt](evidence/Compiler_Design_v0.2.0_incremental/ATLAS_FORGE_RELEASE_COMPILER_DESIGN_v0.2.0.json) retains historical identities and verification context. Public restoration uses the separately identified derivative; it does not recover rights-held content from the private original. Private redaction rules, source-data fingerprints, and sanitization helpers are not part of these public instructions.
+
+The original historical receipts report 3,405 tests and matching source/fresh-restored reports. Those receipts remain evidence for their original edition and run; they do not certify the public derivative.
+
+The [release-upload continuation guide](PUBLIC_RELEASE_UPLOAD.md) records the exact candidate identity and the remaining authenticated upload and public re-download steps.

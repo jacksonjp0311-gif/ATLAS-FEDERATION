@@ -1,0 +1,1 @@
+Original, source-qualified research synthesis. All third-party full works remain external; their rights and scientific accuracy are not conferred by this package. Physical energy system design requires independent professional validation.

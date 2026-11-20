@@ -1,0 +1,274 @@
+{
+  "schema": "atlas.domain-roadmap/1",
+  "updated_at": "2026-11-12",
+  "active_domain": "measurement-atlas",
+  "next_domain_allowed": false,
+  "navigation_phase": "deferred_until_content_milestone",
+  "shared_contract": "1.0",
+  "existing_nodes": [
+    "signal-atlas",
+    "cymatics-atlas"
+  ],
+  "domains": [
+    {
+      "priority": 1,
+      "node_id": "measurement-atlas",
+      "name": "Measurement Atlas",
+      "scope": "Units, calibration, traceability, uncertainty and comparisons",
+      "status": "active_toward_v1",
+      "start_gate": "current"
+    },
+    {
+      "priority": 2,
+      "node_id": "causal-atlas",
+      "name": "Causal Atlas",
+      "scope": "Interventions, confounding, experiments and counterfactuals",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 3,
+      "node_id": "materials-atlas",
+      "name": "Materials Atlas",
+      "scope": "Properties, structure, phases and measurement versus prediction",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 4,
+      "node_id": "control-atlas",
+      "name": "Control Atlas",
+      "scope": "Feedback, stability, state estimation and identification",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 5,
+      "node_id": "agent-atlas",
+      "name": "Agent Atlas",
+      "scope": "Orchestration, tools, memory, failure recovery and evaluation",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 6,
+      "node_id": "computation-atlas",
+      "name": "Computation Atlas",
+      "scope": "Numerical analysis, algorithms, error and optimization",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 7,
+      "node_id": "language-atlas",
+      "name": "Language Atlas",
+      "scope": "Grammar, semantics, pragmatics and communication",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 8,
+      "node_id": "energy-atlas",
+      "name": "Energy Atlas",
+      "scope": "Thermodynamics, balances, losses, conversion and storage",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 9,
+      "node_id": "bioelectric-atlas",
+      "name": "Bioelectric Atlas",
+      "scope": "Cellular electrical signaling and organism-specific regeneration",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 10,
+      "node_id": "manufacturing-atlas",
+      "name": "Manufacturing Atlas",
+      "scope": "Process variation, defect diagnosis, reliability and equipment",
+      "status": "queued_not_built",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 11,
+      "name": "Software design patterns Atlas",
+      "node_id": "software-design-patterns-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 12,
+      "name": "Distributed systems Atlas",
+      "node_id": "distributed-systems-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 13,
+      "name": "Neural architectures Atlas",
+      "node_id": "neural-architectures-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 14,
+      "name": "Cryptographic protocols Atlas",
+      "node_id": "cryptographic-protocols-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 15,
+      "name": "OS internals Atlas",
+      "node_id": "os-internals-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 16,
+      "name": "Network stacks Atlas",
+      "node_id": "network-stacks-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 17,
+      "name": "Database optimization Atlas",
+      "node_id": "database-optimization-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 18,
+      "name": "Compiler design Atlas",
+      "node_id": "compiler-design-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 19,
+      "name": "Formal verification Atlas",
+      "node_id": "formal-verification-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 20,
+      "name": "Reinforcement learning Atlas",
+      "node_id": "reinforcement-learning-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 21,
+      "name": "Knowledge graphs Atlas",
+      "node_id": "knowledge-graphs-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 22,
+      "name": "Multi-agent coordination Atlas",
+      "node_id": "multi-agent-coordination-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 23,
+      "name": "Quantum algorithms Atlas",
+      "node_id": "quantum-algorithms-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 24,
+      "name": "Bioinformatics pipelines Atlas",
+      "node_id": "bioinformatics-pipelines-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 25,
+      "name": "Energy systems modeling Atlas",
+      "node_id": "energy-systems-modeling-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 26,
+      "name": "Supply chain dynamics Atlas",
+      "node_id": "supply-chain-dynamics-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 27,
+      "name": "Regulatory compliance Atlas",
+      "node_id": "regulatory-compliance-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 28,
+      "name": "Cognitive architectures Atlas",
+      "node_id": "cognitive-architectures-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 29,
+      "name": "Simulation and digital twins Atlas",
+      "node_id": "simulation-and-digital-twins-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    },
+    {
+      "priority": 30,
+      "name": "Metacognitive control loops Atlas",
+      "node_id": "metacognitive-control-loops-atlas",
+      "track": "engineering-ai",
+      "status": "queued_not_built",
+      "scope": "Proposed subject; scientific charter and acceptance scope not yet built.",
+      "start_gate": "Measurement v1 accepted"
+    }
+  ]
+}

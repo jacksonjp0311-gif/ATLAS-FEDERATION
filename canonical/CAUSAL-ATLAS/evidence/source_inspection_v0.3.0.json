@@ -1,0 +1,72 @@
+[
+  {
+    "source_id": "causal-atlas:source:IA1991",
+    "url": "https://www.nber.org/system/files/working_papers/t0118/t0118.pdf",
+    "doi": "10.3386/t0118",
+    "portion": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+    "date": "2026-11-12",
+    "access": "Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:SS1997",
+    "url": "https://scholar.harvard.edu/files/stock/files/instrumental_variables_regression_with_weak_instruments.pdf",
+    "doi": "10.2307/2171753",
+    "portion": "Introduction, pp. 557-559",
+    "date": "2026-11-12",
+    "access": "Parsed PDF introduction; web screenshot failed with 503 twice. No visual equation audit or full theorem review.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:CT2022",
+    "url": "https://rdpackages.github.io/references/Cattaneo-Titiunik_2022_ARE.pdf",
+    "doi": "10.1146/annurev-economics-051520-021409",
+    "portion": "Sections 2.1-2.2 (pp. 824-828) and 4 opening / 4.1 (pp. 842-843)",
+    "date": "2026-11-12",
+    "access": "Selected parsed passages; page images 824, 826 and 827 checked. Not a whole-literature audit.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:CCT2014",
+    "url": "https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf",
+    "doi": "10.3982/ECTA11757",
+    "portion": "Introduction, pp. 2295-2297, local-polynomial and bias-corrected inference discussion",
+    "date": "2026-11-12",
+    "access": "Parsed introduction and page image 2296 inspected; no reproduction of coverage tables or robust-inference implementation.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:GI2014",
+    "url": "https://www.nber.org/papers/w20405",
+    "doi": "10.3386/w20405",
+    "portion": "Primary-site indexed abstract",
+    "date": "2026-11-12",
+    "access": "Direct page/PDF access returned 403; indexed primary abstract only, not full text.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:MC2007",
+    "url": "https://www.nber.org/papers/t0334",
+    "doi": "10.3386/t0334",
+    "portion": "Primary-site indexed abstract and publisher abstract",
+    "date": "2026-11-12",
+    "access": "Direct NBER PDF returned 403. Scope limited to indexed primary abstract and publisher abstract; test equations not audited.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:IL2007",
+    "url": "https://www.nber.org/papers/w13039",
+    "doi": "10.3386/w13039",
+    "portion": "Primary-site indexed abstract and publication metadata",
+    "date": "2026-11-12",
+    "access": "Direct PDF returned 403; indexed primary abstract only. Full practice guide not claimed reviewed.",
+    "full_text_mirrored": false,
+    "independent_review": false
+  }
+]

@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/ATLAS_COLLECTION_v0.1.0/CAUSAL-ATLAS
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: causal-atlas
+  Building wheel for causal-atlas (pyproject.toml): started
+  Building wheel for causal-atlas (pyproject.toml): finished with status 'done'
+  Created wheel for causal-atlas: filename=causal_atlas-0.1.0-py3-none-any.whl size=26037 sha256=c9b56172b15ede4c90b17bfcfa8f621dc15b255d48d6235ecc0bf4c08d143a1f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ahx2q_na/wheels/52/28/9d/65943dc9a19f5deed3dc733cefb9b51a332b00d3d6f582e39c
+Successfully built causal-atlas

@@ -1,0 +1,23 @@
+name: test
+on: [push, pull_request]
+jobs:
+  python:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e . jsonschema
+      - run: python -m unittest discover -s tests -v
+      - run: python -m atlas_forge validate examples/MEASUREMENT-ATLAS
+      - run: python -m atlas_forge verify-nodes
+      - run: python tools/workflow.py conform
+      - run: python tools/workflow.py skills-check
+      - run: python tools/schema_check.py
+      - run: python tools/evaluate_common.py
+      - run: python scripts/check_release.py verify

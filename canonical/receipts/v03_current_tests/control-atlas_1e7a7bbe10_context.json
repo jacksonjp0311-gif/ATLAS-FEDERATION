@@ -1,0 +1,958 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "stale sensor offline watchdog",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "3f7d47cc4e949abdc4416559a8be709f44b1fa1e856c0dfca28c9ed5d87daeab",
+  "registry_revision": "aaccc52c284b271a9fdef1b1202865e002c4184ed509fb19f7cf6bb3672a1e2b",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.3.0",
+      "contract_version": "1.0",
+      "corpus_revision": "b1ed4855b47084f613ca82278484f95c5168ad4d038f7ad6992488f003ac029d",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "All 117 prior record revisions preserved, 28 new bounded source/derivation records, six original reference calculators and explicit synthetic counterexamples. No real system identification, physical controller validation, control engineer sign-off, live Bitwork or downstream AI evaluation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:offline-watchdog-gate",
+      "revision": "bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4"
+    },
+    {
+      "record_id": "control-atlas:stale-sensor-control-risk",
+      "revision": "78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a"
+    },
+    {
+      "record_id": "control-atlas:watchdog-safe-state-unknown",
+      "revision": "e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54"
+    },
+    {
+      "record_id": "control-atlas:kalman-bias",
+      "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+    },
+    {
+      "record_id": "control-atlas:plant-specification",
+      "revision": "5dcd9567cdc078f267481c8d83bb9c8d83212f0e866c52fefcddcb3bdbfb00a0"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:kalman-bias",
+      "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+    },
+    {
+      "record_id": "control-atlas:kalman-scalar",
+      "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791"
+    },
+    {
+      "record_id": "control-atlas:offline-watchdog-gate",
+      "revision": "bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4"
+    },
+    {
+      "record_id": "control-atlas:plant-specification",
+      "revision": "5dcd9567cdc078f267481c8d83bb9c8d83212f0e866c52fefcddcb3bdbfb00a0"
+    },
+    {
+      "record_id": "control-atlas:source:ASTROM-2E",
+      "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-ROBUST-V03",
+      "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-WIKI",
+      "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-STATE",
+      "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+    },
+    {
+      "record_id": "control-atlas:source:NETWORK-DELAY-2013",
+      "revision": "def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485"
+    },
+    {
+      "record_id": "control-atlas:stale-sensor-control-risk",
+      "revision": "78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a"
+    },
+    {
+      "record_id": "control-atlas:watchdog-safe-state-unknown",
+      "revision": "e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-09",
+            "kalman-bias"
+          ],
+          "text": "An unmodeled sensor bias can defeat a seemingly small posterior variance. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-bias",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:kalman-bias",
+        "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "An unmodeled sensor bias can defeat a seemingly small posterior variance",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "P-=a^2P+Q; S=c^2P-+R; K=P-c/S; P+=(1-Kc)^2P-+K^2R",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-09",
+            "kalman-scalar"
+          ],
+          "text": "A scalar linear-Gaussian filter uses prediction, innovation and correction. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "kalman-scalar",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:kalman-scalar",
+        "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "A scalar linear-Gaussian filter uses prediction, innovation and correction",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-32",
+            "edition-0.3.0",
+            "offline-watchdog-gate"
+          ],
+          "text": "Execute read-only command gate with explicit measurement timestamps, sensor validity, innovation threshold and caller-selected fallback; no hardware safety assurance.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed",
+              "source_id": "control-atlas:source:NETWORK-DELAY-2013"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "offline-watchdog-gate",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "32",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:offline-watchdog-gate",
+        "revision": "bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NETWORK-DELAY-2013",
+            "revision": "def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485"
+          }
+        ],
+        "status": "active",
+        "title": "Illustrative stale/invalid/innovation input rejection without actuation",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-01",
+            "concept",
+            "plant-specification"
+          ],
+          "text": "Control requires a defined plant, input, measured output, reference trajectory, disturbances, sampling and actuator limits; missing variables make gain advice ungrounded.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "plant-specification",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "01",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:plant-specification",
+        "revision": "5dcd9567cdc078f267481c8d83bb9c8d83212f0e866c52fefcddcb3bdbfb00a0",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Plant, objective, and sensor definition",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "publisher_scope_only",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "astrom-2e"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_scope_only",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:ASTROM-2E",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:ASTROM-2E",
+        "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed., Åström and Murray (2021)",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference navigation and method scope, not physical performance validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Publisher portion only, not independent full-source or experimental audit",
+            "No source file or restricted publication text is mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.3.0"
+          ],
+          "text": "Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent engineer review or physical experiment"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-ROBUST-V03",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_terms": "Original bounded explanatory material; publisher content linked rather than mirrored",
+          "url": "https://fbswiki.org/",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:FBS-ROBUST-V03",
+        "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Åström and Murray, Feedback Systems 2e author wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-WIKI",
+        "provenance": {
+          "access_mode": "author-maintained home and topic overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "FBS-WIKI",
+          "url": "https://fbswiki.org/"
+        },
+        "record_id": "control-atlas:source:FBS-WIKI",
+        "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed. author-maintained wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-STATE",
+        "provenance": {
+          "access_mode": "author online chapter overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MIT-STATE",
+          "url": "https://underactuated.mit.edu/state_estimation.html"
+        },
+        "record_id": "control-atlas:source:MIT-STATE",
+        "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Underactuated Robotics, State Estimation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference navigation and method scope, not physical performance validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Publisher portion only, not independent full-source or experimental audit",
+            "No source file or restricted publication text is mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.3.0"
+          ],
+          "text": "Bibliographic navigation and inspected portion: Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent engineer review or physical experiment"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NETWORK-DELAY-2013",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_terms": "Original bounded explanatory material; publisher content linked rather than mirrored",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0016003213001920",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:NETWORK-DELAY-2013",
+        "revision": "def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Networked control stability with random time delays and packet dropout",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-32",
+            "edition-0.3.0",
+            "stale-sensor-control-risk"
+          ],
+          "text": "Timing validity and measurement plausibility matter. Fresh measurements are not proof of truth; faults may share a model or sensor bias.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed",
+              "source_id": "control-atlas:source:NETWORK-DELAY-2013"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "stale-sensor-control-risk",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "32",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:stale-sensor-control-risk",
+        "revision": "78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NETWORK-DELAY-2013",
+            "revision": "def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485"
+          }
+        ],
+        "status": "active",
+        "title": "Stale or untrustworthy measurements can invalidate feedback",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-32",
+            "edition-0.3.0",
+            "watchdog-safe-state-unknown"
+          ],
+          "text": "A fallback command suitable for one device may be hazardous in another. Safe states and interlocks require plant-specific independent engineering assessment.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "watchdog-safe-state-unknown",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "32",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:watchdog-safe-state-unknown",
+        "revision": "e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "De-energized output is not universally a physical safe state",
+        "type": "concept"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:kalman-scalar",
+          "revision": "aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791"
+        },
+        "provenance": {
+          "basis": "Qualifying methods within one authored chapter, not new experimental control finding",
+          "independent_review": false,
+          "origin": "authored_method_scope_dependency"
+        },
+        "relation_id": "control-atlas:kalman-scalar:qualifies:kalman-bias",
+        "revision": "d825f9e1e42387a0b5ce9c06be09fc3e71a4e8f69e158316362732610ea23bb3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:kalman-bias",
+          "revision": "29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:offline-watchdog-gate",
+          "revision": "bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:offline-watchdog-gate:depends_on:stale-sensor-control-risk",
+        "revision": "8c2679a071dcea0f2146b52e8848e20d0f1b7d9c30f4bdbd24b2ba0b25eb3a5e",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:stale-sensor-control-risk",
+          "revision": "78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:offline-watchdog-gate",
+          "revision": "bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:offline-watchdog-gate:qualifies:watchdog-safe-state-unknown",
+        "revision": "a6463d9bd1581e8af510442d44e2f3fa58c1f7a99df8e979328cfb689fda4f96",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:watchdog-safe-state-unknown",
+          "revision": "e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-09\",\"kalman-bias\"],\"text\":\"An unmodeled sensor bias can defeat a seemingly small posterior variance. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-bias\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:kalman-bias\",\"revision\":\"29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"An unmodeled sensor bias can defeat a seemingly small posterior variance\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"P-=a^2P+Q; S=c^2P-+R; K=P-c/S; P+=(1-Kc)^2P-+K^2R\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-09\",\"kalman-scalar\"],\"text\":\"A scalar linear-Gaussian filter uses prediction, innovation and correction. A state estimator combines a process prediction and a noisy measurement to estimate an unobserved state. The Kalman filter is a mathematically optimal linear mean-square estimator under **specific** linearity and noise assumptions. Its gain depends on covariance inputs, not merely on sensor trust. Small reported posterior variance indicates confidence *within the stipulated model*; it does not establish that sensor calibration, state dynamics, or noise correlation are correct. Domain context: 09_state_estimation_and_scalar_kalman_filtering.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"kalman-scalar\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:kalman-scalar\",\"revision\":\"aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"A scalar linear-Gaussian filter uses prediction, innovation and correction\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-32\",\"edition-0.3.0\",\"offline-watchdog-gate\"],\"text\":\"Execute read-only command gate with explicit measurement timestamps, sensor validity, innovation threshold and caller-selected fallback; no hardware safety assurance.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed\",\"source_id\":\"control-atlas:source:NETWORK-DELAY-2013\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"offline-watchdog-gate\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"32\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:offline-watchdog-gate\",\"revision\":\"bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NETWORK-DELAY-2013\",\"revision\":\"def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485\"}],\"status\":\"active\",\"title\":\"Illustrative stale/invalid/innovation input rejection without actuation\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-01\",\"concept\",\"plant-specification\"],\"text\":\"Control requires a defined plant, input, measured output, reference trajectory, disturbances, sampling and actuator limits; missing variables make gain advice ungrounded.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"plant-specification\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"01\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:plant-specification\",\"revision\":\"5dcd9567cdc078f267481c8d83bb9c8d83212f0e866c52fefcddcb3bdbfb00a0\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Plant, objective, and sensor definition\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"publisher_scope_only\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"astrom-2e\"],\"text\":\"Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_scope_only\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:ASTROM-2E\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed., Åström and Murray (2021)\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Reference navigation and method scope, not physical performance validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Publisher portion only, not independent full-source or experimental audit\",\"No source file or restricted publication text is mirrored\"],\"tags\":[\"source\",\"edition-0.3.0\"],\"text\":\"Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent engineer review or physical experiment\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-ROBUST-V03\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_terms\":\"Original bounded explanatory material; publisher content linked rather than mirrored\",\"url\":\"https://fbswiki.org/\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Åström and Murray, Feedback Systems 2e author wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-WIKI\",\"provenance\":{\"access_mode\":\"author-maintained home and topic overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"FBS-WIKI\",\"url\":\"https://fbswiki.org/\"},\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed. author-maintained wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-STATE\",\"provenance\":{\"access_mode\":\"author online chapter overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MIT-STATE\",\"url\":\"https://underactuated.mit.edu/state_estimation.html\"},\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Underactuated Robotics, State Estimation\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Reference navigation and method scope, not physical performance validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Publisher portion only, not independent full-source or experimental audit\",\"No source file or restricted publication text is mirrored\"],\"tags\":[\"source\",\"edition-0.3.0\"],\"text\":\"Bibliographic navigation and inspected portion: Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent engineer review or physical experiment\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NETWORK-DELAY-2013\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_terms\":\"Original bounded explanatory material; publisher content linked rather than mirrored\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0016003213001920\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:NETWORK-DELAY-2013\",\"revision\":\"def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Networked control stability with random time delays and packet dropout\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-32\",\"edition-0.3.0\",\"stale-sensor-control-risk\"],\"text\":\"Timing validity and measurement plausibility matter. Fresh measurements are not proof of truth; faults may share a model or sensor bias.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed\",\"source_id\":\"control-atlas:source:NETWORK-DELAY-2013\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"stale-sensor-control-risk\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"32\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:stale-sensor-control-risk\",\"revision\":\"78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NETWORK-DELAY-2013\",\"revision\":\"def0395a788bcd0fee26bca11bc16e4ff669b86fdabaeb4ddf73512d031cd485\"}],\"status\":\"active\",\"title\":\"Stale or untrustworthy measurements can invalidate feedback\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-32\",\"edition-0.3.0\",\"watchdog-safe-state-unknown\"],\"text\":\"A fallback command suitable for one device may be hazardous in another. Safe states and interlocks require plant-specific independent engineering assessment.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"watchdog-safe-state-unknown\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"32\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:watchdog-safe-state-unknown\",\"revision\":\"e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"De-energized output is not universally a physical safe state\",\"type\":\"concept\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:kalman-scalar\",\"revision\":\"aaf13082f22f9a8d47702b0c27596720817772f6fe89cad59c2e8278a8943791\"},\"provenance\":{\"basis\":\"Qualifying methods within one authored chapter, not new experimental control finding\",\"independent_review\":false,\"origin\":\"authored_method_scope_dependency\"},\"relation_id\":\"control-atlas:kalman-scalar:qualifies:kalman-bias\",\"revision\":\"d825f9e1e42387a0b5ce9c06be09fc3e71a4e8f69e158316362732610ea23bb3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:kalman-bias\",\"revision\":\"29c91c4308329530e5ce885b059d5079ed52105581f1c5b2b55d6663a81877fc\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:offline-watchdog-gate\",\"revision\":\"bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:offline-watchdog-gate:depends_on:stale-sensor-control-risk\",\"revision\":\"8c2679a071dcea0f2146b52e8848e20d0f1b7d9c30f4bdbd24b2ba0b25eb3a5e\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:stale-sensor-control-risk\",\"revision\":\"78180d3371c378db7f9b2868f72bf3bfed7501edfbeac7961336956f7afbf67a\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:offline-watchdog-gate\",\"revision\":\"bf71a186ed98caab85451dc43b8480c0ba64fba7756b9b2ddfcfe3d257a229b4\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:offline-watchdog-gate:qualifies:watchdog-safe-state-unknown\",\"revision\":\"a6463d9bd1581e8af510442d44e2f3fa58c1f7a99df8e979328cfb689fda4f96\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:watchdog-safe-state-unknown\",\"revision\":\"e848ddfc6118cc438f91b255cb9d666e1e6b1d915b22190d69087a2692421c54\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 28454,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:feedback-question",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:observability",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:noise-sensitivity",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "dc40cf8c781ce83003cba50df42e5fc86514bb3836e73c64041841cdeafaead2"
+}

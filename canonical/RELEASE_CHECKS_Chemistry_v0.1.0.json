@@ -1,0 +1,155 @@
+{
+  "schema": "atlas.chemistry-v01-source-preflight/1",
+  "date": "2026-11-14",
+  "status": "passed_source_tree_not_yet_extracted",
+  "test_total": 1811,
+  "skips": 0,
+  "test_suites": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "ran": 41,
+      "passed": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Chemistry": {
+      "ran": 68,
+      "passed": 68,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "numerical_oracle": {
+    "schema": "atlas.chemistry-numerical-oracle/1",
+    "status": "passed",
+    "seed": 20261114,
+    "comparisons": 8064,
+    "counts": {
+      "exact_atom_balance_reference": 4,
+      "mole_mass_numpy": 620,
+      "molar_mass_numpy": 620,
+      "molarity_numpy": 620,
+      "ideal_gas_numpy": 620,
+      "gibbs_activity_log_numpy": 620,
+      "equilibrium_logK_numpy": 620,
+      "arrhenius_ratio_numpy": 620,
+      "firstorder_numpy": 620,
+      "pH_activity_numpy": 620,
+      "nernst_numpy": 620,
+      "semiconductor_drift_numpy": 620,
+      "diffusion_numpy": 620,
+      "mass_balance_numpy": 620
+    },
+    "max_absolute_difference": 5.820766091346741e-11,
+    "numpy_version": "2.3.5",
+    "all_inputs": "original author-generated finite numerical fixtures",
+    "physical_experiments": 0,
+    "original_publisher_source_rows_loaded": 0,
+    "trained_chemical_models": 0,
+    "expert_review": false,
+    "limitations": [
+      "Independent arithmetic agreement verifies model implementation, not laboratory measurement or the broad truth of a chemical process",
+      "Simplified formula balancing intentionally excludes charges, isotopes and multiple independent stoichiometries"
+    ]
+  },
+  "federation": {
+    "nodes": 11,
+    "records": 2220,
+    "relations": 1391,
+    "source_cards": 480
+  },
+  "chemistry": {
+    "chapters": 35,
+    "cases": 25,
+    "records": 168,
+    "source_cards": 14,
+    "relations_local": 140,
+    "relations_full": 146
+  },
+  "contexts": 71,
+  "scientific_peer_review": false,
+  "primary_source_bytes_authentic": 0,
+  "hardware_ai_improvement_evaluated": false,
+  "canonical_original_thirty_unchanged": true,
+  "routing_changed": false,
+  "desktop_transfer": false,
+  "fresh_extraction_replay": "pending"
+}

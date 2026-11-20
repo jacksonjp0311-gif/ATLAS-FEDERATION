@@ -1,0 +1,64 @@
+{
+  "capabilities": [
+    "discover",
+    "search",
+    "fetch",
+    "neighbors",
+    "assemble_context",
+    "validate_context",
+    "changes_since"
+  ],
+  "collections": {
+    "claim": {
+      "path": "data/claims.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "concept": {
+      "path": "data/concepts.jsonl",
+      "records": 17,
+      "sha256": "65671970fb176038e37ffe4f4fb40627294190d0ab15f0491015c993858ff1b6"
+    },
+    "dataset": {
+      "path": "data/datasets.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "equation": {
+      "path": "data/equations.jsonl",
+      "records": 2,
+      "sha256": "aed4f16d0eb7b7a2f9fc106ca2e4877e9bb84f611130e9de6d52e3b4fc27dc9e"
+    },
+    "method": {
+      "path": "data/methods.jsonl",
+      "records": 6,
+      "sha256": "f63ccac22b90d95adb6a41e61893e0d509919811ea798601b5cb99f34e5743ff"
+    },
+    "relations": {
+      "path": "data/relations.jsonl",
+      "records": 8,
+      "sha256": "40707d20c409225ffc37486415f6308c71e9692b3589497c42124f369c9f0491"
+    },
+    "review": {
+      "path": "data/reviews.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": "data/sources.jsonl",
+      "records": 10,
+      "sha256": "8c6738f36234bca03cd55d236ef5a5ea12d2624bff8409485b4fd762aaaedc86"
+    }
+  },
+  "contract_version": "1.0",
+  "corpus_revision": "e3c0f7c33736d5181487c0a2b5704a9d6cc52b4173b5e77ff035e432d44e5a02",
+  "evidence_maturity": "mixed; imported historical references and bounded assistant primary-portion checks",
+  "index_revision": "bm25-fields-1",
+  "node_id": "measurement-atlas",
+  "required_extensions": [],
+  "schema": "atlas.common/1",
+  "schema_conformance_does_not_validate_science": true,
+  "scope": "Imported reference subset; see preserved upstream fields.",
+  "software_version": "0.4.0",
+  "title": "Measurement Atlas"
+}

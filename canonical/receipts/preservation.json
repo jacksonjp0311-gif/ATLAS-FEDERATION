@@ -1,0 +1,159 @@
+{
+  "result": "passed",
+  "baseline": {
+    "result": "passed",
+    "members": 771,
+    "changed": [],
+    "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+  },
+  "other_node_and_identity_comparisons": [
+    {
+      "path": "common/nodes/signal-atlas/atlas_manifest.json",
+      "unchanged": true,
+      "sha256": "ec48a3549df676fe2ca5d80eebf7516644d824ca78a0c4caa9f6a1955585730f"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/claims.jsonl",
+      "unchanged": true,
+      "sha256": "8ebf3b372d9b4465d77a60f62ee7f7f8f410bd92d9739ea3108b5720c341ae3d"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/concepts.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/datasets.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/equations.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/methods.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/relations.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/reviews.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/signal-atlas/data/sources.jsonl",
+      "unchanged": true,
+      "sha256": "d1d2158d1eff062546acd1c3cd57e17390f290f1d2042f1e743a16e00050b02d"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/atlas_manifest.json",
+      "unchanged": true,
+      "sha256": "e3e6e1fd4481938eae68fbb597e62f67a802b111e0f2f591e385dd941ad1b4b4"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/claims.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/concepts.jsonl",
+      "unchanged": true,
+      "sha256": "f6d5aa6ed19ba484fa83f63dd0c77ca03b719bf29684487823171a8ca49299b0"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/datasets.jsonl",
+      "unchanged": true,
+      "sha256": "84d7f178a67014130a408fc5991fe835563480f2bcea8e2ad20ab0a43cabbb5a"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/equations.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/methods.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/relations.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/reviews.jsonl",
+      "unchanged": true,
+      "sha256": "eea89dd8b330ab8fd5d3d4ccb819fca4021189cb7cd035657cfcff9e221bfd26"
+    },
+    {
+      "path": "common/nodes/cymatics-atlas/data/sources.jsonl",
+      "unchanged": true,
+      "sha256": "38b82a423d806e024dbb78f16a5b952c0b78fae6128979524b6ad81dc46db43f"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/atlas_manifest.json",
+      "unchanged": true,
+      "sha256": "a13a53172d7c90503ccb14949ba2e22699188a95f0a56c6f2b9a7c730c23c729"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/claims.jsonl",
+      "unchanged": true,
+      "sha256": "443e12e7637835146376e3e6cd911dfb7d668ac78fffaba47bda2598398fa2a7"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/concepts.jsonl",
+      "unchanged": true,
+      "sha256": "af973b0c702131321685eb29bd1ad2292e49f64b1691e4f2c9338dea76887953"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/datasets.jsonl",
+      "unchanged": true,
+      "sha256": "cf293511145f10074afdca909f327577f6aa08af103cf0c210f575bdb2376aaf"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/equations.jsonl",
+      "unchanged": true,
+      "sha256": "85ce7f64fdf56539e3fa60dcbe334dc5401b22c87d6d67e0676a63cc6ab5529e"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/methods.jsonl",
+      "unchanged": true,
+      "sha256": "ce7b8a5967ea03a97cd71433ebcfdd5ea03a80ffd9f5fdb73e1ffe66b668cbac"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/relations.jsonl",
+      "unchanged": true,
+      "sha256": "423dcae4aa9f19ff3e6fe175b04f4b30d24c286df2c12c31ddd5759391688895"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/reviews.jsonl",
+      "unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "common/nodes/measurement-atlas/data/sources.jsonl",
+      "unchanged": true,
+      "sha256": "c63921c2878ed7f47ab6ff4e9190d0e76671ada9c3020c9b41c637b8ce3aa190"
+    },
+    {
+      "path": "CAUSAL-ATLAS/assets/atlas_forge_knowledge_hub.png",
+      "unchanged": true,
+      "sha256": "f1d29051b41de3ed11bde3a7c81817b1d77f822a19e1d8646655a5a2132f08a3"
+    },
+    {
+      "path": "BUILD_POLICY.json",
+      "unchanged": true,
+      "sha256": "a9d3f990d831fe5a0a0039c8cf940d8192e73eccde5d012c0ca2f9b2051417e5"
+    }
+  ],
+  "retained_causal_records": 73,
+  "old_record_revisions_unchanged": true,
+  "navigation_changes": false
+}

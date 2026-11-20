@@ -1,0 +1,26 @@
+{
+  "schema": "atlas.chem-v1-independent-numerical-oracle/1",
+  "status": "passed",
+  "comparisons": 5780,
+  "categories": {
+    "photon_energy_hc": 480,
+    "varshni_gap": 480,
+    "varshni_numerical_derivative": 480,
+    "log_intrinsic_carriers": 480,
+    "ideal_diode": 480,
+    "equilibrium_deltaG": 480,
+    "equilibrium_logK": 480,
+    "faraday_cell_work": 480,
+    "faradaic_stoichiometry": 480,
+    "bragg_geometry": 480,
+    "uncertainty_covariance": 480,
+    "shomate_numeric_quadrature": 500
+  },
+  "random_seed": 20261114,
+  "max_absolute_difference": 1.450881515624447e-13,
+  "numpy_version": "2.3.5",
+  "original_publisher_source_bytes": 0,
+  "independent_laboratory_measurements": 0,
+  "semiconductor_devices_tested": 0,
+  "claim": "Bounded finite arithmetic and numerical quadrature checks on author-invented values, not physical model or empirical validation"
+}

@@ -5,11 +5,12 @@
 <h1 align="center">ATLAS Federation</h1>
 
 <p align="center">
-  <strong>A versioned scientific reference federation.</strong><br />
-  Preserve the reasoning. Keep the evidence. Build from what came before.
+  <strong>Centralized intelligence, locally.</strong><br />
+  A shared knowledge base for AI tools to search first, then build.
 </p>
 
 <p align="center">
+  <a href="#agent-quickstart">Agent quickstart</a> ·
   <a href="#start-here">Start here</a> ·
   <a href="#domain-directory">Domain directory</a> ·
   <a href="#research-amortization">Research amortization</a> ·
@@ -21,33 +22,56 @@
 
 ---
 
-## Why ATLAS exists
+## Search locally. Build from existing knowledge.
 
-**ATLAS connects scientific and engineering knowledge with the sources, assumptions, models, and revisions needed to examine it.** It is designed as a reference for human investigators and research agents: a place to understand earlier work, inspect its limits, and carry the useful parts forward.
+**ATLAS Federation is a shared local knowledge base for AI tools to search before they build.** It brings scientific and engineering knowledge, source-linked claims, models, examples, and evidence into one versioned collection. The aim is to save repeated searches: reuse research already present, inspect its limits, and spend new research effort on what is missing or has changed.
 
-Knowledge can survive as text and still be lost as capability. A formula without its assumptions, a design without its materials, or a result without its evidence leaves the next person to reconstruct the reasoning before they can begin.
+Give your coding assistant, research agent, or retrieval tool a local checkout. It can find relevant domains, follow the sources and exact revisions, and use those foundations when designing or building. People can inspect the same evidence. You supply the checkout to your existing tools; cloning the repository simply makes the files available locally.
 
-**ATLAS Federation exists to preserve that reasoning.** Its versioned editions bring together reference material, source records, equations, executable models, experiments, and their supporting evidence. The aim is to keep useful context available even when access to networks, services, or the original research process is limited.
+The long-term mission is technological continuity: keep useful knowledge and its reasoning available for learning, repair, reproduction, and future work. That mission depends on preserving context—assumptions, units, uncertainty, provenance, and the difference between a constructed model and a physical result.
 
-The long-term goal is **technological continuity**: preserving enough context for future investigators to learn, repair, reproduce, and eventually rebuild within the limits of their tools and evidence. Each domain contributes to that shared foundation. Each revision should leave the next investigator with a clearer starting point.
-
-> Preserve what is known. Keep the evidence attached. Leave the next person a place to begin.
+> Search what is already known. Keep the evidence attached. Build from there.
 
 Created by **James Paul Jackson**. ATLAS Federation continues the original **ATLAS FORGE** program; historical names, scientific records, and release filenames retain their original identities. The [founding charter](Standards/Human_Knowledge_Survival_Charter_v1.md) and [common research contract](Standards/Atlas_Common_Contract_v0.6.0.md) describe the mission and structure.
 
-**Public status:** this repository is an expanding public source mirror. The canonical checkpoint is **Compiler Design v0.2.0**. The complete historical archive is still pending public release and public download verification. See [publication status](PUBLICATION_STATUS.md) before treating this checkout as a complete recovery copy.
+**Public status:** this repository is the public source mirror of **Compiler Design v0.2.0**, with 24 domain entry points and a [cleared source export in the original archive layout](PUBLIC_SOURCE_DIRECTORY.md). The public derivative has [explicit omissions and documented redactions](canonical/PUBLIC_OMISSION_MANIFEST.json). Its release asset is staged locally; upload and public download verification remain pending. The complete original archive remains private and unchanged. See [publication status](PUBLICATION_STATUS.md) before using this as a recovery copy.
+
+## Agent quickstart
+
+Start with Git and a local text-search tool such as `rg` (ripgrep):
+
+```sh
+git clone https://github.com/jacksonjp0311-gif/ATLAS-FEDERATION.git
+cd ATLAS-FEDERATION
+git rev-parse HEAD
+rg --files canonical/COMPILER-DESIGN-ATLAS
+rg -n -i --glob '*.md' 'control.flow|register allocation' canonical/COMPILER-DESIGN-ATLAS/docs
+```
+
+The first search lists the domain's local files; the second finds relevant explanations. Use the [24-domain directory](#domain-directory) or [original source layout](PUBLIC_SOURCE_DIRECTORY.md) to choose another domain. An existing retrieval tool can index the checked-out text and record collections; preserve paths, record identities, and revisions in that index.
+
+For each build task:
+
+1. **Search the local corpus first.** Locate the relevant domain, method, worked example, and known limitations.
+2. **Pin the evidence.** Record the Git commit, source path, and record ID/revision where available. Follow linked source and review records before using a claim.
+3. **Build within the stated scope.** Inspect relevant code, [tests](canonical/COMPILER-DESIGN-ATLAS/tests/), and [evidence](canonical/COMPILER-DESIGN-ATLAS/evidence/). Run applicable checks only after reviewing their dependencies and the public omission inventory.
+4. **Research the gaps.** Search externally when evidence is missing or a fact needs a current check. Keep new findings and their dates separate from the preserved records.
+
+Coverage is partial. The public derivative contains documented redactions and omissions, and some original commands require absent inputs. Local availability does not establish offline completeness, automatic tool integration, or successful scientific validation. The [publication notice](canonical/PUBLIC_BROWSABLE_NOTICE.md) and [verification receipt](evidence/publication/PUBLIC_DERIVATIVE_VERIFICATION.json) define the available artifact.
 
 ## Start here
 
 | Your goal | Entry point |
 | :--- | :--- |
-| Understand the mission and how to use the material | [Human field guide](Continuity_Toolkit/ATLAS_HUMAN_FIELD_GUIDE.md) |
+| Put the local corpus to work in an AI build workflow | [Agent quickstart](#agent-quickstart) |
+| Understand the mission and inspect the evidence as a person | [Human field guide](Continuity_Toolkit/ATLAS_HUMAN_FIELD_GUIDE.md) |
 | Explore a scientific or engineering domain | [Domain directory](#domain-directory) |
+| Browse the original source layout, shared records, and history | [Public source directory](PUBLIC_SOURCE_DIRECTORY.md) · [Canonical layout](canonical/) |
 | Understand why research is packaged for reuse | [Research amortization](#research-amortization) · [Signal Atlas](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) |
 | Inspect the current scientific checkpoint | [Checkpoint record](CURRENT_CHECKPOINT.json) · [Edition overview](Atlas_Library_Index_Compiler_Design_v0.2.0.md) |
 | Read the active domain in depth | [Compiler Design manual](Compiler_Design/DEPTH_MANUAL_v0.2.0.md) · [Edition notes](Compiler_Design/README_v0.2.0.md) |
 | Integrate with a local model or research agent | [Common contract](Standards/Atlas_Common_Contract_v0.6.0.md) · [Use with AI systems](#for-people-and-ai-systems) |
-| Inspect or restore an exact historical edition | [Restoration instructions](RESTORATION.md) · [Verification receipts](evidence/Compiler_Design_v0.2.0_incremental/) |
+| Verify the public derivative and inspect the original preservation record | [Restoration instructions](RESTORATION.md) · [Historical verification receipts](evidence/Compiler_Design_v0.2.0_incremental/) |
 | Contribute a correction or extend the work | [Contribution and release protocol](Continuity_Toolkit/CONTRIBUTOR_AND_RELEASE_PROTOCOL.md) |
 
 ## Domain directory
@@ -95,16 +119,13 @@ The links below lead to **24 domain folders in this public source mirror**. They
 
 These folders provide browsable material corresponding to the **24-node canonical checkpoint**. Computer Architecture and Mathematics / Physics include versioned source roots and historical snapshots. Signal and Cymatics preserve the federation's frozen reference subsets; they are not complete standalone upstream applications. The [four-domain publication manifest](evidence/publication/four-domains-2026-11-20-manifest.json) records exact original paths, hashes, and excluded files. The [publication checks](evidence/publication/four-domains-2026-11-20-checks.json) document the selected test results and remaining historical-test limitations.
 
-The separate [Signal Atlas research project](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) develops research amortization. Its current repository and this federation's historical [Signal reference subset](Signal/) have distinct provenance. The full original federation archive remains unpublished; a separately identified public derivative is being prepared subject to the remaining audit and rights holds. See [publication status](PUBLICATION_STATUS.md).
-
-### Cleared source in the original archive layout
-
-An additional [partial source export under `canonical/`](canonical/README_PUBLICATION.md) provides **1,948 cleared original files across 19 domain roots**, preserving their archive-relative paths. The [batch receipt](evidence/publication/cleared-domain-source-batch-2026-11-20.json) records its exact scope and file hashes. Shared runtime, baseline, history, and rights-held material remain outside this batch; the complete archive and the separately identified public derivative are not yet publicly released.
+The separate [Signal Atlas research project](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) develops research amortization. Its current repository and this federation's historical [Signal reference subset](Signal/) have distinct provenance. The full original federation archive remains unpublished. The [public source directory](PUBLIC_SOURCE_DIRECTORY.md) also maps the cleared derivative under `canonical/`, with its [omission inventory](canonical/PUBLIC_OMISSION_MANIFEST.json), [browsable file manifest](canonical/BROWSABLE_FILE_MANIFEST.json), and [verification receipt](evidence/publication/PUBLIC_DERIVATIVE_VERIFICATION.json). Its binary release asset remains staged locally. See [publication status](PUBLICATION_STATUS.md).
 
 ### Federation resources
 
 | Location | Purpose |
 | :--- | :--- |
+| [Original source layout](PUBLIC_SOURCE_DIRECTORY.md) | Cleared domain source, shared records, preserved history, and explicit omissions under `canonical/` |
 | [Standards](Standards/) | Shared record contract, build principles, provenance, and mission charters |
 | [Roadmaps](Roadmaps/) | Original 30-domain plan, preserved priority decisions, and current active pointer |
 | [Continuity Toolkit](Continuity_Toolkit/) | Human guides, offline tooling, preservation procedures, and evidence boundaries |
@@ -117,7 +138,7 @@ Historical indexes describe their own editions. For the latest canonical counts 
 
 ## Research amortization
 
-**Do the careful research once; make its evidence useful many times.** Research amortization means spreading the cost of discovery, validation, and synthesis across later readers, projects, and model calls. A versioned reference lets the next investigator inspect earlier work and focus on what changed, what is missing, and whether it applies.
+**Reuse research so each build does not start with the same searches.** Research amortization means spreading the cost of discovery, validation, and synthesis across later tasks and model calls. The local corpus gives an AI tool a place to retrieve existing work, check its evidence and applicability, and identify the specific gaps that still need research.
 
 A working example is **[Signal Atlas](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS)**. Read its [Research Amortization implementation note](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/main/docs/research/RESEARCH_AMORTIZATION.md) for the definition, packet model, and evaluation plan.
 
@@ -151,7 +172,7 @@ An integration should:
 4. **Return traceable work.** Cite the specific record revision and source, and keep new inferences distinguishable from the retrieved material.
 5. **Preserve corrections.** Propose new revisions through the contribution process while retaining historical records.
 
-The intended use includes local models, research agents, code assistants, and human investigators. Runtime commands documented inside historical editions apply to their restored package layouts. The browsable public export does not yet provide the complete canonical runtime and archive.
+The intended use includes local models, research agents, code assistants, and human investigators. Runtime commands documented inside historical editions apply to their restored package layouts. The public derivative omits content documented in its [omission inventory](canonical/PUBLIC_OMISSION_MANIFEST.json), and preserved commands may require omitted inputs. Its historical receipts and manifests do not establish that every original runtime or test works in this derivative.
 
 ## Evidence and integrity
 
@@ -174,56 +195,43 @@ A checksum establishes byte identity. A finite test establishes behavior within 
 
 ## Restoration and preservation
 
-Historical fidelity is part of the research. The canonical edition retains original scientific revisions, predecessor records, restoration instructions, and verification receipts under the **ATLAS FORGE** names used when they were created.
+Historical fidelity is part of the research. The complete original edition remains preserved privately, with its exact scientific revisions and original **ATLAS FORGE** identities. The public derivative keeps cleared material, records omissions and redactions, and has a separate identity. Examples that depend on removed data remain unavailable.
 
-| Canonical artifact | Recorded value |
+| Artifact | Status and identity |
 | :--- | :--- |
-| Target edition | Compiler Design v0.2.0 |
-| Complete historical archive | **735,193,042 bytes** |
-| Deterministic v0.1.0 → v0.2.0 delta | **3,233,432 bytes** |
-| Public release asset and public download verification | **Pending** |
+| Complete original Compiler Design v0.2.0 ZIP | Privately preserved; 735,193,042 bytes |
+| Public derivative | `ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip` |
+| Intended public release tag | `compiler-design-v0.2.0-public` |
+| Candidate ZIP length | 731,933,585 bytes |
+| Candidate ZIP SHA-256 | `9e91db0327913626c9faf56e5221a5016aadeef0509b45c56ffc667bb863090f` |
+| Binary asset delivery | Staged locally; upload and public download verification pending |
+| Browsable source hashes | [Browsable file manifest](canonical/BROWSABLE_FILE_MANIFEST.json) |
+| Release-archive file hashes | [Archive file manifest](canonical/FILE_MANIFEST.json) |
+| Omitted content | [Omission inventory](canonical/PUBLIC_OMISSION_MANIFEST.json) |
+| Candidate verification | [Verification receipt](evidence/publication/PUBLIC_DERIVATIVE_VERIFICATION.json) |
+
+The derivative ZIP and its `.zip.sha256` sidecar belong together as release assets. When the exact candidate becomes publicly available, verify its checksum and recorded byte length before extraction. [RESTORATION.md](RESTORATION.md) provides the public extraction steps and preserves the original artifact identity separately. See [release status](RELEASE_STATUS.md) for the delivery blocker.
 
 <details>
-<summary><strong>Expected SHA-256 checksums</strong></summary>
+<summary><strong>Preserved original identities — not public derivative checksums</strong></summary>
 
-Complete original archive:
+Complete original archive, 735,193,042 bytes:
 
 ```text
 0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7
 ```
 
-Original v0.1.0 → v0.2.0 delta:
+Original v0.1.0 → v0.2.0 delta, 3,233,432 bytes:
 
 ```text
 4cbe54fe29729c8895670f1efa31628d1501a848593a677798424dd03e46b3ed
 ```
 
-The [release manifest](evidence/Compiler_Design_v0.2.0_incremental/ATLAS_FORGE_RELEASE_COMPILER_DESIGN_v0.2.0.json) records the exact base, delta, and final archive identities.
+The [original release manifest](evidence/Compiler_Design_v0.2.0_incremental/ATLAS_FORGE_RELEASE_COMPILER_DESIGN_v0.2.0.json) retains the exact predecessor, delta, and final original archive identities. These hashes do not identify the public derivative.
 
 </details>
 
-When the complete archive becomes available, verify both its length and SHA-256 **before extraction**. The following check uses only Python's standard library and does not execute archive contents:
-
-```sh
-python - <<'PY'
-from pathlib import Path
-import hashlib
-
-archive = Path("ATLAS_COLLECTION_Compiler_Design_v0.2.0.zip")
-expected = "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7"
-h = hashlib.sha256()
-with archive.open("rb") as f:
-    for block in iter(lambda: f.read(1024 * 1024), b""):
-        h.update(block)
-if archive.stat().st_size != 735193042 or h.hexdigest() != expected:
-    raise SystemExit("Archive identity mismatch: do not use this as the original edition.")
-print("Original Compiler Design v0.2.0 archive identity verified.")
-PY
-```
-
-This identifies the original archive; it does not establish security, redistribution rights, or scientific validity. Any sanctioned redacted edition needs its own clearly distinguished manifest and checksum.
-
-Follow [RESTORATION.md](RESTORATION.md) and the [deterministic restoration script](Releases/Compiler_Design_v0.2.0_incremental/RESTORE_ATLAS_FORGE_COMPILER_V02.py). Exact reconstruction requires the original predecessor archive and delta. The complete ZIP is kept out of Git history; the original preservation source remains unchanged. See [publication status](PUBLICATION_STATUS.md), the [current archive identity receipt](evidence/publication/2026-11-20-verification.json), and [release status](RELEASE_STATUS.md) for verification scope, outstanding publication work, and source-rights clearance.
+A checksum establishes byte identity. It does not grant redistribution rights or establish scientific validity. Rebuilt file manifests describe the public derivative; original manifests and receipts retained for history remain explicitly historical. The complete ZIP is never committed as a Git blob.
 
 ## Roadmap and participation
 
@@ -279,7 +287,7 @@ Follow the [contribution and release protocol](Continuity_Toolkit/CONTRIBUTOR_AN
 
 No repository-wide `LICENSE` file is present in this checkout. Read each source's rights and provenance notes before copying or redistributing material; public access and a bibliographic citation do not themselves grant those rights. Historical source records may describe resources whose underlying content is not included here.
 
-The complete archive remains subject to the [publication and source-rights review](PUBLICATION_STATUS.md). The historical receipts establish the results they record, within their stated scope. They do not grant third-party permissions or establish a fresh security audit. Follow the [evidence boundaries](Continuity_Toolkit/SCIENCE_EVIDENCE_BOUNDARIES.md) when using any edition.
+The complete original archive remains private because of unresolved redistribution holds. The public derivative records exclusions in its [omission inventory](canonical/PUBLIC_OMISSION_MANIFEST.json); see the [publication and source-rights status](PUBLICATION_STATUS.md). The historical receipts establish the results they record, within their stated scope. They do not grant third-party permissions or establish a fresh security audit. Follow the [evidence boundaries](Continuity_Toolkit/SCIENCE_EVIDENCE_BOUNDARIES.md) when using any edition.
 
 The [README artwork](assets/README.md) is an original repository-native illustration. Its connections are conceptual; they are not measurements or a claim that every domain is complete.
 

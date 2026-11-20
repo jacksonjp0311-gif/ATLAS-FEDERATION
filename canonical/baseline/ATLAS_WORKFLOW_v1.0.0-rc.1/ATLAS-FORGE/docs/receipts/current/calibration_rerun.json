@@ -1,0 +1,25 @@
+{
+  "result": "historical_receipt_redacted_not_revalidated",
+  "numpy_version": "2.3.5",
+  "checks": [
+    {
+      "degree": 1,
+      "numpy_residual_sd": 0.0021712725960567393,
+      "decimal_residual_sd": "[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scaled_coefficients_max_abs_difference": 4.440892098500626e-16,
+      "passed": true,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    {
+      "degree": 2,
+      "numpy_residual_sd": 0.00020517742407617662,
+      "decimal_residual_sd": "[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scaled_coefficients_max_abs_difference": 6.201636426617085e-16,
+      "passed": true,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    }
+  ],
+  "independent_human_review": false,
+  "physical_replication": false,
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

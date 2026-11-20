@@ -1,0 +1,18 @@
+{
+  "schema": "atlas.technological-continuity-reconciled/1",
+  "date": "2026-11-16",
+  "reconciled_lineages": [
+    "Electronics v1.0.0-rc.1",
+    "Manufacturing v0.1.0 (sibling from Electronics v0.4.0)"
+  ],
+  "current_content_domain": "manufacturing-atlas",
+  "current_edition": "0.2.0",
+  "next_content_domains": [
+    "Manufacturing deepen",
+    "Computer Architecture & Digital Hardware"
+  ],
+  "original_30_domain_queue_preserved": true,
+  "bitwork_router_deferred": true,
+  "desktop_transfer_deferred": true,
+  "scientific_acceptance": "HOLD: authentic original publisher files, independent review, measured physical manufacturing"
+}

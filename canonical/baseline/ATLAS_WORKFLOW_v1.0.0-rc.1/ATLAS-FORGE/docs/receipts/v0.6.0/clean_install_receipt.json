@@ -1,0 +1,16 @@
+{
+  "result": "passed",
+  "kind": "clean_installed_wheel_smoke",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "forge": "0.6.0",
+  "measurement": "0.6.0",
+  "forge_records": 467,
+  "measurement_records": 103,
+  "context_valid": true,
+  "context_status": "conflicting_context",
+  "certified_numerical_targets_passed": 11,
+  "handbook_disagreements_retained": 6,
+  "source_tree_imports": false,
+  "live_bitwork_or_model_run": false
+}

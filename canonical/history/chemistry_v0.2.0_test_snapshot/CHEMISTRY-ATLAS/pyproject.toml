@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "chemistry-atlas-research"
+version = "0.2.0"
+requires-python = ">=3.10"
+description = "Offline Chemistry Atlas reference models, source-linked research and technological-continuity science"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chemistry_atlas*"]
+[tool.setuptools.package-data]
+chemistry_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

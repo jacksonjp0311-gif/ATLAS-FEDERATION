@@ -1,0 +1,1074 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "infinite-horizon LQR scalar Riccati",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "e0229c4879534fcabc8cd1f3c64850ed1ffe6bcda80b5eee21900d26a239dd45",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:lqr-dare",
+      "revision": "cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f"
+    },
+    {
+      "record_id": "control-atlas:finite-lqr",
+      "revision": "0b62fd03b2a0376da9de456fbf1476c3819a3b24116a24dabe79eadaa6b141c1"
+    },
+    {
+      "record_id": "control-atlas:finite-horizon-DARE-recursion",
+      "revision": "8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b"
+    },
+    {
+      "record_id": "control-atlas:finite-two-state-LQR",
+      "revision": "7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a"
+    },
+    {
+      "record_id": "control-atlas:mpc-boundary",
+      "revision": "291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb"
+    },
+    {
+      "record_id": "control-atlas:nominal-LQR-not-admissible",
+      "revision": "0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:finite-grid-not-general-MPC",
+      "revision": "126e2039831ddfe12adaf37734d005e3155fd3d626a6153bcd6f8a99bcd96f98"
+    },
+    {
+      "record_id": "control-atlas:finite-horizon-DARE-recursion",
+      "revision": "8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b"
+    },
+    {
+      "record_id": "control-atlas:finite-lqr",
+      "revision": "0b62fd03b2a0376da9de456fbf1476c3819a3b24116a24dabe79eadaa6b141c1"
+    },
+    {
+      "record_id": "control-atlas:finite-two-state-LQR",
+      "revision": "7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a"
+    },
+    {
+      "record_id": "control-atlas:grid-scalar-constraint-search",
+      "revision": "4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a"
+    },
+    {
+      "record_id": "control-atlas:lqr-dare",
+      "revision": "cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f"
+    },
+    {
+      "record_id": "control-atlas:mpc-boundary",
+      "revision": "291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb"
+    },
+    {
+      "record_id": "control-atlas:nominal-LQR-not-admissible",
+      "revision": "0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-SUPPLEMENTS",
+      "revision": "150aaa60ecb8bb72d57a7c700ed473ecd5a085781006df132e5601f6aeeecce9"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LQR",
+      "revision": "74231ef6811b6527946c810f918563a5ad1c94fc00cadfc671c7de6ab0560c2f"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+      "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+    },
+    {
+      "record_id": "control-atlas:v02-source:MIT-LQR",
+      "revision": "d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Scalar model and explicit finite action set"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Grid failure does not prove physical-control infeasibility",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-37",
+            "edition-0.4.0",
+            "finite-grid-not-general-MPC"
+          ],
+          "text": "Enumerating bounded discrete input sequences gives a conditional grid optimum, not general continuous-input optimum, receding-horizon feasibility, or stability.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "finite-grid-not-general-MPC",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "37",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:finite-grid-not-general-MPC",
+        "revision": "126e2039831ddfe12adaf37734d005e3155fd3d626a6153bcd6f8a99bcd96f98",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          }
+        ],
+        "status": "active",
+        "title": "Finite grid open-loop search is not continuous MPC",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Q,Qf symmetric PSD; R>0; exact 2state/1input model"
+          ],
+          "domain": "control-systems",
+          "equation": "P_N=Qf; K_t=(R+B^T P B)^(-1) B^T P A",
+          "limitations": [
+            "No constraints or real equipment",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-36",
+            "edition-0.4.0",
+            "finite-horizon-DARE-recursion"
+          ],
+          "text": "The scalar-input discrete optimal control recursion uses P_N=Qf, K_t=(R+B^T P_{t+1} B)^-1 B^T P_{t+1} A, P_t=Q+A^T P A-A^T P B K.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "finite-horizon-DARE-recursion",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "36",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:finite-horizon-DARE-recursion",
+        "revision": "8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          }
+        ],
+        "status": "active",
+        "title": "Two-state finite-horizon discrete Riccati recursion",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "K_k=b*S_(k+1)*a/(r+b^2*S_(k+1)); S_k=q+a^2*S_(k+1)-a*b*S_(k+1)*K_k",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-10",
+            "finite-lqr"
+          ],
+          "text": "Finite-horizon scalar LQR uses backward Riccati recursion. For a scalar discrete plant `x[k+1]=a x[k]+b u[k]`, consider a finite-horizon quadratic objective `Σ(q x[k]²+r u[k]²)+q_f x[N]²` with q and q_f nonnegative and r strictly positive. The optimal unconstrained policy under this exact model is `u[k]=−K[k] x[k]`, obtained from backward scalar Riccati recursion. With `S[N]=q_f`, `K[k]=b S[k+1] a/(r+b² S[k+1])`, `S[k]=q+a² S[k+1]−a b S[k+1]K[k]`. Domain context: 10_finite_horizon_optimal_control_and_constraints.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter",
+              "source_id": "control-atlas:source:MIT-LQR"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review",
+              "source_id": "control-atlas:source:FBS-SUPPLEMENTS"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "finite-lqr",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-10",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:finite-lqr",
+        "revision": "0b62fd03b2a0376da9de456fbf1476c3819a3b24116a24dabe79eadaa6b141c1",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR",
+            "revision": "74231ef6811b6527946c810f918563a5ad1c94fc00cadfc671c7de6ab0560c2f"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-SUPPLEMENTS",
+            "revision": "150aaa60ecb8bb72d57a7c700ed473ecd5a085781006df132e5601f6aeeecce9"
+          }
+        ],
+        "status": "active",
+        "title": "Finite-horizon scalar LQR uses backward Riccati recursion",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "User-supplied exact linear plant and weights"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No actuator limits or model uncertainty",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-36",
+            "edition-0.4.0",
+            "finite-two-state-LQR"
+          ],
+          "text": "Compute sequence gains, states, inputs and predicted cost for horizon 1..128; compare J and x0^T P0 x0.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "finite-two-state-LQR",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "36",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:finite-two-state-LQR",
+        "revision": "7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          }
+        ],
+        "status": "active",
+        "title": "Run bounded 2state single-input Riccati and compare value identity",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Horizon<=5, grid<=7, scalar exact plant"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a real-time controller, safe-state policy or global continuous solver",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-37",
+            "edition-0.4.0",
+            "grid-scalar-constraint-search"
+          ],
+          "text": "Find minimum quadratic cost among finite grid sequences subject to stated state/input bounds, and distinguish no grid candidate from continuous infeasibility.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "grid-scalar-constraint-search",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "37",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:grid-scalar-constraint-search",
+        "revision": "4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          }
+        ],
+        "status": "active",
+        "title": "Exhaustively enumerate a declared scalar input grid",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "P=q+a*a*P-(a*b*P)**2/(r+b*b*P)",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-09",
+            "equation",
+            "lqr-dare"
+          ],
+          "text": "Scalar infinite-horizon LQR uses P=q+a²P−(a*b*P)²/(r+b²P) with q,r>0 and stabilizing feedback k=a*b*P/(r+b²P).",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage",
+              "source_id": "control-atlas:v02-source:MIT-LQR"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "lqr-dare",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "09",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:lqr-dare",
+        "revision": "cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:v02-source:MIT-LQR",
+            "revision": "d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c"
+          }
+        ],
+        "status": "active",
+        "title": "Discrete scalar algebraic Riccati equation",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-12",
+            "concept",
+            "mpc-boundary"
+          ],
+          "text": "Finite-horizon receding constrained optimization requires explicit feasibility, state/input constraints, solver timing and terminal conditions; simple LQR is not MPC.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage",
+              "source_id": "control-atlas:v02-source:MIT-LQR"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "mpc-boundary",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "12",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:mpc-boundary",
+        "revision": "291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:v02-source:MIT-LQR",
+            "revision": "d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c"
+          }
+        ],
+        "status": "active",
+        "title": "MPC and LQR are not interchangeable",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Known A,B,Q,R,Qf and sample time"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not physical safe control, model validity or robust performance",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-36",
+            "edition-0.4.0",
+            "nominal-LQR-not-admissible"
+          ],
+          "text": "Finite-horizon unconstrained LQR optimizes a declared quadratic model cost; actual actuator, state or timing constraints are not represented.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "nominal-LQR-not-admissible",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "36",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:nominal-LQR-not-admissible",
+        "revision": "0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          }
+        ],
+        "status": "active",
+        "title": "Unconstrained optimum can violate hard physical limits",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "Åström and Murray. Caltech Feedback Systems supplements and updates. Inspected scope: Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-SUPPLEMENTS",
+        "provenance": {
+          "access_mode": "author-maintained supplement index",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "FBS-SUPPLEMENTS",
+          "url": "https://fbswiki.org/wiki/index.php/Main_Page"
+        },
+        "record_id": "control-atlas:source:FBS-SUPPLEMENTS",
+        "revision": "150aaa60ecb8bb72d57a7c700ed473ecd5a085781006df132e5601f6aeeecce9",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Caltech Feedback Systems supplements and updates",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MIT CSAIL / Russ Tedrake. Underactuated Robotics, Chapter 8 LQR. Inspected scope: Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LQR",
+        "provenance": {
+          "access_mode": "public technical chapter portion",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MIT-LQR",
+          "url": "https://underactuated.mit.edu/lqr.html"
+        },
+        "record_id": "control-atlas:source:MIT-LQR",
+        "revision": "74231ef6811b6527946c810f918563a5ad1c94fc00cadfc671c7de6ab0560c2f",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Underactuated Robotics, Chapter 8 LQR",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Discrete-time Riccati and input/state constraints sections, public HTML",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LQR-DISCRETE",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Discrete-time Riccati and input/state constraints sections, public HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://underactuated.mit.edu/lqr.html",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+        "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics discrete Riccati and constraints",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "selected_full_html_portions",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "mit-lqr"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "selected_full_html_portions",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "v02-source:MIT-LQR",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://underactuated.mit.edu/lqr.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:v02-source:MIT-LQR",
+        "revision": "d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics Ch. 8: Linear Quadratic Regulators [v0.2 addition]",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:finite-two-state-LQR",
+          "revision": "7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:finite-two-state-LQR:qualifies:finite-horizon-DARE-recursion",
+        "revision": "5a9ad94ea8866dbaac8ef031edfe3885df2f99b4555702ada686e5679c5a4996",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:finite-horizon-DARE-recursion",
+          "revision": "8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:grid-scalar-constraint-search",
+          "revision": "4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:grid-scalar-constraint-search:qualifies:finite-grid-not-general-MPC",
+        "revision": "84b28a94e89aa7e1da30567aa4e2cef44a5a676fee995b7020992bf5636e09b3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:finite-grid-not-general-MPC",
+          "revision": "126e2039831ddfe12adaf37734d005e3155fd3d626a6153bcd6f8a99bcd96f98"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:grid-scalar-constraint-search",
+          "revision": "4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:grid-scalar-constraint-search:qualifies:nominal-LQR-not-admissible",
+        "revision": "83996a12c6d8d5b193296c3ee65755fecbe704b54ab25a745f93746a511c917f",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:nominal-LQR-not-admissible",
+          "revision": "0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:nominal-LQR-not-admissible",
+          "revision": "0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:nominal-LQR-not-admissible:qualifies:finite-two-state-LQR",
+        "revision": "603f03d25cd4867b72a8c765091f03c2818cf02c741fc042b186adfdffde87cc",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:finite-two-state-LQR",
+          "revision": "7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:mpc-boundary",
+          "revision": "291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:mpc-boundary:qualifies:lqr-dare",
+        "revision": "33c5d08f99ca33907f6819039aeda104281f9c8942fca357486ce6b595f40648",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:lqr-dare",
+          "revision": "cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Scalar model and explicit finite action set\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Grid failure does not prove physical-control infeasibility\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-37\",\"edition-0.4.0\",\"finite-grid-not-general-MPC\"],\"text\":\"Enumerating bounded discrete input sequences gives a conditional grid optimum, not general continuous-input optimum, receding-horizon feasibility, or stability.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"finite-grid-not-general-MPC\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"37\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:finite-grid-not-general-MPC\",\"revision\":\"126e2039831ddfe12adaf37734d005e3155fd3d626a6153bcd6f8a99bcd96f98\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"}],\"status\":\"active\",\"title\":\"Finite grid open-loop search is not continuous MPC\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Q,Qf symmetric PSD; R>0; exact 2state/1input model\"],\"domain\":\"control-systems\",\"equation\":\"P_N=Qf; K_t=(R+B^T P B)^(-1) B^T P A\",\"limitations\":[\"No constraints or real equipment\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-36\",\"edition-0.4.0\",\"finite-horizon-DARE-recursion\"],\"text\":\"The scalar-input discrete optimal control recursion uses P_N=Qf, K_t=(R+B^T P_{t+1} B)^-1 B^T P_{t+1} A, P_t=Q+A^T P A-A^T P B K.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"finite-horizon-DARE-recursion\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"36\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:finite-horizon-DARE-recursion\",\"revision\":\"8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"}],\"status\":\"active\",\"title\":\"Two-state finite-horizon discrete Riccati recursion\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"K_k=b*S_(k+1)*a/(r+b^2*S_(k+1)); S_k=q+a^2*S_(k+1)-a*b*S_(k+1)*K_k\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-10\",\"finite-lqr\"],\"text\":\"Finite-horizon scalar LQR uses backward Riccati recursion. For a scalar discrete plant `x[k+1]=a x[k]+b u[k]`, consider a finite-horizon quadratic objective `Σ(q x[k]²+r u[k]²)+q_f x[N]²` with q and q_f nonnegative and r strictly positive. The optimal unconstrained policy under this exact model is `u[k]=−K[k] x[k]`, obtained from backward scalar Riccati recursion. With `S[N]=q_f`, `K[k]=b S[k+1] a/(r+b² S[k+1])`, `S[k]=q+a² S[k+1]−a b S[k+1]K[k]`. Domain context: 10_finite_horizon_optimal_control_and_constraints.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter\",\"source_id\":\"control-atlas:source:MIT-LQR\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review\",\"source_id\":\"control-atlas:source:FBS-SUPPLEMENTS\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"finite-lqr\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-10\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:finite-lqr\",\"revision\":\"0b62fd03b2a0376da9de456fbf1476c3819a3b24116a24dabe79eadaa6b141c1\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR\",\"revision\":\"74231ef6811b6527946c810f918563a5ad1c94fc00cadfc671c7de6ab0560c2f\"},{\"record_id\":\"control-atlas:source:FBS-SUPPLEMENTS\",\"revision\":\"150aaa60ecb8bb72d57a7c700ed473ecd5a085781006df132e5601f6aeeecce9\"}],\"status\":\"active\",\"title\":\"Finite-horizon scalar LQR uses backward Riccati recursion\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"User-supplied exact linear plant and weights\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No actuator limits or model uncertainty\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-36\",\"edition-0.4.0\",\"finite-two-state-LQR\"],\"text\":\"Compute sequence gains, states, inputs and predicted cost for horizon 1..128; compare J and x0^T P0 x0.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"finite-two-state-LQR\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"36\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:finite-two-state-LQR\",\"revision\":\"7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"}],\"status\":\"active\",\"title\":\"Run bounded 2state single-input Riccati and compare value identity\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Horizon<=5, grid<=7, scalar exact plant\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a real-time controller, safe-state policy or global continuous solver\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-37\",\"edition-0.4.0\",\"grid-scalar-constraint-search\"],\"text\":\"Find minimum quadratic cost among finite grid sequences subject to stated state/input bounds, and distinguish no grid candidate from continuous infeasibility.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"grid-scalar-constraint-search\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"37\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:grid-scalar-constraint-search\",\"revision\":\"4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"}],\"status\":\"active\",\"title\":\"Exhaustively enumerate a declared scalar input grid\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"P=q+a*a*P-(a*b*P)**2/(r+b*b*P)\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-09\",\"equation\",\"lqr-dare\"],\"text\":\"Scalar infinite-horizon LQR uses P=q+a²P−(a*b*P)²/(r+b²P) with q,r>0 and stabilizing feedback k=a*b*P/(r+b²P).\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage\",\"source_id\":\"control-atlas:v02-source:MIT-LQR\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"lqr-dare\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"09\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:lqr-dare\",\"revision\":\"cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:v02-source:MIT-LQR\",\"revision\":\"d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c\"}],\"status\":\"active\",\"title\":\"Discrete scalar algebraic Riccati equation\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-12\",\"concept\",\"mpc-boundary\"],\"text\":\"Finite-horizon receding constrained optimization requires explicit feasibility, state/input constraints, solver timing and terminal conditions; simple LQR is not MPC.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage\",\"source_id\":\"control-atlas:v02-source:MIT-LQR\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"mpc-boundary\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"12\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:mpc-boundary\",\"revision\":\"291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:v02-source:MIT-LQR\",\"revision\":\"d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c\"}],\"status\":\"active\",\"title\":\"MPC and LQR are not interchangeable\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Known A,B,Q,R,Qf and sample time\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not physical safe control, model validity or robust performance\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-36\",\"edition-0.4.0\",\"nominal-LQR-not-admissible\"],\"text\":\"Finite-horizon unconstrained LQR optimizes a declared quadratic model cost; actual actuator, state or timing constraints are not represented.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"nominal-LQR-not-admissible\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"36\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:nominal-LQR-not-admissible\",\"revision\":\"0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"}],\"status\":\"active\",\"title\":\"Unconstrained optimum can violate hard physical limits\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"Åström and Murray. Caltech Feedback Systems supplements and updates. Inspected scope: Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-SUPPLEMENTS\",\"provenance\":{\"access_mode\":\"author-maintained supplement index\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Author wiki lists networked, optimization and linear-systems supplements; not detailed chapter review\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"FBS-SUPPLEMENTS\",\"url\":\"https://fbswiki.org/wiki/index.php/Main_Page\"},\"record_id\":\"control-atlas:source:FBS-SUPPLEMENTS\",\"revision\":\"150aaa60ecb8bb72d57a7c700ed473ecd5a085781006df132e5601f6aeeecce9\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Caltech Feedback Systems supplements and updates\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MIT CSAIL / Russ Tedrake. Underactuated Robotics, Chapter 8 LQR. Inspected scope: Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LQR\",\"provenance\":{\"access_mode\":\"public technical chapter portion\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Discrete-time Riccati recursion, finite-horizon LQR, constrained extension; selected online chapter\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MIT-LQR\",\"url\":\"https://underactuated.mit.edu/lqr.html\"},\"record_id\":\"control-atlas:source:MIT-LQR\",\"revision\":\"74231ef6811b6527946c810f918563a5ad1c94fc00cadfc671c7de6ab0560c2f\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Underactuated Robotics, Chapter 8 LQR\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Discrete-time Riccati and input/state constraints sections, public HTML\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LQR-DISCRETE\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://underactuated.mit.edu/lqr.html\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics discrete Riccati and constraints\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"selected_full_html_portions\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"mit-lqr\"],\"text\":\"Publisher/documentation reference. Inspected scope: Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"selected_full_html_portions\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"v02-source:MIT-LQR\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Discrete-time LQR infinite-horizon Riccati equation and feedback gain; selected HTML passage\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://underactuated.mit.edu/lqr.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:v02-source:MIT-LQR\",\"revision\":\"d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics Ch. 8: Linear Quadratic Regulators [v0.2 addition]\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:finite-two-state-LQR\",\"revision\":\"7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:finite-two-state-LQR:qualifies:finite-horizon-DARE-recursion\",\"revision\":\"5a9ad94ea8866dbaac8ef031edfe3885df2f99b4555702ada686e5679c5a4996\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:finite-horizon-DARE-recursion\",\"revision\":\"8a2cf2a35b8db82c2bc25749442b4f596193c16091b7ce6d6315f6ac17dc343b\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:grid-scalar-constraint-search\",\"revision\":\"4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:grid-scalar-constraint-search:qualifies:finite-grid-not-general-MPC\",\"revision\":\"84b28a94e89aa7e1da30567aa4e2cef44a5a676fee995b7020992bf5636e09b3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:finite-grid-not-general-MPC\",\"revision\":\"126e2039831ddfe12adaf37734d005e3155fd3d626a6153bcd6f8a99bcd96f98\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:grid-scalar-constraint-search\",\"revision\":\"4f34e09845d39c4952dedbcd17f9550ee44298bad43aed64e6a0e4327135e16a\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:grid-scalar-constraint-search:qualifies:nominal-LQR-not-admissible\",\"revision\":\"83996a12c6d8d5b193296c3ee65755fecbe704b54ab25a745f93746a511c917f\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:nominal-LQR-not-admissible\",\"revision\":\"0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:nominal-LQR-not-admissible\",\"revision\":\"0c4007b86407523e63b05e556ee18f20f4d8d4a19b7f3e0bdec50172a7579dba\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:nominal-LQR-not-admissible:qualifies:finite-two-state-LQR\",\"revision\":\"603f03d25cd4867b72a8c765091f03c2818cf02c741fc042b186adfdffde87cc\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:finite-two-state-LQR\",\"revision\":\"7cc52f0f43ca93121124b2a94c27eb3d38519212969fcd4d7cd3532896dbb05a\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:mpc-boundary\",\"revision\":\"291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:mpc-boundary:qualifies:lqr-dare\",\"revision\":\"33c5d08f99ca33907f6819039aeda104281f9c8942fca357486ce6b595f40648\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:lqr-dare\",\"revision\":\"cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 29980,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:scalar-lqr-calculator",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:lqr-unconstrained",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "f358b2385289c751ba3170beb9adb6edfd565ee0c04afd516b543035d96dfb8a"
+}

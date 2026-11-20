@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: energy-atlas-research
+Version: 1.0.0
+Summary: Offline energy physics, generation, storage, grid and scientific provenance reference
+Requires-Python: >=3.10
+License-File: LICENSE.md
+License-File: NOTICE.md
+Dynamic: license-file

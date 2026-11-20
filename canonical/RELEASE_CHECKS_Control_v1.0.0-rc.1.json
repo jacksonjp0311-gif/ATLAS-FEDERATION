@@ -1,0 +1,136 @@
+{
+  "schema": "atlas.control-content-release/1",
+  "release": "1.0.0-rc.1",
+  "date": "2026-11-13",
+  "result": "passed_engineering_content_candidate",
+  "status": "scoped_content_release_candidate_not_final_scientific_v1",
+  "active_domain": "control-atlas",
+  "nodes": 6,
+  "common_records": 1051,
+  "relations": 329,
+  "control_records": 249,
+  "control_source_cards": 51,
+  "control_relations": 147,
+  "chapters": 61,
+  "investigations": 49,
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_passed": 1005,
+  "tests_skipped": 0,
+  "forge_conformance": {
+    "result": "passed",
+    "nodes": 6,
+    "records": 1051,
+    "relations": 329
+  },
+  "new_numerical_oracle": {
+    "schema": "atlas.control-v1-oracle/1",
+    "result": "passed",
+    "comparisons": 19380,
+    "numpy_version": "2.3.5",
+    "seed": 61113,
+    "max_abs_error": 5.684341886080801e-13,
+    "controls": {
+      "observer_random_systems": 450,
+      "heldout_arx_random_systems": 120
+    },
+    "empirical_publisher_data_evaluated": false,
+    "source_data_authenticity_verified": false,
+    "physical_control_or_safety_tested": false,
+    "interpretation": "independently coded NumPy numeric oracles for synthetic models only"
+  },
+  "preservation": {
+    "prior_control_records": 214,
+    "unchanged_prior_control_relations": 124,
+    "other_node_and_baseline_files_sha256_identical": 1190,
+    "protected_sections": {
+      "baseline": 771,
+      "CAUSAL-ATLAS": 253,
+      "MATERIALS-ATLAS": 121,
+      "common/nodes/causal-atlas": 9,
+      "common/nodes/materials-atlas": 9,
+      "common/nodes/measurement-atlas": 9,
+      "common/nodes/cymatics-atlas": 9,
+      "common/nodes/signal-atlas": 9
+    },
+    "shared_router_files_changed": false
+  },
+  "clean_install": {
+    "control_version": "1.0.0rc1",
+    "control_module_file": "/mnt/data/control_v1_work/clean_venv/lib/python3.13/site-packages/control_atlas/__init__.py",
+    "installed_standalone_nodes": 1,
+    "installed_control_records": 249,
+    "casebook_status": "passed",
+    "context_status": "context_available",
+    "context_valid": true,
+    "versions": {
+      "atlas-forge-research": "1.0.0rc1",
+      "measurement-atlas": "1.0.0rc1",
+      "causal-atlas": "1.0.0",
+      "materials-atlas": "1.0.0",
+      "control-atlas-research": "1.0.0rc1"
+    }
+  },
+  "empirical_cases": {
+    "openmct_v2_dataset_landing_metadata_checked": true,
+    "raw_OpenMCT_logs_acquired": false,
+    "actual_OpenMCT_dynamic_fit_ran": false,
+    "strict_offline_parser_and_chronological_fit_tested_synthetic_only": true,
+    "github_student_RPM_files_descriptive_summary_files": 3,
+    "github_student_RPM_sample_count": 147,
+    "student_raw_CSV_redistributed": false,
+    "dynamic_model_identifiable_from_student_RPM_only": false,
+    "hardware_control_or_observation_ran_here": false
+  },
+  "scientific_gates": {
+    "content_v1_accepted": false,
+    "publisher_raw_data_reproduction": false,
+    "independent_engineer_source_review": false,
+    "real_hardware_or_plant_validation": false,
+    "verified_hard_sensor_actuator_bounds": false,
+    "openmct_closed_loop_identification_bias_resolved": false,
+    "native_Windows_run": false,
+    "live_Bitwork_to_Agent_workflow": false,
+    "heldout_AI_evaluation": false
+  },
+  "next_development": "Control authentic raw-data fit and review; Agent Atlas queued, not started",
+  "user_sequence": "build all 30 knowledge domains -> routing last -> integrated evaluation -> desktop transfer",
+  "github_push": false,
+  "desktop_installation": false,
+  "source_license_caution": "Third-party student RPM data ownership not confirmed; only derived descriptive statistics and attribution retained."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "distribution": "energy-atlas-research",
+  "version": "0.1.0",
+  "installed_records": 176,
+  "installed_local_relations": 144,
+  "nodes": 1,
+  "context_valid": true,
+  "casebook_passed": 25,
+  "installed_distributions": {
+    "atlas-forge-research": "1.0.0rc1",
+    "measurement-atlas": "1.0.0rc1",
+    "causal-atlas": "1.0.0",
+    "materials-atlas": "1.0.0",
+    "control-atlas-research": "1.0.0rc1",
+    "agent-atlas-research": "1.0.0",
+    "computation-atlas-research": "1.0.0",
+    "language-atlas-research": "1.0.0",
+    "energy-atlas-research": "0.1.0"
+  },
+  "original_source_checkout_imported": false,
+  "real_hardware_interaction": false
+}

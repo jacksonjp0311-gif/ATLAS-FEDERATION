@@ -1,0 +1,207 @@
+{
+  "schema": "atlas.language-scientific-reference-preflight/1",
+  "date": "2026-11-14",
+  "version": "0.1.0",
+  "status": "passed_source_tree_not_final_scientific_v1",
+  "federation": {
+    "nodes": 9,
+    "records": 1642,
+    "relations": 874,
+    "source_cards": 421
+  },
+  "language": {
+    "chapters": 38,
+    "investigations": 19,
+    "source_cards": 25,
+    "records": 167,
+    "full_relationships": 167,
+    "standalone_relationships": 162,
+    "cross_node_relations": 5
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 73,
+      "passed": 73,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_passed": 1457,
+  "skips": 0,
+  "contexts": 37,
+  "schema_validation": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1642,
+      "relation": 874,
+      "node": 9,
+      "context": 37
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "separate_numerical_oracle": {
+    "schema": "atlas.language-model-oracle/1",
+    "result": "passed",
+    "seed": 20261114,
+    "comparisons": 2640,
+    "by_algorithm": {
+      "independent_segmentation_enumeration": 350,
+      "independent_recursive_CYK_counts": 390,
+      "independent_bigram_probability": 450,
+      "independent_three_valued_quantifiers": 840,
+      "unicode_canonical_and_raw_byte_integrity": 360,
+      "conllu_independent_tree_shape": 250
+    },
+    "numpy_installed": true,
+    "data_origin": "original_author_generated_synthetic_fixtures",
+    "published_corpus_rows_loaded": 0,
+    "natural_language_grammar_validated": false,
+    "normative_unicode_conformance_tested": false,
+    "independent_human_linguistic_review": false,
+    "limitations": [
+      "Independent enumeration and reference arithmetic on selected finite fixtures, not a general theorem prover",
+      "No live speaker, audio, sign-language video, translation or authentic annotated corpus examined",
+      "Unicode normalization checks use runtime Unicode database, not independent Unicode 18.0 test files"
+    ]
+  },
+  "previous_eight_node_preservation": {
+    "schema": "atlas.language-v01-preservation/1",
+    "status": "passed",
+    "previous_release": "ATLAS_COLLECTION_Computation_v1.0.0.zip",
+    "previous_archive_sha256": "0b63c234c743f2f91134731ba81e4e99d5f38c64f032970a5f56c9403d58430a",
+    "historical_files_byte_identical": 2280,
+    "previous_nodes": 8,
+    "old_record_revisions_identical": 1475,
+    "old_relation_revisions_identical": 707,
+    "groups": {
+      "AGENT-ATLAS": 231,
+      "BASELINE_INPUT.json": 1,
+      "CAUSAL-ATLAS": 253,
+      "COMPUTATION-ATLAS": 140,
+      "CONTROL-ATLAS": 225,
+      "MATERIALS-ATLAS": 121,
+      "RELEASE_CHECKS.json": 1,
+      "RELEASE_CHECKS_Agent_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.2.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.3.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.4.0.json": 1,
+      "RELEASE_CHECKS_Agent_v1.0.0.json": 1,
+      "RELEASE_CHECKS_Computation_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Computation_v1.0.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.2.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.4.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.5.0.json": 1,
+      "RELEASE_CHECKS_Control_v1.0.0-rc.1.json": 1,
+      "RELEASE_CHECKS_v0.2.0.json": 1,
+      "RELEASE_CHECKS_v0.3.0.json": 1,
+      "RELEASE_CHECKS_v0.6.0.json": 1,
+      "RELEASE_CHECKS_v1.0.0.json": 1,
+      "baseline": 771,
+      "common": 72,
+      "docs": 12,
+      "history": 34,
+      "knowledge_preservation": 1,
+      "receipts": 378,
+      "tools": 3,
+      "wheels": 21
+    },
+    "missing_files": [],
+    "changed_files": [],
+    "mutable_collection_metadata": [
+      "AGENTS.md",
+      "BUILD_POLICY.json",
+      "CURRENT_CHECKPOINT.json",
+      "DOMAIN_QUEUE.json",
+      "FILE_MANIFEST.json",
+      "README.md",
+      "START_HERE.md",
+      "common/registry.json",
+      "common/registry.lock.json",
+      "knowledge_preservation/SOURCE_ACQUISITION_LEDGER.json",
+      "tools/check_collection.py"
+    ],
+    "new_common_runtime_implementation_modified": false,
+    "previous_eight_node_complete_archive_embedded_in_history": true,
+    "integrity_is_not_scientific_truth": true
+  },
+  "offline_survival_audit": {
+    "status": "passed_structural_only",
+    "total_source_cards": 421,
+    "authenticated_primary_source_files": 0
+  },
+  "standalone_clean_wheel_install": "passed",
+  "standalone_records": 167,
+  "standalone_relationships": 162,
+  "prior_original_archive_embedded": true,
+  "scientific_gates": {
+    "scoped_content_v1_ready": false,
+    "independent_linguist_review": false,
+    "real_speech_or_sign_recordings_acquired": false,
+    "real_UD_treebank_rows_loaded": false,
+    "normative_unicode_UAX29_conformance_validated": false,
+    "full_BCP47_iana_validation": false,
+    "live_multilingual_model_performance_evaluated": false,
+    "bitwork_router_changed": false,
+    "desktop_transfer": false
+  },
+  "archive_extraction_and_replay": "pending_until_zip_sealed_and_extracted"
+}

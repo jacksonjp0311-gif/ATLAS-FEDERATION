@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "stratum": "easy",
+      "treatment": 0,
+      "n": 80,
+      "successes": 64
+    },
+    {
+      "stratum": "easy",
+      "treatment": 1,
+      "n": 20,
+      "successes": 18
+    },
+    {
+      "stratum": "hard",
+      "treatment": 0,
+      "n": 20,
+      "successes": 4
+    },
+    {
+      "stratum": "hard",
+      "treatment": 1,
+      "n": 80,
+      "successes": 24
+    }
+  ],
+  "target_weights": {
+    "easy": "1/2",
+    "hard": "1/2"
+  }
+}

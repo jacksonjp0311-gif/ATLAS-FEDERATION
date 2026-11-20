@@ -1,0 +1,1020 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "matched paired agent evaluation discordance",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "6c80d7b9e46c4bad4f4c61bcb8de66c6846793743a6ff4260dcc78acf45a7f62",
+  "registry_revision": "800554551d2e9f039dd1ecad6819c01b5cf238d829df9329641d1538b6d094b8",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "2084c970b1b78f80347621cbfe4052c7c0a8d3d18fb5aad6bfb9d6ceed228575",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:paired-discordant-metric",
+      "revision": "1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9"
+    },
+    {
+      "record_id": "agent-atlas:paired-evaluation-bounds",
+      "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+    },
+    {
+      "record_id": "agent-atlas:incomplete-task-not-eval-failure",
+      "revision": "22933d0e034dac605defabfba0617c8e0c8a5d9d3bac32547cc3508a27335043"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:causal-effect-not-p-value",
+      "revision": "bd5da8ab704b06dba9c634b1e4e87f4b50cf31c62aff8c5c0d671a405d179f78"
+    },
+    {
+      "record_id": "agent-atlas:checklist-behavioral-coverage",
+      "revision": "b1ea7ba4215d40803b0a1839a228fe375a7907a0c75509bd6776abda8cd85734"
+    },
+    {
+      "record_id": "agent-atlas:heldout-precommitment",
+      "revision": "200b96d6c05215c6bc0e68c765c55a408310bebac73bf304c452584f8d2e9b64"
+    },
+    {
+      "record_id": "agent-atlas:incomplete-task-not-eval-failure",
+      "revision": "22933d0e034dac605defabfba0617c8e0c8a5d9d3bac32547cc3508a27335043"
+    },
+    {
+      "record_id": "agent-atlas:paired-discordant-metric",
+      "revision": "1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9"
+    },
+    {
+      "record_id": "agent-atlas:paired-evaluation-bounds",
+      "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+    },
+    {
+      "record_id": "agent-atlas:source:AGENTBENCH-2024",
+      "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b"
+    },
+    {
+      "record_id": "agent-atlas:source:CHECKLIST-ACL2020",
+      "revision": "61a6a5e6f5a80bf85a37cdddef0ae727a10b9dae1ce8117d29bf8ffc8f3d80ef"
+    },
+    {
+      "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+      "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+    },
+    {
+      "record_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026",
+      "revision": "8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5"
+    },
+    {
+      "record_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026",
+      "revision": "54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-34",
+            "concept",
+            "causal-effect-not-p-value"
+          ],
+          "text": "A low p-value from caller-supplied paired outcomes neither proves clean task sampling nor controls model contamination, dependence, human evaluator errors or adaptive selection.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package",
+              "source_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "causal-effect-not-p-value",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:causal-effect-not-p-value",
+        "revision": "bd5da8ab704b06dba9c634b1e4e87f4b50cf31c62aff8c5c0d671a405d179f78",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          },
+          {
+            "record_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026",
+            "revision": "54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411"
+          }
+        ],
+        "status": "active",
+        "title": "Statistical significance does not authenticate a causal upgrade",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-37",
+            "concept",
+            "checklist-behavioral-coverage"
+          ],
+          "text": "Behavioral test matrices can probe tool latency, loss of memory, contradictory receipts and evaluator ambiguity even when end-task success looks favorable; authored fixtures are not empirical performance results.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited",
+              "source_id": "agent-atlas:source:CHECKLIST-ACL2020"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Published abstract on interactive agent environment evaluation; benchmarks evolve",
+              "source_id": "agent-atlas:source:AGENTBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "checklist-behavioral-coverage",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-37",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:checklist-behavioral-coverage",
+        "revision": "b1ea7ba4215d40803b0a1839a228fe375a7907a0c75509bd6776abda8cd85734",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:CHECKLIST-ACL2020",
+            "revision": "61a6a5e6f5a80bf85a37cdddef0ae727a10b9dae1ce8117d29bf8ffc8f3d80ef"
+          },
+          {
+            "record_id": "agent-atlas:source:AGENTBENCH-2024",
+            "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b"
+          }
+        ],
+        "status": "active",
+        "title": "Capability-specific testing complements aggregate success rates",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-34",
+            "concept",
+            "heldout-precommitment"
+          ],
+          "text": "Record the evaluation task set, training exposures, candidate revision and evaluator version before scoring. Mixing development rows or adaptive repeats invalidates a simple held-out label.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package",
+              "source_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "heldout-precommitment",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:heldout-precommitment",
+        "revision": "200b96d6c05215c6bc0e68c765c55a408310bebac73bf304c452584f8d2e9b64",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          },
+          {
+            "record_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026",
+            "revision": "54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411"
+          }
+        ],
+        "status": "active",
+        "title": "A held-out claim requires frozen candidate and evaluator versions",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-34",
+            "concept",
+            "incomplete-task-not-eval-failure"
+          ],
+          "text": "Unscored, missing, timed-out or unavailable outcomes need explicit censoring reason rather than automatic negative labels in paired or repeated-task evaluation.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project",
+              "source_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "incomplete-task-not-eval-failure",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:incomplete-task-not-eval-failure",
+        "revision": "22933d0e034dac605defabfba0617c8e0c8a5d9d3bac32547cc3508a27335043",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026",
+            "revision": "8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5"
+          },
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          }
+        ],
+        "status": "active",
+        "title": "A missing outcome is not automatically an agent failure",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "P(X>=C|n=B+C,p=.5)=Σ[k=C..n] binom(n,k)/2^n",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-34",
+            "equation",
+            "paired-discordant-metric"
+          ],
+          "text": "For candidate-only wins C and baseline-only wins B, conditional one-sided binomial tail under symmetric discordance is P(X>=C) with X~Binomial(B+C,0.5).",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project",
+              "source_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "paired-discordant-metric",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:paired-discordant-metric",
+        "revision": "1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          },
+          {
+            "record_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026",
+            "revision": "8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5"
+          }
+        ],
+        "status": "active",
+        "title": "Exact discordance tail is conditional on independent paired outcomes",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-34",
+            "method",
+            "paired-evaluation-bounds"
+          ],
+          "text": "Reject duplicate tasks/mixed evaluator revisions, report missing labels and train/test overlaps, calculate exact discordant count and conditionally computed p-value; always declare actual improvement unverified.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package",
+              "source_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "paired-evaluation-bounds",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:paired-evaluation-bounds",
+        "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          },
+          {
+            "record_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026",
+            "revision": "54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411"
+          }
+        ],
+        "status": "active",
+        "title": "Paired score from caller-reported results cannot establish improvement",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Liu et al. (ICLR 2024). Inspected scope: Published abstract on interactive agent environment evaluation; benchmarks evolve. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:AGENTBENCH-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Published abstract on interactive agent environment evaluation; benchmarks evolve",
+          "publication": "ICLR 2024",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "AgentBench: Evaluating LLMs as Agents",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html"
+        },
+        "record_id": "agent-atlas:source:AGENTBENCH-2024",
+        "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "AgentBench: Evaluating LLMs as Agents",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Selected abstract or publisher portion only, not independent full-paper review",
+            "This source does not validate the original algorithm implementations in this Atlas"
+          ],
+          "tags": [
+            "source",
+            "source-checklist-acl2020",
+            "agent-v0.4"
+          ],
+          "text": "Bibliographic pointer to Beyond Accuracy: Behavioral Testing of NLP Models with CheckList. Inspected scope: Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent replication of published research; full source text not mirrored"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_or_public_metadata_checked",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:CHECKLIST-ACL2020",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "authors": "Ribeiro, Wu, Guestrin and Singh",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited",
+          "publication": "ACL 2020",
+          "rights_status": "link_only_abstract_original_summary",
+          "source_bytes_archived": false,
+          "url": "https://aclanthology.org/2020.acl-main.442/"
+        },
+        "record_id": "agent-atlas:source:CHECKLIST-ACL2020",
+        "revision": "61a6a5e6f5a80bf85a37cdddef0ae727a10b9dae1ce8117d29bf8ffc8f3d80ef",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Selected abstract or publisher portion only, not independent full-paper review",
+            "This source does not validate the original algorithm implementations in this Atlas"
+          ],
+          "tags": [
+            "source",
+            "source-dwork-holdout2015",
+            "agent-v0.4"
+          ],
+          "text": "Bibliographic pointer to The Reusable Holdout: Preserving Validity in Adaptive Data Analysis. Inspected scope: PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent replication of published research; full source text not mirrored"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_or_public_metadata_checked",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:DWORK-HOLDOUT2015",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "authors": "Dwork et al.",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+          "publication": "Science 2015",
+          "rights_status": "link_only_abstract_original_summary",
+          "source_bytes_archived": false,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26250683/"
+        },
+        "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+        "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "The Reusable Holdout: Preserving Validity in Adaptive Data Analysis",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No full source research audit, private trace access or independent peer review"
+          ],
+          "tags": [
+            "source",
+            "agent-0.2.0"
+          ],
+          "text": "Source navigation for Evaluate agent workflows with trace grading and datasets. Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Original dataset / live vendor trace bytes not downloaded or independently audited"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_vendor_doc_or_dataset_card_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:OPENAI-AGENT-EVAL-2026",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project",
+          "publication": "vendor live documentation viewed 2026-11-13",
+          "rights_status": "link_only_not_mirrored",
+          "source_bytes_archived": false,
+          "url": "https://developers.openai.com/api/docs/guides/agent-evals"
+        },
+        "record_id": "agent-atlas:source:OPENAI-AGENT-EVAL-2026",
+        "revision": "8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Evaluate agent workflows with trace grading and datasets",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No full source research audit, private trace access or independent peer review"
+          ],
+          "tags": [
+            "source",
+            "agent-0.2.0"
+          ],
+          "text": "Source navigation for Evaluation contamination and SWE-bench Verified limitations. Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Original dataset / live vendor trace bytes not downloaded or independently audited"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_vendor_doc_or_dataset_card_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:SWEBENCH-CONTAMINATION-2026",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package",
+          "publication": "OpenAI public research article accessed 2026-11-13",
+          "rights_status": "link_only_not_mirrored",
+          "source_bytes_archived": false,
+          "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+        },
+        "record_id": "agent-atlas:source:SWEBENCH-CONTAMINATION-2026",
+        "revision": "54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Evaluation contamination and SWE-bench Verified limitations",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:causal-effect-not-p-value",
+          "revision": "bd5da8ab704b06dba9c634b1e4e87f4b50cf31c62aff8c5c0d671a405d179f78"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:causal-effect-not-p-value:qualifies:paired-evaluation-bounds",
+        "revision": "3217a85c724209daecaca886e6764036294da8fc0300d856cbaf965c032c2503",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:paired-evaluation-bounds",
+          "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:checklist-behavioral-coverage",
+          "revision": "b1ea7ba4215d40803b0a1839a228fe375a7907a0c75509bd6776abda8cd85734"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:checklist-behavioral-coverage:qualifies:paired-evaluation-bounds",
+        "revision": "ea552ae81cac8ed724423facb7a0a3f7141c4df8e279dfe3647b8ac15a086602",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:paired-evaluation-bounds",
+          "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:paired-evaluation-bounds",
+          "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:paired-evaluation-bounds:qualifies:heldout-precommitment",
+        "revision": "a0bf77af4976257fa12f3662f3dcac5bcd69e4fce9092c5ecda507faae3e6aa2",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:heldout-precommitment",
+          "revision": "200b96d6c05215c6bc0e68c765c55a408310bebac73bf304c452584f8d2e9b64"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:paired-evaluation-bounds",
+          "revision": "28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:paired-evaluation-bounds:qualifies:paired-discordant-metric",
+        "revision": "3f8353a55fcde93f59094ab43eeb77867e5bea6cabc99a224e8f8f33001f6177",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:paired-discordant-metric",
+          "revision": "1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-34\",\"concept\",\"causal-effect-not-p-value\"],\"text\":\"A low p-value from caller-supplied paired outcomes neither proves clean task sampling nor controls model contamination, dependence, human evaluator errors or adaptive selection.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package\",\"source_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"causal-effect-not-p-value\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:causal-effect-not-p-value\",\"revision\":\"bd5da8ab704b06dba9c634b1e4e87f4b50cf31c62aff8c5c0d671a405d179f78\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"},{\"record_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\",\"revision\":\"54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411\"}],\"status\":\"active\",\"title\":\"Statistical significance does not authenticate a causal upgrade\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-37\",\"concept\",\"checklist-behavioral-coverage\"],\"text\":\"Behavioral test matrices can probe tool latency, loss of memory, contradictory receipts and evaluator ambiguity even when end-task success looks favorable; authored fixtures are not empirical performance results.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited\",\"source_id\":\"agent-atlas:source:CHECKLIST-ACL2020\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Published abstract on interactive agent environment evaluation; benchmarks evolve\",\"source_id\":\"agent-atlas:source:AGENTBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"checklist-behavioral-coverage\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-37\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:checklist-behavioral-coverage\",\"revision\":\"b1ea7ba4215d40803b0a1839a228fe375a7907a0c75509bd6776abda8cd85734\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:CHECKLIST-ACL2020\",\"revision\":\"61a6a5e6f5a80bf85a37cdddef0ae727a10b9dae1ce8117d29bf8ffc8f3d80ef\"},{\"record_id\":\"agent-atlas:source:AGENTBENCH-2024\",\"revision\":\"2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b\"}],\"status\":\"active\",\"title\":\"Capability-specific testing complements aggregate success rates\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-34\",\"concept\",\"heldout-precommitment\"],\"text\":\"Record the evaluation task set, training exposures, candidate revision and evaluator version before scoring. Mixing development rows or adaptive repeats invalidates a simple held-out label.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package\",\"source_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"heldout-precommitment\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:heldout-precommitment\",\"revision\":\"200b96d6c05215c6bc0e68c765c55a408310bebac73bf304c452584f8d2e9b64\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"},{\"record_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\",\"revision\":\"54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411\"}],\"status\":\"active\",\"title\":\"A held-out claim requires frozen candidate and evaluator versions\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-34\",\"concept\",\"incomplete-task-not-eval-failure\"],\"text\":\"Unscored, missing, timed-out or unavailable outcomes need explicit censoring reason rather than automatic negative labels in paired or repeated-task evaluation.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project\",\"source_id\":\"agent-atlas:source:OPENAI-AGENT-EVAL-2026\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"incomplete-task-not-eval-failure\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:incomplete-task-not-eval-failure\",\"revision\":\"22933d0e034dac605defabfba0617c8e0c8a5d9d3bac32547cc3508a27335043\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:OPENAI-AGENT-EVAL-2026\",\"revision\":\"8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5\"},{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"}],\"status\":\"active\",\"title\":\"A missing outcome is not automatically an agent failure\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"P(X>=C|n=B+C,p=.5)=Σ[k=C..n] binom(n,k)/2^n\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-34\",\"equation\",\"paired-discordant-metric\"],\"text\":\"For candidate-only wins C and baseline-only wins B, conditional one-sided binomial tail under symmetric discordance is P(X>=C) with X~Binomial(B+C,0.5).\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project\",\"source_id\":\"agent-atlas:source:OPENAI-AGENT-EVAL-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"paired-discordant-metric\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:paired-discordant-metric\",\"revision\":\"1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"},{\"record_id\":\"agent-atlas:source:OPENAI-AGENT-EVAL-2026\",\"revision\":\"8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5\"}],\"status\":\"active\",\"title\":\"Exact discordance tail is conditional on independent paired outcomes\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-34\",\"method\",\"paired-evaluation-bounds\"],\"text\":\"Reject duplicate tasks/mixed evaluator revisions, report missing labels and train/test overlaps, calculate exact discordant count and conditionally computed p-value; always declare actual improvement unverified.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package\",\"source_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"paired-evaluation-bounds\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:paired-evaluation-bounds\",\"revision\":\"28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"},{\"record_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\",\"revision\":\"54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411\"}],\"status\":\"active\",\"title\":\"Paired score from caller-reported results cannot establish improvement\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Liu et al. (ICLR 2024). Inspected scope: Published abstract on interactive agent environment evaluation; benchmarks evolve. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:AGENTBENCH-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Published abstract on interactive agent environment evaluation; benchmarks evolve\",\"publication\":\"ICLR 2024\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"AgentBench: Evaluating LLMs as Agents\",\"url\":\"https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html\"},\"record_id\":\"agent-atlas:source:AGENTBENCH-2024\",\"revision\":\"2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"AgentBench: Evaluating LLMs as Agents\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Selected abstract or publisher portion only, not independent full-paper review\",\"This source does not validate the original algorithm implementations in this Atlas\"],\"tags\":[\"source\",\"source-checklist-acl2020\",\"agent-v0.4\"],\"text\":\"Bibliographic pointer to Beyond Accuracy: Behavioral Testing of NLP Models with CheckList. Inspected scope: Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"No independent replication of published research; full source text not mirrored\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_or_public_metadata_checked\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:CHECKLIST-ACL2020\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"authors\":\"Ribeiro, Wu, Guestrin and Singh\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited\",\"publication\":\"ACL 2020\",\"rights_status\":\"link_only_abstract_original_summary\",\"source_bytes_archived\":false,\"url\":\"https://aclanthology.org/2020.acl-main.442/\"},\"record_id\":\"agent-atlas:source:CHECKLIST-ACL2020\",\"revision\":\"61a6a5e6f5a80bf85a37cdddef0ae727a10b9dae1ce8117d29bf8ffc8f3d80ef\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Beyond Accuracy: Behavioral Testing of NLP Models with CheckList\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Selected abstract or publisher portion only, not independent full-paper review\",\"This source does not validate the original algorithm implementations in this Atlas\"],\"tags\":[\"source\",\"source-dwork-holdout2015\",\"agent-v0.4\"],\"text\":\"Bibliographic pointer to The Reusable Holdout: Preserving Validity in Adaptive Data Analysis. Inspected scope: PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"No independent replication of published research; full source text not mirrored\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_or_public_metadata_checked\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:DWORK-HOLDOUT2015\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"authors\":\"Dwork et al.\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"publication\":\"Science 2015\",\"rights_status\":\"link_only_abstract_original_summary\",\"source_bytes_archived\":false,\"url\":\"https://pubmed.ncbi.nlm.nih.gov/26250683/\"},\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"The Reusable Holdout: Preserving Validity in Adaptive Data Analysis\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No full source research audit, private trace access or independent peer review\"],\"tags\":[\"source\",\"agent-0.2.0\"],\"text\":\"Source navigation for Evaluate agent workflows with trace grading and datasets. Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"Original dataset / live vendor trace bytes not downloaded or independently audited\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_vendor_doc_or_dataset_card_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:OPENAI-AGENT-EVAL-2026\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Trace graders, datasets and eval runs as separately scoped evaluation surfaces, not a successful run in this project\",\"publication\":\"vendor live documentation viewed 2026-11-13\",\"rights_status\":\"link_only_not_mirrored\",\"source_bytes_archived\":false,\"url\":\"https://developers.openai.com/api/docs/guides/agent-evals\"},\"record_id\":\"agent-atlas:source:OPENAI-AGENT-EVAL-2026\",\"revision\":\"8a7b5e01e2471ee6240efa484bac8e5f72f05648062fdf4d44dd29c099da43f5\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Evaluate agent workflows with trace grading and datasets\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No full source research audit, private trace access or independent peer review\"],\"tags\":[\"source\",\"agent-0.2.0\"],\"text\":\"Source navigation for Evaluation contamination and SWE-bench Verified limitations. Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"Original dataset / live vendor trace bytes not downloaded or independently audited\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_vendor_doc_or_dataset_card_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:SWEBENCH-CONTAMINATION-2026\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Training exposure and benchmark leakage can inflate results; no data reanalysis or independently reviewed results in this package\",\"publication\":\"OpenAI public research article accessed 2026-11-13\",\"rights_status\":\"link_only_not_mirrored\",\"source_bytes_archived\":false,\"url\":\"https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/\"},\"record_id\":\"agent-atlas:source:SWEBENCH-CONTAMINATION-2026\",\"revision\":\"54b7d8dc4907449d70c7c827e09fa4149f5b7428ec539be2eca268891d706411\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Evaluation contamination and SWE-bench Verified limitations\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:causal-effect-not-p-value\",\"revision\":\"bd5da8ab704b06dba9c634b1e4e87f4b50cf31c62aff8c5c0d671a405d179f78\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:causal-effect-not-p-value:qualifies:paired-evaluation-bounds\",\"revision\":\"3217a85c724209daecaca886e6764036294da8fc0300d856cbaf965c032c2503\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:paired-evaluation-bounds\",\"revision\":\"28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:checklist-behavioral-coverage\",\"revision\":\"b1ea7ba4215d40803b0a1839a228fe375a7907a0c75509bd6776abda8cd85734\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:checklist-behavioral-coverage:qualifies:paired-evaluation-bounds\",\"revision\":\"ea552ae81cac8ed724423facb7a0a3f7141c4df8e279dfe3647b8ac15a086602\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:paired-evaluation-bounds\",\"revision\":\"28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:paired-evaluation-bounds\",\"revision\":\"28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:paired-evaluation-bounds:qualifies:heldout-precommitment\",\"revision\":\"a0bf77af4976257fa12f3662f3dcac5bcd69e4fce9092c5ecda507faae3e6aa2\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:heldout-precommitment\",\"revision\":\"200b96d6c05215c6bc0e68c765c55a408310bebac73bf304c452584f8d2e9b64\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:paired-evaluation-bounds\",\"revision\":\"28b8e757525737bb2b900e66418ade0fee68748e9225aae0b8d7be2fb185b211\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:paired-evaluation-bounds:qualifies:paired-discordant-metric\",\"revision\":\"3f8353a55fcde93f59094ab43eeb77867e5bea6cabc99a224e8f8f33001f6177\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:paired-discordant-metric\",\"revision\":\"1754c90a3bf26f6eb9a8b48cf8d2cf4888d6df7ed9f98795df798d60113974e9\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 31771,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:paired-sign-exact",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:paired-discordant-outcomes",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:matched-agent-eval",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:cost-quality",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:repeatability-not-proof",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "9887c0c85fba7df385c6009ee8eb67d7a15f7bc24d1002d4ca29d3d09c2fec89"
+}

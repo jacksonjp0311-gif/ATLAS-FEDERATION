@@ -1,0 +1,1086 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "survival archive source links original bytes",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "64bed8e6ede50435af9b1232a425193c2e1d924fa04ded9dc4821ff352bbe351",
+  "registry_revision": "800554551d2e9f039dd1ecad6819c01b5cf238d829df9329641d1538b6d094b8",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "2084c970b1b78f80347621cbfe4052c7c0a8d3d18fb5aad6bfb9d6ceed228575",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:source-access-ledger",
+      "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832"
+    },
+    {
+      "record_id": "agent-atlas:survival-audit-tool",
+      "revision": "3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e"
+    },
+    {
+      "record_id": "agent-atlas:memory-contradiction",
+      "revision": "7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:agent-scoped-v1",
+      "revision": "69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45"
+    },
+    {
+      "record_id": "agent-atlas:all-domains-then-router",
+      "revision": "7e1cbb7270a382fabd3a4403650b39ada8adefd1bd7b512eb66616eabf23ffe7"
+    },
+    {
+      "record_id": "agent-atlas:memory-contradiction",
+      "revision": "7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42"
+    },
+    {
+      "record_id": "agent-atlas:memory-evidence-tiers",
+      "revision": "ef58c1382ceaf5be8cc047948b74ca0d9b73458e0b47ee246ed4a401c92a17bc"
+    },
+    {
+      "record_id": "agent-atlas:offline-human-recovery",
+      "revision": "bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231"
+    },
+    {
+      "record_id": "agent-atlas:source-access-ledger",
+      "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832"
+    },
+    {
+      "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+      "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103"
+    },
+    {
+      "record_id": "agent-atlas:source:MAST-2025",
+      "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+    },
+    {
+      "record_id": "agent-atlas:source:OTEL-PRIVACY-2026",
+      "revision": "245c84281050a9900a44c1da3e8e6df8b91e6f57dc2ded8dcd88b42032a0874f"
+    },
+    {
+      "record_id": "agent-atlas:source:REACT-2023",
+      "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+    },
+    {
+      "record_id": "agent-atlas:source:REFLEXION-2023",
+      "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+    },
+    {
+      "record_id": "agent-atlas:survival-audit-tool",
+      "revision": "3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "All chapter and software tests pass on the release snapshot"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No real live agent task improvement, raw MAST trace replication, signed host receipts or independent science review"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-50",
+            "concept"
+          ],
+          "text": "The bounded reference covers planning, observation, tools, coordination, learning evidence, recovery and preservation, with explicit empirical and deployment gaps.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+              "source_id": "agent-atlas:source:REACT-2023"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+              "source_id": "agent-atlas:source:MAST-2025"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "agent-scoped-v1",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-50",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": null
+        },
+        "record_id": "agent-atlas:agent-scoped-v1",
+        "revision": "69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REACT-2023",
+            "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+          },
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          }
+        ],
+        "status": "active",
+        "title": "Agent Atlas v1 is content-ready, not a live intelligent agent",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Recorded roadmap and immutable prior node versions"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "This is an owner workflow, not experimental proof of routing performance"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-50",
+            "method"
+          ],
+          "text": "The owner requires complete scientific references first, then the router and integrated evaluation, then moving the collection to the local computer.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+              "source_id": "agent-atlas:source:LOC-FORMATS-2025-26"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "all-domains-then-router",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-50",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": "foundations_v1.py"
+        },
+        "record_id": "agent-atlas:all-domains-then-router",
+        "revision": "7e1cbb7270a382fabd3a4403650b39ada8adefd1bd7b512eb66616eabf23ffe7",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+            "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103"
+          }
+        ],
+        "status": "active",
+        "title": "All thirty content domains precede Bitwork routing and desktop transfer",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Typed contradiction and source scope"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Contradiction may be different conditions rather than error"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-44",
+            "concept"
+          ],
+          "text": "A new conflicting record should not erase the original; store applicability, source and revision until a differentiating experiment resolves it.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+              "source_id": "agent-atlas:source:REFLEXION-2023"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "memory-contradiction",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-44",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": null
+        },
+        "record_id": "agent-atlas:memory-contradiction",
+        "revision": "7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REFLEXION-2023",
+            "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+          }
+        ],
+        "status": "active",
+        "title": "Preserve contradictory evidence with scope",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Source and revision lineage preserved"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No observed memory-driven model improvement"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-44",
+            "method"
+          ],
+          "text": "Ephemeral logs, generalized knowledge and reusable procedures require different validation and revision/expiry conditions.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+              "source_id": "agent-atlas:source:REFLEXION-2023"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive",
+              "source_id": "agent-atlas:source:OTEL-PRIVACY-2026"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "memory-evidence-tiers",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-44",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": "foundations_v1.py"
+        },
+        "record_id": "agent-atlas:memory-evidence-tiers",
+        "revision": "ef58c1382ceaf5be8cc047948b74ca0d9b73458e0b47ee246ed4a401c92a17bc",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REFLEXION-2023",
+            "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+          },
+          {
+            "record_id": "agent-atlas:source:OTEL-PRIVACY-2026",
+            "revision": "245c84281050a9900a44c1da3e8e6df8b91e6f57dc2ded8dcd88b42032a0874f"
+          }
+        ],
+        "status": "active",
+        "title": "Episode, generalization and procedure have distinct evidence",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Public readable text and documented formats"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Original primary publisher content often not locally archived"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-49",
+            "method"
+          ],
+          "text": "Preserve definitions, equations, tests and original explanations so a reader can reconstruct core algorithms with text and Python only.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+              "source_id": "agent-atlas:source:LOC-FORMATS-2025-26"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "offline-human-recovery",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-49",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": "foundations_v1.py"
+        },
+        "record_id": "agent-atlas:offline-human-recovery",
+        "revision": "bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+            "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103"
+          }
+        ],
+        "status": "active",
+        "title": "Teach agent reasoning without proprietary AI services",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Honest source access, rights and hash fields"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Collection not offline-primary-source complete"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-49",
+            "concept"
+          ],
+          "text": "A source card has evidentiary value but does not make the referenced paper recoverable after network failure; original licensed bytes and checksums require a separate acquisition process.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+              "source_id": "agent-atlas:source:LOC-FORMATS-2025-26"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source-access-ledger",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-49",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": null
+        },
+        "record_id": "agent-atlas:source-access-ledger",
+        "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+            "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103"
+          }
+        ],
+        "status": "active",
+        "title": "A source link is not an offline original archive",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and bibliographic navigation, not live model or experimental result"
+          ],
+          "assumptions": [
+            "Claims may only rely on the stated inspected source portion"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "No independent full-text or expert review"
+          ],
+          "tags": [
+            "source",
+            "edition-1.0.0"
+          ],
+          "text": "Bibliographic navigation: Library of Congress. 2025–2026 preservation guidance. Inspected scope: Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+          "uncertainty": [
+            "Missing independent source audit"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Original publisher bytes are not retained",
+            "No independent scientific reviewer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:LOC-FORMATS-2025-26",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "authors": "Library of Congress",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "inspected_scope": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+          "publication": "2025–2026 preservation guidance",
+          "rights_status": "link_only_original_summary",
+          "source_bytes_archived": false,
+          "url": "https://www.loc.gov/preservation/resources/rfs/data.html"
+        },
+        "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+        "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103",
+        "rights": {
+          "note": "Original paraphrase and source locator only; copyright remains external",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Library of Congress Recommended Formats Statement 2025–2026, datasets",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MAST-2025",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+          "publication": "NeurIPS 2025",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Why Do Multi-Agent LLM Systems Fail?",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html"
+        },
+        "record_id": "agent-atlas:source:MAST-2025",
+        "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Why Do Multi-Agent LLM Systems Fail?",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Historical technical navigation; not an independent validation of real agent behavior"
+          ],
+          "assumptions": [
+            "Use only the identified published documentation portion"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Documentation is evolving and may change after this check",
+            "No original publisher full text mirrored or independent source audit"
+          ],
+          "tags": [
+            "source",
+            "agent-0.3.0"
+          ],
+          "text": "OpenTelemetry GenAI span content and privacy boundaries — Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive",
+          "uncertainty": [
+            "Applicability and implementation uncertainty remain open"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent source-review panel, real provider testing or live model evaluation"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:OTEL-PRIVACY-2026",
+        "provenance": {
+          "author": "OpenTelemetry contributors",
+          "checked_at": "2026-11-13",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive",
+          "source_bytes_archived": false,
+          "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md"
+        },
+        "record_id": "agent-atlas:source:OTEL-PRIVACY-2026",
+        "revision": "245c84281050a9900a44c1da3e8e6df8b91e6f57dc2ded8dcd88b42032a0874f",
+        "rights": {
+          "note": "Original brief bibliography and paraphrase only; external rights preserved",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "OpenTelemetry GenAI span content and privacy boundaries",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Yao et al. (ICLR 2023). Inspected scope: Published abstract and stated interleaved action/observation motivation; no independent task replay. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:REACT-2023",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+          "publication": "ICLR 2023",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "url": "https://arxiv.org/abs/2210.03629"
+        },
+        "record_id": "agent-atlas:source:REACT-2023",
+        "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Shinn et al. (NeurIPS 2023). Inspected scope: Publisher abstract on reflection buffer and episodic feedback; not model-weight training. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:REFLEXION-2023",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+          "publication": "NeurIPS 2023",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html"
+        },
+        "record_id": "agent-atlas:source:REFLEXION-2023",
+        "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded offline agent-science reference, not a deployed autonomous system"
+          ],
+          "assumptions": [
+            "Available filesystem, UTF-8 JSON/JSONL"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "An intact hash does not establish scientific truth or comprehensive world knowledge"
+          ],
+          "tags": [
+            "agent-1.0.0",
+            "chapter-49",
+            "method"
+          ],
+          "text": "Dependency-free audit checks node manifests, record revisions, source and relation closure and quantifies missing authenticated original source files.",
+          "uncertainty": [
+            "No independent task outcome, model generalization or sampling validation from this calculation alone"
+          ],
+          "units": [
+            "Units only where explicitly stated in the model and source"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer",
+            "No real live model or external tool execution"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Original bounded explanation and linked public source portion only",
+              "locator": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+              "source_id": "agent-atlas:source:LOC-FORMATS-2025-26"
+            }
+          ],
+          "origin": "original_derivation_and_source_context",
+          "review_status": "publisher_abstract_or_page_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "survival-audit-tool",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-49",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_model": "foundations_v1.py"
+        },
+        "record_id": "agent-atlas:survival-audit-tool",
+        "revision": "3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e",
+        "rights": {
+          "note": "Original technical explanation/derivation and bibliography, no full third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+            "revision": "35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103"
+          }
+        ],
+        "status": "active",
+        "title": "Offline byte and source-closure audit",
+        "type": "method"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:agent-scoped-v1",
+          "revision": "69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:agent-scoped-v1:qualifies:survival-audit-tool",
+        "revision": "ce23f34f9d2cf5e4bfa80ad9961f8a24d16de303d90f8260ceffa99d43093fb6",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:survival-audit-tool",
+          "revision": "3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:all-domains-then-router",
+          "revision": "7e1cbb7270a382fabd3a4403650b39ada8adefd1bd7b512eb66616eabf23ffe7"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:all-domains-then-router:qualifies:agent-scoped-v1",
+        "revision": "2d8dafd7a19a7af03e4b372b6b6634e9a62bee5e1f9a82417ae8226fdd772481",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:agent-scoped-v1",
+          "revision": "69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:memory-contradiction",
+          "revision": "7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:memory-contradiction:qualifies:memory-evidence-tiers",
+        "revision": "172600555a4e7c2ea192588b0ae385a3980247342e0165b3d9fd3eb49138d35d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:memory-evidence-tiers",
+          "revision": "ef58c1382ceaf5be8cc047948b74ca0d9b73458e0b47ee246ed4a401c92a17bc"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:offline-human-recovery",
+          "revision": "bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:offline-human-recovery:qualifies:source-access-ledger",
+        "revision": "35081884208fcf666a687065c8aa309997a2198be37f0bd4eb1cacfa49636bc0",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:source-access-ledger",
+          "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:source-access-ledger",
+          "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:source-access-ledger:qualifies:offline-human-recovery",
+        "revision": "040fbd660fe42987c50c85fa63e0cb1c05b4571c9c7ebf82d8b41e32933ac3df",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:offline-human-recovery",
+          "revision": "bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:survival-audit-tool",
+          "revision": "3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "authored_knowledge_dependency",
+          "scope": "Model or epistemic qualification, not an empirical discovered causal effect"
+        },
+        "relation_id": "agent-atlas:survival-audit-tool:qualifies:source-access-ledger",
+        "revision": "d0570d7a2948956ef9c9d8b5294492457bb5826e64a166243e07bfe2ec964e3d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:source-access-ledger",
+          "revision": "b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"All chapter and software tests pass on the release snapshot\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No real live agent task improvement, raw MAST trace replication, signed host receipts or independent science review\"],\"tags\":[\"agent-1.0.0\",\"chapter-50\",\"concept\"],\"text\":\"The bounded reference covers planning, observation, tools, coordination, learning evidence, recovery and preservation, with explicit empirical and deployment gaps.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"source_id\":\"agent-atlas:source:REACT-2023\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"source_id\":\"agent-atlas:source:MAST-2025\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"agent-scoped-v1\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-50\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":null},\"record_id\":\"agent-atlas:agent-scoped-v1\",\"revision\":\"69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\"},{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"}],\"status\":\"active\",\"title\":\"Agent Atlas v1 is content-ready, not a live intelligent agent\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Recorded roadmap and immutable prior node versions\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"This is an owner workflow, not experimental proof of routing performance\"],\"tags\":[\"agent-1.0.0\",\"chapter-50\",\"method\"],\"text\":\"The owner requires complete scientific references first, then the router and integrated evaluation, then moving the collection to the local computer.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"source_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"all-domains-then-router\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-50\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":\"foundations_v1.py\"},\"record_id\":\"agent-atlas:all-domains-then-router\",\"revision\":\"7e1cbb7270a382fabd3a4403650b39ada8adefd1bd7b512eb66616eabf23ffe7\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\",\"revision\":\"35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103\"}],\"status\":\"active\",\"title\":\"All thirty content domains precede Bitwork routing and desktop transfer\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Typed contradiction and source scope\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Contradiction may be different conditions rather than error\"],\"tags\":[\"agent-1.0.0\",\"chapter-44\",\"concept\"],\"text\":\"A new conflicting record should not erase the original; store applicability, source and revision until a differentiating experiment resolves it.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"source_id\":\"agent-atlas:source:REFLEXION-2023\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"memory-contradiction\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-44\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":null},\"record_id\":\"agent-atlas:memory-contradiction\",\"revision\":\"7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\"}],\"status\":\"active\",\"title\":\"Preserve contradictory evidence with scope\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Source and revision lineage preserved\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No observed memory-driven model improvement\"],\"tags\":[\"agent-1.0.0\",\"chapter-44\",\"method\"],\"text\":\"Ephemeral logs, generalized knowledge and reusable procedures require different validation and revision/expiry conditions.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"source_id\":\"agent-atlas:source:REFLEXION-2023\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive\",\"source_id\":\"agent-atlas:source:OTEL-PRIVACY-2026\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"memory-evidence-tiers\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-44\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":\"foundations_v1.py\"},\"record_id\":\"agent-atlas:memory-evidence-tiers\",\"revision\":\"ef58c1382ceaf5be8cc047948b74ca0d9b73458e0b47ee246ed4a401c92a17bc\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\"},{\"record_id\":\"agent-atlas:source:OTEL-PRIVACY-2026\",\"revision\":\"245c84281050a9900a44c1da3e8e6df8b91e6f57dc2ded8dcd88b42032a0874f\"}],\"status\":\"active\",\"title\":\"Episode, generalization and procedure have distinct evidence\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Public readable text and documented formats\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Original primary publisher content often not locally archived\"],\"tags\":[\"agent-1.0.0\",\"chapter-49\",\"method\"],\"text\":\"Preserve definitions, equations, tests and original explanations so a reader can reconstruct core algorithms with text and Python only.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"source_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"offline-human-recovery\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-49\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":\"foundations_v1.py\"},\"record_id\":\"agent-atlas:offline-human-recovery\",\"revision\":\"bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\",\"revision\":\"35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103\"}],\"status\":\"active\",\"title\":\"Teach agent reasoning without proprietary AI services\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Honest source access, rights and hash fields\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Collection not offline-primary-source complete\"],\"tags\":[\"agent-1.0.0\",\"chapter-49\",\"concept\"],\"text\":\"A source card has evidentiary value but does not make the referenced paper recoverable after network failure; original licensed bytes and checksums require a separate acquisition process.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"source_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source-access-ledger\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-49\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":null},\"record_id\":\"agent-atlas:source-access-ledger\",\"revision\":\"b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\",\"revision\":\"35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103\"}],\"status\":\"active\",\"title\":\"A source link is not an offline original archive\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Reference and bibliographic navigation, not live model or experimental result\"],\"assumptions\":[\"Claims may only rely on the stated inspected source portion\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"No independent full-text or expert review\"],\"tags\":[\"source\",\"edition-1.0.0\"],\"text\":\"Bibliographic navigation: Library of Congress. 2025–2026 preservation guidance. Inspected scope: Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"uncertainty\":[\"Missing independent source audit\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Original publisher bytes are not retained\",\"No independent scientific reviewer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:LOC-FORMATS-2025-26\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"authors\":\"Library of Congress\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"inspected_scope\":\"Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"publication\":\"2025–2026 preservation guidance\",\"rights_status\":\"link_only_original_summary\",\"source_bytes_archived\":false,\"url\":\"https://www.loc.gov/preservation/resources/rfs/data.html\"},\"record_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\",\"revision\":\"35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103\",\"rights\":{\"note\":\"Original paraphrase and source locator only; copyright remains external\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Library of Congress Recommended Formats Statement 2025–2026, datasets\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MAST-2025\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"publication\":\"NeurIPS 2025\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"url\":\"https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html\"},\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Historical technical navigation; not an independent validation of real agent behavior\"],\"assumptions\":[\"Use only the identified published documentation portion\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Documentation is evolving and may change after this check\",\"No original publisher full text mirrored or independent source audit\"],\"tags\":[\"source\",\"agent-0.3.0\"],\"text\":\"OpenTelemetry GenAI span content and privacy boundaries — Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive\",\"uncertainty\":[\"Applicability and implementation uncertainty remain open\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent source-review panel, real provider testing or live model evaluation\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:OTEL-PRIVACY-2026\",\"provenance\":{\"author\":\"OpenTelemetry contributors\",\"checked_at\":\"2026-11-13\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive\",\"source_bytes_archived\":false,\"url\":\"https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md\"},\"record_id\":\"agent-atlas:source:OTEL-PRIVACY-2026\",\"revision\":\"245c84281050a9900a44c1da3e8e6df8b91e6f57dc2ded8dcd88b42032a0874f\",\"rights\":{\"note\":\"Original brief bibliography and paraphrase only; external rights preserved\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"OpenTelemetry GenAI span content and privacy boundaries\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Yao et al. (ICLR 2023). Inspected scope: Published abstract and stated interleaved action/observation motivation; no independent task replay. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:REACT-2023\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"publication\":\"ICLR 2023\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"ReAct: Synergizing Reasoning and Acting in Language Models\",\"url\":\"https://arxiv.org/abs/2210.03629\"},\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"ReAct: Synergizing Reasoning and Acting in Language Models\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Shinn et al. (NeurIPS 2023). Inspected scope: Publisher abstract on reflection buffer and episodic feedback; not model-weight training. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:REFLEXION-2023\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"publication\":\"NeurIPS 2023\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Reflexion: Language Agents with Verbal Reinforcement Learning\",\"url\":\"https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html\"},\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Reflexion: Language Agents with Verbal Reinforcement Learning\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bounded offline agent-science reference, not a deployed autonomous system\"],\"assumptions\":[\"Available filesystem, UTF-8 JSON/JSONL\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"An intact hash does not establish scientific truth or comprehensive world knowledge\"],\"tags\":[\"agent-1.0.0\",\"chapter-49\",\"method\"],\"text\":\"Dependency-free audit checks node manifests, record revisions, source and relation closure and quantifies missing authenticated original source files.\",\"uncertainty\":[\"No independent task outcome, model generalization or sampling validation from this calculation alone\"],\"units\":[\"Units only where explicitly stated in the model and source\"]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer\",\"No real live model or external tool execution\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Original bounded explanation and linked public source portion only\",\"locator\":\"Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence\",\"source_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\"}],\"origin\":\"original_derivation_and_source_context\",\"review_status\":\"publisher_abstract_or_page_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"survival-audit-tool\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-49\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_model\":\"foundations_v1.py\"},\"record_id\":\"agent-atlas:survival-audit-tool\",\"revision\":\"3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e\",\"rights\":{\"note\":\"Original technical explanation/derivation and bibliography, no full third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LOC-FORMATS-2025-26\",\"revision\":\"35ee9a444a002f8cbb068cfb3ff613be3452db0d05a4f1b37b62e00c23288103\"}],\"status\":\"active\",\"title\":\"Offline byte and source-closure audit\",\"type\":\"method\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:agent-scoped-v1\",\"revision\":\"69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:agent-scoped-v1:qualifies:survival-audit-tool\",\"revision\":\"ce23f34f9d2cf5e4bfa80ad9961f8a24d16de303d90f8260ceffa99d43093fb6\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:survival-audit-tool\",\"revision\":\"3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:all-domains-then-router\",\"revision\":\"7e1cbb7270a382fabd3a4403650b39ada8adefd1bd7b512eb66616eabf23ffe7\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:all-domains-then-router:qualifies:agent-scoped-v1\",\"revision\":\"2d8dafd7a19a7af03e4b372b6b6634e9a62bee5e1f9a82417ae8226fdd772481\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:agent-scoped-v1\",\"revision\":\"69f78ae1dfbbc1d01be0f5c3fb46628b9dca8f32c6396a52662ff53399189c45\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:memory-contradiction\",\"revision\":\"7ed63b5b355cfc0cc91e1e8c9c69bb28ffa73e295ea8a3f62bd0eab7e150cc42\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:memory-contradiction:qualifies:memory-evidence-tiers\",\"revision\":\"172600555a4e7c2ea192588b0ae385a3980247342e0165b3d9fd3eb49138d35d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:memory-evidence-tiers\",\"revision\":\"ef58c1382ceaf5be8cc047948b74ca0d9b73458e0b47ee246ed4a401c92a17bc\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:offline-human-recovery\",\"revision\":\"bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:offline-human-recovery:qualifies:source-access-ledger\",\"revision\":\"35081884208fcf666a687065c8aa309997a2198be37f0bd4eb1cacfa49636bc0\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:source-access-ledger\",\"revision\":\"b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:source-access-ledger\",\"revision\":\"b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:source-access-ledger:qualifies:offline-human-recovery\",\"revision\":\"040fbd660fe42987c50c85fa63e0cb1c05b4571c9c7ebf82d8b41e32933ac3df\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:offline-human-recovery\",\"revision\":\"bf201dc1c8ffc374b78e5da34f2f13fde78ed2856fe824909a59cdb843ef7231\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:survival-audit-tool\",\"revision\":\"3582ffc916b8ee991a20a6f93dbc17745179849562397dc27e1e3f84c23d2f9e\"},\"provenance\":{\"independent_review\":false,\"origin\":\"authored_knowledge_dependency\",\"scope\":\"Model or epistemic qualification, not an empirical discovered causal effect\"},\"relation_id\":\"agent-atlas:survival-audit-tool:qualifies:source-access-ledger\",\"revision\":\"d0570d7a2948956ef9c9d8b5294492457bb5826e64a166243e07bfe2ec964e3d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:source-access-ledger\",\"revision\":\"b3952b4db1521012580c387a856066686d8c15ddd36da7df1155efaa48407832\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 30373,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:agent-reference-not-runtime",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:proof-conditional-admission",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:mast-data-public-external",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:MAST-public-schema-v03",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:agent-v03-evidence-ledger",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "ec211b1c2dc2c433151b8cee16e75027b38807426a104892af641b2aa54e28b6"
+}

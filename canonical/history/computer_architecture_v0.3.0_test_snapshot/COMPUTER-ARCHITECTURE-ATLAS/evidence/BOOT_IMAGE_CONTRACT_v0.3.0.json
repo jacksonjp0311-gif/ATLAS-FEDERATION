@@ -1,0 +1,13 @@
+{
+  "schema": "atlas.computer-v03-boot-image-contract/1",
+  "magic": "AT8R",
+  "version": 3,
+  "header_bytes": 44,
+  "encoding": "big-endian magic(4),version(1),flags(1),length(2),CRC32(4),SHA256(32)",
+  "rom_min_bytes": 2,
+  "rom_max_bytes": 256,
+  "rom_even_length": true,
+  "rom_AT8_ISA_unchanged": true,
+  "secure_boot_signature_present": false,
+  "physical_power_failure_tested": false
+}

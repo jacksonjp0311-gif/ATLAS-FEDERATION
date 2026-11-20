@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: chemistry-atlas-research
+Version: 0.1.0
+Summary: Offline Chemistry Atlas reference models, source-linked research and technological-continuity science
+Requires-Python: >=3.10
+License-File: NOTICE.md
+Dynamic: license-file

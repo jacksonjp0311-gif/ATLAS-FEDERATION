@@ -1,0 +1,21 @@
+{
+  "record": {
+    "certificate_id": "SYNTHETIC-NOT-A-CERTIFICATE-001",
+    "source_locator": "examples/synthetic_certificate.json",
+    "instrument_id": "SIMULATED-GAUGE",
+    "calibration_date": "2026-01-01",
+    "quantity_kind": "length",
+    "unit": "mm",
+    "value": 10.0,
+    "uncertainty_kind": "expanded",
+    "uncertainty": 0.004,
+    "conditions": [
+      "Synthetic 20 degC setting"
+    ],
+    "traceability_references": [
+      "Synthetic reference, no real traceability claim"
+    ],
+    "data_origin": "synthetic_teaching_fixture"
+  },
+  "as_of": "2026-11-12"
+}

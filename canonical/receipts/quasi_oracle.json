@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.causal-quasi-oracle/1",
+  "result": "passed",
+  "seed": 3132026,
+  "weighted_line_datasets": 240,
+  "weighted_line_fits": 480,
+  "stipulated_populations": 200,
+  "fuzzy_datasets": 1,
+  "scalar_numeric_comparisons": 3758,
+  "scaled_absolute_tolerance": 1e-10,
+  "max_scaled_absolute_error": 2.3658663744245647e-14,
+  "failures": [],
+  "numpy_version": "2.3.5",
+  "python": "3.13.5",
+  "comparison_method": "NumPy SVD least squares and explicit population enumeration",
+  "independent_human_review": false,
+  "empirical_observations": false,
+  "causal_assumptions_validated": false,
+  "limits": "Author-generated development cases. No participant study, robust interval implementation or AI evaluation."
+}

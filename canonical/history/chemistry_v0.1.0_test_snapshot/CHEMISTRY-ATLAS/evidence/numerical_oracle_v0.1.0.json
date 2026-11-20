@@ -1,0 +1,33 @@
+{
+  "schema": "atlas.chemistry-numerical-oracle/1",
+  "status": "passed",
+  "seed": 20261114,
+  "comparisons": 8064,
+  "counts": {
+    "exact_atom_balance_reference": 4,
+    "mole_mass_numpy": 620,
+    "molar_mass_numpy": 620,
+    "molarity_numpy": 620,
+    "ideal_gas_numpy": 620,
+    "gibbs_activity_log_numpy": 620,
+    "equilibrium_logK_numpy": 620,
+    "arrhenius_ratio_numpy": 620,
+    "firstorder_numpy": 620,
+    "pH_activity_numpy": 620,
+    "nernst_numpy": 620,
+    "semiconductor_drift_numpy": 620,
+    "diffusion_numpy": 620,
+    "mass_balance_numpy": 620
+  },
+  "max_absolute_difference": 5.820766091346741e-11,
+  "numpy_version": "2.3.5",
+  "all_inputs": "original author-generated finite numerical fixtures",
+  "physical_experiments": 0,
+  "original_publisher_source_rows_loaded": 0,
+  "trained_chemical_models": 0,
+  "expert_review": false,
+  "limitations": [
+    "Independent arithmetic agreement verifies model implementation, not laboratory measurement or the broad truth of a chemical process",
+    "Simplified formula balancing intentionally excludes charges, isotopes and multiple independent stoichiometries"
+  ]
+}

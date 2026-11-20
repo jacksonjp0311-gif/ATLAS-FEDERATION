@@ -1,0 +1,17 @@
+{
+  "atlas_id": "measurement-atlas",
+  "title": "Measurement Atlas",
+  "version": "0.1.0",
+  "schema_version": "1.0",
+  "created_date": "2026-11-11",
+  "purpose": "Evidence-preserving scientific reference",
+  "mission": "Units, uncertainty, calibration, traceability, repeatability and comparison",
+  "status": "editorial_heading_inventory_only",
+  "packet_count": 5,
+  "source_count": 1,
+  "interfaces": [
+    "jsonl",
+    "python-cli"
+  ],
+  "external_sources_mirrored": false
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.release-candidate/1",
+  "target_version": "1.0.0",
+  "candidate_version": "1.0.0rc1",
+  "display_version": "1.0.0-rc.1",
+  "active_domain": "measurement-atlas",
+  "status": "release_candidate_not_final",
+  "scientific_v1_accepted": false,
+  "next_domain_allowed": false,
+  "navigation_changes": false,
+  "base_archive_sha256": "265da19392d4d3d290efe237fa442623db6aa86da1309bca1c6124295db6534b",
+  "criteria_unchanged": true,
+  "independent_review": false,
+  "windows_executed": false,
+  "live_bitwork_executed": false,
+  "independent_heldout_evaluation": false
+}

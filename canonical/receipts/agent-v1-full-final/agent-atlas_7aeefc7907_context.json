@@ -1,0 +1,700 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "agent task graph parent worker stop receipt",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "43167dc2ffd11c4acec35e7fdb3f5e119f9dd7760c237f6a5e9b7e8d0a272494",
+  "registry_revision": "800554551d2e9f039dd1ecad6819c01b5cf238d829df9329641d1538b6d094b8",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "2084c970b1b78f80347621cbfe4052c7c0a8d3d18fb5aad6bfb9d6ceed228575",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:parent-child-receipts",
+      "revision": "9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063"
+    },
+    {
+      "record_id": "agent-atlas:receipt-integrity",
+      "revision": "895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:chapter-06",
+      "revision": "ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82"
+    },
+    {
+      "record_id": "agent-atlas:consensus-not-truth",
+      "revision": "add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81"
+    },
+    {
+      "record_id": "agent-atlas:parent-child-receipts",
+      "revision": "9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063"
+    },
+    {
+      "record_id": "agent-atlas:receipt-integrity",
+      "revision": "895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80"
+    },
+    {
+      "record_id": "agent-atlas:source:ANTHROPIC-AGENTS-2024",
+      "revision": "907b2f9d670837c8a7e9d5766d180aca2d098352e55bc3c060bc1b326ae39a7e"
+    },
+    {
+      "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+      "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67"
+    },
+    {
+      "record_id": "agent-atlas:source:MAST-2025",
+      "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Original scientific explanation, not reprinted third-party text",
+            "No direct empirical model evaluation or independent review; applies only with stated assumptions"
+          ],
+          "tags": [
+            "chapter-06",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "# 06. Multiple agents introduce coordination, conflicting evidence and hidden cost\n\nOrchestrator–worker architectures can decompose tasks dynamically, while pipelines and independent workers may follow predefined paths. Each variant introduces information flow between agents, responsibility for shared state, and the possibility of inconsistent decisions. More worker messages can improve coverage in some tasks, but they can also amplify errors, replicate the same unverified claim, consume latency budget and cause race conditions. The MAST failure taxonomy research reports common difficulties in system design, inter-agent misalignment and verification; the failure categories are an empirical framework in that study, not independently reproduced in this package.\n\nEvery worker assignment should carry a task ID, objective, input-data revision, permitted tools, output contract, budget, deadline and the parent run ID. Each result should report evidence, failure reason, uncertainty and whether observed state was changed. The parent should distinguish a **result claim** from a **result receipt** and a **verified accomplishment**. Two workers agreeing on an answer generated from the same flawed source do not constitute two independent confirmations. Source overlap and causal dependence need consideration before treating voting as corroboration.\n\nA shared parent can lose track of a worker that completed after a timeout. A separate process can return a result that belongs to a different run. Recovery must identify worker, parent, task, input revision and receipt digest. It must also determine whether the worker's action changed external state. The `verified_worker_receipt` and `reconcile_worker_receipt` functions demonstrate exact content/identity matching. They do not cryptographically attest to remote identity or evaluate truth. Actual trust requires host authentication, secure storage, durable I/O, transactional reconciliation and appropriate rights.\n\n**Conflict protocol:** define which source is disputed, preserve both conflicting outputs and their provenance, select a decisive test or gather new evidence, escalate when authority is insufficient, and avoid making an irreversible side effect while the contradiction is unresolved. A natural-language vote should never overwrite an independently verified receipt.\n\n**Benchmarking principle:** compare single agent, one orchestrator plus specialists, and fully coupled multi-agent designs with the same task list, model, token budget and outcome criteria. Log invocation counts, hidden-state exposures, error propagation and verification cost. Any reported performance gain should include variability across seeds/tasks and ideally independent data curation.\n\n**Sources:** [MAST-2025](https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html), [ANTHROPIC-AGENTS-2024](https://www.anthropic.com/research/building-effective-agents).\n",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+              "source_id": "agent-atlas:source:MAST-2025"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof",
+              "source_id": "agent-atlas:source:ANTHROPIC-AGENTS-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "chapter-06",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-06",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:chapter-06",
+        "revision": "ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          },
+          {
+            "record_id": "agent-atlas:source:ANTHROPIC-AGENTS-2024",
+            "revision": "907b2f9d670837c8a7e9d5766d180aca2d098352e55bc3c060bc1b326ae39a7e"
+          }
+        ],
+        "status": "active",
+        "title": "06. Multiple agents introduce coordination, conflicting evidence and hidden cost",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-06",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "Multiple agents using a shared flawed source can agree while all are wrong; evidence independence needs inspection.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+              "source_id": "agent-atlas:source:MAST-2025"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "consensus-not-truth",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-06",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:consensus-not-truth",
+        "revision": "add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          }
+        ],
+        "status": "active",
+        "title": "Multiagent agreement is not independent corroboration",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-06",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "A child-result claim must be tied to exact parent task, child run and input revision before considering admission.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Documented distinction between checkpoints and cross-thread stores; no deployment in this package",
+              "source_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+              "source_id": "agent-atlas:source:MAST-2025"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "parent-child-receipts",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-06",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:parent-child-receipts",
+        "revision": "9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+            "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67"
+          },
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          }
+        ],
+        "status": "active",
+        "title": "Parent/worker handoff needs task/run identity",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-06",
+            "method",
+            "agent-0.1.0"
+          ],
+          "text": "Validate locally hashed task ID, child run ID and output bytes before an eligible parent verification. No proof of actual external effect.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+              "source_id": "agent-atlas:source:MAST-2025"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Documented distinction between checkpoints and cross-thread stores; no deployment in this package",
+              "source_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "receipt-integrity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-06",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:receipt-integrity",
+        "revision": "895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          },
+          {
+            "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+            "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67"
+          }
+        ],
+        "status": "active",
+        "title": "Task/child-bound local receipt digest",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Anthropic Engineering (2024-12-19). Inspected scope: Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:ANTHROPIC-AGENTS-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof",
+          "publication": "2024-12-19",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Building effective agents",
+          "url": "https://www.anthropic.com/research/building-effective-agents"
+        },
+        "record_id": "agent-atlas:source:ANTHROPIC-AGENTS-2024",
+        "revision": "907b2f9d670837c8a7e9d5766d180aca2d098352e55bc3c060bc1b326ae39a7e",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Building effective agents",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: LangChain contributors (living 2026). Inspected scope: Documented distinction between checkpoints and cross-thread stores; no deployment in this package. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:LANGGRAPH-PERSISTENCE",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Documented distinction between checkpoints and cross-thread stores; no deployment in this package",
+          "publication": "living 2026",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "LangGraph persistence guide",
+          "url": "https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx"
+        },
+        "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+        "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "LangGraph persistence guide",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MAST-2025",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+          "publication": "NeurIPS 2025",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Why Do Multi-Agent LLM Systems Fail?",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html"
+        },
+        "record_id": "agent-atlas:source:MAST-2025",
+        "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Why Do Multi-Agent LLM Systems Fail?",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:consensus-not-truth",
+          "revision": "add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:consensus-not-truth:qualifies:chapter-06",
+        "revision": "cd4c52aec3cb98ce72fa01a182343a942b63b3d927435758df0b6b2b35cdb1c3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-06",
+          "revision": "ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:parent-child-receipts",
+          "revision": "9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:parent-child-receipts:qualifies:chapter-06",
+        "revision": "7f10f076df8f85825597595fe75b3b6c29b16e62051ee12546f2841489ef7246",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-06",
+          "revision": "ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:receipt-integrity",
+          "revision": "895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:receipt-integrity:depends_on:consensus-not-truth",
+        "revision": "1e1d7699926e192645799e9474956bb3ac9341f526ae7929ce161a230bf600d1",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:consensus-not-truth",
+          "revision": "add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:receipt-integrity",
+          "revision": "895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:receipt-integrity:depends_on:parent-child-receipts",
+        "revision": "b2b8cbbea6432355acf7c2d80c970a43aff2f70665dc0fa2041f3f9b448367b3",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:parent-child-receipts",
+          "revision": "9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063"
+        },
+        "type": "depends_on"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Original scientific explanation, not reprinted third-party text\",\"No direct empirical model evaluation or independent review; applies only with stated assumptions\"],\"tags\":[\"chapter-06\",\"concept\",\"agent-0.1.0\"],\"text\":\"# 06. Multiple agents introduce coordination, conflicting evidence and hidden cost\\n\\nOrchestrator–worker architectures can decompose tasks dynamically, while pipelines and independent workers may follow predefined paths. Each variant introduces information flow between agents, responsibility for shared state, and the possibility of inconsistent decisions. More worker messages can improve coverage in some tasks, but they can also amplify errors, replicate the same unverified claim, consume latency budget and cause race conditions. The MAST failure taxonomy research reports common difficulties in system design, inter-agent misalignment and verification; the failure categories are an empirical framework in that study, not independently reproduced in this package.\\n\\nEvery worker assignment should carry a task ID, objective, input-data revision, permitted tools, output contract, budget, deadline and the parent run ID. Each result should report evidence, failure reason, uncertainty and whether observed state was changed. The parent should distinguish a **result claim** from a **result receipt** and a **verified accomplishment**. Two workers agreeing on an answer generated from the same flawed source do not constitute two independent confirmations. Source overlap and causal dependence need consideration before treating voting as corroboration.\\n\\nA shared parent can lose track of a worker that completed after a timeout. A separate process can return a result that belongs to a different run. Recovery must identify worker, parent, task, input revision and receipt digest. It must also determine whether the worker's action changed external state. The `verified_worker_receipt` and `reconcile_worker_receipt` functions demonstrate exact content/identity matching. They do not cryptographically attest to remote identity or evaluate truth. Actual trust requires host authentication, secure storage, durable I/O, transactional reconciliation and appropriate rights.\\n\\n**Conflict protocol:** define which source is disputed, preserve both conflicting outputs and their provenance, select a decisive test or gather new evidence, escalate when authority is insufficient, and avoid making an irreversible side effect while the contradiction is unresolved. A natural-language vote should never overwrite an independently verified receipt.\\n\\n**Benchmarking principle:** compare single agent, one orchestrator plus specialists, and fully coupled multi-agent designs with the same task list, model, token budget and outcome criteria. Log invocation counts, hidden-state exposures, error propagation and verification cost. Any reported performance gain should include variability across seeds/tasks and ideally independent data curation.\\n\\n**Sources:** [MAST-2025](https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html), [ANTHROPIC-AGENTS-2024](https://www.anthropic.com/research/building-effective-agents).\\n\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"source_id\":\"agent-atlas:source:MAST-2025\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof\",\"source_id\":\"agent-atlas:source:ANTHROPIC-AGENTS-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"chapter-06\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-06\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:chapter-06\",\"revision\":\"ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"},{\"record_id\":\"agent-atlas:source:ANTHROPIC-AGENTS-2024\",\"revision\":\"907b2f9d670837c8a7e9d5766d180aca2d098352e55bc3c060bc1b326ae39a7e\"}],\"status\":\"active\",\"title\":\"06. Multiple agents introduce coordination, conflicting evidence and hidden cost\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-06\",\"concept\",\"agent-0.1.0\"],\"text\":\"Multiple agents using a shared flawed source can agree while all are wrong; evidence independence needs inspection.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"source_id\":\"agent-atlas:source:MAST-2025\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"consensus-not-truth\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-06\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:consensus-not-truth\",\"revision\":\"add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"}],\"status\":\"active\",\"title\":\"Multiagent agreement is not independent corroboration\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-06\",\"concept\",\"agent-0.1.0\"],\"text\":\"A child-result claim must be tied to exact parent task, child run and input revision before considering admission.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Documented distinction between checkpoints and cross-thread stores; no deployment in this package\",\"source_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"source_id\":\"agent-atlas:source:MAST-2025\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"parent-child-receipts\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-06\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:parent-child-receipts\",\"revision\":\"9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\",\"revision\":\"7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67\"},{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"}],\"status\":\"active\",\"title\":\"Parent/worker handoff needs task/run identity\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-06\",\"method\",\"agent-0.1.0\"],\"text\":\"Validate locally hashed task ID, child run ID and output bytes before an eligible parent verification. No proof of actual external effect.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"source_id\":\"agent-atlas:source:MAST-2025\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Documented distinction between checkpoints and cross-thread stores; no deployment in this package\",\"source_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"receipt-integrity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-06\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:receipt-integrity\",\"revision\":\"895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"},{\"record_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\",\"revision\":\"7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67\"}],\"status\":\"active\",\"title\":\"Task/child-bound local receipt digest\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Anthropic Engineering (2024-12-19). Inspected scope: Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:ANTHROPIC-AGENTS-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Engineering article distinction between workflows and dynamic agents, orchestrator-worker and evaluator loops; design guidance not scientific causal proof\",\"publication\":\"2024-12-19\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Building effective agents\",\"url\":\"https://www.anthropic.com/research/building-effective-agents\"},\"record_id\":\"agent-atlas:source:ANTHROPIC-AGENTS-2024\",\"revision\":\"907b2f9d670837c8a7e9d5766d180aca2d098352e55bc3c060bc1b326ae39a7e\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Building effective agents\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: LangChain contributors (living 2026). Inspected scope: Documented distinction between checkpoints and cross-thread stores; no deployment in this package. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:LANGGRAPH-PERSISTENCE\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Documented distinction between checkpoints and cross-thread stores; no deployment in this package\",\"publication\":\"living 2026\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"LangGraph persistence guide\",\"url\":\"https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx\"},\"record_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\",\"revision\":\"7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"LangGraph persistence guide\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MAST-2025\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"publication\":\"NeurIPS 2025\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"url\":\"https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html\"},\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:consensus-not-truth\",\"revision\":\"add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:consensus-not-truth:qualifies:chapter-06\",\"revision\":\"cd4c52aec3cb98ce72fa01a182343a942b63b3d927435758df0b6b2b35cdb1c3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-06\",\"revision\":\"ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:parent-child-receipts\",\"revision\":\"9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:parent-child-receipts:qualifies:chapter-06\",\"revision\":\"7f10f076df8f85825597595fe75b3b6c29b16e62051ee12546f2841489ef7246\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-06\",\"revision\":\"ae1bba51e4c992e61c5f9660a9434bbd026e90c9b7c37baed646bdd189822c82\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:receipt-integrity\",\"revision\":\"895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:receipt-integrity:depends_on:consensus-not-truth\",\"revision\":\"1e1d7699926e192645799e9474956bb3ac9341f526ae7929ce161a230bf600d1\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:consensus-not-truth\",\"revision\":\"add840f2064fb79a9c1f5c12a9c8c7a6aeff45fbd5ec949f6151c25c4849ec81\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"agent-atlas:receipt-integrity\",\"revision\":\"895c717c4058a716b748aa189d20fd7dc9b12a5fdd43ef30b79f51fc0f963d80\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:receipt-integrity:depends_on:parent-child-receipts\",\"revision\":\"b2b8cbbea6432355acf7c2d80c970a43aff2f70665dc0fa2041f3f9b448367b3\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:parent-child-receipts\",\"revision\":\"9d06c21c3f03a654fdd6ee0548f73a34de448f9d0fe4326c16aeb8b0e1a36063\"},\"type\":\"depends_on\"}]}",
+  "context_bytes": 23117,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:orphan-receipt-denial",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:bounded-receipt-recovery",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:failure-hypotheses-not-single-label",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:host-dispatch-receipt",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:swarm-parent-lineage",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:recovery-is-not-success",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "f4f8a752b636bb37740f1c3e43c590fec7b8c4e9b584fce7489b9d28f64eca31"
+}

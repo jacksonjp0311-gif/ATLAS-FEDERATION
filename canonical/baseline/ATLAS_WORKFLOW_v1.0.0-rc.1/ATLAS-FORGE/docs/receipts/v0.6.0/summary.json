@@ -1,0 +1,147 @@
+{
+  "schema": "atlas.workflow-execution/1",
+  "result": "passed",
+  "stages": [
+    {
+      "name": "forge_unit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 5.713309377000087,
+      "log": "forge_unit.log",
+      "sha256": "ba434efd6125ffdedd8f2eb4dc2cca287dabef858c5bbae381c4f11d2de0ee35"
+    },
+    {
+      "name": "measurement_unit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.8730223610000394,
+      "log": "measurement_unit.log",
+      "sha256": "1db84120aaba8a917363184d53d64b941c007617013c63586a4d2c24bcfcbab1"
+    },
+    {
+      "name": "conformance",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "conform"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.9040376880000167,
+      "log": "conformance.log",
+      "sha256": "d8d71bfa1ee71560ffd252b1ab1dae987715f9e4ffc3a97acb448c7f1ea53d07"
+    },
+    {
+      "name": "skills",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "skills-check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6527772599999935,
+      "log": "skills.log",
+      "sha256": "5784cf81d459b4d9e5a6221ed906aee6fd882ec7371f8af1c9a4109b7249a11b"
+    },
+    {
+      "name": "curation",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/check_curation.py",
+        "/mnt/data/ATLAS_WORKFLOW_v0.6.0/MEASUREMENT-ATLAS/evidence/primary_reference_additions.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6771511919999966,
+      "log": "curation.log",
+      "sha256": "56c48e8d4d6c050f73a371051f254b488e7fb1cc361c043c8a9e587a285ae971"
+    },
+    {
+      "name": "context_diagnostic",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/evaluate_common.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.9832274679999955,
+      "log": "context_diagnostic.log",
+      "sha256": "935afafa7cbea93d58c1022341925decff84d405ead9b70ba5625bc3316ba3cc"
+    },
+    {
+      "name": "synthetic_casebook",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/casebook.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.7955947210000431,
+      "log": "synthetic_casebook.log",
+      "sha256": "af461febf66884cb7c6916ee0a71de65bfa49a01a968ae84ef3478b74eec0359"
+    },
+    {
+      "name": "content_reference_audit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/check_content.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6345083090000116,
+      "log": "content_reference_audit.log",
+      "sha256": "50ccf51ac9595ef6e16022b106a3e4cce9bbd5c9e3cfaa2f27333f447fe381d6"
+    },
+    {
+      "name": "content_casebook",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/content_casebook.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6346649860000753,
+      "log": "content_casebook.log",
+      "sha256": "82c15a24098ef41882df25fa9bf19ff7a7716289877cd381548e95db2eb520bb"
+    },
+    {
+      "name": "published_calibration_case",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "measurement_atlas",
+        "published-case"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.7299403170000005,
+      "log": "published_calibration_case.log",
+      "sha256": "55920ef29886a57fa967b622ef2e7522d8f50d6afdabc2f41ad30533a75e627d"
+    },
+    {
+      "name": "gate_status",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/workflow.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.8667171200000894,
+      "log": "gate_status.log",
+      "sha256": "4d7f0d01ceeeb5de66a458958849a893718e77f6604f897aad1052c77d992079"
+    }
+  ],
+  "next_domain_guard_worked": true,
+  "measurement_v1_accepted": false,
+  "host_skills_installed": false,
+  "remote_changes": false
+}

@@ -1,0 +1,2799 @@
+[
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:HRBOOK",
+    "node_id": "causal-atlas",
+    "original_id": "HRBOOK",
+    "type": "source",
+    "status": "active",
+    "title": "Causal Inference: What If",
+    "content": {
+      "text": "Causal Inference: What If. Miguel A. Hernán; James M. Robins; 2020 online living book; publisher page may revise.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "hrbook"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "author_overview_only",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "author_overview_only",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HRBOOK",
+          "locator": "Book author page describing Parts I-III and downloadable materials; not entire book text",
+          "inspected_scope": "Book author page describing Parts I-III and downloadable materials; not entire book text",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Miguel A. Hernán; James M. Robins",
+      "publication_or_version": "2020 online living book; publisher page may revise",
+      "doi": "",
+      "url": "https://miguelhernan.org/whatifbook",
+      "inspected_scope": "Book author page describing Parts I-III and downloadable materials; not entire book text",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "bdf96f954a86406b7cf201922b9bcd88981bac73fe399b7e6dd29ad316a753d3"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:CS2021",
+    "node_id": "causal-atlas",
+    "original_id": "CS2021",
+    "type": "source",
+    "status": "active",
+    "title": "Difference-in-Differences with Multiple Time Periods",
+    "content": {
+      "text": "Difference-in-Differences with Multiple Time Periods. Brantly Callaway; Pedro H.C. Sant’Anna; Journal of Econometrics 225(2), 2021.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "cs2021"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "publisher_abstract_only",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "publisher_abstract_only",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:CS2021",
+          "locator": "Journal publisher abstract only",
+          "inspected_scope": "Journal publisher abstract only",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Brantly Callaway; Pedro H.C. Sant’Anna",
+      "publication_or_version": "Journal of Econometrics 225(2), 2021",
+      "doi": "10.1016/j.jeconom.2020.12.001",
+      "url": "https://doi.org/10.1016/j.jeconom.2020.12.001",
+      "inspected_scope": "Journal publisher abstract only",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "98b3fc1f68d5690a3f13a6e8cd7aa4020fca26e7e392720e14f3027ed6c2e472"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:DIDR",
+    "node_id": "causal-atlas",
+    "original_id": "DIDR",
+    "type": "source",
+    "status": "active",
+    "title": "R did att_gt official method documentation",
+    "content": {
+      "text": "R did att_gt official method documentation. Brantly Callaway and did package contributors; CRAN documentation; living.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "didr"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "method_documentation_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "method_documentation_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:DIDR",
+          "locator": "att_gt description, comparison policy and anticipation parameter documentation",
+          "inspected_scope": "att_gt description, comparison policy and anticipation parameter documentation",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Brantly Callaway and did package contributors",
+      "publication_or_version": "CRAN documentation; living",
+      "doi": "",
+      "url": "https://search.r-project.org/CRAN/refmans/did/help/att_gt.html",
+      "inspected_scope": "att_gt description, comparison policy and anticipation parameter documentation",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "203951931a7601ee7daaebc8e6fc6738ac4c198f6579c146731aa862487906fd"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:HH2008",
+    "node_id": "causal-atlas",
+    "original_id": "HH2008",
+    "type": "source",
+    "status": "active",
+    "title": "Toward Causal Inference with Interference",
+    "content": {
+      "text": "Toward Causal Inference with Interference. Michael G. Hudgens; M. Elizabeth Halloran; JASA 103(482), 2008.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "hh2008"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "selected_html_portions_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "selected_html_portions_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HH2008",
+          "locator": "Abstract and open article overview of interference effects and partial interference",
+          "inspected_scope": "Abstract and open article overview of interference effects and partial interference",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Michael G. Hudgens; M. Elizabeth Halloran",
+      "publication_or_version": "JASA 103(482), 2008",
+      "doi": "10.1198/016214508000000292",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2600548/",
+      "inspected_scope": "Abstract and open article overview of interference effects and partial interference",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "2526894bdb0730d7836cd8b39f868ef1da03043d837b07e2897732270d0fc542"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:MED2020",
+    "node_id": "causal-atlas",
+    "original_id": "MED2020",
+    "type": "source",
+    "status": "active",
+    "title": "Clarifying Causal Mediation Analysis for the Applied Researcher",
+    "content": {
+      "text": "Clarifying Causal Mediation Analysis for the Applied Researcher. Nguyen et al.; Open-access PMC manuscript; published context in record.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "med2020"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "selected_html_effect_definitions_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "selected_html_effect_definitions_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:MED2020",
+          "locator": "Full HTML section defining interventional direct and indirect effects; not complete manuscript audit",
+          "inspected_scope": "Full HTML section defining interventional direct and indirect effects; not complete manuscript audit",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Nguyen et al.",
+      "publication_or_version": "Open-access PMC manuscript; published context in record",
+      "doi": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8496983/",
+      "inspected_scope": "Full HTML section defining interventional direct and indirect effects; not complete manuscript audit",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "8eb458fa1f3c07e8201dc79df39e5c76ee776a871e6969eaa221b636b0cbc4ed"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:BP2012",
+    "node_id": "causal-atlas",
+    "original_id": "BP2012",
+    "type": "source",
+    "status": "active",
+    "title": "Transportability of Causal Effects: Completeness Results",
+    "content": {
+      "text": "Transportability of Causal Effects: Completeness Results. Elias Bareinboim; Judea Pearl; AAAI 2012; page current site lists an online page date separately.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "bp2012"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "publisher_abstract_only",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "publisher_abstract_only",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BP2012",
+          "locator": "Published abstract and metadata; graphical proof and full algorithm not reviewed",
+          "inspected_scope": "Published abstract and metadata; graphical proof and full algorithm not reviewed",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Elias Bareinboim; Judea Pearl",
+      "publication_or_version": "AAAI 2012; page current site lists an online page date separately",
+      "doi": "10.1609/aaai.v26i1.8232",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8232",
+      "inspected_scope": "Published abstract and metadata; graphical proof and full algorithm not reviewed",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "9aa2daaceda71bd39292353ec2678ec46aad8a2d64bb9415f05406fbbbc8388f"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:BP2013",
+    "node_id": "causal-atlas",
+    "original_id": "BP2013",
+    "type": "source",
+    "status": "active",
+    "title": "Meta-Transportability of Causal Effects: A Formal Approach",
+    "content": {
+      "text": "Meta-Transportability of Causal Effects: A Formal Approach. Elias Bareinboim; Judea Pearl; AISTATS PMLR 31, 2013.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "bp2013"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "publisher_abstract_only",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "publisher_abstract_only",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BP2013",
+          "locator": "Conference publication abstract only",
+          "inspected_scope": "Conference publication abstract only",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Elias Bareinboim; Judea Pearl",
+      "publication_or_version": "AISTATS PMLR 31, 2013",
+      "doi": "",
+      "url": "https://proceedings.mlr.press/v31/bareinboim13a.html",
+      "inspected_scope": "Conference publication abstract only",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "11d09343f79df847a81763a51b94a38be56a7464970e019eed0b3ca73c567fc8"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:UCBR",
+    "node_id": "causal-atlas",
+    "original_id": "UCBR",
+    "type": "source",
+    "status": "active",
+    "title": "R datasets UCBAdmissions official reference",
+    "content": {
+      "text": "R datasets UCBAdmissions official reference. R Core Team (datasets package); historical aggregate Berkeley admissions; R release manual, living documentation.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "ucbr"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "official_dataset_manual_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "official_dataset_manual_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:UCBR",
+          "locator": "UCBAdmissions description, format and count totals for six departments",
+          "inspected_scope": "UCBAdmissions description, format and count totals for six departments",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "R Core Team (datasets package); historical aggregate Berkeley admissions",
+      "publication_or_version": "R release manual, living documentation",
+      "doi": "",
+      "url": "https://cloud.r-project.org/doc/manuals/r-release/packages/datasets/refman/datasets.html",
+      "inspected_scope": "UCBAdmissions description, format and count totals for six departments",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "abad26db431d67bb7efbb379745b7e00a97ed8acc5e900c390026092c312e009"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:RDL",
+    "node_id": "causal-atlas",
+    "original_id": "RDL",
+    "type": "source",
+    "status": "active",
+    "title": "Rdatasets distribution and license notice",
+    "content": {
+      "text": "Rdatasets distribution and license notice. Vincent Arel-Bundock; GitHub README, viewed 2026-11-12.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "rdl"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "repository_rights_notice_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "repository_rights_notice_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:RDL",
+          "locator": "README Licensing section: source code GPL-3; underlying datasets licensing unresolved by distributor",
+          "inspected_scope": "README Licensing section: source code GPL-3; underlying datasets licensing unresolved by distributor",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Vincent Arel-Bundock",
+      "publication_or_version": "GitHub README, viewed 2026-11-12",
+      "doi": "",
+      "url": "https://github.com/vincentarelbundock/Rdatasets",
+      "inspected_scope": "README Licensing section: source code GPL-3; underlying datasets licensing unresolved by distributor",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "5d4c1b0c9725fbe2ff224313ff49a39bb907f915a8c9d795faec10ab849fc48d"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:NEG2010",
+    "node_id": "causal-atlas",
+    "original_id": "NEG2010",
+    "type": "source",
+    "status": "active",
+    "title": "Negative Controls: A Tool for Detecting Confounding and Bias in Observational Studies",
+    "content": {
+      "text": "Negative Controls: A Tool for Detecting Confounding and Bias in Observational Studies. Marc Lipsitch; Eric Tchetgen Tchetgen; Ted Cohen; Epidemiology 21(3), 2010.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "neg2010"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "selected_html_portions_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "selected_html_portions_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:NEG2010",
+          "locator": "Abstract and exposure/outcome negative controls distinction in accessible HTML",
+          "inspected_scope": "Abstract and exposure/outcome negative controls distinction in accessible HTML",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Marc Lipsitch; Eric Tchetgen Tchetgen; Ted Cohen",
+      "publication_or_version": "Epidemiology 21(3), 2010",
+      "doi": "10.1097/EDE.0b013e3181d61eeb",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3053408/",
+      "inspected_scope": "Abstract and exposure/outcome negative controls distinction in accessible HTML",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "c34efd2064244377a116d4bc2d102e9e37e0683a3090a129cf3548933e5f2d49"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source:BMJ2022",
+    "node_id": "causal-atlas",
+    "original_id": "BMJ2022",
+    "type": "source",
+    "status": "active",
+    "title": "Target Trial Emulation: Applying Principles of Randomised Trials to Observational Studies",
+    "content": {
+      "text": "Target Trial Emulation: Applying Principles of Randomised Trials to Observational Studies. Hernán et al. (BMJ review); BMJ 378, 2022.",
+      "domain": "causal-methods",
+      "tags": [
+        "source",
+        "bmj2022"
+      ],
+      "equation": "",
+      "assumptions": [],
+      "applicability": [
+        "The inspected portion alone; confirm the current full publication when making stronger claims."
+      ],
+      "limitations": [
+        "selected_full_html_portions_checked",
+        "Independent scientific review and experimental/empirical replication are not asserted."
+      ],
+      "units": [],
+      "uncertainty": []
+    },
+    "evidence": {
+      "origin": "bibliographic_record",
+      "review_status": "selected_full_html_portions_checked",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BMJ2022",
+          "locator": "Introduction; target-trial protocol components, baseline eligibility and follow-up excerpts",
+          "inspected_scope": "Introduction; target-trial protocol components, baseline eligibility and follow-up excerpts",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent full-source review."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [],
+    "rights": {
+      "status": "local_reference",
+      "note": "Bibliographic metadata and original short summaries only. No third-party full text mirrored."
+    },
+    "provenance": {
+      "authors": "Hernán et al. (BMJ review)",
+      "publication_or_version": "BMJ 378, 2022",
+      "doi": "10.1136/bmj-2022-071108",
+      "url": "https://www.bmj.com/content/378/bmj-2022-071108",
+      "inspected_scope": "Introduction; target-trial protocol components, baseline eligibility and follow-up excerpts",
+      "checked_at": "2026-11-12",
+      "source_bytes_archived": false,
+      "source_sha256": null,
+      "edition_added": "1.0.0"
+    },
+    "extensions": {},
+    "revision": "8f2f369fc075ef491df26bbc45cbe926a026273a1a21f9de30822135e4bc9dc8"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:sequential-exchangeability",
+    "node_id": "causal-atlas",
+    "original_id": "sequential-exchangeability",
+    "type": "concept",
+    "title": "Sequential exchangeability at each decision",
+    "status": "active",
+    "content": {
+      "text": "For a sustained treatment strategy, assignment at each decision must be exchangeable conditional on the measured history used by the identification formula.",
+      "domain": "causal-methods",
+      "tags": [
+        "longitudinal",
+        "exchangeability"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Sufficient measured history and correct time order"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Neither the actual assignment process nor hidden factors are audited by the finite model"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HR2016",
+          "locator": "Postbaseline treatment and confounding discussion",
+          "inspected_scope": "Postbaseline treatment and confounding discussion",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HR2016",
+        "revision": "ca3a6b84a4bfa177c2f63b53f6f9e5b7979bda5e287969cfa03458c576d65caf"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "f7d9c030977687cb16fae53ca567545f304a5d64d2f8b886eea56184fd23ec1c"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:target-trial-protocol",
+    "node_id": "causal-atlas",
+    "original_id": "target-trial-protocol",
+    "type": "concept",
+    "title": "Target-trial protocol before observation",
+    "status": "active",
+    "content": {
+      "text": "Eligibility, strategies, assignment, follow-up, outcomes, causal contrasts and analysis plan must be defined before selecting observational comparison records.",
+      "domain": "causal-methods",
+      "tags": [
+        "target-trial",
+        "design"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Aligned time zero and feasible strategies"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "An articulated protocol does not ensure exchangeability"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HR2016",
+          "locator": "Target-trial components paragraph",
+          "inspected_scope": "Target-trial components paragraph",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HR2016",
+        "revision": "ca3a6b84a4bfa177c2f63b53f6f9e5b7979bda5e287969cfa03458c576d65caf"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "9525397f2a3fcac3779a0d36bcbd438148c99f911737776b6d68bb54fb33109b"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:time-zero-alignment",
+    "node_id": "causal-atlas",
+    "original_id": "time-zero-alignment",
+    "type": "concept",
+    "title": "Time-zero alignment limits selection bias",
+    "status": "active",
+    "content": {
+      "text": "The start of eligibility, strategy assignment and follow-up must align; selecting treated survivors or completers can induce bias.",
+      "domain": "causal-methods",
+      "tags": [
+        "time-zero",
+        "selection"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Baseline factors known at assignment"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Immortal-time and survivor selection require explicit design review"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BMJ2022",
+          "locator": "Baseline eligibility and follow-up paragraphs",
+          "inspected_scope": "Baseline eligibility and follow-up paragraphs",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:BMJ2022",
+        "revision": "8f2f369fc075ef491df26bbc45cbe926a026273a1a21f9de30822135e4bc9dc8"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "77327dffa6067b4cff004867e672d27dc15443588b39ee01d64fdc3d2954a190"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:longitudinal-gformula",
+    "node_id": "causal-atlas",
+    "original_id": "longitudinal-gformula",
+    "type": "equation",
+    "title": "Two-decision g-formula risk",
+    "status": "active",
+    "content": {
+      "text": "A specified transition model and outcome model can be marginalized over an intermediate state to obtain a strategy risk.",
+      "domain": "causal-methods",
+      "tags": [
+        "longitudinal",
+        "gformula"
+      ],
+      "equation": "R(a0,a1)=sum_l0 p(l0) sum_l1 p(l1|l0,a0) E[Y|l0,a0,l1,a1]",
+      "assumptions": [
+        "Sequential exchangeability",
+        "Positivity for all compared histories",
+        "Consistency and correct conditional models"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "The bundled tool is exact finite enumeration of a stipulated model, not an observational fitted estimator"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Part III broad topic description",
+          "inspected_scope": "Part III broad topic description",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "5ace5bcbc3645fdbc8243b9f05379d10a7785a257024cc2e794457cceba37c66"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:treatment-confounder-feedback",
+    "node_id": "causal-atlas",
+    "original_id": "treatment-confounder-feedback",
+    "type": "concept",
+    "title": "Treatment-confounder feedback",
+    "status": "active",
+    "content": {
+      "text": "A variable affected by earlier treatment can be a confounder of later treatment and outcome, making naïve post-treatment conditioning problematic.",
+      "domain": "causal-methods",
+      "tags": [
+        "feedback",
+        "confounding"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Temporally ordered measured histories"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Marginal structural modeling is not equivalent to conditioning on all post-treatment variables"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Part III treatment-confounder feedback overview",
+          "inspected_scope": "Part III treatment-confounder feedback overview",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "037edb76d96890fcf6a971fe871aa70ade8294d0ef1dab6104c3b7d742105fa9"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:longitudinal-positivity",
+    "node_id": "causal-atlas",
+    "original_id": "longitudinal-positivity",
+    "type": "concept",
+    "title": "Positivity must hold for supported histories",
+    "status": "active",
+    "content": {
+      "text": "Each intervention strategy requires adequate probability/support at every relevant measured history.",
+      "domain": "causal-methods",
+      "tags": [
+        "longitudinal",
+        "positivity"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Defined histories and strategies"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Empty or rare histories cannot be repaired by deterministic summation alone"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HR2016",
+          "locator": "Postbaseline adherence and time-varying treatment overview",
+          "inspected_scope": "Postbaseline adherence and time-varying treatment overview",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HR2016",
+        "revision": "ca3a6b84a4bfa177c2f63b53f6f9e5b7979bda5e287969cfa03458c576d65caf"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "8ee3dd4b6d453b0cdb55ad28213df42f56f9fcb93eb4650d8f754fbd7a2677b3"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:msm-history-weights",
+    "node_id": "causal-atlas",
+    "original_id": "msm-history-weights",
+    "type": "concept",
+    "title": "Marginal structural model weighting limits",
+    "status": "active",
+    "content": {
+      "text": "Inverse probability weighting for sustained treatment requires conditional probabilities for histories and robust handling of large weights.",
+      "domain": "causal-methods",
+      "tags": [
+        "longitudinal",
+        "ipw"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Appropriate treatment/censoring model and support"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No full history-weighted MSM estimator or sampling inference is bundled"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Author overview: causal inference from complex longitudinal data",
+          "inspected_scope": "Author overview: causal inference from complex longitudinal data",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "3476c45f2373b2413dc93449fefc85c85efbfc7da69a570f5975c8244cec0ee8"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:staggered-cohort-time",
+    "node_id": "causal-atlas",
+    "original_id": "staggered-cohort-time",
+    "type": "equation",
+    "title": "Group-time staggered DiD contrast",
+    "status": "active",
+    "content": {
+      "text": "Compare cohort changes to eligible untreated comparison changes, recording cohort, period, baseline and comparison groups.",
+      "domain": "causal-methods",
+      "tags": [
+        "staggered",
+        "did"
+      ],
+      "equation": "D(g,t)=(Y_g,t-Y_g,g-1)-(Y_C,t-Y_C,g-1)",
+      "assumptions": [
+        "No anticipation and conditional counterfactual parallel trends for causal interpretation"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Local tool computes mean changes only, not the original complete estimator or its confidence bands"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:CS2021",
+          "locator": "Publisher abstract, varied treatment timing",
+          "inspected_scope": "Publisher abstract, varied treatment timing",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:CS2021",
+        "revision": "98b3fc1f68d5690a3f13a6e8cd7aa4020fca26e7e392720e14f3027ed6c2e472"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "aa8e18ed464e0aee205a21ab5633b53202d81bb3407c9e8198149a5e5801f932"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:never-versus-notyet",
+    "node_id": "causal-atlas",
+    "original_id": "never-versus-notyet",
+    "type": "concept",
+    "title": "Never-treated and not-yet-treated comparisons differ",
+    "status": "active",
+    "content": {
+      "text": "Controls must be untreated at the comparison date under the assumed design; already treated cohorts are not interchangeable with untreated controls.",
+      "domain": "causal-methods",
+      "tags": [
+        "not-yet-treated"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Validly defined first-treatment dates"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Never-treated status can change the population to which the comparison applies"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:DIDR",
+          "locator": "control_group documentation",
+          "inspected_scope": "control_group documentation",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:DIDR",
+        "revision": "203951931a7601ee7daaebc8e6fc6738ac4c198f6579c146731aa862487906fd"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "7f3d36fd74baa5b40c39618cd297984c915de41b0c355c66d24e21aa4dddba1c"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:staggered-heterogeneity",
+    "node_id": "causal-atlas",
+    "original_id": "staggered-heterogeneity",
+    "type": "concept",
+    "title": "Heterogeneity complicates pooled DiD coefficients",
+    "status": "active",
+    "content": {
+      "text": "Different treatment timing and dynamic effects motivate cohort-time targets instead of automatically interpreting a pooled coefficient as an average causal effect.",
+      "domain": "causal-methods",
+      "tags": [
+        "heterogeneous",
+        "did"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Declared aggregation target and comparison groups"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No complete heterogeneity-robust inference implemented"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:CS2021",
+          "locator": "Publisher abstract",
+          "inspected_scope": "Publisher abstract",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:CS2021",
+        "revision": "98b3fc1f68d5690a3f13a6e8cd7aa4020fca26e7e392720e14f3027ed6c2e472"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "2cf69047653961aa086d0a640194f01aee8bf27518f646dfacfd2ec2756903b3"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:staggered-pretrend-warning",
+    "node_id": "causal-atlas",
+    "original_id": "staggered-pretrend-warning",
+    "type": "concept",
+    "title": "Preperiod similarity does not prove parallel trends",
+    "status": "active",
+    "content": {
+      "text": "A pretrend comparison may detect some violations, but it does not establish the unobserved post-treatment counterfactual trends.",
+      "domain": "causal-methods",
+      "tags": [
+        "pretrends"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Appropriate preperiod measurements"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No automatic pretrend test is implemented"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:CS2021",
+          "locator": "Publisher abstract (parallel trends is an assumption)",
+          "inspected_scope": "Publisher abstract (parallel trends is an assumption)",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:CS2021",
+        "revision": "98b3fc1f68d5690a3f13a6e8cd7aa4020fca26e7e392720e14f3027ed6c2e472"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "4255bec4078491c7d30ae0197b00f0e51af0369870be127d23a56aceb18e5b6f"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:interventional-direct",
+    "node_id": "causal-atlas",
+    "original_id": "interventional-direct",
+    "type": "equation",
+    "title": "Stochastic-interventional direct component",
+    "status": "active",
+    "content": {
+      "text": "Compare exposure levels while holding the mediator distribution at a declared reference distribution.",
+      "domain": "causal-methods",
+      "tags": [
+        "mediation"
+      ],
+      "equation": "IDE=R(1,q0)-R(0,q0)",
+      "assumptions": [
+        "Mediator intervention distribution and outcome response functions defined"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Not a natural direct effect; no post-exposure mediator-outcome confounders in the tool"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:MED2020",
+          "locator": "Interventional direct effect definition section",
+          "inspected_scope": "Interventional direct effect definition section",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:MED2020",
+        "revision": "8eb458fa1f3c07e8201dc79df39e5c76ee776a871e6969eaa221b636b0cbc4ed"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "e41f42ce72f58d3f2599b596693bf55d49abd61477542ae3967e039e74640dc9"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:interventional-indirect",
+    "node_id": "causal-atlas",
+    "original_id": "interventional-indirect",
+    "type": "equation",
+    "title": "Stochastic-interventional indirect component",
+    "status": "active",
+    "content": {
+      "text": "Compare mediator distributions while holding exposure at a declared level.",
+      "domain": "causal-methods",
+      "tags": [
+        "mediation"
+      ],
+      "equation": "IIE=R(1,q1)-R(1,q0)",
+      "assumptions": [
+        "Mediator interventions meaningful under declared model"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Not an individual natural indirect effect or proof of mechanisms"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:MED2020",
+          "locator": "Interventional indirect effect definition section",
+          "inspected_scope": "Interventional indirect effect definition section",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:MED2020",
+        "revision": "8eb458fa1f3c07e8201dc79df39e5c76ee776a871e6969eaa221b636b0cbc4ed"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "6ee3dba3aba44c154164e8434a1ba075dee3fa4e4e87a44d0d7ff902cf948d51"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:mediation-time-order",
+    "node_id": "causal-atlas",
+    "original_id": "mediation-time-order",
+    "type": "concept",
+    "title": "Mediator and outcome timing",
+    "status": "active",
+    "content": {
+      "text": "Mediator-outcome order and exposure-induced confounding must be considered before reading mediation coefficients as paths.",
+      "domain": "causal-methods",
+      "tags": [
+        "mediation",
+        "timing"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Measured mediator timing and confounders"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Simple two-variable model does not identify effects with arbitrary intermediate confounding"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:MED2020",
+          "locator": "Mediation interpretation and assumptions discussion",
+          "inspected_scope": "Mediation interpretation and assumptions discussion",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:MED2020",
+        "revision": "8eb458fa1f3c07e8201dc79df39e5c76ee776a871e6969eaa221b636b0cbc4ed"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "6d7dd3feafbf5ca045588812b996bd0ced8485897f05207c3aebf2c0efb31f3e"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:natural-mediation-warning",
+    "node_id": "causal-atlas",
+    "original_id": "natural-mediation-warning",
+    "type": "concept",
+    "title": "Natural and interventional effects differ",
+    "status": "active",
+    "content": {
+      "text": "Natural effects and stochastic-interventional effects are distinct target definitions, with distinct identification assumptions.",
+      "domain": "causal-methods",
+      "tags": [
+        "natural",
+        "effects"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Target effect definition selected in advance"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "A formula identity does not establish cross-world independence"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:MED2020",
+          "locator": "Interventional versus natural effects explanation",
+          "inspected_scope": "Interventional versus natural effects explanation",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:MED2020",
+        "revision": "8eb458fa1f3c07e8201dc79df39e5c76ee776a871e6969eaa221b636b0cbc4ed"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "70ace504bc2391aef178739cf47713abd70b3016b6d9e4c2b84b79ddf75b7bb8"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:interference-violates-sutva",
+    "node_id": "causal-atlas",
+    "original_id": "interference-violates-sutva",
+    "type": "concept",
+    "title": "Interference extends potential outcomes to joint assignments",
+    "status": "active",
+    "content": {
+      "text": "A unit outcome can depend on assignments to other units, so a potential outcome indexed by own treatment alone may be insufficient.",
+      "domain": "causal-methods",
+      "tags": [
+        "interference"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Declared interference map and unit of assignment"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Two-person local model does not validate real network effects"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HH2008",
+          "locator": "Abstract defining interference",
+          "inspected_scope": "Abstract defining interference",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HH2008",
+        "revision": "2526894bdb0730d7836cd8b39f868ef1da03043d837b07e2897732270d0fc542"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "fed9a1c8e524ac57efebaaf775c2241b42499ae5bf80c78feaad6c829b0317a3"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:partial-interference",
+    "node_id": "causal-atlas",
+    "original_id": "partial-interference",
+    "type": "concept",
+    "title": "Partial interference is a substantive restriction",
+    "status": "active",
+    "content": {
+      "text": "An analysis may permit spillovers within declared clusters while assuming none between them.",
+      "domain": "causal-methods",
+      "tags": [
+        "partial",
+        "interference"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Clusters and network boundaries credible"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Shared resources can violate cluster independence"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HH2008",
+          "locator": "Article overview and partial-interference framework",
+          "inspected_scope": "Article overview and partial-interference framework",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HH2008",
+        "revision": "2526894bdb0730d7836cd8b39f868ef1da03043d837b07e2897732270d0fc542"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "97d6a4eb51e8e2831cf3c7d31fe570c1c90ae1f8d1c8e2325a9974dccf4284c4"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:direct-vs-spillover",
+    "node_id": "causal-atlas",
+    "original_id": "direct-vs-spillover",
+    "type": "equation",
+    "title": "Direct effect distinct from spillover",
+    "status": "active",
+    "content": {
+      "text": "For a two-person cluster, own-treatment and neighbor-treatment contrasts target different interventions.",
+      "domain": "causal-methods",
+      "tags": [
+        "spillover"
+      ],
+      "equation": "Y0(1,0)-Y0(0,0) vs Y0(0,1)-Y0(0,0)",
+      "assumptions": [
+        "Complete joint assignment response map"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Tool does not estimate missing potential outcomes from actual data"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HH2008",
+          "locator": "Direct and indirect effects overview",
+          "inspected_scope": "Direct and indirect effects overview",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HH2008",
+        "revision": "2526894bdb0730d7836cd8b39f868ef1da03043d837b07e2897732270d0fc542"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "33529f26e11740824ccee17559eb88c497ab4366fbbd6038e4afde2853e239fb"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:transport-by-standardization",
+    "node_id": "causal-atlas",
+    "original_id": "transport-by-standardization",
+    "type": "equation",
+    "title": "Stratum-standardized target effect",
+    "status": "active",
+    "content": {
+      "text": "Reweight source conditional causal effects using target population covariate distribution when effects are transportable within strata.",
+      "domain": "causal-methods",
+      "tags": [
+        "transportability"
+      ],
+      "equation": "ATE_target=sum_z p_target(z) (mu1,src(z)-mu0,src(z))",
+      "assumptions": [
+        "Source response functions causal",
+        "Target conditional invariance",
+        "Source support for target strata"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Stratum reweighting is not a general graphical transportability algorithm"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BP2012",
+          "locator": "Abstract defining transportability of causal information",
+          "inspected_scope": "Abstract defining transportability of causal information",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:BP2012",
+        "revision": "9aa2daaceda71bd39292353ec2678ec46aad8a2d64bb9415f05406fbbbc8388f"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "98503709fb8564cf07fae596e6ba4656009e1ee2a872ee6e939529b0c164a433"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:transport-support",
+    "node_id": "causal-atlas",
+    "original_id": "transport-support",
+    "type": "concept",
+    "title": "Missing source support blocks target prediction",
+    "status": "active",
+    "content": {
+      "text": "If a target stratum has positive mass but no supported source outcomes, its causal response cannot be inferred without additional assumptions.",
+      "domain": "causal-methods",
+      "tags": [
+        "transport",
+        "support"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Comparable effect modifiers"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No data-driven extrapolation in the local tool"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BP2013",
+          "locator": "Abstract on multiple heterogeneous domains",
+          "inspected_scope": "Abstract on multiple heterogeneous domains",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:BP2013",
+        "revision": "11d09343f79df847a81763a51b94a38be56a7464970e019eed0b3ca73c567fc8"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "9ba3e0472fe67b60dce987c6168ddc43077ddda8515c7f3ef543c44f61be912c"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:external-validity-versus-causal",
+    "node_id": "causal-atlas",
+    "original_id": "external-validity-versus-causal",
+    "type": "concept",
+    "title": "Internal and external validity are separate",
+    "status": "active",
+    "content": {
+      "text": "An effect identified in the source population is not necessarily the effect in a differently constituted target population.",
+      "domain": "causal-methods",
+      "tags": [
+        "external",
+        "validity"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Selection mechanism and target defined"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No assumption discovery by code"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:BP2012",
+          "locator": "Publisher abstract",
+          "inspected_scope": "Publisher abstract",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:BP2012",
+        "revision": "9aa2daaceda71bd39292353ec2678ec46aad8a2d64bb9415f05406fbbbc8388f"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "cd09db98b77ff5076b8eb84f5ad71267ec15cb786d14dba08f2a7b9817e322ad"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:independent-binomial-wald",
+    "node_id": "causal-atlas",
+    "original_id": "independent-binomial-wald",
+    "type": "equation",
+    "title": "Approximate independent-binomial risk difference uncertainty",
+    "status": "active",
+    "content": {
+      "text": "Large-sample normal standard error for a descriptive risk difference uses independent binomial sampling assumptions.",
+      "domain": "causal-methods",
+      "tags": [
+        "standard",
+        "error"
+      ],
+      "equation": "SE=sqrt(p1(1-p1)/n1+p0(1-p0)/n0)",
+      "assumptions": [
+        "Independent observations and meaningful large-sample approximation"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Does not address clustering, pairing, small samples or causal identification"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Book overview including random variability (method arithmetic is original)",
+          "inspected_scope": "Book overview including random variability (method arithmetic is original)",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "8c2e72d059e5d985b199cc6b1a1fecb99d4f99483ad69fd31f4dc28243c17140"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:uncertainty-not-identification",
+    "node_id": "causal-atlas",
+    "original_id": "uncertainty-not-identification",
+    "type": "concept",
+    "title": "A confidence interval does not establish causation",
+    "status": "active",
+    "content": {
+      "text": "Estimation precision is not evidence that the causal target is identified; confounding and selection remain separate questions.",
+      "domain": "causal-methods",
+      "tags": [
+        "identification",
+        "uncertainty"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Declared sampling model"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No automatic causal confidence statement from a descriptive interval"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Parts I-II scope in author overview",
+          "inspected_scope": "Parts I-II scope in author overview",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "ed68005cd8bed691ad4d5524ed15fdeb30ee61781d2d11236f751c68b4cbe541"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:dataset-rights-unresolved",
+    "node_id": "causal-atlas",
+    "original_id": "dataset-rights-unresolved",
+    "type": "concept",
+    "title": "Rdatasets distributor states data rights ambiguity",
+    "status": "active",
+    "content": {
+      "text": "The redistribution permissions of underlying Rdatasets numerical datasets were not fully established by its maintainer; this Atlas retains attribution and a normalized count summary, not the raw upstream file.",
+      "domain": "causal-methods",
+      "tags": [
+        "data",
+        "rights"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Research-use attribution and careful rights decisions"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No blanket claim that all third-party dataset content is licensed MIT"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:RDL",
+          "locator": "README License section",
+          "inspected_scope": "README License section",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:RDL",
+        "revision": "5d4c1b0c9725fbe2ff224313ff49a39bb907f915a8c9d795faec10ab849fc48d"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "56f6a90a66134d93936cabc29a9f07163e6bad9eaf11f77f9b0a0bd902b3d2d6"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:negative-control-types",
+    "node_id": "causal-atlas",
+    "original_id": "negative-control-types",
+    "type": "concept",
+    "title": "Negative-control outcomes and exposures",
+    "status": "active",
+    "content": {
+      "text": "A well-justified negative control can detect some sources of spurious association, including confounding or measurement bias.",
+      "domain": "causal-methods",
+      "tags": [
+        "negative",
+        "control"
+      ],
+      "equation": "",
+      "assumptions": [
+        "No genuine causal link for proposed control under study mechanism"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "A null control does not prove all biases absent"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:NC2010",
+          "locator": "Abstract and negative control types",
+          "inspected_scope": "Abstract and negative control types",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:NC2010",
+        "revision": "97b7abcd1ce1c5e9acdb40fa9c48d36b0ff52ab0fdcf4d14ce3ea648883b67d4"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "9aee15e77ccb73ca731ed95c9bd80fe883ad60fc52db1cf356ba913607e1ca7b"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:negative-control-limit",
+    "node_id": "causal-atlas",
+    "original_id": "negative-control-limit",
+    "type": "concept",
+    "title": "Null negative control is not an identification certificate",
+    "status": "active",
+    "content": {
+      "text": "A negative-control analysis is sensitive only to the biases and pathways its design is capable of revealing.",
+      "domain": "causal-methods",
+      "tags": [
+        "falsification"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Control bias pathways overlap with study"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Unmeasured bias may remain despite a null association"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:NC2010",
+          "locator": "Abstract and limitations discussion",
+          "inspected_scope": "Abstract and limitations discussion",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:NC2010",
+        "revision": "97b7abcd1ce1c5e9acdb40fa9c48d36b0ff52ab0fdcf4d14ce3ea648883b67d4"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "8a571e83ddd43de57bc9e6f2071a804694296fbcbaf2963b82774ad76e4c4936"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:measurement-error-can-differ",
+    "node_id": "causal-atlas",
+    "original_id": "measurement-error-can-differ",
+    "type": "concept",
+    "title": "Differential measurement can change apparent associations",
+    "status": "active",
+    "content": {
+      "text": "Exposure and outcome measurement errors can depend on status, time and causes, and correction requires their actual structure.",
+      "domain": "causal-methods",
+      "tags": [
+        "measurement",
+        "bias"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Recorded values not assumed identical to latent states"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No measurement-error estimator is implemented here"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Book overview includes measurement bias topic",
+          "inspected_scope": "Book overview includes measurement bias topic",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "cb39f28cb7181d6b5503bbcf6cce1fce3a015179e80cdfb90e3fb4683f116ffc"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:missing-binary-outcomes",
+    "node_id": "causal-atlas",
+    "original_id": "missing-binary-outcomes",
+    "type": "equation",
+    "title": "Unknown binary outcomes produce bounds, not zeros",
+    "status": "active",
+    "content": {
+      "text": "Within completely counted groups, missing binary values bound risk between successes/total and (successes+missing)/total.",
+      "domain": "causal-methods",
+      "tags": [
+        "missing",
+        "data"
+      ],
+      "equation": "s/n <= risk <= (s+n-o)/n",
+      "assumptions": [
+        "Binary outcome and known denominator"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Bounds do not account for sampling variation or treatment confounding"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Original arithmetic derived; book includes selection/censoring scope",
+          "inspected_scope": "Original arithmetic derived; book includes selection/censoring scope",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "c73fb0785917b760bac1f14af3bf0c72aaacdb57abfb9b1e72ca2192a654810c"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:observed-selection-collider",
+    "node_id": "causal-atlas",
+    "original_id": "observed-selection-collider",
+    "type": "concept",
+    "title": "Selection on post-treatment survival may bias comparison",
+    "status": "active",
+    "content": {
+      "text": "Restricting to units selected by post-treatment outcomes or common effects can create a noncausal association.",
+      "domain": "causal-methods",
+      "tags": [
+        "collider",
+        "selection"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Time ordering and selection mechanism considered"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "No selection-bias correction from the graph alone"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HR2016",
+          "locator": "Target trial postbaseline selection discussion",
+          "inspected_scope": "Target trial postbaseline selection discussion",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HR2016",
+        "revision": "ca3a6b84a4bfa177c2f63b53f6f9e5b7979bda5e287969cfa03458c576d65caf"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "7a5bbc420da4acf46766aa9ad882b48af84da0b8132bbc3b4156afd47089a30a"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:source-closure-in-context",
+    "node_id": "causal-atlas",
+    "original_id": "source-closure-in-context",
+    "type": "method",
+    "title": "Qualifiers travel with exact source-linked records",
+    "status": "active",
+    "content": {
+      "text": "The common context assembler preserves qualifying evidence and assumptions when selecting records, or explicitly excludes the full unit on budget exhaustion.",
+      "domain": "causal-methods",
+      "tags": [
+        "evidence",
+        "governance"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Source record revisions bound to output"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Evidence preservation does not independently validate scientific truth"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "original_arithmetic_with_source_context",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:WHATIF",
+          "locator": "Original Atlas contract, not an assertion from the external book",
+          "inspected_scope": "Original Atlas contract, not an assertion from the external book",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": true,
+      "derived_from": "causal_atlas/advanced.py",
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "7ae24e50136960204d16e3b12d26eaaa1f2c2f45433e26a5bed90e2d3ffc7b01"
+  },
+  {
+    "schema": "atlas.record/1",
+    "record_id": "causal-atlas:method-choice-not-magic",
+    "node_id": "causal-atlas",
+    "original_id": "method-choice-not-magic",
+    "type": "concept",
+    "title": "Method selection requires identification and design",
+    "status": "active",
+    "content": {
+      "text": "A more complicated estimator cannot repair missing comparison data or justify a causal estimand when underlying intervention/assumptions are unclear.",
+      "domain": "causal-methods",
+      "tags": [
+        "method",
+        "selection"
+      ],
+      "equation": "",
+      "assumptions": [
+        "Study design and target written down"
+      ],
+      "applicability": [
+        "Only the declared interventions, source scope and mathematical model."
+      ],
+      "limitations": [
+        "Algorithm scores and fitted models are not causal evidence"
+      ],
+      "units": [],
+      "uncertainty": [
+        "No independence, sampling validity or causal identification is established by a code result alone."
+      ]
+    },
+    "evidence": {
+      "origin": "editorial_reference",
+      "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+      "locators": [
+        {
+          "source_id": "causal-atlas:source:HR2016",
+          "locator": "Target trial framework overview",
+          "inspected_scope": "Target trial framework overview",
+          "checked_at": "2026-11-12",
+          "checker": "assistant"
+        }
+      ],
+      "gaps": [
+        "No independent scientific reviewer or complete source passage audit."
+      ],
+      "upstream_labels": {}
+    },
+    "sources": [
+      {
+        "record_id": "causal-atlas:source:HR2016",
+        "revision": "ca3a6b84a4bfa177c2f63b53f6f9e5b7979bda5e287969cfa03458c576d65caf"
+      }
+    ],
+    "rights": {
+      "status": "local_reference",
+      "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external."
+    },
+    "provenance": {
+      "author": "James Paul Jackson research program; AI-assisted drafting",
+      "edition_added": "1.0.0",
+      "created_at": "2026-11-12",
+      "local_derivation": false,
+      "derived_from": null,
+      "independent_review": false
+    },
+    "extensions": {},
+    "revision": "61626ee0707c016139cb674180fd0a35a9d42020ff3a8a264dd1da0925afa33d"
+  }
+]

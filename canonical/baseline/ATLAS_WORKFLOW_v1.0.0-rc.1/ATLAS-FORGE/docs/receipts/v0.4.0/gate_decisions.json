@@ -1,0 +1,75 @@
+{
+  "schema": "atlas.gate-decisions/1",
+  "gates": {
+    "G1": {
+      "status": "partial",
+      "evidence": [],
+      "remaining": [
+        "Declared eight topic families, exclusions, a frozen evaluation plan and reviewer-approved scope."
+      ]
+    },
+    "G2": {
+      "status": "partial",
+      "evidence": [],
+      "remaining": [
+        "Every release-critical claim has a checked primary locator or derivation; navigation excluded from release-critical set; independent review separately declared."
+      ]
+    },
+    "G3": {
+      "status": "partial",
+      "evidence": [],
+      "remaining": [
+        "Declared model tests and independent numerical oracle cases pass; unit/assumption errors are rejected."
+      ]
+    },
+    "G4": {
+      "status": "passed",
+      "subject_sha256": "d4737fddac5a6fdf1deb17967d4650225ef96918a4295e7a3e78fc8854ee74a9",
+      "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+      "reviewed_by": "assistant software-regression review; not independent scientific reviewer",
+      "reviewed_at": "2026-11-12",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G4.json",
+          "sha256": "e7b322b55a078c20f26bf0f53fb4106075adf1b8b33248ee783c5a367718a0e9"
+        }
+      ],
+      "remaining": []
+    },
+    "G5": {
+      "status": "passed",
+      "subject_sha256": "d4737fddac5a6fdf1deb17967d4650225ef96918a4295e7a3e78fc8854ee74a9",
+      "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+      "reviewed_by": "assistant software-regression review; not independent scientific reviewer",
+      "reviewed_at": "2026-11-12",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G5.json",
+          "sha256": "acec9e39bfb2bca82bc6b72b5cc7439bbf1502850d220e7ee24de33bcd0293ec"
+        }
+      ],
+      "remaining": []
+    },
+    "G6": {
+      "status": "blocked",
+      "evidence": [],
+      "remaining": [
+        "Pinned actual Bitwork returns exact Atlas records; a real consuming model uses the package; retained failures and traces. No mock route receipts."
+      ]
+    },
+    "G7": {
+      "status": "not_run",
+      "evidence": [],
+      "remaining": [
+        "Frozen independently authored test set; same-corpus same-budget BM25, semantic and Bitwork arms; retrieval and answer-quality scoring with uncertainty."
+      ]
+    },
+    "G8": {
+      "status": "partial",
+      "evidence": [],
+      "remaining": [
+        "Clean install/archive/manifest checks and supported Windows/Linux platform runs, no critical failures."
+      ]
+    }
+  }
+}

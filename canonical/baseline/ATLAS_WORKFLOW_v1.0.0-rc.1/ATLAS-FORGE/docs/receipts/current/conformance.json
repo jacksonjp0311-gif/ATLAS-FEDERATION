@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "records": 505,
+  "relations": 33,
+  "nodes": [
+    "cymatics-atlas",
+    "measurement-atlas",
+    "signal-atlas"
+  ]
+}

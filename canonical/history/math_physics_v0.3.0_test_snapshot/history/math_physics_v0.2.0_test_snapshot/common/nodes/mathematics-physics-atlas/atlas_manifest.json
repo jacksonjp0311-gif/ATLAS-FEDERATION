@@ -1,0 +1,64 @@
+{
+  "capabilities": [
+    "discover",
+    "search",
+    "fetch",
+    "neighbors",
+    "assemble_context",
+    "validate_context",
+    "changes_since"
+  ],
+  "collections": {
+    "claim": {
+      "path": "data/claims.jsonl",
+      "records": 44,
+      "sha256": "40d9ada8a872d0bcb859571ed60752ac44a5ef1b2375706aa7cadd71406f1159"
+    },
+    "concept": {
+      "path": "data/concepts.jsonl",
+      "records": 44,
+      "sha256": "a7f48ee80cb5457820eec99290c43ae8da6aa9e80186e1b006989caee391e0a1"
+    },
+    "dataset": {
+      "path": "data/datasets.jsonl",
+      "records": 2,
+      "sha256": "075ed50c2e87b9d3870ec525c9eb9d760ced722abbffba1f11834dfbec09418f"
+    },
+    "equation": {
+      "path": "data/equations.jsonl",
+      "records": 44,
+      "sha256": "97d9c13358404a3679020fb54190fe5d712207b4616a98abb36f328137685e45"
+    },
+    "method": {
+      "path": "data/methods.jsonl",
+      "records": 44,
+      "sha256": "88b1a22dd5daee40d0ecaff0dee8c291bfc1b683437fdef73c16bf171297db1c"
+    },
+    "relations": {
+      "path": "data/relations.jsonl",
+      "records": 184,
+      "sha256": "775e90aa6fd449c1569110455dff596be3ce8f0451b112e0ed372498c1446b71"
+    },
+    "review": {
+      "path": "data/reviews.jsonl",
+      "records": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source": {
+      "path": "data/sources.jsonl",
+      "records": 11,
+      "sha256": "38c38f7d05a7ec9d9f5958b6f6e1bd9b0184bc321888a17d30a4129593dd3663"
+    }
+  },
+  "contract_version": "1.0",
+  "corpus_revision": "800607110c100c95260b5cd467e2ad9e93d6c5659cd91ea529de032f415d50de",
+  "evidence_maturity": "44 original chapters, 28 constructed cases and bounded numerical oracles; no authenticated original publisher bytes, field experiments, or independent peer review",
+  "index_revision": "bm25-fields-1",
+  "node_id": "mathematics-physics-atlas",
+  "required_extensions": [],
+  "schema": "atlas.common/1",
+  "schema_conformance_does_not_validate_science": true,
+  "scope": "Human reconstruction of mathematics, linear algebra, calculus, probability, numerical methods, classical/quantum physics, metrology and AI mathematical foundations. No real hardware or operational control.",
+  "software_version": "0.2.0",
+  "title": "Mathematics & Fundamental Physics Atlas — Scientific and AI Reconstruction"
+}

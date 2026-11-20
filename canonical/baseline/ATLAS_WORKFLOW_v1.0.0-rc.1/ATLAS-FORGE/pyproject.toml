@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-forge-research"
+version = "1.0.0rc1"
+description = "Evidence-preserving reference Atlas starter toolkit"
+requires-python = ">=3.10"
+[project.scripts]
+atlas-forge = "atlas_forge.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+atlas_forge = ["resources/*.json", "resources/federation/*.json", "resources/federation/nodes/*/*/*.json", "resources/federation/nodes/*/*/*.md", "resources/federation/nodes/*/*/*.txt", "resources/federation/nodes/*/*/raw/*", "resources/portal.html", "resources/portal.css", "resources/portal.js", "resources/common_portal.*", "resources/hero.png", "resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

@@ -1,0 +1,17 @@
+{
+  "schema": "materials.source-capture/1",
+  "name": "Hahn1",
+  "publisher": "National Institute of Standards and Technology",
+  "original_study": "Thomas Hahn, Copper Thermal Expansion Study, 1979 (as described by NIST StRD)",
+  "case_url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd641.htm",
+  "data_url": "https://itl.nist.gov/div898/handbook/datasets/HAHN1.DAT",
+  "certified_url": "https://www.itl.nist.gov/div898/strd/nls/data/LINKS/v-hahn1.shtml",
+  "access": "assistant_read_web_text_2026-11-12",
+  "public_edition": {
+    "public_edition_status": "unavailable",
+    "reason_code": "nist_srd140_redistribution_grant_unresolved",
+    "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+    "scientific_revalidation": false
+  },
+  "original_capture_sha256": "9df837769ad9b4ba1f955823afee3c2330905b889be4a2b1cd805776bdb12247"
+}

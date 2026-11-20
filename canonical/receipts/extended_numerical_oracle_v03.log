@@ -1,0 +1,29 @@
+{
+  "schema": "atlas.control-oracle/1",
+  "result": "passed",
+  "counts": {
+    "zoh_a": 130,
+    "zoh_b": 130,
+    "zoh_trajectory": 5850,
+    "two_state_rho": 120,
+    "reachability_det": 120,
+    "observability_det": 120,
+    "lqr_P": 120,
+    "lqr_K": 120,
+    "kalman_mean": 120,
+    "kalman_var": 120,
+    "id_a": 120,
+    "id_b": 120,
+    "alias_fft_bin": 90
+  },
+  "total": 7280,
+  "errors": [],
+  "random_seed": 261112,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "synthetic_only": true,
+  "physical_system_identified": false,
+  "independent_scientific_review": false,
+  "no_real_actuation": true
+}
+

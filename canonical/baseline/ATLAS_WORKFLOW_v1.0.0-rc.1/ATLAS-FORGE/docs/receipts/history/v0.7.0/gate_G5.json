@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "kind": "context_integrity",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "0fc96f0301b8bbc85748000077bf53fb34cb000732dcb950948dd1bd33c7f5fe",
+  "observed_log": "docs/receipts/current/forge_unit.log",
+  "observed_log_sha256": "a708b5a548d965a0072004bd37723768bc5a20b16b67a9e39d0794ff15ee864e",
+  "review_scope": "Local authored software regressions only; not independent scientific review",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

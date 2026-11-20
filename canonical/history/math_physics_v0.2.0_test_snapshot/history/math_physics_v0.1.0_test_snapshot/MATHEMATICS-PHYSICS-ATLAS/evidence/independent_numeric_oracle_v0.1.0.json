@@ -1,0 +1,28 @@
+{
+  "schema": "atlas.math-physics-independent-oracle/1",
+  "result": "passed",
+  "comparisons": 10124,
+  "counts": {
+    "dot_numpy": 1000,
+    "matrix_numpy": 1000,
+    "polynomial_derivative_numpy": 1000,
+    "simpson_cubic_numpy": 1000,
+    "rk4_analytic": 1000,
+    "dft_numpy_complex_magnitude": 1000,
+    "bayes_numpy": 1000,
+    "softmax_numpy": 1000,
+    "gradient_descent_numpy": 1000,
+    "kinematics_numpy": 1000,
+    "uncertainty_covariance_numpy": 124
+  },
+  "seed": 20261115,
+  "max_absolute_difference": 9.062484096489243e-11,
+  "numpy": "2.3.5",
+  "original_material_data_imported": 0,
+  "real_physical_experiments": 0,
+  "independent_scientific_review": false,
+  "limitations": [
+    "NumPy and analytic arithmetic comparisons test finite math methods under authored inputs, not broad scientific validity",
+    "Multiple per-value comparisons are not independent laboratory experiments or AI performance measurements"
+  ]
+}

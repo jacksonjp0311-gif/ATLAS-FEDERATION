@@ -1,0 +1,112 @@
+[
+  {
+    "source_id": "causal-atlas:source:HRBOOK",
+    "source_url": "https://miguelhernan.org/whatifbook",
+    "inspection": "Book author page describing Parts I-III and downloadable materials; not entire book text",
+    "status": "author_overview_only",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:CS2021",
+    "source_url": "https://doi.org/10.1016/j.jeconom.2020.12.001",
+    "inspection": "Journal publisher abstract only",
+    "status": "publisher_abstract_only",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:DIDR",
+    "source_url": "https://search.r-project.org/CRAN/refmans/did/help/att_gt.html",
+    "inspection": "att_gt description, comparison policy and anticipation parameter documentation",
+    "status": "method_documentation_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:HH2008",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2600548/",
+    "inspection": "Abstract and open article overview of interference effects and partial interference",
+    "status": "selected_html_portions_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:MED2020",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8496983/",
+    "inspection": "Full HTML section defining interventional direct and indirect effects; not complete manuscript audit",
+    "status": "selected_html_effect_definitions_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:BP2012",
+    "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/8232",
+    "inspection": "Published abstract and metadata; graphical proof and full algorithm not reviewed",
+    "status": "publisher_abstract_only",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:BP2013",
+    "source_url": "https://proceedings.mlr.press/v31/bareinboim13a.html",
+    "inspection": "Conference publication abstract only",
+    "status": "publisher_abstract_only",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:UCBR",
+    "source_url": "https://cloud.r-project.org/doc/manuals/r-release/packages/datasets/refman/datasets.html",
+    "inspection": "UCBAdmissions description, format and count totals for six departments",
+    "status": "official_dataset_manual_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:RDL",
+    "source_url": "https://github.com/vincentarelbundock/Rdatasets",
+    "inspection": "README Licensing section: source code GPL-3; underlying datasets licensing unresolved by distributor",
+    "status": "repository_rights_notice_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:NEG2010",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3053408/",
+    "inspection": "Abstract and exposure/outcome negative controls distinction in accessible HTML",
+    "status": "selected_html_portions_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  },
+  {
+    "source_id": "causal-atlas:source:BMJ2022",
+    "source_url": "https://www.bmj.com/content/378/bmj-2022-071108",
+    "inspection": "Introduction; target-trial protocol components, baseline eligibility and follow-up excerpts",
+    "status": "selected_full_html_portions_checked",
+    "checked_at": "2026-11-12",
+    "full_paper_audited": false,
+    "independent_review": false,
+    "raw_document_mirrored": false
+  }
+]

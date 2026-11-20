@@ -1,0 +1,90 @@
+[
+  {
+    "source_id": "causal-atlas:source:AS2015",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4626409/",
+    "doi": "10.1002/sim.6607",
+    "portion": "§2.2 equations for unnormalized and normalized IPW; §4.1 balance diagnostics",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "CC BY-NC-ND notice on page; metadata, original brief summary and link only",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:CH2008",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2732954/",
+    "doi": "10.1093/aje/kwn164",
+    "portion": "Abstract; Positivity; Weight truncation as a means to tradeoff bias and variance",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "All rights reserved notice; no full text or third-party data copied",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:KURZ2022",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8793316/",
+    "doi": "10.1177/0272989X211027181",
+    "portion": "AIPW Estimator; correction note; Discussion and Conclusion",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "CC BY-NC notice; local original summary and derivation only; no article or data mirror",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:CORR2022",
+    "url": "https://journals.sagepub.com/doi/10.1177/0272989X221075672",
+    "doi": "10.1177/0272989X221075672",
+    "portion": "Correction paragraphs identifying the control-group augmentation term; author assurance is attributed, not independently established",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "CC BY-NC notice; bibliographic link and original brief notice only",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:TIME2016",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5124536/",
+    "doi": "10.1016/j.jclinepi.2016.04.014",
+    "portion": "§2 Emulating the target trial; §3.1 and §3.4 time-zero failures",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "Link and original bounded summary only; no source text mirrored",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:NC2010",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3053408/",
+    "doi": "10.1097/EDE.0b013e3181d61eeb",
+    "portion": "Abstract; Definitions of negative controls; Discussion paragraphs on detection and bias magnitude",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "Link and original bounded summary only",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:MI2009",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2714692/",
+    "doi": "10.1136/bmj.b2393",
+    "portion": "Consequences of missing data; Box 1; What is multiple imputation; Pitfalls",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "CC noncommercial notice; no publication/data mirror",
+    "full_text_mirrored": false,
+    "independent_review": false
+  },
+  {
+    "source_id": "causal-atlas:source:CS2020",
+    "url": "https://arxiv.org/html/1803.09015v4",
+    "doi": "10.1016/j.jeconom.2020.12.001",
+    "portion": "Introduction; §2.3 Assumptions 3–6; §2.4 Remark 3",
+    "date": "2026-11-12",
+    "access": "primary HTML portion read",
+    "rights": "Author-deposited version; link and original brief summary only; full paper not redistributed",
+    "full_text_mirrored": false,
+    "independent_review": false
+  }
+]

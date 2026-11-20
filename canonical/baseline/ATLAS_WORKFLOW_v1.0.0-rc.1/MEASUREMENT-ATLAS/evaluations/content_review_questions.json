@@ -1,0 +1,436 @@
+{
+  "schema": "measurement.content-review/1",
+  "edition": "0.5.0",
+  "evaluation_kind": "authored_review_rubric_not_run_on_ai",
+  "independently_held_out": false,
+  "cases": [
+    {
+      "id": "Q01",
+      "family": "definition",
+      "question": "What is missing from a record that only says plate length = 100?",
+      "reference_ids": [
+        "measurand-definition"
+      ],
+      "required_points": [
+        "Object, quantity, unit and relevant reference conditions."
+      ],
+      "prohibited_inferences": [
+        "Assume which specimen or temperature was intended."
+      ]
+    },
+    {
+      "id": "Q02",
+      "family": "definition",
+      "question": "A sensor changes the system while reading it. Is the indication automatically the desired quantity?",
+      "reference_ids": [
+        "measurement-intervention"
+      ],
+      "required_points": [
+        "Distinguish disturbed observation from intended measurand; justify correction model."
+      ],
+      "prohibited_inferences": [
+        "Treat any correction as automatically valid."
+      ]
+    },
+    {
+      "id": "Q03",
+      "family": "definition",
+      "question": "Can a small replicate standard deviation prove accuracy?",
+      "reference_ids": [
+        "accuracy-qualitative",
+        "precision-conditions"
+      ],
+      "required_points": [
+        "Precision under stated conditions does not establish absence of common bias."
+      ],
+      "prohibited_inferences": [
+        "Equate precision with accuracy."
+      ]
+    },
+    {
+      "id": "Q04",
+      "family": "units",
+      "question": "How do 25 mm with u=0.2 mm change when expressed in metres?",
+      "reference_ids": [
+        "quantity-value-unit"
+      ],
+      "required_points": [
+        "0.025 m and u=0.0002 m under exact conversion."
+      ],
+      "prohibited_inferences": [
+        "Convert the estimate but not its uncertainty."
+      ]
+    },
+    {
+      "id": "Q05",
+      "family": "units",
+      "question": "Does adding 273.15 apply to a 5 degree Celsius temperature change?",
+      "reference_ids": [
+        "celsius-temperature-interval"
+      ],
+      "required_points": [
+        "No. The interval is 5 K; the offset applies to scale values."
+      ],
+      "prohibited_inferences": [
+        "Return 278.15 K for the interval."
+      ]
+    },
+    {
+      "id": "Q06",
+      "family": "units",
+      "question": "Why cannot 10 Hz just be labeled 10 rad/s?",
+      "reference_ids": [
+        "angular-frequency-unit"
+      ],
+      "required_points": [
+        "Angular rate is 20*pi rad/s for 10 cycles per second."
+      ],
+      "prohibited_inferences": [
+        "Use equal numerical values."
+      ]
+    },
+    {
+      "id": "Q07",
+      "family": "repeat",
+      "question": "When is the usual standard error of a mean appropriate?",
+      "reference_ids": [
+        "type-a-mean"
+      ],
+      "required_points": [
+        "State independent observations and applicable stable-process assumptions."
+      ],
+      "prohibited_inferences": [
+        "Assume every time series is independent."
+      ]
+    },
+    {
+      "id": "Q08",
+      "family": "repeat",
+      "question": "Does collecting many readings remove a shared uncertain zero offset?",
+      "reference_ids": [
+        "shared-offset-average"
+      ],
+      "required_points": [
+        "Common offset variance remains in the specified model."
+      ],
+      "prohibited_inferences": [
+        "Divide every uncertainty term by sample count."
+      ]
+    },
+    {
+      "id": "Q09",
+      "family": "repeat",
+      "question": "Does a same-operator short-session study establish interlaboratory reproducibility?",
+      "reference_ids": [
+        "repeatability-conditions",
+        "reproducibility-conditions"
+      ],
+      "required_points": [
+        "No; name which conditions were held fixed and changed."
+      ],
+      "prohibited_inferences": [
+        "Claim interlaboratory evidence without such a study."
+      ]
+    },
+    {
+      "id": "Q10",
+      "family": "type-b",
+      "question": "A display step is 0.02 mm. What else is needed before using step/sqrt(12)?",
+      "reference_ids": [
+        "quantization-assumption"
+      ],
+      "required_points": [
+        "A justified rounding-to-nearest uniform-residual model."
+      ],
+      "prohibited_inferences": [
+        "Infer a distribution solely from display digits."
+      ]
+    },
+    {
+      "id": "Q11",
+      "family": "type-b",
+      "question": "A certificate gives an uncertainty number without k or interpretation. Should I divide by two?",
+      "reference_ids": [
+        "certificate-multiplier"
+      ],
+      "required_points": [
+        "Request or inspect the uncertainty interpretation and factor; do not invent k."
+      ],
+      "prohibited_inferences": [
+        "Always use k=2."
+      ]
+    },
+    {
+      "id": "Q12",
+      "family": "type-b",
+      "question": "Does a rectangular bound use the full width or half width in a/sqrt(3)?",
+      "reference_ids": [
+        "uniform-bounds"
+      ],
+      "required_points": [
+        "a is the half width under the specified symmetric model."
+      ],
+      "prohibited_inferences": [
+        "Use full width without conversion."
+      ]
+    },
+    {
+      "id": "Q13",
+      "family": "budget",
+      "question": "What covariance is needed for c^T Sigma c?",
+      "reference_ids": [
+        "linear-propagation",
+        "covariance"
+      ],
+      "required_points": [
+        "The complete justified covariance of the declared inputs with consistent units."
+      ],
+      "prohibited_inferences": [
+        "Treat all absent entries as established zero covariance."
+      ]
+    },
+    {
+      "id": "Q14",
+      "family": "budget",
+      "question": "Can first-order propagation return zero uncertainty when exact output dispersion is nonzero?",
+      "reference_ids": [
+        "linearization-counterexample"
+      ],
+      "required_points": [
+        "Yes for the supplied X=-1,0,1 and Y=X^2 counterexample."
+      ],
+      "prohibited_inferences": [
+        "Claim a zero derivative establishes no uncertainty."
+      ]
+    },
+    {
+      "id": "Q15",
+      "family": "budget",
+      "question": "Does a successful uncertainty calculation prove the physical measurement model?",
+      "reference_ids": [
+        "linear-propagation"
+      ],
+      "required_points": [
+        "No; arithmetic and model applicability are distinct."
+      ],
+      "prohibited_inferences": [
+        "Claim mathematical test success is laboratory validation."
+      ]
+    },
+    {
+      "id": "Q16",
+      "family": "calibration",
+      "question": "Is calibration the same as adjusting an instrument?",
+      "reference_ids": [
+        "calibration-not-adjustment"
+      ],
+      "required_points": [
+        "Distinguish calibration, adjustment and verification."
+      ],
+      "prohibited_inferences": [
+        "Assume a calibrated instrument was adjusted."
+      ]
+    },
+    {
+      "id": "Q17",
+      "family": "calibration",
+      "question": "For y=a+b*x, which inputs matter to inverse-calibration uncertainty?",
+      "reference_ids": [
+        "inverse-calibration-sensitivities"
+      ],
+      "required_points": [
+        "The indication, intercept, slope and their justified covariance; nonzero slope and applicability."
+      ],
+      "prohibited_inferences": [
+        "Ignore fitted coefficient uncertainty by default."
+      ]
+    },
+    {
+      "id": "Q18",
+      "family": "calibration",
+      "question": "Can an unbroken certificate link chain alone prove my measurement fit for purpose?",
+      "reference_ids": [
+        "traceability-network",
+        "fitness-for-purpose"
+      ],
+      "required_points": [
+        "No; actual reference linkage, contributions, applicability and required uncertainty still matter."
+      ],
+      "prohibited_inferences": [
+        "Treat graph connectivity as certification."
+      ]
+    },
+    {
+      "id": "Q19",
+      "family": "comparison",
+      "question": "Do two measurements agreeing under a chosen multiplier prove they are identical?",
+      "reference_ids": [
+        "compatibility-rule"
+      ],
+      "required_points": [
+        "No; compatibility is conditional on the specified measurand and rule."
+      ],
+      "prohibited_inferences": [
+        "Claim proven equality."
+      ]
+    },
+    {
+      "id": "Q20",
+      "family": "comparison",
+      "question": "Can the independence-form Welch–Satterthwaite expression be used unchanged for arbitrary correlated inputs?",
+      "reference_ids": [
+        "effective-degrees-of-freedom"
+      ],
+      "required_points": [
+        "No; the cited independence conditions need justification."
+      ],
+      "prohibited_inferences": [
+        "Silently ignore correlation."
+      ]
+    },
+    {
+      "id": "Q21",
+      "family": "comparison",
+      "question": "Is k=2 always a 95 percent interval?",
+      "reference_ids": [
+        "coverage-degrees-of-freedom",
+        "coverage-conditions"
+      ],
+      "required_points": [
+        "No; distribution and uncertainty-estimate reliability affect interpretation."
+      ],
+      "prohibited_inferences": [
+        "Assign probability from the multiplier alone."
+      ]
+    },
+    {
+      "id": "Q22",
+      "family": "reporting",
+      "question": "What should accompany an expanded-uncertainty result?",
+      "reference_ids": [
+        "uncertainty-reporting"
+      ],
+      "required_points": [
+        "Unit, factor, evaluation basis, components and justified probability interpretation if supplied; historical source scope."
+      ],
+      "prohibited_inferences": [
+        "Call this archived guidance a current accreditation certificate."
+      ]
+    },
+    {
+      "id": "Q23",
+      "family": "reporting",
+      "question": "Does a byte hash prove a calibration record authentic?",
+      "reference_ids": [
+        "traceability-documentation"
+      ],
+      "required_points": [
+        "No; byte integrity and authenticity/scientific review are distinct."
+      ],
+      "prohibited_inferences": [
+        "Equate checksum match with authenticity."
+      ]
+    },
+    {
+      "id": "Q24",
+      "family": "reporting",
+      "question": "Can the Atlas issue a pass/fail verdict without an applicable tolerance or decision rule?",
+      "reference_ids": [
+        "measurement-difference",
+        "compatibility-rule"
+      ],
+      "required_points": [
+        "No; state the missing rule and preserve calculated difference uncertainty."
+      ],
+      "prohibited_inferences": [
+        "Invent a tolerance or acceptance risk."
+      ]
+    },
+    {
+      "id": "v1rc-review-01",
+      "question": "Can I use the 273.15 offset when converting a temperature uncertainty?",
+      "reference_ids": [
+        "temperature-uncertainty-scale"
+      ],
+      "required_points": [
+        "Use a scale/derivative, not the absolute-value offset."
+      ],
+      "prohibited_inferences": [
+        "Adding 273.15 to the uncertainty."
+      ],
+      "family": "units"
+    },
+    {
+      "id": "v1rc-review-02",
+      "question": "The report says 95 percent but gives no coverage factor. Is U/2 established?",
+      "reference_ids": [
+        "certificate-k-absent"
+      ],
+      "required_points": [
+        "Do not infer a missing multiplier without justified distribution information."
+      ],
+      "prohibited_inferences": [
+        "Treating an unexplained 95 percent statement as k=2."
+      ],
+      "family": "type_b"
+    },
+    {
+      "id": "v1rc-review-03",
+      "question": "Does a complete certificate JSON prove that the instrument is traceable?",
+      "reference_ids": [
+        "certificate-structure-not-authenticity"
+      ],
+      "required_points": [
+        "Field completeness is not authenticity or chain verification."
+      ],
+      "prohibited_inferences": [
+        "Claiming accreditation from a JSON check."
+      ],
+      "family": "calibration"
+    },
+    {
+      "id": "v1rc-review-04",
+      "question": "Can a normal conformance calculation determine global consumer risk?",
+      "reference_ids": [
+        "normal-conformance-model",
+        "specific-not-global-risk"
+      ],
+      "required_points": [
+        "It is conditional on an explicit distribution and process-wide risk needs more information."
+      ],
+      "prohibited_inferences": [
+        "Equating item-specific and global process risk."
+      ],
+      "family": "comparison"
+    },
+    {
+      "id": "v1rc-review-05",
+      "question": "Is an item outside the guard-band acceptance interval necessarily physically nonconforming?",
+      "reference_ids": [
+        "explicit-acceptance-rule",
+        "rejection-not-physical-proof"
+      ],
+      "required_points": [
+        "Report not accepted under the named rule, not proof of actual state."
+      ],
+      "prohibited_inferences": [
+        "Physical-certification claims."
+      ],
+      "family": "comparison"
+    },
+    {
+      "id": "v1rc-review-06",
+      "question": "Can Hz and Bq be interchanged merely because their dimensions match?",
+      "reference_ids": [
+        "conversion-kind-declaration"
+      ],
+      "required_points": [
+        "Distinguish frequency from activity despite identical dimensions."
+      ],
+      "prohibited_inferences": [
+        "Silent conversion of quantity kind."
+      ],
+      "family": "units"
+    }
+  ]
+}

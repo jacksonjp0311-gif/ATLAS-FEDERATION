@@ -1,0 +1,29 @@
+{
+  "case": {
+    "sensitivities": [
+      1,
+      -1
+    ],
+    "covariance": [
+      [
+        1e-12,
+        2e-12
+      ],
+      [
+        2e-12,
+        1e-12
+      ]
+    ]
+  },
+  "baseline_result": {
+    "variance": 0.0,
+    "combined_standard_uncertainty": 0.0,
+    "model": "first-order covariance propagation",
+    "assumptions": [
+      "uncertainties evaluated at the provided operating point",
+      "sensitivity coefficients supplied by caller",
+      "covariance matrix supplied by caller"
+    ]
+  },
+  "defect": "Covariance has correlation 2 and a negative eigenvalue; baseline incorrectly accepts and clips variance to zero."
+}

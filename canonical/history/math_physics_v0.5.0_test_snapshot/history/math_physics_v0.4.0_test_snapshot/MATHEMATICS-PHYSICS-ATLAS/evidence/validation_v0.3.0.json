@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.math-v03-source-test/1",
+  "stage": "source_tree_before_archival_sealing",
+  "result": "passed",
+  "tests": 2085,
+  "test_suites": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "contexts": 98,
+  "records": 2564,
+  "relations": 1719,
+  "nodes": 12,
+  "source_cards": 500,
+  "new_numeric_comparisons": 1300,
+  "invalid_input_refusals": 120,
+  "archived_publisher_originals": 0,
+  "independent_peer_review": false,
+  "physical_experiments": 0,
+  "full_sealed_archive_replay": "not_yet_performed_at_source_seal_time"
+}

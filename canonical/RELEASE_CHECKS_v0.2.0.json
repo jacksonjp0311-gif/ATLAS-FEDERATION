@@ -1,0 +1,110 @@
+{
+  "schema": "atlas.collection-content-release/1",
+  "release": "ATLAS_COLLECTION_Materials_v0.2.0",
+  "date": "2026-11-12",
+  "status": "content_checkpoint_not_materials_scientific_v1",
+  "result": "historical_receipt_redacted_not_revalidated",
+  "ordering_policy": "finish_all_30_domain_libraries_then_Bitwork_routing_then_desktop_transfer",
+  "active_domain": "materials-atlas",
+  "next_queued": "control-atlas",
+  "inventory": {
+    "nodes": 5,
+    "common_records": 743,
+    "materials_records": 89,
+    "materials_non_source_records": 68,
+    "materials_source_cards": 21,
+    "materials_relations": 44,
+    "chapters": 19,
+    "investigations": 8,
+    "old_teaching_cases": 11,
+    "new_advanced_cases": 9,
+    "source_reported_observations": 236
+  },
+  "tests": {
+    "Forge": 188,
+    "Measurement": 218,
+    "Causal": 233,
+    "Materials": 73,
+    "total_passed": 712,
+    "total_skipped": 0
+  },
+  "full_workflow": {
+    "result": "passed",
+    "receipt": "receipts/materials-v02-final-source/checks.json",
+    "record_schemas": true,
+    "cross_node_context_integrity": true,
+    "expected_node_count": 5
+  },
+  "numeric_oracles": {
+    "legacy_materials": {
+      "result": "passed",
+      "comparisons": 1200,
+      "kind": "NumPy/SciPy algorithms"
+    },
+    "added_materials": {
+      "result": "passed",
+      "comparisons": 1440,
+      "seed": 112126,
+      "max_scaled_abs_error": 6.973971567907225e-14
+    },
+    "NIST_Hahn1": {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "NIST_Hahn1"
+    },
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "installed_wheel_smoke": {
+    "schema": "atlas.local-wheel-smoke/1",
+    "result": "passed",
+    "python": "3.13.5",
+    "venv": "isolated local venv outside delivery archive",
+    "versions": {
+      "atlas-forge-research": "1.0.0rc1",
+      "measurement-atlas": "1.0.0rc1",
+      "causal-atlas": "1.0.0",
+      "materials-atlas": "0.2.0"
+    },
+    "installed_package_materials_records": 89,
+    "full_local_registry_nodes": 5,
+    "full_local_registry_records": 743,
+    "installed_hahn1_replay": "passed",
+    "installed_advanced_cases": 9,
+    "historical_smoke_issue": "initial probe tried unsupported __version__ in Measurement; probe corrected using distribution metadata",
+    "outstanding": [
+      "Windows host test not run",
+      "no desktop transfer",
+      "no live AI or Bitwork run"
+    ]
+  },
+  "preservation": {
+    "baseline_771_file_integrity": {
+      "result": "passed",
+      "members": 771,
+      "changed": [],
+      "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+    },
+    "old_52_materials_record_revisions_unchanged": true,
+    "navigation_code_changed": false,
+    "signal_cymatics_measurement_causal_nodes_changed": false
+  },
+  "limitations": {
+    "independent_human_science_review": false,
+    "new_physical_experiment": false,
+    "Hahn1_upstream_original_bytes_captured": false,
+    "Hahn1_response_unit_authenticated": false,
+    "native_Windows_test": false,
+    "live_Bitwork_routing": false,
+    "heldout_AI_quality_benchmark": false,
+    "materials_content_v1_ready": false,
+    "collection_final_accepted": false
+  },
+  "audit_trail": [
+    "A stale node corpus revision was detected and repaired before the successful validation run; no scientific threshold was altered.",
+    "The first isolated-wheel smoke probe referenced an unsupported Measurement __version__ attribute; corrected to importlib.metadata and reran successfully.",
+    "The publisher dataset is a checked web-text transcription, not an upstream transport-byte copy."
+  ],
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

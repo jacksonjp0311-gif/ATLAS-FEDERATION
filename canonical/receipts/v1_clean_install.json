@@ -1,0 +1,13 @@
+{
+  "versions": {
+    "atlas-forge-research": "1.0.0rc1",
+    "measurement-atlas": "1.0.0rc1",
+    "causal-atlas": "1.0.0"
+  },
+  "source_tree_imports": false,
+  "causal_package_file": "/mnt/data/causal1_build/venv/lib/python3.13/site-packages/causal_atlas/__init__.py",
+  "common_records": 149,
+  "case_count": 7,
+  "context_valid": true,
+  "context_status": "context_available"
+}

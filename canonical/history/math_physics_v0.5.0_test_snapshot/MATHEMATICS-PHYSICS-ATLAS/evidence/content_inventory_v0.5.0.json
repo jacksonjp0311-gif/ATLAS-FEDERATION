@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.math-physics-inventory/1",
+  "version": "0.5.0",
+  "chapters": 56,
+  "constructed_cases": 44,
+  "source_cards": 16,
+  "records": 242,
+  "local_relations": 223,
+  "federated_relations": 231,
+  "federation_records": 2599,
+  "federation_relations": 1750,
+  "federation_source_cards": 503,
+  "authenticated_original_publisher_files": 0,
+  "physical_experiments": 0,
+  "independent_peer_review": false
+}

@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Common record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "node_id",
+    "record_id",
+    "original_id",
+    "revision",
+    "type",
+    "title",
+    "content",
+    "evidence",
+    "sources",
+    "status",
+    "rights",
+    "provenance",
+    "extensions"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas.record/1"
+    },
+    "node_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "type": {
+      "enum": [
+        "concept",
+        "claim",
+        "source",
+        "method",
+        "equation",
+        "dataset",
+        "review"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "tags",
+        "domain",
+        "equation",
+        "assumptions",
+        "applicability",
+        "limitations",
+        "units",
+        "uncertainty"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "domain": {
+          "type": "string"
+        },
+        "equation": {
+          "type": "string"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "applicability": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "review_status",
+        "locators",
+        "gaps",
+        "upstream_labels"
+      ],
+      "properties": {
+        "origin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id",
+              "locator",
+              "inspected_scope",
+              "checked_at",
+              "checker"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "inspected_scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "checked_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "checker": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "upstream_labels": {
+          "type": "object"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "revision"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "active",
+        "withdrawn",
+        "superseded",
+        "disputed"
+      ]
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "local_reference",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  }
+}

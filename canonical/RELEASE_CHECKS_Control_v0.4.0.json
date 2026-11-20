@@ -1,0 +1,134 @@
+{
+  "schema": "atlas.control-content-release/1",
+  "version": "0.4.0",
+  "date": "2026-11-13",
+  "result": "passed_engineering_content_validation_not_scientific_v1",
+  "active_domain": "control-atlas",
+  "build_order": "all_30_domain_content_libraries_then_Bitwork_routing_then_integrated_testing_then_desktop_transfer",
+  "inventory": {
+    "nodes": 6,
+    "common_records": 975,
+    "control_records": 173,
+    "control_source_cards": 39,
+    "control_relations": 96,
+    "control_chapters": 40,
+    "control_investigations": 31,
+    "new_control_records": 28,
+    "new_source_cards": 7,
+    "new_relations": 15,
+    "prior_control_record_revisions_preserved": 145,
+    "prior_control_relation_revisions_preserved": 81,
+    "new_synthetic_casebook_count": 9
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 164,
+      "passed": 164,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_passed": 925,
+  "tests_skipped": 0,
+  "source_context": {
+    "all_checks_passed": true,
+    "query_count": 23,
+    "jsonschema_status": "passed",
+    "common_contract_preserved": true
+  },
+  "numerical_oracle": {
+    "schema": "atlas.control-v04-independent-numeric-oracle/1",
+    "result": "passed",
+    "source": "author_generated_models_not_physical_measurements",
+    "seed": 61426,
+    "comparison_counts": {
+      "MIMO singular value": 500,
+      "MIMO condition": 250,
+      "MIMO S inverse": 1000,
+      "common P vertex min Q": 1920,
+      "LQR cost from optimize": 90,
+      "LQR Riccati identity": 90,
+      "grid minimum objective": 140,
+      "NIS solve": 280,
+      "ARX a fit": 120,
+      "ARX b fit": 120,
+      "ARX later RMS": 120
+    },
+    "total_comparisons": 4630,
+    "maximum_relative_to_one_scaled_error": 3.560056558214278e-14,
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0",
+    "independent_scientific_review": false,
+    "hardware_actuated": false,
+    "heldout_ai_evaluation": false
+  },
+  "clean_wheel_smoke": {
+    "result": "passed",
+    "installed_distribution_version": "0.4.0",
+    "installed_records": 173,
+    "installed_nodes": 1,
+    "casebook_count": 9,
+    "context_status": "context_available",
+    "context_valid": true,
+    "source_tree_imports": false
+  },
+  "preservation": {
+    "protected_historical_files_compared": 1190,
+    "old_archive_file_count": 1562,
+    "mismatches": [],
+    "baseline_771_preserved": true,
+    "all_previous_control_record_revisions_preserved": true,
+    "other_node_and_routing_source_files_unchanged": true
+  },
+  "source_maturity": {
+    "independently_peer_reviewed": false,
+    "latest_NIST_OT_status": "SP800-82 Rev3 final; Rev4 Initial Public Draft Sep 2026 (not final)",
+    "third_party_full_documents_archived": false,
+    "reviewed_portions": "publisher author descriptions, public webpage sections, secondary NIS explanation and NIST abstracts"
+  },
+  "limitations": {
+    "original_physical_plant_data": false,
+    "hardware_actuated": false,
+    "real_control_stability_established": false,
+    "source_review_independent": false,
+    "control_content_v1_ready": false,
+    "all_30_domains_done": false,
+    "live_bitwork_and_ai_evaluation": false,
+    "Windows_host_test": false,
+    "desktop_modified": false,
+    "github_published": false
+  },
+  "failure_log": [
+    "First collection-wide check exceeded the execution window while all five test suites had passed; full rerun with a longer window completed and passed."
+  ],
+  "conclusion": "Control 0.4 reference content checkpoint; mathematical and software tests passed, no scientific/hardware certification"
+}

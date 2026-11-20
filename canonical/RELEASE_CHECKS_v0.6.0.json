@@ -1,0 +1,126 @@
+{
+  "schema": "atlas.control-content-release/2",
+  "edition": "0.6.0",
+  "date": "2026-11-13",
+  "status": "research_content_checkpoint_not_scientific_v1",
+  "existing_nodes": 6,
+  "forge_total_records": 1016,
+  "forge_relations": 306,
+  "control_records": 214,
+  "control_source_cards": 45,
+  "control_relations": 124,
+  "control_old_revisions_preserved": 191,
+  "control_old_relation_revisions_preserved": 107,
+  "reference_chapters": 52,
+  "authored_investigations": 42,
+  "new_v06_synthetic_cases": 12,
+  "new_v06_records": 23,
+  "new_v06_source_cards": 3,
+  "new_v06_relations": 17,
+  "test_results": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 216,
+      "passed": 216,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "all_tests_passed": 977,
+  "all_tests_skipped": 0,
+  "numerical_oracle": {
+    "schema": "atlas.control-output-feedback-oracle/1",
+    "result": "passed",
+    "seed": 601126,
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0",
+    "checks": {
+      "observer_recurrence": 300,
+      "actuator_numpy_clip": 400,
+      "tube_trajectory_containment": 57600,
+      "measurement_bound": 400,
+      "affine_box_scipy_lp": 200
+    },
+    "total_comparisons": 58900,
+    "largest_numeric_difference": 7.275957614183426e-12,
+    "validation_scope": "separately_computed_author_synthetic_models_and_random_trajectories",
+    "not_verified": [
+      "physical actuator model",
+      "actual sensor noise envelope",
+      "measurement time alignment",
+      "engineering safety",
+      "observer integrity under faults",
+      "hardware system",
+      "unbounded-time robustness"
+    ]
+  },
+  "clean_installed_wheels": {
+    "result": "passed",
+    "installed_versions": {
+      "atlas-forge-research": "1.0.0rc1",
+      "measurement-atlas": "1.0.0rc1",
+      "causal-atlas": "1.0.0",
+      "materials-atlas": "1.0.0",
+      "control-atlas-research": "0.6.0"
+    },
+    "standalone_control_records": 214,
+    "context_status": "context_available",
+    "casebook_count": 12,
+    "import_path": "/mnt/data/control_v06_work/venv_clean/lib/python3.13/site-packages/control_atlas"
+  },
+  "preservation": {
+    "protected_prior_members": {
+      "baseline": 771,
+      "CAUSAL-ATLAS": 253,
+      "MATERIALS-ATLAS": 121,
+      "common/nodes/causal-atlas": 9,
+      "common/nodes/materials-atlas": 9,
+      "common/nodes/measurement-atlas": 9,
+      "common/nodes/cymatics-atlas": 9,
+      "common/nodes/signal-atlas": 9
+    },
+    "members_identical": 1190,
+    "all_unchanged": true
+  },
+  "true_external_validation": {
+    "real_physical_feedback_test": false,
+    "independent_human_engineer_review": false,
+    "measured_actuator_response_model": false,
+    "qualified_noise_hard_bounds": false,
+    "hardware_in_the_loop": false,
+    "windows_host_test": false,
+    "bitwork_route_live": false,
+    "independent_held_out_ai_eval": false,
+    "control_scoped_content_v1_accepted": false
+  },
+  "ordering": "all_30_domain_libraries_then_routing_then_integrated_testing_then_PC_transfer",
+  "next_domain": "agent_atlas_queued_control_still_active"
+}

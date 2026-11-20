@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.migration-receipt/1",
+  "legacy_records_preserved": 370,
+  "common_records": 486,
+  "counts": {
+    "cymatics-atlas": 132,
+    "measurement-atlas": 122,
+    "signal-atlas": 232
+  },
+  "added_measurement_records": 76,
+  "added_source_pages": 40,
+  "domain_specific_runtime_branches": 0,
+  "legacy_federation_unchanged": true,
+  "scientific_status_promotion": false,
+  "registry_revision": "fa9c78100920ee3bd7487c4602c7f16c3cfa65b0812792a85ac462bed10e518e"
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "atlas.chemistry-v02-numerical-oracle/1",
+  "result": "passed",
+  "seed": 20261114,
+  "comparisons": 7790,
+  "by_method": {
+    "independent_atom_charge_matrix": 350,
+    "reaction_Gibbs_numpy": 600,
+    "reaction_enthalpy_numpy": 600,
+    "reaction_logK_numpy": 600,
+    "vanthoff_numpy": 600,
+    "ionic_strength_numpy": 600,
+    "electroneutrality_residual_numpy": 600,
+    "Debye_Huckel_numpy": 600,
+    "carrier_mass_action": 650,
+    "carrier_charge_neutrality": 650,
+    "Fick_gradient_flux": 650,
+    "Beer_Lambert_absorbance": 650,
+    "1d_diffusion_numpy_replay": 320,
+    "1d_diffusion_total_mass": 320
+  },
+  "max_absolute_difference_units_vary": 4.835703278458517e+24,
+  "max_normalized_difference": 1.3799900560963907e-13,
+  "numpy_version": "2.3.5",
+  "data_origin": "author-generated finite numerical fixtures",
+  "real_chemical_source_rows_imported": 0,
+  "actual_wafer_or_battery_measured": false,
+  "independent_scientific_peer_review": false,
+  "limitations": [
+    "Independent NumPy/formula arithmetic does not verify thermochemical data, measurement accuracy or real materials physics",
+    "No published original scientific dataset or laboratory experiment was imported, operated or reproduced"
+  ]
+}

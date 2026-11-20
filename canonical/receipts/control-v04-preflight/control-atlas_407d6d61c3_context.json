@@ -1,0 +1,1095 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "MIMO singular return difference",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "a6f7783006346d460f39359b527198691c91680495c5e33e38bec4937e6bf1e0",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:mimo-return-difference-numerical",
+      "revision": "6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6"
+    },
+    {
+      "record_id": "control-atlas:mimo-singular-directions",
+      "revision": "fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49"
+    },
+    {
+      "record_id": "control-atlas:scalar-arx-calculator",
+      "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf"
+    },
+    {
+      "record_id": "control-atlas:mimo-sensitivity-identity",
+      "revision": "912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:closed-loop-id-bias",
+      "revision": "dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0"
+    },
+    {
+      "record_id": "control-atlas:fault-detection-vs-causation",
+      "revision": "db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42"
+    },
+    {
+      "record_id": "control-atlas:mimo-return-difference-numerical",
+      "revision": "6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6"
+    },
+    {
+      "record_id": "control-atlas:mimo-sensitivity-identity",
+      "revision": "912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107"
+    },
+    {
+      "record_id": "control-atlas:mimo-singular-directions",
+      "revision": "fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49"
+    },
+    {
+      "record_id": "control-atlas:scalar-arx",
+      "revision": "06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d"
+    },
+    {
+      "record_id": "control-atlas:scalar-arx-calculator",
+      "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf"
+    },
+    {
+      "record_id": "control-atlas:source:MATH-ID",
+      "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915"
+    },
+    {
+      "record_id": "control-atlas:source:MATH-ID-QUALITY",
+      "revision": "bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+      "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+    },
+    {
+      "record_id": "control-atlas:source:STANFORD-EE363",
+      "revision": "e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1"
+    },
+    {
+      "record_id": "control-atlas:system-id-sequence",
+      "revision": "6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-08",
+            "concept",
+            "closed-loop-id-bias"
+          ],
+          "text": "Controller inputs may be correlated with disturbances, so scalar ordinary least squares can be biased even with many observations.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Data preprocessing, model choice, estimation and validation; selected workflow HTML",
+              "source_id": "control-atlas:source:MATH-ID"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "closed-loop-id-bias",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "08",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:closed-loop-id-bias",
+        "revision": "dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-ID",
+            "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915"
+          }
+        ],
+        "status": "active",
+        "title": "Closed-loop data can bias naive identification",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-13",
+            "concept",
+            "fault-detection-vs-causation"
+          ],
+          "text": "A measured-model mismatch can reflect actuator faults, sensors, changed process inputs or model inadequacy. Identifying the responsible factor needs independent evidence.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Data preprocessing, model choice, estimation and validation; selected workflow HTML",
+              "source_id": "control-atlas:source:MATH-ID"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "fault-detection-vs-causation",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "13",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:fault-detection-vs-causation",
+        "revision": "db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-ID",
+            "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915"
+          }
+        ],
+        "status": "active",
+        "title": "Residual anomaly is not root-cause attribution",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "User-supplied real static G,K"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No dynamic stability or physical validation",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-34",
+            "edition-0.4.0",
+            "mimo-return-difference-numerical"
+          ],
+          "text": "Compute 2x2 return difference singular values, S, T, condition number and identity residual with strict refusal near singularity.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+              "source_id": "control-atlas:source:STANFORD-EE363"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "mimo-return-difference-numerical",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:mimo-return-difference-numerical",
+        "revision": "6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:STANFORD-EE363",
+            "revision": "e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1"
+          }
+        ],
+        "status": "active",
+        "title": "Singular-value-based MIMO return-difference calculator",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Real 2x2 M invertible"
+          ],
+          "domain": "control-systems",
+          "equation": "S=(I+G K)^(-1); T=I-S",
+          "limitations": [
+            "No physical gain/phase/disk margin or internal stability proof",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-34",
+            "edition-0.4.0",
+            "mimo-sensitivity-identity"
+          ],
+          "text": "When M=I+GK is invertible, S=M^-1 and T=I-S satisfy S+T=I. Matrix multiplication order matters.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+              "source_id": "control-atlas:source:STANFORD-EE363"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "mimo-sensitivity-identity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:mimo-sensitivity-identity",
+        "revision": "912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:STANFORD-EE363",
+            "revision": "e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1"
+          }
+        ],
+        "status": "active",
+        "title": "Two-input two-output S and T identity",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Declared real G,K at one specified point"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No plant poles/frequency sweep/internal stability certificate",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-34",
+            "edition-0.4.0",
+            "mimo-singular-directions"
+          ],
+          "text": "A 2x2 real return difference I+GK can be poorly conditioned in one singular-vector direction despite finite entries; pointwise matrix calculation is not robust dynamic stability.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Discrete-time Riccati and input/state constraints sections, public HTML",
+              "source_id": "control-atlas:source:MIT-LQR-DISCRETE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+              "source_id": "control-atlas:source:STANFORD-EE363"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "mimo-singular-directions",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "34",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:mimo-singular-directions",
+        "revision": "fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+            "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81"
+          },
+          {
+            "record_id": "control-atlas:source:STANFORD-EE363",
+            "revision": "e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1"
+          }
+        ],
+        "status": "active",
+        "title": "MIMO feedback is directional",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "x[k+1]=a*x[k]+b*u[k]",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-08",
+            "equation",
+            "scalar-arx"
+          ],
+          "text": "Fit x[k+1]=a*x[k]+b*u[k] using a two-column regression with full-rank excitation; in-sample RSS alone cannot certify the identified plant.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Time-domain data quality, persistent excitation and sampling; selected HTML",
+              "source_id": "control-atlas:source:MATH-ID-QUALITY"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-arx",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "08",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-arx",
+        "revision": "06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-ID-QUALITY",
+            "revision": "bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6"
+          }
+        ],
+        "status": "active",
+        "title": "Two-parameter scalar ARX least squares",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Read-only executed numerical exercises, no physical device"
+          ],
+          "assumptions": [
+            "Caller supplies a validated mathematical model and exact input units; physical model identification is external"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking"
+          ],
+          "tags": [
+            "chapter-08",
+            "explicit-tool"
+          ],
+          "text": "Reject singular excitation and report in-sample model fit; no uncertainty or held-out validation.",
+          "uncertainty": [
+            "No physical uncertainty distribution or measurement certification inferred"
+          ],
+          "units": [
+            "Sample interval seconds; other units explicit per method"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Full scientific peer review and actual plant validation outstanding"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public documentation of related method, not a review of actual control software or physical test",
+              "locator": "Selected reference topic Scalar ARX two-parameter least squares",
+              "source_id": "control-atlas:source:MATH-ID"
+            }
+          ],
+          "origin": "authored_bounded_tool",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-arx-calculator",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted code and text",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build"
+        },
+        "record_id": "control-atlas:scalar-arx-calculator",
+        "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf",
+        "rights": {
+          "note": "Original educational code/interface, external source remains linked",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-ID",
+            "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar ARX two-parameter least squares",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "public_technical_documentation",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "math-id"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Data preprocessing, model choice, estimation and validation; selected workflow HTML",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_technical_documentation",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MATH-ID",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Data preprocessing, model choice, estimation and validation; selected workflow HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://www.mathworks.com/help/ident/gs/system-identification-workflow.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MATH-ID",
+        "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MathWorks System Identification Workflow (R2026b)",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "public_technical_documentation",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "math-id-quality"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Time-domain data quality, persistent excitation and sampling; selected HTML",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_technical_documentation",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MATH-ID-QUALITY",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Time-domain data quality, persistent excitation and sampling; selected HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://www.mathworks.com/help/ident/gs/about-system-identification.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MATH-ID-QUALITY",
+        "revision": "bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MathWorks System Identification Overview",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Discrete-time Riccati and input/state constraints sections, public HTML",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LQR-DISCRETE",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Discrete-time Riccati and input/state constraints sections, public HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://underactuated.mit.edu/lqr.html",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:MIT-LQR-DISCRETE",
+        "revision": "da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics discrete Riccati and constraints",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:STANFORD-EE363",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://ee363.stanford.edu/archive/lectures.html",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:STANFORD-EE363",
+        "revision": "e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Stanford EE363 control lectures topic index",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-08",
+            "method",
+            "system-id-sequence"
+          ],
+          "text": "Input-output preprocessing, timing, excitation, candidate structures, residuals and held-out validation are part of any credible estimated plant.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Data preprocessing, model choice, estimation and validation; selected workflow HTML",
+              "source_id": "control-atlas:source:MATH-ID"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "system-id-sequence",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "08",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:system-id-sequence",
+        "revision": "6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-ID",
+            "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915"
+          }
+        ],
+        "status": "active",
+        "title": "System ID requires excitation and validation",
+        "type": "method"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:mimo-return-difference-numerical",
+          "revision": "6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:mimo-return-difference-numerical:qualifies:mimo-sensitivity-identity",
+        "revision": "6132caf3ffc362631d5a1eb07a7ef7eb96cb10a19b680020bcff21c82973ace5",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:mimo-sensitivity-identity",
+          "revision": "912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:mimo-sensitivity-identity",
+          "revision": "912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:mimo-sensitivity-identity:qualifies:mimo-singular-directions",
+        "revision": "c39d1c5df6748e8f796efb97cb54c0e9791eceabc8d8c9c7381363b9e1d6bfca",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:mimo-singular-directions",
+          "revision": "fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:closed-loop-id-bias",
+          "revision": "dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:closed-loop-id-bias:qualifies:scalar-arx",
+        "revision": "7698be7d0ca59caa420786ab96b70984b762cbf5b86a503e51a71e1b76ff9624",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-arx",
+          "revision": "06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:fault-detection-vs-causation",
+          "revision": "db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:fault-detection-vs-causation:qualifies:system-id-sequence",
+        "revision": "ef721bd505a713e223cc462f87004df5af0822fdb98c18edd981274df288a2e4",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:system-id-sequence",
+          "revision": "6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-arx-calculator",
+          "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:scalar-arx-calculator:depends_on:scalar-arx",
+        "revision": "7df3463a619e835df2a84dd6996a216e453053899208839ce7205790cf371c13",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-arx",
+          "revision": "06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-arx-calculator",
+          "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:scalar-arx-calculator:qualifies:system-id-sequence",
+        "revision": "a6dc169dba46dbfce1ff9cd82cd7a56a3d784d2c03bed86ab465a800f481b1c9",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:system-id-sequence",
+          "revision": "6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-08\",\"concept\",\"closed-loop-id-bias\"],\"text\":\"Controller inputs may be correlated with disturbances, so scalar ordinary least squares can be biased even with many observations.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Data preprocessing, model choice, estimation and validation; selected workflow HTML\",\"source_id\":\"control-atlas:source:MATH-ID\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"closed-loop-id-bias\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"08\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:closed-loop-id-bias\",\"revision\":\"dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-ID\",\"revision\":\"3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915\"}],\"status\":\"active\",\"title\":\"Closed-loop data can bias naive identification\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-13\",\"concept\",\"fault-detection-vs-causation\"],\"text\":\"A measured-model mismatch can reflect actuator faults, sensors, changed process inputs or model inadequacy. Identifying the responsible factor needs independent evidence.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Data preprocessing, model choice, estimation and validation; selected workflow HTML\",\"source_id\":\"control-atlas:source:MATH-ID\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"fault-detection-vs-causation\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"13\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:fault-detection-vs-causation\",\"revision\":\"db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-ID\",\"revision\":\"3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915\"}],\"status\":\"active\",\"title\":\"Residual anomaly is not root-cause attribution\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"User-supplied real static G,K\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No dynamic stability or physical validation\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-34\",\"edition-0.4.0\",\"mimo-return-difference-numerical\"],\"text\":\"Compute 2x2 return difference singular values, S, T, condition number and identity residual with strict refusal near singularity.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited\",\"source_id\":\"control-atlas:source:STANFORD-EE363\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"mimo-return-difference-numerical\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:mimo-return-difference-numerical\",\"revision\":\"6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:STANFORD-EE363\",\"revision\":\"e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1\"}],\"status\":\"active\",\"title\":\"Singular-value-based MIMO return-difference calculator\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Real 2x2 M invertible\"],\"domain\":\"control-systems\",\"equation\":\"S=(I+G K)^(-1); T=I-S\",\"limitations\":[\"No physical gain/phase/disk margin or internal stability proof\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-34\",\"edition-0.4.0\",\"mimo-sensitivity-identity\"],\"text\":\"When M=I+GK is invertible, S=M^-1 and T=I-S satisfy S+T=I. Matrix multiplication order matters.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited\",\"source_id\":\"control-atlas:source:STANFORD-EE363\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"mimo-sensitivity-identity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:mimo-sensitivity-identity\",\"revision\":\"912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:STANFORD-EE363\",\"revision\":\"e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1\"}],\"status\":\"active\",\"title\":\"Two-input two-output S and T identity\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Declared real G,K at one specified point\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No plant poles/frequency sweep/internal stability certificate\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-34\",\"edition-0.4.0\",\"mimo-singular-directions\"],\"text\":\"A 2x2 real return difference I+GK can be poorly conditioned in one singular-vector direction despite finite entries; pointwise matrix calculation is not robust dynamic stability.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"source_id\":\"control-atlas:source:MIT-LQR-DISCRETE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited\",\"source_id\":\"control-atlas:source:STANFORD-EE363\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"mimo-singular-directions\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"34\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:mimo-singular-directions\",\"revision\":\"fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\"},{\"record_id\":\"control-atlas:source:STANFORD-EE363\",\"revision\":\"e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1\"}],\"status\":\"active\",\"title\":\"MIMO feedback is directional\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"x[k+1]=a*x[k]+b*u[k]\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-08\",\"equation\",\"scalar-arx\"],\"text\":\"Fit x[k+1]=a*x[k]+b*u[k] using a two-column regression with full-rank excitation; in-sample RSS alone cannot certify the identified plant.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Time-domain data quality, persistent excitation and sampling; selected HTML\",\"source_id\":\"control-atlas:source:MATH-ID-QUALITY\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-arx\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"08\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-arx\",\"revision\":\"06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-ID-QUALITY\",\"revision\":\"bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6\"}],\"status\":\"active\",\"title\":\"Two-parameter scalar ARX least squares\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Read-only executed numerical exercises, no physical device\"],\"assumptions\":[\"Caller supplies a validated mathematical model and exact input units; physical model identification is external\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking\"],\"tags\":[\"chapter-08\",\"explicit-tool\"],\"text\":\"Reject singular excitation and report in-sample model fit; no uncertainty or held-out validation.\",\"uncertainty\":[\"No physical uncertainty distribution or measurement certification inferred\"],\"units\":[\"Sample interval seconds; other units explicit per method\"]},\"evidence\":{\"gaps\":[\"Full scientific peer review and actual plant validation outstanding\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public documentation of related method, not a review of actual control software or physical test\",\"locator\":\"Selected reference topic Scalar ARX two-parameter least squares\",\"source_id\":\"control-atlas:source:MATH-ID\"}],\"origin\":\"authored_bounded_tool\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-arx-calculator\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted code and text\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\"},\"record_id\":\"control-atlas:scalar-arx-calculator\",\"revision\":\"c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf\",\"rights\":{\"note\":\"Original educational code/interface, external source remains linked\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-ID\",\"revision\":\"3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915\"}],\"status\":\"active\",\"title\":\"Scalar ARX two-parameter least squares\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"public_technical_documentation\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"math-id\"],\"text\":\"Publisher/documentation reference. Inspected scope: Data preprocessing, model choice, estimation and validation; selected workflow HTML\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_technical_documentation\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MATH-ID\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Data preprocessing, model choice, estimation and validation; selected workflow HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://www.mathworks.com/help/ident/gs/system-identification-workflow.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MATH-ID\",\"revision\":\"3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MathWorks System Identification Workflow (R2026b)\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"public_technical_documentation\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"math-id-quality\"],\"text\":\"Publisher/documentation reference. Inspected scope: Time-domain data quality, persistent excitation and sampling; selected HTML\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_technical_documentation\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MATH-ID-QUALITY\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Time-domain data quality, persistent excitation and sampling; selected HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://www.mathworks.com/help/ident/gs/about-system-identification.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MATH-ID-QUALITY\",\"revision\":\"bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MathWorks System Identification Overview\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Discrete-time Riccati and input/state constraints sections, public HTML\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LQR-DISCRETE\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Discrete-time Riccati and input/state constraints sections, public HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://underactuated.mit.edu/lqr.html\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:MIT-LQR-DISCRETE\",\"revision\":\"da1bfbcf4cb146293a2617fdd8062a43f1e5cb7699f103868a536061fd52ee81\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics discrete Riccati and constraints\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:STANFORD-EE363\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://ee363.stanford.edu/archive/lectures.html\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:STANFORD-EE363\",\"revision\":\"e24b4c694f9f0c06b59f9bbe63b63c4cf240595b77902f6a0650399f76d688c1\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Stanford EE363 control lectures topic index\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-08\",\"method\",\"system-id-sequence\"],\"text\":\"Input-output preprocessing, timing, excitation, candidate structures, residuals and held-out validation are part of any credible estimated plant.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Data preprocessing, model choice, estimation and validation; selected workflow HTML\",\"source_id\":\"control-atlas:source:MATH-ID\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"system-id-sequence\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"08\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:system-id-sequence\",\"revision\":\"6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-ID\",\"revision\":\"3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915\"}],\"status\":\"active\",\"title\":\"System ID requires excitation and validation\",\"type\":\"method\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:mimo-return-difference-numerical\",\"revision\":\"6eccaa39d02d144a7f53549e6eb63f3d8174e1a1df87c00edef6cda29ede2dd6\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:mimo-return-difference-numerical:qualifies:mimo-sensitivity-identity\",\"revision\":\"6132caf3ffc362631d5a1eb07a7ef7eb96cb10a19b680020bcff21c82973ace5\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:mimo-sensitivity-identity\",\"revision\":\"912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:mimo-sensitivity-identity\",\"revision\":\"912d9714a7d1d8e830e798c54c7ff3346f738aa13f054a5f7f7cafcd499c1107\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:mimo-sensitivity-identity:qualifies:mimo-singular-directions\",\"revision\":\"c39d1c5df6748e8f796efb97cb54c0e9791eceabc8d8c9c7381363b9e1d6bfca\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:mimo-singular-directions\",\"revision\":\"fb1b47e2b7ddab11d791680ef8ecf476a1a03bed871cfbf16795ef7352041d49\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:closed-loop-id-bias\",\"revision\":\"dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:closed-loop-id-bias:qualifies:scalar-arx\",\"revision\":\"7698be7d0ca59caa420786ab96b70984b762cbf5b86a503e51a71e1b76ff9624\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-arx\",\"revision\":\"06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:fault-detection-vs-causation\",\"revision\":\"db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:fault-detection-vs-causation:qualifies:system-id-sequence\",\"revision\":\"ef721bd505a713e223cc462f87004df5af0822fdb98c18edd981274df288a2e4\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:system-id-sequence\",\"revision\":\"6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:scalar-arx-calculator\",\"revision\":\"c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:scalar-arx-calculator:depends_on:scalar-arx\",\"revision\":\"7df3463a619e835df2a84dd6996a216e453053899208839ce7205790cf371c13\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-arx\",\"revision\":\"06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:scalar-arx-calculator\",\"revision\":\"c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:scalar-arx-calculator:qualifies:system-id-sequence\",\"revision\":\"a6dc169dba46dbfce1ff9cd82cd7a56a3d784d2c03bed86ab465a800f481b1c9\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:system-id-sequence\",\"revision\":\"6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 29845,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:sensor-bias-counterexample",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:two-state-rank-calculator",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:sample-delay-difference",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:rank-tolerance",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "ceeb587fabf2dd901e23e799bce3cd93f61c56f297401f541fdc0eb4381f848b"
+}

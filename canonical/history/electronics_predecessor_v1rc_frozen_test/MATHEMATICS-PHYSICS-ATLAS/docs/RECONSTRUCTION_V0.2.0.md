@@ -1,0 +1,7 @@
+# Reconstructible Mathematics & Fundamental Physics — incremental lessons 39–44
+
+The goal is to preserve executable mathematical *methods*, not simply mathematical statements. A future researcher can implement the six new Python standard-library algorithms (found under `math_physics_atlas/v02_models.py`) and reproduce the six numbered human-readable chapters and finite case studies. The derivations explain assumptions, methods, units and counterexamples; numerical source/oracle receipts indicate only what was actually checked.
+
+**Sequence:** 39. Orthogonal Householder reflections and least-squares residuals; 40. 2×2 singular values, conditioning and limits of invertibility; 41. decimation-in-time radix-two FFT and reconstruction; 42. nonlinear ODE integration with step doubling and error-budget limits; 43. explicit heat diffusion as a linear parabolic PDE with Fourier-number stability; 44. wave propagation as a hyperbolic PDE with Courant condition and approximate energy conservation. Each chapter is in `chapters/39*.md` through `chapters/44*.md` and has an independent numerical reference model.
+
+**Boundary:** no model of semiconductor carrier transport is demonstrated yet; that belongs in the next Electronics & Semiconductors domain, coupled with Chemistry and these Mathematics/Physics foundations. Original thirty domain candidates are intact. Bitwork routing, integrated validation and desktop transfer remain later phases.

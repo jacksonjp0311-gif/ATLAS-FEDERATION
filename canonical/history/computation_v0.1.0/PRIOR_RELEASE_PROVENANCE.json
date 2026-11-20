@@ -1,0 +1,9 @@
+{
+  "schema": "atlas.prior-release-provenance/1",
+  "filename": "ATLAS_COLLECTION_Agent_v1.0.0.zip",
+  "sha256": "57a2db9daea62f9cfcc0728e2b2ff61d7d2020ad1d423d93ba87f2177969d505",
+  "purpose": "Offline version-appropriate regression of immutable Agent v1 tests that asserted the then-seven-node collection size",
+  "previous_archive_intact": true,
+  "legacy_tests_modified": false,
+  "current_federation_tests_separately_check_eight_nodes": true
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.technological-continuity-priority/2",
+  "date": "2026-11-16",
+  "active_node": "mathematics-physics-atlas",
+  "active_research_edition": "0.5.0",
+  "predecessor_checkpoint": "0.4.0",
+  "math_scoped_content_v1_ready": false,
+  "next_domain": "electronics-semiconductors-atlas",
+  "original_30_domain_queue_unchanged": true,
+  "unmet_gates": [
+    "real material calibration",
+    "measured device comparison",
+    "nonlinear coupled continuity and Poisson",
+    "authenticated rights-cleared publisher original bytes",
+    "independent expert review"
+  ],
+  "bitwork_router_modified": false,
+  "desktop_transfer": false
+}

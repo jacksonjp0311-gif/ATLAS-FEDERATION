@@ -1,0 +1,147 @@
+{
+  "schema": "atlas.collection-content-checkpoint/2",
+  "release": "agent-atlas-0.2.0",
+  "date": "2026-11-13",
+  "status": "tested_research_content_not_scientific_v1",
+  "source_result": "passed",
+  "inventory": {
+    "nodes": 7,
+    "common_records": 1151,
+    "common_relations": 392,
+    "agent_records": 100,
+    "agent_source_cards": 22,
+    "agent_relations": 63,
+    "agent_chapters": 22,
+    "agent_investigations": 12,
+    "agent_cases_old": 13,
+    "agent_advanced_cases": 7,
+    "new_methods": 5
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 105,
+      "passed": 105,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_passed": 1110,
+  "total_skipped": 0,
+  "schema_validation": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1151,
+      "relation": 392,
+      "node": 7,
+      "context": 13
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "contexts_validated": 13,
+  "separate_numerical_oracle": {
+    "schema": "atlas.agent-advanced-numerical-oracle/1",
+    "version": "0.2.0",
+    "status": "passed",
+    "seed": 391126,
+    "comparisons": 5070,
+    "categories": {
+      "trace_union": 350,
+      "paired_outcomes": 400,
+      "paired_exact_p": 400,
+      "mast_code_counts": 3920
+    },
+    "largest_abs_error": 1.1102230246251565e-16,
+    "numpy_version": "2.3.5",
+    "scipy_available": true,
+    "actual_model_calls": 0,
+    "external_MAST_rows_read": 0,
+    "independent_human_review": false,
+    "description": "Secondary algorithms for author-generated deterministic and randomized metadata examples; not a language-model improvement benchmark."
+  },
+  "preservation": {
+    "schema": "atlas.agent-preservation-audit/2",
+    "result": "passed",
+    "previous_full_archive": "ATLAS_COLLECTION_Agent_v0.1.0.zip",
+    "protected_prior_files_byte_identical": 1438,
+    "by_prefix": {
+      "CAUSAL-ATLAS/": 253,
+      "CONTROL-ATLAS/": 225,
+      "MATERIALS-ATLAS/": 121,
+      "baseline/": 771,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/signal-atlas/": 9,
+      "wheels/": 14
+    },
+    "old_agent_record_revisions_unchanged": 73,
+    "old_agent_relation_revisions_unchanged": 45,
+    "original_baseline_digest_members": 771,
+    "baseline_errors": [],
+    "protected_file_errors": [],
+    "old_common_nonagent_node_versions_preserved": true,
+    "routing_implementation_unchanged": true,
+    "independent_science_review_performed": false
+  },
+  "installed_wheel_smoke": "passed",
+  "source_tree_imported_in_smoke": false,
+  "scientific_acceptance": {
+    "content_ready": false,
+    "independent_review": false,
+    "live_agents_run": false,
+    "live_tool_provider_effects": false,
+    "original_MAST_dataset_loaded": false,
+    "verified_real_failure_labels": false,
+    "heldout_performance_improvement": false,
+    "Bitwork_routing_changed": false,
+    "Windows_host_test": false
+  },
+  "owner_sequence": "all_30_domain_libraries_then_Bitwork_router_then_integrated_evaluation_and_desktop_transfer",
+  "archive_replay": "pending"
+}

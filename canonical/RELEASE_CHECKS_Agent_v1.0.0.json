@@ -1,0 +1,106 @@
+{
+  "schema": "atlas.agent-scoped-content-release/1",
+  "release_version": "1.0.0",
+  "date": "2026-11-13",
+  "status": "tested_scoped_reference_content_v1_not_scientific_or_model_approval",
+  "owner_knowledge_standard": "docs/HUMAN_KNOWLEDGE_SURVIVAL_CHARTER_v1.md",
+  "study_scope": {
+    "agent_chapters": 50,
+    "agent_investigations": 32,
+    "agent_records": 190,
+    "source_cards": 34,
+    "agent_relations": 122,
+    "new_agent_sources": 4,
+    "prior_agent_record_versions_retained": 158,
+    "prior_agent_relation_versions_retained": 101,
+    "prior_full_collection_nodes": 7,
+    "total_federated_records": 1241,
+    "total_federated_relations": 451
+  },
+  "tests": {
+    "Forge": 188,
+    "Measurement": 218,
+    "Causal": 233,
+    "Materials": 122,
+    "Control": 244,
+    "Agent": 251
+  },
+  "tests_passed": 1256,
+  "tests_skipped": 0,
+  "source_validation": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "validated": {
+      "record": 1241,
+      "relation": 451,
+      "node": 7,
+      "context": 22
+    },
+    "limitation": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "context_validation": {
+    "result": "passed",
+    "queries": 22,
+    "all_source_closed": true
+  },
+  "numerical_oracle": {
+    "schema": "atlas.agent-v1-numerical-oracle/1",
+    "status": "passed",
+    "comparisons": 2340,
+    "by_algorithm": {
+      "belief_posterior": 660,
+      "observation_evidence": 220,
+      "bellman_values": 660,
+      "dijkstra_networkx": 200,
+      "ips_mean": 200,
+      "weighted_ess": 200,
+      "ips_self_normalized": 200
+    },
+    "max_abs_error": 3.552713678800501e-15,
+    "seed": 20261113,
+    "numpy_version": "2.3.5",
+    "networkx_version": "3.6.1",
+    "authored_synthetic_only": true,
+    "independent_human_scientific_review": false,
+    "measured_agent_performance": false,
+    "scientific_reliability_claim": "none"
+  },
+  "preservation": {
+    "schema": "atlas.historical-preservation/1",
+    "parent": "ATLAS_COLLECTION_Agent_v0.4.0.zip",
+    "protected_members_compared": 1424,
+    "mismatches": [],
+    "unchanged": true,
+    "all_previous_agent_record_revisions_unchanged": true,
+    "all_previous_agent_relations_unchanged": true,
+    "science_review": false
+  },
+  "survival_audit": {
+    "result": "passed_structural_only",
+    "nodes": 7,
+    "records": 1241,
+    "source_cards": 375,
+    "authenticated_primary_source_files": 0,
+    "offline_primary_source_complete": false,
+    "domain_candidates": 30,
+    "scoped_content_ready_candidates": 3
+  },
+  "clean_installed_wheel": {
+    "status": "passed",
+    "standalone_agent_records": 190,
+    "agent_relations": 122,
+    "source_context_valid": true,
+    "versions_verified": "Forge rc1, Measurement rc1, Causal v1, Materials v1, Control rc1, Agent v1"
+  },
+  "independent_scientific_review": false,
+  "MAST_original_trace_rows_acquired": 0,
+  "live_agent_runs": 0,
+  "live_memory_improvement_evaluation": false,
+  "Bitwork_router_modified": false,
+  "desktop_transfer": false,
+  "content_v1_ready": true,
+  "scientific_final_accepted": false,
+  "next_content_domain": "computation-atlas_queued_not_started",
+  "source_rights_policy": "citation/source-scoped original synthesis only; no unlicensed source full text copied",
+  "full_human_knowledge_preserved": false
+}

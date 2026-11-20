@@ -1,0 +1,63 @@
+{
+  "id": "cymatics-atlas",
+  "title": "Cymatics Atlas",
+  "version": "1.0.0",
+  "adapter": "cymatics-v1",
+  "status": "reference_snapshot",
+  "enabled_by_default": true,
+  "description": "Resonance, plate mechanics, fluid waves, acoustics, metrology and evidence-aware research.",
+  "upstream": {
+    "repository": "jacksonjp0311-gif/CYMATICS-ATLAS",
+    "commit": "21fba3ec77225d14ef81a6d761fa0922d8002d56",
+    "release_label": "v1.0.0",
+    "url": "https://github.com/jacksonjp0311-gif/CYMATICS-ATLAS"
+  },
+  "counts": {
+    "concepts": 76,
+    "sources": 33,
+    "source_audits": 13,
+    "publisher_portions": 8,
+    "external_dataset_catalog_entries": 2,
+    "searchable_records": 132
+  },
+  "acquisition": "Retained v0.6.0 reference bytes reused only after each Git blob identity was compared to the published v1.0.0 commit; all four reference files are identical.",
+  "schema": "atlas-forge.node.v1",
+  "snapshot_files": [
+    {
+      "path": "raw/corpus.json",
+      "upstream_path": "src/cymatics_atlas/resources/corpus.json",
+      "sha256": "dbbb35eff7a892f2794dea03e3b41b0b16e054d6d033eca59282718c7e2fefb6",
+      "size_bytes": 83444,
+      "git_blob_sha1": "9e2cc9db6bf07b6720e4a79d16b057c73cdfe8cf",
+      "git_blob_verified": true
+    },
+    {
+      "path": "raw/claim_audits.json",
+      "upstream_path": "src/cymatics_atlas/resources/claim_audits.json",
+      "sha256": "7ea43999bea80f371c1d6928b930fd2d5f611c6990df88b77e1437dfc923c9bb",
+      "size_bytes": 14158,
+      "git_blob_sha1": "ee24fabe646817d013d3d57fe57931ee3ed37248",
+      "git_blob_verified": true
+    },
+    {
+      "path": "raw/publisher_evidence.json",
+      "upstream_path": "src/cymatics_atlas/resources/publisher_evidence.json",
+      "sha256": "16ec4a968484dba0de9b5247a14422211d99547d9ee42eeca185fc1682a095c2",
+      "size_bytes": 8011,
+      "git_blob_sha1": "c3264f8ee3e2dd5c45a73deec5c7c18d45b25916",
+      "git_blob_verified": true
+    },
+    {
+      "path": "raw/external_experiments.json",
+      "upstream_path": "src/cymatics_atlas/resources/external_experiments.json",
+      "sha256": "d59a4004d230d836abf1b9be13399e52b4d534da1f3487e262a01c921389c7f5",
+      "size_bytes": 2296,
+      "git_blob_sha1": "b46d0ee4abe55e2b1fe7e98035c7c377bb873a85",
+      "git_blob_verified": true
+    }
+  ],
+  "captured_at": "2026-11-11",
+  "evidence_boundary": "Frozen reference subset, not the upstream application. No independent scientific review performed by importing. Third-party papers and raw measurements are not bundled. No automatic upstream refresh.",
+  "supporting_raw_measurements_bundled": false,
+  "rights": "Project-authored reference metadata only; per-source rights retained. See NOTICE.md and original repositories. No third-party full texts or external dataset bytes are mirrored."
+}

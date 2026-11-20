@@ -1,0 +1,20 @@
+{
+  "schema": "measurement.published-capture/1",
+  "sources": [
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/datasets/PONTIUS.DAT",
+      "locator": "numeric table, 40 rows, deflection followed by load"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pmd/section6/pmd611.htm",
+      "locator": "Resulting Data table and Description of Data Collection"
+    }
+  ],
+  "public_edition": {
+    "public_edition_status": "unavailable",
+    "reason_code": "nist_srd140_redistribution_grant_unresolved",
+    "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+    "scientific_revalidation": false
+  },
+  "original_capture_sha256": "1bbec97efb74bb24b331f8bdb11de61554d8cf570abc2ec18ac8267409c54298"
+}

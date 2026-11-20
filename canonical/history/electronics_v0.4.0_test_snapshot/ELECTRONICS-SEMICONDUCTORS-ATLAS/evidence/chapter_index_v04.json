@@ -1,0 +1,81 @@
+{
+  "schema": "atlas.electronics-chapters/4",
+  "edition": "0.4.0",
+  "prior_chapters": 26,
+  "new_chapters": [
+    {
+      "number": 27,
+      "slug": "logic_voltage_windows_noise_margins",
+      "title": "Digital voltage thresholds and guaranteed noise windows",
+      "path": "docs/chapters/27_logic_voltage_windows_noise_margins.md",
+      "equation": "NML = VIL(max) - VOL(max), NMH = VOH(min) - VIH(min)",
+      "methods": "digital_noise_margins, input_logic_level",
+      "units": "volts"
+    },
+    {
+      "number": 28,
+      "slug": "gate_dag_timing_path_envelopes",
+      "title": "Combinational timing from acyclic gate networks",
+      "path": "docs/chapters/28_gate_dag_timing_path_envelopes.md",
+      "equation": "t_earliest(out)=min_i t_earliest(in_i)+d_min; t_latest(out)=max_i t_latest(in_i)+d_max",
+      "methods": "logic_dag_arrival",
+      "units": "seconds"
+    },
+    {
+      "number": 29,
+      "slug": "setup_hold_clock_skew_and_uncertainty",
+      "title": "Setup, hold, clock skew, and timing closure",
+      "path": "docs/chapters/29_setup_hold_clock_skew_and_uncertainty.md",
+      "equation": "S_setup=T+skew\u2212t_setup\u2212u_setup\u2212t_cq,max\u2212t_comb,max; S_hold=t_cq,min+t_comb,min\u2212skew\u2212t_hold\u2212u_hold",
+      "methods": "synchronous_setup_hold",
+      "units": "seconds"
+    },
+    {
+      "number": 30,
+      "slug": "metastability_synchronizer_and_empirical_mtbf",
+      "title": "Metastability, synchronization, and empirical failure envelopes",
+      "path": "docs/chapters/30_metastability_synchronizer_and_empirical_mtbf.md",
+      "equation": "MTBF\u2248exp(T_res/\u03c4)/(f_clk f_data T0); log10(MTBF)=T_res/(\u03c4 ln10)\u2212log10(f_clk f_data T0)",
+      "methods": "synchronizer_mtbf_log10",
+      "units": "hertz and seconds"
+    },
+    {
+      "number": 31,
+      "slug": "word_alu_logic_flags_and_verification",
+      "title": "Reconstructing a word ALU from gate-level addition",
+      "path": "docs/chapters/31_word_alu_logic_flags_and_verification.md",
+      "equation": "sum=(a+b+cin) mod 2^w; carry_out=floor((a+b+cin)/2^w); SUB=a+not(b)+1",
+      "methods": "primitive_alu (uses nand_ripple_add from v0.3)",
+      "units": "binary words and flags"
+    },
+    {
+      "number": 32,
+      "slug": "memory_collision_unknown_and_reliability",
+      "title": "Addressable memory: collisions, unknowns, and reliability boundaries",
+      "path": "docs/chapters/32_memory_collision_unknown_and_reliability.md",
+      "equation": "M_next[a]=data if write=1 else M[a]; read-collision must declare read-first/write-first/undefined",
+      "methods": "bounded_memory_cycle; previous SECDED encode/decode",
+      "units": "words and addresses, dimensionless"
+    },
+    {
+      "number": 33,
+      "slug": "handshake_and_asynchronous_interface_contract",
+      "title": "Four-phase handshake and asynchronous interface correctness",
+      "path": "docs/chapters/33_handshake_and_asynchronous_interface_contract.md",
+      "equation": "(req,ack) state sequence: 00\u219210\u219211\u219201\u219200",
+      "methods": "four_phase_handshake_step",
+      "units": "binary logic state"
+    },
+    {
+      "number": 34,
+      "slug": "rc_uncertainty_fabrication_and_hardware_handoff",
+      "title": "From numerical electronics to measured gates and a computer",
+      "path": "docs/chapters/34_rc_uncertainty_fabrication_and_hardware_handoff.md",
+      "equation": "t50=ln(2)RC; Var(t50)\u2248(ln2 C)^2 Var(R)+(ln2 R)^2 Var(C)+2(ln2)^2 RC Cov(R,C)",
+      "methods": "rc_midpoint_delay_uncertainty",
+      "units": "ohms, farads, seconds"
+    }
+  ],
+  "all_chapters": 34,
+  "physical_measurements": 0
+}

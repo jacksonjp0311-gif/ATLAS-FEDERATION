@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "mathematics-physics-atlas-research"
+version = "0.5.0"
+requires-python = ">=3.10"
+description = "Offline scientific reconstruction mathematics and fundamental physics for computing and AI"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["math_physics_atlas*"]
+[tool.setuptools.package-data]
+math_physics_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

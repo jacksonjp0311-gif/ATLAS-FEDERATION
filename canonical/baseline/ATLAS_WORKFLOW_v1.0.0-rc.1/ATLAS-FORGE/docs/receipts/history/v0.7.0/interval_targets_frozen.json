@@ -1,0 +1,5 @@
+{
+  "sha256": "c90495800126a1a524b0dbf5b30c4d363214f660bc71969ec9a43bd17eedca9c",
+  "stage": "before local interval computation",
+  "independent_or_blind": false
+}

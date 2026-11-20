@@ -1,0 +1,172 @@
+{
+  "schema": "atlas.at8-casebook/1",
+  "count": 18,
+  "cases": [
+    {
+      "id": "01_isa_encoding",
+      "title": "2-byte encoding",
+      "fixture": "LDI R0,5; HALT",
+      "expected": "1005f000",
+      "verification_rule": "Bytes high nibble=opcode; low nibble=register. Reserved bits and length rejected.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "02_labels_branches",
+      "title": "two-pass symbolic assembly",
+      "fixture": "LDI R0,3; LOOP: OUT R0,0; ADDI R0,255; JNZ R0,LOOP; HALT",
+      "expected": null,
+      "verification_rule": "Assembler resolves LOOP to byte address 2; output is 3,2,1.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "03_unsigned_arithmetic",
+      "title": "unsigned 8-bit wrap",
+      "fixture": "255 + 1 modulo 256",
+      "expected": 0,
+      "verification_rule": "Result 0 and carry 1, no signed overflow.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "04_signed_overflow",
+      "title": "signed two\u2019s-complement overflow",
+      "fixture": "127 + 1",
+      "expected": 128,
+      "verification_rule": "8-bit result=128, negative=1, overflow=1, carry=0.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "05_nand_full_adder",
+      "title": "NAND-only circuit",
+      "fixture": "all 8 a,b,carry combinations",
+      "expected": 8,
+      "verification_rule": "Every truth table satisfies s + 2cout = a + b + carry.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "06_store_load",
+      "title": "register-to-RAM-to-register",
+      "fixture": "LDI R3,77; STORE R3,200; LOAD R2,200; HALT",
+      "expected": 77,
+      "verification_rule": "RAM[200]=R2=77 and ROM remains immutable.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "07_independent_execution",
+      "title": "microcoded vs atomic spec",
+      "fixture": "\n    LDI R0, 5\n    ADDI R0, 7\n    STORE R0, 0\n    XORI R0, 3\n    OUT R0, 0\n    HALT\n",
+      "expected": 15,
+      "verification_rule": "Two execution models have identical architectural snapshots after every commit.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "08_io_tapes",
+      "title": "deterministic input and output",
+      "fixture": "\n    IN R1, 1\n    ADDI R1, 2\n    STORE R1, 4\n    LOAD R3, 4\n    OUT R3, 2\n    HALT\n",
+      "expected": 9,
+      "verification_rule": "Input tape {port 1:[7]} -> output {port 2:9}, one input consumed.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "09_exhausted_input",
+      "title": "input exhaustion trap",
+      "fixture": "IN R0,0; HALT",
+      "expected": "input_exhausted",
+      "verification_rule": "No register, RAM, flag, PC, cursor or I/O mutation.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "10_countdown",
+      "title": "bounded branch loop",
+      "fixture": "\n    LDI R0, 3\nloop:\n    OUT R0, 0\n    ADDI R0, 255 ; decrement modulo 256\n    JNZ R0, loop\n    HALT\n",
+      "expected": [
+        3,
+        2,
+        1
+      ],
+      "verification_rule": "Output port 0 events 3,2,1 in order; halts.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "11_infinite_program",
+      "title": "bounded non-halting program",
+      "fixture": "JMP 0",
+      "expected": "bounded_step_budget",
+      "verification_rule": "Run returns non-halted after supplied finite instruction budget.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "12_malformed_rom",
+      "title": "reserved-byte rejection",
+      "fixture": "F0 01",
+      "expected": "illegal",
+      "verification_rule": "Nonzero reserved HALT operand refused before execution.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "13_unaligned_branch",
+      "title": "branch target alignment",
+      "fixture": "JMP 3",
+      "expected": "illegal",
+      "verification_rule": "Odd byte address refused by assembler and ROM validator.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "14_reset_vector",
+      "title": "deterministic power-on reset",
+      "fixture": "PC=0, R0..R3=0, 256 RAM bytes=0",
+      "expected": 0,
+      "verification_rule": "No physical power-on reset, SRAM retention or clock is modeled.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "15_flag_contract",
+      "title": "CMP updates flags without changing selected register",
+      "fixture": "LDI R0,5; CMP R0,5; HALT",
+      "expected": 5,
+      "verification_rule": "CMP Z=1 but R0 remains 5; JZ still tests register, not flag.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "16_program_roundtrip",
+      "title": "disassembler/assembler byte identity",
+      "fixture": "assemble(disassemble(binary))",
+      "expected": true,
+      "verification_rule": "Round-trip preserves exact ROM byte sequence for valid images.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "17_manufacturing_handoff",
+      "title": "evidence-gated physical reconstruction",
+      "fixture": "six process steps, 12 evidence types missing",
+      "expected": 12,
+      "verification_rule": "Software succeeds while manufactured CPU status remains HOLD.",
+      "physical_measurements": 0,
+      "independent_review": false
+    },
+    {
+      "id": "18_source_fidelity",
+      "title": "source card vs authenticated primary file",
+      "fixture": "six bibliographic cards",
+      "expected": 0,
+      "verification_rule": "No original publisher technical bytes authenticated or certified by a reviewer.",
+      "physical_measurements": 0,
+      "independent_review": false
+    }
+  ]
+}

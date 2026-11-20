@@ -1,0 +1,8 @@
+{
+  "schema": "atlas.previous-release-provenance/1",
+  "filename": "ATLAS_COLLECTION_Language_v1.0.0.zip",
+  "sha256": "7f9dff64c080e8946a6ab445aa972d6edf1354ff479837203738e99248ece2af",
+  "date": "2026-11-14",
+  "usage": "Historical Language v1 tests must run against original nine-node registry; ten-node Energy suite verifies the new federation independently",
+  "prior_bytes_unchanged": true
+}

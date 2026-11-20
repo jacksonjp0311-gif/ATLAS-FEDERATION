@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: atlas-software-design-patterns
+Version: 0.1.0
+Summary: Original ATLAS FORGE offline software patterns, durable journal and deterministic recovery
+Requires-Python: >=3.10

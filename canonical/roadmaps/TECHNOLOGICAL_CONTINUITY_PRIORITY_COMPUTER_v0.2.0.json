@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.technological-continuity-priority/1",
+  "date": "2026-11-17",
+  "current_content_node": "computer-architecture-digital-hardware-atlas",
+  "edition": "0.2.0",
+  "next_content_goal": "Deeper architecture: physical-gate/RTL and OS/compiler domain bridges, plus remaining original 30 content nodes",
+  "science_acceptance": "HOLD source originals, independent review and real hardware",
+  "original_thirty_domain_queue_modified": false,
+  "Bitwork_router_modified": false,
+  "desktop_transfer": false
+}

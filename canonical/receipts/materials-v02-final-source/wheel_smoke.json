@@ -1,0 +1,23 @@
+{
+  "schema": "atlas.local-wheel-smoke/1",
+  "result": "passed",
+  "python": "3.13.5",
+  "venv": "isolated local venv outside delivery archive",
+  "versions": {
+    "atlas-forge-research": "1.0.0rc1",
+    "measurement-atlas": "1.0.0rc1",
+    "causal-atlas": "1.0.0",
+    "materials-atlas": "0.2.0"
+  },
+  "installed_package_materials_records": 89,
+  "full_local_registry_nodes": 5,
+  "full_local_registry_records": 743,
+  "installed_hahn1_replay": "passed",
+  "installed_advanced_cases": 9,
+  "historical_smoke_issue": "initial probe tried unsupported __version__ in Measurement; probe corrected using distribution metadata",
+  "outstanding": [
+    "Windows host test not run",
+    "no desktop transfer",
+    "no live AI or Bitwork run"
+  ]
+}

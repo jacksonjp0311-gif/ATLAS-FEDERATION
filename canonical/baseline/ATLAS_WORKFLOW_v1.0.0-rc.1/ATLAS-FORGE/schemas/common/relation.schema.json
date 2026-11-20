@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Common relation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "relation_id",
+    "revision",
+    "type",
+    "from",
+    "to",
+    "provenance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas.relation/1"
+    },
+    "relation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "type": {
+      "enum": [
+        "related_to",
+        "depends_on",
+        "qualifies",
+        "contradicts",
+        "supports",
+        "supersedes"
+      ]
+    },
+    "from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "revision"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "to": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "revision"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "minProperties": 1
+    }
+  }
+}

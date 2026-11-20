@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.causal-v1-numerical-oracle/1",
+  "result": "passed",
+  "python": "3.13.5",
+  "numpy_version": "2.3.5",
+  "seed": 971126,
+  "comparisons": 1323,
+  "methods": {
+    "longitudinal": 480,
+    "mediation": 360,
+    "transport": 240,
+    "binomial": 240,
+    "berkeley": 3
+  },
+  "maximum_scaled_absolute_error": 2.220446049250313e-16,
+  "tolerance": 1e-11,
+  "data_origin": "seeded_synthetic_models_and_attributed_historical_counts",
+  "causal_identification_verified": false,
+  "independent_science_review": false,
+  "held_out_evaluation": false
+}

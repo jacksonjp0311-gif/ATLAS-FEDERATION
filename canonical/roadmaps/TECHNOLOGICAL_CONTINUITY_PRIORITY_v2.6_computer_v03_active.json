@@ -1,0 +1,18 @@
+{
+  "schema": "atlas.active-priority-pointer/1",
+  "date": "2026-11-17",
+  "active_content_node": "computer-architecture-digital-hardware-atlas",
+  "edition": "0.3.0",
+  "previous_release": "Computer_Architecture_v0.2.0",
+  "active_task": "computer boot/recovery and reference execution complete; deepen toward scoped v1",
+  "next_domains": [
+    "Compiler Design",
+    "Operating Systems",
+    "remaining original 30 knowledge domains"
+  ],
+  "original_30_domain_queue_unchanged": true,
+  "Bitwork_router_deferred": true,
+  "desktop_transfer_deferred": true,
+  "experimental_cpu_fabrication": false,
+  "external_science_accepted": false
+}

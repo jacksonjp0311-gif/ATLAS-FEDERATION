@@ -1,0 +1,8 @@
+{
+  "schema": "atlas.prior-release-provenance/1",
+  "archive_name": "ATLAS_COLLECTION_Computation_v1.0.0.zip",
+  "archive_sha256": "0b63c234c743f2f91134731ba81e4e99d5f38c64f032970a5f56c9403d58430a",
+  "legacy_computation_tests_unchanged": true,
+  "purpose": "Previous Computation v1 suite asserted eight-node federation and must run against its original immutable eight-node snapshot, not the new nine-node collection",
+  "old_source_not_modified": true
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "measurement.content-coverage/1",
+  "revision": "0.7.0",
+  "scientific_v1_ready": false,
+  "navigation": "deferred_not_waived",
+  "families": [
+    {
+      "id": "definition",
+      "title": "Measurand and terminology",
+      "chapter": "docs/chapters/01_measurand_and_terms.md",
+      "representative_record_ids": [
+        "measurand-definition",
+        "accuracy-qualitative",
+        "precision-conditions"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "Independent review and domain-specific measurand examples"
+    },
+    {
+      "id": "units",
+      "title": "Units and quantity meaning",
+      "chapter": "docs/chapters/02_units_and_dimensions.md",
+      "representative_record_ids": [
+        "quantity-value-unit",
+        "celsius-temperature-interval",
+        "angular-frequency-unit"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "General unit parser; dimensional/quantity-kind validation for arbitrary inputs"
+    },
+    {
+      "id": "repeat",
+      "title": "Repeated readings and dependence",
+      "chapter": "docs/chapters/03_repeat_readings.md",
+      "representative_record_ids": [
+        "type-a-mean",
+        "correlated-mean",
+        "shared-offset-average"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "Real time-series evidence and independence/model diagnostics"
+    },
+    {
+      "id": "type-b",
+      "title": "Type B and resolution",
+      "chapter": "docs/chapters/04_type_b_and_resolution.md",
+      "representative_record_ids": [
+        "type-b-information",
+        "quantization-assumption",
+        "resolution-meaning"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "Real certificate/specification interpretation, rights-cleared examples"
+    },
+    {
+      "id": "budget",
+      "title": "Budgets and nonlinear models",
+      "chapter": "docs/chapters/05_budgets_and_nonlinearity.md",
+      "representative_record_ids": [
+        "linear-propagation",
+        "covariance",
+        "linearization-counterexample"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "General nonlinear propagation and real-model validation"
+    },
+    {
+      "id": "calibration",
+      "title": "Calibration and traceability",
+      "chapter": "docs/chapters/06_calibration_and_traceability.md",
+      "representative_record_ids": [
+        "calibration-two-stages",
+        "traceability-network",
+        "inverse-linear-calibration",
+        "pontius-published-observations",
+        "run-order-drift-confounding",
+        "inverse-root-domain"
+      ],
+      "status": "assistant_curated_reference_with_published_data_numerical_reproduction",
+      "remaining": "Independently reviewed calibration/traceability documents, missing physical units and acquisition metadata, source-byte archival capture, physical replication and broader examples"
+    },
+    {
+      "id": "comparison",
+      "title": "Comparison and coverage",
+      "chapter": "docs/chapters/07_comparison_and_coverage.md",
+      "representative_record_ids": [
+        "compatibility-rule",
+        "effective-degrees-of-freedom",
+        "normal-mean-t-interval",
+        "single-use-inverse-interval"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "Conditional computations and synthetic coverage are implemented; independent scientific review, real-model applicability and decision-risk standards remain open."
+    },
+    {
+      "id": "reporting",
+      "title": "Reporting and reproducible reuse",
+      "chapter": "docs/chapters/08_reporting_and_reuse.md",
+      "representative_record_ids": [
+        "uncertainty-reporting",
+        "fitness-for-purpose"
+      ],
+      "status": "assistant_curated_reference_and_synthetic_examples",
+      "remaining": "Independent report review and supported-platform checks"
+    }
+  ]
+}

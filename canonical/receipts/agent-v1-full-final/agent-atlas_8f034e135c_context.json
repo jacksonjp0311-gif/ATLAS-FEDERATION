@@ -1,0 +1,811 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "POMDP belief posterior state and observation",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "4609990632f9c1e741aea421c00d60a332ca27b2a7d6d97a089403ca75c3de68",
+  "registry_revision": "800554551d2e9f039dd1ecad6819c01b5cf238d829df9329641d1538b6d094b8",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "2084c970b1b78f80347621cbfe4052c7c0a8d3d18fb5aad6bfb9d6ceed228575",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:belief-not-state",
+      "revision": "3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721"
+    },
+    {
+      "record_id": "agent-atlas:pomdp-belief",
+      "revision": "7c527eeb5b67c0648bfc0ce2d7d06a512a610daefc0a1041747e703249f82477"
+    },
+    {
+      "record_id": "agent-atlas:chapter-03",
+      "revision": "de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:belief-not-state",
+      "revision": "3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721"
+    },
+    {
+      "record_id": "agent-atlas:chapter-03",
+      "revision": "de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676"
+    },
+    {
+      "record_id": "agent-atlas:pomdp-belief",
+      "revision": "7c527eeb5b67c0648bfc0ce2d7d06a512a610daefc0a1041747e703249f82477"
+    },
+    {
+      "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+      "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67"
+    },
+    {
+      "record_id": "agent-atlas:source:MCP-SPEC-2026",
+      "revision": "0a54c59bb0d32047e7e93ea343a40d266817e375dea58897cf1d11b8579d7a9a"
+    },
+    {
+      "record_id": "agent-atlas:source:REACT-2023",
+      "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+    },
+    {
+      "record_id": "agent-atlas:source:TAU2-2025",
+      "revision": "b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75"
+    },
+    {
+      "record_id": "agent-atlas:source:TAUBENCH-2024",
+      "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+    },
+    {
+      "record_id": "agent-atlas:unknown-external-effects",
+      "revision": "62f95b3f740b95d2b4eeac30a25be25a264af8ee45cecd9b469b1e78f86f06e3"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-03",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "POMDP-style belief updates need conditional transition and observation models; a model confidence statement is not a calibrated posterior.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+              "source_id": "agent-atlas:source:REACT-2023"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on dual-control agent+user environments; no local benchmark reproduction",
+              "source_id": "agent-atlas:source:TAU2-2025"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "belief-not-state",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-03",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:belief-not-state",
+        "revision": "3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REACT-2023",
+            "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+          },
+          {
+            "record_id": "agent-atlas:source:TAU2-2025",
+            "revision": "b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75"
+          }
+        ],
+        "status": "active",
+        "title": "Belief in a state is not observation of that state",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Original scientific explanation, not reprinted third-party text",
+            "No direct empirical model evaluation or independent review; applies only with stated assumptions"
+          ],
+          "tags": [
+            "chapter-03",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "# 03. An agent observes through channels, not direct access to truth\n\nA deployed agent's observations can be delayed, incomplete, censored or fabricated. A planning step may rely on a database row, a web page, an external simulator or another worker's natural-language report. Those channels have distinct provenance and error properties. A **partially observable decision process** maintains a belief about hidden state rather than equating the latest token stream with objective reality. Bayesian belief updates require a specified transition and observation model; a generic language model's confidence sentence is not such a calibrated posterior.\n\nFor a finite known POMDP, a belief update is `b_{t+1}(x') ∝ Z(o_{t+1}|x',a_t) Σ_x T(x'|x,a_t)b_t(x)`. This is a conditional mathematical identity. Agent Atlas does not fit transition or observation matrices, and does not make probabilistic claims about a production agent's hidden state. The key architectural practice is distinguishing **observation**, **interpretation**, **action authorization**, **state estimate**, and **measured outcome**.\n\nConsider a terminal command that returns a timeout after a long-running task. There are multiple compatible explanations: the task never started, it started and remains running, it completed without returning a response, or a child completed but its parent crashed. Reissuing the command can be safe or unsafe depending on idempotency and external effects. A ledger entry `tool_error` preserves the ambiguity; only an authorized `stop` or actual termination event should mark the run stopped. Our event journal has explicit actor+action fields to demonstrate this important separation.\n\nA state-of-the-art evaluation should measure factual state after action, not just the model's explanation. τ-bench evaluates end-state against annotated goals; τ²-bench adds shared user/agent control. Both emphasize that a conversation transcript alone can be an incomplete representation of the task. An agent may claim success while the required database state has not changed. Conversely, a state update might succeed despite a text explanation describing failure.\n\n**Counterexample:** two possible physical machine states generate the same coarse sensor reading. A model selecting one confident cause without additional data commits an identification error, not a planning achievement. Route the claim to a measurement/causal study and retain competing hypotheses. This is a cross-domain analogy, not an empirical benchmark on machinery.\n\n**Sources:** [TAUBENCH-2024](https://arxiv.org/abs/2406.12045), [TAU2-2025](https://arxiv.org/abs/2506.07982), [REACT-2023](https://arxiv.org/abs/2210.03629).\n",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on dual-control agent+user environments; no local benchmark reproduction",
+              "source_id": "agent-atlas:source:TAU2-2025"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+              "source_id": "agent-atlas:source:REACT-2023"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "chapter-03",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-03",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:chapter-03",
+        "revision": "de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          },
+          {
+            "record_id": "agent-atlas:source:TAU2-2025",
+            "revision": "b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75"
+          },
+          {
+            "record_id": "agent-atlas:source:REACT-2023",
+            "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+          }
+        ],
+        "status": "active",
+        "title": "03. An agent observes through channels, not direct access to truth",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "b_next(xprime) ∝ Z(o|xprime,a) Σ_x T(xprime|x,a)*b(x)",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-03",
+            "equation",
+            "agent-0.1.0"
+          ],
+          "text": "A belief-state update requires the transition, observation and prior distributions, not model text confidence.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+              "source_id": "agent-atlas:source:REACT-2023"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "pomdp-belief",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-03",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:pomdp-belief",
+        "revision": "7c527eeb5b67c0648bfc0ce2d7d06a512a610daefc0a1041747e703249f82477",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REACT-2023",
+            "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f"
+          }
+        ],
+        "status": "active",
+        "title": "Finite-state belief-update identity",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: LangChain contributors (living 2026). Inspected scope: Documented distinction between checkpoints and cross-thread stores; no deployment in this package. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:LANGGRAPH-PERSISTENCE",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Documented distinction between checkpoints and cross-thread stores; no deployment in this package",
+          "publication": "living 2026",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "LangGraph persistence guide",
+          "url": "https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx"
+        },
+        "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+        "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "LangGraph persistence guide",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: MCP contributors (2026-07-28). Inspected scope: Public normative specification overview on user consent/control; it cannot implement enforcement on its own. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MCP-SPEC-2026",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Public normative specification overview on user consent/control; it cannot implement enforcement on its own",
+          "publication": "2026-07-28",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Model Context Protocol specification 2026-07-28",
+          "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/index.mdx"
+        },
+        "record_id": "agent-atlas:source:MCP-SPEC-2026",
+        "revision": "0a54c59bb0d32047e7e93ea343a40d266817e375dea58897cf1d11b8579d7a9a",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Model Context Protocol specification 2026-07-28",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Yao et al. (ICLR 2023). Inspected scope: Published abstract and stated interleaved action/observation motivation; no independent task replay. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:REACT-2023",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Published abstract and stated interleaved action/observation motivation; no independent task replay",
+          "publication": "ICLR 2023",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "url": "https://arxiv.org/abs/2210.03629"
+        },
+        "record_id": "agent-atlas:source:REACT-2023",
+        "revision": "97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Barres et al. (arXiv 2025). Inspected scope: Abstract on dual-control agent+user environments; no local benchmark reproduction. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:TAU2-2025",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on dual-control agent+user environments; no local benchmark reproduction",
+          "publication": "arXiv 2025",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "τ²-bench: Evaluating Conversational Agents in a Dual-Control Environment",
+          "url": "https://arxiv.org/abs/2506.07982"
+        },
+        "record_id": "agent-atlas:source:TAU2-2025",
+        "revision": "b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "τ²-bench: Evaluating Conversational Agents in a Dual-Control Environment",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Yao et al. (arXiv 2024). Inspected scope: Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:TAUBENCH-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+          "publication": "arXiv 2024",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+          "url": "https://arxiv.org/abs/2406.12045"
+        },
+        "record_id": "agent-atlas:source:TAUBENCH-2024",
+        "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-03",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "Retry after unknown external status requires idempotency and provider reconciliation; tool-error status is not a terminal Stop.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Documented distinction between checkpoints and cross-thread stores; no deployment in this package",
+              "source_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Public normative specification overview on user consent/control; it cannot implement enforcement on its own",
+              "source_id": "agent-atlas:source:MCP-SPEC-2026"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "unknown-external-effects",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-03",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:unknown-external-effects",
+        "revision": "62f95b3f740b95d2b4eeac30a25be25a264af8ee45cecd9b469b1e78f86f06e3",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:LANGGRAPH-PERSISTENCE",
+            "revision": "7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67"
+          },
+          {
+            "record_id": "agent-atlas:source:MCP-SPEC-2026",
+            "revision": "0a54c59bb0d32047e7e93ea343a40d266817e375dea58897cf1d11b8579d7a9a"
+          }
+        ],
+        "status": "active",
+        "title": "Timeout may conceal completed external side effects",
+        "type": "concept"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:belief-not-state",
+          "revision": "3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:belief-not-state:qualifies:chapter-03",
+        "revision": "5d54b5085449f71147ccd07a45fa09e4b9ee5752252289ebfca38a7193cc82e9",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-03",
+          "revision": "de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:unknown-external-effects",
+          "revision": "62f95b3f740b95d2b4eeac30a25be25a264af8ee45cecd9b469b1e78f86f06e3"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:unknown-external-effects:qualifies:chapter-03",
+        "revision": "0ef8d98631d3467e9868d600e857cda975b23bec70e07c1576033bfd071b4210",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-03",
+          "revision": "de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-03\",\"concept\",\"agent-0.1.0\"],\"text\":\"POMDP-style belief updates need conditional transition and observation models; a model confidence statement is not a calibrated posterior.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"source_id\":\"agent-atlas:source:REACT-2023\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on dual-control agent+user environments; no local benchmark reproduction\",\"source_id\":\"agent-atlas:source:TAU2-2025\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"belief-not-state\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-03\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:belief-not-state\",\"revision\":\"3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\"},{\"record_id\":\"agent-atlas:source:TAU2-2025\",\"revision\":\"b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75\"}],\"status\":\"active\",\"title\":\"Belief in a state is not observation of that state\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Original scientific explanation, not reprinted third-party text\",\"No direct empirical model evaluation or independent review; applies only with stated assumptions\"],\"tags\":[\"chapter-03\",\"concept\",\"agent-0.1.0\"],\"text\":\"# 03. An agent observes through channels, not direct access to truth\\n\\nA deployed agent's observations can be delayed, incomplete, censored or fabricated. A planning step may rely on a database row, a web page, an external simulator or another worker's natural-language report. Those channels have distinct provenance and error properties. A **partially observable decision process** maintains a belief about hidden state rather than equating the latest token stream with objective reality. Bayesian belief updates require a specified transition and observation model; a generic language model's confidence sentence is not such a calibrated posterior.\\n\\nFor a finite known POMDP, a belief update is `b_{t+1}(x') ∝ Z(o_{t+1}|x',a_t) Σ_x T(x'|x,a_t)b_t(x)`. This is a conditional mathematical identity. Agent Atlas does not fit transition or observation matrices, and does not make probabilistic claims about a production agent's hidden state. The key architectural practice is distinguishing **observation**, **interpretation**, **action authorization**, **state estimate**, and **measured outcome**.\\n\\nConsider a terminal command that returns a timeout after a long-running task. There are multiple compatible explanations: the task never started, it started and remains running, it completed without returning a response, or a child completed but its parent crashed. Reissuing the command can be safe or unsafe depending on idempotency and external effects. A ledger entry `tool_error` preserves the ambiguity; only an authorized `stop` or actual termination event should mark the run stopped. Our event journal has explicit actor+action fields to demonstrate this important separation.\\n\\nA state-of-the-art evaluation should measure factual state after action, not just the model's explanation. τ-bench evaluates end-state against annotated goals; τ²-bench adds shared user/agent control. Both emphasize that a conversation transcript alone can be an incomplete representation of the task. An agent may claim success while the required database state has not changed. Conversely, a state update might succeed despite a text explanation describing failure.\\n\\n**Counterexample:** two possible physical machine states generate the same coarse sensor reading. A model selecting one confident cause without additional data commits an identification error, not a planning achievement. Route the claim to a measurement/causal study and retain competing hypotheses. This is a cross-domain analogy, not an empirical benchmark on machinery.\\n\\n**Sources:** [TAUBENCH-2024](https://arxiv.org/abs/2406.12045), [TAU2-2025](https://arxiv.org/abs/2506.07982), [REACT-2023](https://arxiv.org/abs/2210.03629).\\n\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on dual-control agent+user environments; no local benchmark reproduction\",\"source_id\":\"agent-atlas:source:TAU2-2025\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"source_id\":\"agent-atlas:source:REACT-2023\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"chapter-03\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-03\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:chapter-03\",\"revision\":\"de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"},{\"record_id\":\"agent-atlas:source:TAU2-2025\",\"revision\":\"b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75\"},{\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\"}],\"status\":\"active\",\"title\":\"03. An agent observes through channels, not direct access to truth\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"b_next(xprime) ∝ Z(o|xprime,a) Σ_x T(xprime|x,a)*b(x)\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-03\",\"equation\",\"agent-0.1.0\"],\"text\":\"A belief-state update requires the transition, observation and prior distributions, not model text confidence.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"source_id\":\"agent-atlas:source:REACT-2023\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"pomdp-belief\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-03\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:pomdp-belief\",\"revision\":\"7c527eeb5b67c0648bfc0ce2d7d06a512a610daefc0a1041747e703249f82477\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\"}],\"status\":\"active\",\"title\":\"Finite-state belief-update identity\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: LangChain contributors (living 2026). Inspected scope: Documented distinction between checkpoints and cross-thread stores; no deployment in this package. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:LANGGRAPH-PERSISTENCE\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Documented distinction between checkpoints and cross-thread stores; no deployment in this package\",\"publication\":\"living 2026\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"LangGraph persistence guide\",\"url\":\"https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx\"},\"record_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\",\"revision\":\"7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"LangGraph persistence guide\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: MCP contributors (2026-07-28). Inspected scope: Public normative specification overview on user consent/control; it cannot implement enforcement on its own. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MCP-SPEC-2026\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Public normative specification overview on user consent/control; it cannot implement enforcement on its own\",\"publication\":\"2026-07-28\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Model Context Protocol specification 2026-07-28\",\"url\":\"https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/index.mdx\"},\"record_id\":\"agent-atlas:source:MCP-SPEC-2026\",\"revision\":\"0a54c59bb0d32047e7e93ea343a40d266817e375dea58897cf1d11b8579d7a9a\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Model Context Protocol specification 2026-07-28\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Yao et al. (ICLR 2023). Inspected scope: Published abstract and stated interleaved action/observation motivation; no independent task replay. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:REACT-2023\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Published abstract and stated interleaved action/observation motivation; no independent task replay\",\"publication\":\"ICLR 2023\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"ReAct: Synergizing Reasoning and Acting in Language Models\",\"url\":\"https://arxiv.org/abs/2210.03629\"},\"record_id\":\"agent-atlas:source:REACT-2023\",\"revision\":\"97b8da0ecc04e21d9b2e4a94385fa44d2a171d76528490f5b016a93899c1a20f\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"ReAct: Synergizing Reasoning and Acting in Language Models\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Barres et al. (arXiv 2025). Inspected scope: Abstract on dual-control agent+user environments; no local benchmark reproduction. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:TAU2-2025\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on dual-control agent+user environments; no local benchmark reproduction\",\"publication\":\"arXiv 2025\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"τ²-bench: Evaluating Conversational Agents in a Dual-Control Environment\",\"url\":\"https://arxiv.org/abs/2506.07982\"},\"record_id\":\"agent-atlas:source:TAU2-2025\",\"revision\":\"b9024c50da4431e66e2c4a6a500c543c9e92cdca684881b3e70a5ac8ff021a75\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"τ²-bench: Evaluating Conversational Agents in a Dual-Control Environment\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Yao et al. (arXiv 2024). Inspected scope: Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:TAUBENCH-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"publication\":\"arXiv 2024\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains\",\"url\":\"https://arxiv.org/abs/2406.12045\"},\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-03\",\"concept\",\"agent-0.1.0\"],\"text\":\"Retry after unknown external status requires idempotency and provider reconciliation; tool-error status is not a terminal Stop.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Documented distinction between checkpoints and cross-thread stores; no deployment in this package\",\"source_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Public normative specification overview on user consent/control; it cannot implement enforcement on its own\",\"source_id\":\"agent-atlas:source:MCP-SPEC-2026\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"unknown-external-effects\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-03\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:unknown-external-effects\",\"revision\":\"62f95b3f740b95d2b4eeac30a25be25a264af8ee45cecd9b469b1e78f86f06e3\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:LANGGRAPH-PERSISTENCE\",\"revision\":\"7fb1f69252c4cfcb563bc2986888f099dde2d0a201ff9aec8c002e2ca50fbc67\"},{\"record_id\":\"agent-atlas:source:MCP-SPEC-2026\",\"revision\":\"0a54c59bb0d32047e7e93ea343a40d266817e375dea58897cf1d11b8579d7a9a\"}],\"status\":\"active\",\"title\":\"Timeout may conceal completed external side effects\",\"type\":\"concept\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:belief-not-state\",\"revision\":\"3ebd13e788e422dac864d4df6c3504b67d52cd746899c3421b13401f90e94721\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:belief-not-state:qualifies:chapter-03\",\"revision\":\"5d54b5085449f71147ccd07a45fa09e4b9ee5752252289ebfca38a7193cc82e9\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-03\",\"revision\":\"de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:unknown-external-effects\",\"revision\":\"62f95b3f740b95d2b4eeac30a25be25a264af8ee45cecd9b469b1e78f86f06e3\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:unknown-external-effects:qualifies:chapter-03\",\"revision\":\"0ef8d98631d3467e9868d600e857cda975b23bec70e07c1576033bfd071b4210\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-03\",\"revision\":\"de9fa8498855af8f20ae512a9294cc3280367422f5dc98c7663409bc8327f676\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 26432,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:belief-filter",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:agent-state-observation",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:agent-environment",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:text-hash-limit",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:chapter-01",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "773b3a24939fa1d845762c9c060dabdc28a1056a561fe39a77c80f0f36141124"
+}

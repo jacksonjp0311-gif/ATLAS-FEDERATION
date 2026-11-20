@@ -1,0 +1,182 @@
+{
+  "result": "passed",
+  "checks": [
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/common.py",
+      "sha256": "bffc4942071629830bab926e1519bac37f27153eed3aa74a4f8f493b1851bfbb",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/routing.py",
+      "sha256": "530c911e00d2fa081cf402b9e79373bdfb228047c72f8cd32470dc2f814f24e4",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/common_cli.py",
+      "sha256": "44bd7787cc1cd1349144e6d1ec8d643141d73034cb1390ce0644ae34f8a999ab",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/core.py",
+      "sha256": "dce833ecb92f6e57eda52975ce057e431009c472526f7e8d8789ff6ec4bd4f98",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/federation.py",
+      "sha256": "77eff08deb600b0090c3380bafe064fe8a164eb88e74b8ac57f435ffb762ec59",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/cli.py",
+      "sha256": "a71dc86413fe1c7f79c35355d3abedea1422f72ee167b4624e14b01abe8f6e4a",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/server.py",
+      "sha256": "817b21af82c1cf556a5738ee8670a673cc2957167f7ca97ce05cfd79f56022cb",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/workflow.py",
+      "sha256": "9a9f0dc45ec1505460fa7e9641c6b8ad92c72e521964a753127d8d16240ed0cf",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/atlas_manifest.json",
+      "sha256": "ec48a3549df676fe2ca5d80eebf7516644d824ca78a0c4caa9f6a1955585730f",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/datasets.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/sources.jsonl",
+      "sha256": "d1d2158d1eff062546acd1c3cd57e17390f290f1d2042f1e743a16e00050b02d",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/equations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/relations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/reviews.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/methods.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/concepts.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/signal-atlas/data/claims.jsonl",
+      "sha256": "8ebf3b372d9b4465d77a60f62ee7f7f8f410bd92d9739ea3108b5720c341ae3d",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/atlas_manifest.json",
+      "sha256": "e3e6e1fd4481938eae68fbb597e62f67a802b111e0f2f591e385dd941ad1b4b4",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/datasets.jsonl",
+      "sha256": "84d7f178a67014130a408fc5991fe835563480f2bcea8e2ad20ab0a43cabbb5a",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/sources.jsonl",
+      "sha256": "38b82a423d806e024dbb78f16a5b952c0b78fae6128979524b6ad81dc46db43f",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/equations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/relations.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/reviews.jsonl",
+      "sha256": "eea89dd8b330ab8fd5d3d4ccb819fca4021189cb7cd035657cfcff9e221bfd26",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/methods.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/concepts.jsonl",
+      "sha256": "f6d5aa6ed19ba484fa83f63dd0c77ca03b719bf29684487823171a8ca49299b0",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/common/nodes/cymatics-atlas/data/claims.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/hero.png",
+      "sha256": "f1d29051b41de3ed11bde3a7c81817b1d77f822a19e1d8646655a5a2132f08a3",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/workflow/acceptance.json",
+      "sha256": "3dc2c039dc39bdad01e8447d7767d89fe936125bb2d73b52338c500722c1b70f",
+      "unchanged": true
+    },
+    {
+      "path": "DOMAIN_QUEUE.json",
+      "sha256": "4c78856f1cbc445e669c9029d88f81a5ade70d3b2d17cb312769ca818d23790a",
+      "unchanged": true
+    },
+    {
+      "path": "DOMAIN_ROADMAP.md",
+      "sha256": "23b3daf9ab3230078f3edae664ed787219a89d8aee8831903c7046949a0cf2ea",
+      "unchanged": true
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/resources/pontius/targets.json",
+      "sha256": "39709ec4b8f316af57228bdffb6a0e7ef6bc053bd6ab3ed58ce026eda005c161",
+      "unchanged": true
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/resources/pontius/NOTICE.md",
+      "sha256": "3a0d4cacca7bfd019d8163d76198db10f446c778dfcc5ca680f3b5e2e826cda1",
+      "unchanged": true
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/resources/pontius/certified_targets.json",
+      "sha256": "c2cfd4cd6cb6a53cb429887ae3a739dca00ddc1a08da310da840a1e2fc831b7b",
+      "unchanged": true
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/resources/pontius/capture.json",
+      "sha256": "1bbec97efb74bb24b331f8bdb11de61554d8cf570abc2ec18ac8267409c54298",
+      "unchanged": true
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/resources/pontius/observations.json",
+      "sha256": "3d36e30f268705c686241d9332b8be0ba1deef2e0da7acafb33639bbf0d2ca0a",
+      "unchanged": true
+    }
+  ],
+  "navigation_changes": false,
+  "scientific_evidence_promoted": false
+}

@@ -1,0 +1,12 @@
+{
+  "ATLAS-FORGE": {
+    "tests": 170,
+    "passed": true,
+    "log_sha256": "dd4a0d7c6fa5aa040a6aa818fb4fc809dd2ec4aa9eb845bdd9ae2cfc95b98404"
+  },
+  "MEASUREMENT-ATLAS": {
+    "tests": 75,
+    "passed": true,
+    "log_sha256": "02063867e6f26455258f14c85a176d7690633415ccf360654bb41d27919d05eb"
+  }
+}

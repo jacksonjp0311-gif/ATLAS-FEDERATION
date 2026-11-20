@@ -1,0 +1,21 @@
+{
+  "result": "passed",
+  "installed_version": "1.0.0",
+  "standalone_records": 305,
+  "standalone_relations": 268,
+  "source_closed_retrieval": true,
+  "casebook_count": 14,
+  "source_checkout_imported": false,
+  "installed_distributions": [
+    "atlas-forge-research",
+    "measurement-atlas",
+    "causal-atlas",
+    "materials-atlas",
+    "control-atlas-research",
+    "agent-atlas-research",
+    "computation-atlas-research",
+    "language-atlas-research",
+    "energy-atlas-research",
+    "chemistry-atlas-research"
+  ]
+}

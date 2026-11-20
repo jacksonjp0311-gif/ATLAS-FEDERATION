@@ -1,0 +1,11 @@
+{
+  "kind": "numpy_numerical_crosscheck",
+  "result": "passed",
+  "seed": 86422,
+  "numpy_version": "2.3.5",
+  "positive_definite_cases": 600,
+  "invalid_cases_rejected": 5,
+  "max_relative_error": 2.3171296437844394e-15,
+  "independent_human_review": false,
+  "physical_measurements": false
+}

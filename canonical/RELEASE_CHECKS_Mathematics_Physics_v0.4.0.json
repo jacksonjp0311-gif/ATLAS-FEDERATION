@@ -1,0 +1,15 @@
+{
+  "schema": "atlas.mathematics-physics-v04-source-tree-verification/1",
+  "stage": "preseal_source_tree",
+  "source_tree_tests_passed": 2105,
+  "test_groups": 19,
+  "failed_groups": [],
+  "contexts": 102,
+  "nodes": 12,
+  "records": 2581,
+  "relations": 1735,
+  "sealed_replay": "pending_independent_validation",
+  "original_primary_publisher_bytes_authenticated": 0,
+  "independent_science_review": false,
+  "scope": "numeric software checks and exact archive invariants; not experiment"
+}

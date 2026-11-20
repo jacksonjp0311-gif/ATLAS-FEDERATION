@@ -1,0 +1,23 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "d4737fddac5a6fdf1deb17967d4650225ef96918a4295e7a3e78fc8854ee74a9",
+  "python": "3.13.5",
+  "platform": "Linux x86_64",
+  "test_log_sha256": "6f5205da74e8eedffd4b227297545fcf88688f5501e99ce5713409fd7d379a08",
+  "tests_passed": 165,
+  "independent_scientific_review": false,
+  "limitations": [
+    "Software structural/integrity checks, not scientific truth.",
+    "No actual Bitwork or consuming model run."
+  ],
+  "kind": "common_conformance",
+  "coverage": [
+    "three enabled nodes",
+    "synthetic unknown node fixture",
+    "shared scaffold",
+    "legacy record preservation",
+    "schema and exact source-link closure"
+  ]
+}

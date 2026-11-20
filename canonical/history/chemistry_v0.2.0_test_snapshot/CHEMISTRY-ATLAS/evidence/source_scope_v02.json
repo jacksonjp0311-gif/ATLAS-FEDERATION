@@ -1,0 +1,39 @@
+{
+  "schema": "atlas.chemistry-v02-public-source/1",
+  "sources": [
+    {
+      "id": "IUPAC-ACTIVITY",
+      "title": "IUPAC Gold Book 5.0 \u2014 activity",
+      "url": "https://goldbook.iupac.org/terms/view/A00115",
+      "inspected_portion": "IUPAC term definition a=exp((\u03bc\u2212\u03bc\u00b0)/RT), 2025 online Gold Book v5; individual term CC BY-SA 4.0 license",
+      "rights": "Term license covers specific individual term; full compiled collection requires separate rights review",
+      "authentic_original_bytes_archived": false
+    },
+    {
+      "id": "IUPAC-IONIC-STRENGTH",
+      "title": "IUPAC Gold Book 5.0 \u2014 ionic strength",
+      "url": "https://goldbook.iupac.org/terms/view/I03180",
+      "inspected_portion": "IUPAC concentration/molality ionic strength 1/2 \u03a3 c z\u00b2; 2025 online term edition",
+      "rights": "Individual term CC BY-SA 4.0 with attribution/share-alike; original term transport file not archived",
+      "authentic_original_bytes_archived": false
+    },
+    {
+      "id": "MATERIALS-PROJECT-API",
+      "title": "Materials Project API and computed materials data schema",
+      "url": "https://docs.materialsproject.org/downloading-data/using-the-api",
+      "inspected_portion": "Materials Project data API, computational vs observed provenance, dataset and code version distinctions",
+      "rights": "API code and actual materials data have separate licenses/terms; none downloaded",
+      "authentic_original_bytes_archived": false
+    },
+    {
+      "id": "NIST-CODATA-PAPER",
+      "title": "NIST/CODATA 2022 recommended constants, 2025 paper",
+      "url": "https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022",
+      "inspected_portion": "2022 adjustment published April 30 2025; exact defined Avogadro, e, kB vs adjusted constants",
+      "rights": "Source paper and compiled data have publisher-specific rights; original PDF not retained",
+      "authentic_original_bytes_archived": false
+    }
+  ],
+  "actual_dataset_rows_acquired": 0,
+  "independent_scientific_review": false
+}

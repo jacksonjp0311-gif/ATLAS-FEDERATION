@@ -1,0 +1,221 @@
+{
+  "schema": "atlas.collection-release/1",
+  "display_version": "0.1.0",
+  "date": "2026-11-12",
+  "status": "content_checkpoint_not_final_release",
+  "result": "passed",
+  "active_content_domain": "causal-atlas",
+  "measurement_version": "1.0.0-rc.1",
+  "causal_version": "0.1.0",
+  "common_contract": "1.0",
+  "inventory": {
+    "nodes": 4,
+    "common_records": 539,
+    "causal_records": 34,
+    "causal_bounded_literature_records": 23,
+    "causal_source_cards": 8,
+    "causal_original_method_example_records": 3,
+    "causal_relations": 10,
+    "synthetic_cases": 5,
+    "authored_review_questions": 12
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 75,
+      "passed": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_tests_passed": 481,
+  "common_checks": {
+    "conformance": {
+      "result": "passed",
+      "nodes": 4,
+      "records": 539,
+      "relations": 43
+    },
+    "context": [
+      {
+        "node": "causal-atlas",
+        "query": "standardization positivity",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "measurement-atlas",
+        "query": "expanded uncertainty",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "cymatics-atlas",
+        "query": "Faraday waves",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "signal-atlas",
+        "query": "NOAA GOES",
+        "status": "context_available",
+        "valid": true
+      }
+    ],
+    "casebook": {
+      "schema": "atlas.causal-casebook/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "confounded-process",
+          "data_origin": "synthetic_constructed_population",
+          "crude_difference": "-13/50",
+          "standardized_difference": "1/10",
+          "known_model_intervention_difference": "1/10",
+          "expected": {
+            "crude_difference": "-13/50",
+            "standardized_difference": "1/10"
+          },
+          "passed": true,
+          "limitations": [
+            "The generating graph and probabilities are stipulated, not learned from factory data.",
+            "No sampling uncertainty is estimated."
+          ]
+        },
+        {
+          "id": "collider-selection",
+          "data_origin": "synthetic_finite_model",
+          "marginal_A1_given_B1": "1/2",
+          "A1_given_B0_selected": "1",
+          "A1_given_B1_selected": "1/2",
+          "passed": true,
+          "limitations": [
+            "Selection is explicitly defined as logical OR; other mechanisms can produce different magnitudes."
+          ]
+        },
+        {
+          "id": "mediator-conditioning",
+          "data_origin": "synthetic_graph",
+          "chain_blocked_by_M": true,
+          "total_effect_backdoor_adjust_M": {
+            "criterion": "single-exposure-backdoor-sufficient",
+            "valid_under_supplied_graph": false,
+            "descendants_of_exposure_in_set": [
+              "M"
+            ],
+            "blocks_backdoor_paths": true,
+            "graph_truth_checked": false,
+            "no_causal_effect_claim_from_graph_alone": true,
+            "failure_does_not_prove_nonidentifiability": true
+          },
+          "passed": true,
+          "limitations": [
+            "Rejecting M for this sufficient total-effect criterion is not a claim about every direct-effect method."
+          ]
+        },
+        {
+          "id": "missing-treatment-support",
+          "data_origin": "synthetic_grouped_counts",
+          "missing_positive_target_stratum_rejected": true,
+          "passed": true,
+          "limitations": [
+            "Empty sample cells alone do not distinguish structural impossibility from finite-sample sparsity."
+          ]
+        },
+        {
+          "id": "unobserved-common-cause",
+          "data_origin": "synthetic_graph",
+          "observed_adjustment_sets": [],
+          "passed": true,
+          "limitations": [
+            "No observed back-door set was found; this is not a complete nonidentifiability proof."
+          ]
+        }
+      ],
+      "physical_observations": false,
+      "independent_review": false,
+      "causal_discovery": false
+    },
+    "baseline_preservation": {
+      "result": "passed",
+      "members": 771,
+      "changed": [],
+      "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+    },
+    "json_schema": {
+      "result": "passed",
+      "errors": [],
+      "records": 539
+    }
+  },
+  "graph_algorithm_comparison": {
+    "result": "passed",
+    "exhaustive_forward_order_four_node_graphs": 64,
+    "four_node_comparisons": 1536,
+    "seeded_seven_node_comparisons": 1000,
+    "total_comparisons": 2536,
+    "seed": 121126,
+    "failures": [],
+    "oracle": "NetworkX is_d_separator",
+    "networkx_version": "3.6.1",
+    "local_algorithm": "ancestral_moral_graph",
+    "independent_human_review": false,
+    "causal_graph_truth_validated": false,
+    "python": "3.13.5"
+  },
+  "installed_wheel_smoke": {
+    "result": "passed",
+    "causal_version": "0.1.0",
+    "forge_version": "1.0.0rc1",
+    "measurement_version": "1.0.0rc1",
+    "records": 34,
+    "nodes": 1,
+    "context_valid": true,
+    "context_status": "context_available",
+    "cases": 5,
+    "import_paths": {
+      "causal": "/mnt/data/atlas_execution/causal_clean_env/lib/python3.13/site-packages/causal_atlas/__init__.py",
+      "forge": "/mnt/data/atlas_execution/causal_clean_env/lib/python3.13/site-packages/atlas_forge/__init__.py",
+      "measurement": "/mnt/data/atlas_execution/causal_clean_env/lib/python3.13/site-packages/measurement_atlas/__init__.py"
+    },
+    "python": "3.13.5",
+    "source_tree_imports": false,
+    "installed_cli_commands_passed": [
+      "casebook",
+      "reference"
+    ],
+    "wheel_sha256": "c9b56172b15ede4c90b17bfcfa8f621dc15b255d48d6235ecc0bf4c08d143a1f",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "content_build_continuation_allowed": true,
+  "measurement_final_v1_accepted": false,
+  "causal_final_v1_accepted": false,
+  "collection_final_release_accepted": false,
+  "live_bitwork_run": false,
+  "desktop_run": false,
+  "independent_review": false,
+  "navigation_runtime_changes": false,
+  "github_changes": false,
+  "persistent_library_upload_this_turn": false,
+  "notes": [
+    "Current work-order authorization changes scheduling, not scientific evidence or release acceptance.",
+    "Graph-model tests cannot establish that an assumed graph describes a physical system.",
+    "The original immutable rc1 remains in baseline; its historical scheduling documents are not current collection policy.",
+    "Inherited Forge HTTP aborted-client tests can log BrokenPipeError while passing; no fix is claimed.",
+    "Source records were inspected in specified public portions, not independently reviewed."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "kind": "context_integrity",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "2b889edc18a1453144cc798fd36840d6b5efa9047be6b8f1515bb8c6dc397298",
+  "tests_passed": 170,
+  "test_log_sha256": "3e93b262c2326df03e12ad494f84b76422896423d12d9096afa5f781e9d8bbad",
+  "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+  "coverage": [
+    "budgeted qualifier bundles",
+    "exact revision and source closure",
+    "replay and tampering",
+    "withdrawal and dependency changes",
+    "hostile retrieved text treated as data"
+  ],
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "independent_scientific_review": false,
+  "limitations": [
+    "Local software regression evidence only.",
+    "No Windows, live Bitwork, consuming-AI or independent held-out run."
+  ]
+}

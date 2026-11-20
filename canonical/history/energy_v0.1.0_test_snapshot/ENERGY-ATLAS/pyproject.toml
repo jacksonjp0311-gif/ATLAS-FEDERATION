@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=61"]
+build-backend="setuptools.build_meta"
+[project]
+name="energy-atlas-research"
+version="0.1.0"
+requires-python=">=3.10"
+description="Offline energy physics, generation, storage, grid and scientific provenance reference"
+[tool.setuptools.packages.find]
+where=["."]
+include=["energy_atlas*"]
+[tool.setuptools.package-data]
+energy_atlas=["resources/common/*.json","resources/common/nodes/*/*.json","resources/common/nodes/*/data/*.jsonl"]

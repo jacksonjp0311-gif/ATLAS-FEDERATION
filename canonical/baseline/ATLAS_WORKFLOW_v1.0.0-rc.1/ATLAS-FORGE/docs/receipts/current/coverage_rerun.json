@@ -1,0 +1,24 @@
+{
+  "result": "historical_receipt_redacted_not_revalidated",
+  "kind": "independent_numerical_algorithms_not_independent_review",
+  "scipy_version": "1.17.0",
+  "numpy_version": "2.3.5",
+  "python": "3.13.5",
+  "quantile_cases": 110,
+  "quantile_max_scaled_absolute_error": 2.4882132912019237e-11,
+  "quantile_tolerance": 2e-09,
+  "quantile_failures": [],
+  "numpy_scipy_inverse": {
+    "lower": 1704513.3729374574,
+    "upper": null,
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "inverse_absolute_errors_source_units": {
+    "lower": 4.656612873077393e-10,
+    "upper": 0.0
+  },
+  "inverse_absolute_tolerance": 1e-05,
+  "publisher_agreement": false,
+  "independent_human_review": false,
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

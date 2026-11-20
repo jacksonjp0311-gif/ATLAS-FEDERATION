@@ -1,0 +1,189 @@
+{
+  "schema": "atlas.chem-v1-source-preflight/1",
+  "edition": "1.0.0",
+  "result": "passed_source_tree_and_offline_install",
+  "tests_passed": 1923,
+  "test_suites": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "ran": 41,
+      "passed": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Chemistry": {
+      "ran": 68,
+      "passed": 68,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ChemistryV02": {
+      "ran": 60,
+      "passed": 60,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ChemistryV1": {
+      "ran": 52,
+      "passed": 52,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "context_queries": 83,
+  "oracle": {
+    "schema": "atlas.chem-v1-independent-numerical-oracle/1",
+    "status": "passed",
+    "comparisons": 5780,
+    "categories": {
+      "photon_energy_hc": 480,
+      "varshni_gap": 480,
+      "varshni_numerical_derivative": 480,
+      "log_intrinsic_carriers": 480,
+      "ideal_diode": 480,
+      "equilibrium_deltaG": 480,
+      "equilibrium_logK": 480,
+      "faraday_cell_work": 480,
+      "faradaic_stoichiometry": 480,
+      "bragg_geometry": 480,
+      "uncertainty_covariance": 480,
+      "shomate_numeric_quadrature": 500
+    },
+    "random_seed": 20261114,
+    "max_absolute_difference": 1.450881515624447e-13,
+    "numpy_version": "2.3.5",
+    "original_publisher_source_bytes": 0,
+    "independent_laboratory_measurements": 0,
+    "semiconductor_devices_tested": 0,
+    "claim": "Bounded finite arithmetic and numerical quadrature checks on author-invented values, not physical model or empirical validation"
+  },
+  "preservation": {
+    "schema": "atlas.chem-v1-preservation-audit/1",
+    "result": "passed",
+    "original_baseline": "ATLAS_COLLECTION_Chemistry_v0.2.0.zip",
+    "original_archive_sha256": "1113531dec9ab867b3ffc43d518e5e378f2b66ad6fef9669df2b48341905e648",
+    "protected_files_byte_identical": 3357,
+    "protected_categories": {
+      "baseline/": 771,
+      "AGENT-ATLAS/": 231,
+      "CAUSAL-ATLAS/": 253,
+      "COMPUTATION-ATLAS/": 140,
+      "CONTROL-ATLAS/": 225,
+      "ENERGY-ATLAS/": 148,
+      "LANGUAGE-ATLAS/": 187,
+      "MATERIALS-ATLAS/": 121,
+      "common/nodes/agent-atlas/": 9,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/computation-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "common/nodes/energy-atlas/": 9,
+      "common/nodes/language-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/signal-atlas/": 9,
+      "history/": 1149,
+      "wheels/": 29,
+      "docs/": 13
+    },
+    "discrepancies": [],
+    "previous_chemistry_records_exact_revision": 237,
+    "previous_full_chemistry_relations_exact_revision": 210,
+    "prior_nonchemistry_nodes_unchanged": true,
+    "original_chemistry_v02_tests_frozen": true,
+    "scientific_peer_review": false,
+    "note": "Byte equality and historical provenance preservation only, not scientific source authentication"
+  },
+  "nodes": 11,
+  "records": 2357,
+  "relations": 1519,
+  "sources": 487,
+  "chemistry_records": 305,
+  "chemistry_source_cards": 21,
+  "chapters": 67,
+  "investigations": 53,
+  "independent_laboratory_verification": false,
+  "original_source_bytes_verified": 0,
+  "full_archive_extracted_replay": "pending",
+  "delta_reconstruction": "pending"
+}

@@ -1,0 +1,1150 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "common Lyapunov box vertex matrix",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "a239749b12d84f85f02f954c54852beb6922d1d58b434edc23377ce41ee7b16d",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:matrix-box-quadratic-convexity",
+      "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-common-P-calculator",
+      "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1"
+    },
+    {
+      "record_id": "control-atlas:common-P-vs-plant",
+      "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+    },
+    {
+      "record_id": "control-atlas:scalar-interval-vertices",
+      "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+    },
+    {
+      "record_id": "control-atlas:controllability-matrix",
+      "revision": "e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa"
+    },
+    {
+      "record_id": "control-atlas:observability-matrix",
+      "revision": "3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:common-P-vs-plant",
+      "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+    },
+    {
+      "record_id": "control-atlas:controllability-limits",
+      "revision": "1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a"
+    },
+    {
+      "record_id": "control-atlas:controllability-matrix",
+      "revision": "e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-common-P-calculator",
+      "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-quadratic-convexity",
+      "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+    },
+    {
+      "record_id": "control-atlas:observability-matrix",
+      "revision": "3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3"
+    },
+    {
+      "record_id": "control-atlas:observability-measurement",
+      "revision": "8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647"
+    },
+    {
+      "record_id": "control-atlas:scalar-interval-vertices",
+      "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+    },
+    {
+      "record_id": "control-atlas:scalar-param-interval",
+      "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-ROBUST-V03",
+      "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+      "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+    },
+    {
+      "record_id": "control-atlas:source:PYCTR-CTRB",
+      "revision": "cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a"
+    },
+    {
+      "record_id": "control-atlas:source:PYCTR-OBSV",
+      "revision": "e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Exact linear discrete-time model"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Another P may work; failure is candidate-specific",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "common-P-vs-plant"
+          ],
+          "text": "A supplied P may fail strict decrease for a stable nonnormal discrete matrix, for example A=[[.8,1],[0,.8]] with P=I.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "common-P-vs-plant",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:common-P-vs-plant",
+        "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "A failed Lyapunov candidate does not prove instability",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-05",
+            "concept",
+            "controllability-limits"
+          ],
+          "text": "Algebraic rank does not guarantee feasible motion under bounded actuator force, time horizons or safety constraints.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Controllability matrix definition and API, not a hardware validation",
+              "source_id": "control-atlas:source:PYCTR-CTRB"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "controllability-limits",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "05",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:controllability-limits",
+        "revision": "1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-CTRB",
+            "revision": "cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a"
+          }
+        ],
+        "status": "active",
+        "title": "Controllability is not constrained reachability",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "Wc=[B, A*B]",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-05",
+            "equation",
+            "controllability-matrix"
+          ],
+          "text": "For linear (A,B), controllability matrix is [B,AB,...]; 2-state SISO full rank is determinant nonzero in ideal arithmetic.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Controllability matrix definition and API, not a hardware validation",
+              "source_id": "control-atlas:source:PYCTR-CTRB"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "controllability-matrix",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "05",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:controllability-matrix",
+        "revision": "e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-CTRB",
+            "revision": "cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a"
+          }
+        ],
+        "status": "active",
+        "title": "Controllability matrix and 2-state determinant",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Exact independent 2x2 entry bounds"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Only sufficient; not a parameter estimation or hardware robust-stability tool",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "matrix-box-common-P-calculator"
+          ],
+          "text": "Enumerate all four-entry interval vertices and check minimum Q eigenvalues for supplied symmetric PD P.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "matrix-box-common-P-calculator",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:matrix-box-common-P-calculator",
+        "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "Calculate sufficient 2x2 common quadratic decrease across 16 corners",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Fixed P, independent entry intervals, exact discrete model"
+          ],
+          "domain": "control-systems",
+          "equation": "A^TPA <= sum_i w_i A_i^TP A_i, A=sum_i w_i A_i",
+          "limitations": [
+            "Numerical eigenvalue test not formal interval proof; bounds not measured",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "matrix-box-quadratic-convexity"
+          ],
+          "text": "For P positive definite, A^TPA is matrix-convex in A; strict P-A_i^T P A_i>0 at every box vertex suffices for all convex combinations.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "matrix-box-quadratic-convexity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:matrix-box-quadratic-convexity",
+        "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "Common P vertex check is sufficient over an affine matrix box",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "Wo=[C; C*A]",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-06",
+            "equation",
+            "observability-matrix"
+          ],
+          "text": "For linear (A,C), observability matrix is [C;CA;...] and the 2-state single-output rank test uses det([C;CA]).",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Observability matrix definition and API, not an identification of a real plant",
+              "source_id": "control-atlas:source:PYCTR-OBSV"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "observability-matrix",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "06",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:observability-matrix",
+        "revision": "3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-OBSV",
+            "revision": "e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854"
+          }
+        ],
+        "status": "active",
+        "title": "Observability matrix and 2-state determinant",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-06",
+            "concept",
+            "observability-measurement"
+          ],
+          "text": "Sensor bias, noise, latency, weak excitation and coordinate scaling can make an algebraically observable state hard to estimate in practice.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Observability matrix definition and API, not an identification of a real plant",
+              "source_id": "control-atlas:source:PYCTR-OBSV"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "observability-measurement",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "06",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:observability-measurement",
+        "revision": "8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-OBSV",
+            "revision": "e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854"
+          }
+        ],
+        "status": "active",
+        "title": "Observable model does not guarantee usable sensors",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "p=a-b*K; max_box|p|=max_corners|p|",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-27",
+            "edition-0.3.0",
+            "scalar-interval-vertices"
+          ],
+          "text": "For independent scalar a,b in a rectangle and fixed K, p=a-bK is affine, and maximum |p| occurs at a vertex; all four strict |p|<1 is exact for the stipulated box.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-interval-vertices",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-interval-vertices",
+        "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "Robust scalar pole extreme occurs at a coefficient corner",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-27",
+            "edition-0.3.0",
+            "scalar-param-interval"
+          ],
+          "text": "A nominal scalar discrete pole does not prove robustness. Define a guaranteed coefficient range separate from a regression estimate or probabilistic confidence interval.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-param-interval",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-param-interval",
+        "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "Uncertainty sets are not fitted point estimates",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference navigation and method scope, not physical performance validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Publisher portion only, not independent full-source or experimental audit",
+            "No source file or restricted publication text is mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.3.0"
+          ],
+          "text": "Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent engineer review or physical experiment"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-ROBUST-V03",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_terms": "Original bounded explanatory material; publisher content linked rather than mirrored",
+          "url": "https://fbswiki.org/",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:FBS-ROBUST-V03",
+        "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Åström and Murray, Feedback Systems 2e author wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Common Lyapunov functions and uncertain parameter discussion, public HTML",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LYAPUNOV-COMMON",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://underactuated.mit.edu/lyapunov.html",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+        "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics common Lyapunov analysis",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "api_documentation",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "pyctr-ctrb"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Controllability matrix definition and API, not a hardware validation",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "api_documentation",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:PYCTR-CTRB",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Controllability matrix definition and API, not a hardware validation",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://python-control.readthedocs.io/en/stable/generated/control.ctrb.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:PYCTR-CTRB",
+        "revision": "cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Python Control Systems Library controllability matrix",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "api_documentation",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "pyctr-obsv"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Observability matrix definition and API, not an identification of a real plant",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "api_documentation",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:PYCTR-OBSV",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Observability matrix definition and API, not an identification of a real plant",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://python-control.readthedocs.io/en/stable/generated/control.obsv.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:PYCTR-OBSV",
+        "revision": "e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Python Control Systems Library observability matrix",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:matrix-box-common-P-calculator",
+          "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:matrix-box-common-P-calculator:qualifies:matrix-box-quadratic-convexity",
+        "revision": "124426585011ce1156ad80a85f06db3e71f5d6d3dc7b6a284f9d03b0c2fc3717",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:matrix-box-quadratic-convexity",
+          "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:matrix-box-quadratic-convexity",
+          "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:matrix-box-quadratic-convexity:qualifies:common-P-vs-plant",
+        "revision": "4a332717da714ae2961891df0dbcf42286c5d150c2d7694304aa69c39f37e5fb",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:common-P-vs-plant",
+          "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-interval-vertices",
+          "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:scalar-interval-vertices:qualifies:scalar-param-interval",
+        "revision": "8a8fd31134a3e1782cc3cf6bfbe79ec19944be012b2193f9da945171c90b0cf0",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-param-interval",
+          "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:controllability-limits",
+          "revision": "1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:controllability-limits:qualifies:controllability-matrix",
+        "revision": "453baa8b412743343987c82d183fbd3332108291404a4437c62fd819f99f85b1",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:controllability-matrix",
+          "revision": "e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:observability-measurement",
+          "revision": "8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:observability-measurement:qualifies:observability-matrix",
+        "revision": "a746934beea1b36eda38dcbbba07af948a0426d36eaf788d5b4e6d5f73bbeb8d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:observability-matrix",
+          "revision": "3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Exact linear discrete-time model\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Another P may work; failure is candidate-specific\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"common-P-vs-plant\"],\"text\":\"A supplied P may fail strict decrease for a stable nonnormal discrete matrix, for example A=[[.8,1],[0,.8]] with P=I.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"common-P-vs-plant\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:common-P-vs-plant\",\"revision\":\"71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"A failed Lyapunov candidate does not prove instability\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-05\",\"concept\",\"controllability-limits\"],\"text\":\"Algebraic rank does not guarantee feasible motion under bounded actuator force, time horizons or safety constraints.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Controllability matrix definition and API, not a hardware validation\",\"source_id\":\"control-atlas:source:PYCTR-CTRB\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"controllability-limits\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"05\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:controllability-limits\",\"revision\":\"1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-CTRB\",\"revision\":\"cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a\"}],\"status\":\"active\",\"title\":\"Controllability is not constrained reachability\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"Wc=[B, A*B]\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-05\",\"equation\",\"controllability-matrix\"],\"text\":\"For linear (A,B), controllability matrix is [B,AB,...]; 2-state SISO full rank is determinant nonzero in ideal arithmetic.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Controllability matrix definition and API, not a hardware validation\",\"source_id\":\"control-atlas:source:PYCTR-CTRB\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"controllability-matrix\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"05\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:controllability-matrix\",\"revision\":\"e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-CTRB\",\"revision\":\"cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a\"}],\"status\":\"active\",\"title\":\"Controllability matrix and 2-state determinant\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Exact independent 2x2 entry bounds\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Only sufficient; not a parameter estimation or hardware robust-stability tool\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"matrix-box-common-P-calculator\"],\"text\":\"Enumerate all four-entry interval vertices and check minimum Q eigenvalues for supplied symmetric PD P.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"matrix-box-common-P-calculator\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:matrix-box-common-P-calculator\",\"revision\":\"4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"Calculate sufficient 2x2 common quadratic decrease across 16 corners\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Fixed P, independent entry intervals, exact discrete model\"],\"domain\":\"control-systems\",\"equation\":\"A^TPA <= sum_i w_i A_i^TP A_i, A=sum_i w_i A_i\",\"limitations\":[\"Numerical eigenvalue test not formal interval proof; bounds not measured\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"matrix-box-quadratic-convexity\"],\"text\":\"For P positive definite, A^TPA is matrix-convex in A; strict P-A_i^T P A_i>0 at every box vertex suffices for all convex combinations.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"matrix-box-quadratic-convexity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"Common P vertex check is sufficient over an affine matrix box\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"Wo=[C; C*A]\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-06\",\"equation\",\"observability-matrix\"],\"text\":\"For linear (A,C), observability matrix is [C;CA;...] and the 2-state single-output rank test uses det([C;CA]).\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Observability matrix definition and API, not an identification of a real plant\",\"source_id\":\"control-atlas:source:PYCTR-OBSV\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"observability-matrix\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"06\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:observability-matrix\",\"revision\":\"3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-OBSV\",\"revision\":\"e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854\"}],\"status\":\"active\",\"title\":\"Observability matrix and 2-state determinant\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-06\",\"concept\",\"observability-measurement\"],\"text\":\"Sensor bias, noise, latency, weak excitation and coordinate scaling can make an algebraically observable state hard to estimate in practice.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Observability matrix definition and API, not an identification of a real plant\",\"source_id\":\"control-atlas:source:PYCTR-OBSV\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"observability-measurement\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"06\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:observability-measurement\",\"revision\":\"8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-OBSV\",\"revision\":\"e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854\"}],\"status\":\"active\",\"title\":\"Observable model does not guarantee usable sensors\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"p=a-b*K; max_box|p|=max_corners|p|\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-27\",\"edition-0.3.0\",\"scalar-interval-vertices\"],\"text\":\"For independent scalar a,b in a rectangle and fixed K, p=a-bK is affine, and maximum |p| occurs at a vertex; all four strict |p|<1 is exact for the stipulated box.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-interval-vertices\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-interval-vertices\",\"revision\":\"c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"Robust scalar pole extreme occurs at a coefficient corner\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-27\",\"edition-0.3.0\",\"scalar-param-interval\"],\"text\":\"A nominal scalar discrete pole does not prove robustness. Define a guaranteed coefficient range separate from a regression estimate or probabilistic confidence interval.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-param-interval\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-param-interval\",\"revision\":\"5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"Uncertainty sets are not fitted point estimates\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Reference navigation and method scope, not physical performance validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Publisher portion only, not independent full-source or experimental audit\",\"No source file or restricted publication text is mirrored\"],\"tags\":[\"source\",\"edition-0.3.0\"],\"text\":\"Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent engineer review or physical experiment\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-ROBUST-V03\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_terms\":\"Original bounded explanatory material; publisher content linked rather than mirrored\",\"url\":\"https://fbswiki.org/\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Åström and Murray, Feedback Systems 2e author wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LYAPUNOV-COMMON\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://underactuated.mit.edu/lyapunov.html\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics common Lyapunov analysis\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"api_documentation\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"pyctr-ctrb\"],\"text\":\"Publisher/documentation reference. Inspected scope: Controllability matrix definition and API, not a hardware validation\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"api_documentation\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:PYCTR-CTRB\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Controllability matrix definition and API, not a hardware validation\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://python-control.readthedocs.io/en/stable/generated/control.ctrb.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:PYCTR-CTRB\",\"revision\":\"cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Python Control Systems Library controllability matrix\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"api_documentation\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"pyctr-obsv\"],\"text\":\"Publisher/documentation reference. Inspected scope: Observability matrix definition and API, not an identification of a real plant\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"api_documentation\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:PYCTR-OBSV\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Observability matrix definition and API, not an identification of a real plant\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://python-control.readthedocs.io/en/stable/generated/control.obsv.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:PYCTR-OBSV\",\"revision\":\"e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Python Control Systems Library observability matrix\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:matrix-box-common-P-calculator\",\"revision\":\"4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:matrix-box-common-P-calculator:qualifies:matrix-box-quadratic-convexity\",\"revision\":\"124426585011ce1156ad80a85f06db3e71f5d6d3dc7b6a284f9d03b0c2fc3717\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:matrix-box-quadratic-convexity:qualifies:common-P-vs-plant\",\"revision\":\"4a332717da714ae2961891df0dbcf42286c5d150c2d7694304aa69c39f37e5fb\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:common-P-vs-plant\",\"revision\":\"71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:scalar-interval-vertices\",\"revision\":\"c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:scalar-interval-vertices:qualifies:scalar-param-interval\",\"revision\":\"8a8fd31134a3e1782cc3cf6bfbe79ec19944be012b2193f9da945171c90b0cf0\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-param-interval\",\"revision\":\"5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:controllability-limits\",\"revision\":\"1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:controllability-limits:qualifies:controllability-matrix\",\"revision\":\"453baa8b412743343987c82d183fbd3332108291404a4437c62fd819f99f85b1\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:controllability-matrix\",\"revision\":\"e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:observability-measurement\",\"revision\":\"8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:observability-measurement:qualifies:observability-matrix\",\"revision\":\"a746934beea1b36eda38dcbbba07af948a0426d36eaf788d5b4e6d5f73bbeb8d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:observability-matrix\",\"revision\":\"3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 31993,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:quadratic-lyapunov-inequality",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:lyapunov-p-check",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "46dc40f2d7a3745ba17c2c51a26f144b2c85ec45a61b2ef837b178eed44fc322"
+}

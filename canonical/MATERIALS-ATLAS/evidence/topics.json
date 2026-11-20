@@ -1,0 +1,538 @@
+{
+  "schema": "atlas.materials-topics/1",
+  "version": "0.1.0",
+  "chapters": [
+    {
+      "id": "01",
+      "title": "Scope, evidence, and comparability",
+      "sources": [
+        "NIST-MDCS",
+        "NIST-REPO",
+        "NIST-NCAL"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Composition, bonding, and material identity",
+      "sources": [
+        "MP-CALC",
+        "NIST-MDCS"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Lattices, cells, diffraction and uncertainty",
+      "sources": [
+        "IUCR-BRAGG",
+        "IUCR-RECIP"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Processing, microstructure, defects",
+      "sources": [
+        "NIST-NCAL",
+        "NIST-RES"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Phase equilibria and the lever rule",
+      "sources": [
+        "NIST-LEVER",
+        "MP-PD"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Thermodynamic models and phase stability",
+      "sources": [
+        "MP-PD",
+        "MP-CALC",
+        "MP-ENERGY",
+        "MP-GLOSSARY",
+        "MP-RELEASE"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Mechanical behavior and standardized testing",
+      "sources": [
+        "ASTM-E8",
+        "NIST-NCAL"
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Thermal expansion and transport",
+      "sources": [
+        "NIST-GAGE",
+        "NIST-RES"
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Composites, mixtures, and orientation",
+      "sources": [
+        "NIST-RES",
+        "NIST-MDCS"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Degradation, fatigue, fracture and service",
+      "sources": [
+        "ASTM-E8",
+        "NIST-NCAL"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Computed versus measured, reproducibility and versioning",
+      "sources": [
+        "MP-CALC",
+        "MP-ENERGY",
+        "MP-RELEASE",
+        "NIST-MDCS",
+        "NIST-REPO"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Decision ledger and cross-domain reuse",
+      "sources": [
+        "NIST-NCAL",
+        "NIST-MDCS",
+        "MP-GLOSSARY"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "evidence-types",
+      "title": "Evidence type determines permissible inference",
+      "kind": "concept",
+      "text": "Measured specimen data, computed model output, metadata indexing and author commentary have different provenance. Store origin, methods and missing conditions before numerical comparison.",
+      "chapter": "01",
+      "sources": [
+        "NIST-NCAL",
+        "NIST-REPO"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "property-context",
+      "title": "Property conditions are part of the reported value",
+      "kind": "concept",
+      "text": "Temperature, loading orientation, rate, processing and sample state qualify a material property. A context-free scalar does not define a trustworthy component specification.",
+      "chapter": "01",
+      "sources": [
+        "ASTM-E8",
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "data-rights",
+      "title": "Repository visibility is not a reproduction license",
+      "kind": "concept",
+      "text": "Linked third-party data may carry provider-specific rights. The node stores identifiers and bounded paraphrase rather than mirroring unrestricted amounts of externally authored records.",
+      "chapter": "01",
+      "sources": [
+        "NIST-REPO"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "formula-and-phase",
+      "title": "Composition is not phase identification",
+      "kind": "concept",
+      "text": "A stoichiometric formula specifies atom count ratios but need not identify a unique polymorph, microstructure or state. A phase claim requires structure-sensitive evidence.",
+      "chapter": "02",
+      "sources": [
+        "MP-CALC"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "process-structure-property",
+      "title": "Processing changes material state",
+      "kind": "concept",
+      "text": "Thermal, mechanical and chemical processing can alter phase distribution, grain size, texture and residual stress without changing nominal composition.",
+      "chapter": "02",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "bonding-family",
+      "title": "Bonding categories are explanatory not sufficient predictors",
+      "kind": "concept",
+      "text": "Bonding families help organize trends but do not specify elastic, thermal or electrical properties without structure, conditions and model.",
+      "chapter": "02",
+      "sources": [
+        "MP-CALC"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "unit-cell",
+      "title": "Cubic unit-cell density is conditional",
+      "kind": "equation",
+      "text": "Theoretical rho=n*M/(NA*a^3) for a cubic cell and stated sites. Bulk density also depends on defects, pores and multiple species.",
+      "chapter": "03",
+      "sources": [
+        "IUCR-RECIP"
+      ],
+      "equation": "rho=n*M/(N_A*a^3)"
+    },
+    {
+      "id": "bragg",
+      "title": "Bragg spacing and 2theta",
+      "kind": "equation",
+      "text": "The first-order relation 2*d*sin(theta)=lambda uses theta, half the full scan angle 2theta. Peak assignment and instrumental corrections are external.",
+      "chapter": "03",
+      "sources": [
+        "IUCR-BRAGG"
+      ],
+      "equation": "n*lambda=2*d*sin(theta)"
+    },
+    {
+      "id": "reciprocal",
+      "title": "Reciprocal-lattice reflections",
+      "kind": "concept",
+      "text": "Reflection indices and diffraction geometry determine observed peaks; reciprocal-space interpretation and systematic absences matter for indexing.",
+      "chapter": "03",
+      "sources": [
+        "IUCR-RECIP"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "grain-meaning",
+      "title": "Grain is not a unit cell",
+      "kind": "concept",
+      "text": "The microstructural grain is a physical region of approximate crystal orientation; a lattice cell is a mathematical periodic repeat. Sampling methods determine observed grain statistics.",
+      "chapter": "04",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "defect-types",
+      "title": "Defect families have distinct consequences",
+      "kind": "concept",
+      "text": "Vacancies, dislocations, inclusions, pores and microcracks can influence transport, strength or failure differently. More defects do not universally mean stronger or weaker material.",
+      "chapter": "04",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "phase-equilibrium",
+      "title": "Equilibrium diagrams do not ensure equilibrium specimens",
+      "kind": "concept",
+      "text": "A phase diagram requires specified conditions and equilibrium assumptions. Thermal history and kinetics can keep actual phases away from equilibrium predictions.",
+      "chapter": "05",
+      "sources": [
+        "NIST-LEVER",
+        "MP-PD"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "lever",
+      "title": "Binary two-phase lever rule",
+      "kind": "equation",
+      "text": "Given two endpoints on one tie line and a composition between them, the beta fraction is (C0-Ca)/(Cb-Ca). Compositional bases must match.",
+      "chapter": "05",
+      "sources": [
+        "NIST-LEVER"
+      ],
+      "equation": "f_beta=(C0-C_alpha)/(C_beta-C_alpha)"
+    },
+    {
+      "id": "phase-fraction-refusal",
+      "title": "Out-of-range tie lines must be rejected",
+      "kind": "method",
+      "text": "Negative phase fractions indicate incompatible inputs or extrapolation, not a physical negative amount of material. Missing phases and nonequilibrium render the model inapplicable.",
+      "chapter": "05",
+      "sources": [
+        "NIST-LEVER"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "energy-formation",
+      "title": "Reference-consistent formation energy",
+      "kind": "equation",
+      "text": "E_f=(E_phase-sum(n_i*mu_i))/sum(n_i) in per-atom electronic-energy units, provided all references and corrections share a compatible basis.",
+      "chapter": "06",
+      "sources": [
+        "MP-PD"
+      ],
+      "equation": "E_f=(E_phase-\u03a3 n_i \u03bc_i)/\u03a3 n_i"
+    },
+    {
+      "id": "convex-hull",
+      "title": "Lower convex envelope of supplied phases",
+      "kind": "method",
+      "text": "A binary 0 K hull computes the lowest convex mixture of provided energies at composition x. Missing competing phases and corrected energy scales limit its use.",
+      "chapter": "06",
+      "sources": [
+        "MP-PD",
+        "MP-GLOSSARY"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "computed-versus-gibbs",
+      "title": "0 K DFT stability is not room-temperature Gibbs stability",
+      "kind": "concept",
+      "text": "Computed electronic energies usually omit temperature-dependent entropy and kinetic effects. Do not report 0 K energy-above-hull as a room-temperature measured equilibrium result.",
+      "chapter": "06",
+      "sources": [
+        "MP-PD",
+        "MP-CALC"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "mixed-functionals",
+      "title": "Functional mixing requires correction consistency",
+      "kind": "method",
+      "text": "GGA, GGA+U and r2SCAN total energies cannot be blindly combined. The Materials Project documents compatibility and correction pipelines.",
+      "chapter": "06",
+      "sources": [
+        "MP-ENERGY"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "release-dependence",
+      "title": "Database release can alter computed properties",
+      "kind": "concept",
+      "text": "Materials Project correction schemes and thermodynamic entries evolve. Preserve database version, calculation identifiers and correction model.",
+      "chapter": "06",
+      "sources": [
+        "MP-RELEASE"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "engineering-stress",
+      "title": "Engineering stress and strain from tensile geometry",
+      "kind": "equation",
+      "text": "Engineering sigma=F/A0 and epsilon=\u0394L/L0. A single point does not establish modulus, yield, toughness or ultimate tensile strength.",
+      "chapter": "07",
+      "sources": [
+        "ASTM-E8"
+      ],
+      "equation": "sigma=F/A0; epsilon=\u0394L/L0"
+    },
+    {
+      "id": "specimen-representativeness",
+      "title": "Test coupon need not represent full component",
+      "kind": "concept",
+      "text": "A coupon taken from selected material may not capture local geometry, residual stress, processing gradient or in-service environment.",
+      "chapter": "07",
+      "sources": [
+        "ASTM-E8"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "elastic-vs-strength",
+      "title": "Elastic stiffness and failure strength differ",
+      "kind": "concept",
+      "text": "Elastic modulus is a slope within a model and strain regime; yield and ultimate strengths refer to different deformation or failure thresholds.",
+      "chapter": "07",
+      "sources": [
+        "ASTM-E8"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "thermal-expansion",
+      "title": "Free thermal mismatch is not stress",
+      "kind": "equation",
+      "text": "A scalar free-strain mismatch equals (alpha_a-alpha_b) \u0394T if expansion coefficients are constant. Actual stress requires constraint and mechanics.",
+      "chapter": "08",
+      "sources": [
+        "NIST-GAGE"
+      ],
+      "equation": "delta_epsilon=(alpha_a-alpha_b)*delta_T"
+    },
+    {
+      "id": "thermal-transport",
+      "title": "Diffusivity, conductivity and heat capacity differ",
+      "kind": "concept",
+      "text": "Thermal diffusivity requires conductivity, heat capacity and density under consistent conditions. None is interchangeable without the model and units.",
+      "chapter": "08",
+      "sources": [
+        "NIST-GAGE"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "property-direction",
+      "title": "Transport can be anisotropic",
+      "kind": "concept",
+      "text": "Anisotropic crystals and textured parts require directional or tensor property data. Do not collapse a direction into an invariant scalar without rationale.",
+      "chapter": "08",
+      "sources": [
+        "NIST-RES"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "voigt",
+      "title": "Idealized iso-strain stiffness model",
+      "kind": "equation",
+      "text": "The arithmetic stiffness mixture vEa+(1-v)Eb assumes a common strain and idealized constituents, not a certified composite stiffness.",
+      "chapter": "09",
+      "sources": [
+        "NIST-MDCS"
+      ],
+      "equation": "E_V=v*E_a+(1-v)*E_b"
+    },
+    {
+      "id": "reuss",
+      "title": "Idealized iso-stress stiffness model",
+      "kind": "equation",
+      "text": "The harmonic scalar mixture 1/(v/Ea+(1-v)/Eb) assumes common stress and idealized linear constituents.",
+      "chapter": "09",
+      "sources": [
+        "NIST-MDCS"
+      ],
+      "equation": "E_R=1/(v/E_a+(1-v)/E_b)"
+    },
+    {
+      "id": "mass-vs-volume",
+      "title": "Mass fraction and volume fraction are different",
+      "kind": "concept",
+      "text": "A mixture model using volume fractions cannot accept mass fractions without constituent density conversion.",
+      "chapter": "09",
+      "sources": [
+        "NIST-MDCS"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "fatigue-state",
+      "title": "Fatigue results depend on load history",
+      "kind": "concept",
+      "text": "Cycles, stress amplitude, stress ratio, environment, geometry, surface and censoring affect interpretation. A tensile coupon strength cannot establish fatigue life.",
+      "chapter": "10",
+      "sources": [
+        "ASTM-E8",
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "fracture-state",
+      "title": "Fracture conditions differ from monotonic tension",
+      "kind": "concept",
+      "text": "Cracks, geometry, constraint and loading rate control fracture testing; ultimate strength is not a general fracture toughness surrogate.",
+      "chapter": "10",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "failure-causality",
+      "title": "A failed part does not identify a unique cause",
+      "kind": "method",
+      "text": "Combine fracture observations with manufacturing, assembly and service evidence; use a causal design to distinguish alternative explanations.",
+      "chapter": "10",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "simulation-provenance",
+      "title": "Computed entries need a reproducible pipeline",
+      "kind": "method",
+      "text": "Record functional, code release, structure, magnetic initialization, convergence, reference energies, and corrections.",
+      "chapter": "11",
+      "sources": [
+        "MP-CALC",
+        "MP-ENERGY"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "measurement-provenance",
+      "title": "Measurements need sample and machine histories",
+      "kind": "method",
+      "text": "Record raw curve, sample processing, geometry, machine configuration, calibration, environment and data reduction code.",
+      "chapter": "11",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "typed-comparison",
+      "title": "Metadata equality precedes property subtraction",
+      "kind": "method",
+      "text": "Compare only quantities with compatible property, units, method, state, temperature and orientation; even then statistical inference requires joint uncertainty.",
+      "chapter": "11",
+      "sources": [
+        "NIST-MDCS"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "database-not-review",
+      "title": "Data availability is not quality certification",
+      "kind": "concept",
+      "text": "A public repository entry is not necessarily critically reviewed; provider rights and provenance must be checked separately.",
+      "chapter": "11",
+      "sources": [
+        "NIST-REPO"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "selection-ledger",
+      "title": "Selection requires service constraints",
+      "kind": "method",
+      "text": "Define environment, loads, aging, safety class, test standards, failure modes, cost and target before using tabulated material values.",
+      "chapter": "12",
+      "sources": [
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "cross-atlas",
+      "title": "Measurement and causal interfaces remain distinct",
+      "kind": "concept",
+      "text": "Materials owns conditional physical claims, Measurement owns calibration and uncertainty, Causal owns intervention effects, Manufacturing will own equipment-specific diagnosis.",
+      "chapter": "12",
+      "sources": [
+        "NIST-MDCS",
+        "NIST-NCAL"
+      ],
+      "equation": ""
+    },
+    {
+      "id": "abstention",
+      "title": "Unknowns should travel with material claims",
+      "kind": "method",
+      "text": "When processing history, test basis or physical conditions are missing, context consumers must preserve uncertainty and abstain from certification.",
+      "chapter": "12",
+      "sources": [
+        "NIST-REPO"
+      ],
+      "equation": ""
+    }
+  ]
+}

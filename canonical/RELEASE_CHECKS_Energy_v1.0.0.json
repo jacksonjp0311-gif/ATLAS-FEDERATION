@@ -1,0 +1,142 @@
+{
+  "schema": "atlas.energy-v1-release-preflight/1",
+  "release_version": "1.0.0",
+  "date": "2026-11-14",
+  "status": "tested_scoped_content_not_independently_scientifically_accepted",
+  "result": "passed",
+  "source_tree_test_suites": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "ran": 41,
+      "passed": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "source_tree_tests_passed": 1743,
+  "source_tree_skipped": 0,
+  "numerical_oracle_comparisons": 8670,
+  "oracle_max_absolute_discrepancy": 4.547473508864641e-13,
+  "validated_source_context_packages": 64,
+  "json_schema_validation": "passed",
+  "common_nodes": 10,
+  "common_records": 2052,
+  "common_relations": 1245,
+  "common_source_cards": 466,
+  "energy_records": 301,
+  "energy_source_cards": 31,
+  "energy_full_relations": 261,
+  "energy_local_relations": 256,
+  "scientific_chapters": 64,
+  "worked_investigations": 51,
+  "manual_words": 39085,
+  "prior_energy_records_preserved": 241,
+  "prior_energy_relations_preserved": 205,
+  "historical_other_files_preserved": 2327,
+  "prior_v0.2_test_snapshot_exact_bytes": 283,
+  "clean_offline_wheel_install": {
+    "result": "passed",
+    "energy_records": 301,
+    "energy_local_relations": 256,
+    "package_version": "1.0.0",
+    "source_closed_context": "context_available",
+    "source_tree_imported": false
+  },
+  "external_scientific_gates": {
+    "independent_expert_review": false,
+    "actual_site_energy_measurements": false,
+    "water_potability_evaluated": false,
+    "actual_grid_islanding_evaluated": false,
+    "stationary_battery_fire_safety_approved": false,
+    "generator_combustion_safety_evaluated": false,
+    "original_publisher_source_bytes_authenticated": 0,
+    "original_MAST_or_other_experimental_data_imported": false,
+    "Bitwork_router_modified": false,
+    "desktop_transfer": false,
+    "all_30_domain_content_references_finished": false
+  },
+  "next_content_domain": "bioelectric-atlas_queued_not_started",
+  "full_zip_replay": "pending_postseal_external_receipt",
+  "limitations": [
+    "Offline mathematical/software reference only; results are constructed, not site measurements",
+    "Source cards without original bytes cannot provide complete recovery after network failure",
+    "Full scientific peer review, public health and electrical safety certification remain open"
+  ]
+}

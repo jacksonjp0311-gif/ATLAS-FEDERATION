@@ -1,0 +1,10 @@
+{
+  "installed_version": "0.2.0",
+  "python": "3.13.5",
+  "source_location": "/mnt/data/_forge_build/clean_venv/lib/python3.13/site-packages/atlas_forge/resources/federation",
+  "nodes": 3,
+  "default_records": 364,
+  "all_records": 370,
+  "two_node_query": "passed",
+  "installed_http_assets_and_api": "passed"
+}

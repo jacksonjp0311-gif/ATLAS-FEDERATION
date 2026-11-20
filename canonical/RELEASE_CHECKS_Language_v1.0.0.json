@@ -1,0 +1,184 @@
+{
+  "schema": "atlas.language-v1-source-release/1",
+  "date": "2026-11-14",
+  "release": "language-atlas-1.0.0",
+  "status": "passed_scoped_educational_content_not_independent_scientific_acceptance",
+  "inventory": {
+    "nodes": 9,
+    "common_records": 1751,
+    "common_relations": 984,
+    "language_records": 276,
+    "language_source_cards": 39,
+    "language_relations_full": 277,
+    "language_relations_standalone": 272,
+    "scientific_chapters": 65,
+    "investigations": 40,
+    "casebook_v1_constructed": 11
+  },
+  "source_tree_checks": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "source_tree_test_total_passed": 1577,
+  "source_tree_skips": 0,
+  "source_schema": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1751,
+      "relation": 984,
+      "node": 9,
+      "context": 48
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "source_closed_context_queries": 48,
+  "v1_oracle": {
+    "schema": "atlas.language-v1-numerical-oracle/1",
+    "status": "passed",
+    "seed": 20261114,
+    "comparisons": 3580,
+    "by_method": {
+      "nfa_independent_graph_search": 550,
+      "quantifier_forall_exists": 550,
+      "quantifier_exists_forall": 550,
+      "weighted_alignment_exhaustive": 350,
+      "weighted_alignment_operation_cost": 350,
+      "ordered_rules_independent": 300,
+      "character_ngram_numpy_independent_counts": 450,
+      "document_actual_byte_digest": 240,
+      "document_never_automatically_published": 240
+    },
+    "numpy_version": "2.3.5",
+    "authentic_language_corpora": 0,
+    "unicode18_normative_test_rows": 0,
+    "real_language_models": 0,
+    "independent_linguistic_review": false,
+    "limitations": [
+      "Finite author-generated examples and independent calculations do not prove linguistic universals",
+      "No human-speaker judgments, original media or community-consent records were acquired"
+    ]
+  },
+  "old_file_preservation": {
+    "schema": "atlas.language-historical-preservation/1",
+    "result": "passed",
+    "prior_release": "ATLAS_COLLECTION_Language_v0.2.0.zip",
+    "prior_release_sha256": "e858f3889cbdbcb58cbee6d2f2ed3c9d1cfa4d9a551ca01354d0bff2916c4537",
+    "protected_files_identical": 1836,
+    "protected_prefixes": {
+      "AGENT-ATLAS/": 231,
+      "COMPUTATION-ATLAS/": 140,
+      "CAUSAL-ATLAS/": 253,
+      "MATERIALS-ATLAS/": 121,
+      "CONTROL-ATLAS/": 225,
+      "baseline/": 771,
+      "common/nodes/agent-atlas/": 9,
+      "common/nodes/computation-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/signal-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "wheels/": 23
+    },
+    "changed_files": [],
+    "old_language_record_revisions_retained": 224,
+    "old_language_full_relation_revisions_retained": 227,
+    "prior_eight_nodes_unchanged": true,
+    "historic_release_tests_archived_not_rewritten": true,
+    "scientific_truth_verified": false
+  },
+  "survival_audit": {
+    "result": "passed_structural_only",
+    "all_source_cards": 435,
+    "original_primary_files_verified": 0
+  },
+  "clean_offline_installed_wheel": {
+    "result": "passed",
+    "version": "1.0.0",
+    "standalone_records": 276,
+    "relations": 272
+  },
+  "scientific_gates": {
+    "independent_linguistic_review": false,
+    "speaker_reviews": 0,
+    "unicode18_grapheme_conformance": false,
+    "human_community_permissions_verified": 0,
+    "authentic_original_corpus_rows": 0,
+    "live_language_model_improvement": false,
+    "full_human_knowledge_preserved": false,
+    "all_30_domains_built": false,
+    "router_changed": false,
+    "desktop_transferred": false
+  },
+  "archive_replay": "pending_external_release_receipt"
+}

@@ -1,0 +1,157 @@
+{
+  "authoritative_release": "OS_Internals_v1.0.0",
+  "files": {
+    "CONTINUATION.md": {
+      "bytes": 2173,
+      "sha256": "3f02b1d909e0d1d101de8206d2edb65d49bd25c2a7441e9811172b88d9bec16d"
+    },
+    "DEPTH_MANUAL.md": {
+      "bytes": 20758,
+      "sha256": "2a30977217325c1304690246889eb80bfd3cc79bed069cecbc3d3a82561924d5"
+    },
+    "EXACT_PREDECESSOR_LINKS.json": {
+      "bytes": 1793,
+      "sha256": "c7f2e377cb7514cc1f722d717d2f6aa82f0f279e79ace7c2232dc5d16dd89570"
+    },
+    "ORACLE_RECEIPT.json": {
+      "bytes": 877,
+      "sha256": "d22ac604e51e5a927f2d64c426056cad8c6e3645b3232fab8ebb29f4fd9c4ec2"
+    },
+    "README.md": {
+      "bytes": 2472,
+      "sha256": "c6f22a116a8810a8fd5f7295787b7f1ad8a4f6c1f95d03da791ae0d976111c2f"
+    },
+    "RELEASE_HOLD.json": {
+      "bytes": 1329,
+      "sha256": "ea21c2ef7394966a10e42453879d21d83efea6acdbf0cde11d6ddeff2ca7836c"
+    },
+    "SCIENTIFIC_LIMITS.md": {
+      "bytes": 1830,
+      "sha256": "547720c0b7c1dc145e45037209a81ce858bd5626b48a8e36bb211ed3c81babf0"
+    },
+    "TEST_RECEIPT.json": {
+      "bytes": 828,
+      "sha256": "6c329d8f84643ca482137151212735532d720e3f66260b6c7ecaf86ab9b45318"
+    },
+    "atlas_manifest.json": {
+      "bytes": 1805,
+      "sha256": "257f5c586c5504d395764d272cf893602350459b406f52606d56ee1010e65cc8"
+    },
+    "build_atlas_records.py": {
+      "bytes": 12596,
+      "sha256": "a205eecbbfa0a157ca411001ba2bbb2bb385a74fcc847a4913e48e15ef89f2ba"
+    },
+    "chapters/01_relations_bags_null_and_query_meaning.md": {
+      "bytes": 1623,
+      "sha256": "42317955a46583805cb15ef394ba2c0092e04e9c595d5e16a5d1ab49a0797dba"
+    },
+    "chapters/02_physical_pages_rows_and_the_memory_hierarchy.md": {
+      "bytes": 1552,
+      "sha256": "f2955130700129a7525872c3a4f45b7dd83dad055b95314ff6bff4ee2ea0cbf0"
+    },
+    "chapters/03_sorted_indexes_and_b_tree_navigation.md": {
+      "bytes": 1586,
+      "sha256": "cd3d393b3f752b0a72fa5782dceecb8160efd6d6e5b271165f57fdf2630ab372"
+    },
+    "chapters/04_covering_composite_and_partial_indexes.md": {
+      "bytes": 1488,
+      "sha256": "d096cd741b9300c9f62d761851ffee89ae61da005df6467c70824fada9f7bce6"
+    },
+    "chapters/05_cardinality_estimation_correlation_and_uncert.md": {
+      "bytes": 1660,
+      "sha256": "9b96d229095d888114ae13e5819ec96bd2c1e61c12d7403d27428f5667a4a888"
+    },
+    "chapters/06_cost_based_access_path_decisions.md": {
+      "bytes": 1251,
+      "sha256": "f9c7016850f4d705ded587e071fdaf3ef03bdf66389b4cd343460328db48c5c1"
+    },
+    "chapters/07_equijoins_nested_hash_and_sort_merge.md": {
+      "bytes": 1185,
+      "sha256": "120eaf9e71bc0d3be774eee018f06d3d58080954cb4682dcb8f8866b624f89bb"
+    },
+    "chapters/08_join_order_dynamic_programming_and_search_bou.md": {
+      "bytes": 1422,
+      "sha256": "da802f27a128d3f66abb88196ee8e8769932fc8d7de8ce375f523ce42387742c"
+    },
+    "chapters/09_external_sorting_run_generation_and_merge.md": {
+      "bytes": 1181,
+      "sha256": "f735a33c83e96b5c50d0a8daae5381285c2397445c20aafefbaa3f5c821626c1"
+    },
+    "chapters/10_buffer_replacement_and_cache_aware_reasoning.md": {
+      "bytes": 1126,
+      "sha256": "b262a4cf15bbee8d8c75632fbd8a21fb715792fb0f7ad882dfce5eef94160835"
+    },
+    "chapters/11_mvcc_visibility_snapshots_and_anomalies.md": {
+      "bytes": 1230,
+      "sha256": "ffb1257b6dddab03652decbbf2321699233430dd00c4e28d72f94a8315569f7c"
+    },
+    "chapters/12_wal_transactions_checkpoints_and_failure_boun.md": {
+      "bytes": 1436,
+      "sha256": "90e715e9170145808f4caba467ee65aaef6d5b46f548bcb01b36e4a5409e7e1e"
+    },
+    "chapters/13_evidence_based_optimization_with_sqlite.md": {
+      "bytes": 1487,
+      "sha256": "b75fee4d32a260878eba75a107c0f4fbeddd5a1321a09c1e3c5d4f01b4264059"
+    },
+    "chapters/14_offline_reconstruction_integrity_and_release_.md": {
+      "bytes": 1855,
+      "sha256": "4e972065f762cccee3e9b912e0b6f5429749102e5977baa77443decdfa686263"
+    },
+    "data/claims.jsonl": {
+      "bytes": 29626,
+      "sha256": "dab924621ef72adc5e51b22ce92918258d291dcfd144abe7e1312d32ec4ee84c"
+    },
+    "data/concepts.jsonl": {
+      "bytes": 46125,
+      "sha256": "9a56cd44e08d28672f490e13babe38e7bf06c9165ddbe8b703516cf3be4441b0"
+    },
+    "data/datasets.jsonl": {
+      "bytes": 1782,
+      "sha256": "6c0db05875cd9120af57bbce632a6e84534fa8455dbfd08a178abbf12d5d7f7d"
+    },
+    "data/equations.jsonl": {
+      "bytes": 28408,
+      "sha256": "661621c9300b8e1fef02f2334ae3a9da3c9509b0d56025d2514adf6934363dd5"
+    },
+    "data/methods.jsonl": {
+      "bytes": 29685,
+      "sha256": "f812ffcba01769f4ebaf8073e593099784f5cfa6c8eacc4dfe27ac3e2d3c4b77"
+    },
+    "data/relations.jsonl": {
+      "bytes": 41934,
+      "sha256": "4ee08f0492c5e810dd89b6c60bf40fc8bb4e2da7291a4be391251b7ed4d60f48"
+    },
+    "data/reviews.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/sources.jsonl": {
+      "bytes": 15735,
+      "sha256": "9bf0a032c40fd3100fbc53acdc09f13ef01c574bbe0283271ba7100c3d558789"
+    },
+    "db_reference.py": {
+      "bytes": 8763,
+      "sha256": "ff13245e4fa93e0a995f70f96fc7245543e9f646cf960f9c220f0d108a2a64e2"
+    },
+    "independent_oracle.py": {
+      "bytes": 5788,
+      "sha256": "881c39a55a97146d462e3ce55373053e7f7ffaf5d6bf108564cd84460901e6b0"
+    },
+    "sources.json": {
+      "bytes": 2207,
+      "sha256": "093a82a60ee34edfc0ea056e0c74ff0d1dc4bfa5f078dc08aa8d99df53b89abc"
+    },
+    "test_db_reference.py": {
+      "bytes": 9437,
+      "sha256": "86cd5e207ce0ab3f37f2daab624b16beac62166ac2da35d5c8c6f39a03687e20"
+    },
+    "verify_package.py": {
+      "bytes": 2949,
+      "sha256": "672436ce3c413733c243b9ddb8df1127021ee007d4ab243ca5ab4f84579989d4"
+    }
+  },
+  "original_30_queue_sha256": "4c78856f1cbc445e669c9029d88f81a5ade70d3b2d17cb312769ca818d23790a",
+  "original_priority": 17,
+  "schema": "atlas.db-optimization.unsealed-file-manifest/1",
+  "stage": "development_content_unsealed"
+}

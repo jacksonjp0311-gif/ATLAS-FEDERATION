@@ -1,0 +1,159 @@
+{
+  "schema": "atlas.v1-readiness/1",
+  "candidate_version": "1.0.0rc1",
+  "target_version": "1.0.0",
+  "status": "release_candidate_not_final",
+  "v1_ready": false,
+  "next_domain_allowed": false,
+  "subjects": {
+    "forge_sha256": "42bd02e11321462b1d013386d2cac8ddb84f7f4cb56546b9d10470cf6f995e18",
+    "measurement_sha256": "cb236d9e736577d903dc019b3008b2fe27ee45a8b48f92cdadc63a72032f1cf6"
+  },
+  "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+  "criteria_frozen": false,
+  "gates": [
+    {
+      "gate": "G1",
+      "title": "Declared scope and frozen question families",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Review the declared eight-family v1 scope and approve/freeze acceptance criteria and independent evaluation design before final acceptance."
+      ]
+    },
+    {
+      "gate": "G2",
+      "title": "Primary-source evidence and explicit coverage gaps",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Source-locator structure and 92 bounded records are checked; complete release-critical evidence review, record reviewer decisions and retain unresolved raw-data/certificate gaps. No independent scientific sign-off has occurred."
+      ]
+    },
+    {
+      "gate": "G3",
+      "title": "Scientific methods, units and edge cases",
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G3.json",
+          "sha256": "a162ad3efd07f2f7eea43046f90039fa84a46e4dba06328bda8fb9bba85f09ac"
+        }
+      ],
+      "errors": [],
+      "remaining": []
+    },
+    {
+      "gate": "G4",
+      "title": "Generic common-contract conformance across enabled nodes",
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G4.json",
+          "sha256": "f92d62a5727ddba284d95ce5fc82bd64d4ecfbb953fda6247e39619c0bef73c3"
+        }
+      ],
+      "errors": [],
+      "remaining": []
+    },
+    {
+      "gate": "G5",
+      "title": "Exact, budgeted, evidence-preserving context",
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/receipts/current/gate_G5.json",
+          "sha256": "66570e8b69fccb7e1a940d31ba832383e4cd0df013f4dd289ec2728fedd07559"
+        }
+      ],
+      "errors": [],
+      "remaining": []
+    },
+    {
+      "gate": "G6",
+      "title": "Pinned real Bitwork to Atlas to actual AI execution",
+      "status": "blocked",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Pinned actual Bitwork returns exact Atlas records; a real consuming model uses the package; retained failures and traces. No mock route receipts."
+      ]
+    },
+    {
+      "gate": "G7",
+      "title": "Frozen held-out comparative retrieval and answer evaluation",
+      "status": "not_run",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Frozen independently authored test set; same-corpus same-budget BM25, semantic and Bitwork arms; retrieval and answer-quality scoring with uncertainty."
+      ]
+    },
+    {
+      "gate": "G8",
+      "title": "Clean builds, supported platforms and release integrity",
+      "status": "partial",
+      "evidence": [],
+      "errors": [],
+      "remaining": [
+        "Local Linux checks will be recorded for the candidate. A real supported Windows execution and final release acceptance remain outstanding."
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "gate": "CRITERIA",
+      "status": "not_frozen",
+      "remaining": [
+        "Record owner-approved scope and freeze the independent evaluation plan."
+      ],
+      "errors": []
+    },
+    {
+      "gate": "G1",
+      "status": "partial",
+      "remaining": [
+        "Review the declared eight-family v1 scope and approve/freeze acceptance criteria and independent evaluation design before final acceptance."
+      ],
+      "errors": []
+    },
+    {
+      "gate": "G2",
+      "status": "partial",
+      "remaining": [
+        "Source-locator structure and 92 bounded records are checked; complete release-critical evidence review, record reviewer decisions and retain unresolved raw-data/certificate gaps. No independent scientific sign-off has occurred."
+      ],
+      "errors": []
+    },
+    {
+      "gate": "G6",
+      "status": "blocked",
+      "remaining": [
+        "Pinned actual Bitwork returns exact Atlas records; a real consuming model uses the package; retained failures and traces. No mock route receipts."
+      ],
+      "errors": []
+    },
+    {
+      "gate": "G7",
+      "status": "not_run",
+      "remaining": [
+        "Frozen independently authored test set; same-corpus same-budget BM25, semantic and Bitwork arms; retrieval and answer-quality scoring with uncertainty."
+      ],
+      "errors": []
+    },
+    {
+      "gate": "G8",
+      "status": "partial",
+      "remaining": [
+        "Local Linux checks will be recorded for the candidate. A real supported Windows execution and final release acceptance remain outstanding."
+      ],
+      "errors": []
+    }
+  ],
+  "limits": [
+    "Local evidence records are not cryptographic attestation of a reviewer or remote platform.",
+    "A release-candidate version does not grant stable release or next-domain permission."
+  ]
+}

@@ -1,0 +1,3153 @@
+{
+  "schema": "atlas.collection-checks/1",
+  "checkpoint": "materials-1.0.0-scoped-content",
+  "date": "2026-11-12",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "stages": {
+    "conformance": {
+      "result": "passed",
+      "nodes": 5,
+      "records": 802,
+      "relations": 182
+    },
+    "context": [
+      {
+        "node": "materials-atlas",
+        "query": "formation energy energy above hull",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "materials-atlas",
+        "query": "solid copper Shomate heat capacity temperature",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "materials-atlas",
+        "query": "corrosion coupon uniform equivalent pitting",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "materials-atlas",
+        "query": "weakest link Weibull mechanism",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "materials-atlas",
+        "query": "XRD diffraction Bragg spacing",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "causal-atlas",
+        "query": "standardization positivity",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "causal-atlas",
+        "query": "binary instrument Wald ratio",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "causal-atlas",
+        "query": "regression discontinuity local linear",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "measurement-atlas",
+        "query": "expanded uncertainty",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "cymatics-atlas",
+        "query": "Faraday waves",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "signal-atlas",
+        "query": "NOAA GOES",
+        "status": "context_available",
+        "valid": true
+      }
+    ],
+    "casebook": {
+      "schema": "atlas.causal-casebook/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "confounded-process",
+          "data_origin": "synthetic_constructed_population",
+          "crude_difference": "-13/50",
+          "standardized_difference": "1/10",
+          "known_model_intervention_difference": "1/10",
+          "expected": {
+            "crude_difference": "-13/50",
+            "standardized_difference": "1/10"
+          },
+          "passed": true,
+          "limitations": [
+            "The generating graph and probabilities are stipulated, not learned from factory data.",
+            "No sampling uncertainty is estimated."
+          ]
+        },
+        {
+          "id": "collider-selection",
+          "data_origin": "synthetic_finite_model",
+          "marginal_A1_given_B1": "1/2",
+          "A1_given_B0_selected": "1",
+          "A1_given_B1_selected": "1/2",
+          "passed": true,
+          "limitations": [
+            "Selection is explicitly defined as logical OR; other mechanisms can produce different magnitudes."
+          ]
+        },
+        {
+          "id": "mediator-conditioning",
+          "data_origin": "synthetic_graph",
+          "chain_blocked_by_M": true,
+          "total_effect_backdoor_adjust_M": {
+            "criterion": "single-exposure-backdoor-sufficient",
+            "valid_under_supplied_graph": false,
+            "descendants_of_exposure_in_set": [
+              "M"
+            ],
+            "blocks_backdoor_paths": true,
+            "graph_truth_checked": false,
+            "no_causal_effect_claim_from_graph_alone": true,
+            "failure_does_not_prove_nonidentifiability": true
+          },
+          "passed": true,
+          "limitations": [
+            "Rejecting M for this sufficient total-effect criterion is not a claim about every direct-effect method."
+          ]
+        },
+        {
+          "id": "missing-treatment-support",
+          "data_origin": "synthetic_grouped_counts",
+          "missing_positive_target_stratum_rejected": true,
+          "passed": true,
+          "limitations": [
+            "Empty sample cells alone do not distinguish structural impossibility from finite-sample sparsity."
+          ]
+        },
+        {
+          "id": "unobserved-common-cause",
+          "data_origin": "synthetic_graph",
+          "observed_adjustment_sets": [],
+          "passed": true,
+          "limitations": [
+            "No observed back-door set was found; this is not a complete nonidentifiability proof."
+          ]
+        }
+      ],
+      "physical_observations": false,
+      "independent_review": false,
+      "causal_discovery": false
+    },
+    "investigations": {
+      "schema": "atlas.causal-investigations/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "both_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "propensity_only_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": false,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "outcome_only_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "-13/50",
+            "ipw_hajek": "-13/50",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": false,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "both_wrong",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "-13/50",
+            "ipw_hajek": "-13/50",
+            "aipw": "-13/50",
+            "aipw_bias": "-9/25",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": false,
+            "outcome_means_exact": false,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "-13/50"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "target_easy_heavy",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "4/25",
+            "crude_difference": "-1/68",
+            "outcome_regression": "4/25",
+            "ipw_horvitz_thompson": "4/25",
+            "ipw_hajek": "4/25",
+            "aipw": "4/25",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "4/25"
+          },
+          "checks": {
+            "true_ate": true
+          },
+          "passed": true,
+          "interpretation": "Effect heterogeneity plus target composition changes the average being asked for."
+        },
+        {
+          "id": "target_difficult_heavy",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "17/50",
+            "crude_difference": "2/17",
+            "outcome_regression": "17/50",
+            "ipw_horvitz_thompson": "17/50",
+            "ipw_hajek": "17/50",
+            "aipw": "17/50",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "17/50"
+          },
+          "checks": {
+            "true_ate": true
+          },
+          "passed": true,
+          "interpretation": "Same conditional effects, different target: not a contradiction."
+        },
+        {
+          "id": "supplied_models_on_constructed_counts",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10"
+          },
+          "expected": {
+            "crude_difference": "-13/50",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "crude_difference": true,
+            "ipw_hajek": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact agreement here follows from deliberately chosen counts; arbitrary finite samples need not agree."
+        },
+        {
+          "id": "missing_outcomes_bounds",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "result": "bounded_not_identified",
+            "data_interpretation": "binary arm risks for supplied counted units",
+            "risks": {
+              "1": [
+                "12/25",
+                "22/25"
+              ],
+              "0": [
+                "27/50",
+                "16/25"
+              ]
+            },
+            "difference_bounds": [
+              "-4/25",
+              "17/50"
+            ],
+            "is_confidence_interval": false,
+            "causal_identification_verified": false,
+            "limitations": [
+              "Unknown binary outcomes may take either value.",
+              "Does not correct treatment confounding or sampling uncertainty."
+            ]
+          },
+          "expected": {
+            "difference_bounds": [
+              "-4/25",
+              "17/50"
+            ]
+          },
+          "checks": {
+            "difference_bounds": true
+          },
+          "passed": true,
+          "interpretation": "Observed-case pass rates 0.80 and 0.60 do not determine the full-cohort difference; admissible assignments can reverse its sign."
+        },
+        {
+          "id": "parallel_trend_scenario",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_two_period_contrast": "1/20",
+            "assumed_untreated_trend_difference": "0",
+            "effect_under_stated_trend_scenario": "1/20",
+            "identification_verified": false,
+            "sampling_interval": null,
+            "limitations": [
+              "Trend difference is assumed, not estimated from the four means.",
+              "Requires no anticipation and a defensible untreated comparison for causal interpretation.",
+              "Not a staggered-adoption estimator, time-series model, or clustered inference procedure."
+            ]
+          },
+          "expected": {
+            "observed_two_period_contrast": "1/20",
+            "effect_under_stated_trend_scenario": "1/20"
+          },
+          "checks": {
+            "observed_two_period_contrast": true,
+            "effect_under_stated_trend_scenario": true
+          },
+          "passed": true,
+          "interpretation": "The contrast is causal only under an appropriate untreated-trend assumption and design conditions."
+        },
+        {
+          "id": "trend_violation_scenario",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_two_period_contrast": "1/20",
+            "assumed_untreated_trend_difference": "2/25",
+            "effect_under_stated_trend_scenario": "-3/100",
+            "identification_verified": false,
+            "sampling_interval": null,
+            "limitations": [
+              "Trend difference is assumed, not estimated from the four means.",
+              "Requires no anticipation and a defensible untreated comparison for causal interpretation.",
+              "Not a staggered-adoption estimator, time-series model, or clustered inference procedure."
+            ]
+          },
+          "expected": {
+            "observed_two_period_contrast": "1/20",
+            "effect_under_stated_trend_scenario": "-3/100"
+          },
+          "checks": {
+            "observed_two_period_contrast": true,
+            "effect_under_stated_trend_scenario": true
+          },
+          "passed": true,
+          "interpretation": "The identical observations permit a harmful effect under this explicit untreated-trend difference."
+        },
+        {
+          "id": "extreme_weight_dominance",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_rows": 3,
+            "sum_weights": "1004",
+            "effective_sample_size": "126002/125001",
+            "max_weight": "1000",
+            "largest_normalized_weight": "250/251",
+            "interpretation": "weight concentration diagnostic, not a count of independent information or a causal validation"
+          },
+          "expected": {
+            "largest_normalized_weight": "250/251",
+            "effective_sample_size": "126002/125001"
+          },
+          "checks": {
+            "largest_normalized_weight": true,
+            "effective_sample_size": true
+          },
+          "passed": true,
+          "interpretation": "Three treated observations have weight-concentration ESS near one; finite positive propensities alone do not mean a stable estimate."
+        },
+        {
+          "id": "observational_ambiguity",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "same_observed_joint": true,
+            "observed_difference": "1",
+            "model_A_effect": "0",
+            "model_B_effect": "1"
+          },
+          "expected": {
+            "same_observed_joint": true,
+            "observed_difference": "1",
+            "model_A_effect": "0",
+            "model_B_effect": "1"
+          },
+          "checks": {
+            "same_observed_joint": true,
+            "observed_difference": true,
+            "model_A_effect": true,
+            "model_B_effect": true
+          },
+          "passed": true,
+          "interpretation": "Two constructed mechanisms agree on every observed A,Y cell but disagree after intervention. Additional information is necessary."
+        }
+      ],
+      "physical_observations": false,
+      "independent_scientific_review": false,
+      "data_origin": "synthetic_only",
+      "causal_discovery": false
+    },
+    "quasi_casebook": {
+      "schema": "atlas.quasi-casebook/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "iv-local-not-population",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "ratio_computed_not_causally_validated",
+            "reduced_form": "3/20",
+            "first_stage": "1/2",
+            "ratio": "3/10",
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.iv-stipulated-population/1",
+            "data_origin": "synthetic_constructed",
+            "supplied_means": {
+              "y_z0": "11/25",
+              "y_z1": "59/100",
+              "d_z0": "1/5",
+              "d_z1": "7/10"
+            },
+            "limitations": [
+              "A binary-instrument ratio is not automatically a population average treatment effect.",
+              "Independence, exclusion, consistency, relevant uptake and monotonicity need separate justification for LATE.",
+              "Four means cannot identify individual compliance types or validate those assumptions.",
+              "No sampling inference, nuisance adjustment or fitted propensity model is supplied."
+            ],
+            "population_ate": "7/50",
+            "complier_effect": "3/10",
+            "type_masses": {
+              "never": "3/10",
+              "always": "1/5",
+              "complier": "1/2",
+              "defier": "0"
+            },
+            "monotone_in_declared_model": true,
+            "exclusion_in_declared_model": true,
+            "instrument_independence": "stipulated by using the same type distribution in both Z arms",
+            "direct_contribution": "0",
+            "decomposition": {
+              "signed_type_effect": "3/20",
+              "direct_contribution": "0",
+              "equals_reduced_form": true
+            },
+            "actual_observations": false,
+            "assumptions_empirically_checked": false
+          },
+          "expected": {
+            "first_stage": "1/2",
+            "reduced_form": "3/20",
+            "ratio": "3/10",
+            "complier_effect": "3/10",
+            "population_ate": "7/50"
+          },
+          "checks": {
+            "first_stage": true,
+            "reduced_form": true,
+            "ratio": true,
+            "complier_effect": true,
+            "population_ate": true
+          },
+          "passed": true,
+          "lesson": "A valid local complier effect differs from the whole-population effect in this fully stipulated population."
+        },
+        {
+          "id": "iv-exclusion-failure",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "ratio_computed_not_causally_validated",
+            "reduced_form": "1/5",
+            "first_stage": "1/2",
+            "ratio": "2/5",
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.iv-stipulated-population/1",
+            "data_origin": "synthetic_constructed",
+            "supplied_means": {
+              "y_z0": "11/25",
+              "y_z1": "16/25",
+              "d_z0": "1/5",
+              "d_z1": "7/10"
+            },
+            "limitations": [
+              "A binary-instrument ratio is not automatically a population average treatment effect.",
+              "Independence, exclusion, consistency, relevant uptake and monotonicity need separate justification for LATE.",
+              "Four means cannot identify individual compliance types or validate those assumptions.",
+              "No sampling inference, nuisance adjustment or fitted propensity model is supplied."
+            ],
+            "population_ate": "7/50",
+            "complier_effect": "3/10",
+            "type_masses": {
+              "never": "3/10",
+              "always": "1/5",
+              "complier": "1/2",
+              "defier": "0"
+            },
+            "monotone_in_declared_model": true,
+            "exclusion_in_declared_model": false,
+            "instrument_independence": "stipulated by using the same type distribution in both Z arms",
+            "direct_contribution": "1/20",
+            "decomposition": {
+              "signed_type_effect": "3/20",
+              "direct_contribution": "1/20",
+              "equals_reduced_form": true
+            },
+            "actual_observations": false,
+            "assumptions_empirically_checked": false
+          },
+          "expected": {
+            "ratio": "2/5",
+            "complier_effect": "3/10",
+            "exclusion_in_declared_model": false
+          },
+          "checks": {
+            "ratio": true,
+            "complier_effect": true,
+            "exclusion_in_declared_model": true
+          },
+          "passed": true,
+          "lesson": "Encouragement directly changes outcomes as well as uptake."
+        },
+        {
+          "id": "iv-monotonicity-failure",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "ratio_computed_not_causally_validated",
+            "reduced_form": "-23/100",
+            "first_stage": "1/10",
+            "ratio": "-23/10",
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.iv-stipulated-population/1",
+            "data_origin": "synthetic_constructed",
+            "supplied_means": {
+              "y_z0": "27/100",
+              "y_z1": "1/25",
+              "d_z0": "3/10",
+              "d_z1": "2/5"
+            },
+            "limitations": [
+              "A binary-instrument ratio is not automatically a population average treatment effect.",
+              "Independence, exclusion, consistency, relevant uptake and monotonicity need separate justification for LATE.",
+              "Four means cannot identify individual compliance types or validate those assumptions.",
+              "No sampling inference, nuisance adjustment or fitted propensity model is supplied."
+            ],
+            "population_ate": "37/100",
+            "complier_effect": "1/10",
+            "type_masses": {
+              "never": "3/10",
+              "always": "0",
+              "complier": "2/5",
+              "defier": "3/10"
+            },
+            "monotone_in_declared_model": false,
+            "exclusion_in_declared_model": true,
+            "instrument_independence": "stipulated by using the same type distribution in both Z arms",
+            "direct_contribution": "0",
+            "decomposition": {
+              "signed_type_effect": "-23/100",
+              "direct_contribution": "0",
+              "equals_reduced_form": true
+            },
+            "actual_observations": false,
+            "assumptions_empirically_checked": false
+          },
+          "expected": {
+            "ratio": "-23/10",
+            "population_ate": "37/100",
+            "monotone_in_declared_model": false
+          },
+          "checks": {
+            "ratio": true,
+            "population_ate": true,
+            "monotone_in_declared_model": true
+          },
+          "passed": true,
+          "lesson": "Every type benefits, but the signed ratio is negative when defiers violate monotonicity."
+        },
+        {
+          "id": "iv-small-denominator-refused",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "unresolved_first_stage",
+            "reduced_form": "3/10000",
+            "first_stage": "1/1000",
+            "ratio": null,
+            "minimum_first_stage": "1/200",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.causal-wald/1",
+            "data_origin": "synthetic_constructed",
+            "supplied_means": {
+              "y_z0": "1/5",
+              "y_z1": "2003/10000",
+              "d_z0": "1/5",
+              "d_z1": "201/1000"
+            },
+            "limitations": [
+              "A binary-instrument ratio is not automatically a population average treatment effect.",
+              "Independence, exclusion, consistency, relevant uptake and monotonicity need separate justification for LATE.",
+              "Four means cannot identify individual compliance types or validate those assumptions.",
+              "No sampling inference, nuisance adjustment or fitted propensity model is supplied."
+            ]
+          },
+          "expected": {
+            "result": "unresolved_first_stage",
+            "ratio": null
+          },
+          "checks": {
+            "result": true,
+            "ratio": true
+          },
+          "passed": true
+        },
+        {
+          "id": "iv-small-denominator-amplification",
+          "origin": "synthetic_constructed",
+          "result": {
+            "initial_ratio": "3/10",
+            "perturbed_ratio": "13/10"
+          },
+          "expected": {
+            "initial_ratio": "3/10",
+            "perturbed_ratio": "13/10"
+          },
+          "checks": {
+            "initial_ratio": true,
+            "perturbed_ratio": true
+          },
+          "passed": true,
+          "lesson": "An outcome-contrast perturbation of 0.001 moves the ratio by one; this is not a statistical weak-IV test."
+        },
+        {
+          "id": "iv-direct-effect-sensitivity",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "ratio_computed_not_causally_validated",
+            "reduced_form": "1/5",
+            "first_stage": "1/2",
+            "ratio": "2/5",
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.iv-exclusion-sensitivity/1",
+            "data_origin": "synthetic_constructed",
+            "additive_direct_contribution": [
+              "0",
+              "1/20"
+            ],
+            "assumed_equation": "reduced_form = theta * first_stage + direct_contribution",
+            "effect_scenario_bounds": [
+              "3/10",
+              "2/5"
+            ],
+            "is_confidence_interval": false,
+            "limitations": [
+              "Direct-contribution bounds are supplied assumptions, not inferred from data.",
+              "Other identification conditions remain required.",
+              "Negative first stages reverse bound ordering; no bounds are clipped."
+            ]
+          },
+          "expected": {
+            "effect_scenario_bounds": [
+              "3/10",
+              "2/5"
+            ],
+            "is_confidence_interval": false
+          },
+          "checks": {
+            "effect_scenario_bounds": true,
+            "is_confidence_interval": true
+          },
+          "passed": true
+        },
+        {
+          "id": "sharp-rd-piecewise-linear",
+          "origin": "synthetic_constructed",
+          "result": {
+            "schema": "atlas.rd-local-linear/1",
+            "result": "point_estimate_not_causally_validated",
+            "data_origin": "synthetic_constructed",
+            "cutoff": "0",
+            "bandwidth": "4",
+            "kernel": "triangular",
+            "window": "abs(x-cutoff)<bandwidth; cutoff belongs to right side",
+            "jump": "5",
+            "sides": {
+              "left": {
+                "intercept_at_cutoff": "1",
+                "slope_per_score_unit": "2",
+                "positive_weight_rows": 3,
+                "distinct_scores": 3,
+                "sum_kernel_weights": "3/2",
+                "kernel_weight_ess": "18/7",
+                "weighted_rss": "0",
+                "nearest_score_gap": "1",
+                "normalized_weighted_score_variance": "5/144",
+                "intercept_equivalent_weights": [
+                  {
+                    "id": "r0",
+                    "weight": "-1/2"
+                  },
+                  {
+                    "id": "r1",
+                    "weight": "0"
+                  },
+                  {
+                    "id": "r2",
+                    "weight": "3/2"
+                  }
+                ],
+                "negative_equivalent_weights": 1,
+                "score_range": [
+                  "-3",
+                  "-1"
+                ]
+              },
+              "right": {
+                "intercept_at_cutoff": "6",
+                "slope_per_score_unit": "-1",
+                "positive_weight_rows": 4,
+                "distinct_scores": 4,
+                "sum_kernel_weights": "5/2",
+                "kernel_weight_ess": "10/3",
+                "weighted_rss": "0",
+                "nearest_score_gap": "0",
+                "normalized_weighted_score_variance": "1/16",
+                "intercept_equivalent_weights": [
+                  {
+                    "id": "r3",
+                    "weight": "4/5"
+                  },
+                  {
+                    "id": "r4",
+                    "weight": "3/10"
+                  },
+                  {
+                    "id": "r5",
+                    "weight": "0"
+                  },
+                  {
+                    "id": "r6",
+                    "weight": "-1/10"
+                  }
+                ],
+                "negative_equivalent_weights": 1,
+                "score_range": [
+                  "0",
+                  "3"
+                ]
+              }
+            },
+            "excluded_row_ids": [],
+            "causal_identification_verified": false,
+            "standard_error": null,
+            "confidence_interval": null,
+            "limitations": [
+              "Point-only fit: no bias correction, sampling interval or automatic bandwidth selection.",
+              "Continuity, treatment-assignment rule, no coincident intervention and sorting require external evidence.",
+              "Repeated score values do not create additional distinct support near the cutoff.",
+              "Equivalent interpolation weights may be negative; kernel ESS is not inferential information.",
+              "No population-wide effect is established by a cutoff estimate."
+            ]
+          },
+          "expected": {
+            "jump": "5"
+          },
+          "checks": {
+            "jump": true
+          },
+          "passed": true,
+          "lesson": "Different left/right slopes, with an exactly specified jump of five."
+        },
+        {
+          "id": "same-cutoff-two-mechanisms",
+          "origin": "synthetic_constructed",
+          "result": {
+            "observed_jump": "5",
+            "training_effect_world_A": 5,
+            "training_effect_world_B": 0,
+            "coincident_policy_effect_world_B": 5,
+            "observable_tables_identical": true
+          },
+          "expected": {
+            "observed_jump": "5",
+            "observable_tables_identical": true
+          },
+          "checks": {
+            "observed_jump": true,
+            "observable_tables_identical": true
+          },
+          "passed": true,
+          "lesson": "One world attributes the jump to training; another to a second policy with the same assignment rule. The observed table alone cannot distinguish them."
+        },
+        {
+          "id": "rd-curvature-bandwidth",
+          "origin": "synthetic_constructed",
+          "result": {
+            "grid": [
+              {
+                "bandwidth": "1",
+                "result": "computed",
+                "jump": "197/40",
+                "left_rows": 3,
+                "right_rows": 3
+              },
+              {
+                "bandwidth": "2",
+                "result": "computed",
+                "jump": "191/40",
+                "left_rows": 7,
+                "right_rows": 7
+              },
+              {
+                "bandwidth": "4",
+                "result": "computed",
+                "jump": "41267/9400",
+                "left_rows": 12,
+                "right_rows": 12
+              }
+            ],
+            "known_limit_jump": "5",
+            "bias_increases_on_this_grid": true
+          },
+          "expected": {
+            "known_limit_jump": "5",
+            "bias_increases_on_this_grid": true
+          },
+          "checks": {
+            "known_limit_jump": true,
+            "bias_increases_on_this_grid": true
+          },
+          "passed": true,
+          "lesson": "Only a chosen synthetic curvature case; no bandwidth is selected for the user and no universal monotone-bias rule is claimed."
+        },
+        {
+          "id": "fuzzy-rd-imperfect-uptake",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "ratio_computed_not_causally_validated",
+            "reduced_form": "3/2",
+            "first_stage": "1/2",
+            "ratio": "3",
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.fuzzy-rd-ratio/1",
+            "data_origin": "synthetic_constructed",
+            "outcome_fit": {
+              "schema": "atlas.rd-local-linear/1",
+              "result": "point_estimate_not_causally_validated",
+              "data_origin": "synthetic_constructed",
+              "cutoff": "0",
+              "bandwidth": "4",
+              "kernel": "triangular",
+              "window": "abs(x-cutoff)<bandwidth; cutoff belongs to right side",
+              "jump": "3/2",
+              "sides": {
+                "left": {
+                  "intercept_at_cutoff": "13/5",
+                  "slope_per_score_unit": "1/10",
+                  "positive_weight_rows": 30,
+                  "distinct_scores": 3,
+                  "sum_kernel_weights": "15",
+                  "kernel_weight_ess": "180/7",
+                  "weighted_rss": "108/5",
+                  "nearest_score_gap": "1",
+                  "normalized_weighted_score_variance": "5/144",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "-3:0",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:1",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:2",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:3",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:4",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:5",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:6",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:7",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:8",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:9",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-1:0",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:1",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:2",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:3",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:4",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:5",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:6",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:7",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:8",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:9",
+                      "weight": "3/20"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "-3",
+                    "-1"
+                  ]
+                },
+                "right": {
+                  "intercept_at_cutoff": "41/10",
+                  "slope_per_score_unit": "1/10",
+                  "positive_weight_rows": 40,
+                  "distinct_scores": 4,
+                  "sum_kernel_weights": "25",
+                  "kernel_weight_ess": "100/3",
+                  "weighted_rss": "189/4",
+                  "nearest_score_gap": "0",
+                  "normalized_weighted_score_variance": "1/16",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "0:0",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:1",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:2",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:3",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:4",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:5",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:6",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:7",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:8",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:9",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "1:0",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:1",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:2",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:3",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:4",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:5",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:6",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:7",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:8",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:9",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "3:0",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:1",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:2",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:3",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:4",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:5",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:6",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:7",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:8",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:9",
+                      "weight": "-1/100"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "0",
+                    "3"
+                  ]
+                }
+              },
+              "excluded_row_ids": [],
+              "causal_identification_verified": false,
+              "standard_error": null,
+              "confidence_interval": null,
+              "limitations": [
+                "Point-only fit: no bias correction, sampling interval or automatic bandwidth selection.",
+                "Continuity, treatment-assignment rule, no coincident intervention and sorting require external evidence.",
+                "Repeated score values do not create additional distinct support near the cutoff.",
+                "Equivalent interpolation weights may be negative; kernel ESS is not inferential information.",
+                "No population-wide effect is established by a cutoff estimate."
+              ]
+            },
+            "treatment_fit": {
+              "schema": "atlas.rd-local-linear/1",
+              "result": "point_estimate_not_causally_validated",
+              "data_origin": "synthetic_constructed",
+              "cutoff": "0",
+              "bandwidth": "4",
+              "kernel": "triangular",
+              "window": "abs(x-cutoff)<bandwidth; cutoff belongs to right side",
+              "jump": "1/2",
+              "sides": {
+                "left": {
+                  "intercept_at_cutoff": "1/5",
+                  "slope_per_score_unit": "0",
+                  "positive_weight_rows": 30,
+                  "distinct_scores": 3,
+                  "sum_kernel_weights": "15",
+                  "kernel_weight_ess": "180/7",
+                  "weighted_rss": "12/5",
+                  "nearest_score_gap": "1",
+                  "normalized_weighted_score_variance": "5/144",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "-3:0",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:1",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:2",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:3",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:4",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:5",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:6",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:7",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:8",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:9",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-1:0",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:1",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:2",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:3",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:4",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:5",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:6",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:7",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:8",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:9",
+                      "weight": "3/20"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "-3",
+                    "-1"
+                  ]
+                },
+                "right": {
+                  "intercept_at_cutoff": "7/10",
+                  "slope_per_score_unit": "0",
+                  "positive_weight_rows": 40,
+                  "distinct_scores": 4,
+                  "sum_kernel_weights": "25",
+                  "kernel_weight_ess": "100/3",
+                  "weighted_rss": "21/4",
+                  "nearest_score_gap": "0",
+                  "normalized_weighted_score_variance": "1/16",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "0:0",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:1",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:2",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:3",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:4",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:5",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:6",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:7",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:8",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:9",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "1:0",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:1",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:2",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:3",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:4",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:5",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:6",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:7",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:8",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:9",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "3:0",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:1",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:2",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:3",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:4",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:5",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:6",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:7",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:8",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:9",
+                      "weight": "-1/100"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "0",
+                    "3"
+                  ]
+                }
+              },
+              "excluded_row_ids": [],
+              "causal_identification_verified": false,
+              "standard_error": null,
+              "confidence_interval": null,
+              "limitations": [
+                "Point-only fit: no bias correction, sampling interval or automatic bandwidth selection.",
+                "Continuity, treatment-assignment rule, no coincident intervention and sorting require external evidence.",
+                "Repeated score values do not create additional distinct support near the cutoff.",
+                "Equivalent interpolation weights may be negative; kernel ESS is not inferential information.",
+                "No population-wide effect is established by a cutoff estimate."
+              ]
+            },
+            "treatment_boundary_estimates_outside_unit_interval": false,
+            "limitations": [
+              "Ratio of estimated jumps, not a certified local complier effect.",
+              "Same window and kernel are used for both fits; fitted treatment boundaries are never clipped.",
+              "Exclusion, local monotonicity, continuity and a relevant treatment jump require justification.",
+              "No uncertainty estimate or weak-identification-robust inference is implemented."
+            ]
+          },
+          "expected": {
+            "first_stage": "1/2",
+            "reduced_form": "3/2",
+            "ratio": "3"
+          },
+          "checks": {
+            "first_stage": true,
+            "reduced_form": true,
+            "ratio": true
+          },
+          "passed": true
+        },
+        {
+          "id": "fuzzy-rd-no-uptake-change",
+          "origin": "synthetic_constructed",
+          "result": {
+            "result": "unresolved_first_stage",
+            "reduced_form": "0",
+            "first_stage": "0",
+            "ratio": null,
+            "minimum_first_stage": "0",
+            "guard_interpretation": "caller-selected numerical/operational threshold, not a weak-IV significance test",
+            "causal_identification_verified": false,
+            "confidence_interval": null,
+            "weak_instrument_test_performed": false,
+            "schema": "atlas.fuzzy-rd-ratio/1",
+            "data_origin": "synthetic_constructed",
+            "outcome_fit": {
+              "schema": "atlas.rd-local-linear/1",
+              "result": "point_estimate_not_causally_validated",
+              "data_origin": "synthetic_constructed",
+              "cutoff": "0",
+              "bandwidth": "4",
+              "kernel": "triangular",
+              "window": "abs(x-cutoff)<bandwidth; cutoff belongs to right side",
+              "jump": "0",
+              "sides": {
+                "left": {
+                  "intercept_at_cutoff": "13/5",
+                  "slope_per_score_unit": "1/10",
+                  "positive_weight_rows": 30,
+                  "distinct_scores": 3,
+                  "sum_kernel_weights": "15",
+                  "kernel_weight_ess": "180/7",
+                  "weighted_rss": "108/5",
+                  "nearest_score_gap": "1",
+                  "normalized_weighted_score_variance": "5/144",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "-3:0",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:1",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:2",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:3",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:4",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:5",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:6",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:7",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:8",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:9",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-1:0",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:1",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:2",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:3",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:4",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:5",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:6",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:7",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:8",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:9",
+                      "weight": "3/20"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "-3",
+                    "-1"
+                  ]
+                },
+                "right": {
+                  "intercept_at_cutoff": "13/5",
+                  "slope_per_score_unit": "1/10",
+                  "positive_weight_rows": 40,
+                  "distinct_scores": 4,
+                  "sum_kernel_weights": "25",
+                  "kernel_weight_ess": "100/3",
+                  "weighted_rss": "36",
+                  "nearest_score_gap": "0",
+                  "normalized_weighted_score_variance": "1/16",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "0:0",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:1",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:2",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:3",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:4",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:5",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:6",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:7",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:8",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:9",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "1:0",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:1",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:2",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:3",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:4",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:5",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:6",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:7",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:8",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:9",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "3:0",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:1",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:2",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:3",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:4",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:5",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:6",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:7",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:8",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:9",
+                      "weight": "-1/100"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "0",
+                    "3"
+                  ]
+                }
+              },
+              "excluded_row_ids": [],
+              "causal_identification_verified": false,
+              "standard_error": null,
+              "confidence_interval": null,
+              "limitations": [
+                "Point-only fit: no bias correction, sampling interval or automatic bandwidth selection.",
+                "Continuity, treatment-assignment rule, no coincident intervention and sorting require external evidence.",
+                "Repeated score values do not create additional distinct support near the cutoff.",
+                "Equivalent interpolation weights may be negative; kernel ESS is not inferential information.",
+                "No population-wide effect is established by a cutoff estimate."
+              ]
+            },
+            "treatment_fit": {
+              "schema": "atlas.rd-local-linear/1",
+              "result": "point_estimate_not_causally_validated",
+              "data_origin": "synthetic_constructed",
+              "cutoff": "0",
+              "bandwidth": "4",
+              "kernel": "triangular",
+              "window": "abs(x-cutoff)<bandwidth; cutoff belongs to right side",
+              "jump": "0",
+              "sides": {
+                "left": {
+                  "intercept_at_cutoff": "1/5",
+                  "slope_per_score_unit": "0",
+                  "positive_weight_rows": 30,
+                  "distinct_scores": 3,
+                  "sum_kernel_weights": "15",
+                  "kernel_weight_ess": "180/7",
+                  "weighted_rss": "12/5",
+                  "nearest_score_gap": "1",
+                  "normalized_weighted_score_variance": "5/144",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "-3:0",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:1",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:2",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:3",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:4",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:5",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:6",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:7",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:8",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-3:9",
+                      "weight": "-1/20"
+                    },
+                    {
+                      "id": "-2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "-1:0",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:1",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:2",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:3",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:4",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:5",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:6",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:7",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:8",
+                      "weight": "3/20"
+                    },
+                    {
+                      "id": "-1:9",
+                      "weight": "3/20"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "-3",
+                    "-1"
+                  ]
+                },
+                "right": {
+                  "intercept_at_cutoff": "1/5",
+                  "slope_per_score_unit": "0",
+                  "positive_weight_rows": 40,
+                  "distinct_scores": 4,
+                  "sum_kernel_weights": "25",
+                  "kernel_weight_ess": "100/3",
+                  "weighted_rss": "4",
+                  "nearest_score_gap": "0",
+                  "normalized_weighted_score_variance": "1/16",
+                  "intercept_equivalent_weights": [
+                    {
+                      "id": "0:0",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:1",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:2",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:3",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:4",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:5",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:6",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:7",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:8",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "0:9",
+                      "weight": "2/25"
+                    },
+                    {
+                      "id": "1:0",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:1",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:2",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:3",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:4",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:5",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:6",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:7",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:8",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "1:9",
+                      "weight": "3/100"
+                    },
+                    {
+                      "id": "2:0",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:1",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:2",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:3",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:4",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:5",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:6",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:7",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:8",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "2:9",
+                      "weight": "0"
+                    },
+                    {
+                      "id": "3:0",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:1",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:2",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:3",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:4",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:5",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:6",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:7",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:8",
+                      "weight": "-1/100"
+                    },
+                    {
+                      "id": "3:9",
+                      "weight": "-1/100"
+                    }
+                  ],
+                  "negative_equivalent_weights": 10,
+                  "score_range": [
+                    "0",
+                    "3"
+                  ]
+                }
+              },
+              "excluded_row_ids": [],
+              "causal_identification_verified": false,
+              "standard_error": null,
+              "confidence_interval": null,
+              "limitations": [
+                "Point-only fit: no bias correction, sampling interval or automatic bandwidth selection.",
+                "Continuity, treatment-assignment rule, no coincident intervention and sorting require external evidence.",
+                "Repeated score values do not create additional distinct support near the cutoff.",
+                "Equivalent interpolation weights may be negative; kernel ESS is not inferential information.",
+                "No population-wide effect is established by a cutoff estimate."
+              ]
+            },
+            "treatment_boundary_estimates_outside_unit_interval": false,
+            "limitations": [
+              "Ratio of estimated jumps, not a certified local complier effect.",
+              "Same window and kernel are used for both fits; fitted treatment boundaries are never clipped.",
+              "Exclusion, local monotonicity, continuity and a relevant treatment jump require justification.",
+              "No uncertainty estimate or weak-identification-robust inference is implemented."
+            ]
+          },
+          "expected": {
+            "result": "unresolved_first_stage",
+            "ratio": null
+          },
+          "checks": {
+            "result": true,
+            "ratio": true
+          },
+          "passed": true
+        },
+        {
+          "id": "rd-repeated-score-insufficient",
+          "origin": "synthetic_constructed",
+          "result": {
+            "refused": true
+          },
+          "expected": {
+            "refused": true
+          },
+          "checks": {
+            "refused": true
+          },
+          "passed": true,
+          "lesson": "Many observations at one score per side do not identify two separate slopes."
+        }
+      ],
+      "actual_observations": false,
+      "independent_human_review": false,
+      "empirical_design_validated": false,
+      "sampling_inference_implemented": false
+    },
+    "advanced_casebook": {
+      "schema": "atlas.causal-advanced-casebook/1",
+      "result": "partially_redacted_historical_evidence",
+      "cases": [
+        {
+          "id": "longitudinal",
+          "result": {
+            "schema": "atlas.causal-longitudinal-gformula/1",
+            "result": "stipulated_model_calculation",
+            "static_regime_risks": {
+              "00": "3/25",
+              "01": "8/25",
+              "10": "13/50",
+              "11": "23/50"
+            },
+            "regime_a": [
+              1,
+              1
+            ],
+            "regime_b": [
+              0,
+              0
+            ],
+            "contrast_a_minus_b": "17/50",
+            "data_origin": "stipulated_binary_transition_and_outcome_probabilities",
+            "identification_verified": false,
+            "sample_confidence_interval": null,
+            "limitations": [
+              "No model fitting or adjustment for observed histories is performed.",
+              "Sequential exchangeability, consistency, positivity and outcome/transition model specification must be defended.",
+              "Exhaustively enumerates one intermediate binary covariate and two treatment decisions only; not a general longitudinal estimator."
+            ]
+          }
+        },
+        {
+          "id": "staggered_did",
+          "result": {
+            "schema": "atlas.staggered-did-point-contrasts/1",
+            "result": "observed_group_time_contrasts",
+            "control_policy": "not_yet",
+            "contrasts": [
+              {
+                "cohort": "early",
+                "period": 1,
+                "base_period": 0,
+                "comparison_ids": [
+                  "never",
+                  "late"
+                ],
+                "observed_difference_in_changes": "2",
+                "is_effect_under_parallel_trends_only": true
+              },
+              {
+                "cohort": "early",
+                "period": 2,
+                "base_period": 0,
+                "comparison_ids": [
+                  "never"
+                ],
+                "observed_difference_in_changes": "3",
+                "is_effect_under_parallel_trends_only": true
+              },
+              {
+                "cohort": "late",
+                "period": 2,
+                "base_period": 1,
+                "comparison_ids": [
+                  "never"
+                ],
+                "observed_difference_in_changes": "3",
+                "is_effect_under_parallel_trends_only": true
+              }
+            ],
+            "unavailable": [],
+            "causal_identification_verified": false,
+            "inference": null,
+            "limitations": [
+              "Requires no anticipation and plausible group-time parallel trends for a causal ATT(g,t) interpretation.",
+              "Input means and group sizes are supplied rather than estimated; no covariate adjustment, inference, censoring adjustment, panel weighting or bootstrap is implemented.",
+              "Previously-treated groups are never used as comparison controls.",
+              "Avoid interpreting this descriptive tool as the full Callaway–Sant’Anna estimator."
+            ]
+          }
+        },
+        {
+          "id": "mediation",
+          "result": {
+            "schema": "atlas.interventional-mediation/1",
+            "result": "conditional_gformula_illustration",
+            "contrast_total": "6/25",
+            "interventional_direct_component": "3/25",
+            "interventional_indirect_component": "3/25",
+            "decomposition_exact": true,
+            "interpretation": "stochastic mediator-distribution contrast with specified outcome risks, not natural direct/indirect effects",
+            "identified_from_observational_data": false,
+            "limitations": [
+              "No exposure-induced mediator-outcome confounder is represented; identification depends on assumptions and timing.",
+              "Does not identify individual natural indirect effects or infer a mediator mechanism from correlations.",
+              "All four outcome means and both mediator probabilities are supplied, not learned."
+            ]
+          }
+        },
+        {
+          "id": "interference",
+          "result": {
+            "schema": "atlas.cluster-interference/1",
+            "result": "stipulated_two_person_potential_outcomes",
+            "direct_effect_focal0_neighbor0": "3/10",
+            "direct_effect_focal0_neighbor1": "3/10",
+            "spillover_focal0_own0": "1/5",
+            "spillover_focal1_own0": "1/5",
+            "no_interference_assumption_verified": false,
+            "limitations": [
+              "The full assignment map is specified, not inferred.",
+              "Interference outside the two-person cluster, selection, randomization and sampling variability are not represented.",
+              "The ordinary no-interference potential-outcome simplification cannot be assumed if spillovers are nonzero."
+            ]
+          }
+        },
+        {
+          "id": "transport",
+          "result": {
+            "schema": "atlas.causal-transport-by-strata/1",
+            "result": "conditional_standardization",
+            "source_contrast": "3/20",
+            "target_contrast": "1/4",
+            "strata_supported": 2,
+            "transport_assumptions_verified": false,
+            "limitations": [
+              "The per-stratum treatment response functions must be identifiable in source and invariant across settings conditional on specified strata.",
+              "Observed source associations are not automatically causal response functions.",
+              "This is finite stratum reweighting, not a complete graphical transportability algorithm or inference procedure."
+            ]
+          }
+        },
+        {
+          "id": "binomial_interval",
+          "result": {
+            "schema": "atlas.independent-binomial-risk-difference/1",
+            "result": "approximate_descriptive_interval",
+            "difference": "3/20",
+            "difference_decimal": 0.15,
+            "standard_error": 0.0653834841531101,
+            "z_multiplier": 1.9599639845400536,
+            "nominal_confidence": 0.95,
+            "normal_interval": [
+              0.021850725876158883,
+              0.2781492741238411
+            ],
+            "causal_identification_verified": false,
+            "limitations": [
+              "Assumes independent observations within and between groups; no clustering or observational confounding correction.",
+              "Large-sample Wald approximation can undercover, especially near limits; interval can extend beyond the natural difference range.",
+              "A confidence interval describes sample variability under its assumptions, not identification or a causal claim."
+            ]
+          }
+        },
+        {
+          "id": "ucb_admissions",
+          "result": {
+            "status": "unavailable_pending_dataset_redistribution_clearance",
+            "reason": "ucb_admissions_redistribution_unresolved"
+          }
+        }
+      ],
+      "historical_public_data": [
+        "ucb_admissions"
+      ],
+      "causal_effects_claimed_from_real_data": false,
+      "scientific_human_review": false,
+      "public_derivative_original_historical_outcome": {
+        "result": "passed"
+      },
+      "public_derivative_not_revalidated": true
+    },
+    "materials_casebook": {
+      "schema": "atlas.materials-casebook/1",
+      "status": "passed",
+      "cases": [
+        {
+          "id": "unit-cell-density",
+          "origin": "synthetic_authored_teaching",
+          "description": "Toy cubic lattice with fictional atom positions; not a copper specimen.",
+          "calculation": {
+            "density_g_cm3": 6.595038472664328,
+            "inputs_given_not_measured": true,
+            "assumptions": [
+              "Cubic cell",
+              "All sites represented by stated average atomic mass",
+              "No defects or porosity represented"
+            ]
+          },
+          "checks": {
+            "expected_toy_density": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "indexed-peak-spacing",
+          "origin": "synthetic_authored_teaching",
+          "description": "Toy indexed first-order reflection, not phase identification.",
+          "calculation": {
+            "d_angstrom": 2.055489715166591,
+            "theta_degrees": 22.0,
+            "limitations": [
+              "Diffraction peak assignment and order supplied, not inferred",
+              "No instrument or refraction corrections"
+            ]
+          },
+          "checks": {
+            "range_2_to_2p1_angstrom": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "binary-tie-line",
+          "origin": "synthetic_authored_teaching",
+          "description": "Toy equilibrium binary tie line; not measured phase fractions.",
+          "calculation": {
+            "fraction_alpha": 0.5999999999999999,
+            "fraction_beta": 0.4000000000000001,
+            "assumptions": [
+              "Binary two-phase equilibrium tie line at specified conditions",
+              "All fractions use same compositional basis",
+              "Complete mass conservation; no third phase"
+            ]
+          },
+          "checks": {
+            "mass_balance": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "thermal-free-strain",
+          "origin": "synthetic_authored_teaching",
+          "description": "No constraint or stress model, only thermal expansion mismatch.",
+          "calculation": {
+            "free_strain_difference": 0.00066,
+            "microstrain_difference": 660.0,
+            "limitations": [
+              "Constant scalar coefficients, no temperature dependence or tensor direction",
+              "No constraint, stress, fatigue, or interface strength model"
+            ]
+          },
+          "checks": {
+            "microstrain": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "tensile-point",
+          "origin": "synthetic_authored_teaching",
+          "description": "One illustrative tensile point, not yield or ultimate strength.",
+          "calculation": {
+            "engineering_stress_mpa": 250.0,
+            "engineering_strain": 0.01,
+            "limitations": [
+              "Initial area and initial gauge length only",
+              "Cannot determine modulus, yield or failure strength from one point",
+              "No specimen geometry compliance, temperature or strain rate supplied"
+            ]
+          },
+          "checks": {
+            "mpa": true,
+            "strain": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "ideal-modulus-mixture",
+          "origin": "synthetic_authored_teaching",
+          "description": "Scalar ideal parallel/series assumptions, not tested composite modulus.",
+          "calculation": {
+            "iso_strain_voigt_gpa": 62.1,
+            "iso_stress_reuss_gpa": 4.2583392476934,
+            "assumptions": [
+              "Idealized two-phase linear elastic scalar model",
+              "No voids, interface degradation or anisotropy included"
+            ],
+            "limitations": [
+              "Not a universal safe stiffness range for arbitrary microstructure, nonlinear loading or anisotropy"
+            ]
+          },
+          "checks": {
+            "voigt": true,
+            "positive": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "toy-formation-energy",
+          "origin": "synthetic_authored_teaching",
+          "description": "Fictitious electronic energies on one reference; no external DFT performed.",
+          "calculation": {
+            "formation_energy_ev_per_atom": -1.0,
+            "atom_count": 3,
+            "assumptions": [
+              "Same energy normalization, functional and compatible correction scheme",
+              "Inputs may be computed values; not measured enthalpies"
+            ],
+            "limitations": [
+              "No finite-temperature entropy, pressure, kinetics or synthesis feasibility claim"
+            ]
+          },
+          "checks": {
+            "expected": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "toy-hull-above",
+          "origin": "synthetic_authored_teaching",
+          "description": "Finite supplied toy phase set; not a real database stability estimate.",
+          "calculation": {
+            "hull_energy_ev_per_atom": -0.24,
+            "signed_candidate_minus_hull_ev_atom": 0.06,
+            "supporting_phase_ids": [
+              "A",
+              "AB"
+            ],
+            "candidate_below_reference_hull": false,
+            "scope": "Finite supplied competition set only, at declared common electronic-energy reference",
+            "limitations": [
+              "A negative distance means phase set is incomplete relative to candidate, not negative real energy-above-hull",
+              "No entropy, kinetics, structural stability, synthesis or material safety proven",
+              "DFT mixing and release compatibility not checked automatically"
+            ]
+          },
+          "checks": {
+            "above_hull": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "incomplete-hull-detection",
+          "origin": "synthetic_authored_teaching",
+          "description": "New candidate below current reference hull shows the existing list was incomplete.",
+          "calculation": {
+            "hull_energy_ev_per_atom": 0.0,
+            "signed_candidate_minus_hull_ev_atom": -0.2,
+            "supporting_phase_ids": [
+              "A",
+              "B"
+            ],
+            "candidate_below_reference_hull": true,
+            "scope": "Finite supplied competition set only, at declared common electronic-energy reference",
+            "limitations": [
+              "A negative distance means phase set is incomplete relative to candidate, not negative real energy-above-hull",
+              "No entropy, kinetics, structural stability, synthesis or material safety proven",
+              "DFT mixing and release compatibility not checked automatically"
+            ]
+          },
+          "checks": {
+            "below_reference": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "measured-versus-computed-refusal",
+          "origin": "synthetic_authored_teaching",
+          "description": "Equal labels or units do not make computed and measured data interchangeable.",
+          "calculation": {
+            "refusal_expected": true
+          },
+          "checks": {
+            "refusal": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        },
+        {
+          "id": "invalid-tie-line-refusal",
+          "origin": "synthetic_authored_teaching",
+          "description": "Negative phase fraction is not physically reported.",
+          "calculation": {
+            "refusal_expected": true
+          },
+          "checks": {
+            "refusal": true
+          },
+          "passed": true,
+          "not_real_material_validation": true
+        }
+      ],
+      "count": 11,
+      "physical_measurements": false,
+      "external_DFT_or_datasets_run": false,
+      "independent_review": false
+    },
+    "materials_advanced_casebook": {
+      "schema": "atlas.materials-advanced-cases/1",
+      "status": "historical_receipt_redacted_not_revalidated",
+      "cases": [
+        {
+          "public_edition_status": "unavailable",
+          "reason_code": "nist_srd140_redistribution_grant_unresolved",
+          "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+          "scientific_revalidation": false,
+          "source_case": "nist-hahn1-certified-model-replay"
+        },
+        {
+          "case": "arrhenius-supplied-parameters",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "diffusivity_m2_s": 7.1592614227330125e-12,
+            "temperature_k": 850.0,
+            "limitations": [
+              "Supplied prefactor and activation energy only; no experiment or fitting",
+              "Single-mode activated transport assumed within a validated phase/range, not established by this calculation",
+              "Cannot equate a thermal acceleration prediction with a safety or aging qualification."
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "one-dimensional-diffusion-scale",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "rms_displacement_m": 8.48528137423857e-05,
+            "assumptions": [
+              "Unbounded 1-D Fickian Brownian displacement with constant D",
+              "No gradients, traps, interfaces, phase changes or finite boundaries"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "stress-intensity-not-fracture-certificate",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "stress_intensity_mpa_sqrt_m": 11.209982432795858,
+            "assumptions": [
+              "Linear elastic mode I stress intensity with externally established geometry factor Y",
+              "Crack length a uses the same geometric convention as supplied Y"
+            ],
+            "limitations": [
+              "K_I is NOT automatically K_IC or fracture onset",
+              "No thickness, plastic-zone, crack-shape, residual stress or test validity established"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "paris-regime-only",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "crack_growth_rate_mm_per_cycle": 9.999999999999999e-05,
+            "coefficient_unit_interpretation": "mm/cycle / (MPa sqrt(m))^3",
+            "limitations": [
+              "Only given empirical Paris-regime constants; no fatigue threshold or instability model",
+              "Cannot integrate full component fatigue life without crack geometry, load history and remaining regimes"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "uniform-tensile-conversion",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "true_stress_mpa": 420.0,
+            "true_log_strain": 0.04879016416943201,
+            "limitations": [
+              "Only before diffuse necking under approximately uniform uniaxial deformation and plastic incompressibility",
+              "No post-necking area correction, elastic/plastic decomposition, machine compliance or failure prediction"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "temperature-varying-alpha",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "integrated_log_length_change": 0.002,
+            "length_ratio_exp_integral": 1.0020020013340003,
+            "small_strain_approximation": 0.002,
+            "limitations": [
+              "Piecewise-linear alpha(T), trapezoidal quadrature, no extrapolation",
+              "Assumes alpha=d(ln L)/dT; no specimen, direction, hysteresis, uncertainty or instrument effects"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "case": "missing-fracture-geometry-refusal",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "refused": true
+          },
+          "passed": true
+        },
+        {
+          "case": "paris-range-extrapolation-refusal",
+          "origin": "synthetic_authored",
+          "calculation": {
+            "refused": true
+          },
+          "passed": true
+        }
+      ],
+      "count": 9,
+      "physical_experiments_performed": false,
+      "published_case_number": 1,
+      "synthetic_case_number": 8,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    "published_hahn1_replay": {
+      "public_edition_status": "unavailable",
+      "reason_code": "nist_srd140_redistribution_grant_unresolved",
+      "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+      "scientific_revalidation": false,
+      "source_case": "published_hahn1_replay"
+    },
+    "materials_expanded_casebook": {
+      "schema": "atlas.materials-extended-casebook/1",
+      "version": "0.3.0",
+      "cases": [
+        {
+          "id": "above_critical_single_phase",
+          "passed": true,
+          "observed": {
+            "critical_temperature_k": 1202.7235504272605
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "The critical point belongs only to stipulated constant-omega model"
+          ]
+        },
+        {
+          "id": "binodal_wider_than_spinodal",
+          "passed": true,
+          "observed": {
+            "binodal": [
+              0.14479410825606492,
+              0.8552058917439351
+            ],
+            "spinodal": [
+              0.27639320225002106,
+              0.7236067977499789
+            ]
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "Synthetic material; no measured composition"
+          ]
+        },
+        {
+          "id": "central_composition_unstable",
+          "passed": true,
+          "observed": {
+            "free_energy_drop_j_mol": 286.82011963097534
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "No kinetics or actual phase morphology"
+          ]
+        },
+        {
+          "id": "metastable_not_stable",
+          "passed": true,
+          "observed": {
+            "state": "metastable_homogeneous_state_with_two_phase_lower_energy"
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "Positive local curvature does not establish global equilibrium"
+          ]
+        },
+        {
+          "id": "outside_binodal_single_phase",
+          "passed": true,
+          "observed": {
+            "state": "outside_miscibility_gap_or_on_boundary"
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "Homogeneous phase stable only within this model"
+          ]
+        },
+        {
+          "id": "synthetic_cubic_multi_peak",
+          "passed": true,
+          "observed": {
+            "a_angstrom": 3.6099999999999994,
+            "u_a_angstrom": 0.00041109792671941656
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "Indexed ideal peak positions, not real copper XRD, phase identity or uncertainty budget"
+          ]
+        },
+        {
+          "id": "common_wavelength_component_not_reduced_by_n",
+          "passed": true,
+          "observed": {
+            "u_shared_angstrom": 0.00023432428923795921
+          },
+          "origin": "original_synthetic_demonstration_or_descriptive_published_data_reanalysis",
+          "limitations": [
+            "Wavelength is a shared systematic uncertainty in this first-order model"
+          ]
+        },
+        {
+          "public_edition_status": "unavailable",
+          "reason_code": "nist_srd140_redistribution_grant_unresolved",
+          "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+          "scientific_revalidation": false,
+          "source_case": "nist_hahn1_residuals_partition"
+        }
+      ],
+      "status": "historical_receipt_redacted_not_revalidated",
+      "count": 8,
+      "original_new_physical_observations": 0,
+      "independent_human_review": false,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    "materials_v1_cases": {
+      "schema": "materials.v1-casebook/1",
+      "version": "1.0.0",
+      "cases": [
+        {
+          "id": "nist-copper-shomate",
+          "origin": "rights-withheld",
+          "status": "unavailable",
+          "passed": null,
+          "reason": "NIST SRD69 redistribution clearance pending; inputs and direct numerical outputs withheld from this public derivative."
+        },
+        {
+          "id": "enthalpy-integral-consistency",
+          "origin": "rights-withheld",
+          "status": "unavailable",
+          "passed": null,
+          "reason": "NIST SRD69 redistribution clearance pending; inputs and direct numerical outputs withheld from this public derivative."
+        },
+        {
+          "id": "corrosion-equivalent-loss",
+          "origin": "synthetic_coupon_parameters",
+          "passed": true,
+          "rate_mm_year": 0.04679487179487179,
+          "zero_loss_is_not_zero_pitting": "possible unobserved localized attack",
+          "limits": [
+            "maximum pit depth",
+            "localized corrosion morphology",
+            "field corrosion rate",
+            "remaining useful life"
+          ]
+        },
+        {
+          "id": "thermal-series-boundaries",
+          "origin": "synthetic_layer_stack",
+          "passed": true,
+          "heat_rate_W": 142.836737608913,
+          "limits": "steady 1D, geometry/contacts asserted; no thermal stress or system certification"
+        },
+        {
+          "id": "isothermal-avrami-reversibility",
+          "origin": "synthetic_kinetics",
+          "passed": true,
+          "half_transformation_s": 832.5546111576977,
+          "limits": "no continuous cooling, no fitted real material coefficients"
+        },
+        {
+          "id": "creep-stress-exponent",
+          "origin": "synthetic_creep_model",
+          "passed": true,
+          "rate_at_50_MPa_per_s": 3.0863052322428108e-15,
+          "limits": "no creep rupture or failure time"
+        },
+        {
+          "id": "weibull-mechanism-vs-fit",
+          "origin": "synthetic_declared_weakest_link",
+          "passed": true,
+          "single_volume_survival": 0.9251864446470164,
+          "double_volume_survival": 0.8559699573585867,
+          "implicit_volume_scaling_refused": true,
+          "limits": "conditional physical flaw model, not an empirical Weibull fit validated for scaling"
+        },
+        {
+          "id": "invalid-input-refusal",
+          "origin": "authored_negative_test",
+          "passed": true,
+          "limits": "invalid-input rejection is not evidence of materials model truth"
+        }
+      ],
+      "count": 8,
+      "status": "historical_source_receipt_redacted",
+      "independent_human_review": false,
+      "new_physical_measurements": 0,
+      "live_bitwork_or_model_result": false,
+      "public_derivative_note": "NIST SRD69 redistribution clearance pending; inputs and direct numerical outputs withheld from this public derivative."
+    },
+    "prior_causal_preservation": {
+      "result": "passed",
+      "method": "source tree hashed against previous release member inventory; externally audited in release script"
+    },
+    "baseline_preservation": {
+      "result": "passed",
+      "members": 771,
+      "changed": [],
+      "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+    },
+    "json_schema": {
+      "result": "passed",
+      "errors": [],
+      "records": 802
+    },
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "scientific_v1_accepted": false,
+  "content_v1_ready": true,
+  "live_bitwork_run": false,
+  "user_desktop_run": false,
+  "independent_human_review": false,
+  "result": "partially_redacted_historical_evidence",
+  "baseline_logging_note": "Inherited Forge HTTP aborted-client tests may log BrokenPipeError while passing; no repair is claimed.",
+  "public_derivative_original_historical_outcome": {
+    "result": "passed"
+  },
+  "public_derivative_not_revalidated": true,
+  "public_derivative_redactions": {
+    "reason": "ucb_admissions_redistribution_unresolved",
+    "original_validation_not_repeated": true,
+    "note": "Historical evidence was selectively redacted and is not a validation receipt for altered bytes."
+  },
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

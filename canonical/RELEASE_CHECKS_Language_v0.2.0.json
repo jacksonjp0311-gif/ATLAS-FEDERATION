@@ -1,0 +1,144 @@
+{
+  "schema": "atlas.language-v02-source-preflight/1",
+  "result": "passed_source_tree_preflight",
+  "version": "0.2.0",
+  "nine_node_records": 1699,
+  "nine_node_relations": 934,
+  "nine_node_source_cards": 429,
+  "language_records": 224,
+  "language_source_cards": 33,
+  "language_relations_full": 227,
+  "language_relations_standalone": 222,
+  "language_chapters": 50,
+  "language_investigations": 30,
+  "casebook_advanced": 11,
+  "test_suites": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_total": 1519,
+  "tests_skipped": 0,
+  "contexts": 43,
+  "numerical_oracle": {
+    "schema": "atlas.language-v02-oracle/1",
+    "status": "passed",
+    "seed": 20261114,
+    "counts": {
+      "edit_distance": 500,
+      "bleu_precision": 800,
+      "bleu_brevity": 400,
+      "bleu_unsmoothed": 400,
+      "typology_family_weight": 444,
+      "typology_naive": 444,
+      "pcfg_inside": 600,
+      "multimodal_overlap": 819
+    },
+    "total_comparisons": 4407,
+    "max_absolute_difference": 1.1102230246251565e-16,
+    "numpy_version": "2.3.5",
+    "authentic_language_or_speaker_data_loaded": 0,
+    "external_translation_systems_evaluated": 0,
+    "independently_reviewed_scientific_hypotheses": 0,
+    "limitations": [
+      "Independent formulas/checks on authored synthetic data are software evidence, not human language universals",
+      "Small grammar demonstrates stipulated probability mass and not real syntactic competence"
+    ]
+  },
+  "preservation": {
+    "schema": "atlas.language-v02-preservation-audit/1",
+    "result": "passed",
+    "original_release": "ATLAS_COLLECTION_Language_v0.1.0.zip",
+    "original_release_sha256": "bef0e4fd43589871e4387ed0245b04613b66a00dde7615813e9f42a4f4401fb0",
+    "protected_historical_files_byte_identical": 1884,
+    "by_prefix": {
+      "baseline/": 771,
+      "AGENT-ATLAS/": 231,
+      "COMPUTATION-ATLAS/": 140,
+      "CONTROL-ATLAS/": 225,
+      "CAUSAL-ATLAS/": 253,
+      "MATERIALS-ATLAS/": 121,
+      "common/nodes/agent-atlas/": 9,
+      "common/nodes/computation-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "common/nodes/signal-atlas/": 9,
+      "history/": 36,
+      "wheels/": 22,
+      "docs/": 13
+    },
+    "changed_files": [],
+    "previous_language_records_preserved": 167,
+    "previous_language_full_relations_preserved": 167,
+    "prior_other_node_manifests_changed": false,
+    "shared_retriever_code_changed": false,
+    "source_title_changes_not_substituted": true,
+    "human_scientific_review": false
+  },
+  "clean_wheel_install": "passed",
+  "original_publisher_bytes_acquired": 0,
+  "scoped_v1_accepted": false,
+  "scientific_peer_review": false,
+  "external_cultural_review": false,
+  "live_model_calls": 0,
+  "router_modified": false,
+  "desktop_transfer": false,
+  "archive_extraction_replay": "pending",
+  "future_work": "deepen scoped v1 domain research with rights-cleared source files and independent language/community review"
+}

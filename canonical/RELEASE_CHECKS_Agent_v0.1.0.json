@@ -1,0 +1,145 @@
+{
+  "schema": "atlas.collection-content-checkpoint/1",
+  "date": "2026-11-13",
+  "version": "agent-atlas-0.1.0",
+  "status": "research_foundation_not_scoped_content_v1",
+  "source_result": "passed",
+  "inventory": {
+    "nodes": 7,
+    "common_records": 1124,
+    "agent_records": 73,
+    "agent_sources": 17,
+    "agent_relations": 45,
+    "agent_chapters": 14,
+    "agent_investigations": 6,
+    "agent_constructed_cases": 13,
+    "agent_tools": 8
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 53,
+      "passed": 53,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_tests_passed": 1058,
+  "total_tests_skipped": 0,
+  "source_schema_result": "passed",
+  "source_context_queries": 10,
+  "separate_numerical_oracle": {
+    "schema": "atlas.agent-model-oracle/1",
+    "result": "passed",
+    "seed": 20261113,
+    "total_checks": 3200,
+    "counts": {
+      "graph_critical_cost": 400,
+      "topology_constraints": 400,
+      "pass_all": 500,
+      "pass_any": 500,
+      "per_trial": 500,
+      "memory_budget": 400,
+      "journal_digest": 500
+    },
+    "numpy_version": "2.3.5",
+    "networkx_version": "3.6.1",
+    "origin": "independent_numeric_and_graph_algorithms_on_author_generated_data",
+    "real_llm_calls": 0,
+    "real_tool_calls": 0,
+    "independent_scientific_review": false,
+    "limitations": [
+      "No performance benchmark or real external task evaluation",
+      "NetworkX check validates supplied cost graph, not a live scheduler"
+    ]
+  },
+  "preservation": {
+    "status": "passed",
+    "protected_files_byte_identical": 1437,
+    "by_prefix": {
+      "baseline/": 771,
+      "CAUSAL-ATLAS/": 253,
+      "MATERIALS-ATLAS/": 121,
+      "CONTROL-ATLAS/": 225,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/signal-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "wheels/": 13
+    },
+    "original_baseline_members": 771,
+    "baseline_changed": [],
+    "old_nodes_records_preserved": 1051,
+    "old_nodes": [
+      "causal-atlas",
+      "control-atlas",
+      "cymatics-atlas",
+      "materials-atlas",
+      "measurement-atlas",
+      "signal-atlas"
+    ],
+    "new_source_routing_implemented": false,
+    "new_live_model_invocations": 0
+  },
+  "clean_wheel_installation": {
+    "status": "passed_after_final_rebuild",
+    "nodes_in_agent_wheel": 1,
+    "agent_records": 73,
+    "related_wheels": [
+      "atlas-forge-research 1.0.0rc1",
+      "measurement-atlas 1.0.0rc1",
+      "causal-atlas 1.0.0",
+      "materials-atlas 1.0.0",
+      "control-atlas-research 1.0.0rc1"
+    ]
+  },
+  "archive_replay": "pending",
+  "scientific_acceptance": {
+    "agent_reference_content_ready": false,
+    "peer_review": false,
+    "live_llm_runs": false,
+    "live_tool_actions": false,
+    "heldout_benchmark_results": false,
+    "production_security_verified": false,
+    "Bitwork_routing_completed": false,
+    "native_Windows_verified": false
+  },
+  "owner_sequence": "all_30_domain_contents_before_router_then_integrated_evaluation_and_desktop_transfer"
+}

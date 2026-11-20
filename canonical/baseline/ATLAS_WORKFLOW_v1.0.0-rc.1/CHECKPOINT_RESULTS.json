@@ -1,0 +1,321 @@
+{
+  "schema": "atlas.release-candidate-checks/1",
+  "release": "ATLAS_WORKFLOW_v1.0.0-rc.1",
+  "date": "2026-11-12",
+  "candidate_checks": "passed",
+  "final_release_accepted": false,
+  "active_domain": "measurement-atlas",
+  "next_domain_allowed": false,
+  "versions": {
+    "forge": "1.0.0rc1",
+    "measurement": "1.0.0rc1",
+    "contract": "1.0"
+  },
+  "inventory": {
+    "common_records": 505,
+    "measurement_records": 141,
+    "bounded_reference_records": 92,
+    "source_cards": 44,
+    "preserved_starters": 5,
+    "new_bounded_records": 16,
+    "new_source_pages": 3,
+    "core_chapters": 8,
+    "core_authored_questions": 30
+  },
+  "unit_tests": {
+    "forge": 188,
+    "measurement": 218,
+    "total_passed": 406,
+    "skipped": 0,
+    "new_test_methods": 70
+  },
+  "workflow": {
+    "stages": 14,
+    "passed": true,
+    "expected_next_domain_refusal": true
+  },
+  "clean_install": {
+    "result": "passed",
+    "kind": "clean_installed_wheel_smoke",
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "forge_version": "1.0.0rc1",
+    "measurement_version": "1.0.0rc1",
+    "forge_records": 505,
+    "context_valid": true,
+    "source_tree_imports": false,
+    "loaded_modules": {
+      "forge": "/mnt/data/atlas_v1_checks/clean_env/lib/python3.13/site-packages/atlas_forge/__init__.py",
+      "measurement": "/mnt/data/atlas_v1_checks/clean_env/lib/python3.13/site-packages/measurement_atlas/__init__.py"
+    },
+    "unit_conversion": {
+      "schema": "measurement.quantity-conversion/1",
+      "value": 298.15,
+      "standard_uncertainty": 0.2,
+      "from_unit": "degC",
+      "unit": "K",
+      "quantity_kind": "temperature",
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "temperature_interval": false,
+      "quantity_kind_basis": "explicit_caller_declaration_not_inferred",
+      "limitations": [
+        "Finite unit catalog and explicit product/quotient/integer-power grammar only.",
+        "Unit compatibility is not validation of a physical measurement or calibration."
+      ]
+    },
+    "conformance_probability": 0.6626297864953079,
+    "missing_certificate_factor_detected": true,
+    "published_case_status": "passed_with_source_discrepancies",
+    "publisher_interval_all_matched": false,
+    "windows_run": false,
+    "live_bitwork_or_model_run": false
+  },
+  "practical_casebook": {
+    "schema": "measurement.practical-casebook/1",
+    "result": "passed",
+    "cases": [
+      {
+        "id": "jcgm-upper",
+        "source": "JCGM106 §7.3.3 example 1",
+        "actual": 0.9192433407662272,
+        "display_target": 0.92,
+        "absolute_error": 0.0007566592337728828,
+        "absolute_tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "id": "jcgm-lower",
+        "source": "JCGM106 §7.3.3 example 2",
+        "actual": 0.9890095473848222,
+        "display_target": 0.99,
+        "absolute_error": 0.0009904526151778281,
+        "absolute_tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "id": "jcgm-two-sided",
+        "source": "JCGM106 §7.4 example",
+        "actual": 0.6626297864953079,
+        "display_target": 0.66,
+        "absolute_error": 0.002629786495307873,
+        "absolute_tolerance": 0.005,
+        "passed": true
+      },
+      {
+        "id": "nist-reporting-illustration",
+        "actual_expanded_g": 0.0007909999999999999,
+        "display_target_g": 0.00079,
+        "absolute_tolerance_g": 5e-06,
+        "passed": true
+      },
+      {
+        "id": "synthetic-complete-certificate",
+        "passed": true
+      },
+      {
+        "id": "synthetic-missing-factor",
+        "passed": true
+      },
+      {
+        "id": "synthetic-specification",
+        "actual": {
+          "schema": "measurement.specification-component/1",
+          "half_width": 0.007,
+          "standard_uncertainty": 0.004041451884327381,
+          "unit": "V",
+          "quantity_kind": "voltage",
+          "distribution_assumption": "uniform",
+          "interpretation_basis": "Synthetic additive 0.1 percent reading plus two counts",
+          "combination_model": "sum_of_nonnegative_additive_limits",
+          "complete_measurement_uncertainty": false,
+          "limitations": [
+            "Terms and distribution are caller-justified assumptions, not inferred from a manufacturer document.",
+            "Do not independently count overlapping specifications or assume this exhausts a measurement budget."
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "synthetic-guard-band",
+        "actual": {
+          "schema": "measurement.guard-band-decision/1",
+          "rule_id": "synthetic-rule-1",
+          "decision": "not_accepted_under_declared_rule",
+          "acceptance_lower": 0.1,
+          "acceptance_upper": 0.9,
+          "inclusive_endpoints": true,
+          "specification_lower": 0.0,
+          "specification_upper": 1.0,
+          "guard_width": 0.1,
+          "value": 0.95,
+          "unit": "mm",
+          "quantity_kind": "length",
+          "conformity_certified": false,
+          "risk_bound_established": false,
+          "limitations": [
+            "Not accepted under a rule does not prove that the underlying item is nonconforming.",
+            "The guard width and its risk justification must be supplied externally.",
+            "A decision rule is not a probability distribution or an accreditation finding."
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "case_count": 8,
+    "target_sha256": "d04b2077623b88b3519e7eaeb0c35450230d077d70bb83d917542438ed98fc4d",
+    "data_origin": "publisher_illustrations_and_synthetic_examples",
+    "new_measured_observations": 0,
+    "independent_human_review": false,
+    "heldout_evaluation": false,
+    "calibration_certification": false
+  },
+  "practical_oracle": {
+    "schema": "measurement.practical-oracle/1",
+    "result": "passed",
+    "cases": 334,
+    "seed": 12112026,
+    "mpmath_version": "1.3.0",
+    "decimal_digits": 60,
+    "max_absolute_error": 1.1102230246251565e-16,
+    "max_relative_error": 2.0545050117456046e-14,
+    "absolute_tolerance": 2e-14,
+    "relative_tolerance_when_probability_above_1e_30": 1e-08,
+    "failures": [],
+    "independent_human_review": false,
+    "physical_experiments": false
+  },
+  "covariance_oracle": {
+    "kind": "numpy_numerical_crosscheck",
+    "result": "passed",
+    "seed": 86422,
+    "numpy_version": "2.3.5",
+    "positive_definite_cases": 600,
+    "invalid_cases_rejected": 5,
+    "max_relative_error": 2.3171296437844394e-15,
+    "independent_human_review": false,
+    "physical_measurements": false
+  },
+  "calibration_oracle": {
+    "result": "historical_receipt_redacted_not_revalidated",
+    "numpy_version": "2.3.5",
+    "checks": [
+      {
+        "degree": 1,
+        "numpy_residual_sd": 0.0021712725960567393,
+        "decimal_residual_sd": "[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+        "scaled_coefficients_max_abs_difference": 4.440892098500626e-16,
+        "passed": true,
+        "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+      },
+      {
+        "degree": 2,
+        "numpy_residual_sd": 0.00020517742407617662,
+        "decimal_residual_sd": "[SRD140_PUBLIC_WITHHELD] Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+        "scaled_coefficients_max_abs_difference": 6.201636426617085e-16,
+        "passed": true,
+        "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+      }
+    ],
+    "independent_human_review": false,
+    "physical_replication": false,
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "coverage_oracle": {
+    "result": "historical_receipt_redacted_not_revalidated",
+    "kind": "independent_numerical_algorithms_not_independent_review",
+    "scipy_version": "1.17.0",
+    "numpy_version": "2.3.5",
+    "python": "3.13.5",
+    "quantile_cases": 110,
+    "quantile_max_scaled_absolute_error": 2.4882132912019237e-11,
+    "quantile_tolerance": 2e-09,
+    "quantile_failures": [],
+    "numpy_scipy_inverse": {
+      "lower": 1704513.3729374574,
+      "upper": null,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    "inverse_absolute_errors_source_units": {
+      "lower": 4.656612873077393e-10,
+      "upper": 0.0
+    },
+    "inverse_absolute_tolerance": 1e-05,
+    "publisher_agreement": false,
+    "independent_human_review": false,
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "authored_context_diagnostic": {
+    "schema": "atlas.authored-diagnostic/1",
+    "test_set_sha256": "16d4f19c21fbdbadee0a20cc337fc0f2814ccb15c223421be72b136287d44af1",
+    "registry_revision": "d810c6b801db8690131b1ff92c9a1c6f966402fda488c6ab952a10c5401bf64f",
+    "evaluation_kind": "author_curated_seen_regression",
+    "independently_blinded": false,
+    "actual_ai_run": false,
+    "live_bitwork_run": false,
+    "metrics": {
+      "bm25": {
+        "answerable": 20,
+        "hit5": 20,
+        "unsupported": 5,
+        "no_match": 5,
+        "hit5_fraction": 1.0,
+        "mrr5": 0.975,
+        "no_match_fraction": 1.0
+      },
+      "lexical_overlap": {
+        "answerable": 20,
+        "hit5": 19,
+        "unsupported": 5,
+        "no_match": 5,
+        "hit5_fraction": 0.95,
+        "mrr5": 0.86,
+        "no_match_fraction": 1.0
+      }
+    },
+    "context_integrity_passed": 25,
+    "cases": 25,
+    "limitations": [
+      "Small authored test set; used during development.",
+      "No neural semantic or actual Bitwork comparison.",
+      "Lexical baseline shares corpus and excludes the same inadmissible record types.",
+      "No-match is lexical behavior, not semantic out-of-domain detection.",
+      "No answer quality, energy saving or model improvement established."
+    ]
+  },
+  "preservation": {
+    "checks": 37,
+    "all_unchanged": true,
+    "navigation_runtime_modules": 8,
+    "signal_cymatics_and_artwork_unchanged": true,
+    "criteria_unchanged": true,
+    "original_pontius_and_interval_files_unchanged": true,
+    "domain_queue_unchanged": true
+  },
+  "passed_local_engineering_gates": [
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "final_readiness_file": "RELEASE_READINESS.json",
+  "criteria_frozen": false,
+  "not_done": {
+    "independent_scientific_review": true,
+    "windows_execution": true,
+    "new_original_upstream_data_bytes": true,
+    "live_bitwork_and_model_pipeline": true,
+    "independent_heldout_comparison": true,
+    "github_publication": true,
+    "desktop_installation": true
+  },
+  "known_log_behavior": "The retained HTTP server logs BrokenPipeError when an aborted test client closes early. This occurred in baseline and candidate; all related tests passed. Navigation/server source was not changed.",
+  "checks_scope": "Authored software tests and numerical cross-checks; not physical validation, independent scientific certification or improved AI answers.",
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "atlas.scope/1",
+  "node": "measurement-atlas",
+  "target": "1.0.0",
+  "status": "proposed_not_owner_approved",
+  "families": [
+    {
+      "id": "units",
+      "scope": "SI quantities, units and dimensions; exact versus uncertain inputs",
+      "status": "gap_no_general_unit_engine"
+    },
+    {
+      "id": "type-a",
+      "scope": "Independent repeated readings and wider statistical evaluation methods",
+      "status": "partial"
+    },
+    {
+      "id": "type-b",
+      "scope": "Explicit bounded distributions and certificate multipliers",
+      "status": "partial"
+    },
+    {
+      "id": "covariance",
+      "scope": "First-order propagation, PSD validation and correlation",
+      "status": "partial"
+    },
+    {
+      "id": "budgets",
+      "scope": "Named components with declared units and sensitivity",
+      "status": "partial"
+    },
+    {
+      "id": "calibration",
+      "scope": "Correction, traceability documents and limitations",
+      "status": "partial"
+    },
+    {
+      "id": "comparison",
+      "scope": "Difference uncertainty and separate decision rules",
+      "status": "partial"
+    },
+    {
+      "id": "reporting",
+      "scope": "Coverage assumptions, uncertainty reporting and provenance",
+      "status": "partial"
+    }
+  ],
+  "exclusions": [
+    "calibration certification",
+    "medical or legal decisions",
+    "automatic unit conversion",
+    "general nonlinear Monte Carlo propagation",
+    "automatic scientific truth adjudication"
+  ],
+  "no_next_domain_until_v1": true
+}

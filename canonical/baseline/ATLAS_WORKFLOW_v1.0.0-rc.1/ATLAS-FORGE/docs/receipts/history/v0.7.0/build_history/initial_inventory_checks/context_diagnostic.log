@@ -1,0 +1,38 @@
+{
+  "schema": "atlas.authored-diagnostic/1",
+  "test_set_sha256": "16d4f19c21fbdbadee0a20cc337fc0f2814ccb15c223421be72b136287d44af1",
+  "registry_revision": "fa9c78100920ee3bd7487c4602c7f16c3cfa65b0812792a85ac462bed10e518e",
+  "evaluation_kind": "author_curated_seen_regression",
+  "independently_blinded": false,
+  "actual_ai_run": false,
+  "live_bitwork_run": false,
+  "metrics": {
+    "bm25": {
+      "answerable": 20,
+      "hit5": 20,
+      "unsupported": 5,
+      "no_match": 5,
+      "hit5_fraction": 1.0,
+      "mrr5": 0.975,
+      "no_match_fraction": 1.0
+    },
+    "lexical_overlap": {
+      "answerable": 20,
+      "hit5": 19,
+      "unsupported": 5,
+      "no_match": 5,
+      "hit5_fraction": 0.95,
+      "mrr5": 0.8625,
+      "no_match_fraction": 1.0
+    }
+  },
+  "context_integrity_passed": 25,
+  "cases": 25,
+  "limitations": [
+    "Small authored test set; used during development.",
+    "No neural semantic or actual Bitwork comparison.",
+    "Lexical baseline shares corpus and excludes the same inadmissible record types.",
+    "No-match is lexical behavior, not semantic out-of-domain detection.",
+    "No answer quality, energy saving or model improvement established."
+  ]
+}

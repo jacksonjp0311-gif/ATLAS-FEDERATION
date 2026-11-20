@@ -1,0 +1,47 @@
+{
+  "schema": "atlas.energy-build-closure/1",
+  "edition": "0.1.0",
+  "chapter_count": 36,
+  "cases": 25,
+  "source_cards": 20,
+  "records": 176,
+  "standalone_relations": 144,
+  "full_relations": 149,
+  "cross_node_links": [
+    {
+      "source_id": "energy-atlas:chapter-01-concept",
+      "to_record_id": "measurement-atlas:concept:calibration-stability",
+      "to_revision": "5aee082d397bcce7a38969af5b5b1057797482478ba39b6c22d9567d5efaba5c",
+      "relationship": "conceptual_related_to_not_source_proof"
+    },
+    {
+      "source_id": "energy-atlas:chapter-10-concept",
+      "to_record_id": "control-atlas:actuation-knowledge-boundary",
+      "to_revision": "f59fa76d2a1ef26c8b728eb65f214cfcbf0d740a3033720a878d0a32cdf86899",
+      "relationship": "conceptual_related_to_not_source_proof"
+    },
+    {
+      "source_id": "energy-atlas:chapter-24-concept",
+      "to_record_id": "materials-atlas:computed-versus-gibbs",
+      "to_revision": "efab3236878b79b356df33b94ce1fa9e23b829600759c86692a369aa717358bb",
+      "relationship": "conceptual_related_to_not_source_proof"
+    },
+    {
+      "source_id": "energy-atlas:chapter-31-concept",
+      "to_record_id": "computation-atlas:chapter-05-concept",
+      "to_revision": "5510e17ae6116ce16e1e636f4b32636da3a1210f3a4865c427d72c1cbcc2822a",
+      "relationship": "conceptual_related_to_not_source_proof"
+    },
+    {
+      "source_id": "energy-atlas:chapter-32-concept",
+      "to_record_id": "causal-atlas:imputation-limit",
+      "to_revision": "8085451bcaf61754f525373b7717f8029e036ded33eedad1984e4f89e2504d15",
+      "relationship": "conceptual_related_to_not_source_proof"
+    }
+  ],
+  "original_source_bytes_acquired": 0,
+  "real_hardware_experiments": 0,
+  "independent_physics_review": false,
+  "source_closure_verified": true,
+  "live_AIs_in_energy_tests": 0
+}

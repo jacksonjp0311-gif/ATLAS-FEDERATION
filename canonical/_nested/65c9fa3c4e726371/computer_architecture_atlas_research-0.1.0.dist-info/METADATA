@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: computer-architecture-atlas-research
+Version: 0.1.0
+Summary: Original ATLAS FORGE offline AT8 architecture: ISA, assembler, NAND ALU, atomic and microcycle models
+Requires-Python: >=3.10

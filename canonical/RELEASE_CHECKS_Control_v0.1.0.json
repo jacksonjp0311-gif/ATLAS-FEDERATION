@@ -1,0 +1,112 @@
+{
+  "schema": "atlas.control-release-checks/1",
+  "date": "2026-11-12",
+  "version": "0.1.0",
+  "status": "test_verified_scientific_reference_foundation_not_v1",
+  "user_order": "complete_all_30_domain_references_then_routing_then_desktop_transfer",
+  "inventory": {
+    "nodes": 6,
+    "common_records": 862,
+    "new_control_records": 60,
+    "source_cards": 12,
+    "other_records": 48,
+    "control_relations": 36,
+    "chapters": 12,
+    "authored_investigations": 6,
+    "synthetic_cases": 9,
+    "domain_queue_total": 30,
+    "control_content_ready": false
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 38,
+      "passed": 38,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_tests_passed": 799,
+  "skipped": 0,
+  "numerical_oracle": {
+    "schema": "atlas.control-numerical-oracle/1",
+    "status": "passed",
+    "seed": 6101126,
+    "method_counts": {
+      "zoh_via_matrix_exponential": 300,
+      "two_state_matrix_rank": 300,
+      "scalar_lqr_via_scipy_optimizer": 80,
+      "scalar_kalman_via_separate_recursion": 200
+    },
+    "comparisons": 880,
+    "maximum_scaled_absolute_error": 2.9656813730391697e-15,
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0",
+    "validation": "separate numerical algorithms on synthetic parameters, not independent scientific review, physical experiment, or real agent behavior"
+  },
+  "preservation": {
+    "prior_materials_v1_zip": "ATLAS_COLLECTION_Materials_v1.0.0.zip",
+    "prior_verified_unchanged_members": 1190,
+    "prior_changed_or_missing_members": [],
+    "original_771_file_baseline_verified": 771,
+    "shared_router_rewritten": false,
+    "other_node_record_revisions_modified": false
+  },
+  "installed_wheels": {
+    "result": "passed",
+    "package_versions": {
+      "forge": "1.0.0rc1",
+      "measurement": "1.0.0rc1",
+      "causal": "1.0.0",
+      "materials": "1.0.0",
+      "control": "0.1.0"
+    },
+    "control_wheel_standalone_records": 60,
+    "common_context_valid": true,
+    "casebook_passed": true
+  },
+  "scientific_gates": {
+    "independent_human_review": false,
+    "real_plant_identification": false,
+    "live_actuator_or_agent_test": false,
+    "hardware_safety_certification": false,
+    "real_bitwork_routing": false,
+    "independent_heldout_AI_study": false,
+    "native_windows_run": false,
+    "control_content_v1_ready": false,
+    "whole_collection_completed": false
+  },
+  "limitations": [
+    "Author-created example models only; no real industrial or agent control.",
+    "Reader must supply uncertainty, model validity and actuator limits; numerical tests are not scientific review.",
+    "Routing and desktop transfer intentionally deferred until all 30 content domains are built."
+  ]
+}

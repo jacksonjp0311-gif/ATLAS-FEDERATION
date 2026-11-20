@@ -1,0 +1,150 @@
+{
+  "schema": "atlas.materials-content-release/1",
+  "date": "2026-11-12",
+  "edition": "1.0.0",
+  "stage": "scoped_content_v1_complete_deployment_not_final",
+  "component_versions": {
+    "materials": "1.0.0",
+    "forge": "1.0.0rc1",
+    "measurement": "1.0.0rc1",
+    "causal": "1.0.0",
+    "contract": "1.0"
+  },
+  "inventory": {
+    "total_nodes": 5,
+    "scoped_domain_libraries_planned": 30,
+    "current_common_records": 802,
+    "materials_records": 148,
+    "materials_source_cards": 29,
+    "materials_other_records": 119,
+    "materials_relations": 84,
+    "materials_prior_revisions_preserved": 112,
+    "chapters": 32,
+    "investigations": 19,
+    "new_v1_chapters": 9,
+    "new_v1_investigations": 8,
+    "new_materials_records": 36,
+    "new_source_cards": 3,
+    "new_relations": 28
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "full_collection_tests_passed": 761,
+  "skipped": 0,
+  "new_v1_numeric_oracle": {
+    "result": "passed",
+    "comparisons": 818,
+    "max_scaled_error": null,
+    "seed": 11212026,
+    "source_rounded_display_checks": 18,
+    "status": "historical_source_receipt_redacted",
+    "public_derivative_note": "NIST SRD69 redistribution clearance pending; inputs and direct numerical outputs withheld from this public derivative."
+  },
+  "earlier_numerical_checks_reexecuted": {
+    "foundational": 1200,
+    "advanced": 1440,
+    "phase_and_diffraction": 1058,
+    "hahn1_oracle": "passed"
+  },
+  "publisher_cases": [
+    {
+      "source": "NIST Hahn1 StRD",
+      "source_reported_observations": 236,
+      "acquisition": "checked_decimal_transcription",
+      "original_transport_hash": null,
+      "response_numeric_scale_authenticated": false,
+      "numerical_reproduction": true,
+      "new_physical_measurements": false
+    },
+    {
+      "source": "NIST Chemistry WebBook SRD69 copper solid Shomate",
+      "selected_display_rows": 6,
+      "scalar_rounding_checks": 18,
+      "temperature_K": [
+        298,
+        1358
+      ],
+      "rounding_max_absolute_difference": 0.004877352432316684,
+      "publisher_original_file_bytes_archived": false,
+      "publisher_compilation_copyright_respected": true,
+      "numerical_reproduction": true,
+      "new_physical_measurements": false
+    }
+  ],
+  "scientific_scope": {
+    "scoped_v1_content_ready": true,
+    "complete_materials_science_encyclopedia": false,
+    "independent_scientist_review": false,
+    "real_specimen_qualification": false,
+    "licensed_current_standards_verified": false,
+    "true_corrosion_pit_depth_inferred": false,
+    "physical_creep_rupture_predicted": false,
+    "source_pdf_visual_review": "corrosion_PDF_web_screenshot_failed"
+  },
+  "preservation": {
+    "baseline_files_unchanged": 771,
+    "other_node_snapshots_unchanged": true,
+    "Causal_repo_unchanged": true,
+    "approved_artwork_unchanged": true,
+    "routing_implementation_unchanged": true,
+    "prior_revisions_verified": 112
+  },
+  "environment": {
+    "local_python": "3.13.5",
+    "local_os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy_version": "2.3.5",
+    "scipy_version": "1.17.0"
+  },
+  "clean_install": {
+    "result": "passed",
+    "materials_wheel_name": "materials_atlas-1.0.0-py3-none-any.whl",
+    "installed_package_records": 148,
+    "source_tree_imports": false,
+    "installed_casebook_passed": true,
+    "publisher_hahn1_replay_passed": true
+  },
+  "future_gates": {
+    "Windows_host_execution": false,
+    "live_Bitwork_prototype_to_record": false,
+    "held_out_same_budget_AI_evaluation": false,
+    "independent_source_audit": false,
+    "GitHub_publication": false,
+    "desktop_transfer": false
+  },
+  "sequence": "All 30 domain content nodes → Bitwork/routing last → integrated validation → desktop transfer",
+  "next_content_domain": "control-atlas_queued_not_started",
+  "notes": [
+    "All counts measure authored material and computational software, not physical-domain coverage, validated materials properties or independent discoveries.",
+    "NIST WebBook copper coefficients are selected factual numbers with attribution; source compilation states copyright.",
+    "NIST corrosion presentation was text-extracted; requested screenshot failed, recorded rather than treated as a full PDF review.",
+    "Archived earlier versions and physical-source limitations remain intact."
+  ]
+}

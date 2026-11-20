@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.math-physics-content-v03/1",
+  "version": "0.3.0",
+  "chapters": 48,
+  "cases": 32,
+  "sources": 13,
+  "local_records": 207,
+  "local_relations": 192,
+  "full_relations_for_math_node": 200,
+  "federation_nodes": 12,
+  "federation_records": 2564,
+  "federation_relations": 1719,
+  "federation_source_cards": 500,
+  "added_records": 18,
+  "added_relations": 16,
+  "authenticated_original_publisher_files": 0,
+  "independent_scientific_review": false,
+  "physical_measurements": 0,
+  "router_changed": false
+}

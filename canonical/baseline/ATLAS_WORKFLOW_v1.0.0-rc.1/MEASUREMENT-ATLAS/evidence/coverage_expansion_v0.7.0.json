@@ -1,0 +1,29 @@
+{
+  "schema": "measurement.content-increment/1",
+  "version": "0.7.0",
+  "new_record_ids": [
+    "student-t-central-factor",
+    "confidence-procedure-not-posterior",
+    "normal-mean-t-interval",
+    "eight-df-factor-not-two",
+    "type-b-df-justification",
+    "ws-approximation-ceiling",
+    "regression-pointwise-mean-ci",
+    "future-response-t-interval",
+    "single-use-inverse-interval",
+    "inverse-band-slope-condition",
+    "inverse-range-intersection",
+    "pontius-upper-handbook",
+    "pontius-upper-recomputed",
+    "incomplete-beta-t-calculation"
+  ],
+  "new_source_ids": [
+    "TDIST",
+    "MEANCI",
+    "TTABLE",
+    "DLMFBETA",
+    "REGMEAN"
+  ],
+  "navigation_changed": false,
+  "independent_review": false
+}

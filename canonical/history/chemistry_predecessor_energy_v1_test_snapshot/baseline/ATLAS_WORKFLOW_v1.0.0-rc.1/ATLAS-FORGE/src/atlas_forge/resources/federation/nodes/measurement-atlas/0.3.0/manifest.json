@@ -1,0 +1,52 @@
+{
+  "id": "measurement-atlas",
+  "title": "Measurement Atlas",
+  "version": "0.3.0",
+  "adapter": "forge-v1",
+  "status": "numerical_models_documentation_audit_starter_reference",
+  "enabled_by_default": true,
+  "description": "Five preserved NIST section-heading reference packets plus version 0.3.0 numerical measurement models; only reference packets searchable in this pinned node.",
+  "upstream": {
+    "repository": null,
+    "commit": null,
+    "release_label": "v0.3.0 local",
+    "url": null
+  },
+  "counts": {
+    "packets": 5,
+    "sources": 1,
+    "searchable_records": 6
+  },
+  "acquisition": "Local Measurement Atlas 0.3.0 reference metadata. Code and non-reference files remain in the separate measurement package.",
+  "schema": "atlas-forge.node.v1",
+  "snapshot_files": [
+    {
+      "path": "raw/atlas_manifest.json",
+      "upstream_path": "atlas_manifest.json",
+      "sha256": "3431065d432aca47d8e587086cce3c36e26e5739eb536f8acd9dbc9a84b91368",
+      "size_bytes": 597,
+      "git_blob_sha1": null,
+      "git_blob_verified": false
+    },
+    {
+      "path": "raw/packets.jsonl",
+      "upstream_path": "data/packets.jsonl",
+      "sha256": "f5cd0eca2d31981d1ef819e893278b106744ede59a98f230a29ac651e488a394",
+      "size_bytes": 4287,
+      "git_blob_sha1": null,
+      "git_blob_verified": false
+    },
+    {
+      "path": "raw/sources.json",
+      "upstream_path": "data/sources.json",
+      "sha256": "0aa25a531ae04c9666309e7cc7d8e90fa0cb8906350baf4be5ef30fcbf045d38",
+      "size_bytes": 426,
+      "git_blob_sha1": null,
+      "git_blob_verified": false
+    }
+  ],
+  "captured_at": "2026-11-11",
+  "evidence_boundary": "Frozen reference subset, not the upstream application. No independent scientific review performed by importing. Third-party papers and raw measurements are not bundled. No automatic upstream refresh.",
+  "supporting_raw_measurements_bundled": false,
+  "rights": "Project-authored reference metadata only; per-source rights retained. See NOTICE.md and original repositories. No third-party full texts or external dataset bytes are mirrored."
+}

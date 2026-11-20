@@ -1,0 +1,9 @@
+{
+  "schema": "atlas.sibling-merge-evidence/1",
+  "verified_manufacturing_full_sha256": "eefab1265ec2262ce6e1a2fa5a8ca9fee2735e2e14ada30e2e783f406283bd97",
+  "manufacturing_v01_parent": "Electronics_Semiconductors_v0.4.0",
+  "new_main_federation_parent": "Electronics_Semiconductors_v1.0.0-rc.1",
+  "policy": "retain original Manufacturing node byte-for-byte and reconcile with newer Electronics, no second Atlas",
+  "source_branch_software_tests": 46,
+  "publisher_original_files_authenticated": false
+}

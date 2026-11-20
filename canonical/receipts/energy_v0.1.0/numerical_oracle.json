@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.energy-numerical-oracle/1",
+  "status": "passed",
+  "comparisons": 11000,
+  "categories": {
+    "solar_linear_model": 1000,
+    "wind_kinetic_power": 1000,
+    "thermal_radiation": 1000,
+    "carnot_limit": 1000,
+    "capacity_factor": 1000,
+    "ac_real_power": 1000,
+    "energy_unit_conversion": 1000,
+    "battery_energy_update": 1000,
+    "microgrid_energy_residual": 1000,
+    "trapezoid_numpy": 1000,
+    "discounted_lcoe_numpy": 1000
+  },
+  "seed": 102026,
+  "max_absolute_error": 9.094947017729282e-13,
+  "numpy_version": "2.3.5",
+  "real_physical_measurements": 0,
+  "original_primary_source_rows": 0,
+  "independent_human_scientific_review": false,
+  "claim": "independent vector arithmetic on author-generated finite examples; not validation of model applicability, safe equipment, actual economics, or unknown efficiency gains"
+}

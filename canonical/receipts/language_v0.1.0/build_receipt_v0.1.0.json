@@ -1,0 +1,52 @@
+{
+  "schema": "atlas.language-build/1",
+  "version": "0.1.0",
+  "date": "2026-11-14",
+  "chapters": 38,
+  "source_cards": 25,
+  "records": 167,
+  "relations_full": 167,
+  "relations_standalone": 162,
+  "cross_domain_links_full_only": [
+    {
+      "from": "language-atlas:chapter-14-concept",
+      "to": "computation-atlas:chapter-18-method",
+      "relation_id": "language-atlas:0162:related_to",
+      "target_revision": "2ed6d9eccaaa26d9ac82d249c087c997c2b1d44ad155293a07e8d0b072dd38b5"
+    },
+    {
+      "from": "language-atlas:chapter-01-concept",
+      "to": "agent-atlas:agency-boundary",
+      "relation_id": "language-atlas:0163:related_to",
+      "target_revision": "a35e1e1e3265575ce2a540476e29eb4339900fae876651aff36d9739268d37e5"
+    },
+    {
+      "from": "language-atlas:chapter-32-concept",
+      "to": "causal-atlas:double-robust-limits",
+      "relation_id": "language-atlas:0164:related_to",
+      "target_revision": "9212365246ad9a658e622d1c817dcc4a564aae92dfbf0e115ee9f5ae9062e66a"
+    },
+    {
+      "from": "language-atlas:chapter-03-concept",
+      "to": "measurement-atlas:claim:high-r2-not-fit-proof",
+      "relation_id": "language-atlas:0165:related_to",
+      "target_revision": "d73367aa907acbd290b09b66788b90b620bdb61a5ef6794c5a3463cae11066e5"
+    },
+    {
+      "from": "language-atlas:chapter-23-concept",
+      "to": "control-atlas:actuator-amplitude-feasibility",
+      "relation_id": "language-atlas:0166:related_to",
+      "target_revision": "9eb04a903657b32f4a1187b83c51930c74351a4974341bba2abdd36cc9b3d518"
+    }
+  ],
+  "eight_node_prior_records_preserved": 1475,
+  "full_nodes": 9,
+  "full_records": 1642,
+  "full_relations": 874,
+  "casebook_cases": 19,
+  "natural_corpus_rows_loaded": 0,
+  "human_experiment_rows_loaded": 0,
+  "authentic_primary_sources_archived": 0,
+  "independent_expert_review": false,
+  "router_changed": false
+}

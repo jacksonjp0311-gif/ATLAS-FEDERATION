@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "python": "3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "common_records": 399,
+  "measurement_records": 35,
+  "context_replay": true,
+  "covariance_regression": true,
+  "dependencies": "standard library runtime; two locally installed wheels",
+  "bitwork_run": false,
+  "model_run": false
+}

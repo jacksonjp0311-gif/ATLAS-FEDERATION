@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: computation-atlas-research
+Version: 0.2.0
+Summary: Offline computation theory and algorithms reference, with exact provenance and bounded models
+Requires-Python: >=3.10
+License-File: LICENSE.md
+License-File: NOTICE.md
+Dynamic: license-file

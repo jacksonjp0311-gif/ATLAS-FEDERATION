@@ -1,0 +1,476 @@
+{
+  "schema": "atlas.agent-v04-casebook/1",
+  "status": "passed",
+  "count": 9,
+  "cases": [
+    {
+      "id": "structural_hash_not_true_authentication",
+      "result": {
+        "schema": "atlas.agent-artifact-evidence-gate/1",
+        "task_id": "task-A",
+        "decision": "structurally_eligible_given_trusted_host_facts",
+        "reasons": [
+          "hash_fields_match_but_bytes_and_sender_were_not_authenticated"
+        ],
+        "external_effect_executed": false,
+        "artifact_bytes_rehashed_here": false,
+        "host_authority_authenticated": false,
+        "semantic_task_success_verified": false,
+        "limitations": [
+          "Every input is caller-supplied, including claims of independent host observation",
+          "SHA-256 fields are compared but original artifact bytes and authentic signatures are not checked",
+          "Eligibility is conditional; this code grants no tool permission or scientific acceptance"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "parent_dispatch_conflict",
+      "result": {
+        "schema": "atlas.agent-artifact-evidence-gate/1",
+        "task_id": "task-A",
+        "decision": "deny_missing_or_mismatched_parent_dispatch",
+        "reasons": [
+          "hash_fields_match_but_bytes_and_sender_were_not_authenticated"
+        ],
+        "external_effect_executed": false,
+        "artifact_bytes_rehashed_here": false,
+        "host_authority_authenticated": false,
+        "semantic_task_success_verified": false,
+        "limitations": [
+          "Every input is caller-supplied, including claims of independent host observation",
+          "SHA-256 fields are compared but original artifact bytes and authentic signatures are not checked",
+          "Eligibility is conditional; this code grants no tool permission or scientific acceptance"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "stop_dominates_uncertain_submission",
+      "result": {
+        "schema": "atlas.agent-artifact-evidence-gate/1",
+        "task_id": "task-A",
+        "decision": "respect_operator_stop",
+        "reasons": [
+          "hash_fields_match_but_bytes_and_sender_were_not_authenticated"
+        ],
+        "external_effect_executed": false,
+        "artifact_bytes_rehashed_here": false,
+        "host_authority_authenticated": false,
+        "semantic_task_success_verified": false,
+        "limitations": [
+          "Every input is caller-supplied, including claims of independent host observation",
+          "SHA-256 fields are compared but original artifact bytes and authentic signatures are not checked",
+          "Eligibility is conditional; this code grants no tool permission or scientific acceptance"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "unknown_external_effect_reconciliation",
+      "result": {
+        "schema": "atlas.agent-artifact-evidence-gate/1",
+        "task_id": "task-A",
+        "decision": "reconcile_external_effect_first",
+        "reasons": [
+          "hash_fields_match_but_bytes_and_sender_were_not_authenticated"
+        ],
+        "external_effect_executed": false,
+        "artifact_bytes_rehashed_here": false,
+        "host_authority_authenticated": false,
+        "semantic_task_success_verified": false,
+        "limitations": [
+          "Every input is caller-supplied, including claims of independent host observation",
+          "SHA-256 fields are compared but original artifact bytes and authentic signatures are not checked",
+          "Eligibility is conditional; this code grants no tool permission or scientific acceptance"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "paired_discordance_not_improvement",
+      "result": {
+        "schema": "atlas.agent-paired-learning-audit/1",
+        "experiment_id": "expt-1",
+        "tasks": 6,
+        "evaluation_tasks": 6,
+        "development_tasks": 0,
+        "unscored_pairs": 0,
+        "contaminated_task_ids": [],
+        "discordant_pairs": 4,
+        "paired_outcomes": {
+          "candidate_only": 3,
+          "baseline_only": 1,
+          "both_pass": 1,
+          "both_fail": 1,
+          "unscored": 0
+        },
+        "one_sided_exact_discordance_p": 0.3125,
+        "candidate_precommitted": true,
+        "design_requirements_met_on_supplied_metadata": true,
+        "independent_outcomes_authenticated": false,
+        "agent_improvement_demonstrated": false,
+        "limitations": [
+          "Paired outcomes and training membership are caller-reported and not validated against original tasks",
+          "A small p value is not causal proof, benchmark cleanliness, an independent evaluator, or real-world generalization",
+          "Development trials and null outcomes cannot be relabeled as held-out failures",
+          "Repeated seeds, costs and clustering require an additional prespecified statistical design"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "missing_evaluation_not_failure",
+      "result": {
+        "schema": "atlas.agent-paired-learning-audit/1",
+        "experiment_id": "expt-1",
+        "tasks": 6,
+        "evaluation_tasks": 6,
+        "development_tasks": 0,
+        "unscored_pairs": 1,
+        "contaminated_task_ids": [],
+        "discordant_pairs": 3,
+        "paired_outcomes": {
+          "candidate_only": 2,
+          "baseline_only": 1,
+          "both_pass": 1,
+          "both_fail": 1,
+          "unscored": 1
+        },
+        "one_sided_exact_discordance_p": 0.5,
+        "candidate_precommitted": true,
+        "design_requirements_met_on_supplied_metadata": false,
+        "independent_outcomes_authenticated": false,
+        "agent_improvement_demonstrated": false,
+        "limitations": [
+          "Paired outcomes and training membership are caller-reported and not validated against original tasks",
+          "A small p value is not causal proof, benchmark cleanliness, an independent evaluator, or real-world generalization",
+          "Development trials and null outcomes cannot be relabeled as held-out failures",
+          "Repeated seeds, costs and clustering require an additional prespecified statistical design"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "training_evaluation_contamination_detected",
+      "result": {
+        "schema": "atlas.agent-paired-learning-audit/1",
+        "experiment_id": "expt-1",
+        "tasks": 6,
+        "evaluation_tasks": 6,
+        "development_tasks": 0,
+        "unscored_pairs": 0,
+        "contaminated_task_ids": [
+          "one"
+        ],
+        "discordant_pairs": 4,
+        "paired_outcomes": {
+          "candidate_only": 3,
+          "baseline_only": 1,
+          "both_pass": 1,
+          "both_fail": 1,
+          "unscored": 0
+        },
+        "one_sided_exact_discordance_p": 0.3125,
+        "candidate_precommitted": true,
+        "design_requirements_met_on_supplied_metadata": false,
+        "independent_outcomes_authenticated": false,
+        "agent_improvement_demonstrated": false,
+        "limitations": [
+          "Paired outcomes and training membership are caller-reported and not validated against original tasks",
+          "A small p value is not causal proof, benchmark cleanliness, an independent evaluator, or real-world generalization",
+          "Development trials and null outcomes cannot be relabeled as held-out failures",
+          "Repeated seeds, costs and clustering require an additional prespecified statistical design"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "annotation_missingness_not_negative",
+      "result": {
+        "schema": "atlas.agent-annotation-panel/1",
+        "items": 3,
+        "taxonomy_version": "MAST-14",
+        "per_code": {
+          "1.1": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "1.2": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "1.3": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "1.4": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "1.5": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.1": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.2": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.3": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.4": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.5": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "2.6": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "3.1": {
+            "known": 2,
+            "missing": 1,
+            "model_positive": 2,
+            "annotator_positive": 1,
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "tn": 0,
+            "precision_wrt_annotator": 0.5,
+            "recall_wrt_annotator": 1.0,
+            "observed_agreement": 0.5,
+            "cohen_kappa": 0.0
+          },
+          "3.2": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          },
+          "3.3": {
+            "known": 3,
+            "missing": 0,
+            "model_positive": 0,
+            "annotator_positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision_wrt_annotator": null,
+            "recall_wrt_annotator": null,
+            "observed_agreement": 1.0,
+            "cohen_kappa": null
+          }
+        },
+        "all_codes": 14,
+        "source": "caller_supplied_annotation_pairs",
+        "independent_ground_truth_verified": false,
+        "limitations": [
+          "MAST human annotation rounds with 18, 17, 17 and 14 codes cannot be pooled without a validated crosswalk",
+          "Agreement measures labels, not correctness of agent action or human-verified task outcome",
+          "Missing labels never count as negative; null statistics are not zero",
+          "This function reads only bounded label maps, not prompt/trace text"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    },
+    {
+      "id": "contradictions_survive_memory_review",
+      "result": {
+        "schema": "atlas.agent-memory-review/1",
+        "candidates": 4,
+        "decisions": [
+          {
+            "memory_id": "m01",
+            "decision": "eligible_for_external_review",
+            "support_ids": [
+              "e1"
+            ],
+            "contradict_ids": [],
+            "source_count": 1
+          },
+          {
+            "memory_id": "m02",
+            "decision": "review_conflicting_evidence",
+            "support_ids": [
+              "e1"
+            ],
+            "contradict_ids": [
+              "e2"
+            ],
+            "source_count": 2
+          },
+          {
+            "memory_id": "m03",
+            "decision": "preserve_failed_candidate_do_not_adopt",
+            "support_ids": [
+              "e3"
+            ],
+            "contradict_ids": [],
+            "source_count": 1
+          },
+          {
+            "memory_id": "m04",
+            "decision": "hold_expired_or_unknown_freshness",
+            "support_ids": [
+              "e4"
+            ],
+            "contradict_ids": [],
+            "source_count": 1
+          }
+        ],
+        "persistent_store_mutated": false,
+        "source_independence_authenticated": false,
+        "real_transfer_learning_demonstrated": false,
+        "limitations": [
+          "Even an eligible record needs external reviewer, trusted source provenance and rollback/expiration policy",
+          "Contradicting evidence is retained, not averaged away or silently replaced",
+          "Reported evaluation outcome and source IDs are caller-supplied, not authenticated",
+          "The memory system is not linked to PEGASUS, SYMBIOTE or a live model"
+        ]
+      },
+      "passed": true,
+      "origin": "author_constructed_offline_fixture"
+    }
+  ],
+  "MAST_original_rows_loaded": 0,
+  "independently_verified_agent_outcomes": 0,
+  "real_agent_invocations": 0,
+  "persistent_memory_writes": 0,
+  "router_changes": false
+}

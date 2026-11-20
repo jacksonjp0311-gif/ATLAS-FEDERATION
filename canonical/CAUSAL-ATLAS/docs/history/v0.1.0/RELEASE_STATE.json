@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "contract_version": "1.0",
+  "status": "reference_foundation",
+  "scientific_v1_accepted": false,
+  "corpus_record_count": 34,
+  "tests_passed": 75,
+  "synthetic_cases": 5,
+  "graph_comparison_cases": 2536,
+  "raw_empirical_data_included": false,
+  "independent_source_review": false,
+  "windows_run": false,
+  "live_bitwork_run": false,
+  "source_reuse": "links and bounded original paraphrases; no full texts mirrored"
+}

@@ -1,0 +1,54 @@
+{
+  "result": "passed",
+  "seed": 7132026,
+  "n": 5,
+  "cases": [
+    {
+      "case": "iid_normal_student_t",
+      "covered": 19017,
+      "trials": 20000,
+      "rate": 0.95085,
+      "monte_carlo_se": 0.0015286313731570477,
+      "wilson_95_interval_for_simulated_rate": [
+        0.9477663949622688,
+        0.9537604461259417
+      ]
+    },
+    {
+      "case": "iid_normal_k_equals_2",
+      "covered": 17686,
+      "trials": 20000,
+      "rate": 0.8843,
+      "monte_carlo_se": 0.0022617859094087576,
+      "wilson_95_interval_for_simulated_rate": [
+        0.8797929929795405,
+        0.8886594081077375
+      ]
+    },
+    {
+      "case": "shared_offset_omitted_from_budget",
+      "covered": 15548,
+      "trials": 20000,
+      "rate": 0.7774,
+      "monte_carlo_se": 0.0029415067567489968,
+      "wilson_95_interval_for_simulated_rate": [
+        0.7715817893596822,
+        0.783111669036391
+      ]
+    }
+  ],
+  "student_t_factor": 2.7764451051978085,
+  "predeclared_iid_rate_acceptance": [
+    0.938,
+    0.962
+  ],
+  "shared_offset_sd": 0.75,
+  "numpy_version": "2.3.5",
+  "synthetic": true,
+  "physical_validation": false,
+  "independent_held_out": false,
+  "limitations": [
+    "A seeded normal simulation cannot validate real measurement distributions or calibration stability.",
+    "Shared bias is deliberately omitted only to demonstrate a violated assumption; no new measurement capability is proved."
+  ]
+}

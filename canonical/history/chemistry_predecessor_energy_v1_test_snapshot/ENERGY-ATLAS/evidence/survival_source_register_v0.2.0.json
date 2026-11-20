@@ -1,0 +1,81 @@
+{
+  "schema": "atlas.energy-v02-source-register/1",
+  "edition": "0.2.0",
+  "source_cards_new": 8,
+  "source_cards_total": 28,
+  "source_bytes_verified": 0,
+  "sources": [
+    {
+      "id": "DOE-RESILIENCE",
+      "title": "U.S. DOE, Solar and Resilience Basics",
+      "url": "https://www.energy.gov/cmei/systems/solar-and-resilience-basics",
+      "inspected_scope": "Grid outages, islanding, inverter/storage requirements, resilience terminology; site-specific technical design not inspected",
+      "rights": "official DOE public HTML, selected scope only",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "DOE-MICROGRID",
+      "title": "U.S. DOE, Distributed Energy Resources and Microgrids Basics",
+      "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics",
+      "inspected_scope": "Distributed resources, boundaries, microgrid disconnect and island operation; no operational controller audited",
+      "rights": "official DOE public HTML, selected scope only",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "EPA-BESS-SAFETY",
+      "title": "U.S. EPA, Battery Energy Storage Systems Safety and Incident Response",
+      "url": "https://www.epa.gov/electronics-batteries-management/battery-energy-storage-systems-main-considerations-safe",
+      "inspected_scope": "Battery fire response, community planning, relevant standards; no site engineering standard reproduced",
+      "rights": "official EPA public HTML, selected scope only",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "NFPA-ESS-2026",
+      "title": "NFPA 855, Stationary Energy Storage Installation Standard, 2026 edition",
+      "url": "https://www.nfpa.org/product/nfpa-855-standard/p0855code?l=134",
+      "inspected_scope": "Product description and 2026 edition overview only; standard is copyrighted and full clauses were not acquired",
+      "rights": "rights-restricted publisher overview, no full technical standards text",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "CDC-CO-2026",
+      "title": "U.S. CDC, Avoiding Carbon Monoxide Poisoning During Power Outages",
+      "url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+      "inspected_scope": "Portable-generator carbon monoxide risks and outdoor operating safety; not generator integration design",
+      "rights": "official CDC public HTML; selected public-health recommendations",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "EPA-EMERGENCY-WATER",
+      "title": "U.S. EPA, Emergency Disinfection of Drinking Water",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water",
+      "inspected_scope": "Public-health distinction between microbial disinfection and chemical contamination; this Atlas does not implement treatment procedures",
+      "rights": "official EPA public HTML; sanitation data cannot be inferred from thermal energy",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "CDC-WATER-2024",
+      "title": "U.S. CDC, How to Make Water Safe in an Emergency",
+      "url": "https://www.cdc.gov/water-emergency/about/index.html",
+      "inspected_scope": "Emergency potable-water advisories; treatment and health depend on hazard category",
+      "rights": "official CDC public HTML, selected public-health scope only",
+      "original_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "id": "NIST-CODATA-2022-PUB",
+      "title": "NIST CODATA Recommended Fundamental Physical Constants, 2022 adjustment, 2025 publication",
+      "url": "https://www.nist.gov/publications/codata-recommended-values-fundamental-physical-constants-2022",
+      "inspected_scope": "Publication metadata for 2022 adjustment, distinction between exact SI constants and adjusted measured values; full PDF not downloaded",
+      "rights": "official NIST bibliographic record, not original paper bytes",
+      "original_bytes_archived": false,
+      "human_review": false
+    }
+  ]
+}

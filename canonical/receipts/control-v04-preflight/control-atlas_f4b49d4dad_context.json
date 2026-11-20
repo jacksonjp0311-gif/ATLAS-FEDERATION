@@ -1,0 +1,869 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "NIST OT Revision 4 Initial Public Draft",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "93bd1d96b722fa39e228c196296c315a03215aa7d3e1dfb69823efc20b941a93",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:nist-ot-2026-draft-not-final",
+      "revision": "0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a"
+    },
+    {
+      "record_id": "control-atlas:sensor-bias-counterexample",
+      "revision": "b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7"
+    },
+    {
+      "record_id": "control-atlas:control-release-evidence-ladder",
+      "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:anomaly-not-root-cause",
+      "revision": "47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813"
+    },
+    {
+      "record_id": "control-atlas:control-release-evidence-ladder",
+      "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9"
+    },
+    {
+      "record_id": "control-atlas:fault-ambiguity-state-vs-sensor",
+      "revision": "6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446"
+    },
+    {
+      "record_id": "control-atlas:nist-ot-2026-draft-not-final",
+      "revision": "0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a"
+    },
+    {
+      "record_id": "control-atlas:routing-after-domains",
+      "revision": "0dd2fc38810e835f12d4340d87e3d996ba552e364d41c38b6eb6781d35e35611"
+    },
+    {
+      "record_id": "control-atlas:sensor-bias-counterexample",
+      "revision": "b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7"
+    },
+    {
+      "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+      "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+    },
+    {
+      "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+      "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf"
+    },
+    {
+      "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+      "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Physical state and independent interlocks remain separate"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No machine action or permission to bypass site controls",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-40",
+            "edition-0.4.0",
+            "anomaly-not-root-cause"
+          ],
+          "text": "A residual monitor flags model discrepancy but cannot by itself identify a failed sensor or establish an independently safe physical state.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+              "source_id": "control-atlas:source:NIST-PHYSICS-MONITOR"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "anomaly-not-root-cause",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "40",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:anomaly-not-root-cause",
+        "revision": "47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+            "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          }
+        ],
+        "status": "active",
+        "title": "Anomaly detection is distinct from physical fault diagnosis and safety",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Exact source and validation provenance maintained"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Tests do not certify controllers or field devices",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-40",
+            "edition-0.4.0",
+            "control-release-evidence-ladder"
+          ],
+          "text": "Separately identify mathematical identity, numerical oracle, synthetic simulation, measured plant behavior, engineering safety review and live integration.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+              "source_id": "control-atlas:source:NIST-PHYSICS-MONITOR"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "control-release-evidence-ladder",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "40",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:control-release-evidence-ladder",
+        "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+            "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd"
+          }
+        ],
+        "status": "active",
+        "title": "Preserve level of evidence in control-method outputs",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Single observation and two stipulated hypotheses"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No root-cause identification based on one reading",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-38",
+            "edition-0.4.0",
+            "fault-ambiguity-state-vs-sensor"
+          ],
+          "text": "A single scalar y=x+b cannot distinguish true x=10,b=0 from x=8,b=2 when y=10 without additional independent evidence.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+              "source_id": "control-atlas:source:NIST-PHYSICS-MONITOR"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "fault-ambiguity-state-vs-sensor",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "38",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:fault-ambiguity-state-vs-sensor",
+        "revision": "6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+            "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd"
+          }
+        ],
+        "status": "active",
+        "title": "A plant-state change and a sensor bias can produce identical readings",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Source status checked as of 2026-11-13"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Future final publication may alter content/status and requires revision",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-40",
+            "edition-0.4.0",
+            "nist-ot-2026-draft-not-final"
+          ],
+          "text": "SP800-82 Rev 3 is a final 2023 guide; Rev 4 Initial Public Draft dated September 2026 must not be represented as final operational standard.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+              "source_id": "control-atlas:source:NIST-OT-R4-DRAFT"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "nist-ot-2026-draft-not-final",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "40",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:nist-ot-2026-draft-not-final",
+        "revision": "0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+            "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf"
+          }
+        ],
+        "status": "active",
+        "title": "NIST OT Revision 4 remains a draft in November 2026",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Owner instruction not a scientific citation"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "This record is workflow policy, not scientific validation of routing",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-40",
+            "edition-0.4.0",
+            "routing-after-domains"
+          ],
+          "text": "Owner-approved build order: all domain content libraries; Bitwork routing/evaluation last; then integrated testing and computer transfer.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "routing-after-domains",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "40",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:routing-after-domains",
+        "revision": "0dd2fc38810e835f12d4340d87e3d996ba552e364d41c38b6eb6781d35e35611",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          }
+        ],
+        "status": "active",
+        "title": "Routing and desktop transfer occur only after all 30 domains",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "User-supplied hypotheses"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a real sensor diagnostic",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-38",
+            "edition-0.4.0",
+            "sensor-bias-counterexample"
+          ],
+          "text": "Verify that two supplied state-plus-bias explanations fit the same reading and refuse to select a true cause.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+              "source_id": "control-atlas:source:NIST-PHYSICS-MONITOR"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "sensor-bias-counterexample",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "38",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:sensor-bias-counterexample",
+        "revision": "b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+            "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd"
+          }
+        ],
+        "status": "active",
+        "title": "Return nonidentifiability on matching alternative sensor hypotheses",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Official metadata and abstract: September 2023 final publication; not full text reviewed",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NIST-OT-R3-FINAL",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+        "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST SP 800-82 Revision 3 Final OT Guide",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NIST-OT-R4-DRAFT",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r4/ipd",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+        "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST SP 800-82 Revision 4 Initial Public Draft",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NIST-PHYSICS-MONITOR",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://csrc.nist.gov/pubs/journal/2018/07/a-survey-of-physicsbased-attack-detection-in-cps/final",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:NIST-PHYSICS-MONITOR",
+        "revision": "750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST survey of physics-based attack detection in CPS",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:anomaly-not-root-cause",
+          "revision": "47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:anomaly-not-root-cause:qualifies:control-release-evidence-ladder",
+        "revision": "766e67f8c65ccd40ca5f895ec7b06867b5f7c340f1350418d08aabf583e86b46",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:control-release-evidence-ladder",
+          "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:fault-ambiguity-state-vs-sensor",
+          "revision": "6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:fault-ambiguity-state-vs-sensor:qualifies:anomaly-not-root-cause",
+        "revision": "6418b53fd40694ec6fa48aee263941c47bc38003007d6f4383fc785df7afdd36",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:anomaly-not-root-cause",
+          "revision": "47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:nist-ot-2026-draft-not-final",
+          "revision": "0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:nist-ot-2026-draft-not-final:qualifies:control-release-evidence-ladder",
+        "revision": "b58a849111ba60330f43472d0d9f930702fad5b55093e18ca861e3363b0d566f",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:control-release-evidence-ladder",
+          "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:routing-after-domains",
+          "revision": "0dd2fc38810e835f12d4340d87e3d996ba552e364d41c38b6eb6781d35e35611"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:routing-after-domains:qualifies:control-release-evidence-ladder",
+        "revision": "854fd2528d7711886ea8d976c58cdf947953454fc2589aeb202604603479bb00",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:control-release-evidence-ladder",
+          "revision": "a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:sensor-bias-counterexample",
+          "revision": "b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:sensor-bias-counterexample:qualifies:fault-ambiguity-state-vs-sensor",
+        "revision": "87382d296e15bba765292e5dabdf1ed6c77f0efb3fde097d928af2a38a1eb87d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:fault-ambiguity-state-vs-sensor",
+          "revision": "6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Physical state and independent interlocks remain separate\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No machine action or permission to bypass site controls\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-40\",\"edition-0.4.0\",\"anomaly-not-root-cause\"],\"text\":\"A residual monitor flags model discrepancy but cannot by itself identify a failed sensor or establish an independently safe physical state.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"source_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"anomaly-not-root-cause\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"40\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:anomaly-not-root-cause\",\"revision\":\"47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\",\"revision\":\"750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd\"},{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"}],\"status\":\"active\",\"title\":\"Anomaly detection is distinct from physical fault diagnosis and safety\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Exact source and validation provenance maintained\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Tests do not certify controllers or field devices\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-40\",\"edition-0.4.0\",\"control-release-evidence-ladder\"],\"text\":\"Separately identify mathematical identity, numerical oracle, synthetic simulation, measured plant behavior, engineering safety review and live integration.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"source_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"control-release-evidence-ladder\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"40\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:control-release-evidence-ladder\",\"revision\":\"a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"},{\"record_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\",\"revision\":\"750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd\"}],\"status\":\"active\",\"title\":\"Preserve level of evidence in control-method outputs\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Single observation and two stipulated hypotheses\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No root-cause identification based on one reading\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-38\",\"edition-0.4.0\",\"fault-ambiguity-state-vs-sensor\"],\"text\":\"A single scalar y=x+b cannot distinguish true x=10,b=0 from x=8,b=2 when y=10 without additional independent evidence.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"source_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"fault-ambiguity-state-vs-sensor\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"38\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:fault-ambiguity-state-vs-sensor\",\"revision\":\"6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\",\"revision\":\"750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd\"}],\"status\":\"active\",\"title\":\"A plant-state change and a sensor bias can produce identical readings\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Source status checked as of 2026-11-13\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Future final publication may alter content/status and requires revision\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-40\",\"edition-0.4.0\",\"nist-ot-2026-draft-not-final\"],\"text\":\"SP800-82 Rev 3 is a final 2023 guide; Rev 4 Initial Public Draft dated September 2026 must not be represented as final operational standard.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"source_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"nist-ot-2026-draft-not-final\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"40\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:nist-ot-2026-draft-not-final\",\"revision\":\"0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"},{\"record_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\",\"revision\":\"6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf\"}],\"status\":\"active\",\"title\":\"NIST OT Revision 4 remains a draft in November 2026\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Owner instruction not a scientific citation\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"This record is workflow policy, not scientific validation of routing\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-40\",\"edition-0.4.0\",\"routing-after-domains\"],\"text\":\"Owner-approved build order: all domain content libraries; Bitwork routing/evaluation last; then integrated testing and computer transfer.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"routing-after-domains\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"40\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:routing-after-domains\",\"revision\":\"0dd2fc38810e835f12d4340d87e3d996ba552e364d41c38b6eb6781d35e35611\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"}],\"status\":\"active\",\"title\":\"Routing and desktop transfer occur only after all 30 domains\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"User-supplied hypotheses\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a real sensor diagnostic\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-38\",\"edition-0.4.0\",\"sensor-bias-counterexample\"],\"text\":\"Verify that two supplied state-plus-bias explanations fit the same reading and refuse to select a true cause.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"source_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"sensor-bias-counterexample\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"38\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:sensor-bias-counterexample\",\"revision\":\"b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\",\"revision\":\"750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd\"}],\"status\":\"active\",\"title\":\"Return nonidentifiability on matching alternative sensor hypotheses\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NIST-OT-R3-FINAL\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://csrc.nist.gov/pubs/sp/800/82/r3/final\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST SP 800-82 Revision 3 Final OT Guide\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NIST-OT-R4-DRAFT\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://csrc.nist.gov/pubs/sp/800/82/r4/ipd\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\",\"revision\":\"6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST SP 800-82 Revision 4 Initial Public Draft\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NIST-PHYSICS-MONITOR\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://csrc.nist.gov/pubs/journal/2018/07/a-survey-of-physicsbased-attack-detection-in-cps/final\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:NIST-PHYSICS-MONITOR\",\"revision\":\"750ea3b134a2acc466a946ac4c1a869e184d1779bc466c6c2b186c8d7e30ccdd\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST survey of physics-based attack detection in CPS\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:anomaly-not-root-cause\",\"revision\":\"47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:anomaly-not-root-cause:qualifies:control-release-evidence-ladder\",\"revision\":\"766e67f8c65ccd40ca5f895ec7b06867b5f7c340f1350418d08aabf583e86b46\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:control-release-evidence-ladder\",\"revision\":\"a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:fault-ambiguity-state-vs-sensor\",\"revision\":\"6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:fault-ambiguity-state-vs-sensor:qualifies:anomaly-not-root-cause\",\"revision\":\"6418b53fd40694ec6fa48aee263941c47bc38003007d6f4383fc785df7afdd36\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:anomaly-not-root-cause\",\"revision\":\"47abf782b55118241a00aa9f0b43ce569d5dcddfa6c41a63a8dcc37e1fb1d813\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:nist-ot-2026-draft-not-final\",\"revision\":\"0961f83ce0712d71beca3aa974af0e4c08ec1210f134fbcbe06e0b4678fee94a\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:nist-ot-2026-draft-not-final:qualifies:control-release-evidence-ladder\",\"revision\":\"b58a849111ba60330f43472d0d9f930702fad5b55093e18ca861e3363b0d566f\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:control-release-evidence-ladder\",\"revision\":\"a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:routing-after-domains\",\"revision\":\"0dd2fc38810e835f12d4340d87e3d996ba552e364d41c38b6eb6781d35e35611\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:routing-after-domains:qualifies:control-release-evidence-ladder\",\"revision\":\"854fd2528d7711886ea8d976c58cdf947953454fc2589aeb202604603479bb00\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:control-release-evidence-ladder\",\"revision\":\"a14a2396f19974734aaabdd36a70d68288100e17d46c8942c1fdb3b45a9a78c9\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:sensor-bias-counterexample\",\"revision\":\"b0be9f1eee6d422b89498b5e4a9d6cc7f4554d5e0366a2932c21fcaaf19bb3b7\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:sensor-bias-counterexample:qualifies:fault-ambiguity-state-vs-sensor\",\"revision\":\"87382d296e15bba765292e5dabdf1ed6c77f0efb3fde097d928af2a38a1eb87d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:fault-ambiguity-state-vs-sensor\",\"revision\":\"6f17e3eb563ab7b27c904e0e2a05b3c7584711178743672f09bdc7452bf91446\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 24292,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:first-order-model-calculator",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:two-sensor-NIS-calculator",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:mimo-singular-directions",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:common-P-vs-plant",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:mimo-sensitivity-identity",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "0c8f6f608154fa721190cce9af8c5bf29b0a78430352cd48739bcc1b405f4b57"
+}

@@ -1,0 +1,127 @@
+{
+  "release": "0.7.0",
+  "date": "2026-11-12",
+  "active_domain": "measurement-atlas",
+  "scientific_v1_accepted": false,
+  "next_domain_allowed": false,
+  "inventory": {
+    "common_records": 486,
+    "measurement_records": 122,
+    "bounded_reference_records": 76,
+    "source_cards": 41,
+    "preserved_starters": 5
+  },
+  "tests": {
+    "forge": 182,
+    "measurement": 154,
+    "total": 336,
+    "skipped": 0
+  },
+  "navigation_changed": false,
+  "clean_install": {
+    "result": "passed",
+    "forge_version": "0.7.0",
+    "measurement_version": "0.7.0",
+    "forge_records": 486,
+    "measurement_records": 122,
+    "context_valid": true,
+    "context_status": "conflicting_context",
+    "publisher_interval_all_matched": false,
+    "certified_values_passed": 11,
+    "source_tree_imports": false,
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "coverage_oracle": {
+    "result": "historical_receipt_redacted_not_revalidated",
+    "kind": "independent_numerical_algorithms_not_independent_review",
+    "scipy_version": "1.17.0",
+    "numpy_version": "2.3.5",
+    "python": "3.13.5",
+    "quantile_cases": 110,
+    "quantile_max_scaled_absolute_error": 2.4882132912019237e-11,
+    "quantile_tolerance": 2e-09,
+    "quantile_failures": [],
+    "numpy_scipy_inverse": {
+      "lower": 1704513.3729374574,
+      "upper": null,
+      "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+    },
+    "inverse_absolute_errors_source_units": {
+      "lower": 4.656612873077393e-10,
+      "upper": 0.0
+    },
+    "inverse_absolute_tolerance": 1e-05,
+    "publisher_agreement": false,
+    "independent_human_review": false,
+    "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+  },
+  "published_interval": {
+    "public_edition_status": "unavailable",
+    "reason_code": "nist_srd140_redistribution_grant_unresolved",
+    "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+    "scientific_revalidation": false,
+    "source_case": "measurement.inverse-interval-replay/1"
+  },
+  "synthetic_simulation": {
+    "result": "passed",
+    "seed": 7132026,
+    "n": 5,
+    "cases": [
+      {
+        "case": "iid_normal_student_t",
+        "covered": 19017,
+        "trials": 20000,
+        "rate": 0.95085,
+        "monte_carlo_se": 0.0015286313731570477,
+        "wilson_95_interval_for_simulated_rate": [
+          0.9477663949622688,
+          0.9537604461259417
+        ]
+      },
+      {
+        "case": "iid_normal_k_equals_2",
+        "covered": 17686,
+        "trials": 20000,
+        "rate": 0.8843,
+        "monte_carlo_se": 0.0022617859094087576,
+        "wilson_95_interval_for_simulated_rate": [
+          0.8797929929795405,
+          0.8886594081077375
+        ]
+      },
+      {
+        "case": "shared_offset_omitted_from_budget",
+        "covered": 15548,
+        "trials": 20000,
+        "rate": 0.7774,
+        "monte_carlo_se": 0.0029415067567489968,
+        "wilson_95_interval_for_simulated_rate": [
+          0.7715817893596822,
+          0.783111669036391
+        ]
+      }
+    ],
+    "student_t_factor": 2.7764451051978085,
+    "predeclared_iid_rate_acceptance": [
+      0.938,
+      0.962
+    ],
+    "shared_offset_sd": 0.75,
+    "numpy_version": "2.3.5",
+    "synthetic": true,
+    "physical_validation": false,
+    "independent_held_out": false,
+    "limitations": [
+      "A seeded normal simulation cannot validate real measurement distributions or calibration stability.",
+      "Shared bias is deliberately omitted only to demonstrate a violated assumption; no new measurement capability is proved."
+    ]
+  },
+  "baseline_archive_sha256": "10003d1c00bcb56a239ff864dae3f32cb2c1d00d9bcdbfec0230871ff3016e52",
+  "github_changed": false,
+  "desktop_changed": false,
+  "independent_human_review": false,
+  "live_bitwork_run": false,
+  "windows_run": false,
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

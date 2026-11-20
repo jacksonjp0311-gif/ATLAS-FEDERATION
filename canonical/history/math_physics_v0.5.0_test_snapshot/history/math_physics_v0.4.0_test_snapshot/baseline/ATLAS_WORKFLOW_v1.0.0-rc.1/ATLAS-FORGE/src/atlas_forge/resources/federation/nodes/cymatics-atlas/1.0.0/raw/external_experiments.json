@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-11",
+  "records": [
+    {
+      "data_modalities": [
+        "MATLAB numeric arrays",
+        "surface-height measurements",
+        "surfactant fluorescence-density measurements"
+      ],
+      "doi": "10.5061/dryad.5v8m0",
+      "id": "external-strickland-2015",
+      "independently_validated_by_atlas": false,
+      "locally_imported": false,
+      "notes": "Gravity-capillary waves with standing Faraday and traveling meniscus components; no original numerical samples reproduced here.",
+      "physical_measurements_by_original_authors": true,
+      "reported_archive_size_mb": 601.08,
+      "repository": "Dryad",
+      "rights_note": "Review Dryad repository licensing and individual file terms before any mirroring or reuse.",
+      "source_id": "dryad-strickland-2015",
+      "status": "remote_catalogued_unretrieved",
+      "title": "Spatiotemporal measurement of surfactant distribution on gravity-capillary waves",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+      "year": 2015
+    },
+    {
+      "data_modalities": [
+        "MATLAB measurement files",
+        "text measurement files",
+        "audio WAV",
+        "Chladni MOV video"
+      ],
+      "doi": "10.5281/zenodo.22344228",
+      "id": "external-drum-2026",
+      "independently_validated_by_atlas": false,
+      "locally_imported": false,
+      "notes": "Original experiments reported at STMS Lab in 2020–2021; records include resonance and frequency-shift control data. No raw files downloaded.",
+      "physical_measurements_by_original_authors": true,
+      "reported_archive_size_mb": 281.3,
+      "repository": "Zenodo",
+      "rights_note": "Public record does not specify a clear license in its displayed rights section; verify permissions before downloading or redistribution.",
+      "source_id": "zenodo-drum-2026",
+      "status": "remote_catalogued_unretrieved",
+      "title": "Experimental implementation of a finite-time controller for axisymmetric tom-tom drum vibration modes",
+      "url": "https://zenodo.org/records/22344228",
+      "year": 2026
+    }
+  ],
+  "schema": "cymatics.atlas.external-experiments.v1",
+  "scope": "External experimental research datasets with inspected repository metadata. No raw experimental files in this release."
+}

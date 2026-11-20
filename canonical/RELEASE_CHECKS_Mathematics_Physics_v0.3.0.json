@@ -1,0 +1,11 @@
+{
+  "stage": "preseal_source_tree",
+  "tests_passed": 2085,
+  "contexts": 98,
+  "nodes": 12,
+  "records": 2564,
+  "relations": 1719,
+  "sealed_replay": "pending",
+  "original_primary_publisher_bytes": 0,
+  "independent_science_review": false
+}

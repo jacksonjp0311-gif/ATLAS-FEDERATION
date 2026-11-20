@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.causal-observational-table/1",
+  "origin": "R datasets/UCBAdmissions 1973",
+  "source": "https://cloud.r-project.org/doc/manuals/r-release/packages/datasets/refman/datasets.html",
+  "secondary_count_comparison": "https://utstat.utoronto.ca/~brunner/oldclass/312f22/lectures/312f22ContingencyTables-R.pdf",
+  "published_source": "Bickel, Hammel, O’Connell (1975), Science 187, 398-404",
+  "source_raw_bytes_archived": false,
+  "source_rights": "Rdatasets notes ambiguity of dataset rights; only attributable factual summary counts transcribed for this worked analysis",
+  "historical_scope": "1973 admission applications, six largest departments, observational counts",
+  "source_table_extraction": "six by four count table transcribed from indexed public R documentation and independent published lecture reproduction",
+  "original_numeric_dataset_file_sha256": null,
+  "counts": [],
+  "public_derivative_omission": {
+    "status": "unavailable_pending_dataset_redistribution_clearance",
+    "reason": "ucb_admissions_redistribution_unresolved"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "kind": "measurement_tools",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "42bd02e11321462b1d013386d2cac8ddb84f7f4cb56546b9d10470cf6f995e18",
+  "measurement_subject_sha256": "cb236d9e736577d903dc019b3008b2fe27ee45a8b48f92cdadc63a72032f1cf6",
+  "criteria_sha256": "0f85e6fc8f537cab69fdda183406851ea2a36c09ae1a15b0cd3d144dff7e667f",
+  "recorded_at": "2026-11-12T19:45:19.128370+00:00",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "Declared mathematical-model implementation checks; 218 tests and separate numerical algorithms. Not clinical, laboratory, regulatory, or independent human certification.",
+  "independent_human_review": false,
+  "scientific_v1_accepted": false,
+  "evidence": [
+    {
+      "path": "MEASUREMENT-ATLAS_unit_verified.log",
+      "sha256": "8b1966f8a9adf6d39dfc77839f8c8e23284c0ca526877be19730b9e372c227e9"
+    },
+    {
+      "path": "practical_casebook.json",
+      "sha256": "eea88cbf407519727f166e55f6cecad65a3b5e64cca533f97c0d05017a5a0fa3"
+    },
+    {
+      "path": "practical_oracle.json",
+      "sha256": "e1b8f28da376388bcb87f6f80f05f1c487cbbc5b238eb96d111356b8de3a944e"
+    },
+    {
+      "path": "covariance_rerun.json",
+      "sha256": "8c9484350c50934f3521b83a75962d57b4f7529964701cd76ef87124e32f7860"
+    },
+    {
+      "path": "calibration_rerun.json",
+      "sha256": "83a96fdaf5d6c840b45e1cd5f52e657999926c96fc56bcbab7c83b94c0d92432"
+    },
+    {
+      "path": "coverage_rerun.json",
+      "sha256": "e32f86a83e8f7f2c5ef11865f0865168827fa7854efc0d054587af020bb6467c"
+    },
+    {
+      "path": "simulation_rerun.json",
+      "sha256": "2dadec75820e6fb26d239407b97e3ef78a05a43993797c47b09a0a6bd632d3bb"
+    }
+  ]
+}

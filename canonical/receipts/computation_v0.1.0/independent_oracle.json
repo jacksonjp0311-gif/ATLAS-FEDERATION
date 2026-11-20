@@ -1,0 +1,29 @@
+{
+  "schema": "computation.oracle/1",
+  "result": "passed",
+  "counts": {
+    "numpy_stable_mergesort": 400,
+    "numpy_searchsorted_left": 400,
+    "networkx_dijkstra_node": 2946,
+    "independent_distance_certificate": 420,
+    "bellman_dag_status": 260,
+    "networkx_bellman_node": 1714,
+    "exhaustive_knapsack": 350,
+    "knapsack_witness_weight": 350,
+    "knapsack_witness_value": 350,
+    "scipy_bisection_bracket": 320,
+    "numpy_exact_small_interval_extrema": 300,
+    "gcd_math_oracle": 400,
+    "bezout_witness": 400,
+    "numpy_entropy": 300
+  },
+  "comparisons": 8910,
+  "seed": 20261113,
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "networkx": "3.6.1",
+  "scope": "synthetic random graphs/numbers; independent implementations; no physical experiments, not mathematical universal proof",
+  "independent_scientific_peer_review": false,
+  "live_ai_models_run": false
+}

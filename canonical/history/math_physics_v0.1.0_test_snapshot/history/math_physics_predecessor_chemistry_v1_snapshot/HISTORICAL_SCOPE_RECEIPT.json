@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.math-physics-historical-source-test-snapshot/1",
+  "prior_federation_records": 2357,
+  "prior_federation_relations": 1519,
+  "prior_nodes": 11,
+  "prior_chemistry_records": 305,
+  "historical_tests_modified": false,
+  "main_older_files_unchanged": true,
+  "original_chemistry_full_archive": "ATLAS_COLLECTION_Chemistry_v1.0.0.zip",
+  "original_chemistry_full_archive_sha256": "7dbb7961510521f4229335c6baa37659a39203447545535a419cffe061c57e82"
+}

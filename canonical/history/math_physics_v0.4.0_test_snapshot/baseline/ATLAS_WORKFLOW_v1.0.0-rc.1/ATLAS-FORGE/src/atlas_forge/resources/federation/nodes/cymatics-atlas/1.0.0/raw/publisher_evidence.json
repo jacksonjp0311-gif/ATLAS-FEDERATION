@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-11-11",
+  "method": "Manual inspection of public publisher, institutional, standards and repository records; no copyrighted full-text archive mirrored. Source-page availability may change.",
+  "record_status": "researcher_checked_public_source_portion_not_independently_scientifically_validated",
+  "records": [
+    {
+      "anchor": "On a peculiar class of acoustical figures",
+      "basis": "historical_archive_catalog",
+      "checked_at": "2026-11-11",
+      "claim": "The Royal Society archive holds Faraday's 1831 manuscript on acoustical figures and particles on vibrating elastic surfaces.",
+      "concept_ids": [
+        "historical-faraday-figures"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-faraday1831",
+      "independently_reviewed": false,
+      "locator": "Royal Society Science in the Making, PT/19/3, date and description",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Verifies archived paper identity and subject only; not a fresh re-run of Faraday's experiments.",
+      "source_id": "faraday-1831-royalsociety",
+      "source_url": "https://makingscience.royalsociety.org/items/PT_19_3",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "a second-order, time-averaged effect",
+      "basis": "publisher_abstract",
+      "checked_at": "2026-11-11",
+      "claim": "Bruus describes the acoustic radiation force on small suspended particles as a second-order, time-averaged effect.",
+      "concept_ids": [
+        "acoustic-radiation"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-bruus-radiation",
+      "independently_reviewed": false,
+      "locator": "RSC Lab on a Chip 12 (2012), 1014–1021, abstract; DOI 10.1039/C2LC21068A",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Abstract-level description; no validation of all derivation assumptions or experimentally measured force.",
+      "source_id": "bruus",
+      "source_url": "https://doi.org/10.1039/C2LC21068A",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "Second-order perturbation theory and non-zero time averages",
+      "basis": "publisher_full_article_section",
+      "checked_at": "2026-11-11",
+      "claim": "The published Bruus tutorial develops perturbation theory for fluid acoustic fields and applies it to channel resonance modes.",
+      "concept_ids": [
+        "microfluidic-perturbation-expansion"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-bruus-perturbation",
+      "independently_reviewed": false,
+      "locator": "RSC Lab on a Chip 12 (2012), 20–28, abstract and Sections I–III",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Equation structure inspected in published article HTML; not independently verified as a universally applicable physical model.",
+      "source_id": "bruus-2012-perturbation",
+      "source_url": "https://pubs.rsc.org/en/content/articlehtml/2012/lc/c1lc20770a",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "a number of scaling laws relevant for microsystem acoustophoresis",
+      "basis": "publisher_abstract",
+      "checked_at": "2026-11-11",
+      "claim": "The 2012 Bruus tutorial analyzes scaling laws relevant to acoustophoretic microsystems.",
+      "concept_ids": [
+        "acoustophoresis-scaling-laws"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-bruus-scaling",
+      "independently_reviewed": false,
+      "locator": "RSC Lab on a Chip 12 (2012), 1578–1586, abstract; DOI 10.1039/C2LC21261G",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "No individual scaling exponent or experimentally measured outcome verified from abstract.",
+      "source_id": "bruus-2012-scaling",
+      "source_url": "https://pubs.rsc.org/en/content/articlelanding/2012/lc/c2lc21261g",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "getting symmetrical figures upon brass plates",
+      "basis": "publisher_abstract",
+      "checked_at": "2026-11-11",
+      "claim": "Colwell reported using loudspeaker-driven excitation to obtain symmetric figures in thin brass Chladni plates.",
+      "concept_ids": [
+        "thin-plate-support-excitation-dependence"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-colwell1932",
+      "independently_reviewed": false,
+      "locator": "Nature 130, 701 (1932), abstract/letter preview",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Historical apparatus/material-specific observation; abstract is not enough to support a universal boundary-condition law.",
+      "source_id": "colwell-1932",
+      "source_url": "https://www.nature.com/articles/130701b0",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "U = ku_c",
+      "basis": "standards_body_document",
+      "checked_at": "2026-11-11",
+      "claim": "NIST TN 1297 describes expanded uncertainty as combined standard uncertainty multiplied by a coverage factor.",
+      "concept_ids": [
+        "measurement-reporting-uncertainty"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-nist-uncertainty",
+      "independently_reviewed": false,
+      "locator": "NIST TN 1297 (1994 ed.), Section 6.1, expanded uncertainty",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Guide to reporting uncertainty, not a measurement calibration certificate or evidence of scientific accuracy in this Atlas.",
+      "source_id": "nist-tn1297",
+      "source_url": "https://www.nist.gov/system/files/documents/2017/05/09/tn1297s.pdf",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "surface height and surfactant concentration profiles",
+      "basis": "repository_dataset_metadata",
+      "checked_at": "2026-11-11",
+      "claim": "The Dryad record describes two experimental MATLAB data files of surface-height and surfactant-density fields for gravity-capillary waves.",
+      "concept_ids": [
+        "faraday-surfacant-experimental-dataset"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-dryad-faraday-data",
+      "independently_reviewed": false,
+      "locator": "Dryad 10.5061/dryad.5v8m0, Abstract and Usage Notes, Aug 31 2015",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Repository description only; 601 MB archive not downloaded, hashed, analyzed or compared with paper.",
+      "source_id": "dryad-strickland-2015",
+      "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.5v8m0",
+      "status": "public_source_portion_checked"
+    },
+    {
+      "anchor": "chladni*.mov",
+      "basis": "repository_dataset_metadata",
+      "checked_at": "2026-11-11",
+      "claim": "The Zenodo record lists experimental drum mode measurements and supplementary Chladni-pattern videos, plus a data ZIP.",
+      "concept_ids": [
+        "drum-membrane-physical-data"
+      ],
+      "full_experiment_replicated": false,
+      "id": "primary-zenodo-drum-data",
+      "independently_reviewed": false,
+      "locator": "Zenodo record 22344228, Data Structure and Files, Sept 7 2026",
+      "rights": "Short locator-only anchor for navigation; original source rights retained.",
+      "scope_limit": "Repository metadata only; data archive is not downloaded or validated. Dataset license is not confirmed.",
+      "source_id": "zenodo-drum-2026",
+      "source_url": "https://zenodo.org/records/22344228",
+      "status": "public_source_portion_checked"
+    }
+  ],
+  "schema": "cymatics.atlas.publisher-evidence.v1"
+}

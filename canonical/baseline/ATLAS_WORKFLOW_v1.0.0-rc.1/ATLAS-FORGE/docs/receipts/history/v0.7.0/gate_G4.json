@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.gate-evidence/1",
+  "kind": "common_conformance",
+  "result": "passed",
+  "execution_kind": "local_actual",
+  "subject_sha256": "0fc96f0301b8bbc85748000077bf53fb34cb000732dcb950948dd1bd33c7f5fe",
+  "observed_log": "docs/receipts/current/conformance.log",
+  "observed_log_sha256": "39a5b9f750e5ef08638afdab21a4d7dd2ff74332c470b1cbf8fea06c2aea2b74",
+  "review_scope": "Local authored software regressions only; not independent scientific review",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+}

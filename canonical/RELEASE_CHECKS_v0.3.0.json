@@ -1,0 +1,171 @@
+{
+  "schema": "atlas.control-content-release/1",
+  "version": "0.3.0",
+  "date": "2026-11-13",
+  "status": "research_content_development_not_scientific_v1",
+  "active_domain": "control-atlas",
+  "next_domain": "agent-atlas_queued",
+  "routing_changed": false,
+  "desktop_modified": false,
+  "github_published": false,
+  "five_historical_nodes_preserved": true,
+  "inventory": {
+    "nodes": 6,
+    "forge_records": 947,
+    "Control_records": 145,
+    "Control_source_cards": 32,
+    "Control_relations": 81,
+    "Control_chapters": 33,
+    "Control_investigations": 24,
+    "new_control_records": 28,
+    "new_source_cards": 5,
+    "new_relations": 17,
+    "earlier_control_revisions_exact": 117,
+    "earlier_control_relations_exact": 64
+  },
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 123,
+      "passed": 123,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_passed": 884,
+  "tests_skipped": 0,
+  "common_contexts_valid": true,
+  "new_numerical_oracle": {
+    "schema": "atlas.control-robust-oracle/1",
+    "result": "passed",
+    "seed": 181126,
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "total_compared": 1700,
+    "per_method": {
+      "interval_box": 300,
+      "delay_roots": 300,
+      "Lyapunov_Q": 200,
+      "frequency_S_T": 600,
+      "lag1_correlation": 300
+    },
+    "maximum_scaled_absolute_error": 4.980559976921029e-16,
+    "errors": [],
+    "source": "author_generated_models_not_observations",
+    "independent_physical_validation": false,
+    "hardware_actuation": false,
+    "heldout_ai_evaluation": false
+  },
+  "earlier_numerical_oracles": {
+    "old": {
+      "schema": "atlas.control-numerical-oracle/1",
+      "status": "passed",
+      "seed": 6101126,
+      "method_counts": {
+        "zoh_via_matrix_exponential": 300,
+        "two_state_matrix_rank": 300,
+        "scalar_lqr_via_scipy_optimizer": 80,
+        "scalar_kalman_via_separate_recursion": 200
+      },
+      "comparisons": 880,
+      "maximum_scaled_absolute_error": 2.9656813730391697e-15,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0",
+      "validation": "separate numerical algorithms on synthetic parameters, not independent scientific review, physical experiment, or real agent behavior"
+    },
+    "extended": {
+      "schema": "atlas.control-oracle/1",
+      "result": "passed",
+      "counts": {
+        "zoh_a": 130,
+        "zoh_b": 130,
+        "zoh_trajectory": 5850,
+        "two_state_rho": 120,
+        "reachability_det": 120,
+        "observability_det": 120,
+        "lqr_P": 120,
+        "lqr_K": 120,
+        "kalman_mean": 120,
+        "kalman_var": 120,
+        "id_a": 120,
+        "id_b": 120,
+        "alias_fft_bin": 90
+      },
+      "total": 7280,
+      "errors": [],
+      "random_seed": 261112,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0",
+      "synthetic_only": true,
+      "physical_system_identified": false,
+      "independent_scientific_review": false,
+      "no_real_actuation": true
+    }
+  },
+  "clean_wheel_installation": {
+    "result": "passed",
+    "versions": {
+      "Forge": "1.0.0rc1",
+      "Measurement": "1.0.0rc1",
+      "Causal": "1.0.0",
+      "Materials": "1.0.0",
+      "Control": "0.3.0"
+    },
+    "source_tree_imports": false,
+    "installed_control_records": 145
+  },
+  "previous_file_preservation": {
+    "protected_groups": {
+      "CAUSAL-ATLAS": 253,
+      "MATERIALS-ATLAS": 121,
+      "baseline": 771,
+      "common/nodes/causal-atlas": 9,
+      "common/nodes/materials-atlas": 9,
+      "common/nodes/measurement-atlas": 9,
+      "common/nodes/signal-atlas": 9,
+      "common/nodes/cymatics-atlas": 9
+    },
+    "total_protected_files": 1190,
+    "all_identical": true
+  },
+  "scientific_limits": {
+    "real_physical_control_experiment": false,
+    "qualified_control_engineer_review": false,
+    "certified_safe_state": false,
+    "comprehensive_multivariable_robust_theory": false,
+    "live_Bitwork_AI_integration": false,
+    "heldout_AI_benchmark": false,
+    "native_Windows_run": false,
+    "Control_content_v1_ready": false
+  },
+  "process_policy": "Build all 30 domain references first; add Bitwork/router last; integrate/test and transfer to desktop after that.",
+  "data_origin": "Synthetic model calculations with bounded publisher-source navigation and explicit physical uncertainty gaps"
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "atlas.chemistry-v02-preflight/1",
+  "result": "passed_source_tree_pending_zip_replay",
+  "version": "0.2.0",
+  "full_suite_tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "ran": 46,
+      "passed": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "ran": 41,
+      "passed": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Chemistry": {
+      "ran": 68,
+      "passed": 68,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ChemistryV02": {
+      "ran": 60,
+      "passed": 60,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "full_passed": 1871,
+  "skips": 0,
+  "contexts": 78,
+  "federation_nodes": 11,
+  "federation_records": 2289,
+  "federation_relations": 1455,
+  "source_cards": 484,
+  "chemistry_records": 237,
+  "chemistry_source_cards": 18,
+  "chemistry_full_relations": 210,
+  "chemistry_standalone_relations": 204,
+  "chapters": 51,
+  "investigations": 39,
+  "independent_math": {
+    "schema": "atlas.chemistry-v02-numerical-oracle/1",
+    "result": "passed",
+    "seed": 20261114,
+    "comparisons": 7790,
+    "by_method": {
+      "independent_atom_charge_matrix": 350,
+      "reaction_Gibbs_numpy": 600,
+      "reaction_enthalpy_numpy": 600,
+      "reaction_logK_numpy": 600,
+      "vanthoff_numpy": 600,
+      "ionic_strength_numpy": 600,
+      "electroneutrality_residual_numpy": 600,
+      "Debye_Huckel_numpy": 600,
+      "carrier_mass_action": 650,
+      "carrier_charge_neutrality": 650,
+      "Fick_gradient_flux": 650,
+      "Beer_Lambert_absorbance": 650,
+      "1d_diffusion_numpy_replay": 320,
+      "1d_diffusion_total_mass": 320
+    },
+    "max_absolute_difference_units_vary": 4.835703278458517e+24,
+    "max_normalized_difference": 1.3799900560963907e-13,
+    "numpy_version": "2.3.5",
+    "data_origin": "author-generated finite numerical fixtures",
+    "real_chemical_source_rows_imported": 0,
+    "actual_wafer_or_battery_measured": false,
+    "independent_scientific_peer_review": false,
+    "limitations": [
+      "Independent NumPy/formula arithmetic does not verify thermochemical data, measurement accuracy or real materials physics",
+      "No published original scientific dataset or laboratory experiment was imported, operated or reproduced"
+    ]
+  },
+  "preservation": {
+    "schema": "atlas.chemistry-v02-preservation-audit/1",
+    "result": "passed",
+    "previous_archive": "Chemistry v0.1.0 content-addressed restore from verified Energy v1 base+Chemistry delta",
+    "previous_manifest_source": "FILE_MANIFEST.json from exact reconstructed v0.1.0 target",
+    "prior_protected_files_byte_identical": 3085,
+    "protected_prefix_counts": {
+      "baseline/": 771,
+      "AGENT-ATLAS/": 231,
+      "CAUSAL-ATLAS/": 253,
+      "COMPUTATION-ATLAS/": 140,
+      "CONTROL-ATLAS/": 225,
+      "ENERGY-ATLAS/": 148,
+      "LANGUAGE-ATLAS/": 187,
+      "MATERIALS-ATLAS/": 121,
+      "history/": 891,
+      "wheels/": 28,
+      "common/nodes/agent-atlas/": 9,
+      "common/nodes/causal-atlas/": 9,
+      "common/nodes/computation-atlas/": 9,
+      "common/nodes/control-atlas/": 9,
+      "common/nodes/cymatics-atlas/": 9,
+      "common/nodes/energy-atlas/": 9,
+      "common/nodes/language-atlas/": 9,
+      "common/nodes/materials-atlas/": 9,
+      "common/nodes/measurement-atlas/": 9,
+      "common/nodes/signal-atlas/": 9
+    },
+    "changed_protected_files": [],
+    "previous_federation_records_identical_revisions": 2220,
+    "previous_relations_identical_revisions": 1391,
+    "previous_chemistry_records_identical_revisions": 168,
+    "previous_chemistry_relations_identical_revisions": 146,
+    "legacy_chemistry_tests_unchanged_and_runnable": true,
+    "previous_other_nodes_runtime_not_changed": true,
+    "scientific_review_and_publisher_authenticity_proven": false
+  },
+  "source_archive_bytes_acquired": 0,
+  "scientific_content_v1_ready": false,
+  "expert_review": false,
+  "real_experiments": 0,
+  "Bitwork_router_changed": false,
+  "desktop_transfer": false
+}

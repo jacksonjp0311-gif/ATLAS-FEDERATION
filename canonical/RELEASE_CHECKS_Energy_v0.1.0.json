@@ -1,0 +1,207 @@
+{
+  "schema": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1927,
+      "relation": 1133,
+      "node": 10,
+      "context": 54
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "edition": "0.1.0",
+  "date": "2026-11-14",
+  "status": "passed_source_tree_not_yet_extracted",
+  "node_count": 10,
+  "federation_records": 1927,
+  "relations": 1133,
+  "source_cards": 455,
+  "energy_records": 176,
+  "energy_local_relations": 144,
+  "energy_full_relations": 149,
+  "energy_sources": 20,
+  "chapters": 36,
+  "casebook": 25,
+  "unit_tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 251,
+      "passed": 251,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Computation": {
+      "ran": 128,
+      "passed": 128,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Language": {
+      "ran": 135,
+      "passed": 135,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "ran": 58,
+      "passed": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Energy": {
+      "ran": 79,
+      "passed": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_passed": 1656,
+  "tests_skipped": 0,
+  "numerical_oracle": {
+    "schema": "atlas.energy-numerical-oracle/1",
+    "status": "passed",
+    "comparisons": 11000,
+    "categories": {
+      "solar_linear_model": 1000,
+      "wind_kinetic_power": 1000,
+      "thermal_radiation": 1000,
+      "carnot_limit": 1000,
+      "capacity_factor": 1000,
+      "ac_real_power": 1000,
+      "energy_unit_conversion": 1000,
+      "battery_energy_update": 1000,
+      "microgrid_energy_residual": 1000,
+      "trapezoid_numpy": 1000,
+      "discounted_lcoe_numpy": 1000
+    },
+    "seed": 102026,
+    "max_absolute_error": 9.094947017729282e-13,
+    "numpy_version": "2.3.5",
+    "real_physical_measurements": 0,
+    "original_primary_source_rows": 0,
+    "independent_human_scientific_review": false,
+    "claim": "independent vector arithmetic on author-generated finite examples; not validation of model applicability, safe equipment, actual economics, or unknown efficiency gains"
+  },
+  "previous_release_preservation": {
+    "schema": "atlas.energy-historical-byte-preservation/1",
+    "edition": "energy-0.1.0",
+    "status": "passed",
+    "previous_archive": "ATLAS_COLLECTION_Language_v1.0.0.zip",
+    "archive_sha256": "7f9dff64c080e8946a6ab445aa972d6edf1354ff479837203738e99248ece2af",
+    "prior_files_compared_exact": 2504,
+    "byte_identical": 2504,
+    "missing": [],
+    "different": [],
+    "protected_group_counts": {
+      "AGENT-ATLAS": 231,
+      "AGENTS.md": 1,
+      "BASELINE_INPUT.json": 1,
+      "CAUSAL-ATLAS": 253,
+      "COMPUTATION-ATLAS": 140,
+      "CONTROL-ATLAS": 225,
+      "LANGUAGE-ATLAS": 187,
+      "MATERIALS-ATLAS": 121,
+      "RELEASE_CHECKS.json": 1,
+      "RELEASE_CHECKS_Agent_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.2.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.3.0.json": 1,
+      "RELEASE_CHECKS_Agent_v0.4.0.json": 1,
+      "RELEASE_CHECKS_Agent_v1.0.0.json": 1,
+      "RELEASE_CHECKS_Computation_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Computation_v1.0.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.2.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.4.0.json": 1,
+      "RELEASE_CHECKS_Control_v0.5.0.json": 1,
+      "RELEASE_CHECKS_Control_v1.0.0-rc.1.json": 1,
+      "RELEASE_CHECKS_Language_v0.1.0.json": 1,
+      "RELEASE_CHECKS_Language_v0.2.0.json": 1,
+      "RELEASE_CHECKS_Language_v1.0.0.json": 1,
+      "RELEASE_CHECKS_v0.2.0.json": 1,
+      "RELEASE_CHECKS_v0.3.0.json": 1,
+      "RELEASE_CHECKS_v0.6.0.json": 1,
+      "RELEASE_CHECKS_v1.0.0.json": 1,
+      "baseline": 771,
+      "common": 81,
+      "docs": 13,
+      "history": 38,
+      "knowledge_preservation": 1,
+      "receipts": 394,
+      "tools": 3,
+      "wheels": 24
+    },
+    "original_baseline_sha256_members": 771,
+    "allowed_changed_root_metadata": [
+      "BUILD_POLICY.json",
+      "CURRENT_CHECKPOINT.json",
+      "DOMAIN_QUEUE.json",
+      "FILE_MANIFEST.json",
+      "README.md",
+      "START_HERE.md",
+      "common/registry.json",
+      "common/registry.lock.json",
+      "knowledge_preservation/SOURCE_ACQUISITION_LEDGER.json",
+      "tools/check_collection.py"
+    ],
+    "all_nine_previous_nodes_unchanged": true,
+    "source_accuracy_independently_verified": false,
+    "physics_experiments_observed": false,
+    "meaning": "Byte preservation only, not an independent scientific or licensing audit"
+  },
+  "contexts": 54,
+  "original_source_bytes_acquired": 0,
+  "actual_hardware_experiments": 0,
+  "independent_scientific_peer_review": false,
+  "bitwork_router_changed": false,
+  "desktop_transfer": false,
+  "source_trees_unchanged": true,
+  "current_content_v1_ready": false,
+  "extracted_archive_replay": "pending"
+}

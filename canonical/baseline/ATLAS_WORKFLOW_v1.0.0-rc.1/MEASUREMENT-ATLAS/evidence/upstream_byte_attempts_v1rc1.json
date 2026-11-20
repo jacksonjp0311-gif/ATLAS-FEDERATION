@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-11-12",
+  "result": "blocked",
+  "attempts": [
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/datasets/PONTIUS.DAT",
+      "method": "container requests GET",
+      "result": "DNS resolution failure"
+    },
+    {
+      "url": "https://itl.nist.gov/div898/strd/lls/data/LINKS/DATA/Pontius.dat",
+      "method": "container requests GET",
+      "result": "DNS resolution failure"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/datasets/PONTIUS.DAT",
+      "method": "container download",
+      "result": "download failed"
+    }
+  ],
+  "original_upstream_bytes_acquired": false,
+  "original_upstream_sha256": null,
+  "existing_checked_transcription_unchanged": true
+}

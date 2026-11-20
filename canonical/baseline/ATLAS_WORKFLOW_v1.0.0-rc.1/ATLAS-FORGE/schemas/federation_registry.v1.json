@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Forge Federation Registry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "forge_version",
+    "captured_at",
+    "offline",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas-forge.federation.v1"
+    },
+    "forge_version": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "offline": {
+      "const": true
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "node_id",
+          "manifest",
+          "manifest_sha256"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "manifest": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*[\\\\:]).+$"
+          },
+          "manifest_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from",
+          "to",
+          "relation",
+          "meaning"
+        ],
+        "properties": {
+          "from": {
+            "const": "atlas-forge"
+          },
+          "to": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "relation": {
+            "const": "contains_reference_node"
+          },
+          "meaning": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

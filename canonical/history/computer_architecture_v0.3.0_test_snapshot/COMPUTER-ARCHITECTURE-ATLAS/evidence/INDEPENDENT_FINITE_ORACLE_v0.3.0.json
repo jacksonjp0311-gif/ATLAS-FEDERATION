@@ -1,0 +1,22 @@
+{
+  "schema": "atlas.computer-v03-independent-finite-oracle/1",
+  "status": "passed",
+  "seed": 20261117,
+  "comparisons": 22154,
+  "groups": {
+    "boot_header_crosschecked": 5000,
+    "source_to_architectural_execution": 2000,
+    "ecc_single_correction": 156,
+    "ecc_double_detection": 936,
+    "two_slot_interruption_selection": 700,
+    "write_through_ram_oracle": 8062,
+    "cache_load_reference": 3938,
+    "whole_ram_equal_after_cache_run": 12,
+    "static_dag_certificate_reference": 1350
+  },
+  "isa_unchanged": true,
+  "publisher_source_originals_authenticated": 0,
+  "external_scientific_review": false,
+  "physical_cpu_fabricated": false,
+  "boot_checksum_is_not_signature": true
+}

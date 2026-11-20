@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "measurement-atlas"
+version = "1.0.0rc1"
+description = "Uncertainty teaching methods with evidence-aware measurement reference"
+requires-python = ">=3.10"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["measurement_atlas*"]
+
+[tool.setuptools.package-data]
+measurement_atlas = ["resources/intervals/*.json", "resources/intervals/*.sha256", "resources/pontius/*.json", "resources/pontius/*.md", "resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

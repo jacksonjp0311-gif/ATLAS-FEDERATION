@@ -1,0 +1,298 @@
+{
+  "claims": [
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "plate-kirchhoff",
+        "plate-square",
+        "inverse-nodal-degeneracy"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-leissa-survey",
+      "inspection_basis": "institutional_catalog_metadata",
+      "query_terms": [
+        "NASA SP-160",
+        "plate modes",
+        "vibration of plates"
+      ],
+      "scope_limits": "Metadata review is not independent checking of any particular modal eigenvalue or boundary-condition table.",
+      "source_id": "leissa",
+      "source_locator": "NASA NTRS record 19700009156: title, abstract summary, type and publication date",
+      "statement": "NASA SP-160 by Arthur W. Leissa (1969) catalogues theories and numerical results of plate vibrations, providing an authoritative historical reference for multiple plate configurations.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "NASA plate-vibration survey"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "fluid-faraday",
+        "fluid-threshold",
+        "fluid-mathieu-instability"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-benjamin-stability",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "Faraday waves",
+        "vertical vibration",
+        "surface stability",
+        "instability threshold"
+      ],
+      "scope_limits": "The theory uses idealized fluid and container assumptions; it does not calibrate modern real fluids.",
+      "source_id": "benjamin-ursell-1954",
+      "source_locator": "Royal Society article abstract, 1954, 225(1163), pp. 505–515",
+      "statement": "Benjamin and Ursell (1954) theoretically evaluated when a vertically oscillating liquid free surface remains flat or becomes unstable, with excitation depending on forcing frequency, amplitude and mode.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Vertical forcing and surface-wave stability"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "acoustic-radiation",
+        "acoustofluidic-sorting"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-bruus-radiation",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "Bruus 2012",
+        "radiation force",
+        "acoustophoretic"
+      ],
+      "scope_limits": "The abstract does not quantify a particular device force, particle trajectory or observed sorting efficiency.",
+      "source_id": "bruus",
+      "source_locator": "Lab on a Chip 12, 1014–1021, publisher/PubMed abstract; DOI 10.1039/C2LC21068A",
+      "statement": "Bruus (2012) describes the acoustic radiation force as a second-order time-averaged effect relevant to motion of micrometer-scale suspended particles in ultrasound fields.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Time-averaged acoustic radiation force"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "acoustic-viscous-scattering",
+        "acoustic-radiation"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-settnes-viscous",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "Settnes viscous",
+        "boundary layer force",
+        "particle acoustics"
+      ],
+      "scope_limits": "The source treats small spheres and boundary-layer approximations; do not extrapolate to arbitrary aggregates or large objects.",
+      "source_id": "settnes-bruus-2012",
+      "source_locator": "Physical Review E 85, 016327, publisher abstract; DOI 10.1103/PhysRevE.85.016327",
+      "statement": "Settnes and Bruus (2012) derived a theoretical acoustic radiation-force expression for a compressible spherical particle in a viscous fluid, subject to particle and boundary-layer scales being small relative to wavelength.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Viscosity in radiation-force theory"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "acoustic-thermoviscous-contrast",
+        "acoustic-viscous-scattering"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-karlsen-thermoviscous",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "Karlsen 2015",
+        "thermoviscous sign change",
+        "size dependent contrast"
+      ],
+      "scope_limits": "Conditional theoretical effect, not a guaranteed reversal for all particle classes or validated industrial separation.",
+      "source_id": "karlsen-bruus-2015",
+      "source_locator": "Physical Review E 92, 043010, publisher abstract; DOI 10.1103/PhysRevE.92.043010",
+      "statement": "Karlsen and Bruus (2015) predict thermoviscous corrections to acoustic radiation forces on small spherical droplets or solids, including force sign changes under some material and size regimes.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Size-dependent thermoviscous force contrast"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "acoustic-hologram-reconstruction",
+        "acoustic-holography",
+        "field-design"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-melde-hologram",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "Melde acoustic holograms",
+        "phase plate ultrasound",
+        "wavefront reconstruction"
+      ],
+      "scope_limits": "A fabricated phase mask is not equivalent to a Chladni-plate sand image; demonstrations depend on hardware and excitation.",
+      "source_id": "melde-2016",
+      "source_locator": "Nature 537, 518–522, abstract/editorial summary; DOI 10.1038/nature19755",
+      "statement": "Melde and colleagues (2016) describe a fabricated acoustic hologram that reconstructs spatially structured ultrasonic wavefields suitable for contactless acoustic manipulation.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Fabricated acoustic holograms shape fields"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "measurement-nist-uncertainty",
+        "experiment-uncertainty"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-nist-uncertainty",
+      "inspection_basis": "institutional_publication_summary",
+      "query_terms": [
+        "NIST uncertainty",
+        "measurement uncertainty",
+        "TN1297"
+      ],
+      "scope_limits": "Having a standard does not constitute a valid uncertainty budget for an uncalibrated experiment.",
+      "source_id": "nist-tn1297",
+      "source_locator": "NIST publication page, report metadata and guidance summary; DOI 10.6028/NIST.tn.1297",
+      "statement": "NIST Technical Note 1297 (1994) is a standards-oriented guide to evaluating and expressing uncertainties in measurement results.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Official measurement uncertainty guidance"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "measurement-si-2026",
+        "experiment-calibration"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-bipm-edition",
+      "inspection_basis": "standards_body_version_metadata",
+      "query_terms": [
+        "BIPM SI 2026",
+        "SI brochure",
+        "units revision"
+      ],
+      "scope_limits": "Unit standards do not specify instrument calibration, plate material properties or empirical error bounds.",
+      "source_id": "bipm-si-2026",
+      "source_locator": "BIPM SI Brochure landing page, version 4.01, June 2026; DOI 10.59161/AUEZ1291",
+      "statement": "BIPM publishes the ninth edition of the SI Brochure (2019), with an updated revision dated June 2026 that documents internationally agreed SI unit conventions.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "2026 revision of SI Brochure"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "evidence-prov-graph",
+        "evidence-packet"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-prov-ontology",
+      "inspection_basis": "published_technical_standard",
+      "query_terms": [
+        "PROV-O",
+        "provenance graph",
+        "Entity Activity Agent"
+      ],
+      "scope_limits": "Formalized provenance only describes claimed lineage; external signing and verification are separate.",
+      "source_id": "w3c-prov-2013",
+      "source_locator": "W3C PROV-O Recommendation, section 3.1, starting-point classes",
+      "statement": "W3C PROV-O provides an interoperable ontology built around provenance entities, activities, agents and their relationships.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Entity/activity/agent provenance framework"
+    },
+    {
+      "checked_at": "2026-11-10",
+      "concept_ids": [
+        "acoustic-gorkov-limit",
+        "acoustic-radiation"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-gorkov-record",
+      "inspection_basis": "bibliographic_catalog_metadata",
+      "query_terms": [
+        "Gorkov 1961",
+        "ideal fluid small particle",
+        "radiation potential"
+      ],
+      "scope_limits": "Bibliographic verification alone does not validate a numerical implementation of Gor'kov's model.",
+      "source_id": "gorkov-1961",
+      "source_locator": "MathNet journal bibliographic record, Doklady AN SSSR 140(1), 88–91, 1961",
+      "statement": "A 1961 publication by L. P. Gor'kov addresses forces on small particles in an acoustic field within an ideal fluid.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Historical small-particle ideal-fluid force theory"
+    },
+    {
+      "checked_at": "2026-11-11",
+      "concept_ids": [
+        "measurement-reporting-uncertainty",
+        "experiment-uncertainty"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-nist-reporting-uncertainty",
+      "inspection_basis": "institutional_publication_summary",
+      "query_terms": [
+        "NIST measurement uncertainty",
+        "coverage factor",
+        "Type A Type B reporting"
+      ],
+      "scope_limits": "Web guidance checked, not a review of any reported cymatics dataset or calibration certificate.",
+      "source_id": "nist-tn1297",
+      "source_locator": "NIST TN 1297, section 7 Reporting Uncertainty, clauses 7.1–7.2 at nist.gov/pml/nist-technical-note-1297/nist-tn-1297-7-reporting-uncertainty",
+      "statement": "NIST TN 1297 describes reporting uncertainty components and the coverage factor when expanded uncertainty is given.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "NIST guidance on reporting uncertainty"
+    },
+    {
+      "checked_at": "2026-11-11",
+      "concept_ids": [
+        "research-publication-updates",
+        "research-update-ambiguity"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-crossref-updates",
+      "inspection_basis": "institutional_publication_summary",
+      "query_terms": [
+        "Crossref versioning",
+        "correction and retraction",
+        "publication metadata update"
+      ],
+      "scope_limits": "Crossref reporting depends on deposited publisher metadata; absence of a record is not a proof of no retraction.",
+      "source_id": "crossref-versioning-2025",
+      "source_locator": "Crossref best practices, Version control, corrections, and retractions, content section describing editorially significant updates",
+      "statement": "Crossref documents correction, retraction, withdrawal and version relationships for research outputs, including notices with their own identifiers.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "Crossref publication version and updates guidance"
+    },
+    {
+      "checked_at": "2026-11-11",
+      "concept_ids": [
+        "research-fair-data",
+        "measurement-instrument-provenance"
+      ],
+      "external_refresh": "not_automated",
+      "human_review": "pending",
+      "id": "a-fair-guiding",
+      "inspection_basis": "publisher_abstract",
+      "query_terms": [
+        "FAIR principles",
+        "findability accessible interoperability reusability",
+        "metadata stewardship"
+      ],
+      "scope_limits": "Guidelines inform metadata design; does not mean Atlas is certified FAIR compliant or a dataset has valid experimental provenance.",
+      "source_id": "wilkinson-fair-2016",
+      "source_locator": "Scientific Data 3, article 160018, FAIR principles in the article abstract and Box 2",
+      "statement": "The FAIR guidance names findability, accessibility, interoperability and reusability as research data stewardship principles.",
+      "status": "public_source_summary_checked_not_independent_scientific_verification",
+      "title": "FAIR data principles for reusable research"
+    }
+  ],
+  "method": "Original bounded paraphrases checked against public NIST, Crossref and published FAIR metadata on 2026-11-11; these checks are not full-text scientific methods reviews, authenticated change monitoring, or physical replication.",
+  "schema": "cymatics.atlas.claim-audits.v1",
+  "status": "public_source_summary_checked_not_independent_scientific_verification",
+  "version": "2026-11-11.1"
+}

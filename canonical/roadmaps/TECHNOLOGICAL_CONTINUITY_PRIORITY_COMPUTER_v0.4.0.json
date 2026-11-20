@@ -1,0 +1,10 @@
+{
+  "schema": "atlas.priority-overlay/1",
+  "edition": "Computer_Architecture_v0.4.0",
+  "active_domain": "computer-architecture-digital-hardware-atlas",
+  "original_30_domain_queue_untouched": true,
+  "next_scope": "Gate-level refinement and bootstrap toolchain toward scoped content v1",
+  "scientific_hardware_acceptance": "HOLD",
+  "Bitwork_router_deferred": true,
+  "desktop_transfer_deferred": true
+}

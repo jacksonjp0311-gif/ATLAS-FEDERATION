@@ -1,0 +1,1028 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "two sensor observer hard error bounds",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "c951a293de745c44f9db58205e43a5978f0ac859c34d2e97490367c567888d3b",
+  "registry_revision": "e3339d5226926498bc5b299d2a07a430944dd67dd471aaf49e598ba28f8429d0",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "5eed41c6a38b816b0b65261538bba57b9199f1dbde8cc9ad655ded89e1bfa196",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Published data sources inspected at DOI/metadata and selected public text; three external GitHub RPM logs used for derived descriptive statistics without raw redistribution; synthetic numerical ARX and observer tests; no OpenMCT raw-file model fit, calibrated hard bounds, physical test, independent expert review or live AI routing."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:observer-state-not-true",
+      "revision": "e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4"
+    },
+    {
+      "record_id": "control-atlas:two-sensor-consistency",
+      "revision": "b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061"
+    },
+    {
+      "record_id": "control-atlas:sensor-reading-not-root-cause",
+      "revision": "cb384b452bfc0804f07c6a8428245b0ec4edc3043aa37b8b374de7c3a54a6c44"
+    },
+    {
+      "record_id": "control-atlas:observer-error-equation-v06",
+      "revision": "a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:mimo-two-sensor-consistency-tool",
+      "revision": "0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64"
+    },
+    {
+      "record_id": "control-atlas:model-inconsistency-not-fault",
+      "revision": "578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1"
+    },
+    {
+      "record_id": "control-atlas:nist-final-draft-distinction",
+      "revision": "2b20c1f5dcd71c66675170faee5ae396eb60166374bcf94fc5f2a05644b66d6d"
+    },
+    {
+      "record_id": "control-atlas:observer-error-equation-v06",
+      "revision": "a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24"
+    },
+    {
+      "record_id": "control-atlas:observer-state-not-true",
+      "revision": "e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4"
+    },
+    {
+      "record_id": "control-atlas:sensor-reading-not-root-cause",
+      "revision": "cb384b452bfc0804f07c6a8428245b0ec4edc3043aa37b8b374de7c3a54a6c44"
+    },
+    {
+      "record_id": "control-atlas:source:MAYNE-OF-MPC-2006",
+      "revision": "194add3e645e5745f603a10eb648a7355c0f618fa5b1c0a77940db026cf42de1"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-STATE",
+      "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+    },
+    {
+      "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+      "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+    },
+    {
+      "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+      "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf"
+    },
+    {
+      "record_id": "control-atlas:two-sensor-consistency",
+      "revision": "b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Offline scientific reference and research-method analysis only"
+          ],
+          "assumptions": [
+            "Known C,E,V and aligned timestamps"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No root-cause identity or operational equipment action"
+          ],
+          "tags": [
+            "chapter-57",
+            "edition-1.0.0",
+            "mimo-two-sensor-consistency-tool"
+          ],
+          "text": "Checks y against Cxhat ±(|C|E+V) with separate flags; contradiction is not sensor-fault diagnosis.",
+          "uncertainty": [
+            "No independently calibrated plant, sensor or actuator uncertainty proven by this entry"
+          ],
+          "units": [
+            "All physical units and sample conventions must be supplied with the experiment"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "checked_limited_external_source_and_original_arithmetic_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "mimo-two-sensor-consistency-tool",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "basis": "source_scoped_factual_description_or_original_method_derivation",
+          "chapter": "chapter-57",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:mimo-two-sensor-consistency-tool",
+        "revision": "0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          }
+        ],
+        "status": "active",
+        "title": "Pure Python two-channel measurement consistency analysis",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline scientific reference and research-method analysis only"
+          ],
+          "assumptions": [
+            "Model bounds and measurements have verified physical bases"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No autonomous fault isolation or equipment changes authorised"
+          ],
+          "tags": [
+            "chapter-60",
+            "edition-1.0.0",
+            "model-inconsistency-not-fault"
+          ],
+          "text": "Sensor out-of-envelope measurements can be caused by physical disturbances, missing model modes, timing, network or actuator error, as well as sensor failure.",
+          "uncertainty": [
+            "No independently calibrated plant, sensor or actuator uncertainty proven by this entry"
+          ],
+          "units": [
+            "All physical units and sample conventions must be supplied with the experiment"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "checked_limited_external_source_and_original_arithmetic_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "model-inconsistency-not-fault",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "basis": "source_scoped_factual_description_or_original_method_derivation",
+          "chapter": "chapter-60",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:model-inconsistency-not-fault",
+        "revision": "578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          },
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          }
+        ],
+        "status": "active",
+        "title": "An inconsistent model/sensor reading is not root-cause evidence",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline scientific reference and research-method analysis only"
+          ],
+          "assumptions": [
+            "Safety/security and source status tracked separately"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No hardware safety-rated interlock in Atlas"
+          ],
+          "tags": [
+            "chapter-60",
+            "edition-1.0.0",
+            "nist-final-draft-distinction"
+          ],
+          "text": "NIST SP 800-82r3 (2023) is final; Rev4 September 2026 is an initial public draft. No Control Atlas result substitutes for industrial OT safety engineering.",
+          "uncertainty": [
+            "No independently calibrated plant, sensor or actuator uncertainty proven by this entry"
+          ],
+          "units": [
+            "All physical units and sample conventions must be supplied with the experiment"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+              "source_id": "control-atlas:source:NIST-OT-R4-DRAFT"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "checked_limited_external_source_and_original_arithmetic_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "nist-final-draft-distinction",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "basis": "source_scoped_factual_description_or_original_method_derivation",
+          "chapter": "chapter-60",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:nist-final-draft-distinction",
+        "revision": "2b20c1f5dcd71c66675170faee5ae396eb60166374bcf94fc5f2a05644b66d6d",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+            "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf"
+          }
+        ],
+        "status": "active",
+        "title": "NIST Rev3 final differs from Rev4 initial public draft status",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific educational scalar discrete model and bounded reasoning only"
+          ],
+          "assumptions": [
+            "Same known applied input and aligned measurement sample"
+          ],
+          "domain": "control-systems",
+          "equation": "e_next=(a-L)*e+w-L*v",
+          "limitations": [
+            "No unbounded noise, sensor staleness, plant mismatch or hardware validity modeled"
+          ],
+          "tags": [
+            "chapter-47",
+            "edition-0.6.0",
+            "observer-error-equation-v06"
+          ],
+          "text": "For x_next=a*x+b*u+w and h_next=a*h+b*u+L(y-h), with y=x+v, error evolves as (a-L)e+w-Lv.",
+          "uncertainty": [
+            "No independently calibrated sensor, plant or actuator uncertainty in this source"
+          ],
+          "units": [
+            "Consistent scalar plant, input and sampling units must be supplied externally"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual control plant, sensor or actuator experiment",
+            "No independent hardware safety or scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "source_abstract_or_existing_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "observer-error-equation-v06",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original methods reference",
+          "basis": "bounded_publisher_scope_and_new_original_derived_mathematical_example",
+          "chapter": "chapter-47",
+          "created_at": "2026-11-13",
+          "edition_added": "0.6.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:observer-error-equation-v06",
+        "revision": "a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar Luenberger observer error with bounded additive noise",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific educational scalar discrete model and bounded reasoning only"
+          ],
+          "assumptions": [
+            "State and observer distinguish x from h"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical sensor model or true-state feedback is verified"
+          ],
+          "tags": [
+            "chapter-47",
+            "edition-0.6.0",
+            "observer-state-not-true"
+          ],
+          "text": "A controller using an observer estimate h does not inherit an exact-state feedback theorem for u=-Kx. Require error bounds, applied-input timing and a credible sensor observation model.",
+          "uncertainty": [
+            "No independently calibrated sensor, plant or actuator uncertainty in this source"
+          ],
+          "units": [
+            "Consistent scalar plant, input and sampling units must be supplied externally"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual control plant, sensor or actuator experiment",
+            "No independent hardware safety or scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit",
+              "locator": "Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed",
+              "source_id": "control-atlas:source:MAYNE-OF-MPC-2006"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "source_abstract_or_existing_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "observer-state-not-true",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "basis": "bounded_publisher_scope_and_new_original_derived_mathematical_example",
+          "chapter": "chapter-47",
+          "created_at": "2026-11-13",
+          "edition_added": "0.6.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:observer-state-not-true",
+        "revision": "e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:MAYNE-OF-MPC-2006",
+            "revision": "194add3e645e5745f603a10eb648a7355c0f618fa5b1c0a77940db026cf42de1"
+          }
+        ],
+        "status": "active",
+        "title": "A state estimate is not the physical state",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific educational scalar discrete model and bounded reasoning only"
+          ],
+          "assumptions": [
+            "Published model bounds match physical timing"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No hardware alarms, physical diagnosis or authority to actuate"
+          ],
+          "tags": [
+            "chapter-50",
+            "edition-0.6.0",
+            "sensor-reading-not-root-cause"
+          ],
+          "text": "If y lies outside estimate +/- state/sensor error bounds, at least one declared relation fails; the cause could be sensor, process, timing or model error.",
+          "uncertainty": [
+            "No independently calibrated sensor, plant or actuator uncertainty in this source"
+          ],
+          "units": [
+            "Consistent scalar plant, input and sampling units must be supplied externally"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual control plant, sensor or actuator experiment",
+            "No independent hardware safety or scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "source_abstract_or_existing_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "sensor-reading-not-root-cause",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "basis": "bounded_publisher_scope_and_new_original_derived_mathematical_example",
+          "chapter": "chapter-50",
+          "created_at": "2026-11-13",
+          "edition_added": "0.6.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:sensor-reading-not-root-cause",
+        "revision": "cb384b452bfc0804f07c6a8428245b0ec4edc3043aa37b8b374de7c3a54a6c44",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          }
+        ],
+        "status": "active",
+        "title": "A model-inconsistent sensor value cannot isolate root cause",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Selected publisher abstract or identified portion; not an experimental validation"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Only scoped public publisher description inspected; no full paper/proof audited",
+            "No independent physical-control test, field-model validation or source redistribution rights claimed"
+          ],
+          "tags": [
+            "source",
+            "edition-0.6.0"
+          ],
+          "text": "Bibliographic source from Mayne, Raković, Findeisen and Allgöwer (Automatica 42, 2006). Scope: Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No full peer-reviewed-method audit conducted by independent scientist"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_only_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MAYNE-OF-MPC-2006",
+        "provenance": {
+          "authors": "Mayne, Raković, Findeisen and Allgöwer (Automatica 42, 2006)",
+          "created_at": "2026-11-13",
+          "edition_added": "0.6.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_release": "MAYNE-OF-MPC-2006",
+          "title": "Robust output feedback model predictive control of constrained linear systems",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0005109806001221",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MAYNE-OF-MPC-2006",
+        "revision": "194add3e645e5745f603a10eb648a7355c0f618fa5b1c0a77940db026cf42de1",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Robust output feedback model predictive control of constrained linear systems",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-STATE",
+        "provenance": {
+          "access_mode": "author online chapter overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MIT-STATE",
+          "url": "https://underactuated.mit.edu/state_estimation.html"
+        },
+        "record_id": "control-atlas:source:MIT-STATE",
+        "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Underactuated Robotics, State Estimation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Official metadata and abstract: September 2023 final publication; not full text reviewed",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NIST-OT-R3-FINAL",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+        "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST SP 800-82 Revision 3 Final OT Guide",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:NIST-OT-R4-DRAFT",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r4/ipd",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:NIST-OT-R4-DRAFT",
+        "revision": "6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST SP 800-82 Revision 4 Initial Public Draft",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline scientific reference and research-method analysis only"
+          ],
+          "assumptions": [
+            "All relevant state error and sensor noise limits are verified hard bounds"
+          ],
+          "domain": "control-systems",
+          "equation": "y_expected=C*xhat +/- (abs(C)*E+V)",
+          "limitations": [
+            "An inconsistent reading does not isolate root cause; a compatible one is not sensor validation"
+          ],
+          "tags": [
+            "chapter-57",
+            "edition-1.0.0",
+            "two-sensor-consistency"
+          ],
+          "text": "Prediction C*xhat plus/minus |C|E+V defines a conditional componentwise observed-output envelope.",
+          "uncertainty": [
+            "No independently calibrated plant, sensor or actuator uncertainty proven by this entry"
+          ],
+          "units": [
+            "All physical units and sample conventions must be supplied with the experiment"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Observer/Kalman filter topical framework; page overview, not full estimation derivation",
+              "source_id": "control-atlas:source:MIT-STATE"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Bounded inspected publisher source/description or original method; no full independent peer review",
+              "locator": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+              "source_id": "control-atlas:source:NIST-OT-R3-FINAL"
+            }
+          ],
+          "origin": "authored_source_scoped_method",
+          "review_status": "checked_limited_external_source_and_original_arithmetic_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "two-sensor-consistency",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original methods reference",
+          "basis": "source_scoped_factual_description_or_original_method_derivation",
+          "chapter": "chapter-57",
+          "created_at": "2026-11-13",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:two-sensor-consistency",
+        "revision": "b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-STATE",
+            "revision": "f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48"
+          },
+          {
+            "record_id": "control-atlas:source:NIST-OT-R3-FINAL",
+            "revision": "7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7"
+          }
+        ],
+        "status": "active",
+        "title": "Two-sensor output consistency under bounded state estimation error",
+        "type": "equation"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:mimo-two-sensor-consistency-tool",
+          "revision": "0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64"
+        },
+        "provenance": {
+          "basis": "Documentation of method limits, not causal physical discovery",
+          "independent_review": false,
+          "origin": "authored_source_and_model_dependency"
+        },
+        "relation_id": "control-atlas:mimo-two-sensor-consistency-tool:qualifies:model-inconsistency-not-fault",
+        "revision": "9db1dd56eaddae9448d20aea8bb7bcebd21a19b436b504fe429e2de115a5de23",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:model-inconsistency-not-fault",
+          "revision": "578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:mimo-two-sensor-consistency-tool",
+          "revision": "0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64"
+        },
+        "provenance": {
+          "basis": "Documentation of method limits, not causal physical discovery",
+          "independent_review": false,
+          "origin": "authored_source_and_model_dependency"
+        },
+        "relation_id": "control-atlas:mimo-two-sensor-consistency-tool:qualifies:two-sensor-consistency",
+        "revision": "be88c8aad9836c4160ce35694e2f95f29b77020d02711d8f1fa82f3951ddbec6",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:two-sensor-consistency",
+          "revision": "b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:nist-final-draft-distinction",
+          "revision": "2b20c1f5dcd71c66675170faee5ae396eb60166374bcf94fc5f2a05644b66d6d"
+        },
+        "provenance": {
+          "basis": "Documentation of method limits, not causal physical discovery",
+          "independent_review": false,
+          "origin": "authored_source_and_model_dependency"
+        },
+        "relation_id": "control-atlas:nist-final-draft-distinction:qualifies:model-inconsistency-not-fault",
+        "revision": "716d4a3fd24c35912fa5c008df6481a8d489b988bd7b0b95bd4e91ca3016fa9a",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:model-inconsistency-not-fault",
+          "revision": "578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:observer-state-not-true",
+          "revision": "e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4"
+        },
+        "provenance": {
+          "basis": "Requirements/qualifiers in an authored finite-state teaching model, not verified physical causality",
+          "independent_review": false,
+          "origin": "author_original_relation"
+        },
+        "relation_id": "control-atlas:observer-state-not-true:depends_on:observer-error-equation-v06",
+        "revision": "786d41ff206c0e4f606c2b95c302a55ef9c68da85f67a048865ec1d1ba75e402",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:observer-error-equation-v06",
+          "revision": "a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24"
+        },
+        "type": "depends_on"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Offline scientific reference and research-method analysis only\"],\"assumptions\":[\"Known C,E,V and aligned timestamps\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No root-cause identity or operational equipment action\"],\"tags\":[\"chapter-57\",\"edition-1.0.0\",\"mimo-two-sensor-consistency-tool\"],\"text\":\"Checks y against Cxhat ±(|C|E+V) with separate flags; contradiction is not sensor-fault diagnosis.\",\"uncertainty\":[\"No independently calibrated plant, sensor or actuator uncertainty proven by this entry\"],\"units\":[\"All physical units and sample conventions must be supplied with the experiment\"]},\"evidence\":{\"gaps\":[\"No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"checked_limited_external_source_and_original_arithmetic_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"mimo-two-sensor-consistency-tool\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"basis\":\"source_scoped_factual_description_or_original_method_derivation\",\"chapter\":\"chapter-57\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:mimo-two-sensor-consistency-tool\",\"revision\":\"0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"}],\"status\":\"active\",\"title\":\"Pure Python two-channel measurement consistency analysis\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Offline scientific reference and research-method analysis only\"],\"assumptions\":[\"Model bounds and measurements have verified physical bases\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No autonomous fault isolation or equipment changes authorised\"],\"tags\":[\"chapter-60\",\"edition-1.0.0\",\"model-inconsistency-not-fault\"],\"text\":\"Sensor out-of-envelope measurements can be caused by physical disturbances, missing model modes, timing, network or actuator error, as well as sensor failure.\",\"uncertainty\":[\"No independently calibrated plant, sensor or actuator uncertainty proven by this entry\"],\"units\":[\"All physical units and sample conventions must be supplied with the experiment\"]},\"evidence\":{\"gaps\":[\"No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"checked_limited_external_source_and_original_arithmetic_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"model-inconsistency-not-fault\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"basis\":\"source_scoped_factual_description_or_original_method_derivation\",\"chapter\":\"chapter-60\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:model-inconsistency-not-fault\",\"revision\":\"578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"},{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"}],\"status\":\"active\",\"title\":\"An inconsistent model/sensor reading is not root-cause evidence\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Offline scientific reference and research-method analysis only\"],\"assumptions\":[\"Safety/security and source status tracked separately\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No hardware safety-rated interlock in Atlas\"],\"tags\":[\"chapter-60\",\"edition-1.0.0\",\"nist-final-draft-distinction\"],\"text\":\"NIST SP 800-82r3 (2023) is final; Rev4 September 2026 is an initial public draft. No Control Atlas result substitutes for industrial OT safety engineering.\",\"uncertainty\":[\"No independently calibrated plant, sensor or actuator uncertainty proven by this entry\"],\"units\":[\"All physical units and sample conventions must be supplied with the experiment\"]},\"evidence\":{\"gaps\":[\"No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"source_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"checked_limited_external_source_and_original_arithmetic_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"nist-final-draft-distinction\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"basis\":\"source_scoped_factual_description_or_original_method_derivation\",\"chapter\":\"chapter-60\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:nist-final-draft-distinction\",\"revision\":\"2b20c1f5dcd71c66675170faee5ae396eb60166374bcf94fc5f2a05644b66d6d\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"},{\"record_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\",\"revision\":\"6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf\"}],\"status\":\"active\",\"title\":\"NIST Rev3 final differs from Rev4 initial public draft status\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific educational scalar discrete model and bounded reasoning only\"],\"assumptions\":[\"Same known applied input and aligned measurement sample\"],\"domain\":\"control-systems\",\"equation\":\"e_next=(a-L)*e+w-L*v\",\"limitations\":[\"No unbounded noise, sensor staleness, plant mismatch or hardware validity modeled\"],\"tags\":[\"chapter-47\",\"edition-0.6.0\",\"observer-error-equation-v06\"],\"text\":\"For x_next=a*x+b*u+w and h_next=a*h+b*u+L(y-h), with y=x+v, error evolves as (a-L)e+w-Lv.\",\"uncertainty\":[\"No independently calibrated sensor, plant or actuator uncertainty in this source\"],\"units\":[\"Consistent scalar plant, input and sampling units must be supplied externally\"]},\"evidence\":{\"gaps\":[\"No actual control plant, sensor or actuator experiment\",\"No independent hardware safety or scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"source_abstract_or_existing_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"observer-error-equation-v06\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original methods reference\",\"basis\":\"bounded_publisher_scope_and_new_original_derived_mathematical_example\",\"chapter\":\"chapter-47\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.6.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:observer-error-equation-v06\",\"revision\":\"a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"}],\"status\":\"active\",\"title\":\"Scalar Luenberger observer error with bounded additive noise\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific educational scalar discrete model and bounded reasoning only\"],\"assumptions\":[\"State and observer distinguish x from h\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical sensor model or true-state feedback is verified\"],\"tags\":[\"chapter-47\",\"edition-0.6.0\",\"observer-state-not-true\"],\"text\":\"A controller using an observer estimate h does not inherit an exact-state feedback theorem for u=-Kx. Require error bounds, applied-input timing and a credible sensor observation model.\",\"uncertainty\":[\"No independently calibrated sensor, plant or actuator uncertainty in this source\"],\"units\":[\"Consistent scalar plant, input and sampling units must be supplied externally\"]},\"evidence\":{\"gaps\":[\"No actual control plant, sensor or actuator experiment\",\"No independent hardware safety or scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit\",\"locator\":\"Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed\",\"source_id\":\"control-atlas:source:MAYNE-OF-MPC-2006\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"source_abstract_or_existing_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"observer-state-not-true\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"basis\":\"bounded_publisher_scope_and_new_original_derived_mathematical_example\",\"chapter\":\"chapter-47\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.6.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:observer-state-not-true\",\"revision\":\"e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:MAYNE-OF-MPC-2006\",\"revision\":\"194add3e645e5745f603a10eb648a7355c0f618fa5b1c0a77940db026cf42de1\"}],\"status\":\"active\",\"title\":\"A state estimate is not the physical state\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific educational scalar discrete model and bounded reasoning only\"],\"assumptions\":[\"Published model bounds match physical timing\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No hardware alarms, physical diagnosis or authority to actuate\"],\"tags\":[\"chapter-50\",\"edition-0.6.0\",\"sensor-reading-not-root-cause\"],\"text\":\"If y lies outside estimate +/- state/sensor error bounds, at least one declared relation fails; the cause could be sensor, process, timing or model error.\",\"uncertainty\":[\"No independently calibrated sensor, plant or actuator uncertainty in this source\"],\"units\":[\"Consistent scalar plant, input and sampling units must be supplied externally\"]},\"evidence\":{\"gaps\":[\"No actual control plant, sensor or actuator experiment\",\"No independent hardware safety or scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher scope only; original mathematical derivation by this Atlas, not full publication audit\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"source_abstract_or_existing_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"sensor-reading-not-root-cause\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"basis\":\"bounded_publisher_scope_and_new_original_derived_mathematical_example\",\"chapter\":\"chapter-50\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.6.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:sensor-reading-not-root-cause\",\"revision\":\"cb384b452bfc0804f07c6a8428245b0ec4edc3043aa37b8b374de7c3a54a6c44\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"}],\"status\":\"active\",\"title\":\"A model-inconsistent sensor value cannot isolate root cause\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Selected publisher abstract or identified portion; not an experimental validation\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Only scoped public publisher description inspected; no full paper/proof audited\",\"No independent physical-control test, field-model validation or source redistribution rights claimed\"],\"tags\":[\"source\",\"edition-0.6.0\"],\"text\":\"Bibliographic source from Mayne, Raković, Findeisen and Allgöwer (Automatica 42, 2006). Scope: Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No full peer-reviewed-method audit conducted by independent scientist\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_only_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MAYNE-OF-MPC-2006\",\"provenance\":{\"authors\":\"Mayne, Raković, Findeisen and Allgöwer (Automatica 42, 2006)\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.6.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_release\":\"MAYNE-OF-MPC-2006\",\"title\":\"Robust output feedback model predictive control of constrained linear systems\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0005109806001221\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MAYNE-OF-MPC-2006\",\"revision\":\"194add3e645e5745f603a10eb648a7355c0f618fa5b1c0a77940db026cf42de1\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Robust output feedback model predictive control of constrained linear systems\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MIT CSAIL / Russ Tedrake. Underactuated Robotics, State Estimation. Inspected scope: Observer/Kalman filter topical framework; page overview, not full estimation derivation.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-STATE\",\"provenance\":{\"access_mode\":\"author online chapter overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MIT-STATE\",\"url\":\"https://underactuated.mit.edu/state_estimation.html\"},\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Underactuated Robotics, State Estimation\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NIST-OT-R3-FINAL\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://csrc.nist.gov/pubs/sp/800/82/r3/final\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST SP 800-82 Revision 3 Final OT Guide\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:NIST-OT-R4-DRAFT\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://csrc.nist.gov/pubs/sp/800/82/r4/ipd\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:NIST-OT-R4-DRAFT\",\"revision\":\"6c44865b9a49a1a079edcd653c8e7c4ebf32982a14c60ea1362049efe72d61bf\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST SP 800-82 Revision 4 Initial Public Draft\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Offline scientific reference and research-method analysis only\"],\"assumptions\":[\"All relevant state error and sensor noise limits are verified hard bounds\"],\"domain\":\"control-systems\",\"equation\":\"y_expected=C*xhat +/- (abs(C)*E+V)\",\"limitations\":[\"An inconsistent reading does not isolate root cause; a compatible one is not sensor validation\"],\"tags\":[\"chapter-57\",\"edition-1.0.0\",\"two-sensor-consistency\"],\"text\":\"Prediction C*xhat plus/minus |C|E+V defines a conditional componentwise observed-output envelope.\",\"uncertainty\":[\"No independently calibrated plant, sensor or actuator uncertainty proven by this entry\"],\"units\":[\"All physical units and sample conventions must be supplied with the experiment\"]},\"evidence\":{\"gaps\":[\"No physical equipment operated, independent engineering review or actual OpenMCT raw-file fit\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Observer/Kalman filter topical framework; page overview, not full estimation derivation\",\"source_id\":\"control-atlas:source:MIT-STATE\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Bounded inspected publisher source/description or original method; no full independent peer review\",\"locator\":\"Official metadata and abstract: September 2023 final publication; not full text reviewed\",\"source_id\":\"control-atlas:source:NIST-OT-R3-FINAL\"}],\"origin\":\"authored_source_scoped_method\",\"review_status\":\"checked_limited_external_source_and_original_arithmetic_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"two-sensor-consistency\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original methods reference\",\"basis\":\"source_scoped_factual_description_or_original_method_derivation\",\"chapter\":\"chapter-57\",\"created_at\":\"2026-11-13\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:two-sensor-consistency\",\"revision\":\"b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-STATE\",\"revision\":\"f0459c962ddf925ea7770e27685e5f1974a6ad6f308942cc31a095309ab8ac48\"},{\"record_id\":\"control-atlas:source:NIST-OT-R3-FINAL\",\"revision\":\"7dafbc5686925a9c0b94e2eaa94292bc429a9c9c865e2428a4c83063d341b7d7\"}],\"status\":\"active\",\"title\":\"Two-sensor output consistency under bounded state estimation error\",\"type\":\"equation\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:mimo-two-sensor-consistency-tool\",\"revision\":\"0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64\"},\"provenance\":{\"basis\":\"Documentation of method limits, not causal physical discovery\",\"independent_review\":false,\"origin\":\"authored_source_and_model_dependency\"},\"relation_id\":\"control-atlas:mimo-two-sensor-consistency-tool:qualifies:model-inconsistency-not-fault\",\"revision\":\"9db1dd56eaddae9448d20aea8bb7bcebd21a19b436b504fe429e2de115a5de23\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:model-inconsistency-not-fault\",\"revision\":\"578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:mimo-two-sensor-consistency-tool\",\"revision\":\"0c8fb200047913a5cd42c526ce0b8e41eb1904d12f509ba543254a054abe9e64\"},\"provenance\":{\"basis\":\"Documentation of method limits, not causal physical discovery\",\"independent_review\":false,\"origin\":\"authored_source_and_model_dependency\"},\"relation_id\":\"control-atlas:mimo-two-sensor-consistency-tool:qualifies:two-sensor-consistency\",\"revision\":\"be88c8aad9836c4160ce35694e2f95f29b77020d02711d8f1fa82f3951ddbec6\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:two-sensor-consistency\",\"revision\":\"b95b201425fe530834599a0a1d652df78363c6e11c962dce2a784f17ad1fd061\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:nist-final-draft-distinction\",\"revision\":\"2b20c1f5dcd71c66675170faee5ae396eb60166374bcf94fc5f2a05644b66d6d\"},\"provenance\":{\"basis\":\"Documentation of method limits, not causal physical discovery\",\"independent_review\":false,\"origin\":\"authored_source_and_model_dependency\"},\"relation_id\":\"control-atlas:nist-final-draft-distinction:qualifies:model-inconsistency-not-fault\",\"revision\":\"716d4a3fd24c35912fa5c008df6481a8d489b988bd7b0b95bd4e91ca3016fa9a\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:model-inconsistency-not-fault\",\"revision\":\"578e12ef1eefe4389beb3e4015b730c3aed0948e838d9e22086c489bb8e5c4a1\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:observer-state-not-true\",\"revision\":\"e1c230095e368b0e2ac95e5a774fd5c2338b2e4b4a4dc0f0637b52ecd08618e4\"},\"provenance\":{\"basis\":\"Requirements/qualifiers in an authored finite-state teaching model, not verified physical causality\",\"independent_review\":false,\"origin\":\"author_original_relation\"},\"relation_id\":\"control-atlas:observer-state-not-true:depends_on:observer-error-equation-v06\",\"revision\":\"786d41ff206c0e4f606c2b95c302a55ef9c68da85f67a048865ec1d1ba75e402\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:observer-error-equation-v06\",\"revision\":\"a09e7f9fd094342d82a662c5c9f8a0f83a5a00c27c24263490cfdec46dba4b24\"},\"type\":\"depends_on\"}]}",
+  "context_bytes": 29654,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:mimo-observer-error-v1",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:mimo-two-sensor-observer-tool",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:mimo-componentwise-observer-bound",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:bounded-observer-tool-v06",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "34d3981719604d61657a1650d47bc306cd6b19c8ee717842c282f91147aa21d0"
+}

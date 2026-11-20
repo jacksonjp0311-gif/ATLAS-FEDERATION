@@ -1,0 +1,68 @@
+{
+  "result": "passed",
+  "navigation_files": [
+    {
+      "path": "src/atlas_forge/common.py",
+      "sha256": "bffc4942071629830bab926e1519bac37f27153eed3aa74a4f8f493b1851bfbb",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/routing.py",
+      "sha256": "530c911e00d2fa081cf402b9e79373bdfb228047c72f8cd32470dc2f814f24e4",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/common_cli.py",
+      "sha256": "44bd7787cc1cd1349144e6d1ec8d643141d73034cb1390ce0644ae34f8a999ab",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/core.py",
+      "sha256": "dce833ecb92f6e57eda52975ce057e431009c472526f7e8d8789ff6ec4bd4f98",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/federation.py",
+      "sha256": "77eff08deb600b0090c3380bafe064fe8a164eb88e74b8ac57f435ffb762ec59",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/cli.py",
+      "sha256": "a71dc86413fe1c7f79c35355d3abedea1422f72ee167b4624e14b01abe8f6e4a",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/server.py",
+      "sha256": "817b21af82c1cf556a5738ee8670a673cc2957167f7ca97ce05cfd79f56022cb",
+      "unchanged_from_baseline": true
+    },
+    {
+      "path": "src/atlas_forge/workflow.py",
+      "sha256": "9a9f0dc45ec1505460fa7e9641c6b8ad92c72e521964a753127d8d16240ed0cf",
+      "unchanged_from_baseline": true
+    }
+  ],
+  "existing_nodes": {
+    "signal-atlas": {
+      "unchanged": true,
+      "files": 9
+    },
+    "cymatics-atlas": {
+      "unchanged": true,
+      "files": 9
+    }
+  },
+  "artwork": [
+    {
+      "path": "ATLAS-FORGE/assets/atlas_forge_knowledge_hub.png",
+      "sha256": "f1d29051b41de3ed11bde3a7c81817b1d77f822a19e1d8646655a5a2132f08a3",
+      "unchanged": true
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/resources/hero.png",
+      "sha256": "f1d29051b41de3ed11bde3a7c81817b1d77f822a19e1d8646655a5a2132f08a3",
+      "unchanged": true
+    }
+  ],
+  "new_navigation_features": false
+}

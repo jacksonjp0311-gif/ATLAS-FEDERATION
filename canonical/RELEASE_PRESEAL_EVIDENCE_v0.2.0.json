@@ -1,0 +1,13 @@
+{
+  "contexts_validated": 94,
+  "date": "2026-11-15",
+  "full_archive_seal_and_restoration": "separate external release receipt",
+  "invalid_input_refusals": 120,
+  "is_independent_physical_experiment": false,
+  "is_peer_reviewed": false,
+  "numerical_oracle_cases": 1320,
+  "old_files_byte_identical": 4682,
+  "schema": "atlas.math-physics-v02-source-evidence/1",
+  "source_tree_tests_passed": 2059,
+  "source_wheel_installed_offline": true
+}

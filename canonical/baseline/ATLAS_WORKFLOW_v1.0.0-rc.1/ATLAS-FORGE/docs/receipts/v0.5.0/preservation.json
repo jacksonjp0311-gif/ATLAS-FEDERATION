@@ -1,0 +1,64 @@
+{
+  "result": "passed",
+  "baseline": "0.4.0",
+  "checks": [
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/common.py",
+      "baseline_equal": true,
+      "sha256": "bffc4942071629830bab926e1519bac37f27153eed3aa74a4f8f493b1851bfbb"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/routing.py",
+      "baseline_equal": true,
+      "sha256": "530c911e00d2fa081cf402b9e79373bdfb228047c72f8cd32470dc2f814f24e4"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/common_cli.py",
+      "baseline_equal": true,
+      "sha256": "44bd7787cc1cd1349144e6d1ec8d643141d73034cb1390ce0644ae34f8a999ab"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/core.py",
+      "baseline_equal": true,
+      "sha256": "dce833ecb92f6e57eda52975ce057e431009c472526f7e8d8789ff6ec4bd4f98"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/federation.py",
+      "baseline_equal": true,
+      "sha256": "77eff08deb600b0090c3380bafe064fe8a164eb88e74b8ac57f435ffb762ec59"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/cli.py",
+      "baseline_equal": true,
+      "sha256": "a71dc86413fe1c7f79c35355d3abedea1422f72ee167b4624e14b01abe8f6e4a"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/server.py",
+      "baseline_equal": true,
+      "sha256": "817b21af82c1cf556a5738ee8670a673cc2957167f7ca97ce05cfd79f56022cb"
+    },
+    {
+      "path": "ATLAS-FORGE/src/atlas_forge/workflow.py",
+      "baseline_equal": true,
+      "sha256": "9a9f0dc45ec1505460fa7e9641c6b8ad92c72e521964a753127d8d16240ed0cf"
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/uncertainty.py",
+      "baseline_equal": true,
+      "sha256": "71704fd593e3583c9d28a703ab724f301e862ca38a49d69ad9d8a53d5063d272"
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/budget.py",
+      "baseline_equal": true,
+      "sha256": "13343fbe92f64ca781b7288bd7129635af30d90dad458fcf481a8ea6b907b6fa"
+    },
+    {
+      "path": "MEASUREMENT-ATLAS/measurement_atlas/traceability.py",
+      "baseline_equal": true,
+      "sha256": "92207b97bced4ca918353762b67d4ff2c3556adf06861110d265746fd28c040f"
+    },
+    {
+      "signal_and_cymatics_common_nodes_byte_identical": true
+    }
+  ]
+}

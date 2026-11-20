@@ -1,0 +1,15 @@
+{
+  "schema": "atlas.materials-preservation/1",
+  "input_file": "ATLAS_COLLECTION_Causal_v1.0.0.zip",
+  "prior_source_tree_and_baseline_members_verified": 1060,
+  "modified_or_missing_members": [],
+  "result": "passed",
+  "unaffected_domain_nodes": [
+    "causal-atlas",
+    "signal-atlas",
+    "cymatics-atlas",
+    "measurement-atlas"
+  ],
+  "navigation_runtime_unchanged": true,
+  "review_status": "byte_comparison_not_scientific_review"
+}

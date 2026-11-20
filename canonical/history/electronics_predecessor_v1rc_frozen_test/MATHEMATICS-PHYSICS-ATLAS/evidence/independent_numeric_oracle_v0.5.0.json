@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.math-v05-independent-numerical-oracle/1",
+  "result": "passed",
+  "seed": 20261116,
+  "independent_scipy_dense_nonlinear_roots": 100,
+  "potential_values_compared": 1376,
+  "max_absolute_potential_difference_dimensionless": 3.758104938356155e-14,
+  "max_independently_assembled_nonlinear_residual": 2.440270208126094e-13,
+  "high_precision_decimal_bernoulli_values": 215,
+  "max_relative_bernoulli_difference": 1.053616856431022e-14,
+  "separate_quadrature_edge_flux_comparisons": 160,
+  "max_relative_flux_difference": 6.984513909497662e-16,
+  "invalid_input_rejections": 7,
+  "numpy_version": "2.3.5",
+  "software_verification_only": true,
+  "physical_experiment_count": 0,
+  "independent_peer_review": false,
+  "authenticated_publisher_transport_files": 0
+}

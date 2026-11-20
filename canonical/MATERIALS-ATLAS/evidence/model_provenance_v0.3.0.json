@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.materials-model-provenance/1",
+  "edition": "0.3.0",
+  "new_physical_measurements": 0,
+  "regular_solution": {
+    "origin": "constructed_equations_with_stated_omega",
+    "input_source": "original synthetic only",
+    "units": "J/mol K and mole fraction"
+  },
+  "indexed_diffraction": {
+    "origin": "constructed indexed powder positions",
+    "input_source": "original synthetic only",
+    "units": "angstrom and full 2theta degree"
+  },
+  "hahn1_diagnostics": {
+    "public_edition_status": "unavailable",
+    "reason_code": "nist_srd140_redistribution_grant_unresolved",
+    "notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply.",
+    "scientific_revalidation": false,
+    "source_case": "hahn1_diagnostics"
+  },
+  "scientific_review": "not_performed",
+  "routing_changes": false,
+  "public_edition_notice": "Unavailable in this public derivative: NIST SRD140 input, certified values and source-dependent results are withheld because redistribution permission is unresolved. Original methods and publisher references are retained where separable; historical acceptance does not apply."
+}

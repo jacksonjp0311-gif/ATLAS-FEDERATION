@@ -1,0 +1,24 @@
+{
+  "schema": "atlas.materials-method-oracle/1",
+  "result": "passed",
+  "seed": 112126,
+  "numpy_version": "2.3.5",
+  "comparisons": 1440,
+  "per_method": {
+    "arrhenius": 180,
+    "diffusion_rms": 180,
+    "fracture_mode_I": 180,
+    "integrated_thermal_log_strain": 180,
+    "paris_regime": 180,
+    "thermal_length_ratio": 180,
+    "true_log_strain_pre_neck": 180,
+    "true_stress_pre_neck": 180
+  },
+  "max_scaled_abs_error": 6.973971567907225e-14,
+  "acceptance_scaled_absolute": 2e-12,
+  "validation_type": "author_seeded_separate_numpy_implementation",
+  "independent_human_review": false,
+  "physical_observations": false,
+  "material_property_fit_or_certification": false
+}
+

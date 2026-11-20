@@ -1,0 +1,137 @@
+{
+  "schema": "measurement.authored-review/1",
+  "independently_held_out": false,
+  "ai_executed": false,
+  "cases": [
+    {
+      "id": "coverage-01",
+      "question": "Explain the limitation associated with confidence-procedure-not-posterior.",
+      "reference_ids": [
+        "confidence-procedure-not-posterior"
+      ],
+      "required_points": [
+        "Interpret repeated-procedure coverage"
+      ],
+      "prohibited_inferences": [
+        "Claim a frequentist realized interval has posterior 95% probability"
+      ]
+    },
+    {
+      "id": "coverage-02",
+      "question": "Explain the limitation associated with eight-df-factor-not-two.",
+      "reference_ids": [
+        "eight-df-factor-not-two"
+      ],
+      "required_points": [
+        "Use the appropriate df-dependent central factor"
+      ],
+      "prohibited_inferences": [
+        "Call all k=2 intervals 95%"
+      ]
+    },
+    {
+      "id": "coverage-03",
+      "question": "Explain the limitation associated with type-b-df-justification.",
+      "reference_ids": [
+        "type-b-df-justification"
+      ],
+      "required_points": [
+        "State why the component uncertainty reliability supports the chosen df"
+      ],
+      "prohibited_inferences": [
+        "Assign infinity solely because component is Type B"
+      ]
+    },
+    {
+      "id": "coverage-04",
+      "question": "Explain the limitation associated with ws-approximation-ceiling.",
+      "reference_ids": [
+        "ws-approximation-ceiling"
+      ],
+      "required_points": [
+        "Reject general correlated inputs for the independent-component formula"
+      ],
+      "prohibited_inferences": [
+        "Silently ignore covariance"
+      ]
+    },
+    {
+      "id": "coverage-05",
+      "question": "Explain the limitation associated with regression-pointwise-mean-ci.",
+      "reference_ids": [
+        "regression-pointwise-mean-ci"
+      ],
+      "required_points": [
+        "Distinguish pointwise from simultaneous coverage"
+      ],
+      "prohibited_inferences": [
+        "Claim all x values are simultaneously covered"
+      ]
+    },
+    {
+      "id": "coverage-06",
+      "question": "Explain the limitation associated with future-response-t-interval.",
+      "reference_ids": [
+        "future-response-t-interval"
+      ],
+      "required_points": [
+        "Include new-response residual variance"
+      ],
+      "prohibited_inferences": [
+        "Use fitted-mean uncertainty alone"
+      ]
+    },
+    {
+      "id": "coverage-07",
+      "question": "Explain the limitation associated with inverse-band-slope-condition.",
+      "reference_ids": [
+        "inverse-band-slope-condition"
+      ],
+      "required_points": [
+        "Interpret solver refusal as limited algorithm support"
+      ],
+      "prohibited_inferences": [
+        "Claim no mathematical confidence set exists"
+      ]
+    },
+    {
+      "id": "coverage-08",
+      "question": "Explain the limitation associated with inverse-range-intersection.",
+      "reference_ids": [
+        "inverse-range-intersection"
+      ],
+      "required_points": [
+        "Identify clipped endpoints and range limitation"
+      ],
+      "prohibited_inferences": [
+        "Present clipping as full uncertainty-free extrapolation"
+      ]
+    },
+    {
+      "id": "coverage-09",
+      "question": "Explain the limitation associated with pontius-upper-recomputed.",
+      "reference_ids": [
+        "pontius-upper-recomputed"
+      ],
+      "required_points": [
+        "Retain the publisher discrepancy and data origin"
+      ],
+      "prohibited_inferences": [
+        "Hide discrepancy by changing tolerance"
+      ]
+    },
+    {
+      "id": "coverage-10",
+      "question": "Explain the limitation associated with normal-mean-t-interval.",
+      "reference_ids": [
+        "normal-mean-t-interval"
+      ],
+      "required_points": [
+        "Identify shared-offset contribution not in repeated-reading standard error"
+      ],
+      "prohibited_inferences": [
+        "Use more replicates to erase shared error"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.active-priority-pointer/1",
+  "date": "2026-11-17",
+  "edition": "0.1.0",
+  "active_content_node": "software-design-patterns-atlas",
+  "original_priority": 11,
+  "manufacturing_priority_10_already_exists": true,
+  "next_content_domain": "distributed-systems-atlas",
+  "next_original_priority": 12,
+  "unregistered_original_domain_count": 19,
+  "original_30_domain_queue_unchanged": true,
+  "Bitwork_router_modified": false,
+  "desktop_transfer": false,
+  "external_power_loss_durability": "HOLD",
+  "independent_science_review": "HOLD"
+}

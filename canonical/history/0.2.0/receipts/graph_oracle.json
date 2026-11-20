@@ -1,0 +1,15 @@
+{
+  "result": "passed",
+  "exhaustive_forward_order_four_node_graphs": 64,
+  "four_node_comparisons": 1536,
+  "seeded_seven_node_comparisons": 1000,
+  "total_comparisons": 2536,
+  "seed": 121126,
+  "failures": [],
+  "oracle": "NetworkX is_d_separator",
+  "networkx_version": "3.6.1",
+  "local_algorithm": "ancestral_moral_graph",
+  "independent_human_review": false,
+  "causal_graph_truth_validated": false,
+  "python": "3.13.5"
+}

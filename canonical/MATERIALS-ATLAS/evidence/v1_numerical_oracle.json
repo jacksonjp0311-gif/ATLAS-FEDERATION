@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.materials-v1-oracle/1",
+  "status": "historical_source_receipt_redacted",
+  "comparisons": 818,
+  "max_scaled_error": null,
+  "max_abs_error": null,
+  "failed_cases": null,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "python": "3.13.5",
+  "random_seed": 11212026,
+  "independent_human_review": false,
+  "new_material_experiments": 0,
+  "comment": "Separate integration/linear-algebra/arithmetic comparisons; not independent physical validation or material certification.",
+  "public_derivative_note": "NIST SRD69 redistribution clearance pending; inputs and direct numerical outputs withheld from this public derivative."
+}

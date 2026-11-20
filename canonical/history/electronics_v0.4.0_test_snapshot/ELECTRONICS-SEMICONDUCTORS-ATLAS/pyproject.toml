@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "electronics-semiconductors-atlas-research"
+version = "0.4.0"
+requires-python = ">=3.10"
+description = "ATLAS FORGE offline electronics and semiconductor educational kernel"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["electronics_atlas*"]
+[tool.setuptools.package-data]
+electronics_atlas = ["resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

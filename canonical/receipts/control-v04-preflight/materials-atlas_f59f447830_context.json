@@ -1,0 +1,969 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "corrosion coupon uniform equivalent pitting",
+    "node_ids": [
+      "materials-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "80b82c0a5c691369f8c19d46e6a9be3049839e7a6a01172ea27985c663f3e319",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "materials-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "6152d4337a90f9e846bddf31313f643ce7f73c76834424bb4161d966b3f28b49",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Selected publisher HTML and text-extracted PDF scopes checked; two numerical reanalyses including one transcribed source dataset; independent human review, authenticated upstream file bytes, physical experiments, standards certification, live model and Bitwork testing absent."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "materials-atlas:corrosion-average-penetration",
+      "revision": "575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-rate-tool",
+      "revision": "81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-morphology",
+      "revision": "eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-uncertainty-qualifiers",
+      "revision": "a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59"
+    },
+    {
+      "record_id": "materials-atlas:specimen-representativeness",
+      "revision": "3a1aee459395139073c532dc0d8a33fa0fbc6634d171368ccb6f06f151a876d6"
+    },
+    {
+      "record_id": "materials-atlas:true-conversion",
+      "revision": "0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a"
+    },
+    {
+      "record_id": "materials-atlas:necking-limit",
+      "revision": "f7b5a5b9168df02612b192b8b22043b279b8a38d223b6d25aaae9cb7ec0ce44c"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "materials-atlas:corrosion-average-penetration",
+      "revision": "575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-morphology",
+      "revision": "eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-rate-tool",
+      "revision": "81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2"
+    },
+    {
+      "record_id": "materials-atlas:corrosion-uncertainty-qualifiers",
+      "revision": "a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59"
+    },
+    {
+      "record_id": "materials-atlas:necking-limit",
+      "revision": "f7b5a5b9168df02612b192b8b22043b279b8a38d223b6d25aaae9cb7ec0ce44c"
+    },
+    {
+      "record_id": "materials-atlas:source:ASTM-E8",
+      "revision": "079d36eff8cae5f45dcfcd56a942bc9ba95fd69d5dfbd91f1d1d3b8d637456b8"
+    },
+    {
+      "record_id": "materials-atlas:source:ASTM-E8-25",
+      "revision": "6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2"
+    },
+    {
+      "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+      "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3"
+    },
+    {
+      "record_id": "materials-atlas:specimen-representativeness",
+      "revision": "3a1aee459395139073c532dc0d8a33fa0fbc6634d171368ccb6f06f151a876d6"
+    },
+    {
+      "record_id": "materials-atlas:true-conversion",
+      "revision": "0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a"
+    },
+    {
+      "record_id": "materials-atlas:true-stress-equation",
+      "revision": "6955a6981dad1b4391567ec3dba7c04485d7d8972d496d20e99c9033606c62e8"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Uniform-equivalent loss, corrected W, constant effective exposed area, known density and time"
+          ],
+          "domain": "materials-science",
+          "equation": "rate_mm_per_y=87600*W/(A*rho*t)",
+          "limitations": [
+            "Not pit depth, localized maximum or equipment life; NIST PDF text inspected but screenshot unavailable"
+          ],
+          "tags": [
+            "chapter-25",
+            "edition-1.0.0",
+            "corrosion-average-penetration"
+          ],
+          "text": "Convert corrected mass loss W in g, exposed area A cm², density rho g/cm³ and time t hours to a 365-day average equivalent uniform mm/year.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+              "source_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "corrosion-average-penetration",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-25",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:corrosion-average-penetration",
+        "revision": "575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+            "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3"
+          }
+        ],
+        "status": "active",
+        "title": "Equivalent uniform penetration inferred from coupon mass loss",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Physical morphology must be measured separately"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Cannot conclude absence of crevice, galvanic or microbiologically influenced corrosion"
+          ],
+          "tags": [
+            "chapter-25",
+            "edition-1.0.0",
+            "corrosion-morphology"
+          ],
+          "text": "Distributed mass loss and deeply localized pitting can have the same total mass loss; rate arithmetic cannot identify the spatial damage field.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+              "source_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "corrosion-morphology",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-25",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:corrosion-morphology",
+        "revision": "eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+            "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3"
+          }
+        ],
+        "status": "active",
+        "title": "Average mass loss does not identify corrosion morphology",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "W≥0, area>0, t>0, rho>0 and documented units"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Synthetic case inputs; not qualified ASTM test execution; PDF visual inspection failure logged"
+          ],
+          "tags": [
+            "chapter-25",
+            "edition-1.0.0",
+            "corrosion-rate-tool"
+          ],
+          "text": "Compute average mass-loss-derived uniform-equivalent penetration and return explicit fields forbidding inference of maximum pits, service lifetime or field rate.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+              "source_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "corrosion-rate-tool",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-25",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:corrosion-rate-tool",
+        "revision": "81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+            "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3"
+          }
+        ],
+        "status": "active",
+        "title": "Calculate and label corrected coupon equivalent mass-loss rate",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference and educational calculation under stated model, sample and source conditions"
+          ],
+          "assumptions": [
+            "Corrected mass loss and actual test method"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No pit-depth or local service lifetime inference from average rate"
+          ],
+          "tags": [
+            "chapter-25",
+            "edition-1.0.0",
+            "corrosion-uncertainty-qualifiers"
+          ],
+          "text": "Blank corrections, density variation, exposure mask, cleaning-induced substrate loss and instrument calibration can dominate low-rate coupon estimates.",
+          "uncertainty": [
+            "No independent material-specimen uncertainty budget or physical validation from the arithmetic"
+          ],
+          "units": [
+            "Only quantities named in the record; no implicit material-state or numerical-unit conversion"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist review; model results are not new measurements"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher portion and/or original derivation, not full source certification",
+              "locator": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+              "source_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS"
+            }
+          ],
+          "origin": "source_scoped_method_or_original_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "corrosion-uncertainty-qualifiers",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_paraphrase_or_authored_derivation",
+          "chapter": "chapter-25",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:corrosion-uncertainty-qualifiers",
+        "revision": "a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+            "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3"
+          }
+        ],
+        "status": "active",
+        "title": "Coupon mass-loss inference needs cleaning and geometry uncertainty",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-16",
+            "0.2.0",
+            "necking-limit"
+          ],
+          "text": "The pre-necking engineering-to-true conversion requires uniform deformation; local necking invalidates direct use without area and triaxiality corrections.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed",
+              "source_id": "materials-atlas:source:ASTM-E8-25"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "necking-limit",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-16",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:necking-limit",
+        "revision": "f7b5a5b9168df02612b192b8b22043b279b8a38d223b6d25aaae9cb7ec0ce44c",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:ASTM-E8-25",
+            "revision": "6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2"
+          }
+        ],
+        "status": "active",
+        "title": "Uniform strain conversion stops at necking unless additional data justify it",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Educational/research use in the explicit model, condition, source or specimen context"
+          ],
+          "assumptions": [
+            "Declared source and context; no universal material identity or performance inference"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No independent human review, actual physical specimen analysis or design certification"
+          ],
+          "tags": [
+            "source"
+          ],
+          "text": "Source card: ASTM International. Public significance/scope excerpt; specimen representativeness limitations; no full standard access.",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist source audit.",
+            "No new experimental observation or external simulation."
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "source_navigation_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "source:ASTM-E8",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "source",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Public significance/scope excerpt; specimen representativeness limitations; no full standard access.",
+          "source_bytes_archived": false,
+          "source_release": "ASTM-E8",
+          "source_terms": "no copyrighted standard text bundled",
+          "url": "https://store.astm.org/standards/e8_e8m"
+        },
+        "record_id": "materials-atlas:source:ASTM-E8",
+        "revision": "079d36eff8cae5f45dcfcd56a942bc9ba95fd69d5dfbd91f1d1d3b8d637456b8",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "E8/E8M-25 tension testing metallic materials",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Educational/research use in the explicit model, condition, source or specimen context"
+          ],
+          "assumptions": [
+            "Declared source and context; no universal material identity or performance inference"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Source was checked only in the stated public HTML/text portion; no independent human review",
+            "A published table or fitted model does not certify a new specimen"
+          ],
+          "tags": [
+            "source",
+            "edition-0.2.0"
+          ],
+          "text": "Source navigation: Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist source audit.",
+            "No new experimental observation or external simulation."
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "source_navigation_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "source:ASTM-E8-25",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "source",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed",
+          "source_bytes_archived": false,
+          "source_release": "ASTM-E8-25",
+          "source_terms": "attributed publisher data link; no original document mirrored",
+          "url": "https://store.astm.org/standards/e8_e8m"
+        },
+        "record_id": "materials-atlas:source:ASTM-E8-25",
+        "revision": "6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "ASTM E8/E8M-25 public tensile test scope",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Source locator and provenance; not certification"
+          ],
+          "assumptions": [
+            "Source interpretation constrained to access record"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Publisher text extraction only. PDF page visual verification and full ASTM standards inspection not completed.",
+            "Only the stated inspected scope is included; no full third-party text mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-1.0.0"
+          ],
+          "text": "Source navigation: Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Publisher text extraction only. PDF page visual verification and full ASTM standards inspection not completed."
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "source:NIST-CORROSION-MASSLOSS",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "source",
+          "created_at": "2026-11-12",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "inspected_scope": "Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss",
+          "source_bytes_archived": false,
+          "source_release": "NIST-CORROSION-MASSLOSS",
+          "source_terms": "link only, limited equation/units; no licensed ASTM text mirrored",
+          "url": "https://www.nist.gov/system/files/documents/mml/acmd/2013-07-22-Corrosion-of-Copper-and-Steel-Alloys-Sowards.pdf"
+        },
+        "record_id": "materials-atlas:source:NIST-CORROSION-MASSLOSS",
+        "revision": "2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NIST-hosted Sowards and Mansfield corrosion presentation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Educational/research use in the explicit model, condition, source or specimen context"
+          ],
+          "assumptions": [
+            "Applicable only under the specified material model, specimen conditions, preparation and measurement basis"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "Does not establish real-world material identity, sample behavior, safety or compliance",
+            "Consult linked sources, declared assumptions and original test methodology"
+          ],
+          "tags": [
+            "chapter-07"
+          ],
+          "text": "A coupon taken from selected material may not capture local geometry, residual stress, processing gradient or in-service environment.",
+          "uncertainty": [
+            "No inferred experimental error bars, material property distribution or sample representativeness"
+          ],
+          "units": [
+            "Compatible user-provided units; material-specific numerical case units are stated within each example"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent materials scientist source audit.",
+            "No new experimental observation or external simulation."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected publisher web portion only; bounded paraphrase and original teaching derivation, not an independently validated scientific conclusion.",
+              "locator": "Public significance/scope excerpt; specimen representativeness limitations; no full standard access.",
+              "source_id": "materials-atlas:source:ASTM-E8"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "specimen-representativeness",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_reference_or_original_teaching",
+          "chapter": "chapter-07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:specimen-representativeness",
+        "revision": "3a1aee459395139073c532dc0d8a33fa0fbc6634d171368ccb6f06f151a876d6",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:ASTM-E8",
+            "revision": "079d36eff8cae5f45dcfcd56a942bc9ba95fd69d5dfbd91f1d1d3b8d637456b8"
+          }
+        ],
+        "status": "active",
+        "title": "Test coupon need not represent full component",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-16",
+            "0.2.0",
+            "true-conversion"
+          ],
+          "text": "Refuses conversion without stated uniform deformation assumption and makes no yield/ultimate/failure claim.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed",
+              "source_id": "materials-atlas:source:ASTM-E8-25"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "true-conversion",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-16",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:true-conversion",
+        "revision": "0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:ASTM-E8-25",
+            "revision": "6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2"
+          }
+        ],
+        "status": "active",
+        "title": "Convert tensile point only in uniform pre-necking regime",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded materials science research and educational numerical analysis; not a certification service"
+          ],
+          "assumptions": [
+            "Source conditions, material/process identity and model validity must be established for the intended application"
+          ],
+          "domain": "materials-science",
+          "equation": "σ_true=σ_eng*(1+e); ε_true=ln(1+e)",
+          "limitations": [
+            "No independent physical measurement or design qualification performed here",
+            "Method use is restricted to the stated evidence, model and conditions"
+          ],
+          "tags": [
+            "chapter-16",
+            "0.2.0",
+            "true-stress-equation"
+          ],
+          "text": "With uniform deformation and approximate plastic incompressibility, sigma_true=sigma_eng(1+e), epsilon_true=ln(1+e); outside those assumptions, refuse.",
+          "uncertainty": [
+            "Source observation uncertainty not available unless explicitly published and verified",
+            "Numerical agreement does not establish physical measurement uncertainty"
+          ],
+          "units": [
+            "Only the explicitly named input/output units apply; no unstated SI conversions"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently qualified materials scientist review",
+            "No new physical experiment; any source data are published values or local transcription"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review",
+              "locator": "Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed",
+              "source_id": "materials-atlas:source:ASTM-E8-25"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "assistant_checked_public_source_scope_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "materials-atlas",
+        "original_id": "true-stress-equation",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted research drafting",
+          "basis": "bounded_source_or_original_model",
+          "chapter": "chapter-16",
+          "created_at": "2026-11-12",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "materials-atlas:true-stress-equation",
+        "revision": "6955a6981dad1b4391567ec3dba7c04485d7d8972d496d20e99c9033606c62e8",
+        "rights": {
+          "note": "New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "materials-atlas:source:ASTM-E8-25",
+            "revision": "6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2"
+          }
+        ],
+        "status": "active",
+        "title": "Pre-necking engineering to true stress–strain conversion",
+        "type": "equation"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "materials-atlas:corrosion-rate-tool",
+          "revision": "81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2"
+        },
+        "provenance": {
+          "basis": "Authored method dependency or qualification, not discovered physical effect",
+          "independent_review": false,
+          "origin": "authored_scoped_dependency"
+        },
+        "relation_id": "materials-atlas:corrosion-rate-tool:depends_on:corrosion-average-penetration",
+        "revision": "e046c1050fb4a38030d827f13dd8f5eb71b8b85be48d9029bd62f0330aeceac9",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:corrosion-average-penetration",
+          "revision": "575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "materials-atlas:corrosion-rate-tool",
+          "revision": "81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2"
+        },
+        "provenance": {
+          "basis": "Authored method dependency or qualification, not discovered physical effect",
+          "independent_review": false,
+          "origin": "authored_scoped_dependency"
+        },
+        "relation_id": "materials-atlas:corrosion-rate-tool:depends_on:corrosion-morphology",
+        "revision": "1398fe0737d3afed0cc86a435ac74024a344b308d87567273a0541640563d56e",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:corrosion-morphology",
+          "revision": "eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "materials-atlas:corrosion-uncertainty-qualifiers",
+          "revision": "a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59"
+        },
+        "provenance": {
+          "basis": "Authored method dependency or qualification, not discovered physical effect",
+          "independent_review": false,
+          "origin": "authored_scoped_dependency"
+        },
+        "relation_id": "materials-atlas:corrosion-uncertainty-qualifiers:depends_on:corrosion-average-penetration",
+        "revision": "6a9460beb4e970eee2d2e511e7e04e4ef06ba350aa500abe5510f09638740316",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:corrosion-average-penetration",
+          "revision": "575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "materials-atlas:true-conversion",
+          "revision": "0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a"
+        },
+        "provenance": {
+          "basis": "Domain-method dependence, not experimentally discovered physical relationship",
+          "independent_review": false,
+          "origin": "authored_topic_dependency"
+        },
+        "relation_id": "materials-atlas:true-conversion:depends_on:true-stress-equation",
+        "revision": "ad861b33b62e8294cd88b8debb7e9f203aa5ce1b986d7c3b416bb63bd19e8d7d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "materials-atlas:true-stress-equation",
+          "revision": "6955a6981dad1b4391567ec3dba7c04485d7d8972d496d20e99c9033606c62e8"
+        },
+        "type": "depends_on"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Uniform-equivalent loss, corrected W, constant effective exposed area, known density and time\"],\"domain\":\"materials-science\",\"equation\":\"rate_mm_per_y=87600*W/(A*rho*t)\",\"limitations\":[\"Not pit depth, localized maximum or equipment life; NIST PDF text inspected but screenshot unavailable\"],\"tags\":[\"chapter-25\",\"edition-1.0.0\",\"corrosion-average-penetration\"],\"text\":\"Convert corrected mass loss W in g, exposed area A cm², density rho g/cm³ and time t hours to a 365-day average equivalent uniform mm/year.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"source_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"corrosion-average-penetration\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-25\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:corrosion-average-penetration\",\"revision\":\"575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\",\"revision\":\"2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3\"}],\"status\":\"active\",\"title\":\"Equivalent uniform penetration inferred from coupon mass loss\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Physical morphology must be measured separately\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Cannot conclude absence of crevice, galvanic or microbiologically influenced corrosion\"],\"tags\":[\"chapter-25\",\"edition-1.0.0\",\"corrosion-morphology\"],\"text\":\"Distributed mass loss and deeply localized pitting can have the same total mass loss; rate arithmetic cannot identify the spatial damage field.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"source_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"corrosion-morphology\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-25\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:corrosion-morphology\",\"revision\":\"eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\",\"revision\":\"2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3\"}],\"status\":\"active\",\"title\":\"Average mass loss does not identify corrosion morphology\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"W≥0, area>0, t>0, rho>0 and documented units\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Synthetic case inputs; not qualified ASTM test execution; PDF visual inspection failure logged\"],\"tags\":[\"chapter-25\",\"edition-1.0.0\",\"corrosion-rate-tool\"],\"text\":\"Compute average mass-loss-derived uniform-equivalent penetration and return explicit fields forbidding inference of maximum pits, service lifetime or field rate.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"source_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"corrosion-rate-tool\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-25\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:corrosion-rate-tool\",\"revision\":\"81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\",\"revision\":\"2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3\"}],\"status\":\"active\",\"title\":\"Calculate and label corrected coupon equivalent mass-loss rate\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Reference and educational calculation under stated model, sample and source conditions\"],\"assumptions\":[\"Corrected mass loss and actual test method\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No pit-depth or local service lifetime inference from average rate\"],\"tags\":[\"chapter-25\",\"edition-1.0.0\",\"corrosion-uncertainty-qualifiers\"],\"text\":\"Blank corrections, density variation, exposure mask, cleaning-induced substrate loss and instrument calibration can dominate low-rate coupon estimates.\",\"uncertainty\":[\"No independent material-specimen uncertainty budget or physical validation from the arithmetic\"],\"units\":[\"Only quantities named in the record; no implicit material-state or numerical-unit conversion\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist review; model results are not new measurements\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher portion and/or original derivation, not full source certification\",\"locator\":\"Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"source_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\"}],\"origin\":\"source_scoped_method_or_original_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"corrosion-uncertainty-qualifiers\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_paraphrase_or_authored_derivation\",\"chapter\":\"chapter-25\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:corrosion-uncertainty-qualifiers\",\"revision\":\"a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\",\"revision\":\"2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3\"}],\"status\":\"active\",\"title\":\"Coupon mass-loss inference needs cleaning and geometry uncertainty\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-16\",\"0.2.0\",\"necking-limit\"],\"text\":\"The pre-necking engineering-to-true conversion requires uniform deformation; local necking invalidates direct use without area and triaxiality corrections.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed\",\"source_id\":\"materials-atlas:source:ASTM-E8-25\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"necking-limit\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-16\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:necking-limit\",\"revision\":\"f7b5a5b9168df02612b192b8b22043b279b8a38d223b6d25aaae9cb7ec0ce44c\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:ASTM-E8-25\",\"revision\":\"6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2\"}],\"status\":\"active\",\"title\":\"Uniform strain conversion stops at necking unless additional data justify it\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Educational/research use in the explicit model, condition, source or specimen context\"],\"assumptions\":[\"Declared source and context; no universal material identity or performance inference\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No independent human review, actual physical specimen analysis or design certification\"],\"tags\":[\"source\"],\"text\":\"Source card: ASTM International. Public significance/scope excerpt; specimen representativeness limitations; no full standard access.\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist source audit.\",\"No new experimental observation or external simulation.\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"source_navigation_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"source:ASTM-E8\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"source\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Public significance/scope excerpt; specimen representativeness limitations; no full standard access.\",\"source_bytes_archived\":false,\"source_release\":\"ASTM-E8\",\"source_terms\":\"no copyrighted standard text bundled\",\"url\":\"https://store.astm.org/standards/e8_e8m\"},\"record_id\":\"materials-atlas:source:ASTM-E8\",\"revision\":\"079d36eff8cae5f45dcfcd56a942bc9ba95fd69d5dfbd91f1d1d3b8d637456b8\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"E8/E8M-25 tension testing metallic materials\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Educational/research use in the explicit model, condition, source or specimen context\"],\"assumptions\":[\"Declared source and context; no universal material identity or performance inference\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Source was checked only in the stated public HTML/text portion; no independent human review\",\"A published table or fitted model does not certify a new specimen\"],\"tags\":[\"source\",\"edition-0.2.0\"],\"text\":\"Source navigation: Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist source audit.\",\"No new experimental observation or external simulation.\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"source_navigation_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"source:ASTM-E8-25\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"source\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed\",\"source_bytes_archived\":false,\"source_release\":\"ASTM-E8-25\",\"source_terms\":\"attributed publisher data link; no original document mirrored\",\"url\":\"https://store.astm.org/standards/e8_e8m\"},\"record_id\":\"materials-atlas:source:ASTM-E8-25\",\"revision\":\"6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"ASTM E8/E8M-25 public tensile test scope\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Source locator and provenance; not certification\"],\"assumptions\":[\"Source interpretation constrained to access record\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Publisher text extraction only. PDF page visual verification and full ASTM standards inspection not completed.\",\"Only the stated inspected scope is included; no full third-party text mirrored\"],\"tags\":[\"source\",\"edition-1.0.0\"],\"text\":\"Source navigation: Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"Publisher text extraction only. PDF page visual verification and full ASTM standards inspection not completed.\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"source:NIST-CORROSION-MASSLOSS\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"source\",\"created_at\":\"2026-11-12\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"inspected_scope\":\"Text-extracted corrosion-rate section referencing ASTM G31; W,A,T,D and 8.76e4 mm/year conversion; screenshot request failed with cache miss\",\"source_bytes_archived\":false,\"source_release\":\"NIST-CORROSION-MASSLOSS\",\"source_terms\":\"link only, limited equation/units; no licensed ASTM text mirrored\",\"url\":\"https://www.nist.gov/system/files/documents/mml/acmd/2013-07-22-Corrosion-of-Copper-and-Steel-Alloys-Sowards.pdf\"},\"record_id\":\"materials-atlas:source:NIST-CORROSION-MASSLOSS\",\"revision\":\"2e4ce9fc81e3ed47302edc0b040f9f2a27f15e583bea3ffabf4296555d31ddd3\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NIST-hosted Sowards and Mansfield corrosion presentation\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Educational/research use in the explicit model, condition, source or specimen context\"],\"assumptions\":[\"Applicable only under the specified material model, specimen conditions, preparation and measurement basis\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"Does not establish real-world material identity, sample behavior, safety or compliance\",\"Consult linked sources, declared assumptions and original test methodology\"],\"tags\":[\"chapter-07\"],\"text\":\"A coupon taken from selected material may not capture local geometry, residual stress, processing gradient or in-service environment.\",\"uncertainty\":[\"No inferred experimental error bars, material property distribution or sample representativeness\"],\"units\":[\"Compatible user-provided units; material-specific numerical case units are stated within each example\"]},\"evidence\":{\"gaps\":[\"No independent materials scientist source audit.\",\"No new experimental observation or external simulation.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected publisher web portion only; bounded paraphrase and original teaching derivation, not an independently validated scientific conclusion.\",\"locator\":\"Public significance/scope excerpt; specimen representativeness limitations; no full standard access.\",\"source_id\":\"materials-atlas:source:ASTM-E8\"}],\"origin\":\"editorial_reference\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"specimen-representativeness\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_reference_or_original_teaching\",\"chapter\":\"chapter-07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:specimen-representativeness\",\"revision\":\"3a1aee459395139073c532dc0d8a33fa0fbc6634d171368ccb6f06f151a876d6\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:ASTM-E8\",\"revision\":\"079d36eff8cae5f45dcfcd56a942bc9ba95fd69d5dfbd91f1d1d3b8d637456b8\"}],\"status\":\"active\",\"title\":\"Test coupon need not represent full component\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-16\",\"0.2.0\",\"true-conversion\"],\"text\":\"Refuses conversion without stated uniform deformation assumption and makes no yield/ultimate/failure claim.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed\",\"source_id\":\"materials-atlas:source:ASTM-E8-25\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"true-conversion\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-16\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:true-conversion\",\"revision\":\"0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:ASTM-E8-25\",\"revision\":\"6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2\"}],\"status\":\"active\",\"title\":\"Convert tensile point only in uniform pre-necking regime\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bounded materials science research and educational numerical analysis; not a certification service\"],\"assumptions\":[\"Source conditions, material/process identity and model validity must be established for the intended application\"],\"domain\":\"materials-science\",\"equation\":\"σ_true=σ_eng*(1+e); ε_true=ln(1+e)\",\"limitations\":[\"No independent physical measurement or design qualification performed here\",\"Method use is restricted to the stated evidence, model and conditions\"],\"tags\":[\"chapter-16\",\"0.2.0\",\"true-stress-equation\"],\"text\":\"With uniform deformation and approximate plastic incompressibility, sigma_true=sigma_eng(1+e), epsilon_true=ln(1+e); outside those assumptions, refuse.\",\"uncertainty\":[\"Source observation uncertainty not available unless explicitly published and verified\",\"Numerical agreement does not establish physical measurement uncertainty\"],\"units\":[\"Only the explicitly named input/output units apply; no unstated SI conversions\"]},\"evidence\":{\"gaps\":[\"No independently qualified materials scientist review\",\"No new physical experiment; any source data are published values or local transcription\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public HTML/publisher numerical table, not an independent laboratory or full restricted-text review\",\"locator\":\"Public scope, room-temperature tests, reported properties and specimen representativeness; full licensed standard not reviewed\",\"source_id\":\"materials-atlas:source:ASTM-E8-25\"}],\"origin\":\"editorial_reference\",\"review_status\":\"assistant_checked_public_source_scope_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"materials-atlas\",\"original_id\":\"true-stress-equation\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted research drafting\",\"basis\":\"bounded_source_or_original_model\",\"chapter\":\"chapter-16\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"materials-atlas:true-stress-equation\",\"revision\":\"6955a6981dad1b4391567ec3dba7c04485d7d8972d496d20e99c9033606c62e8\",\"rights\":{\"note\":\"New bounded paraphrase and original educational derivation. Source rights external; linked publications and restricted standards not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"materials-atlas:source:ASTM-E8-25\",\"revision\":\"6c456abf400a49408da18cd5f312c0dc662a27f516b12a2b125db3b6d8e388e2\"}],\"status\":\"active\",\"title\":\"Pre-necking engineering to true stress–strain conversion\",\"type\":\"equation\"}],\"relations\":[{\"from\":{\"record_id\":\"materials-atlas:corrosion-rate-tool\",\"revision\":\"81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2\"},\"provenance\":{\"basis\":\"Authored method dependency or qualification, not discovered physical effect\",\"independent_review\":false,\"origin\":\"authored_scoped_dependency\"},\"relation_id\":\"materials-atlas:corrosion-rate-tool:depends_on:corrosion-average-penetration\",\"revision\":\"e046c1050fb4a38030d827f13dd8f5eb71b8b85be48d9029bd62f0330aeceac9\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:corrosion-average-penetration\",\"revision\":\"575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"materials-atlas:corrosion-rate-tool\",\"revision\":\"81d1aa078f87388b2f1d861b32e18806064985490ffd54c96d1642f71fc5dfa2\"},\"provenance\":{\"basis\":\"Authored method dependency or qualification, not discovered physical effect\",\"independent_review\":false,\"origin\":\"authored_scoped_dependency\"},\"relation_id\":\"materials-atlas:corrosion-rate-tool:depends_on:corrosion-morphology\",\"revision\":\"1398fe0737d3afed0cc86a435ac74024a344b308d87567273a0541640563d56e\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:corrosion-morphology\",\"revision\":\"eb91d5dd5c4721efbd99543f503db25b38cc13cf6db43a4244e6c13cb66a0bee\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"materials-atlas:corrosion-uncertainty-qualifiers\",\"revision\":\"a2cdeec9d6b83d9f8d14238256eb919546639404ed21ad97d2eee10b150d8e59\"},\"provenance\":{\"basis\":\"Authored method dependency or qualification, not discovered physical effect\",\"independent_review\":false,\"origin\":\"authored_scoped_dependency\"},\"relation_id\":\"materials-atlas:corrosion-uncertainty-qualifiers:depends_on:corrosion-average-penetration\",\"revision\":\"6a9460beb4e970eee2d2e511e7e04e4ef06ba350aa500abe5510f09638740316\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:corrosion-average-penetration\",\"revision\":\"575a3befa86d5e9edac7ccf82b5d475892dfddca29bcad69c4209fb16cbec7e9\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"materials-atlas:true-conversion\",\"revision\":\"0f7a92e11de63d19d22366de46b3d7ea5cf0bc2501123fe21430ed382244c48a\"},\"provenance\":{\"basis\":\"Domain-method dependence, not experimentally discovered physical relationship\",\"independent_review\":false,\"origin\":\"authored_topic_dependency\"},\"relation_id\":\"materials-atlas:true-conversion:depends_on:true-stress-equation\",\"revision\":\"ad861b33b62e8294cd88b8debb7e9f203aa5ce1b986d7c3b416bb63bd19e8d7d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"materials-atlas:true-stress-equation\",\"revision\":\"6955a6981dad1b4391567ec3dba7c04485d7d8972d496d20e99c9033606c62e8\"},\"type\":\"depends_on\"}]}",
+  "context_bytes": 28959,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "materials-atlas:weakest-link-model",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "4b5b6fe6b412bc0214be62fef0ac97f9faf18cf3426306426c7938bba0fc19b5"
+}

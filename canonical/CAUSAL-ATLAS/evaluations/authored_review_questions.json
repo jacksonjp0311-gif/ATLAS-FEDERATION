@@ -1,0 +1,53 @@
+{
+  "kind": "authored_review_rubric_not_heldout",
+  "items": [
+    {
+      "question": "What should be defined before an estimator?",
+      "expected_record_id": "causal-atlas:estimand"
+    },
+    {
+      "question": "When does standardization require treatment support?",
+      "expected_record_id": "causal-atlas:positivity"
+    },
+    {
+      "question": "Can a selected common effect create association?",
+      "expected_record_id": "causal-atlas:collider"
+    },
+    {
+      "question": "Why is earlier measurement not sufficient for adjustment?",
+      "expected_record_id": "causal-atlas:pretreatment"
+    },
+    {
+      "question": "What does no back-door set establish?",
+      "expected_record_id": "causal-atlas:no-set"
+    },
+    {
+      "question": "How should comparison baseline be aligned?",
+      "expected_record_id": "causal-atlas:time-zero"
+    },
+    {
+      "question": "Does a huge database validate outcome labels?",
+      "expected_record_id": "causal-atlas:data-validation"
+    },
+    {
+      "question": "What is changed by a do intervention?",
+      "expected_record_id": "causal-atlas:factorization"
+    },
+    {
+      "question": "Does controlling a mediator preserve the total effect?",
+      "expected_record_id": "causal-atlas:mediator"
+    },
+    {
+      "question": "Does a blank treatment cell prove treatment impossible?",
+      "expected_record_id": "causal-atlas:empty-strata"
+    },
+    {
+      "question": "Does regression alone identify a causal target?",
+      "expected_record_id": "causal-atlas:identification"
+    },
+    {
+      "question": "What assumptions are encoded by a DAG?",
+      "expected_record_id": "causal-atlas:dag-assumptions"
+    }
+  ]
+}

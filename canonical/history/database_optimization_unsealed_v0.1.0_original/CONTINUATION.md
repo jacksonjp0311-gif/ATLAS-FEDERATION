@@ -1,0 +1,10 @@
+# ATLAS FORGE single-federation continuation — stage #17
+
+1. The authoritative checkpoint remains `/ATLAS FORGE/CURRENT_CHECKPOINT.json` → `OS_Internals_v1.0.0`, full reconstructed archive SHA-256 `0571f1376f380d90090890ae65c39c2f6a2085725038f32810d4992f00fef93f` (21 nodes, 3,817 records, 3,029 relations, historical 3,189 tests). **Do not replace this pointer with the staged package.**
+2. Priority #16 `network-stacks-atlas`: unsealed local recovery package exists; run its standalone tests and independent oracle, then integrate it into the original Atlas schema and seal it with source/fresh archive regression from exact OS predecessor; do not claim v1 acceptance without missing transport-state and interoperability work.
+3. Priority #17 `database-optimization-atlas`: this directory contains 14 chapters, executable Python teaching models, 30 unit tests, an independent finite oracle, 65 exact-revision domain records, 63 exact-revision relationships including verified predecessor anchors, and eight official documentation bibliography pointers. Source is staged **before** canonical priority #16 acceptance only to reduce lost work; don't reorder or rewrite the immutable original 30-domain queue.
+4. Run `python -m unittest -q test_db_reference.py`, `python independent_oracle.py`, `python verify_package.py`; independently check SHA-256 of the archive and every listed member. Treat all reference cost metrics as synthetic units.
+5. After #16 seals: integrate #17 as the **next** original node without deleting historical records or changing old revisions. Enforce shared schema and exact dependencies; source and fresh full federation regressions; deterministic incremental patch from the exact verified predecessor; fresh restoration with full archive SHA-256; Library upload/readback; only then advance authoritative pointers.
+6. Continue original queue with Compiler Design #18. All historic evidence and source/rights holds persist. Bitwork routing remains deferred until sufficient domain knowledge is built.
+
+This staged directory is a **working research increment**, not an alternative scientific federation or a substitute for an archived release.

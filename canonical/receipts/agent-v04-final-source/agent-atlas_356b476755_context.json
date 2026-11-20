@@ -1,0 +1,947 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "repeated task evaluations pass all",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "76ee5a78fb2c0f1f75d9151d05fab81e190c7bb1db0658de3a9a15e270424720",
+  "registry_revision": "094033ece2ccfca0f9d7c088dc3f4f6fe8253c7dbff3a2f60e67dea8db0706e4",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "ab05f7bfde5622959ad27d86caf1b0575524c0ed9c11a2746659bd7fc5ff7b83",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-scoped publisher abstracts/docs; original offline bounded methods with 9 synthetic casebook scenarios. No original MAST row, live agent run, independent human review or authenticated provider effects."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:pass-all-vs-pass-any",
+      "revision": "e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4"
+    },
+    {
+      "record_id": "agent-atlas:pass-all",
+      "revision": "e8116b4c6de13ea622ccfd933dc83e3d0e76a946f532fea6dc344450fc21a4f4"
+    },
+    {
+      "record_id": "agent-atlas:repeatability-not-proof",
+      "revision": "ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc"
+    },
+    {
+      "record_id": "agent-atlas:pass-all-vs-any",
+      "revision": "288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70"
+    },
+    {
+      "record_id": "agent-atlas:repeat-task-grid",
+      "revision": "888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f"
+    },
+    {
+      "record_id": "agent-atlas:chapter-08",
+      "revision": "a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:chapter-08",
+      "revision": "a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5"
+    },
+    {
+      "record_id": "agent-atlas:iid-extrapolation-warning",
+      "revision": "1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f"
+    },
+    {
+      "record_id": "agent-atlas:pass-all",
+      "revision": "e8116b4c6de13ea622ccfd933dc83e3d0e76a946f532fea6dc344450fc21a4f4"
+    },
+    {
+      "record_id": "agent-atlas:pass-all-vs-any",
+      "revision": "288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70"
+    },
+    {
+      "record_id": "agent-atlas:pass-all-vs-pass-any",
+      "revision": "e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4"
+    },
+    {
+      "record_id": "agent-atlas:repeat-task-grid",
+      "revision": "888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f"
+    },
+    {
+      "record_id": "agent-atlas:repeatability-not-proof",
+      "revision": "ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc"
+    },
+    {
+      "record_id": "agent-atlas:source:AGENTBENCH-2024",
+      "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b"
+    },
+    {
+      "record_id": "agent-atlas:source:SWEBENCH-2024",
+      "revision": "77f877fb3616a223986ff96762d8406025113646db1f7344a96d7fdfba9ac4b6"
+    },
+    {
+      "record_id": "agent-atlas:source:TAUBENCH-2024",
+      "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Original scientific explanation, not reprinted third-party text",
+            "No direct empirical model evaluation or independent review; applies only with stated assumptions"
+          ],
+          "tags": [
+            "chapter-08",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "# 08. Evaluate state success and repeated-trial reliability, not only the final prose\n\nA reliable evaluation specifies a task distribution, environment version, authorized action set, expected final state, budget and failure policy. An agent can produce a plausible textual conclusion without completing the state transition; conversely, it may complete an operation but omit a convincing verbal explanation. Both behavior and state should be inspected. SWE-bench evaluates code modifications against repository test environments; AgentBench tests multi-step interactive settings; τ-bench uses end-state comparison and repeated-trial reliability. These benchmarks are different and must not be merged into one metric without equal protocols.\n\nFor a task repeated k times, **pass@k** commonly denotes at least one successful attempt under a specified sampling procedure; **pass^k** in τ-bench emphasizes consistency across repeated interactions. They measure different questions. In this Atlas a task-level Boolean trial matrix yields `observed_pass_all_k` (fraction of tasks passing every repeat) and `observed_pass_any_k` (fraction succeeding at least once). The theoretical `p^k` estimate requires independent identically distributed successes and is included only as a transparent model extrapolation. Correlated failures, shared stale context or deterministic action policies violate independence.\n\nA 2/3 per-trial success rate does not mean a 2/3 chance all three attempts succeed. Under independence, a particular task's all-three probability would be `(2/3)^3`. But in a real agent evaluation, some tasks can be impossible and others trivial, so averaging across tasks then raising to k is not equivalent to the mean of task-specific probabilities raised to k. This is a scientific-statistics nuance, not an opportunity to inflate reliability claims.\n\n**Evaluation contract:** predefine tasks without leakage, run multiple seeds, confirm state-based grading, record per-tool call traces and resource usage, include negative control tasks, count interventions and partial completions, and disclose censoring and token/time thresholds. Report both absolute success and cost-normalized success. Do not claim Agent Atlas improves any model without running a real held-out evaluation.\n\n**Sources:** [TAUBENCH-2024](https://arxiv.org/abs/2406.12045), [SWEBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html), [AGENTBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html).\n",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run",
+              "source_id": "agent-atlas:source:SWEBENCH-2024"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Published abstract on interactive agent environment evaluation; benchmarks evolve",
+              "source_id": "agent-atlas:source:AGENTBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "chapter-08",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-08",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:chapter-08",
+        "revision": "a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          },
+          {
+            "record_id": "agent-atlas:source:SWEBENCH-2024",
+            "revision": "77f877fb3616a223986ff96762d8406025113646db1f7344a96d7fdfba9ac4b6"
+          },
+          {
+            "record_id": "agent-atlas:source:AGENTBENCH-2024",
+            "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b"
+          }
+        ],
+        "status": "active",
+        "title": "08. Evaluate state success and repeated-trial reliability, not only the final prose",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-08",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "Computing pooled per-trial p then raising it to k is not an empirical reliability interval and can mislead under heterogeneous tasks.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "iid-extrapolation-warning",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-08",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:iid-extrapolation-warning",
+        "revision": "1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          }
+        ],
+        "status": "active",
+        "title": "p^k extrapolation needs independence assumptions",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "pass_all(k)=(1/n)Σ_i prod_j success_ij; pass_any(k)=(1/n)Σ_i [max_j success_ij]",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-08",
+            "equation",
+            "agent-0.1.0"
+          ],
+          "text": "Descriptive finite trial success fractions, not exact probability or automatic confidence interval.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "pass-all",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-08",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:pass-all",
+        "revision": "e8116b4c6de13ea622ccfd933dc83e3d0e76a946f532fea6dc344450fc21a4f4",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          }
+        ],
+        "status": "active",
+        "title": "Repeated-trial pass-all and pass-any",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-08",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "One successful attempt of k shows discoverability; consistent success over k measures reliability; both require declared tasks and repetitions.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "pass-all-vs-any",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-08",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:pass-all-vs-any",
+        "revision": "288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          }
+        ],
+        "status": "active",
+        "title": "Pass-all-k and pass-any-k are different reliability estimands",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "pass_all=product_j success_j; pass_any=1-product_j(1-success_j)",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-26",
+            "equation"
+          ],
+          "text": "For each task, pass_all=product of binary trial successes and pass_any=1-product(1-success). These measures reflect different operational reliability goals.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "pass-all-vs-pass-any",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-26",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:pass-all-vs-pass-any",
+        "revision": "e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          }
+        ],
+        "status": "active",
+        "title": "Pass-all across repeated trials differs from pass-any",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-26",
+            "method"
+          ],
+          "text": "A paired reliability panel must enforce the same task version, evaluator version, split and repetition indices in both arms. Missing/duplicate trials are not automatically imputed.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "repeat-task-grid",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-26",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:repeat-task-grid",
+        "revision": "888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          }
+        ],
+        "status": "active",
+        "title": "Repeated trials need complete task-by-arm-by-repetition grids",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent-science reference and caller-supplied structured research models"
+          ],
+          "assumptions": [
+            "Input state, evidence origin and source schema are explicitly declared"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No agent deployment, provider effects or independent task correctness established",
+            "Published source docs and author-made numerical examples cannot certify generalization"
+          ],
+          "tags": [
+            "agent-0.3.0",
+            "chapter-26",
+            "concept"
+          ],
+          "text": "Even when an observed candidate pass-all proportion exceeds baseline on authored outcomes, validity requires representative tasks, verified outcomes, cost, replicates, leakage controls and an uncertainty design.",
+          "uncertainty": [
+            "Unknown actual source selection, judge reliability and task outcome validity"
+          ],
+          "units": [
+            "Time and costs only as explicitly declared in input; no implicit across-run normalization"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No original MAST data rows or real model invocations during this release",
+            "No independent scientific reviewer"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+              "source_id": "agent-atlas:source:TAUBENCH-2024"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public documentation, not full independent experimental audit",
+              "locator": "Published abstract on interactive agent environment evaluation; benchmarks evolve",
+              "source_id": "agent-atlas:source:AGENTBENCH-2024"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "repeatability-not-proof",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "chapter": "chapter-26",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:repeatability-not-proof",
+        "revision": "ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:TAUBENCH-2024",
+            "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33"
+          },
+          {
+            "record_id": "agent-atlas:source:AGENTBENCH-2024",
+            "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b"
+          }
+        ],
+        "status": "active",
+        "title": "A paired constructed repeated-trial table is not a model improvement",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Liu et al. (ICLR 2024). Inspected scope: Published abstract on interactive agent environment evaluation; benchmarks evolve. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:AGENTBENCH-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Published abstract on interactive agent environment evaluation; benchmarks evolve",
+          "publication": "ICLR 2024",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "AgentBench: Evaluating LLMs as Agents",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html"
+        },
+        "record_id": "agent-atlas:source:AGENTBENCH-2024",
+        "revision": "2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "AgentBench: Evaluating LLMs as Agents",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Jimenez et al. (ICLR 2024). Inspected scope: Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:SWEBENCH-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run",
+          "publication": "ICLR 2024",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "SWE-bench: Can Language Models Resolve Real-world GitHub Issues?",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html"
+        },
+        "record_id": "agent-atlas:source:SWEBENCH-2024",
+        "revision": "77f877fb3616a223986ff96762d8406025113646db1f7344a96d7fdfba9ac4b6",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "SWE-bench: Can Language Models Resolve Real-world GitHub Issues?",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Yao et al. (arXiv 2024). Inspected scope: Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:TAUBENCH-2024",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark",
+          "publication": "arXiv 2024",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+          "url": "https://arxiv.org/abs/2406.12045"
+        },
+        "record_id": "agent-atlas:source:TAUBENCH-2024",
+        "revision": "8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:iid-extrapolation-warning",
+          "revision": "1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:iid-extrapolation-warning:qualifies:chapter-08",
+        "revision": "2e431813023f386641d44862b0d5d9f202550072be9dae529fcdc5fe4472eb99",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-08",
+          "revision": "a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:pass-all-vs-any",
+          "revision": "288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:pass-all-vs-any:depends_on:iid-extrapolation-warning",
+        "revision": "620aaa4b6d00495782375ad869e4d234020ed8bc1b66f17014838c16db143da1",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:iid-extrapolation-warning",
+          "revision": "1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:pass-all-vs-any",
+          "revision": "288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:pass-all-vs-any:qualifies:chapter-08",
+        "revision": "4d31aeccd2d95b4d89babf35bd70d34eb04079a9fef72aa474d5baede5631a9c",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-08",
+          "revision": "a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:pass-all-vs-pass-any",
+          "revision": "e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual evidence/assumption dependency, not a newly discovered physical effect"
+        },
+        "relation_id": "agent-atlas:pass-all-vs-pass-any:qualifies:repeat-task-grid",
+        "revision": "c971ddd7a0ac1ca83515faf5ddf7b779b77d8cc730caacd618ba6e9c48c7e7f1",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:repeat-task-grid",
+          "revision": "888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:repeatability-not-proof",
+          "revision": "ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual evidence/assumption dependency, not a newly discovered physical effect"
+        },
+        "relation_id": "agent-atlas:repeatability-not-proof:qualifies:repeat-task-grid",
+        "revision": "fba9bb16e48b96e227450eba233fe24b083bec6349a9b0fd7bfc93a575178d49",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:repeat-task-grid",
+          "revision": "888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Original scientific explanation, not reprinted third-party text\",\"No direct empirical model evaluation or independent review; applies only with stated assumptions\"],\"tags\":[\"chapter-08\",\"concept\",\"agent-0.1.0\"],\"text\":\"# 08. Evaluate state success and repeated-trial reliability, not only the final prose\\n\\nA reliable evaluation specifies a task distribution, environment version, authorized action set, expected final state, budget and failure policy. An agent can produce a plausible textual conclusion without completing the state transition; conversely, it may complete an operation but omit a convincing verbal explanation. Both behavior and state should be inspected. SWE-bench evaluates code modifications against repository test environments; AgentBench tests multi-step interactive settings; τ-bench uses end-state comparison and repeated-trial reliability. These benchmarks are different and must not be merged into one metric without equal protocols.\\n\\nFor a task repeated k times, **pass@k** commonly denotes at least one successful attempt under a specified sampling procedure; **pass^k** in τ-bench emphasizes consistency across repeated interactions. They measure different questions. In this Atlas a task-level Boolean trial matrix yields `observed_pass_all_k` (fraction of tasks passing every repeat) and `observed_pass_any_k` (fraction succeeding at least once). The theoretical `p^k` estimate requires independent identically distributed successes and is included only as a transparent model extrapolation. Correlated failures, shared stale context or deterministic action policies violate independence.\\n\\nA 2/3 per-trial success rate does not mean a 2/3 chance all three attempts succeed. Under independence, a particular task's all-three probability would be `(2/3)^3`. But in a real agent evaluation, some tasks can be impossible and others trivial, so averaging across tasks then raising to k is not equivalent to the mean of task-specific probabilities raised to k. This is a scientific-statistics nuance, not an opportunity to inflate reliability claims.\\n\\n**Evaluation contract:** predefine tasks without leakage, run multiple seeds, confirm state-based grading, record per-tool call traces and resource usage, include negative control tasks, count interventions and partial completions, and disclose censoring and token/time thresholds. Report both absolute success and cost-normalized success. Do not claim Agent Atlas improves any model without running a real held-out evaluation.\\n\\n**Sources:** [TAUBENCH-2024](https://arxiv.org/abs/2406.12045), [SWEBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html), [AGENTBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html).\\n\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run\",\"source_id\":\"agent-atlas:source:SWEBENCH-2024\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Published abstract on interactive agent environment evaluation; benchmarks evolve\",\"source_id\":\"agent-atlas:source:AGENTBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"chapter-08\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-08\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:chapter-08\",\"revision\":\"a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"},{\"record_id\":\"agent-atlas:source:SWEBENCH-2024\",\"revision\":\"77f877fb3616a223986ff96762d8406025113646db1f7344a96d7fdfba9ac4b6\"},{\"record_id\":\"agent-atlas:source:AGENTBENCH-2024\",\"revision\":\"2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b\"}],\"status\":\"active\",\"title\":\"08. Evaluate state success and repeated-trial reliability, not only the final prose\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-08\",\"concept\",\"agent-0.1.0\"],\"text\":\"Computing pooled per-trial p then raising it to k is not an empirical reliability interval and can mislead under heterogeneous tasks.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"iid-extrapolation-warning\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-08\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:iid-extrapolation-warning\",\"revision\":\"1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"}],\"status\":\"active\",\"title\":\"p^k extrapolation needs independence assumptions\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"pass_all(k)=(1/n)Σ_i prod_j success_ij; pass_any(k)=(1/n)Σ_i [max_j success_ij]\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-08\",\"equation\",\"agent-0.1.0\"],\"text\":\"Descriptive finite trial success fractions, not exact probability or automatic confidence interval.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"pass-all\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-08\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:pass-all\",\"revision\":\"e8116b4c6de13ea622ccfd933dc83e3d0e76a946f532fea6dc344450fc21a4f4\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"}],\"status\":\"active\",\"title\":\"Repeated-trial pass-all and pass-any\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-08\",\"concept\",\"agent-0.1.0\"],\"text\":\"One successful attempt of k shows discoverability; consistent success over k measures reliability; both require declared tasks and repetitions.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"pass-all-vs-any\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-08\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:pass-all-vs-any\",\"revision\":\"288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"}],\"status\":\"active\",\"title\":\"Pass-all-k and pass-any-k are different reliability estimands\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"pass_all=product_j success_j; pass_any=1-product_j(1-success_j)\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-26\",\"equation\"],\"text\":\"For each task, pass_all=product of binary trial successes and pass_any=1-product(1-success). These measures reflect different operational reliability goals.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"pass-all-vs-pass-any\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-26\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:pass-all-vs-pass-any\",\"revision\":\"e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"}],\"status\":\"active\",\"title\":\"Pass-all across repeated trials differs from pass-any\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-26\",\"method\"],\"text\":\"A paired reliability panel must enforce the same task version, evaluator version, split and repetition indices in both arms. Missing/duplicate trials are not automatically imputed.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"repeat-task-grid\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-26\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:repeat-task-grid\",\"revision\":\"888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"}],\"status\":\"active\",\"title\":\"Repeated trials need complete task-by-arm-by-repetition grids\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Offline agent-science reference and caller-supplied structured research models\"],\"assumptions\":[\"Input state, evidence origin and source schema are explicitly declared\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No agent deployment, provider effects or independent task correctness established\",\"Published source docs and author-made numerical examples cannot certify generalization\"],\"tags\":[\"agent-0.3.0\",\"chapter-26\",\"concept\"],\"text\":\"Even when an observed candidate pass-all proportion exceeds baseline on authored outcomes, validity requires representative tasks, verified outcomes, cost, replicates, leakage controls and an uncertainty design.\",\"uncertainty\":[\"Unknown actual source selection, judge reliability and task outcome validity\"],\"units\":[\"Time and costs only as explicitly declared in input; no implicit across-run normalization\"]},\"evidence\":{\"gaps\":[\"No original MAST data rows or real model invocations during this release\",\"No independent scientific reviewer\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"source_id\":\"agent-atlas:source:TAUBENCH-2024\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public documentation, not full independent experimental audit\",\"locator\":\"Published abstract on interactive agent environment evaluation; benchmarks evolve\",\"source_id\":\"agent-atlas:source:AGENTBENCH-2024\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"repeatability-not-proof\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"chapter\":\"chapter-26\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:repeatability-not-proof\",\"revision\":\"ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\"},{\"record_id\":\"agent-atlas:source:AGENTBENCH-2024\",\"revision\":\"2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b\"}],\"status\":\"active\",\"title\":\"A paired constructed repeated-trial table is not a model improvement\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Liu et al. (ICLR 2024). Inspected scope: Published abstract on interactive agent environment evaluation; benchmarks evolve. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:AGENTBENCH-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Published abstract on interactive agent environment evaluation; benchmarks evolve\",\"publication\":\"ICLR 2024\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"AgentBench: Evaluating LLMs as Agents\",\"url\":\"https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html\"},\"record_id\":\"agent-atlas:source:AGENTBENCH-2024\",\"revision\":\"2cc9f790b92851b12c664eb80aaa6bda06eee0875a214111a3ede4c182de441b\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"AgentBench: Evaluating LLMs as Agents\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Jimenez et al. (ICLR 2024). Inspected scope: Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:SWEBENCH-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Published abstract on issue-to-code changes and test evaluation; no local SWE-bench run\",\"publication\":\"ICLR 2024\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"SWE-bench: Can Language Models Resolve Real-world GitHub Issues?\",\"url\":\"https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html\"},\"record_id\":\"agent-atlas:source:SWEBENCH-2024\",\"revision\":\"77f877fb3616a223986ff96762d8406025113646db1f7344a96d7fdfba9ac4b6\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"SWE-bench: Can Language Models Resolve Real-world GitHub Issues?\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Yao et al. (arXiv 2024). Inspected scope: Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:TAUBENCH-2024\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on goal-state checks and repeated-trial pass^k; local metrics are not its benchmark\",\"publication\":\"arXiv 2024\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains\",\"url\":\"https://arxiv.org/abs/2406.12045\"},\"record_id\":\"agent-atlas:source:TAUBENCH-2024\",\"revision\":\"8d378fa52016ba0d9a9302febc9492b200dbffd52103910089981ca985b93a33\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:iid-extrapolation-warning\",\"revision\":\"1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:iid-extrapolation-warning:qualifies:chapter-08\",\"revision\":\"2e431813023f386641d44862b0d5d9f202550072be9dae529fcdc5fe4472eb99\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-08\",\"revision\":\"a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:pass-all-vs-any\",\"revision\":\"288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:pass-all-vs-any:depends_on:iid-extrapolation-warning\",\"revision\":\"620aaa4b6d00495782375ad869e4d234020ed8bc1b66f17014838c16db143da1\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:iid-extrapolation-warning\",\"revision\":\"1a2f3680738038a6d90d5adc070db2e094aec21e1739f88a890f4154d112fd6f\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"agent-atlas:pass-all-vs-any\",\"revision\":\"288ea293e4fe78a34ca207b8cf9d2c1d9e181b10fb6e6ac8bf55e34c9ddf3d70\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:pass-all-vs-any:qualifies:chapter-08\",\"revision\":\"4d31aeccd2d95b4d89babf35bd70d34eb04079a9fef72aa474d5baede5631a9c\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-08\",\"revision\":\"a2241de3906b16dd9ce9ccaf7f18b82a752e66bcc8ce355607008fd945fa93f5\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:pass-all-vs-pass-any\",\"revision\":\"e07c71ce396f8dc64d91c4175115ed58ff05cc959ef4fa4fb822f4d4e27c9ac4\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual evidence/assumption dependency, not a newly discovered physical effect\"},\"relation_id\":\"agent-atlas:pass-all-vs-pass-any:qualifies:repeat-task-grid\",\"revision\":\"c971ddd7a0ac1ca83515faf5ddf7b779b77d8cc730caacd618ba6e9c48c7e7f1\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:repeat-task-grid\",\"revision\":\"888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:repeatability-not-proof\",\"revision\":\"ac37d12dab34b83ce2627504cf7aee8fe466c0569dbf90b56adcc6237ef9ecdc\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual evidence/assumption dependency, not a newly discovered physical effect\"},\"relation_id\":\"agent-atlas:repeatability-not-proof:qualifies:repeat-task-grid\",\"revision\":\"fba9bb16e48b96e227450eba233fe24b083bec6349a9b0fd7bfc93a575178d49\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:repeat-task-grid\",\"revision\":\"888c23c744afc328d0669dddc4479acd351ab55e44f4db302505a93ff3ff758f\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 30148,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:repeated-reliability",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:incomplete-task-not-eval-failure",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "56df246eaaede3fcad6642860c42cbe06bd32d67f5f129b27990980f1e244b11"
+}

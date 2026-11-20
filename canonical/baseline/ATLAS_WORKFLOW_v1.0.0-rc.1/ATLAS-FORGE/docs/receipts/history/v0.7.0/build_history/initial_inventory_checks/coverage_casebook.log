@@ -1,0 +1,67 @@
+{
+  "result": "passed",
+  "cases": [
+    {
+      "id": "equal_components",
+      "value": 20.0,
+      "expected": 20,
+      "tolerance": 1e-12,
+      "passed": true,
+      "data_origin": "synthetic_teaching_example"
+    },
+    {
+      "id": "eight_df_95",
+      "value": 2.3060041352043754,
+      "expected": 2.306004135204166,
+      "tolerance": 1e-10,
+      "passed": true,
+      "data_origin": "synthetic_teaching_example"
+    },
+    {
+      "id": "normal_95_not_two",
+      "value": 1.9599639845400536,
+      "expected": 1.959963984540054,
+      "tolerance": 1e-10,
+      "passed": true,
+      "data_origin": "synthetic_teaching_example"
+    },
+    {
+      "id": "two_at_four_df",
+      "value": 0.8838834764831844,
+      "expected": 0.8838834764831844,
+      "tolerance": 1e-10,
+      "passed": true,
+      "data_origin": "synthetic_teaching_example"
+    },
+    {
+      "id": "mixed_budget_df",
+      "value": 14.0625,
+      "expected": 14.0625,
+      "tolerance": 1e-10,
+      "passed": true,
+      "data_origin": "synthetic_teaching_example"
+    }
+  ],
+  "mixed_budget_interval": {
+    "estimate": 10.0,
+    "standard_uncertainty": 0.022360679774997897,
+    "coverage_factor": 2.143892739027592,
+    "central_probability": 0.95,
+    "df": 14.0625,
+    "lower": 9.952061100990662,
+    "upper": 10.047938899009338,
+    "expanded_uncertainty": 0.04793889900933913,
+    "unit": "mm",
+    "model": "welch_satterthwaite_approximation",
+    "status": "conditional_model_interval",
+    "assumptions_checked": false,
+    "limitations": [
+      "Coverage is conditional on the declared statistical model, not a measured guarantee.",
+      "A frequentist confidence level concerns repeated use of the interval procedure.",
+      "This calculation alone is not a conformity or fitness-for-purpose decision."
+    ]
+  },
+  "actual_measurements": false,
+  "coverage_guarantee": false,
+  "description": "Declared distributions and independent components; physical applicability remains caller responsibility."
+}

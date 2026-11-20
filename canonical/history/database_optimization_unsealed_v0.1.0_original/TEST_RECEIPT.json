@@ -1,0 +1,29 @@
+{
+  "fresh_full_federation_run": false,
+  "oracle_category_counts": {
+    "correlated_selectivity_negative_control": 1000,
+    "external_merge_sort": 7000,
+    "fence_lookup": 7000,
+    "fence_range": 7000,
+    "fifo_naive": 7000,
+    "hash_join_naive": 5000,
+    "join_sqlite": 5000,
+    "lru_naive": 7000,
+    "merge_join_naive": 5000,
+    "mvcc_naive_replay": 2000,
+    "nonnegative_heuristic_cost": 1000,
+    "sqlite_truth": 18
+  },
+  "oracle_comparisons": 54018,
+  "oracle_failures": 0,
+  "physical_measurements": false,
+  "python_version": "3.13.5",
+  "schema": "atlas.db-optimization.unsealed-unit-and-oracle-test-receipt/1",
+  "scientific_v1_accepted": false,
+  "sqlite_version": "3.46.1",
+  "unit_test_errors": 0,
+  "unit_tests_failed": 0,
+  "unit_tests_passed": 30,
+  "unit_tests_run": 30,
+  "unit_tests_skipped": 0
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.db-optimization.unsealed-release-hold/1",
+  "domain": "database-optimization-atlas",
+  "original_priority": 17,
+  "candidate_edition": "v0.1.0",
+  "status": "development_content_unsealed",
+  "canonical_federation_release": "OS_Internals_v1.0.0",
+  "canonical_node_count": 21,
+  "network_stacks_priority_16": "unsealed recovery content",
+  "database_optimization_priority_17": "unsealed staged content, not canonical",
+  "passes": ["offline Python unit tests", "independent constructed finite oracle", "staged record and exact-revision integrity", "read-only SQLite behavior check"],
+  "holds": ["original priority #16 canonical acceptance", "complete source-tree federation regression", "fresh archive reconstruction and full regression", "full historical preservation audit", "Library canonical checkpoint publication and readback", "production performance/transaction tests", "physical power-cut and drive testing", "publisher-original authentication", "independent scientific peer review"],
+  "do_not_modify": ["/ATLAS FORGE/CURRENT_CHECKPOINT.json", "/ATLAS FORGE/Roadmaps/ATLAS_FORGE_CURRENT_ACTIVE_PRIORITY.json", "original 30-domain queue"],
+  "bitwork_router_modified": false,
+  "next_original_domain_after_17": "compiler-design-atlas (original #18)",
+  "cannot_promote_to_canonical_release": true
+}

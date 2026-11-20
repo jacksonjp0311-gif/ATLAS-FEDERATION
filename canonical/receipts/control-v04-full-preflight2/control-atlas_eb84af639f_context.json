@@ -1,0 +1,987 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "Lyapunov P candidate",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "190413a724077890c271313704321d200293b0daf2bd6a3bc31c7e9ea9d10cf2",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:common-P-vs-plant",
+      "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+    },
+    {
+      "record_id": "control-atlas:lyapunov-p-check",
+      "revision": "b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d"
+    },
+    {
+      "record_id": "control-atlas:quadratic-lyapunov-definition",
+      "revision": "446168e8901ede5588dab1a5fe862f16d0427f29b5edc2c55d1e37d885f21bd7"
+    },
+    {
+      "record_id": "control-atlas:quadratic-lyapunov-inequality",
+      "revision": "3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747"
+    },
+    {
+      "record_id": "control-atlas:lyapunov-converse-trap",
+      "revision": "ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-quadratic-convexity",
+      "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+    },
+    {
+      "record_id": "control-atlas:scalar-kalman",
+      "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:common-P-vs-plant",
+      "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+    },
+    {
+      "record_id": "control-atlas:lyapunov-converse-trap",
+      "revision": "ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef"
+    },
+    {
+      "record_id": "control-atlas:lyapunov-p-check",
+      "revision": "b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-common-P-calculator",
+      "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1"
+    },
+    {
+      "record_id": "control-atlas:matrix-box-quadratic-convexity",
+      "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+    },
+    {
+      "record_id": "control-atlas:quadratic-lyapunov-definition",
+      "revision": "446168e8901ede5588dab1a5fe862f16d0427f29b5edc2c55d1e37d885f21bd7"
+    },
+    {
+      "record_id": "control-atlas:quadratic-lyapunov-inequality",
+      "revision": "3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747"
+    },
+    {
+      "record_id": "control-atlas:scalar-kalman",
+      "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LYAP-V03",
+      "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+      "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+    },
+    {
+      "record_id": "control-atlas:source:PYCTR-LQE",
+      "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Exact linear discrete-time model"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Another P may work; failure is candidate-specific",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "common-P-vs-plant"
+          ],
+          "text": "A supplied P may fail strict decrease for a stable nonnormal discrete matrix, for example A=[[.8,1],[0,.8]] with P=I.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "common-P-vs-plant",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:common-P-vs-plant",
+        "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "A failed Lyapunov candidate does not prove instability",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-0.3.0",
+            "lyapunov-converse-trap"
+          ],
+          "text": "Stable nonnormal A can increase Euclidean norm temporarily. Failed P=I candidate means this metric does not certify decay, not that every candidate fails.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+              "source_id": "control-atlas:source:MIT-LYAP-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "lyapunov-converse-trap",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "29",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:lyapunov-converse-trap",
+        "revision": "ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAP-V03",
+            "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36"
+          }
+        ],
+        "status": "active",
+        "title": "Failure of P=I does not establish instability",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-0.3.0",
+            "lyapunov-p-check"
+          ],
+          "text": "Compute symmetric Q and eigenvalues for caller-supplied A,P; reject near-boundary numeric conclusions and disclose floating-point limits.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+              "source_id": "control-atlas:source:MIT-LYAP-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "lyapunov-p-check",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "29",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:lyapunov-p-check",
+        "revision": "b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAP-V03",
+            "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36"
+          }
+        ],
+        "status": "active",
+        "title": "Test nominal two-state supplied Lyapunov candidate with warnings",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Exact independent 2x2 entry bounds"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Only sufficient; not a parameter estimation or hardware robust-stability tool",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "matrix-box-common-P-calculator"
+          ],
+          "text": "Enumerate all four-entry interval vertices and check minimum Q eigenvalues for supplied symmetric PD P.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "matrix-box-common-P-calculator",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:matrix-box-common-P-calculator",
+        "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "Calculate sufficient 2x2 common quadratic decrease across 16 corners",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference or explicitly invoked offline model within declared scope"
+          ],
+          "assumptions": [
+            "Fixed P, independent entry intervals, exact discrete model"
+          ],
+          "domain": "control-systems",
+          "equation": "A^TPA <= sum_i w_i A_i^TP A_i, A=sum_i w_i A_i",
+          "limitations": [
+            "Numerical eigenvalue test not formal interval proof; bounds not measured",
+            "No real equipment or physical sensor measurements; no independent human scientific approval"
+          ],
+          "tags": [
+            "chapter-35",
+            "edition-0.4.0",
+            "matrix-box-quadratic-convexity"
+          ],
+          "text": "For P positive definite, A^TPA is matrix-convex in A; strict P-A_i^T P A_i>0 at every box vertex suffices for all convex combinations.",
+          "uncertainty": [
+            "No physical calibration uncertainty inferred from synthetic calculations"
+          ],
+          "units": [
+            "Time/sampling and state/input units must be supplied and reconciled before physical interpretation"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No full independent source review",
+            "No actual plant experiment or live agent tool access"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected public page only; not hardware validation",
+              "locator": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+              "source_id": "control-atlas:source:MIT-LYAPUNOV-COMMON"
+            }
+          ],
+          "origin": "original_scoped_reference_or_formula",
+          "review_status": "bounded_publisher_sources_and_authored_derivation_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "matrix-box-quadratic-convexity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original reference drafting",
+          "chapter": "35",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:matrix-box-quadratic-convexity",
+        "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+            "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983"
+          }
+        ],
+        "status": "active",
+        "title": "Common P vertex check is sufficient over an affine matrix box",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-0.3.0",
+            "quadratic-lyapunov-definition"
+          ],
+          "text": "For autonomous sampled LTI x+=Ax, a positive P and Q=P−AᵀPA positive definite suffice for strict decrease V=xᵀPx; plant model truth remains external.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+              "source_id": "control-atlas:source:MIT-LYAP-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "quadratic-lyapunov-definition",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "29",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:quadratic-lyapunov-definition",
+        "revision": "446168e8901ede5588dab1a5fe862f16d0427f29b5edc2c55d1e37d885f21bd7",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAP-V03",
+            "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36"
+          }
+        ],
+        "status": "active",
+        "title": "Lyapunov certificate is model and candidate dependent",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "P ≻ 0 and Q=P-A^T P A ≻ 0",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-29",
+            "edition-0.3.0",
+            "quadratic-lyapunov-inequality"
+          ],
+          "text": "Strict P>0 and P−AᵀPA>0 yield positive definite decay in exact discrete LTI model. A failed P candidate does not disprove system stability.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+              "source_id": "control-atlas:source:MIT-LYAP-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "quadratic-lyapunov-inequality",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "29",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:quadratic-lyapunov-inequality",
+        "revision": "3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MIT-LYAP-V03",
+            "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36"
+          }
+        ],
+        "status": "active",
+        "title": "Discrete quadratic Lyapunov sufficient condition",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "Pminus=a*a*P+Q; K=Pminus/(Pminus+R)",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-10",
+            "equation",
+            "scalar-kalman"
+          ],
+          "text": "Given P−=a²P+Q and R>0, gain K=P−/(P−+R), posterior mean predicted+K innovation and posterior variance (1−K)P−.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+              "source_id": "control-atlas:source:PYCTR-LQE"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-kalman",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "10",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-kalman",
+        "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:PYCTR-LQE",
+            "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar Kalman prediction and measurement update",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference navigation and method scope, not physical performance validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Publisher portion only, not independent full-source or experimental audit",
+            "No source file or restricted publication text is mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.3.0"
+          ],
+          "text": "Bibliographic navigation and inspected portion: Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent engineer review or physical experiment"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LYAP-V03",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_terms": "Original bounded explanatory material; publisher content linked rather than mirrored",
+          "url": "https://underactuated.mit.edu/lyapunov.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MIT-LYAP-V03",
+        "revision": "13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics chapter on Lyapunov analysis",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic source navigation and bounded explanatory context"
+          ],
+          "assumptions": [
+            "Only identified public webpage/metadata sections; no implied full publication review"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence",
+            "Linked rights preserved; no full copyrighted documents mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.4.0"
+          ],
+          "text": "Source locator, bounded inspected portion: Common Lyapunov functions and uncertain parameter discussion, public HTML",
+          "uncertainty": [
+            "No original physical measurement uncertainty certified by this card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent full source review",
+            "No hardware experiment or actual plant controls"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_portion_checked_assistant_not_scientific_approval",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-LYAPUNOV-COMMON",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://underactuated.mit.edu/lyapunov.html",
+          "version": "public page inspected 2026-11-13"
+        },
+        "record_id": "control-atlas:source:MIT-LYAPUNOV-COMMON",
+        "revision": "9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MIT Underactuated Robotics common Lyapunov analysis",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "api_documentation_related_model",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "pyctr-lqe"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "api_documentation_related_model",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:PYCTR-LQE",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://python-control.readthedocs.io/en/latest/generated/control.lqe.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:PYCTR-LQE",
+        "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Python Control Systems Library linear quadratic estimator reference",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:lyapunov-converse-trap",
+          "revision": "ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:lyapunov-converse-trap:qualifies:quadratic-lyapunov-inequality",
+        "revision": "324d3c7ae550f15178afdd5906b16d24adaf51193be54fc708356a81d70a4331",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:quadratic-lyapunov-inequality",
+          "revision": "3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:lyapunov-p-check",
+          "revision": "b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:lyapunov-p-check:depends_on:quadratic-lyapunov-inequality",
+        "revision": "c5bf198a37b3bf194b0ba7cf59dd9e96463030319265ce36eec67ca55331e1a6",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:quadratic-lyapunov-inequality",
+          "revision": "3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:matrix-box-common-P-calculator",
+          "revision": "4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:matrix-box-common-P-calculator:qualifies:matrix-box-quadratic-convexity",
+        "revision": "124426585011ce1156ad80a85f06db3e71f5d6d3dc7b6a284f9d03b0c2fc3717",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:matrix-box-quadratic-convexity",
+          "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:matrix-box-quadratic-convexity",
+          "revision": "2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c"
+        },
+        "provenance": {
+          "basis": "Scope/assumption relation, not experimentally discovered physical property",
+          "independent_review": false,
+          "origin": "authored_scientific_qualifier"
+        },
+        "relation_id": "control-atlas:matrix-box-quadratic-convexity:qualifies:common-P-vs-plant",
+        "revision": "4a332717da714ae2961891df0dbcf42286c5d150c2d7694304aa69c39f37e5fb",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:common-P-vs-plant",
+          "revision": "71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Exact linear discrete-time model\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Another P may work; failure is candidate-specific\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"common-P-vs-plant\"],\"text\":\"A supplied P may fail strict decrease for a stable nonnormal discrete matrix, for example A=[[.8,1],[0,.8]] with P=I.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"common-P-vs-plant\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:common-P-vs-plant\",\"revision\":\"71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"A failed Lyapunov candidate does not prove instability\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-29\",\"edition-0.3.0\",\"lyapunov-converse-trap\"],\"text\":\"Stable nonnormal A can increase Euclidean norm temporarily. Failed P=I candidate means this metric does not certify decay, not that every candidate fails.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"source_id\":\"control-atlas:source:MIT-LYAP-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"lyapunov-converse-trap\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"29\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:lyapunov-converse-trap\",\"revision\":\"ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAP-V03\",\"revision\":\"13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36\"}],\"status\":\"active\",\"title\":\"Failure of P=I does not establish instability\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-29\",\"edition-0.3.0\",\"lyapunov-p-check\"],\"text\":\"Compute symmetric Q and eigenvalues for caller-supplied A,P; reject near-boundary numeric conclusions and disclose floating-point limits.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"source_id\":\"control-atlas:source:MIT-LYAP-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"lyapunov-p-check\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"29\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:lyapunov-p-check\",\"revision\":\"b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAP-V03\",\"revision\":\"13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36\"}],\"status\":\"active\",\"title\":\"Test nominal two-state supplied Lyapunov candidate with warnings\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Exact independent 2x2 entry bounds\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Only sufficient; not a parameter estimation or hardware robust-stability tool\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"matrix-box-common-P-calculator\"],\"text\":\"Enumerate all four-entry interval vertices and check minimum Q eigenvalues for supplied symmetric PD P.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"matrix-box-common-P-calculator\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:matrix-box-common-P-calculator\",\"revision\":\"4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"Calculate sufficient 2x2 common quadratic decrease across 16 corners\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference or explicitly invoked offline model within declared scope\"],\"assumptions\":[\"Fixed P, independent entry intervals, exact discrete model\"],\"domain\":\"control-systems\",\"equation\":\"A^TPA <= sum_i w_i A_i^TP A_i, A=sum_i w_i A_i\",\"limitations\":[\"Numerical eigenvalue test not formal interval proof; bounds not measured\",\"No real equipment or physical sensor measurements; no independent human scientific approval\"],\"tags\":[\"chapter-35\",\"edition-0.4.0\",\"matrix-box-quadratic-convexity\"],\"text\":\"For P positive definite, A^TPA is matrix-convex in A; strict P-A_i^T P A_i>0 at every box vertex suffices for all convex combinations.\",\"uncertainty\":[\"No physical calibration uncertainty inferred from synthetic calculations\"],\"units\":[\"Time/sampling and state/input units must be supplied and reconciled before physical interpretation\"]},\"evidence\":{\"gaps\":[\"No full independent source review\",\"No actual plant experiment or live agent tool access\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected public page only; not hardware validation\",\"locator\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"source_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\"}],\"origin\":\"original_scoped_reference_or_formula\",\"review_status\":\"bounded_publisher_sources_and_authored_derivation_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"matrix-box-quadratic-convexity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original reference drafting\",\"chapter\":\"35\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\"}],\"status\":\"active\",\"title\":\"Common P vertex check is sufficient over an affine matrix box\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-29\",\"edition-0.3.0\",\"quadratic-lyapunov-definition\"],\"text\":\"For autonomous sampled LTI x+=Ax, a positive P and Q=P−AᵀPA positive definite suffice for strict decrease V=xᵀPx; plant model truth remains external.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"source_id\":\"control-atlas:source:MIT-LYAP-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"quadratic-lyapunov-definition\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"29\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:quadratic-lyapunov-definition\",\"revision\":\"446168e8901ede5588dab1a5fe862f16d0427f29b5edc2c55d1e37d885f21bd7\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAP-V03\",\"revision\":\"13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36\"}],\"status\":\"active\",\"title\":\"Lyapunov certificate is model and candidate dependent\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"P ≻ 0 and Q=P-A^T P A ≻ 0\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-29\",\"edition-0.3.0\",\"quadratic-lyapunov-inequality\"],\"text\":\"Strict P>0 and P−AᵀPA>0 yield positive definite decay in exact discrete LTI model. A failed P candidate does not disprove system stability.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"source_id\":\"control-atlas:source:MIT-LYAP-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"quadratic-lyapunov-inequality\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"29\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:quadratic-lyapunov-inequality\",\"revision\":\"3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MIT-LYAP-V03\",\"revision\":\"13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36\"}],\"status\":\"active\",\"title\":\"Discrete quadratic Lyapunov sufficient condition\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"Pminus=a*a*P+Q; K=Pminus/(Pminus+R)\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-10\",\"equation\",\"scalar-kalman\"],\"text\":\"Given P−=a²P+Q and R>0, gain K=P−/(P−+R), posterior mean predicted+K innovation and posterior variance (1−K)P−.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"source_id\":\"control-atlas:source:PYCTR-LQE\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-kalman\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"10\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-kalman\",\"revision\":\"1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\"}],\"status\":\"active\",\"title\":\"Scalar Kalman prediction and measurement update\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Reference navigation and method scope, not physical performance validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Publisher portion only, not independent full-source or experimental audit\",\"No source file or restricted publication text is mirrored\"],\"tags\":[\"source\",\"edition-0.3.0\"],\"text\":\"Bibliographic navigation and inspected portion: Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent engineer review or physical experiment\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LYAP-V03\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_terms\":\"Original bounded explanatory material; publisher content linked rather than mirrored\",\"url\":\"https://underactuated.mit.edu/lyapunov.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MIT-LYAP-V03\",\"revision\":\"13868241223e05b3377edd9a698850a68fe4fccfec246b2d45c3c190cc36da36\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics chapter on Lyapunov analysis\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic source navigation and bounded explanatory context\"],\"assumptions\":[\"Only identified public webpage/metadata sections; no implied full publication review\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Inspected publisher portion only; no independent engineer review, original transport-byte archival or hardware evidence\",\"Linked rights preserved; no full copyrighted documents mirrored\"],\"tags\":[\"source\",\"edition-0.4.0\"],\"text\":\"Source locator, bounded inspected portion: Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"uncertainty\":[\"No original physical measurement uncertainty certified by this card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent full source review\",\"No hardware experiment or actual plant controls\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_portion_checked_assistant_not_scientific_approval\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-LYAPUNOV-COMMON\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Common Lyapunov functions and uncertain parameter discussion, public HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://underactuated.mit.edu/lyapunov.html\",\"version\":\"public page inspected 2026-11-13\"},\"record_id\":\"control-atlas:source:MIT-LYAPUNOV-COMMON\",\"revision\":\"9019cd7c715aa9ca231b5f6167434bbfaede17bd0831a8c7cacbcef517991983\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MIT Underactuated Robotics common Lyapunov analysis\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"api_documentation_related_model\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"pyctr-lqe\"],\"text\":\"Publisher/documentation reference. Inspected scope: Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"api_documentation_related_model\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:PYCTR-LQE\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Continuous-time Kalman estimator structure and noise covariances; not same as our discrete scalar step\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://python-control.readthedocs.io/en/latest/generated/control.lqe.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:PYCTR-LQE\",\"revision\":\"04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Python Control Systems Library linear quadratic estimator reference\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:lyapunov-converse-trap\",\"revision\":\"ba40064df41c0b3a950f33b034f06b97b8a01a05016f48dc9daf947b11ce01ef\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:lyapunov-converse-trap:qualifies:quadratic-lyapunov-inequality\",\"revision\":\"324d3c7ae550f15178afdd5906b16d24adaf51193be54fc708356a81d70a4331\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:quadratic-lyapunov-inequality\",\"revision\":\"3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:lyapunov-p-check\",\"revision\":\"b3a29af365861ede44f8b11e672272e87bd4cec9090f51fdf50257026b171b8d\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:lyapunov-p-check:depends_on:quadratic-lyapunov-inequality\",\"revision\":\"c5bf198a37b3bf194b0ba7cf59dd9e96463030319265ce36eec67ca55331e1a6\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:quadratic-lyapunov-inequality\",\"revision\":\"3136976e8747e280e971df8a3edbb67223de07b0371b90f3b3fa9e6534984747\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:matrix-box-common-P-calculator\",\"revision\":\"4e547af2fa68d6516b8fe8fe07856a678d1b77165889cf3dd99ef127b6be36a1\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:matrix-box-common-P-calculator:qualifies:matrix-box-quadratic-convexity\",\"revision\":\"124426585011ce1156ad80a85f06db3e71f5d6d3dc7b6a284f9d03b0c2fc3717\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:matrix-box-quadratic-convexity\",\"revision\":\"2589a99522bc0a5187863ce2a52c1fdb07851e0e4e644cdb0c0dfd90f35a7b8c\"},\"provenance\":{\"basis\":\"Scope/assumption relation, not experimentally discovered physical property\",\"independent_review\":false,\"origin\":\"authored_scientific_qualifier\"},\"relation_id\":\"control-atlas:matrix-box-quadratic-convexity:qualifies:common-P-vs-plant\",\"revision\":\"4a332717da714ae2961891df0dbcf42286c5d150c2d7694304aa69c39f37e5fb\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:common-P-vs-plant\",\"revision\":\"71bc77fef64e0fb11f4579e2ad34c4093508e18c899c20653af97cb69634a82e\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 27870,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:lqr-dare",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "dd9c50203f3438b6c09c78e6ab29345063368225609e568413c601cdf3d4704c"
+}

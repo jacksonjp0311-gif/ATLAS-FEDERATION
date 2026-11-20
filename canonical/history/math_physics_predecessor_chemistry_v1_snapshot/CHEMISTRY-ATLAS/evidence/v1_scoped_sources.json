@@ -1,0 +1,36 @@
+{
+  "schema": "atlas.chem-v1-source-scope/1",
+  "source_cards": [
+    {
+      "id": "NIST-WEBBOOK-GUIDE",
+      "title": "NIST Chemistry WebBook \u2014 database thermochemistry user guide",
+      "url": "https://webbook.nist.gov/chemistry/guide/",
+      "scope": "Official published description of Shomate Cp,H,S parameterization, thermochemical reference states and material phase data",
+      "rights": "NIST Standard Reference Data has compilation rights and data-level conditions; only link and original educational explanation retained",
+      "original_bytes_archived": false,
+      "expert_review": false
+    },
+    {
+      "id": "IUPAC-FORMAL-POTENTIAL",
+      "title": "IUPAC Gold Book 5.0, formal electrode potential (09065)",
+      "url": "https://goldbook.iupac.org/terms/view/09065",
+      "scope": "Official 2025 Gold Book entry, formal concentration-based potential versus activity-based states, DOI 10.1351/goldbook.09065",
+      "rights": "Individual IUPAC terms publicly offered under CC BY-SA 4.0; publisher collection rights differ; original bytes not acquired",
+      "original_bytes_archived": false,
+      "expert_review": false
+    },
+    {
+      "id": "IUPAC-EQ-ELECTRODE",
+      "title": "IUPAC Gold Book 5.0, equilibrium electrode potential (09064)",
+      "url": "https://goldbook.iupac.org/terms/view/09064",
+      "scope": "Official Gold Book v5.0 concept of equilibrium potential with specified activities, temperature and no current, DOI 10.1351/goldbook.09064",
+      "rights": "IUPAC publisher term-level license; no original publication/JSON bytes obtained",
+      "original_bytes_archived": false,
+      "expert_review": false
+    }
+  ],
+  "all_chemistry_source_cards": 21,
+  "authentic_primary_bytes_retained": 0,
+  "IUPAC_JSON_download_attempt": "failed_no_original_bytes",
+  "synthesis_or_device_experiments": 0
+}

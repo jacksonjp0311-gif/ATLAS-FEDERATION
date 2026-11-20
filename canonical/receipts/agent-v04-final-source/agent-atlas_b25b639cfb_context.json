@@ -1,0 +1,848 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "MAST framework benchmark missing labels",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "5a42a4191cb029f275cb95ec5db2618a5f967c0cc0464bb0ec4600ee814fad19",
+  "registry_revision": "094033ece2ccfca0f9d7c088dc3f4f6fe8253c7dbff3a2f60e67dea8db0706e4",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "ab05f7bfde5622959ad27d86caf1b0575524c0ed9c11a2746659bd7fc5ff7b83",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-scoped publisher abstracts/docs; original offline bounded methods with 9 synthetic casebook scenarios. No original MAST row, live agent run, independent human review or authenticated provider effects."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:mast-missingness",
+      "revision": "7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98"
+    },
+    {
+      "record_id": "agent-atlas:MAST-nongroundtruth",
+      "revision": "88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa"
+    },
+    {
+      "record_id": "agent-atlas:mast-annotation-audit",
+      "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897"
+    },
+    {
+      "record_id": "agent-atlas:mast-taxonomy-version",
+      "revision": "7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc"
+    },
+    {
+      "record_id": "agent-atlas:annotation-null-not-zero",
+      "revision": "0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:MAST-nongroundtruth",
+      "revision": "88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa"
+    },
+    {
+      "record_id": "agent-atlas:annotation-null-not-zero",
+      "revision": "0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc"
+    },
+    {
+      "record_id": "agent-atlas:mast-annotation-audit",
+      "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897"
+    },
+    {
+      "record_id": "agent-atlas:mast-data-public-external",
+      "revision": "2c600e6015a11a2299970766470dd9fb153476cd1be71f2a175236bb459cefec"
+    },
+    {
+      "record_id": "agent-atlas:mast-missingness",
+      "revision": "7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98"
+    },
+    {
+      "record_id": "agent-atlas:mast-taxonomy-version",
+      "revision": "7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc"
+    },
+    {
+      "record_id": "agent-atlas:source:COHEN-KAPPA1960",
+      "revision": "6042d322917c51c9ce0cecb7cc0b4c5ee44bf85fc297e925bc445896f00148de"
+    },
+    {
+      "record_id": "agent-atlas:source:MAST-2025",
+      "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+    },
+    {
+      "record_id": "agent-atlas:source:MAST-DATA-CARD",
+      "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-36",
+            "concept",
+            "MAST-nongroundtruth"
+          ],
+          "text": "MAST published 1,642 traces annotated by an LLM judge and a separate 19-row human annotation collection; neither automatically supplies independently verified agent task outcomes.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "MAST-nongroundtruth",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-36",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:MAST-nongroundtruth",
+        "revision": "88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          }
+        ],
+        "status": "active",
+        "title": "MAST model-judge annotations measure labels, not actual failures",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-36",
+            "concept",
+            "annotation-null-not-zero"
+          ],
+          "text": "For a versioned 14-code failure taxonomy, null labels must be removed from per-code agreement denominators instead of counted as zeros.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored",
+              "source_id": "agent-atlas:source:COHEN-KAPPA1960"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "annotation-null-not-zero",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-36",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:annotation-null-not-zero",
+        "revision": "0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          },
+          {
+            "record_id": "agent-atlas:source:COHEN-KAPPA1960",
+            "revision": "6042d322917c51c9ce0cecb7cc0b4c5ee44bf85fc297e925bc445896f00148de"
+          }
+        ],
+        "status": "active",
+        "title": "Missing annotations are not negative observations",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent reliability research and knowledge lookup; no live agent or routing implementation"
+          ],
+          "assumptions": [
+            "Inputs and observed state are caller-supplied; trusted host policy remains external",
+            "Evidence type and source scope must be retained for downstream interpretation"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent task-ground-truth verification, model improvement or external provider safety proven",
+            "Synthetic casebooks and published documentation alone do not establish deployed behavior"
+          ],
+          "tags": [
+            "chapter-19",
+            "method",
+            "agent-0.2.0"
+          ],
+          "text": "Require exact taxonomy and labels 0/1/null, retain positive known and unknown counts per mode, and refuse dataset population claims for constructed samples.",
+          "uncertainty": [
+            "Unknown real-world distribution, source coverage, missing evidence and evaluator reliability"
+          ],
+          "units": [
+            "Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used",
+            "Annotation labels and task success are only valid under supplied rubric and taxonomy version"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual LLM invocations, private traces, original MAST data, production permissions or independent human review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Limited publicly described source section or article abstract, not independent methods review",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "vendor_docs_or_published_metadata_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "mast-annotation-audit",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-19",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "method": "original_stipulated_offline_model_or_bounded_source_paraphrase"
+        },
+        "record_id": "agent-atlas:mast-annotation-audit",
+        "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897",
+        "rights": {
+          "note": "Original research-program summary/derivation, source linked but not mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          }
+        ],
+        "status": "active",
+        "title": "Summary of supplied 14-code MAST annotations with missingness",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent reliability research and knowledge lookup; no live agent or routing implementation"
+          ],
+          "assumptions": [
+            "Inputs and observed state are caller-supplied; trusted host policy remains external",
+            "Evidence type and source scope must be retained for downstream interpretation"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent task-ground-truth verification, model improvement or external provider safety proven",
+            "Synthetic casebooks and published documentation alone do not establish deployed behavior"
+          ],
+          "tags": [
+            "chapter-19",
+            "dataset",
+            "agent-0.2.0"
+          ],
+          "text": "Public dataset card documents 1,642 annotated multi-agent traces, 14 codes and LLM-judge annotations. The release includes NO dataset rows, original dataset bytes or outcome-quality verification.",
+          "uncertainty": [
+            "Unknown real-world distribution, source coverage, missing evidence and evaluator reliability"
+          ],
+          "units": [
+            "Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used",
+            "Annotation labels and task success are only valid under supplied rubric and taxonomy version"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual LLM invocations, private traces, original MAST data, production permissions or independent human review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Limited publicly described source section or article abstract, not independent methods review",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Limited publicly described source section or article abstract, not independent methods review",
+              "locator": "Earlier v0.1 bibliographic description retained",
+              "source_id": "agent-atlas:source:MAST-2025"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "vendor_docs_or_published_metadata_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "mast-data-public-external",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-19",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "method": "original_stipulated_offline_model_or_bounded_source_paraphrase"
+        },
+        "record_id": "agent-atlas:mast-data-public-external",
+        "revision": "2c600e6015a11a2299970766470dd9fb153476cd1be71f2a175236bb459cefec",
+        "rights": {
+          "note": "Original research-program summary/derivation, source linked but not mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          },
+          {
+            "record_id": "agent-atlas:source:MAST-2025",
+            "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e"
+          }
+        ],
+        "status": "active",
+        "title": "MAST-Data external dataset documented but not locally downloaded",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent reliability research and knowledge lookup; no live agent or routing implementation"
+          ],
+          "assumptions": [
+            "Inputs and observed state are caller-supplied; trusted host policy remains external",
+            "Evidence type and source scope must be retained for downstream interpretation"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent task-ground-truth verification, model improvement or external provider safety proven",
+            "Synthetic casebooks and published documentation alone do not establish deployed behavior"
+          ],
+          "tags": [
+            "chapter-19",
+            "concept",
+            "agent-0.2.0"
+          ],
+          "text": "For each of 14 MAST modes, null means missing/unavailable rather than label=0, and known-only annotation fractions need explicit denominators.",
+          "uncertainty": [
+            "Unknown real-world distribution, source coverage, missing evidence and evaluator reliability"
+          ],
+          "units": [
+            "Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used",
+            "Annotation labels and task success are only valid under supplied rubric and taxonomy version"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual LLM invocations, private traces, original MAST data, production permissions or independent human review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Limited publicly described source section or article abstract, not independent methods review",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "vendor_docs_or_published_metadata_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "mast-missingness",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-19",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "method": "original_stipulated_offline_model_or_bounded_source_paraphrase"
+        },
+        "record_id": "agent-atlas:mast-missingness",
+        "revision": "7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98",
+        "rights": {
+          "note": "Original research-program summary/derivation, source linked but not mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          }
+        ],
+        "status": "active",
+        "title": "MAST unavailable labels must not be counted as absent failure",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Offline agent reliability research and knowledge lookup; no live agent or routing implementation"
+          ],
+          "assumptions": [
+            "Inputs and observed state are caller-supplied; trusted host policy remains external",
+            "Evidence type and source scope must be retained for downstream interpretation"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent task-ground-truth verification, model improvement or external provider safety proven",
+            "Synthetic casebooks and published documentation alone do not establish deployed behavior"
+          ],
+          "tags": [
+            "chapter-19",
+            "concept",
+            "agent-0.2.0"
+          ],
+          "text": "Publisher card says small inter-annotator data span taxonomy revisions; count labels only within explicitly compatible versions and declared task distributions.",
+          "uncertainty": [
+            "Unknown real-world distribution, source coverage, missing evidence and evaluator reliability"
+          ],
+          "units": [
+            "Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used",
+            "Annotation labels and task success are only valid under supplied rubric and taxonomy version"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No actual LLM invocations, private traces, original MAST data, production permissions or independent human review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Limited publicly described source section or article abstract, not independent methods review",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "vendor_docs_or_published_metadata_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "mast-taxonomy-version",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-19",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "method": "original_stipulated_offline_model_or_bounded_source_paraphrase"
+        },
+        "record_id": "agent-atlas:mast-taxonomy-version",
+        "revision": "7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc",
+        "rights": {
+          "note": "Original research-program summary/derivation, source linked but not mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          }
+        ],
+        "status": "active",
+        "title": "Cross-round MAST human annotations can use incompatible code revisions",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Selected abstract or publisher portion only, not independent full-paper review",
+            "This source does not validate the original algorithm implementations in this Atlas"
+          ],
+          "tags": [
+            "source",
+            "source-cohen-kappa1960",
+            "agent-v0.4"
+          ],
+          "text": "Bibliographic pointer to A Coefficient of Agreement for Nominal Scales. Inspected scope: Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent replication of published research; full source text not mirrored"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_or_public_metadata_checked",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:COHEN-KAPPA1960",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "authors": "Jacob Cohen",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored",
+          "publication": "Educational and Psychological Measurement 1960",
+          "rights_status": "link_only_abstract_original_summary",
+          "source_bytes_archived": false,
+          "url": "https://journals.sagepub.com/doi/10.1177/001316446002000104"
+        },
+        "record_id": "agent-atlas:source:COHEN-KAPPA1960",
+        "revision": "6042d322917c51c9ce0cecb7cc0b4c5ee44bf85fc297e925bc445896f00148de",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "A Coefficient of Agreement for Nominal Scales",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MAST-2025",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples",
+          "publication": "NeurIPS 2025",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Why Do Multi-Agent LLM Systems Fail?",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html"
+        },
+        "record_id": "agent-atlas:source:MAST-2025",
+        "revision": "08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Why Do Multi-Agent LLM Systems Fail?",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No full source research audit, private trace access or independent peer review"
+          ],
+          "tags": [
+            "source",
+            "agent-0.2.0"
+          ],
+          "text": "Source navigation for MAST-Data public annotated multi-agent trace collection. Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Original dataset / live vendor trace bytes not downloaded or independently audited"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_vendor_doc_or_dataset_card_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MAST-DATA-CARD",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+          "publication": "dataset card, pinned version not locally downloaded; read 2026-11-13",
+          "rights_status": "link_only_not_mirrored",
+          "source_bytes_archived": false,
+          "url": "https://huggingface.co/datasets/mcemri/MAST-Data/blob/main/README.md"
+        },
+        "record_id": "agent-atlas:source:MAST-DATA-CARD",
+        "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MAST-Data public annotated multi-agent trace collection",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:annotation-null-not-zero",
+          "revision": "0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:annotation-null-not-zero:qualifies:MAST-nongroundtruth",
+        "revision": "099fd1aef8e8f18490fb16cad5fbf1da5360496d21baea6d236deed274860817",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:MAST-nongroundtruth",
+          "revision": "88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:mast-annotation-audit",
+          "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Scientific condition or caution, not causal field observation"
+        },
+        "relation_id": "agent-atlas:mast-annotation-audit:qualifies:mast-missingness",
+        "revision": "2d692ffbaf113aed6ff817843260d81219e871318cff78e22eb42f4f5ca2c930",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:mast-missingness",
+          "revision": "7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:mast-annotation-audit",
+          "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Scientific condition or caution, not causal field observation"
+        },
+        "relation_id": "agent-atlas:mast-annotation-audit:qualifies:mast-taxonomy-version",
+        "revision": "cba2992b22a5ff6943b52c7d812e143fb2885cd674f9ea557a6fd29a5c4e155e",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:mast-taxonomy-version",
+          "revision": "7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:mast-data-public-external",
+          "revision": "2c600e6015a11a2299970766470dd9fb153476cd1be71f2a175236bb459cefec"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Scientific condition or caution, not causal field observation"
+        },
+        "relation_id": "agent-atlas:mast-data-public-external:qualifies:mast-annotation-audit",
+        "revision": "1b382b681c829f88361fbff1c76ab520e92d8343cfaa1a8f0a454e0578ee71ec",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:mast-annotation-audit",
+          "revision": "94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-36\",\"concept\",\"MAST-nongroundtruth\"],\"text\":\"MAST published 1,642 traces annotated by an LLM judge and a separate 19-row human annotation collection; neither automatically supplies independently verified agent task outcomes.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"MAST-nongroundtruth\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-36\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:MAST-nongroundtruth\",\"revision\":\"88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"}],\"status\":\"active\",\"title\":\"MAST model-judge annotations measure labels, not actual failures\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-36\",\"concept\",\"annotation-null-not-zero\"],\"text\":\"For a versioned 14-code failure taxonomy, null labels must be removed from per-code agreement denominators instead of counted as zeros.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored\",\"source_id\":\"agent-atlas:source:COHEN-KAPPA1960\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"annotation-null-not-zero\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-36\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:annotation-null-not-zero\",\"revision\":\"0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"},{\"record_id\":\"agent-atlas:source:COHEN-KAPPA1960\",\"revision\":\"6042d322917c51c9ce0cecb7cc0b4c5ee44bf85fc297e925bc445896f00148de\"}],\"status\":\"active\",\"title\":\"Missing annotations are not negative observations\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Offline agent reliability research and knowledge lookup; no live agent or routing implementation\"],\"assumptions\":[\"Inputs and observed state are caller-supplied; trusted host policy remains external\",\"Evidence type and source scope must be retained for downstream interpretation\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent task-ground-truth verification, model improvement or external provider safety proven\",\"Synthetic casebooks and published documentation alone do not establish deployed behavior\"],\"tags\":[\"chapter-19\",\"method\",\"agent-0.2.0\"],\"text\":\"Require exact taxonomy and labels 0/1/null, retain positive known and unknown counts per mode, and refuse dataset population claims for constructed samples.\",\"uncertainty\":[\"Unknown real-world distribution, source coverage, missing evidence and evaluator reliability\"],\"units\":[\"Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used\",\"Annotation labels and task success are only valid under supplied rubric and taxonomy version\"]},\"evidence\":{\"gaps\":[\"No actual LLM invocations, private traces, original MAST data, production permissions or independent human review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Limited publicly described source section or article abstract, not independent methods review\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"vendor_docs_or_published_metadata_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"mast-annotation-audit\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-19\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"method\":\"original_stipulated_offline_model_or_bounded_source_paraphrase\"},\"record_id\":\"agent-atlas:mast-annotation-audit\",\"revision\":\"94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897\",\"rights\":{\"note\":\"Original research-program summary/derivation, source linked but not mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"}],\"status\":\"active\",\"title\":\"Summary of supplied 14-code MAST annotations with missingness\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Offline agent reliability research and knowledge lookup; no live agent or routing implementation\"],\"assumptions\":[\"Inputs and observed state are caller-supplied; trusted host policy remains external\",\"Evidence type and source scope must be retained for downstream interpretation\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent task-ground-truth verification, model improvement or external provider safety proven\",\"Synthetic casebooks and published documentation alone do not establish deployed behavior\"],\"tags\":[\"chapter-19\",\"dataset\",\"agent-0.2.0\"],\"text\":\"Public dataset card documents 1,642 annotated multi-agent traces, 14 codes and LLM-judge annotations. The release includes NO dataset rows, original dataset bytes or outcome-quality verification.\",\"uncertainty\":[\"Unknown real-world distribution, source coverage, missing evidence and evaluator reliability\"],\"units\":[\"Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used\",\"Annotation labels and task success are only valid under supplied rubric and taxonomy version\"]},\"evidence\":{\"gaps\":[\"No actual LLM invocations, private traces, original MAST data, production permissions or independent human review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Limited publicly described source section or article abstract, not independent methods review\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Limited publicly described source section or article abstract, not independent methods review\",\"locator\":\"Earlier v0.1 bibliographic description retained\",\"source_id\":\"agent-atlas:source:MAST-2025\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"vendor_docs_or_published_metadata_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"mast-data-public-external\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-19\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"method\":\"original_stipulated_offline_model_or_bounded_source_paraphrase\"},\"record_id\":\"agent-atlas:mast-data-public-external\",\"revision\":\"2c600e6015a11a2299970766470dd9fb153476cd1be71f2a175236bb459cefec\",\"rights\":{\"note\":\"Original research-program summary/derivation, source linked but not mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"},{\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\"}],\"status\":\"active\",\"title\":\"MAST-Data external dataset documented but not locally downloaded\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[\"Offline agent reliability research and knowledge lookup; no live agent or routing implementation\"],\"assumptions\":[\"Inputs and observed state are caller-supplied; trusted host policy remains external\",\"Evidence type and source scope must be retained for downstream interpretation\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent task-ground-truth verification, model improvement or external provider safety proven\",\"Synthetic casebooks and published documentation alone do not establish deployed behavior\"],\"tags\":[\"chapter-19\",\"concept\",\"agent-0.2.0\"],\"text\":\"For each of 14 MAST modes, null means missing/unavailable rather than label=0, and known-only annotation fractions need explicit denominators.\",\"uncertainty\":[\"Unknown real-world distribution, source coverage, missing evidence and evaluator reliability\"],\"units\":[\"Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used\",\"Annotation labels and task success are only valid under supplied rubric and taxonomy version\"]},\"evidence\":{\"gaps\":[\"No actual LLM invocations, private traces, original MAST data, production permissions or independent human review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Limited publicly described source section or article abstract, not independent methods review\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"vendor_docs_or_published_metadata_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"mast-missingness\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-19\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"method\":\"original_stipulated_offline_model_or_bounded_source_paraphrase\"},\"record_id\":\"agent-atlas:mast-missingness\",\"revision\":\"7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98\",\"rights\":{\"note\":\"Original research-program summary/derivation, source linked but not mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"}],\"status\":\"active\",\"title\":\"MAST unavailable labels must not be counted as absent failure\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Offline agent reliability research and knowledge lookup; no live agent or routing implementation\"],\"assumptions\":[\"Inputs and observed state are caller-supplied; trusted host policy remains external\",\"Evidence type and source scope must be retained for downstream interpretation\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent task-ground-truth verification, model improvement or external provider safety proven\",\"Synthetic casebooks and published documentation alone do not establish deployed behavior\"],\"tags\":[\"chapter-19\",\"concept\",\"agent-0.2.0\"],\"text\":\"Publisher card says small inter-annotator data span taxonomy revisions; count labels only within explicitly compatible versions and declared task distributions.\",\"uncertainty\":[\"Unknown real-world distribution, source coverage, missing evidence and evaluator reliability\"],\"units\":[\"Elapsed times in milliseconds within one declared clock; costs are caller-defined common unit when used\",\"Annotation labels and task success are only valid under supplied rubric and taxonomy version\"]},\"evidence\":{\"gaps\":[\"No actual LLM invocations, private traces, original MAST data, production permissions or independent human review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Limited publicly described source section or article abstract, not independent methods review\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"vendor_docs_or_published_metadata_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"mast-taxonomy-version\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-19\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"method\":\"original_stipulated_offline_model_or_bounded_source_paraphrase\"},\"record_id\":\"agent-atlas:mast-taxonomy-version\",\"revision\":\"7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc\",\"rights\":{\"note\":\"Original research-program summary/derivation, source linked but not mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"}],\"status\":\"active\",\"title\":\"Cross-round MAST human annotations can use incompatible code revisions\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Selected abstract or publisher portion only, not independent full-paper review\",\"This source does not validate the original algorithm implementations in this Atlas\"],\"tags\":[\"source\",\"source-cohen-kappa1960\",\"agent-v0.4\"],\"text\":\"Bibliographic pointer to A Coefficient of Agreement for Nominal Scales. Inspected scope: Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"No independent replication of published research; full source text not mirrored\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_or_public_metadata_checked\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:COHEN-KAPPA1960\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"authors\":\"Jacob Cohen\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored\",\"publication\":\"Educational and Psychological Measurement 1960\",\"rights_status\":\"link_only_abstract_original_summary\",\"source_bytes_archived\":false,\"url\":\"https://journals.sagepub.com/doi/10.1177/001316446002000104\"},\"record_id\":\"agent-atlas:source:COHEN-KAPPA1960\",\"revision\":\"6042d322917c51c9ce0cecb7cc0b4c5ee44bf85fc297e925bc445896f00148de\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"A Coefficient of Agreement for Nominal Scales\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Cemri et al. (NeurIPS 2025). Inspected scope: Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MAST-2025\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Abstract on taxonomy and annotated failure traces; local cases are authored, not MAST examples\",\"publication\":\"NeurIPS 2025\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"url\":\"https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html\"},\"record_id\":\"agent-atlas:source:MAST-2025\",\"revision\":\"08e2d50e97da62d175b2cb253b7c42ed5bfd1bb9513c3d103c3a6b1b2963342e\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Why Do Multi-Agent LLM Systems Fail?\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No full source research audit, private trace access or independent peer review\"],\"tags\":[\"source\",\"agent-0.2.0\"],\"text\":\"Source navigation for MAST-Data public annotated multi-agent trace collection. Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"Original dataset / live vendor trace bytes not downloaded or independently audited\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_vendor_doc_or_dataset_card_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MAST-DATA-CARD\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"publication\":\"dataset card, pinned version not locally downloaded; read 2026-11-13\",\"rights_status\":\"link_only_not_mirrored\",\"source_bytes_archived\":false,\"url\":\"https://huggingface.co/datasets/mcemri/MAST-Data/blob/main/README.md\"},\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MAST-Data public annotated multi-agent trace collection\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:annotation-null-not-zero\",\"revision\":\"0590ec441a43aff78a816ccd3ad026b16efb18280e5ca110428c4dc6ec2f48dc\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:annotation-null-not-zero:qualifies:MAST-nongroundtruth\",\"revision\":\"099fd1aef8e8f18490fb16cad5fbf1da5360496d21baea6d236deed274860817\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:MAST-nongroundtruth\",\"revision\":\"88dd307d1e564d73f846dcc6663c7d0e6ce85e44b7fa48cab3563a8866086dfa\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:mast-annotation-audit\",\"revision\":\"94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Scientific condition or caution, not causal field observation\"},\"relation_id\":\"agent-atlas:mast-annotation-audit:qualifies:mast-missingness\",\"revision\":\"2d692ffbaf113aed6ff817843260d81219e871318cff78e22eb42f4f5ca2c930\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:mast-missingness\",\"revision\":\"7330f25b5e5ac53f5ab226f538b1d269506ee221ff80b36c6cb080a923e41f98\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:mast-annotation-audit\",\"revision\":\"94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Scientific condition or caution, not causal field observation\"},\"relation_id\":\"agent-atlas:mast-annotation-audit:qualifies:mast-taxonomy-version\",\"revision\":\"cba2992b22a5ff6943b52c7d812e143fb2885cd674f9ea557a6fd29a5c4e155e\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:mast-taxonomy-version\",\"revision\":\"7420a82908920123b8a11866a18471afd0b44a41cbb4247875e454ad6f4a92fc\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:mast-data-public-external\",\"revision\":\"2c600e6015a11a2299970766470dd9fb153476cd1be71f2a175236bb459cefec\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Scientific condition or caution, not causal field observation\"},\"relation_id\":\"agent-atlas:mast-data-public-external:qualifies:mast-annotation-audit\",\"revision\":\"1b382b681c829f88361fbff1c76ab520e92d8343cfaa1a8f0a454e0578ee71ec\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:mast-annotation-audit\",\"revision\":\"94f422a5d32fb1cd9d9b84dc453e876a90689c2efe3c75534598c3783ea04897\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 25851,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:trace-missingness-taxonomy",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:MAST-composite-id",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:incomplete-task-not-eval-failure",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "64ca6e1dbd36b929cdce3fafaf65e180974a972588aa910f6146be885de5d926"
+}

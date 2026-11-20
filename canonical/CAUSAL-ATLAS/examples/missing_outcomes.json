@@ -1,0 +1,12 @@
+{
+  "0": {
+    "total": 100,
+    "observed": 90,
+    "successes": 54
+  },
+  "1": {
+    "total": 100,
+    "observed": 60,
+    "successes": 48
+  }
+}

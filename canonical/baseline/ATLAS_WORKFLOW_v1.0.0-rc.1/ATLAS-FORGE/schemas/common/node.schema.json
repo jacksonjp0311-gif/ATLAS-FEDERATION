@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Common node v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "node_id",
+    "title",
+    "software_version",
+    "contract_version",
+    "corpus_revision",
+    "index_revision",
+    "evidence_maturity",
+    "scope",
+    "collections",
+    "required_extensions",
+    "capabilities",
+    "schema_conformance_does_not_validate_science"
+  ],
+  "properties": {
+    "schema": {
+      "const": "atlas.common/1"
+    },
+    "node_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "software_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract_version": {
+      "const": "1.0"
+    },
+    "corpus_revision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "index_revision": {
+      "const": "bm25-fields-1"
+    },
+    "evidence_maturity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "concept",
+        "claim",
+        "source",
+        "method",
+        "equation",
+        "dataset",
+        "review",
+        "relations"
+      ],
+      "properties": {
+        "concept": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "claim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "method": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "equation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "dataset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "relations": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "records"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "required_extensions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "schema_conformance_does_not_validate_science": {
+      "const": true
+    }
+  }
+}

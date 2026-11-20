@@ -1,0 +1,43 @@
+{
+  "schema": "atlas-forge.federation.v1",
+  "forge_version": "0.3.0",
+  "captured_at": "2026-11-11",
+  "offline": true,
+  "nodes": [
+    {
+      "node_id": "signal-atlas",
+      "manifest": "nodes/signal-atlas/1.0/manifest.json",
+      "manifest_sha256": "ffac8aa5053d86e529ab2be90f7ded60e49841bf8d95f9a225e9e5341c976562"
+    },
+    {
+      "node_id": "cymatics-atlas",
+      "manifest": "nodes/cymatics-atlas/1.0.0/manifest.json",
+      "manifest_sha256": "649d0e9465d0b705b1218845c634bcb7767ae8321a639baee5ed1850a557723e"
+    },
+    {
+      "node_id": "measurement-atlas",
+      "manifest": "nodes/measurement-atlas/0.3.0/manifest.json",
+      "manifest_sha256": "3e6b9d50cc1acf071f8cd6590a2b66cad93cba80fc7a77bfd01a1d0bfdb6cb73"
+    }
+  ],
+  "edges": [
+    {
+      "from": "atlas-forge",
+      "to": "signal-atlas",
+      "relation": "contains_reference_node",
+      "meaning": "Routing membership only; not scientific corroboration or causal support."
+    },
+    {
+      "from": "atlas-forge",
+      "to": "cymatics-atlas",
+      "relation": "contains_reference_node",
+      "meaning": "Routing membership only; not scientific corroboration or causal support."
+    },
+    {
+      "from": "atlas-forge",
+      "to": "measurement-atlas",
+      "relation": "contains_reference_node",
+      "meaning": "Routing membership only; not scientific corroboration or causal support."
+    }
+  ]
+}

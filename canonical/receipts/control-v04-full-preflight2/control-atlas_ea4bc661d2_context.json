@@ -1,0 +1,1081 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "scalar interval robust pole",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "44dc8f84aa7dfc0b655c3d81c3a3e11e8c944017a4ea187700c4717d4393cc29",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:scalar-interval-vertices",
+      "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+    },
+    {
+      "record_id": "control-atlas:scalar-feedback-pole-check",
+      "revision": "30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53"
+    },
+    {
+      "record_id": "control-atlas:scalar-interval-tool",
+      "revision": "c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af"
+    },
+    {
+      "record_id": "control-atlas:scalar-param-interval",
+      "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7"
+    },
+    {
+      "record_id": "control-atlas:scalar-discrete-pole",
+      "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238"
+    },
+    {
+      "record_id": "control-atlas:scalar-stability",
+      "revision": "0e63a267931cde80b5b208b11a510cbf2cf96334354dacd19099f47aca80424f"
+    },
+    {
+      "record_id": "control-atlas:robust-vs-nominal",
+      "revision": "9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:closed-loop-physical-limit",
+      "revision": "c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2"
+    },
+    {
+      "record_id": "control-atlas:robust-vs-nominal",
+      "revision": "9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db"
+    },
+    {
+      "record_id": "control-atlas:scalar-discrete-pole",
+      "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238"
+    },
+    {
+      "record_id": "control-atlas:scalar-feedback-pole-check",
+      "revision": "30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53"
+    },
+    {
+      "record_id": "control-atlas:scalar-interval-tool",
+      "revision": "c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af"
+    },
+    {
+      "record_id": "control-atlas:scalar-interval-vertices",
+      "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+    },
+    {
+      "record_id": "control-atlas:scalar-param-interval",
+      "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7"
+    },
+    {
+      "record_id": "control-atlas:scalar-stability",
+      "revision": "0e63a267931cde80b5b208b11a510cbf2cf96334354dacd19099f47aca80424f"
+    },
+    {
+      "record_id": "control-atlas:source:ASTROM-2E",
+      "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-ROBUST-V03",
+      "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-WIKI",
+      "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+    },
+    {
+      "record_id": "control-atlas:source:MIT-STABILITY",
+      "revision": "79b3e02a064e48e0a8eebd967272cb5a99d888ec04f6ccbb330a3ca3382c408f"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-01",
+            "concept",
+            "closed-loop-physical-limit"
+          ],
+          "text": "Nominal poles may be stable yet nonlinear saturation, sensor delay, faults and operating changes invalidate the implemented controller.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "closed-loop-physical-limit",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "01",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:closed-loop-physical-limit",
+        "revision": "c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Model stability is not hardware safety",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-11",
+            "concept",
+            "robust-vs-nominal"
+          ],
+          "text": "A stable nominal A or A−BK need not remain stable for uncertain dynamics, dead-time, limits or unmodeled nonlinearities.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "robust-vs-nominal",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "11",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:robust-vs-nominal",
+        "revision": "9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Robust stability is separate from nominal eigenvalue stability",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "abs(a-b*k)<1",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-03",
+            "equation",
+            "scalar-discrete-pole"
+          ],
+          "text": "For u=-k*x, scalar discrete dynamics have closed-loop pole a-b*k and asymptotic nominal stability iff |a-b*k|<1.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-discrete-pole",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "03",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-discrete-pole",
+        "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar linear feedback stability",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Read-only executed numerical exercises, no physical device"
+          ],
+          "assumptions": [
+            "Caller supplies a validated mathematical model and exact input units; physical model identification is external"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking"
+          ],
+          "tags": [
+            "chapter-03",
+            "explicit-tool"
+          ],
+          "text": "Calculate a-bK and check nominal discrete asymptotic stability only; not robust under saturations, delay or uncertainty.",
+          "uncertainty": [
+            "No physical uncertainty distribution or measurement certification inferred"
+          ],
+          "units": [
+            "Sample interval seconds; other units explicit per method"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Full scientific peer review and actual plant validation outstanding"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public documentation of related method, not a review of actual control software or physical test",
+              "locator": "Selected reference topic Scalar discrete closed-loop pole",
+              "source_id": "control-atlas:source:ASTROM-2E"
+            }
+          ],
+          "origin": "authored_bounded_tool",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-feedback-pole-check",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted code and text",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build"
+        },
+        "record_id": "control-atlas:scalar-feedback-pole-check",
+        "revision": "30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53",
+        "rights": {
+          "note": "Original educational code/interface, external source remains linked",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:ASTROM-2E",
+            "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8"
+          }
+        ],
+        "status": "active",
+        "title": "Scalar discrete closed-loop pole",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-27",
+            "edition-0.3.0",
+            "scalar-interval-tool"
+          ],
+          "text": "Explicitly compute four scalar coefficient corners and classify strict stability for the given rectangle and no-delay unsaturated plant.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-interval-tool",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-interval-tool",
+        "revision": "c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "Evaluate interval-pole model without overclaiming equipment stability",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "p=a-b*K; max_box|p|=max_corners|p|",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-27",
+            "edition-0.3.0",
+            "scalar-interval-vertices"
+          ],
+          "text": "For independent scalar a,b in a rectangle and fixed K, p=a-bK is affine, and maximum |p| occurs at a vertex; all four strict |p|<1 is exact for the stipulated box.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-interval-vertices",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-interval-vertices",
+        "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "Robust scalar pole extreme occurs at a coefficient corner",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop"
+          ],
+          "assumptions": [
+            "Exact mathematical plant/state and sample-time model must be supplied",
+            "Results are conditional on named numeric domain and external physical applicability"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical equipment or agent-controlled actuator operated",
+            "Numerical tests do not validate an actual plant, its timing, input limits or safety",
+            "Independent control engineer review and downstream AI tests remain open"
+          ],
+          "tags": [
+            "chapter-27",
+            "edition-0.3.0",
+            "scalar-param-interval"
+          ],
+          "text": "A nominal scalar discrete pole does not prove robustness. Define a guaranteed coefficient range separate from a regression estimate or probabilistic confidence interval.",
+          "uncertainty": [
+            "No measured physical parameter uncertainty or safety guarantee"
+          ],
+          "units": [
+            "Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent hardware experiment",
+            "No full publisher source audit or qualified control review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Identified public publisher section only; derivation and case are original, not attributed to a full source",
+              "locator": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+              "source_id": "control-atlas:source:FBS-ROBUST-V03"
+            }
+          ],
+          "origin": "source_scoped_original_mathematical_derivation",
+          "review_status": "publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-param-interval",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted original derivation",
+          "chapter": "27",
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:scalar-param-interval",
+        "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-ROBUST-V03",
+            "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e"
+          }
+        ],
+        "status": "active",
+        "title": "Uncertainty sets are not fitted point estimates",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "|a|<1 for asymptotic zero-input stability of x[k+1]=a*x[k]",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-03",
+            "scalar-stability"
+          ],
+          "text": "A scalar discrete pole strictly inside the unit circle is asymptotically stable. Continuous-time linear systems are stable when the relevant closed-loop poles have negative real parts, under usual finite-dimensional LTI assumptions. A nonlinear local linearization can be useful near an operating point, but a plant may have multiple equilibria, regions of attraction, actuator limits and physical states that cannot be expressed by the linear model. Lyapunov-function methods can certify specific regions if assumptions and derivative conditions are established; the existence of a simulation trace with bounded states is not itself a Lyapunov proof. Domain context: 03_stability_equilibria_and_model_boundaries.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation",
+              "source_id": "control-atlas:source:MIT-STABILITY"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "scalar-stability",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-03",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:scalar-stability",
+        "revision": "0e63a267931cde80b5b208b11a510cbf2cf96334354dacd19099f47aca80424f",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          },
+          {
+            "record_id": "control-atlas:source:MIT-STABILITY",
+            "revision": "79b3e02a064e48e0a8eebd967272cb5a99d888ec04f6ccbb330a3ca3382c408f"
+          }
+        ],
+        "status": "active",
+        "title": "A scalar discrete pole strictly inside the unit circle is asymptotically stable",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "publisher_scope_only",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "astrom-2e"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_scope_only",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:ASTROM-2E",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:ASTROM-2E",
+        "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed., Åström and Murray (2021)",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Reference navigation and method scope, not physical performance validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Publisher portion only, not independent full-source or experimental audit",
+            "No source file or restricted publication text is mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.3.0"
+          ],
+          "text": "Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent engineer review or physical experiment"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_publisher_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-ROBUST-V03",
+        "provenance": {
+          "created_at": "2026-11-13",
+          "edition_added": "0.3.0",
+          "independent_review": false,
+          "inspected_scope": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "source_terms": "Original bounded explanatory material; publisher content linked rather than mirrored",
+          "url": "https://fbswiki.org/",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:FBS-ROBUST-V03",
+        "revision": "8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Åström and Murray, Feedback Systems 2e author wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-WIKI",
+        "provenance": {
+          "access_mode": "author-maintained home and topic overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "FBS-WIKI",
+          "url": "https://fbswiki.org/"
+        },
+        "record_id": "control-atlas:source:FBS-WIKI",
+        "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed. author-maintained wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MIT CSAIL / Russ Tedrake. Underactuated Robotics, Lyapunov analysis. Inspected scope: Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MIT-STABILITY",
+        "provenance": {
+          "access_mode": "technical chapter pointer",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MIT-STABILITY",
+          "url": "https://underactuated.mit.edu/lyapunov.html"
+        },
+        "record_id": "control-atlas:source:MIT-STABILITY",
+        "revision": "79b3e02a064e48e0a8eebd967272cb5a99d888ec04f6ccbb330a3ca3382c408f",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Underactuated Robotics, Lyapunov analysis",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-interval-tool",
+          "revision": "c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:scalar-interval-tool:depends_on:scalar-interval-vertices",
+        "revision": "35293ad1cb3d981939d6673c35f732d222b3e3a9f78cea39c4dab01789f71317",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-interval-vertices",
+          "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-interval-vertices",
+          "revision": "c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0"
+        },
+        "provenance": {
+          "basis": "Method condition or qualification; not experimental proof",
+          "independent_review": false,
+          "origin": "original_scoped_method_dependency"
+        },
+        "relation_id": "control-atlas:scalar-interval-vertices:qualifies:scalar-param-interval",
+        "revision": "8a8fd31134a3e1782cc3cf6bfbe79ec19944be012b2193f9da945171c90b0cf0",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-param-interval",
+          "revision": "5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:closed-loop-physical-limit",
+          "revision": "c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:closed-loop-physical-limit:qualifies:scalar-discrete-pole",
+        "revision": "7b248ce7fdc394821f01482107db92f8071e260beaa3f45c9cc276b4fa091354",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-discrete-pole",
+          "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:robust-vs-nominal",
+          "revision": "9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:robust-vs-nominal:qualifies:scalar-discrete-pole",
+        "revision": "1869d0c8db36964448ae439afd1f52cb2f85e83babcc02a4456985b93b8bc8dd",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-discrete-pole",
+          "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:scalar-feedback-pole-check",
+          "revision": "30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:scalar-feedback-pole-check:depends_on:scalar-discrete-pole",
+        "revision": "8eb690df190b61664a94a1e0a71516d85ca91ccf9636732e46642701ad02b2c9",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:scalar-discrete-pole",
+          "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238"
+        },
+        "type": "depends_on"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-01\",\"concept\",\"closed-loop-physical-limit\"],\"text\":\"Nominal poles may be stable yet nonlinear saturation, sensor delay, faults and operating changes invalidate the implemented controller.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"closed-loop-physical-limit\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"01\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:closed-loop-physical-limit\",\"revision\":\"c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Model stability is not hardware safety\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-11\",\"concept\",\"robust-vs-nominal\"],\"text\":\"A stable nominal A or A−BK need not remain stable for uncertain dynamics, dead-time, limits or unmodeled nonlinearities.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"robust-vs-nominal\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"11\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:robust-vs-nominal\",\"revision\":\"9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Robust stability is separate from nominal eigenvalue stability\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"abs(a-b*k)<1\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-03\",\"equation\",\"scalar-discrete-pole\"],\"text\":\"For u=-k*x, scalar discrete dynamics have closed-loop pole a-b*k and asymptotic nominal stability iff |a-b*k|<1.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-discrete-pole\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"03\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-discrete-pole\",\"revision\":\"5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Scalar linear feedback stability\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Read-only executed numerical exercises, no physical device\"],\"assumptions\":[\"Caller supplies a validated mathematical model and exact input units; physical model identification is external\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking\"],\"tags\":[\"chapter-03\",\"explicit-tool\"],\"text\":\"Calculate a-bK and check nominal discrete asymptotic stability only; not robust under saturations, delay or uncertainty.\",\"uncertainty\":[\"No physical uncertainty distribution or measurement certification inferred\"],\"units\":[\"Sample interval seconds; other units explicit per method\"]},\"evidence\":{\"gaps\":[\"Full scientific peer review and actual plant validation outstanding\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public documentation of related method, not a review of actual control software or physical test\",\"locator\":\"Selected reference topic Scalar discrete closed-loop pole\",\"source_id\":\"control-atlas:source:ASTROM-2E\"}],\"origin\":\"authored_bounded_tool\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-feedback-pole-check\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted code and text\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\"},\"record_id\":\"control-atlas:scalar-feedback-pole-check\",\"revision\":\"30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53\",\"rights\":{\"note\":\"Original educational code/interface, external source remains linked\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\"}],\"status\":\"active\",\"title\":\"Scalar discrete closed-loop pole\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-27\",\"edition-0.3.0\",\"scalar-interval-tool\"],\"text\":\"Explicitly compute four scalar coefficient corners and classify strict stability for the given rectangle and no-delay unsaturated plant.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-interval-tool\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-interval-tool\",\"revision\":\"c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"Evaluate interval-pole model without overclaiming equipment stability\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"p=a-b*K; max_box|p|=max_corners|p|\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-27\",\"edition-0.3.0\",\"scalar-interval-vertices\"],\"text\":\"For independent scalar a,b in a rectangle and fixed K, p=a-bK is affine, and maximum |p| occurs at a vertex; all four strict |p|<1 is exact for the stipulated box.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-interval-vertices\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-interval-vertices\",\"revision\":\"c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"Robust scalar pole extreme occurs at a coefficient corner\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Teaching and source navigation under stated scalar or 2x2 model; not a deployed control loop\"],\"assumptions\":[\"Exact mathematical plant/state and sample-time model must be supplied\",\"Results are conditional on named numeric domain and external physical applicability\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical equipment or agent-controlled actuator operated\",\"Numerical tests do not validate an actual plant, its timing, input limits or safety\",\"Independent control engineer review and downstream AI tests remain open\"],\"tags\":[\"chapter-27\",\"edition-0.3.0\",\"scalar-param-interval\"],\"text\":\"A nominal scalar discrete pole does not prove robustness. Define a guaranteed coefficient range separate from a regression estimate or probabilistic confidence interval.\",\"uncertainty\":[\"No measured physical parameter uncertainty or safety guarantee\"],\"units\":[\"Sample times are seconds where specified; response frequency is radians/sec; state and control units are caller-defined\"]},\"evidence\":{\"gaps\":[\"No independent hardware experiment\",\"No full publisher source audit or qualified control review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Identified public publisher section only; derivation and case are original, not attributed to a full source\",\"locator\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"source_id\":\"control-atlas:source:FBS-ROBUST-V03\"}],\"origin\":\"source_scoped_original_mathematical_derivation\",\"review_status\":\"publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-param-interval\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted original derivation\",\"chapter\":\"27\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:scalar-param-interval\",\"revision\":\"5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\"}],\"status\":\"active\",\"title\":\"Uncertainty sets are not fitted point estimates\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"|a|<1 for asymptotic zero-input stability of x[k+1]=a*x[k]\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-03\",\"scalar-stability\"],\"text\":\"A scalar discrete pole strictly inside the unit circle is asymptotically stable. Continuous-time linear systems are stable when the relevant closed-loop poles have negative real parts, under usual finite-dimensional LTI assumptions. A nonlinear local linearization can be useful near an operating point, but a plant may have multiple equilibria, regions of attraction, actuator limits and physical states that cannot be expressed by the linear model. Lyapunov-function methods can certify specific regions if assumptions and derivative conditions are established; the existence of a simulation trace with bounded states is not itself a Lyapunov proof. Domain context: 03_stability_equilibria_and_model_boundaries.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation\",\"source_id\":\"control-atlas:source:MIT-STABILITY\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"scalar-stability\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-03\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:scalar-stability\",\"revision\":\"0e63a267931cde80b5b208b11a510cbf2cf96334354dacd19099f47aca80424f\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"},{\"record_id\":\"control-atlas:source:MIT-STABILITY\",\"revision\":\"79b3e02a064e48e0a8eebd967272cb5a99d888ec04f6ccbb330a3ca3382c408f\"}],\"status\":\"active\",\"title\":\"A scalar discrete pole strictly inside the unit circle is asymptotically stable\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"publisher_scope_only\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"astrom-2e\"],\"text\":\"Publisher/documentation reference. Inspected scope: Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_scope_only\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:ASTROM-2E\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Publisher description and table-of-contents scope: state-space, stability, controllability, observability, PID, frequency-domain robustness\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:ASTROM-2E\",\"revision\":\"057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed., Åström and Murray (2021)\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Reference navigation and method scope, not physical performance validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Publisher portion only, not independent full-source or experimental audit\",\"No source file or restricted publication text is mirrored\"],\"tags\":[\"source\",\"edition-0.3.0\"],\"text\":\"Bibliographic navigation and inspected portion: Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent engineer review or physical experiment\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_publisher_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-ROBUST-V03\",\"provenance\":{\"created_at\":\"2026-11-13\",\"edition_added\":\"0.3.0\",\"independent_review\":false,\"inspected_scope\":\"Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"source_terms\":\"Original bounded explanatory material; publisher content linked rather than mirrored\",\"url\":\"https://fbswiki.org/\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:FBS-ROBUST-V03\",\"revision\":\"8f9f3150b9045e6c6fa0e816269eecc247019918ca2ad0e9ca0a35fd61c0042e\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Åström and Murray, Feedback Systems 2e author wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-WIKI\",\"provenance\":{\"access_mode\":\"author-maintained home and topic overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"FBS-WIKI\",\"url\":\"https://fbswiki.org/\"},\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed. author-maintained wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MIT CSAIL / Russ Tedrake. Underactuated Robotics, Lyapunov analysis. Inspected scope: Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MIT-STABILITY\",\"provenance\":{\"access_mode\":\"technical chapter pointer\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Lyapunov stability topic and conservative certificates; conceptual outline, not independently verified derivation\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MIT-STABILITY\",\"url\":\"https://underactuated.mit.edu/lyapunov.html\"},\"record_id\":\"control-atlas:source:MIT-STABILITY\",\"revision\":\"79b3e02a064e48e0a8eebd967272cb5a99d888ec04f6ccbb330a3ca3382c408f\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Underactuated Robotics, Lyapunov analysis\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:scalar-interval-tool\",\"revision\":\"c45ffb5fb2ec9d80f7a185ead724f99038547952b9ec7ae3460e3a6b16c0f3af\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:scalar-interval-tool:depends_on:scalar-interval-vertices\",\"revision\":\"35293ad1cb3d981939d6673c35f732d222b3e3a9f78cea39c4dab01789f71317\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-interval-vertices\",\"revision\":\"c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:scalar-interval-vertices\",\"revision\":\"c554c01a1549818432d90300cd8f7a4d5e06fbdadb86d18386996143bf578cb0\"},\"provenance\":{\"basis\":\"Method condition or qualification; not experimental proof\",\"independent_review\":false,\"origin\":\"original_scoped_method_dependency\"},\"relation_id\":\"control-atlas:scalar-interval-vertices:qualifies:scalar-param-interval\",\"revision\":\"8a8fd31134a3e1782cc3cf6bfbe79ec19944be012b2193f9da945171c90b0cf0\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-param-interval\",\"revision\":\"5b08b21f914e4f4b4652a3afe4f05522c5f75cfa559862dfd33cc347d78eeda7\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:closed-loop-physical-limit\",\"revision\":\"c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:closed-loop-physical-limit:qualifies:scalar-discrete-pole\",\"revision\":\"7b248ce7fdc394821f01482107db92f8071e260beaa3f45c9cc276b4fa091354\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-discrete-pole\",\"revision\":\"5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:robust-vs-nominal\",\"revision\":\"9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:robust-vs-nominal:qualifies:scalar-discrete-pole\",\"revision\":\"1869d0c8db36964448ae439afd1f52cb2f85e83babcc02a4456985b93b8bc8dd\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-discrete-pole\",\"revision\":\"5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:scalar-feedback-pole-check\",\"revision\":\"30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:scalar-feedback-pole-check:depends_on:scalar-discrete-pole\",\"revision\":\"8eb690df190b61664a94a1e0a71516d85ca91ccf9636732e46642701ad02b2c9\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:scalar-discrete-pole\",\"revision\":\"5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238\"},\"type\":\"depends_on\"}]}",
+  "context_bytes": 31419,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:sample-delay-equation",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "08b48e0e955d9419b5e1875e31d75e943e3c1a3371a622256bce47623fcc3ac4"
+}

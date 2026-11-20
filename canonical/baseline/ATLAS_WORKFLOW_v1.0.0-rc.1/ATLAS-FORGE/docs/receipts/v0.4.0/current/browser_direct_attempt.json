@@ -1,0 +1,10 @@
+{
+  "execution_kind": "local_actual",
+  "browser": "Chromium",
+  "views": [],
+  "result": "failed",
+  "errors": [
+    "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:37609/\nCall log:\n  - navigating to \"http://127.0.0.1:37609/\", waiting until \"networkidle\"\n"
+  ],
+  "browser_version": "144.0.7559.96"
+}

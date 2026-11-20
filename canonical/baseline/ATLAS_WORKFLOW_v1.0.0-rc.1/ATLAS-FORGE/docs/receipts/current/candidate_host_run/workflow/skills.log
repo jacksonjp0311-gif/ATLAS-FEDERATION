@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "skills": [
+    "atlas-build",
+    "atlas-context-audit",
+    "atlas-node-conformance",
+    "atlas-release-gate",
+    "atlas-source-curation"
+  ],
+  "errors": [],
+  "host_installation_verified": false
+}

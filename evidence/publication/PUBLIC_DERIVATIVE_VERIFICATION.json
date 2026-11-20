@@ -1,0 +1,113 @@
+{
+  "schema": "atlas.public_derivative_verification/1",
+  "date": "2026-11-20",
+  "scope": "Local verification of the complete rights-reviewed public derivative and its browsable source export. Public release-asset download verification is a separate publication step.",
+  "canonical_original": {
+    "bytes": 735193042,
+    "sha256": "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7",
+    "preserved_unchanged": true
+  },
+  "public_derivative": {
+    "filename": "ATLAS_COLLECTION_Compiler_Design_v0.2.0-public.zip",
+    "bytes": 731933585,
+    "sha256": "9e91db0327913626c9faf56e5221a5016aadeef0509b45c56ffc667bb863090f",
+    "differs_from_original": true,
+    "root_files": 11942,
+    "root_file_manifest_sha256": "d421c3a96f40739d443feeb82b036b1932cc876f9f597dc40bc77096d66a3ca5",
+    "omission_manifest_sha256": "8fc28cf8e987d9d57963c27c1c1899de5f7da0a8f8e9cab9394b8f3b43afffe9",
+    "crc_readback_passed": true
+  },
+  "browsable_source": {
+    "source_payload_files": 12330,
+    "canonical_files_including_navigation": 12335,
+    "browsable_manifest_sha256": "c1a1700a20613496778b0be9a3f6c542c7b77d57e4173cefb28bccbf505ab08c",
+    "manifest_other_file_entries_verified": 12334,
+    "frozen_upload_subset_files_verified": 10385,
+    "new_source_parse_checks": {
+      "json_files": 2316,
+      "jsonl_files": 4505,
+      "jsonl_records": 180777,
+      "python_ast_files": 826
+    },
+    "parse_errors": 0,
+    "private_policy_helpers_published": false
+  },
+  "archive_safety_and_secret_privacy_review": {
+    "archive_containers_including_outer": 55,
+    "member_and_container_encounters": 22884,
+    "unique_payloads_and_containers": 4313,
+    "unsafe_entries": 0,
+    "unreadable_or_unscanned_entries": 0,
+    "zip_comment_bytes": 0,
+    "credential_format_findings": 0,
+    "confirmed_secret_or_private_personal_data_findings": 0,
+    "email_pattern_matches_reviewed": 22,
+    "email_pattern_triage": {
+      "reserved_example_domain_instances": 17,
+      "python_matrix_operator_expressions": 4,
+      "incidental_compressed_png_byte_sequence": 1
+    },
+    "images": "All four unique original PNGs, including nested copies, received separate visual and metadata review; no visible secrets or private personal data identified.",
+    "method": "Static byte patterns over complete member contents, recursively ZIP/WHL, with content-hash deduplication and explicit archive safety checks. No credential authentication or validity probes.",
+    "limitation": "Authored checks are not a GitGuardian-engine rescan and cannot prove absence of every possible secret."
+  },
+  "content_safety_review": {
+    "status": "No actionable biological-dual-use, weapon or exploit instructions identified in the inspected source.",
+    "scope": "Complete original recursive payload screen plus targeted contextual review; final changes are audited rights redactions and declared integrity metadata. Biological/chemical/manufacturing material was separately reviewed as nonclinical mathematical or inert educational reference."
+  },
+  "independent_rights_closure": {
+    "status": "passed",
+    "original_member_encounters": 22548,
+    "byte_identical_retained_occurrences": 20707,
+    "exact_approved_redaction_occurrences": 1243,
+    "approved_omitted_occurrences": 48,
+    "declared_integrity_metadata_changes": 368,
+    "unique_nested_archive_pairs": 54,
+    "added_metadata_members": 383,
+    "issues": 0
+  },
+  "independent_active_metadata_validation": {
+    "status": "passed",
+    "nested_archives": 54,
+    "collection_manifests": 158,
+    "collection_manifest_entries": 1264,
+    "registries_and_locks": 86,
+    "sha_sidecars": 15,
+    "sha_sidecar_rows": 7535,
+    "rebuilt_wheels": 8,
+    "wheel_record_rows": 359,
+    "changed_records": 35,
+    "changed_relations": 29,
+    "checked_references": 64,
+    "errors": 0
+  },
+  "scientific_test_scope": {
+    "computer_architecture_v0_4_0": {
+      "ran": 251,
+      "passed": 247,
+      "failed": 4,
+      "failure_reason": "Preserved v0.1 metadata assertions expect 24 rather than 60 chapters, 102 rather than 253 records, version 0.1.0 rather than 0.4.0, and 6 rather than 13 sources. No functional CPU/model failure was observed."
+    },
+    "mathematics_physics_v1_0_0_rc_1": {
+      "ran": 125,
+      "passed": 125,
+      "failed": 0,
+      "scope": "Selected pure model test family only."
+    },
+    "execution_boundary": "These tests ran in isolated exact copies of original current editions with bytecode disabled and no source changes. No downloaded receipt-writing oracles or full scientific regression suite were executed. Full scientific correctness and physical validation are not established by this publication audit.",
+    "details": "four-domains-2026-11-20-checks.json"
+  },
+  "current_public_legacy_cleanup": {
+    "base_commit": "e927b519375f3bd8bc7d48cb20dbca68f6ee8c5c",
+    "current_text_files_checked": 4422,
+    "remaining_reviewed_rights_indicators": 0,
+    "historical_git_commits_rewritten": false,
+    "details": "legacy-public-redactions-2026-11-20.json"
+  },
+  "publication_state": {
+    "archive_verified_locally": true,
+    "public_asset_download_verified_by_this_receipt": false,
+    "target_tag": "compiler-design-v0.2.0",
+    "note": "This receipt does not claim that the release asset is already published or remotely downloaded."
+  }
+}

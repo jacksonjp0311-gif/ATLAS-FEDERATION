@@ -1,0 +1,75 @@
+{
+  "schema": "atlas.acceptance/1",
+  "active_node": "measurement-atlas",
+  "recorded_at": "2026-11-12",
+  "status": "candidate_criteria_requires_owner_review_before_final_heldout_run",
+  "gates": {
+    "G1": {
+      "required_evidence_kinds": [
+        "scope_review"
+      ],
+      "acceptance": "Declared eight topic families, exclusions, a frozen evaluation plan and reviewer-approved scope."
+    },
+    "G2": {
+      "required_evidence_kinds": [
+        "primary_evidence_review"
+      ],
+      "acceptance": "Every release-critical claim has a checked primary locator or derivation; navigation excluded from release-critical set; independent review separately declared."
+    },
+    "G3": {
+      "required_evidence_kinds": [
+        "measurement_tools"
+      ],
+      "acceptance": "Declared model tests and independent numerical oracle cases pass; unit/assumption errors are rejected."
+    },
+    "G4": {
+      "required_evidence_kinds": [
+        "common_conformance"
+      ],
+      "acceptance": "All three active nodes and a synthetic unknown node pass common conformance without runtime branches."
+    },
+    "G5": {
+      "required_evidence_kinds": [
+        "context_integrity"
+      ],
+      "acceptance": "Exact record/source closure, qualifiers, conflicts, corrections, invalidation, budgets and hostile-data cases pass."
+    },
+    "G6": {
+      "required_evidence_kinds": [
+        "bitwork_live",
+        "ai_consumption"
+      ],
+      "acceptance": "Pinned actual Bitwork returns exact Atlas records; a real consuming model uses the package; retained failures and traces. No mock route receipts."
+    },
+    "G7": {
+      "required_evidence_kinds": [
+        "heldout_comparison"
+      ],
+      "acceptance": "Frozen independently authored test set; same-corpus same-budget BM25, semantic and Bitwork arms; retrieval and answer-quality scoring with uncertainty."
+    },
+    "G8": {
+      "required_evidence_kinds": [
+        "release_install",
+        "platform_matrix"
+      ],
+      "acceptance": "Clean install/archive/manifest checks and supported Windows/Linux platform runs, no critical failures."
+    }
+  },
+  "proposed_evaluation_thresholds": {
+    "source_closure": 1.0,
+    "qualifier_retention": 1.0,
+    "silent_integrity_failures": 0,
+    "unit_fixture_failures": 0,
+    "relevant_in_top_5_min": 0.9,
+    "unsupported_abstention_min": 0.9,
+    "answer_quality_noninferiority_margin": 0.05,
+    "confidence_interval_level": 0.95,
+    "performance_claim_requires_separate_comparison": true
+  },
+  "not_yet_frozen": [
+    "independent test author and secret held-out questions",
+    "sample size and uncertainty analysis power",
+    "semantic model and consuming model versions",
+    "actual Bitwork encoder and prototype-to-record mapping"
+  ]
+}

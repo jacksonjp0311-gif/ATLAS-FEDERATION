@@ -1,0 +1,897 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "saturated PI antiwindup model",
+    "node_ids": [
+      "control-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "ca3f0e63d0e6e49e4b4fbccab51beb465a007c36301cc85328a8aea4bbbd6f30",
+  "registry_revision": "857e1f18b28da2e52b2915971a947c4c198161429f4a9061d5dc1c841ae0435f",
+  "node_versions": {
+    "control-atlas": {
+      "software_version": "0.4.0",
+      "contract_version": "1.0",
+      "corpus_revision": "64cd0bb7f98076f9373144408e67aa5ff4374bd447d94ad81f4ad0a8cdd83cbe",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Public portions of MIT/Stanford/NIST and secondary educational source pages checked; original numerical algorithms and synthetic cases. 145 prior record revisions preserved, 28 additional bounded records, no real system control, independent scientific review or live AI/Bitwork validation."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "control-atlas:clamping-antiwindup",
+      "revision": "29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4"
+    },
+    {
+      "record_id": "control-atlas:pi-discrete-model",
+      "revision": "26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d"
+    },
+    {
+      "record_id": "control-atlas:pid-trace-calculator",
+      "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c"
+    },
+    {
+      "record_id": "control-atlas:pid-antiwindup",
+      "revision": "0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde"
+    },
+    {
+      "record_id": "control-atlas:antiwindup-not-proof",
+      "revision": "3df39137c3ab81e979545008bd85817eb4783d3acf571f74b9a29ca973cdda93"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "control-atlas:antiwindup-not-proof",
+      "revision": "3df39137c3ab81e979545008bd85817eb4783d3acf571f74b9a29ca973cdda93"
+    },
+    {
+      "record_id": "control-atlas:clamping-antiwindup",
+      "revision": "29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4"
+    },
+    {
+      "record_id": "control-atlas:pi-discrete-model",
+      "revision": "26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d"
+    },
+    {
+      "record_id": "control-atlas:pid-antiwindup",
+      "revision": "0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde"
+    },
+    {
+      "record_id": "control-atlas:pid-derivative-noise",
+      "revision": "cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff"
+    },
+    {
+      "record_id": "control-atlas:pid-trace-calculator",
+      "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c"
+    },
+    {
+      "record_id": "control-atlas:source:FBS-WIKI",
+      "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+    },
+    {
+      "record_id": "control-atlas:source:MATH-PID-AW",
+      "revision": "dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36"
+    },
+    {
+      "record_id": "control-atlas:source:MATLAB-AW",
+      "revision": "6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2"
+    },
+    {
+      "record_id": "control-atlas:source:MICH-PID",
+      "revision": "2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-07",
+            "antiwindup-not-proof"
+          ],
+          "text": "Anti-windup does not prove physical loop stability or optimality. The casebook gives an unreachable reference for a fixed interval and then lowers it. It compares model-integrated absolute error and final integrator values. Under the selected gains and synthetic plant, clamping improves its selected error metric. This is **not proof** that clamping always outperforms every other anti-windup design or that those gains are safe for an actual valve, heater or motor. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Integral windup, back-calculation and clamping methods on saturated process; public example",
+              "source_id": "control-atlas:source:MATLAB-AW"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "antiwindup-not-proof",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:antiwindup-not-proof",
+        "revision": "3df39137c3ab81e979545008bd85817eb4783d3acf571f74b9a29ca973cdda93",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATLAB-AW",
+            "revision": "6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "Anti-windup does not prove physical loop stability or optimality",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-07",
+            "clamping-antiwindup"
+          ],
+          "text": "Conditional integration can limit integrator buildup in a saturated model. MathWorks presents two documented anti-windup approaches—back-calculation and clamping—on a first-order process with actuator saturation and dead time. This Atlas implements only a **specific, discrete conditional integration** convention in a synthetic first-order, no-delay plant: `u=clip(kp*(r−y)+I, umin, umax)`. It freezes I when the proposed command is beyond a rail and the error would push it farther out; otherwise it integrates `I += ki Δt (r−y)`. The state update occurs after actuation via a zero-order-hold discrete model. The `none` mode integrates regardless of saturation. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Integral windup, back-calculation and clamping methods on saturated process; public example",
+              "source_id": "control-atlas:source:MATLAB-AW"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "clamping-antiwindup",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:clamping-antiwindup",
+        "revision": "29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATLAB-AW",
+            "revision": "6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "Conditional integration can limit integrator buildup in a saturated model",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference and educational models in the stated operating domain"
+          ],
+          "assumptions": [
+            "Correct plant/sensor/actuator model and time convention are supplied where required",
+            "All computations are performed on declared synthetic or mathematical inputs"
+          ],
+          "domain": "control-systems",
+          "equation": "u=clip(kp*(r-y)+I,umin,umax); I_next=I+ki*dt*(r-y) if integrator not clamped",
+          "limitations": [
+            "No physical actuator, PLC or external agent has been controlled",
+            "The exact source text and full derivation have not been independently peer-reviewed in this Atlas",
+            "Controller applicability, measurement uncertainty, delay and safety require further evidence"
+          ],
+          "tags": [
+            "chapter-07",
+            "pi-discrete-model"
+          ],
+          "text": "A finite-step PI simulation must declare update order, limits, and sampling. MathWorks presents two documented anti-windup approaches—back-calculation and clamping—on a first-order process with actuator saturation and dead time. This Atlas implements only a **specific, discrete conditional integration** convention in a synthetic first-order, no-delay plant: `u=clip(kp*(r−y)+I, umin, umax)`. It freezes I when the proposed command is beyond a rail and the error would push it farther out; otherwise it integrates `I += ki Δt (r−y)`. The state update occurs after actuation via a zero-order-hold discrete model. The `none` mode integrates regardless of saturation. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.",
+          "uncertainty": [
+            "No experimentally calibrated parameter uncertainty or sensor covariance verified"
+          ],
+          "units": [
+            "Model quantities and time units must be explicitly declared; scalar educational values are not measured"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent control engineer review",
+            "No experiment on actual controller, sensor, actuator or agent"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Integral windup, back-calculation and clamping methods on saturated process; public example",
+              "source_id": "control-atlas:source:MATLAB-AW"
+            },
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Selected source page/section only; not independent verification or full copyrighted text",
+              "locator": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+              "source_id": "control-atlas:source:FBS-WIKI"
+            }
+          ],
+          "origin": "source_scoped_educational_explanation",
+          "review_status": "assistant_scoped_source_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "pi-discrete-model",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted source curation",
+          "chapter": "chapter-07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "model_origin": "bounded_original_derivation_or_paraphrase"
+        },
+        "record_id": "control-atlas:pi-discrete-model",
+        "revision": "26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d",
+        "rights": {
+          "note": "Original source-linked summary, equations from classical models; no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATLAB-AW",
+            "revision": "6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2"
+          },
+          {
+            "record_id": "control-atlas:source:FBS-WIKI",
+            "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6"
+          }
+        ],
+        "status": "active",
+        "title": "A finite-step PI simulation must declare update order, limits, and sampling",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-07",
+            "method",
+            "pid-antiwindup"
+          ],
+          "text": "Conditional integration can freeze an integrator when a candidate update pushes the controller further into actuator saturation; this is one policy, not a tuning guarantee.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML",
+              "source_id": "control-atlas:source:MATH-PID-AW"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "pid-antiwindup",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:pid-antiwindup",
+        "revision": "0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-PID-AW",
+            "revision": "dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36"
+          }
+        ],
+        "status": "active",
+        "title": "Integral clamping under actuator saturation",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Scientific reference, teaching model or explicitly invoked calculator under supplied input"
+          ],
+          "assumptions": [
+            "Plant/input/output and sampling conventions must be explicitly given",
+            "Statement/model is applied only inside named linear/discrete/synthetic domain"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No independent hardware measurement or controller commissioning performed",
+            "No model provides safe equipment gain or real-system stability approval"
+          ],
+          "tags": [
+            "chapter-07",
+            "concept",
+            "pid-derivative-noise"
+          ],
+          "text": "Derivative action on measured signals can amplify noise and requires explicit filtering, sampling and setpoint convention.",
+          "uncertainty": [
+            "No physical uncertainty or controller-robustness guarantee inferred"
+          ],
+          "units": [
+            "User-provided state/actuator units; seconds/hertz separately identified where applicable"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent peer reviewer",
+            "No actual experimental controller inputs/outputs"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public source/documentation portion only; mathematical scope is original and unreviewed",
+              "locator": "PID objectives and practical saturation/windup/noise caveats; public tutorial description",
+              "source_id": "control-atlas:source:MICH-PID"
+            }
+          ],
+          "origin": "assistant_authored_scientific_summary_or_derivation",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "pid-derivative-noise",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted independent drafting",
+          "chapter": "07",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "scientific_human_review": false
+        },
+        "record_id": "control-atlas:pid-derivative-noise",
+        "revision": "cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff",
+        "rights": {
+          "note": "Original scoped explanation with linked source; no third-party text or code mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MICH-PID",
+            "revision": "2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144"
+          }
+        ],
+        "status": "active",
+        "title": "Derivative-on-measurement and filtering matter",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Read-only executed numerical exercises, no physical device"
+          ],
+          "assumptions": [
+            "Caller supplies a validated mathematical model and exact input units; physical model identification is external"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking"
+          ],
+          "tags": [
+            "chapter-07",
+            "explicit-tool"
+          ],
+          "text": "Apply one conditional-integration antiwindup convention to bounded authored input traces, never physical actuation.",
+          "uncertainty": [
+            "No physical uncertainty distribution or measurement certification inferred"
+          ],
+          "units": [
+            "Sample interval seconds; other units explicit per method"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Full scientific peer review and actual plant validation outstanding"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Public documentation of related method, not a review of actual control software or physical test",
+              "locator": "Selected reference topic Controller-only clamped PID example",
+              "source_id": "control-atlas:source:MATH-PID-AW"
+            }
+          ],
+          "origin": "authored_bounded_tool",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "pid-trace-calculator",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted code and text",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build"
+        },
+        "record_id": "control-atlas:pid-trace-calculator",
+        "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c",
+        "rights": {
+          "note": "Original educational code/interface, external source remains linked",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "control-atlas:source:MATH-PID-AW",
+            "revision": "dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36"
+          }
+        ],
+        "status": "active",
+        "title": "Controller-only clamped PID example",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:FBS-WIKI",
+        "provenance": {
+          "access_mode": "author-maintained home and topic overview",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Official text overview, listed chapter and supplement topics; full book text not independently audited",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "FBS-WIKI",
+          "url": "https://fbswiki.org/"
+        },
+        "record_id": "control-atlas:source:FBS-WIKI",
+        "revision": "7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Feedback Systems, 2nd ed. author-maintained wiki",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "public_technical_documentation",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "math-pid-aw"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_technical_documentation",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MATH-PID-AW",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MATH-PID-AW",
+        "revision": "dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MathWorks Anti-Windup Control Using PID Controller Block",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not authorization to change physical or digital controls"
+          ],
+          "assumptions": [
+            "Source identification and inspected portion only"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "Not a full independent chapter audit; no external source bytes mirrored"
+          ],
+          "tags": [
+            "source",
+            "edition-0.1.0"
+          ],
+          "text": "MathWorks. Anti-windup PID with actuator saturation. Inspected scope: Integral windup, back-calculation and clamping methods on saturated process; public example.",
+          "uncertainty": [
+            "No independent scientific review"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Full book/standard not independently reviewed",
+            "No source-permission transfer"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "assistant_scoped_page_checked_not_independent",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MATLAB-AW",
+        "provenance": {
+          "access_mode": "vendor technical example",
+          "author": "James Paul Jackson research program; AI-assisted curation",
+          "created_at": "2026-11-12",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Integral windup, back-calculation and clamping methods on saturated process; public example",
+          "rights": "link only",
+          "source_bytes_archived": false,
+          "source_release": "MATLAB-AW",
+          "url": "https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html"
+        },
+        "record_id": "control-atlas:source:MATLAB-AW",
+        "revision": "6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2",
+        "rights": {
+          "note": "Link and original bounded summary only; source rights retained by publisher",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Anti-windup PID with actuator saturation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation, not independent scientific validation"
+          ],
+          "assumptions": [
+            "Only identified publisher page or documented section"
+          ],
+          "domain": "control-systems",
+          "equation": "",
+          "limitations": [
+            "public_tutorial_selected_scope",
+            "No full copyrighted publication mirrored or independent hardware experiment"
+          ],
+          "tags": [
+            "source",
+            "mich-pid"
+          ],
+          "text": "Publisher/documentation reference. Inspected scope: PID objectives and practical saturation/windup/noise caveats; public tutorial description",
+          "uncertainty": [
+            "No experimental uncertainty certified by this source card"
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Not independently reviewed in full",
+            "No original transport bytes archived"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_tutorial_selected_scope",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "control-atlas",
+        "original_id": "source:MICH-PID",
+        "provenance": {
+          "created_at": "2026-11-12",
+          "independent_review": false,
+          "inspected_scope": "PID objectives and practical saturation/windup/noise caveats; public tutorial description",
+          "merged_into": "0.2.0",
+          "prior_variant": "previously_separate_control_0.1.0_build",
+          "source_bytes_archived": false,
+          "url": "https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID",
+          "version": "web/author page checked 2026-11-12"
+        },
+        "record_id": "control-atlas:source:MICH-PID",
+        "revision": "2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144",
+        "rights": {
+          "note": "Link and bounded original explanation only, no third-party text mirrored",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "University of Michigan Control Tutorials: PID Controller Design",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "control-atlas:clamping-antiwindup",
+          "revision": "29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4"
+        },
+        "provenance": {
+          "basis": "Qualifying methods within one authored chapter, not new experimental control finding",
+          "independent_review": false,
+          "origin": "authored_method_scope_dependency"
+        },
+        "relation_id": "control-atlas:clamping-antiwindup:qualifies:pi-discrete-model",
+        "revision": "2a057b4033120906ed5db8635372196d8a7a4b8c27095d4cb06cdce81e4edc23",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:pi-discrete-model",
+          "revision": "26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:pid-trace-calculator",
+          "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:pid-trace-calculator:depends_on:pid-antiwindup",
+        "revision": "3aeaf666f1a10e2852df82244c36cfea5a04c124ffdb27d00b0c07adf7e96d67",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:pid-antiwindup",
+          "revision": "0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde"
+        },
+        "type": "depends_on"
+      },
+      {
+        "from": {
+          "record_id": "control-atlas:pid-trace-calculator",
+          "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c"
+        },
+        "provenance": {
+          "basis": "Qualification or related method; not a measured causal relation",
+          "independent_review": false,
+          "merged_into": "0.2.0",
+          "origin": "original_editorial_method_link"
+        },
+        "relation_id": "control-atlas:v02-import:pid-trace-calculator:qualifies:pid-derivative-noise",
+        "revision": "c163d89b4972d76bbd5bcb86ab4fb8ae8b3fdd2d0092edb5b501cfc1a2593fde",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "control-atlas:pid-derivative-noise",
+          "revision": "cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-07\",\"antiwindup-not-proof\"],\"text\":\"Anti-windup does not prove physical loop stability or optimality. The casebook gives an unreachable reference for a fixed interval and then lowers it. It compares model-integrated absolute error and final integrator values. Under the selected gains and synthetic plant, clamping improves its selected error metric. This is **not proof** that clamping always outperforms every other anti-windup design or that those gains are safe for an actual valve, heater or motor. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Integral windup, back-calculation and clamping methods on saturated process; public example\",\"source_id\":\"control-atlas:source:MATLAB-AW\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"antiwindup-not-proof\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:antiwindup-not-proof\",\"revision\":\"3df39137c3ab81e979545008bd85817eb4783d3acf571f74b9a29ca973cdda93\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATLAB-AW\",\"revision\":\"6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"Anti-windup does not prove physical loop stability or optimality\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-07\",\"clamping-antiwindup\"],\"text\":\"Conditional integration can limit integrator buildup in a saturated model. MathWorks presents two documented anti-windup approaches—back-calculation and clamping—on a first-order process with actuator saturation and dead time. This Atlas implements only a **specific, discrete conditional integration** convention in a synthetic first-order, no-delay plant: `u=clip(kp*(r−y)+I, umin, umax)`. It freezes I when the proposed command is beyond a rail and the error would push it farther out; otherwise it integrates `I += ki Δt (r−y)`. The state update occurs after actuation via a zero-order-hold discrete model. The `none` mode integrates regardless of saturation. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Integral windup, back-calculation and clamping methods on saturated process; public example\",\"source_id\":\"control-atlas:source:MATLAB-AW\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"clamping-antiwindup\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:clamping-antiwindup\",\"revision\":\"29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATLAB-AW\",\"revision\":\"6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"Conditional integration can limit integrator buildup in a saturated model\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference and educational models in the stated operating domain\"],\"assumptions\":[\"Correct plant/sensor/actuator model and time convention are supplied where required\",\"All computations are performed on declared synthetic or mathematical inputs\"],\"domain\":\"control-systems\",\"equation\":\"u=clip(kp*(r-y)+I,umin,umax); I_next=I+ki*dt*(r-y) if integrator not clamped\",\"limitations\":[\"No physical actuator, PLC or external agent has been controlled\",\"The exact source text and full derivation have not been independently peer-reviewed in this Atlas\",\"Controller applicability, measurement uncertainty, delay and safety require further evidence\"],\"tags\":[\"chapter-07\",\"pi-discrete-model\"],\"text\":\"A finite-step PI simulation must declare update order, limits, and sampling. MathWorks presents two documented anti-windup approaches—back-calculation and clamping—on a first-order process with actuator saturation and dead time. This Atlas implements only a **specific, discrete conditional integration** convention in a synthetic first-order, no-delay plant: `u=clip(kp*(r−y)+I, umin, umax)`. It freezes I when the proposed command is beyond a rail and the error would push it farther out; otherwise it integrates `I += ki Δt (r−y)`. The state update occurs after actuation via a zero-order-hold discrete model. The `none` mode integrates regardless of saturation. Domain context: 07_pi_pid_saturation_and_anti_windup.md. A declared model is not a validated hardware controller.\",\"uncertainty\":[\"No experimentally calibrated parameter uncertainty or sensor covariance verified\"],\"units\":[\"Model quantities and time units must be explicitly declared; scalar educational values are not measured\"]},\"evidence\":{\"gaps\":[\"No independent control engineer review\",\"No experiment on actual controller, sensor, actuator or agent\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Integral windup, back-calculation and clamping methods on saturated process; public example\",\"source_id\":\"control-atlas:source:MATLAB-AW\"},{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected source page/section only; not independent verification or full copyrighted text\",\"locator\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"source_id\":\"control-atlas:source:FBS-WIKI\"}],\"origin\":\"source_scoped_educational_explanation\",\"review_status\":\"assistant_scoped_source_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"pi-discrete-model\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted source curation\",\"chapter\":\"chapter-07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"model_origin\":\"bounded_original_derivation_or_paraphrase\"},\"record_id\":\"control-atlas:pi-discrete-model\",\"revision\":\"26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d\",\"rights\":{\"note\":\"Original source-linked summary, equations from classical models; no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATLAB-AW\",\"revision\":\"6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2\"},{\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\"}],\"status\":\"active\",\"title\":\"A finite-step PI simulation must declare update order, limits, and sampling\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-07\",\"method\",\"pid-antiwindup\"],\"text\":\"Conditional integration can freeze an integrator when a candidate update pushes the controller further into actuator saturation; this is one policy, not a tuning guarantee.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML\",\"source_id\":\"control-atlas:source:MATH-PID-AW\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"pid-antiwindup\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:pid-antiwindup\",\"revision\":\"0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-PID-AW\",\"revision\":\"dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36\"}],\"status\":\"active\",\"title\":\"Integral clamping under actuator saturation\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Scientific reference, teaching model or explicitly invoked calculator under supplied input\"],\"assumptions\":[\"Plant/input/output and sampling conventions must be explicitly given\",\"Statement/model is applied only inside named linear/discrete/synthetic domain\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No independent hardware measurement or controller commissioning performed\",\"No model provides safe equipment gain or real-system stability approval\"],\"tags\":[\"chapter-07\",\"concept\",\"pid-derivative-noise\"],\"text\":\"Derivative action on measured signals can amplify noise and requires explicit filtering, sampling and setpoint convention.\",\"uncertainty\":[\"No physical uncertainty or controller-robustness guarantee inferred\"],\"units\":[\"User-provided state/actuator units; seconds/hertz separately identified where applicable\"]},\"evidence\":{\"gaps\":[\"No independent peer reviewer\",\"No actual experimental controller inputs/outputs\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public source/documentation portion only; mathematical scope is original and unreviewed\",\"locator\":\"PID objectives and practical saturation/windup/noise caveats; public tutorial description\",\"source_id\":\"control-atlas:source:MICH-PID\"}],\"origin\":\"assistant_authored_scientific_summary_or_derivation\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"pid-derivative-noise\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted independent drafting\",\"chapter\":\"07\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"scientific_human_review\":false},\"record_id\":\"control-atlas:pid-derivative-noise\",\"revision\":\"cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff\",\"rights\":{\"note\":\"Original scoped explanation with linked source; no third-party text or code mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MICH-PID\",\"revision\":\"2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144\"}],\"status\":\"active\",\"title\":\"Derivative-on-measurement and filtering matter\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Read-only executed numerical exercises, no physical device\"],\"assumptions\":[\"Caller supplies a validated mathematical model and exact input units; physical model identification is external\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"No actual plant, safety sign-off, live agent control, independent scientific review or held-out benchmarking\"],\"tags\":[\"chapter-07\",\"explicit-tool\"],\"text\":\"Apply one conditional-integration antiwindup convention to bounded authored input traces, never physical actuation.\",\"uncertainty\":[\"No physical uncertainty distribution or measurement certification inferred\"],\"units\":[\"Sample interval seconds; other units explicit per method\"]},\"evidence\":{\"gaps\":[\"Full scientific peer review and actual plant validation outstanding\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Public documentation of related method, not a review of actual control software or physical test\",\"locator\":\"Selected reference topic Controller-only clamped PID example\",\"source_id\":\"control-atlas:source:MATH-PID-AW\"}],\"origin\":\"authored_bounded_tool\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"pid-trace-calculator\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted code and text\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\"},\"record_id\":\"control-atlas:pid-trace-calculator\",\"revision\":\"863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c\",\"rights\":{\"note\":\"Original educational code/interface, external source remains linked\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"control-atlas:source:MATH-PID-AW\",\"revision\":\"dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36\"}],\"status\":\"active\",\"title\":\"Controller-only clamped PID example\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"Åström and Murray. Feedback Systems, 2nd ed. author-maintained wiki. Inspected scope: Official text overview, listed chapter and supplement topics; full book text not independently audited.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:FBS-WIKI\",\"provenance\":{\"access_mode\":\"author-maintained home and topic overview\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Official text overview, listed chapter and supplement topics; full book text not independently audited\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"FBS-WIKI\",\"url\":\"https://fbswiki.org/\"},\"record_id\":\"control-atlas:source:FBS-WIKI\",\"revision\":\"7057785ce85534d62422bf317a6b47111b7ad57f15d180586a0d940d1bc10af6\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Feedback Systems, 2nd ed. author-maintained wiki\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"public_technical_documentation\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"math-pid-aw\"],\"text\":\"Publisher/documentation reference. Inspected scope: Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_technical_documentation\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MATH-PID-AW\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"Clamping/back-calculation with saturated actuator and delayed first-order plant; selected R2026b HTML\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MATH-PID-AW\",\"revision\":\"dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MathWorks Anti-Windup Control Using PID Controller Block\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not authorization to change physical or digital controls\"],\"assumptions\":[\"Source identification and inspected portion only\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"Not a full independent chapter audit; no external source bytes mirrored\"],\"tags\":[\"source\",\"edition-0.1.0\"],\"text\":\"MathWorks. Anti-windup PID with actuator saturation. Inspected scope: Integral windup, back-calculation and clamping methods on saturated process; public example.\",\"uncertainty\":[\"No independent scientific review\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Full book/standard not independently reviewed\",\"No source-permission transfer\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"assistant_scoped_page_checked_not_independent\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MATLAB-AW\",\"provenance\":{\"access_mode\":\"vendor technical example\",\"author\":\"James Paul Jackson research program; AI-assisted curation\",\"created_at\":\"2026-11-12\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Integral windup, back-calculation and clamping methods on saturated process; public example\",\"rights\":\"link only\",\"source_bytes_archived\":false,\"source_release\":\"MATLAB-AW\",\"url\":\"https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html\"},\"record_id\":\"control-atlas:source:MATLAB-AW\",\"revision\":\"6ad205ce0817b6c47a70b1a75940139fcf15ca7ba6e238f187e1f696fee98fb2\",\"rights\":{\"note\":\"Link and original bounded summary only; source rights retained by publisher\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Anti-windup PID with actuator saturation\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation, not independent scientific validation\"],\"assumptions\":[\"Only identified publisher page or documented section\"],\"domain\":\"control-systems\",\"equation\":\"\",\"limitations\":[\"public_tutorial_selected_scope\",\"No full copyrighted publication mirrored or independent hardware experiment\"],\"tags\":[\"source\",\"mich-pid\"],\"text\":\"Publisher/documentation reference. Inspected scope: PID objectives and practical saturation/windup/noise caveats; public tutorial description\",\"uncertainty\":[\"No experimental uncertainty certified by this source card\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Not independently reviewed in full\",\"No original transport bytes archived\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_tutorial_selected_scope\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"control-atlas\",\"original_id\":\"source:MICH-PID\",\"provenance\":{\"created_at\":\"2026-11-12\",\"independent_review\":false,\"inspected_scope\":\"PID objectives and practical saturation/windup/noise caveats; public tutorial description\",\"merged_into\":\"0.2.0\",\"prior_variant\":\"previously_separate_control_0.1.0_build\",\"source_bytes_archived\":false,\"url\":\"https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID\",\"version\":\"web/author page checked 2026-11-12\"},\"record_id\":\"control-atlas:source:MICH-PID\",\"revision\":\"2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144\",\"rights\":{\"note\":\"Link and bounded original explanation only, no third-party text mirrored\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"University of Michigan Control Tutorials: PID Controller Design\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"control-atlas:clamping-antiwindup\",\"revision\":\"29aab79e7ed04139795bdd1a66415b6421df8ca3358c04735e95a171de8c7ab4\"},\"provenance\":{\"basis\":\"Qualifying methods within one authored chapter, not new experimental control finding\",\"independent_review\":false,\"origin\":\"authored_method_scope_dependency\"},\"relation_id\":\"control-atlas:clamping-antiwindup:qualifies:pi-discrete-model\",\"revision\":\"2a057b4033120906ed5db8635372196d8a7a4b8c27095d4cb06cdce81e4edc23\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:pi-discrete-model\",\"revision\":\"26f247cc65d1ce45a2af56552625bd0e0700ff15d102de14f738331a29c7f02d\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"control-atlas:pid-trace-calculator\",\"revision\":\"863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:pid-trace-calculator:depends_on:pid-antiwindup\",\"revision\":\"3aeaf666f1a10e2852df82244c36cfea5a04c124ffdb27d00b0c07adf7e96d67\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:pid-antiwindup\",\"revision\":\"0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde\"},\"type\":\"depends_on\"},{\"from\":{\"record_id\":\"control-atlas:pid-trace-calculator\",\"revision\":\"863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c\"},\"provenance\":{\"basis\":\"Qualification or related method; not a measured causal relation\",\"independent_review\":false,\"merged_into\":\"0.2.0\",\"origin\":\"original_editorial_method_link\"},\"relation_id\":\"control-atlas:v02-import:pid-trace-calculator:qualifies:pid-derivative-noise\",\"revision\":\"c163d89b4972d76bbd5bcb86ab4fb8ae8b3fdd2d0092edb5b501cfc1a2593fde\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"control-atlas:pid-derivative-noise\",\"revision\":\"cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 26502,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "control-atlas:lqr-constraints",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:error-metrics",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "control-atlas:marginal-pole",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "42ff8038f86566ebea85887fd9ae8e118e03a4f063f4869166a06ef5e105c880"
+}

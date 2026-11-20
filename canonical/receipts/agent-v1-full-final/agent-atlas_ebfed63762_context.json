@@ -1,0 +1,823 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "memory reflection qualifier and reliability",
+    "node_ids": [
+      "agent-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "2e207cc8f530e0a7bc89ceba75d410addb7742b5d92ac03d941b85251350b9ba",
+  "registry_revision": "800554551d2e9f039dd1ecad6819c01b5cf238d829df9329641d1538b6d094b8",
+  "node_versions": {
+    "agent-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "2084c970b1b78f80347621cbfe4052c7c0a8d3d18fb5aad6bfb9d6ceed228575",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "agent-atlas:qualifier-retention",
+      "revision": "37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49"
+    },
+    {
+      "record_id": "agent-atlas:reflection-not-training",
+      "revision": "d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae"
+    },
+    {
+      "record_id": "agent-atlas:chapter-05",
+      "revision": "fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0"
+    },
+    {
+      "record_id": "agent-atlas:learning-is-a-testable-claim",
+      "revision": "4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "agent-atlas:chapter-05",
+      "revision": "fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0"
+    },
+    {
+      "record_id": "agent-atlas:learning-is-a-testable-claim",
+      "revision": "4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a"
+    },
+    {
+      "record_id": "agent-atlas:qualifier-retention",
+      "revision": "37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49"
+    },
+    {
+      "record_id": "agent-atlas:reflection-not-training",
+      "revision": "d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae"
+    },
+    {
+      "record_id": "agent-atlas:source-independence-not-idcount",
+      "revision": "dbc26987901fa1cf6fe4f5b4437d53e087b8b83584eff79743b5d796597eeebe"
+    },
+    {
+      "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+      "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+    },
+    {
+      "record_id": "agent-atlas:source:GENAGENTS-2023",
+      "revision": "0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f"
+    },
+    {
+      "record_id": "agent-atlas:source:MAST-DATA-CARD",
+      "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+    },
+    {
+      "record_id": "agent-atlas:source:REFLEXION-2023",
+      "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Original scientific explanation, not reprinted third-party text",
+            "No direct empirical model evaluation or independent review; applies only with stated assumptions"
+          ],
+          "tags": [
+            "chapter-05",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "# 05. Memory is a retrieval problem and an evidence-admission problem\n\nAgents may store transcripts, task status, tool outcomes, compact summaries, learned procedures, or structured facts. These are not equivalent. An unreviewed memory can be a mistaken inference, a malicious tool-output instruction, or an outdated observation. Memory therefore requires **origin**, **time**, **scope**, **confidence type**, **contradictions**, **retention policy** and **correction mechanisms**. Compressing a nuanced failure into “last attempt fixed bug” can cause repeated false beliefs if the actual test never ran.\n\nReflexion studies natural-language feedback kept in episodic memory as a way to improve later decisions without updating model weights. Generative Agents studies storage, reflection and retrieval in a simulated social environment. Neither implies that storing a textual summary constitutes verified policy improvement in an unrelated software agent. The data that produced the reflection must remain recoverable, and later evaluation must separate task improvement from story-like plausibility.\n\nA useful memory object is `(record_id, source_run, task_id, timestamp, evidence_ref, claim, applicability, failure_modes, provenance, immutable_revision)`. A memory without source provenance might still be useful as a provisional hypothesis, but should not be elevated to validated knowledge. When token budgets are constrained, preserve the **qualifier along with the claim** or omit the entire unit. Dropping warnings and citations to fit the context window is a scientific integrity failure.\n\nThe `select_qualified_memories` tool ranks fully supplied example memories by a fixed weighted combination of relevance, recency and importance, then admits complete units within a token budget. This simple greedy illustrative ranking is not an empirical retrieval algorithm, not a learned long-term memory policy, and **not the deferred cross-domain Atlas/Bitwork router**. It merely demonstrates the inclusion rule and token-cost accounting. The score is not a probability of factual correctness.\n\n**Counterexample:** an agent sees two memories: “the patch compiled” and “a compilation was attempted but terminated with an unknown status.” If the compaction process drops the second memory's qualifier, the agent may publish an unverified patch. A robust system retains the unknown outcome and reruns a suitable test before claiming completion.\n\n**Sources:** [REFLEXION-2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html), [GENAGENTS-2023](https://research.google/pubs/generative-agents-interactive-simulacra-of-human-behavior/), [LANGGRAPH-PERSISTENCE](https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx).\n",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+              "source_id": "agent-atlas:source:REFLEXION-2023"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Author publication overview on memory, planning and reflection; not real-world reliability evidence",
+              "source_id": "agent-atlas:source:GENAGENTS-2023"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "chapter-05",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-05",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:chapter-05",
+        "revision": "fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REFLEXION-2023",
+            "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+          },
+          {
+            "record_id": "agent-atlas:source:GENAGENTS-2023",
+            "revision": "0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f"
+          }
+        ],
+        "status": "active",
+        "title": "05. Memory is a retrieval problem and an evidence-admission problem",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-31",
+            "concept",
+            "learning-is-a-testable-claim"
+          ],
+          "text": "A useful learned memory requires specified task domain, candidate revision, source references, outcome-evaluation method, contradictory evidence and expiry, not simply an agent reflection.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+              "source_id": "agent-atlas:source:REFLEXION-2023"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "learning-is-a-testable-claim",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-31",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:learning-is-a-testable-claim",
+        "revision": "4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REFLEXION-2023",
+            "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+          },
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          }
+        ],
+        "status": "active",
+        "title": "A learned agent rule is a scoped evidence hypothesis",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-05",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "A bounded context package should keep caveats and origin source with a claim; deleting them to save tokens changes scientific meaning.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Author publication overview on memory, planning and reflection; not real-world reliability evidence",
+              "source_id": "agent-atlas:source:GENAGENTS-2023"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "qualifier-retention",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-05",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:qualifier-retention",
+        "revision": "37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:GENAGENTS-2023",
+            "revision": "0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f"
+          }
+        ],
+        "status": "active",
+        "title": "Memory qualifier must travel with its content",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No independent scientific review; author-created models do not establish actual LLM capability"
+          ],
+          "tags": [
+            "chapter-05",
+            "concept",
+            "agent-0.1.0"
+          ],
+          "text": "Feedback added to episodic memory changes the context available to a policy. That is not necessarily neural weight updates or RSI.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Selected published abstract or documentation overview only; not full independent methods audit",
+              "locator": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+              "source_id": "agent-atlas:source:REFLEXION-2023"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "publisher_abstract_or_public_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "reflection-not-training",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "chapter-05",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "source_scope": "published abstracts and technical documentation"
+        },
+        "record_id": "agent-atlas:reflection-not-training",
+        "revision": "d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:REFLEXION-2023",
+            "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c"
+          }
+        ],
+        "status": "active",
+        "title": "Memory reflection is not weight-level learning",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bounded agent research or offline methods; not a deployed host permission decision"
+          ],
+          "assumptions": [
+            "Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested",
+            "Publisher source scope is bounded; the exact method implementation is authored and not source-verified"
+          ],
+          "tags": [
+            "agent-0.4.0",
+            "chapter-31",
+            "concept",
+            "source-independence-not-idcount"
+          ],
+          "text": "Several citations, mirrored benchmark tasks or model-judge summaries may derive from one experiment. Correlated or duplicate sources must not inflate confidence as independent replications.",
+          "uncertainty": [
+            "Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified"
+          ],
+          "units": [
+            "IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independently adjudicated agent task results or original MAST dataset rows; no human scientific review"
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+              "source_id": "agent-atlas:source:DWORK-HOLDOUT2015"
+            },
+            {
+              "checked_at": "2026-11-13",
+              "checker": "assistant",
+              "inspected_scope": "Only identified public publisher portion; source supports topic, not validation of new code",
+              "locator": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+              "source_id": "agent-atlas:source:MAST-DATA-CARD"
+            }
+          ],
+          "origin": "original_reference_with_publisher_context",
+          "review_status": "selected_publisher_docs_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source-independence-not-idcount",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted technical drafting",
+          "basis": "authored_method_with_bounded_primary_source_context",
+          "chapter": "chapter-31",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false
+        },
+        "record_id": "agent-atlas:source-independence-not-idcount",
+        "revision": "dbc26987901fa1cf6fe4f5b4437d53e087b8b83584eff79743b5d796597eeebe",
+        "rights": {
+          "note": "Original bounded paraphrase and derived model; referenced publisher copyrights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+            "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489"
+          },
+          {
+            "record_id": "agent-atlas:source:MAST-DATA-CARD",
+            "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe"
+          }
+        ],
+        "status": "active",
+        "title": "Multiple source IDs do not necessarily mean independent evidence",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Selected abstract or publisher portion only, not independent full-paper review",
+            "This source does not validate the original algorithm implementations in this Atlas"
+          ],
+          "tags": [
+            "source",
+            "source-dwork-holdout2015",
+            "agent-v0.4"
+          ],
+          "text": "Bibliographic pointer to The Reusable Holdout: Preserving Validity in Adaptive Data Analysis. Inspected scope: PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No independent replication of published research; full source text not mirrored"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "publisher_abstract_or_public_metadata_checked",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:DWORK-HOLDOUT2015",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "authors": "Dwork et al.",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.4.0",
+          "independent_review": false,
+          "inspected_scope": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+          "publication": "Science 2015",
+          "rights_status": "link_only_abstract_original_summary",
+          "source_bytes_archived": false,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26250683/"
+        },
+        "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+        "revision": "27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "The Reusable Holdout: Preserving Validity in Adaptive Data Analysis",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Park et al. (UIST 2023). Inspected scope: Author publication overview on memory, planning and reflection; not real-world reliability evidence. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:GENAGENTS-2023",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Author publication overview on memory, planning and reflection; not real-world reliability evidence",
+          "publication": "UIST 2023",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+          "url": "https://research.google/pubs/generative-agents-interactive-simulacra-of-human-behavior/"
+        },
+        "record_id": "agent-atlas:source:GENAGENTS-2023",
+        "revision": "0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Bibliographic navigation and conceptual research, not original agent traces"
+          ],
+          "assumptions": [
+            "Only the documented inspected scope is used"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "No full source research audit, private trace access or independent peer review"
+          ],
+          "tags": [
+            "source",
+            "agent-0.2.0"
+          ],
+          "text": "Source navigation for MAST-Data public annotated multi-agent trace collection. Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+          "uncertainty": [
+            "Vendor/dataset version may evolve after this source-card snapshot"
+          ],
+          "units": [
+            "Source and version identity; no physical quantity inferred"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "Original dataset / live vendor trace bytes not downloaded or independently audited"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "public_vendor_doc_or_dataset_card_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:MAST-DATA-CARD",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "created_at": "2026-11-13",
+          "edition_added": "0.2.0",
+          "independent_review": false,
+          "inspected_scope": "Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired",
+          "publication": "dataset card, pinned version not locally downloaded; read 2026-11-13",
+          "rights_status": "link_only_not_mirrored",
+          "source_bytes_archived": false,
+          "url": "https://huggingface.co/datasets/mcemri/MAST-Data/blob/main/README.md"
+        },
+        "record_id": "agent-atlas:source:MAST-DATA-CARD",
+        "revision": "57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe",
+        "rights": {
+          "note": "Link-only bibliography and original summary; publisher and dataset rights retained",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "MAST-Data public annotated multi-agent trace collection",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Agent-science/engineering reference and bounded offline calculations, not a live agent or router"
+          ],
+          "assumptions": [
+            "Declared task, environment, tool, observer and evaluation scope required"
+          ],
+          "domain": "agent-architecture-and-evaluation",
+          "equation": "",
+          "limitations": [
+            "Source is linked, not mirrored",
+            "Review limited to identified abstract/technical section; no independent experimental validation"
+          ],
+          "tags": [
+            "source",
+            "source",
+            "agent-0.1.0"
+          ],
+          "text": "Bibliographic pointer: Shinn et al. (NeurIPS 2023). Inspected scope: Publisher abstract on reflection buffer and episodic feedback; not model-weight training. Not an independent full text review.",
+          "uncertainty": [
+            "Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation"
+          ],
+          "units": [
+            "Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis"
+          ]
+        },
+        "evidence": {
+          "gaps": [
+            "No direct execution of real language agents, benchmark replication, production authorization or tool broker"
+          ],
+          "locators": [],
+          "origin": "bibliographic_navigation",
+          "review_status": "original_derived_reference_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "agent-atlas",
+        "original_id": "source:REFLEXION-2023",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "chapter": "source",
+          "created_at": "2026-11-13",
+          "edition_added": "0.1.0",
+          "independent_review": false,
+          "inspected_scope": "Publisher abstract on reflection buffer and episodic feedback; not model-weight training",
+          "publication": "NeurIPS 2023",
+          "rights_status": "link_only_original_summary_not_full_text",
+          "source_bytes_archived": false,
+          "source_scope": "published abstracts and technical documentation",
+          "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html"
+        },
+        "record_id": "agent-atlas:source:REFLEXION-2023",
+        "revision": "f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c",
+        "rights": {
+          "note": "Original educational text and link-only bibliographic cards; third-party source rights retained.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "agent-atlas:qualifier-retention",
+          "revision": "37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:qualifier-retention:qualifies:chapter-05",
+        "revision": "5f51aa45f4e30a04280f266cfceaf58ad63b4cecbd05bd56ddc679161092a75e",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-05",
+          "revision": "fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:reflection-not-training",
+          "revision": "d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae"
+        },
+        "provenance": {
+          "independent_review": false,
+          "origin": "author_curated_dependency",
+          "scope": "Conceptual method prerequisite, not an observed causal dependency"
+        },
+        "relation_id": "agent-atlas:reflection-not-training:qualifies:chapter-05",
+        "revision": "a6a7925293982c2af4e4963490985d6afbf96badc2f0dbe25f65f76248203ee6",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:chapter-05",
+          "revision": "fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "agent-atlas:source-independence-not-idcount",
+          "revision": "dbc26987901fa1cf6fe4f5b4437d53e087b8b83584eff79743b5d796597eeebe"
+        },
+        "provenance": {
+          "basis": "Conceptual evidence or assumption linkage, not a measured causal relation",
+          "independent_review": false,
+          "origin": "authored_evidence_dependency"
+        },
+        "relation_id": "agent-atlas:source-independence-not-idcount:qualifies:learning-is-a-testable-claim",
+        "revision": "a622df4d047872e03b459bf08eb32bcedc6019340897a6bd57790867a3ea1352",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "agent-atlas:learning-is-a-testable-claim",
+          "revision": "4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Original scientific explanation, not reprinted third-party text\",\"No direct empirical model evaluation or independent review; applies only with stated assumptions\"],\"tags\":[\"chapter-05\",\"concept\",\"agent-0.1.0\"],\"text\":\"# 05. Memory is a retrieval problem and an evidence-admission problem\\n\\nAgents may store transcripts, task status, tool outcomes, compact summaries, learned procedures, or structured facts. These are not equivalent. An unreviewed memory can be a mistaken inference, a malicious tool-output instruction, or an outdated observation. Memory therefore requires **origin**, **time**, **scope**, **confidence type**, **contradictions**, **retention policy** and **correction mechanisms**. Compressing a nuanced failure into “last attempt fixed bug” can cause repeated false beliefs if the actual test never ran.\\n\\nReflexion studies natural-language feedback kept in episodic memory as a way to improve later decisions without updating model weights. Generative Agents studies storage, reflection and retrieval in a simulated social environment. Neither implies that storing a textual summary constitutes verified policy improvement in an unrelated software agent. The data that produced the reflection must remain recoverable, and later evaluation must separate task improvement from story-like plausibility.\\n\\nA useful memory object is `(record_id, source_run, task_id, timestamp, evidence_ref, claim, applicability, failure_modes, provenance, immutable_revision)`. A memory without source provenance might still be useful as a provisional hypothesis, but should not be elevated to validated knowledge. When token budgets are constrained, preserve the **qualifier along with the claim** or omit the entire unit. Dropping warnings and citations to fit the context window is a scientific integrity failure.\\n\\nThe `select_qualified_memories` tool ranks fully supplied example memories by a fixed weighted combination of relevance, recency and importance, then admits complete units within a token budget. This simple greedy illustrative ranking is not an empirical retrieval algorithm, not a learned long-term memory policy, and **not the deferred cross-domain Atlas/Bitwork router**. It merely demonstrates the inclusion rule and token-cost accounting. The score is not a probability of factual correctness.\\n\\n**Counterexample:** an agent sees two memories: “the patch compiled” and “a compilation was attempted but terminated with an unknown status.” If the compaction process drops the second memory's qualifier, the agent may publish an unverified patch. A robust system retains the unknown outcome and reruns a suitable test before claiming completion.\\n\\n**Sources:** [REFLEXION-2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html), [GENAGENTS-2023](https://research.google/pubs/generative-agents-interactive-simulacra-of-human-behavior/), [LANGGRAPH-PERSISTENCE](https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx).\\n\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"source_id\":\"agent-atlas:source:REFLEXION-2023\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Author publication overview on memory, planning and reflection; not real-world reliability evidence\",\"source_id\":\"agent-atlas:source:GENAGENTS-2023\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"chapter-05\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-05\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:chapter-05\",\"revision\":\"fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\"},{\"record_id\":\"agent-atlas:source:GENAGENTS-2023\",\"revision\":\"0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f\"}],\"status\":\"active\",\"title\":\"05. Memory is a retrieval problem and an evidence-admission problem\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-31\",\"concept\",\"learning-is-a-testable-claim\"],\"text\":\"A useful learned memory requires specified task domain, candidate revision, source references, outcome-evaluation method, contradictory evidence and expiry, not simply an agent reflection.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"source_id\":\"agent-atlas:source:REFLEXION-2023\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"learning-is-a-testable-claim\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-31\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:learning-is-a-testable-claim\",\"revision\":\"4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\"},{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"}],\"status\":\"active\",\"title\":\"A learned agent rule is a scoped evidence hypothesis\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-05\",\"concept\",\"agent-0.1.0\"],\"text\":\"A bounded context package should keep caveats and origin source with a claim; deleting them to save tokens changes scientific meaning.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Author publication overview on memory, planning and reflection; not real-world reliability evidence\",\"source_id\":\"agent-atlas:source:GENAGENTS-2023\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"qualifier-retention\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-05\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:qualifier-retention\",\"revision\":\"37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:GENAGENTS-2023\",\"revision\":\"0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f\"}],\"status\":\"active\",\"title\":\"Memory qualifier must travel with its content\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No independent scientific review; author-created models do not establish actual LLM capability\"],\"tags\":[\"chapter-05\",\"concept\",\"agent-0.1.0\"],\"text\":\"Feedback added to episodic memory changes the context available to a policy. That is not necessarily neural weight updates or RSI.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Selected published abstract or documentation overview only; not full independent methods audit\",\"locator\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"source_id\":\"agent-atlas:source:REFLEXION-2023\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"publisher_abstract_or_public_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"reflection-not-training\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"chapter-05\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"source_scope\":\"published abstracts and technical documentation\"},\"record_id\":\"agent-atlas:reflection-not-training\",\"revision\":\"d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\"}],\"status\":\"active\",\"title\":\"Memory reflection is not weight-level learning\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bounded agent research or offline methods; not a deployed host permission decision\"],\"assumptions\":[\"Caller-supplied task, authority, label and evidence metadata; domain-specific experimental assumptions remain external\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No actual agent, provider, artifact bytes, independent outcome adjudication or live router tested\",\"Publisher source scope is bounded; the exact method implementation is authored and not source-verified\"],\"tags\":[\"agent-0.4.0\",\"chapter-31\",\"concept\",\"source-independence-not-idcount\"],\"text\":\"Several citations, mirrored benchmark tasks or model-judge summaries may derive from one experiment. Correlated or duplicate sources must not inflate confidence as independent replications.\",\"uncertainty\":[\"Task correctness, evaluator objectivity, source authenticity, contamination, generalization and costs are unverified\"],\"units\":[\"IDs, SHA-256 revisions, task counts and probabilities only where method explicitly defines them\"]},\"evidence\":{\"gaps\":[\"No independently adjudicated agent task results or original MAST dataset rows; no human scientific review\"],\"locators\":[{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"source_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\"},{\"checked_at\":\"2026-11-13\",\"checker\":\"assistant\",\"inspected_scope\":\"Only identified public publisher portion; source supports topic, not validation of new code\",\"locator\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"source_id\":\"agent-atlas:source:MAST-DATA-CARD\"}],\"origin\":\"original_reference_with_publisher_context\",\"review_status\":\"selected_publisher_docs_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source-independence-not-idcount\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted technical drafting\",\"basis\":\"authored_method_with_bounded_primary_source_context\",\"chapter\":\"chapter-31\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false},\"record_id\":\"agent-atlas:source-independence-not-idcount\",\"revision\":\"dbc26987901fa1cf6fe4f5b4437d53e087b8b83584eff79743b5d796597eeebe\",\"rights\":{\"note\":\"Original bounded paraphrase and derived model; referenced publisher copyrights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\"},{\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\"}],\"status\":\"active\",\"title\":\"Multiple source IDs do not necessarily mean independent evidence\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Selected abstract or publisher portion only, not independent full-paper review\",\"This source does not validate the original algorithm implementations in this Atlas\"],\"tags\":[\"source\",\"source-dwork-holdout2015\",\"agent-v0.4\"],\"text\":\"Bibliographic pointer to The Reusable Holdout: Preserving Validity in Adaptive Data Analysis. Inspected scope: PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"No independent replication of published research; full source text not mirrored\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"publisher_abstract_or_public_metadata_checked\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:DWORK-HOLDOUT2015\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"authors\":\"Dwork et al.\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.4.0\",\"independent_review\":false,\"inspected_scope\":\"PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique\",\"publication\":\"Science 2015\",\"rights_status\":\"link_only_abstract_original_summary\",\"source_bytes_archived\":false,\"url\":\"https://pubmed.ncbi.nlm.nih.gov/26250683/\"},\"record_id\":\"agent-atlas:source:DWORK-HOLDOUT2015\",\"revision\":\"27b97ea5afc150729bb3a17713dae6968fc0fbfb7f84d92eb3428258e7d1f489\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"The Reusable Holdout: Preserving Validity in Adaptive Data Analysis\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Park et al. (UIST 2023). Inspected scope: Author publication overview on memory, planning and reflection; not real-world reliability evidence. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:GENAGENTS-2023\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Author publication overview on memory, planning and reflection; not real-world reliability evidence\",\"publication\":\"UIST 2023\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Generative Agents: Interactive Simulacra of Human Behavior\",\"url\":\"https://research.google/pubs/generative-agents-interactive-simulacra-of-human-behavior/\"},\"record_id\":\"agent-atlas:source:GENAGENTS-2023\",\"revision\":\"0123c21adab8f5c4ecf6d0fe621c9be81e699187ad271fdf49f74bad2a67e73f\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Generative Agents: Interactive Simulacra of Human Behavior\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Bibliographic navigation and conceptual research, not original agent traces\"],\"assumptions\":[\"Only the documented inspected scope is used\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"No full source research audit, private trace access or independent peer review\"],\"tags\":[\"source\",\"agent-0.2.0\"],\"text\":\"Source navigation for MAST-Data public annotated multi-agent trace collection. Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"uncertainty\":[\"Vendor/dataset version may evolve after this source-card snapshot\"],\"units\":[\"Source and version identity; no physical quantity inferred\"]},\"evidence\":{\"gaps\":[\"Original dataset / live vendor trace bytes not downloaded or independently audited\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"public_vendor_doc_or_dataset_card_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:MAST-DATA-CARD\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.2.0\",\"independent_review\":false,\"inspected_scope\":\"Dataset card states 1,642 traces, seven MAS frameworks, 14 failure codes, labels LLM-judge rather than human; CC BY 4.0 card; no raw dataset bytes acquired\",\"publication\":\"dataset card, pinned version not locally downloaded; read 2026-11-13\",\"rights_status\":\"link_only_not_mirrored\",\"source_bytes_archived\":false,\"url\":\"https://huggingface.co/datasets/mcemri/MAST-Data/blob/main/README.md\"},\"record_id\":\"agent-atlas:source:MAST-DATA-CARD\",\"revision\":\"57827b1a2b7afcfb06f33307af0f278405a42540d7acef0bcf9aa8c5e825dcbe\",\"rights\":{\"note\":\"Link-only bibliography and original summary; publisher and dataset rights retained\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"MAST-Data public annotated multi-agent trace collection\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Agent-science/engineering reference and bounded offline calculations, not a live agent or router\"],\"assumptions\":[\"Declared task, environment, tool, observer and evaluation scope required\"],\"domain\":\"agent-architecture-and-evaluation\",\"equation\":\"\",\"limitations\":[\"Source is linked, not mirrored\",\"Review limited to identified abstract/technical section; no independent experimental validation\"],\"tags\":[\"source\",\"source\",\"agent-0.1.0\"],\"text\":\"Bibliographic pointer: Shinn et al. (NeurIPS 2023). Inspected scope: Publisher abstract on reflection buffer and episodic feedback; not model-weight training. Not an independent full text review.\",\"uncertainty\":[\"Behavioral/generalization uncertainty unknown until a real controlled held-out evaluation\"],\"units\":[\"Costs, tokens, run IDs, timestamps and task success are only defined where input explicitly specifies a basis\"]},\"evidence\":{\"gaps\":[\"No direct execution of real language agents, benchmark replication, production authorization or tool broker\"],\"locators\":[],\"origin\":\"bibliographic_navigation\",\"review_status\":\"original_derived_reference_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"agent-atlas\",\"original_id\":\"source:REFLEXION-2023\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"chapter\":\"source\",\"created_at\":\"2026-11-13\",\"edition_added\":\"0.1.0\",\"independent_review\":false,\"inspected_scope\":\"Publisher abstract on reflection buffer and episodic feedback; not model-weight training\",\"publication\":\"NeurIPS 2023\",\"rights_status\":\"link_only_original_summary_not_full_text\",\"source_bytes_archived\":false,\"source_scope\":\"published abstracts and technical documentation\",\"title\":\"Reflexion: Language Agents with Verbal Reinforcement Learning\",\"url\":\"https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html\"},\"record_id\":\"agent-atlas:source:REFLEXION-2023\",\"revision\":\"f4076ec5b73d7cfae9a1f2cd14e84a7009f0a2cdf96ea37b7d4ade41ad10160c\",\"rights\":{\"note\":\"Original educational text and link-only bibliographic cards; third-party source rights retained.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Reflexion: Language Agents with Verbal Reinforcement Learning\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"agent-atlas:qualifier-retention\",\"revision\":\"37c6138c2cbf4bbc0c3405c23f28ffe69893dbcbbe62d2c9d3560278ee7d3a49\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:qualifier-retention:qualifies:chapter-05\",\"revision\":\"5f51aa45f4e30a04280f266cfceaf58ad63b4cecbd05bd56ddc679161092a75e\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-05\",\"revision\":\"fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:reflection-not-training\",\"revision\":\"d5f1b4bb38c86759e10cda9a504ec22e66768565ec590e3f7e15b32b755c5eae\"},\"provenance\":{\"independent_review\":false,\"origin\":\"author_curated_dependency\",\"scope\":\"Conceptual method prerequisite, not an observed causal dependency\"},\"relation_id\":\"agent-atlas:reflection-not-training:qualifies:chapter-05\",\"revision\":\"a6a7925293982c2af4e4963490985d6afbf96badc2f0dbe25f65f76248203ee6\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:chapter-05\",\"revision\":\"fd4ef91dac7201907d434a4f5a267677c0930b8d3cfb4f221c617673be80a4f0\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"agent-atlas:source-independence-not-idcount\",\"revision\":\"dbc26987901fa1cf6fe4f5b4437d53e087b8b83584eff79743b5d796597eeebe\"},\"provenance\":{\"basis\":\"Conceptual evidence or assumption linkage, not a measured causal relation\",\"independent_review\":false,\"origin\":\"authored_evidence_dependency\"},\"relation_id\":\"agent-atlas:source-independence-not-idcount:qualifies:learning-is-a-testable-claim\",\"revision\":\"a622df4d047872e03b459bf08eb32bcedc6019340897a6bd57790867a3ea1352\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"agent-atlas:learning-is-a-testable-claim\",\"revision\":\"4062e7286a612d70bcfeef1120867b7290934d5ebc3bb75850478baa56d7cf7a\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 27135,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "agent-atlas:pass-all-vs-any",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:memory-no-silent-truth",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:qualified-memory-packing",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "agent-atlas:memory-expiry-contradiction",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "982c278a73b8c3b53623d58b81689731c390dcf01493c88f7c2f20dd7b3546bc"
+}

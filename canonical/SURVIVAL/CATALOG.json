@@ -1,0 +1,131 @@
+{
+  "Bitwork_router_modified": false,
+  "items": [
+    {
+      "evidence_maturity": "Assistant-checked selected source abstracts/pages and original offline derivations/synthetic cases. No independently reviewed human experiment, live agent performance gain, authenticated external tool results, or original full-source mirror.",
+      "manifest_sha256": "e766802864897559a0e03e366a3e1ebe5b49d2a32125a2a11ee98441b61d576a",
+      "node": "agent-atlas",
+      "records": 190,
+      "relationships": 122,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "A curated bounded content-release reference with assistant-checked publisher pages/abstracts, original derivations, transparent cases, attributed authentic aggregate counts and explicit unresolved reviewer and live-evaluation gaps; no independent scientific sign-off.",
+      "manifest_sha256": "8f50d9906f5ed41d67c1f7b556baf1920333b180761e1ac0bc48a16376be38ad",
+      "node": "causal-atlas",
+      "records": 149,
+      "relationships": 65,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "Author-written original source-scoped mathematics and constructed cases; authenticated original publisher bytes, independent laboratory tests and expert review remain unavailable.",
+      "manifest_sha256": "b7621f1e383c2b1d0f1fdc355d402061ac55d7b1b5b725683bd9714ba25eaa7a",
+      "node": "chemistry-atlas",
+      "records": 305,
+      "relationships": 274,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "Scoped content reference ready, with published bibliographic pointers, authored derivations and synthetic oracles; original publisher files and independent peer review remain open.",
+      "manifest_sha256": "0602044bd9b0997a80471fdebb9edac8dbbc9d7d91da15c339a8014488ff31fa",
+      "node": "computation-atlas",
+      "records": 234,
+      "relationships": 256,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "60 authored Computer Architecture chapters; finite gate-level NAND/AT8 reference and source-to-boot checks; physical silicon timing, trusted roots and external peer review absent",
+      "manifest_sha256": "13732a28b4488057fb1f2651d606dfa508ec00569ed28aa814cfb67c4b32a982",
+      "node": "computer-architecture-digital-hardware-atlas",
+      "records": 253,
+      "relationships": 270,
+      "software_version": "0.4.0"
+    },
+    {
+      "evidence_maturity": "Published data sources inspected at DOI/metadata and selected public text; three external GitHub RPM logs used for derived descriptive statistics without raw redistribution; synthetic numerical ARX and observer tests; no OpenMCT raw-file model fit, calibrated hard bounds, physical test, independent expert review or live AI routing.",
+      "manifest_sha256": "47dae14875394ff6daf6797450fd00c7d7d94e1c4c60476b8e33c8da08de739a",
+      "node": "control-atlas",
+      "records": 249,
+      "relationships": 147,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "legacy imported; upstream labels preserved without new scientific review",
+      "manifest_sha256": "e3e6e1fd4481938eae68fbb597e62f67a802b111e0f2f591e385dd941ad1b4b4",
+      "node": "cymatics-atlas",
+      "records": 132,
+      "relationships": 0,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "52 original Electronics chapters, 49 scoped-v1 targeted tests, 69095 independent finite numeric comparisons; no original publisher-file authentication, independent science review or calibrated devices",
+      "manifest_sha256": "3435df86eddde576b82f42d511451775a7dcf0f7a2972c6709dbafe440f98cbf",
+      "node": "electronics-semiconductors-atlas",
+      "records": 225,
+      "relationships": 237,
+      "software_version": "1.0.0-rc.1"
+    },
+    {
+      "evidence_maturity": "Original educational research with selected official publisher source summaries. All examples are synthetic; no original publisher transport bytes, calibrated site measurements or independent scientific expert review.",
+      "manifest_sha256": "a5cc3b3e17006af15e9489a540c8dcefede06469b4c1fb5937e012a3c128037d",
+      "node": "energy-atlas",
+      "records": 301,
+      "relationships": 261,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "Original source-scoped scientific synthesis and constructed cases; authentic corpora and rights permissions absent; no independent speaker review, Unicode 18 normative conformance, or live model gains.",
+      "manifest_sha256": "19a36c0bebcf187155f95a7d9ab1f96f25d0744525b4878c4d94b93512c6663f",
+      "node": "language-atlas",
+      "records": 276,
+      "relationships": 277,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "30 original Manufacturing chapters, 26 constructed investigations and 39 new finite tests, 6052 independent numeric/logical comparisons, no physical equipment calibration or peer review",
+      "manifest_sha256": "181b72887e6e7ec00eb29a104d5e342711df91dcab974d306864a24f123be079",
+      "node": "manufacturing-atlas",
+      "records": 132,
+      "relationships": 134,
+      "software_version": "0.2.0"
+    },
+    {
+      "evidence_maturity": "Selected publisher HTML and text-extracted PDF scopes checked; two numerical reanalyses including one transcribed source dataset; independent human review, authenticated upstream file bytes, physical experiments, standards certification, live model and Bitwork testing absent.",
+      "manifest_sha256": "700f75ceee65627bce17e1829ac06d0fb5435ac18c25ef0902c35703ce6d11e3",
+      "node": "materials-atlas",
+      "records": 148,
+      "relationships": 84,
+      "software_version": "1.0.0"
+    },
+    {
+      "evidence_maturity": "62 original chapters; 55 constructed investigations; steady coupled 1D Poisson+carriers software verified on bounded synthetic data, original publishers and expert science review pending",
+      "manifest_sha256": "e60f87d36da4be3e4bac901e2d1e1f0138f3ccb2fc0bc996ae98fd01c3ec599f",
+      "node": "mathematics-physics-atlas",
+      "records": 268,
+      "relationships": 255,
+      "software_version": "1.0.0-rc.1"
+    },
+    {
+      "evidence_maturity": "mixed; imported historical references and bounded assistant primary-portion checks",
+      "manifest_sha256": "a13a53172d7c90503ccb14949ba2e22699188a95f0a56c6f2b9a7c730c23c729",
+      "node": "measurement-atlas",
+      "records": 141,
+      "relationships": 33,
+      "software_version": "1.0.0rc1"
+    },
+    {
+      "evidence_maturity": "legacy imported; upstream labels preserved without new scientific review",
+      "manifest_sha256": "ec48a3549df676fe2ca5d80eebf7516644d824ca78a0c4caa9f6a1955585730f",
+      "node": "signal-atlas",
+      "records": 232,
+      "relationships": 0,
+      "software_version": "1.0"
+    }
+  ],
+  "nodes": 15,
+  "original_30_domain_queue_modified": false,
+  "records": 3235,
+  "relationships": 2415,
+  "schema": "atlas.survival-catalog/1",
+  "status": "archived_reference_not_science_certification"
+}

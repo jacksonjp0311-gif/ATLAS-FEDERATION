@@ -1,0 +1,40 @@
+{
+  "execution_kind": "local_actual",
+  "scope": "offline_browser_js_with_captured_real_http_responses",
+  "direct_browser_network_test": false,
+  "views": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "node_count": 3,
+      "artwork_loaded": true,
+      "context_assembled": true,
+      "budget_exhaustion": true,
+      "no_match": true,
+      "download": true,
+      "horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "node_count": 3,
+      "artwork_loaded": true,
+      "context_assembled": true,
+      "budget_exhaustion": true,
+      "no_match": true,
+      "download": true,
+      "horizontal_overflow": false,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "browser_version": "144.0.7559.96",
+  "result": "passed"
+}

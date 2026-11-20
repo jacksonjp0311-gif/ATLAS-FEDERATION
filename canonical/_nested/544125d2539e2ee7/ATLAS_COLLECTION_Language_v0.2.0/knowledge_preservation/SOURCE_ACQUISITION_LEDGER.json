@@ -1,0 +1,52 @@
+{
+  "schema": "atlas.source-acquisition-ledger/1",
+  "edition": "language-0.2.0",
+  "purpose": "Separate cited scholarly knowledge from legally retained original source bytes",
+  "generated_at": "2026-11-13",
+  "default_source_status": "link_or_scoped_summary_until_byte_and_rights_provenance_verified",
+  "evidence_levels": [
+    "L0_citation_locator",
+    "L1_inspected_scoped_summary",
+    "L2_licensed_archived_original_bytes",
+    "L3_reproduced_analysis_from_documented_data",
+    "L4_independent_scientific_corroboration"
+  ],
+  "original_transport_bytes_archive_completeness": false,
+  "broad_open_license_for_all_external_sources": false,
+  "independent_scientific_review_of_all_nodes": false,
+  "offline_readable_original_material": true,
+  "full_offline_primary_source_access": false,
+  "distributed_geographic_backup_verified": false,
+  "source_rights_policy": "Do not mirror copyrighted content without verified rights; preserve bibliographic metadata, original paraphrase, and explicit acquisition gaps",
+  "next_source_priorities": [
+    "Resolve rights and archive exact primary bytes for high-value scientific sources where authorized",
+    "Preserve raw measurements with acquisition and transformation hashes",
+    "Obtain independent domain-expert review on release-critical claims",
+    "Separate published datasets, source tables, new physical experiments and synthetic models"
+  ],
+  "new_computation_bibliographic_cards": 21,
+  "new_computation_primary_transport_files_retained": 0,
+  "new_computation_source_priority": "Obtain complete authorized CC BY primary sources including author-site ODS editions; preserve licensing and exact hashes; verify publisher edition differences",
+  "source_cards_total": 429,
+  "verified_primary_source_transport_files_total": 0,
+  "next_domain": "Language Atlas to scoped v1 before Energy",
+  "offline_preservation_completeness": false,
+  "authenticated_primary_source_files_verified": 0,
+  "complete_original_human_knowledge_archive": false,
+  "next_content_domain": "language-atlas_queued_not_started",
+  "highest_priority_debt": "Rights-cleared original published bytes with transport hash, publisher edition, license and independent review",
+  "last_domain": "language-atlas",
+  "new_source_cards": 8,
+  "new_authenticated_original_source_files": 0,
+  "source_original_byte_completeness": false,
+  "community_language_documentation_status": "No authentic speaker or signed-language media; access rights and consent reviewed only at source-policy level",
+  "source_acquisition_priority": [
+    "IPA chart current version with CC BY-SA attribution verification",
+    "WALS versioned CC BY metadata and specific chapters",
+    "Universal Dependencies with treebank-by-treebank license checks",
+    "Rights-cleared Unicode normative test corpora and data tables",
+    "Culturally appropriate ELAR/CHILDES deposit-specific permissions",
+    "CLDF rights-cleared cross-language source packages"
+  ],
+  "language_original_Unicode18_test_data_download": "attempt_failed_not_archived"
+}

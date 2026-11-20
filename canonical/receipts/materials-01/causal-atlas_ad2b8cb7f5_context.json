@@ -1,0 +1,1251 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "binary instrument Wald ratio",
+    "node_ids": [
+      "causal-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "97ce13698ef107cdbbf4f50ba370b9f32df53bde2643cbcb963f3d84e20a327c",
+  "registry_revision": "eeb0dbd38979df7d1a909f7d208296e69bcb4589c7859a96d619a7eb8a24bb1f",
+  "node_versions": {
+    "causal-atlas": {
+      "software_version": "1.0.0",
+      "contract_version": "1.0",
+      "corpus_revision": "d5cb543ebeda4c2d7295ba0c62b153067892f25eda7a45561eabad5f74dab0c4",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "A curated bounded content-release reference with assistant-checked publisher pages/abstracts, original derivations, transparent cases, attributed authentic aggregate counts and explicit unresolved reviewer and live-evaluation gaps; no independent scientific sign-off."
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "causal-atlas:iv-wald",
+      "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93"
+    },
+    {
+      "record_id": "causal-atlas:iv-identification-conditions",
+      "revision": "0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d"
+    },
+    {
+      "record_id": "causal-atlas:missing-binary-outcomes",
+      "revision": "c73fb0785917b760bac1f14af3bf0c72aaacdb57abfb9b1e72ca2192a654810c"
+    },
+    {
+      "record_id": "causal-atlas:iv-defier-reversal",
+      "revision": "fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b"
+    },
+    {
+      "record_id": "causal-atlas:average-effect",
+      "revision": "d52a00c64833e73ab734470aae7f11c79aa1390edbe1c6c2afcf40f05da2f39a"
+    },
+    {
+      "record_id": "causal-atlas:rd-fuzzy-finite-example",
+      "revision": "49c18a854e9b0b93854a17f8e746f01165267db03a1bb03caf8fd0f6dbde134b"
+    },
+    {
+      "record_id": "causal-atlas:binary-missing-bounds",
+      "revision": "dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "causal-atlas:average-effect",
+      "revision": "d52a00c64833e73ab734470aae7f11c79aa1390edbe1c6c2afcf40f05da2f39a"
+    },
+    {
+      "record_id": "causal-atlas:binary-missing-bounds",
+      "revision": "dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15"
+    },
+    {
+      "record_id": "causal-atlas:iv-defier-reversal",
+      "revision": "fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b"
+    },
+    {
+      "record_id": "causal-atlas:iv-denominator-guard",
+      "revision": "40fc7e52f9c85f6cce7d8e6d911b557e719c3d638dfb1a4bbbed6cf3d673638b"
+    },
+    {
+      "record_id": "causal-atlas:iv-heterogeneous-population",
+      "revision": "a316e6c37b32ee572258e5758828cb5447e0dcbabe972371ccc50755693d738c"
+    },
+    {
+      "record_id": "causal-atlas:iv-identification-conditions",
+      "revision": "0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d"
+    },
+    {
+      "record_id": "causal-atlas:iv-late-target",
+      "revision": "f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e"
+    },
+    {
+      "record_id": "causal-atlas:iv-monotonicity",
+      "revision": "76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b"
+    },
+    {
+      "record_id": "causal-atlas:iv-wald",
+      "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93"
+    },
+    {
+      "record_id": "causal-atlas:missing-binary-outcomes",
+      "revision": "c73fb0785917b760bac1f14af3bf0c72aaacdb57abfb9b1e72ca2192a654810c"
+    },
+    {
+      "record_id": "causal-atlas:missingness-assumption",
+      "revision": "f86d559e8fdc7749472496f77ccedbc7beea5b3e010dce8b4f0a8b57600b7203"
+    },
+    {
+      "record_id": "causal-atlas:rd-fuzzy-finite-example",
+      "revision": "49c18a854e9b0b93854a17f8e746f01165267db03a1bb03caf8fd0f6dbde134b"
+    },
+    {
+      "record_id": "causal-atlas:source:HR2006",
+      "revision": "af3ab7a4994794025e9c6821c99884b41ee7d20143fe452ddcd115c76dd7141c"
+    },
+    {
+      "record_id": "causal-atlas:source:IA1991",
+      "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98"
+    },
+    {
+      "record_id": "causal-atlas:source:MI2009",
+      "revision": "6f183a464853fc4980f226850dbde23702824460e2f801acac7031352861a62f"
+    },
+    {
+      "record_id": "causal-atlas:source:WHATIF",
+      "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [
+            "Declared target, graph and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-foundations",
+          "equation": "E[Y(1)] - E[Y(0)]",
+          "limitations": [
+            "A population average is not an individual response."
+          ],
+          "tags": [
+            "effect",
+            "average"
+          ],
+          "text": "Subtract the two population outcome probabilities under the compared interventions.",
+          "uncertainty": [
+            "No empirical causal certainty or confidence interval is supplied by a reference record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Named source portion only; not independent scientific verification.",
+              "locator": "Computation of causal effects via (conditional) randomisation",
+              "source_id": "causal-atlas:source:HR2006"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "average-effect",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:average-effect",
+        "revision": "d52a00c64833e73ab734470aae7f11c79aa1390edbe1c6c2afcf40f05da2f39a",
+        "rights": {
+          "note": "Original bounded paraphrase or authored derivation. Linked publications retain their rights; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:HR2006",
+            "revision": "af3ab7a4994794025e9c6821c99884b41ee7d20143fe452ddcd115c76dd7141c"
+          }
+        ],
+        "status": "active",
+        "title": "Average binary-outcome contrast",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared target and data-generating conditions only."
+          ],
+          "assumptions": [
+            "The example’s stated mechanism or the protocol’s declared scope."
+          ],
+          "domain": "causal-investigation",
+          "equation": "L=S/N; H=(S+N-O)/N; RD in [L1-H0,H1-L0]",
+          "limitations": [
+            "Not independent empirical validation or a general identification result."
+          ],
+          "tags": [
+            "binary missing bounds",
+            "investigation"
+          ],
+          "text": "With N counted units, O observed outcomes and S observed successes, risk lies between S/N and (S+N-O)/N without a missingness model. Difference bounds subtract the opposite endpoints of the two arms. These are finite-cohort arithmetic bounds, not confidence intervals or confounding adjustment.",
+          "uncertainty": [
+            "No sample confidence interval or independent scientific certification is supplied."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent scientific review pending.",
+            "Original constructed mechanism or proposed workflow, not an empirical finding."
+          ],
+          "locators": [],
+          "origin": "authored_derivation_or_protocol",
+          "review_status": "authored_mathematical_teaching_material",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "binary-missing-bounds",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "docs/chapters/05_missingness_and_sensitivity.md",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:binary-missing-bounds",
+        "revision": "dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15",
+        "rights": {
+          "note": "Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Unobserved binary outcomes bound a cohort risk",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Counterexample under specified potential values, not empirical evidence."
+          ],
+          "tags": [
+            "synthetic",
+            "defier",
+            "failure"
+          ],
+          "text": "The constructed mix of compliers and defiers has positive effects for every type but a ratio of -2.30. The monotonicity condition deliberately fails.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "synthetic",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-defier-reversal",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi_cases.py:quasi_casebook / iv-monotonicity-failure",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-defier-reversal",
+        "revision": "fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "All types benefit but the IV ratio is negative",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "A passed operational guard does not make an instrument valid or strong."
+          ],
+          "tags": [
+            "first stage",
+            "guard",
+            "weak IV"
+          ],
+          "text": "A required caller-selected minimum absolute first stage controls whether arithmetic division is attempted; it supplies no statistical evidence about instrument strength.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "authored_protocol",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-denominator-guard",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi.py:ratio_contrast",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-denominator-guard",
+        "revision": "40fc7e52f9c85f6cce7d8e6d911b557e719c3d638dfb1a4bbbed6cf3d673638b",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Report small-denominator fragility without inventing an F test",
+        "type": "method"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Not observed training or workplace outcomes."
+          ],
+          "tags": [
+            "synthetic",
+            "heterogeneity",
+            "LATE"
+          ],
+          "text": "The authored training-offer population produces an IV ratio of 0.30 and a population ATE of 0.14. Both are exact for different targets.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "synthetic",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-heterogeneous-population",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi_cases.py:encouragement_types; docs/investigations/04_training_offer.md",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-heterogeneous-population",
+        "revision": "a316e6c37b32ee572258e5758828cb5447e0dcbabe972371ccc50755693d738c",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Constructed local effect 0.30 versus population effect 0.14",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [
+            "Well-defined intervention and consistent outcomes."
+          ],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "These conditions are not inferred from the supplied four means."
+          ],
+          "tags": [
+            "instrumental variables",
+            "identification",
+            "exclusion"
+          ],
+          "text": "For the binary local-effect interpretation, independence/exclusion, a nonzero participation change and monotonicity jointly matter; instrument relevance alone is insufficient.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+              "locator": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+              "source_id": "causal-atlas:source:IA1991"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-identification-conditions",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-identification-conditions",
+        "revision": "0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:IA1991",
+            "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98"
+          }
+        ],
+        "status": "active",
+        "title": "IV requires more than association with treatment",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "A different instrument contrast may select a different response group."
+          ],
+          "tags": [
+            "LATE",
+            "complier",
+            "population"
+          ],
+          "text": "The identified local target concerns people whose participation changes under the selected instrument contrast, not automatically everyone eligible.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Theorem 1 and interpretation, printed pp. 8-9",
+              "locator": "Theorem 1 and interpretation, printed pp. 8-9",
+              "source_id": "causal-atlas:source:IA1991"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-late-target",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-late-target",
+        "revision": "f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:IA1991",
+            "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98"
+          }
+        ],
+        "status": "active",
+        "title": "The local complier effect is not the population ATE",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Compliance types are not directly observed for each unit."
+          ],
+          "tags": [
+            "monotonicity",
+            "defiers"
+          ],
+          "text": "An increase in average uptake does not exclude individuals whose participation changes in the opposite direction.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Section 3, Condition 2, printed p. 7",
+              "locator": "Section 3, Condition 2, printed p. 7",
+              "source_id": "causal-atlas:source:IA1991"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-monotonicity",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-monotonicity",
+        "revision": "76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:IA1991",
+            "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98"
+          }
+        ],
+        "status": "active",
+        "title": "Monotonicity is an individual-response restriction",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "theta_W = (E[Y|Z=1]-E[Y|Z=0]) / (E[D|Z=1]-E[D|Z=0])",
+          "limitations": [
+            "Undefined at a zero denominator; no sample uncertainty computed by the local tool."
+          ],
+          "tags": [
+            "Wald",
+            "IV",
+            "ratio"
+          ],
+          "text": "The outcome mean contrast divided by the treatment-participation contrast is the binary ratio; its causal interpretation requires the stated identification assumptions.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Section 4, printed p. 10",
+              "locator": "Section 4, printed p. 10",
+              "source_id": "causal-atlas:source:IA1991"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "bounded_source_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "iv-wald",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:iv-wald",
+        "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:IA1991",
+            "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98"
+          }
+        ],
+        "status": "active",
+        "title": "Binary-instrument Wald ratio",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Only the declared interventions, source scope and mathematical model."
+          ],
+          "assumptions": [
+            "Binary outcome and known denominator"
+          ],
+          "domain": "causal-methods",
+          "equation": "s/n <= risk <= (s+n-o)/n",
+          "limitations": [
+            "Bounds do not account for sampling variation or treatment confounding"
+          ],
+          "tags": [
+            "missing",
+            "data"
+          ],
+          "text": "Within completely counted groups, missing binary values bound risk between successes/total and (successes+missing)/total.",
+          "uncertainty": [
+            "No independence, sampling validity or causal identification is established by a code result alone."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent scientific reviewer or complete source passage audit."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Original arithmetic derived; book includes selection/censoring scope",
+              "locator": "Original arithmetic derived; book includes selection/censoring scope",
+              "source_id": "causal-atlas:source:WHATIF"
+            }
+          ],
+          "origin": "original_arithmetic_with_source_context",
+          "review_status": "assistant_source_scope_checked_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "missing-binary-outcomes",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted drafting",
+          "created_at": "2026-11-12",
+          "derived_from": "causal_atlas/advanced.py",
+          "edition_added": "1.0.0",
+          "independent_review": false,
+          "local_derivation": true
+        },
+        "record_id": "causal-atlas:missing-binary-outcomes",
+        "revision": "c73fb0785917b760bac1f14af3bf0c72aaacdb57abfb9b1e72ca2192a654810c",
+        "rights": {
+          "note": "Original bounded paraphrase/derivation and bibliography only; source rights remain external.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:WHATIF",
+            "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256"
+          }
+        ],
+        "status": "active",
+        "title": "Unknown binary outcomes produce bounds, not zeros",
+        "type": "equation"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared target and data-generating conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-investigation",
+          "equation": "",
+          "limitations": [
+            "The local tool gives binary worst-case bounds and does not impute."
+          ],
+          "tags": [
+            "missingness",
+            "MAR",
+            "MNAR"
+          ],
+          "text": "Missing at random concerns dependence after conditioning on available information, not a reassuring appearance of randomness. The observed data alone cannot generally distinguish MAR from MNAR.",
+          "uncertainty": [
+            "No sample confidence interval or independent scientific certification is supplied."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent scientific review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Consequences of missing data; Box 1; plausibility of MAR",
+              "locator": "Consequences of missing data; Box 1; plausibility of MAR",
+              "source_id": "causal-atlas:source:MI2009"
+            }
+          ],
+          "origin": "editorial_reference",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "missingness-assumption",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "",
+          "edition_added": "0.2.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:missingness-assumption",
+        "revision": "f86d559e8fdc7749472496f77ccedbc7beea5b3e010dce8b4f0a8b57600b7203",
+        "rights": {
+          "note": "Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "causal-atlas:source:MI2009",
+            "revision": "6f183a464853fc4980f226850dbde23702824460e2f801acac7031352861a62f"
+          }
+        ],
+        "status": "active",
+        "title": "Missingness mechanisms are assumptions",
+        "type": "concept"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Declared design, target and data conditions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Not a validated real threshold study."
+          ],
+          "tags": [
+            "fuzzy RD",
+            "synthetic",
+            "uptake"
+          ],
+          "text": "Constructed uptake proportions of 0.2 and 0.7 with response 2+x/10+3D yield outcome and treatment jumps of 1.5 and 0.5, hence ratio three.",
+          "uncertainty": [
+            "No sampling confidence interval or independent validation is supplied by this record."
+          ],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent source/design review and empirical validation remain pending."
+          ],
+          "locators": [],
+          "origin": "synthetic",
+          "review_status": "author_defined_not_independently_reviewed",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "rd-fuzzy-finite-example",
+        "provenance": {
+          "author": "James Paul Jackson research program; AI-assisted",
+          "created_at": "2026-11-12",
+          "derivation_locator": "causal_atlas/quasi_cases.py:fuzzy_rd_rows",
+          "edition_added": "0.3.0",
+          "independent_review": false
+        },
+        "record_id": "causal-atlas:rd-fuzzy-finite-example",
+        "revision": "49c18a854e9b0b93854a17f8e746f01165267db03a1bb03caf8fd0f6dbde134b",
+        "rights": {
+          "note": "Original bounded description or derivation. Source material retains its rights; no full texts mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Constructed fuzzy jump ratio",
+        "type": "dataset"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Use only the inspected source portion."
+          ],
+          "assumptions": [],
+          "domain": "causal-foundations",
+          "equation": "",
+          "limitations": [
+            "Link is not independent reproduction or permission to mirror full text."
+          ],
+          "tags": [
+            "bibliography",
+            "source",
+            "hr2006"
+          ],
+          "text": "Miguel A. Hernán; James M. Robins. Estimating causal effects from epidemiological data. 2006.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent human source review."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies",
+              "locator": "Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies",
+              "source_id": "causal-atlas:source:HR2006"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "HR2006",
+        "provenance": {
+          "authors": "Miguel A. Hernán; James M. Robins",
+          "checked_at": "2026-11-12",
+          "doi": "10.1136/jech.2004.029496",
+          "inspected_scope": "Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies",
+          "publication_or_version": "2006",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2652882/"
+        },
+        "record_id": "causal-atlas:source:HR2006",
+        "revision": "af3ab7a4994794025e9c6821c99884b41ee7d20143fe452ddcd115c76dd7141c",
+        "rights": {
+          "note": "Bibliographic metadata and link only; publisher terms apply.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Estimating causal effects from epidemiological data",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Only the specifically inspected portions."
+          ],
+          "assumptions": [],
+          "domain": "causal-quasi-experimental-designs",
+          "equation": "",
+          "limitations": [
+            "Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.",
+            "Not independent reproduction or rights clearance for source redistribution."
+          ],
+          "tags": [
+            "bibliography",
+            "ia1991"
+          ],
+          "text": "Joshua D. Angrist; Guido W. Imbens. Identification and Estimation of Local Average Treatment Effects. NBER Technical Working Paper 118, December 1991; inspected version, not the later journal typography.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent human review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+              "locator": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+              "source_id": "causal-atlas:source:IA1991"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "IA1991",
+        "provenance": {
+          "access": "Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.",
+          "authors": "Joshua D. Angrist; Guido W. Imbens",
+          "checked_at": "2026-11-12",
+          "doi": "10.3386/t0118",
+          "edition_added": "0.3.0",
+          "inspected_scope": "Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10",
+          "publication_or_version": "NBER Technical Working Paper 118, December 1991; inspected version, not the later journal typography",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://www.nber.org/system/files/working_papers/t0118/t0118.pdf"
+        },
+        "record_id": "causal-atlas:source:IA1991",
+        "revision": "691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98",
+        "rights": {
+          "note": "Bibliographic metadata, original short descriptions and links only; linked full text not bundled.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Identification and Estimation of Local Average Treatment Effects",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Named inspected portions only."
+          ],
+          "assumptions": [],
+          "domain": "causal-investigation",
+          "equation": "",
+          "limitations": [
+            "Source inspection is not independent scientific replication."
+          ],
+          "tags": [
+            "bibliography",
+            "mi2009"
+          ],
+          "text": "Jonathan A. C. Sterne and colleagues. Multiple imputation for missing data: potential and pitfalls. 2009.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Independent human review pending."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Consequences of missing data; Box 1; What is multiple imputation; Pitfalls",
+              "locator": "Consequences of missing data; Box 1; What is multiple imputation; Pitfalls",
+              "source_id": "causal-atlas:source:MI2009"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "primary_portion_checked_by_assistant",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "MI2009",
+        "provenance": {
+          "authors": "Jonathan A. C. Sterne and colleagues",
+          "checked_at": "2026-11-12",
+          "doi": "10.1136/bmj.b2393",
+          "edition_added": "0.2.0",
+          "inspected_scope": "Consequences of missing data; Box 1; What is multiple imputation; Pitfalls",
+          "publication_or_version": "2009",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2714692/"
+        },
+        "record_id": "causal-atlas:source:MI2009",
+        "revision": "6f183a464853fc4980f226850dbde23702824460e2f801acac7031352861a62f",
+        "rights": {
+          "note": "CC noncommercial notice; no publication/data mirror",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Multiple imputation for missing data: potential and pitfalls",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [
+            "Use only the inspected source portion."
+          ],
+          "assumptions": [],
+          "domain": "causal-foundations",
+          "equation": "",
+          "limitations": [
+            "Link is not independent reproduction or permission to mirror full text."
+          ],
+          "tags": [
+            "bibliography",
+            "source",
+            "whatif"
+          ],
+          "text": "Miguel A. Hernán; James M. Robins. Causal Inference What If author resource page. author landing page accessed 2026-11-12.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No independent human source review."
+          ],
+          "locators": [
+            {
+              "checked_at": "2026-11-12",
+              "checker": "assistant",
+              "inspected_scope": "Landing-page scope and links only; book chapters not inspected in this build",
+              "locator": "Landing-page scope and links only; book chapters not inspected in this build",
+              "source_id": "causal-atlas:source:WHATIF"
+            }
+          ],
+          "origin": "bibliographic_record",
+          "review_status": "navigation_only_not_full_text_review",
+          "upstream_labels": {}
+        },
+        "extensions": {},
+        "node_id": "causal-atlas",
+        "original_id": "WHATIF",
+        "provenance": {
+          "authors": "Miguel A. Hernán; James M. Robins",
+          "checked_at": "2026-11-12",
+          "doi": "",
+          "inspected_scope": "Landing-page scope and links only; book chapters not inspected in this build",
+          "publication_or_version": "author landing page accessed 2026-11-12",
+          "source_bytes_archived": false,
+          "source_sha256": null,
+          "url": "https://miguelhernan.org/whatifbook"
+        },
+        "record_id": "causal-atlas:source:WHATIF",
+        "revision": "df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256",
+        "rights": {
+          "note": "Bibliographic metadata and link only; publisher terms apply.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "Causal Inference What If author resource page",
+        "type": "source"
+      }
+    ],
+    "relations": [
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-defier-reversal",
+          "revision": "fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-defier-reversal:qualifies:iv-monotonicity",
+        "revision": "b08be4188dc369dcb8b8f13e0fa6cee11af357b41d7bd6095202a39dd8e0b1a7",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-monotonicity",
+          "revision": "76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-heterogeneous-population",
+          "revision": "a316e6c37b32ee572258e5758828cb5447e0dcbabe972371ccc50755693d738c"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-heterogeneous-population:qualifies:iv-late-target",
+        "revision": "60efe451cd8d6215c1c7362ac4324cb35e8c11acae240522551fc12cd45a0931",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-late-target",
+          "revision": "f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-identification-conditions",
+          "revision": "0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-identification-conditions:qualifies:iv-monotonicity",
+        "revision": "a543c8a0c6bf6c268360c35d8e1fe19e13461e8cc29bb610599d75da1d7fdecc",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-monotonicity",
+          "revision": "76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-wald",
+          "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-wald:qualifies:iv-denominator-guard",
+        "revision": "7b2cff0d8fafd6f527e6a69954f794fab0f8b1ac14741eaffdf05808ab2cdc2d",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-denominator-guard",
+          "revision": "40fc7e52f9c85f6cce7d8e6d911b557e719c3d638dfb1a4bbbed6cf3d673638b"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-wald",
+          "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-wald:qualifies:iv-identification-conditions",
+        "revision": "41862f1fb2a79a50d76112a700adf0f8425f7a3b565bba654ee799ed94a77feb",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-identification-conditions",
+          "revision": "0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:iv-wald",
+          "revision": "c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93"
+        },
+        "provenance": {
+          "origin": "authored_editorial_link",
+          "scope": "Required context qualification or explicit topic relation; not independent verification."
+        },
+        "relation_id": "causal-atlas:iv-wald:qualifies:iv-late-target",
+        "revision": "09e26aaa9c0f12b1c7c4ca35e258778d943340910dcedd46dad8519e383f1a56",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:iv-late-target",
+          "revision": "f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e"
+        },
+        "type": "qualifies"
+      },
+      {
+        "from": {
+          "record_id": "causal-atlas:binary-missing-bounds",
+          "revision": "dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15"
+        },
+        "provenance": {
+          "edition_added": "0.2.0",
+          "origin": "authored_editorial_link",
+          "scope": "Preserve applicability cautions or navigation; not new empirical evidence."
+        },
+        "relation_id": "causal-atlas:v02:binary-missing-bounds:qualifies:missingness-assumption",
+        "revision": "b4630928ecd43daf75078e15a5d142db46f55d7e18db4f98f5798ce97ee38147",
+        "schema": "atlas.relation/1",
+        "to": {
+          "record_id": "causal-atlas:missingness-assumption",
+          "revision": "f86d559e8fdc7749472496f77ccedbc7beea5b3e010dce8b4f0a8b57600b7203"
+        },
+        "type": "qualifies"
+      }
+    ]
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[\"Declared target, graph and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-foundations\",\"equation\":\"E[Y(1)] - E[Y(0)]\",\"limitations\":[\"A population average is not an individual response.\"],\"tags\":[\"effect\",\"average\"],\"text\":\"Subtract the two population outcome probabilities under the compared interventions.\",\"uncertainty\":[\"No empirical causal certainty or confidence interval is supplied by a reference record.\"],\"units\":[]},\"evidence\":{\"gaps\":[],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Named source portion only; not independent scientific verification.\",\"locator\":\"Computation of causal effects via (conditional) randomisation\",\"source_id\":\"causal-atlas:source:HR2006\"}],\"origin\":\"editorial_reference\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"average-effect\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"independent_review\":false},\"record_id\":\"causal-atlas:average-effect\",\"revision\":\"d52a00c64833e73ab734470aae7f11c79aa1390edbe1c6c2afcf40f05da2f39a\",\"rights\":{\"note\":\"Original bounded paraphrase or authored derivation. Linked publications retain their rights; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:HR2006\",\"revision\":\"af3ab7a4994794025e9c6821c99884b41ee7d20143fe452ddcd115c76dd7141c\"}],\"status\":\"active\",\"title\":\"Average binary-outcome contrast\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Declared target and data-generating conditions only.\"],\"assumptions\":[\"The example’s stated mechanism or the protocol’s declared scope.\"],\"domain\":\"causal-investigation\",\"equation\":\"L=S/N; H=(S+N-O)/N; RD in [L1-H0,H1-L0]\",\"limitations\":[\"Not independent empirical validation or a general identification result.\"],\"tags\":[\"binary missing bounds\",\"investigation\"],\"text\":\"With N counted units, O observed outcomes and S observed successes, risk lies between S/N and (S+N-O)/N without a missingness model. Difference bounds subtract the opposite endpoints of the two arms. These are finite-cohort arithmetic bounds, not confidence intervals or confounding adjustment.\",\"uncertainty\":[\"No sample confidence interval or independent scientific certification is supplied.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent scientific review pending.\",\"Original constructed mechanism or proposed workflow, not an empirical finding.\"],\"locators\":[],\"origin\":\"authored_derivation_or_protocol\",\"review_status\":\"authored_mathematical_teaching_material\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"binary-missing-bounds\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"docs/chapters/05_missingness_and_sensitivity.md\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:binary-missing-bounds\",\"revision\":\"dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15\",\"rights\":{\"note\":\"Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Unobserved binary outcomes bound a cohort risk\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Counterexample under specified potential values, not empirical evidence.\"],\"tags\":[\"synthetic\",\"defier\",\"failure\"],\"text\":\"The constructed mix of compliers and defiers has positive effects for every type but a ratio of -2.30. The monotonicity condition deliberately fails.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"synthetic\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-defier-reversal\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi_cases.py:quasi_casebook / iv-monotonicity-failure\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-defier-reversal\",\"revision\":\"fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"All types benefit but the IV ratio is negative\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"A passed operational guard does not make an instrument valid or strong.\"],\"tags\":[\"first stage\",\"guard\",\"weak IV\"],\"text\":\"A required caller-selected minimum absolute first stage controls whether arithmetic division is attempted; it supplies no statistical evidence about instrument strength.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"authored_protocol\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-denominator-guard\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi.py:ratio_contrast\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-denominator-guard\",\"revision\":\"40fc7e52f9c85f6cce7d8e6d911b557e719c3d638dfb1a4bbbed6cf3d673638b\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Report small-denominator fragility without inventing an F test\",\"type\":\"method\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Not observed training or workplace outcomes.\"],\"tags\":[\"synthetic\",\"heterogeneity\",\"LATE\"],\"text\":\"The authored training-offer population produces an IV ratio of 0.30 and a population ATE of 0.14. Both are exact for different targets.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"synthetic\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-heterogeneous-population\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi_cases.py:encouragement_types; docs/investigations/04_training_offer.md\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-heterogeneous-population\",\"revision\":\"a316e6c37b32ee572258e5758828cb5447e0dcbabe972371ccc50755693d738c\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Constructed local effect 0.30 versus population effect 0.14\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[\"Well-defined intervention and consistent outcomes.\"],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"These conditions are not inferred from the supplied four means.\"],\"tags\":[\"instrumental variables\",\"identification\",\"exclusion\"],\"text\":\"For the binary local-effect interpretation, independence/exclusion, a nonzero participation change and monotonicity jointly matter; instrument relevance alone is insufficient.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10\",\"locator\":\"Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10\",\"source_id\":\"causal-atlas:source:IA1991\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-identification-conditions\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-identification-conditions\",\"revision\":\"0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:IA1991\",\"revision\":\"691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98\"}],\"status\":\"active\",\"title\":\"IV requires more than association with treatment\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"A different instrument contrast may select a different response group.\"],\"tags\":[\"LATE\",\"complier\",\"population\"],\"text\":\"The identified local target concerns people whose participation changes under the selected instrument contrast, not automatically everyone eligible.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Theorem 1 and interpretation, printed pp. 8-9\",\"locator\":\"Theorem 1 and interpretation, printed pp. 8-9\",\"source_id\":\"causal-atlas:source:IA1991\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-late-target\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-late-target\",\"revision\":\"f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:IA1991\",\"revision\":\"691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98\"}],\"status\":\"active\",\"title\":\"The local complier effect is not the population ATE\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Compliance types are not directly observed for each unit.\"],\"tags\":[\"monotonicity\",\"defiers\"],\"text\":\"An increase in average uptake does not exclude individuals whose participation changes in the opposite direction.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Section 3, Condition 2, printed p. 7\",\"locator\":\"Section 3, Condition 2, printed p. 7\",\"source_id\":\"causal-atlas:source:IA1991\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-monotonicity\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-monotonicity\",\"revision\":\"76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:IA1991\",\"revision\":\"691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98\"}],\"status\":\"active\",\"title\":\"Monotonicity is an individual-response restriction\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"theta_W = (E[Y|Z=1]-E[Y|Z=0]) / (E[D|Z=1]-E[D|Z=0])\",\"limitations\":[\"Undefined at a zero denominator; no sample uncertainty computed by the local tool.\"],\"tags\":[\"Wald\",\"IV\",\"ratio\"],\"text\":\"The outcome mean contrast divided by the treatment-participation contrast is the binary ratio; its causal interpretation requires the stated identification assumptions.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Section 4, printed p. 10\",\"locator\":\"Section 4, printed p. 10\",\"source_id\":\"causal-atlas:source:IA1991\"}],\"origin\":\"editorial_reference\",\"review_status\":\"bounded_source_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"iv-wald\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:iv-wald\",\"revision\":\"c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:IA1991\",\"revision\":\"691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98\"}],\"status\":\"active\",\"title\":\"Binary-instrument Wald ratio\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Only the declared interventions, source scope and mathematical model.\"],\"assumptions\":[\"Binary outcome and known denominator\"],\"domain\":\"causal-methods\",\"equation\":\"s/n <= risk <= (s+n-o)/n\",\"limitations\":[\"Bounds do not account for sampling variation or treatment confounding\"],\"tags\":[\"missing\",\"data\"],\"text\":\"Within completely counted groups, missing binary values bound risk between successes/total and (successes+missing)/total.\",\"uncertainty\":[\"No independence, sampling validity or causal identification is established by a code result alone.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent scientific reviewer or complete source passage audit.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Original arithmetic derived; book includes selection/censoring scope\",\"locator\":\"Original arithmetic derived; book includes selection/censoring scope\",\"source_id\":\"causal-atlas:source:WHATIF\"}],\"origin\":\"original_arithmetic_with_source_context\",\"review_status\":\"assistant_source_scope_checked_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"missing-binary-outcomes\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted drafting\",\"created_at\":\"2026-11-12\",\"derived_from\":\"causal_atlas/advanced.py\",\"edition_added\":\"1.0.0\",\"independent_review\":false,\"local_derivation\":true},\"record_id\":\"causal-atlas:missing-binary-outcomes\",\"revision\":\"c73fb0785917b760bac1f14af3bf0c72aaacdb57abfb9b1e72ca2192a654810c\",\"rights\":{\"note\":\"Original bounded paraphrase/derivation and bibliography only; source rights remain external.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:WHATIF\",\"revision\":\"df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256\"}],\"status\":\"active\",\"title\":\"Unknown binary outcomes produce bounds, not zeros\",\"type\":\"equation\"},{\"content\":{\"applicability\":[\"Declared target and data-generating conditions only.\"],\"assumptions\":[],\"domain\":\"causal-investigation\",\"equation\":\"\",\"limitations\":[\"The local tool gives binary worst-case bounds and does not impute.\"],\"tags\":[\"missingness\",\"MAR\",\"MNAR\"],\"text\":\"Missing at random concerns dependence after conditioning on available information, not a reassuring appearance of randomness. The observed data alone cannot generally distinguish MAR from MNAR.\",\"uncertainty\":[\"No sample confidence interval or independent scientific certification is supplied.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent scientific review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Consequences of missing data; Box 1; plausibility of MAR\",\"locator\":\"Consequences of missing data; Box 1; plausibility of MAR\",\"source_id\":\"causal-atlas:source:MI2009\"}],\"origin\":\"editorial_reference\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"missingness-assumption\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"\",\"edition_added\":\"0.2.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:missingness-assumption\",\"revision\":\"f86d559e8fdc7749472496f77ccedbc7beea5b3e010dce8b4f0a8b57600b7203\",\"rights\":{\"note\":\"Original bounded summary or derivation; linked sources retain their rights. Full texts not mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"causal-atlas:source:MI2009\",\"revision\":\"6f183a464853fc4980f226850dbde23702824460e2f801acac7031352861a62f\"}],\"status\":\"active\",\"title\":\"Missingness mechanisms are assumptions\",\"type\":\"concept\"},{\"content\":{\"applicability\":[\"Declared design, target and data conditions only.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Not a validated real threshold study.\"],\"tags\":[\"fuzzy RD\",\"synthetic\",\"uptake\"],\"text\":\"Constructed uptake proportions of 0.2 and 0.7 with response 2+x/10+3D yield outcome and treatment jumps of 1.5 and 0.5, hence ratio three.\",\"uncertainty\":[\"No sampling confidence interval or independent validation is supplied by this record.\"],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent source/design review and empirical validation remain pending.\"],\"locators\":[],\"origin\":\"synthetic\",\"review_status\":\"author_defined_not_independently_reviewed\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"rd-fuzzy-finite-example\",\"provenance\":{\"author\":\"James Paul Jackson research program; AI-assisted\",\"created_at\":\"2026-11-12\",\"derivation_locator\":\"causal_atlas/quasi_cases.py:fuzzy_rd_rows\",\"edition_added\":\"0.3.0\",\"independent_review\":false},\"record_id\":\"causal-atlas:rd-fuzzy-finite-example\",\"revision\":\"49c18a854e9b0b93854a17f8e746f01165267db03a1bb03caf8fd0f6dbde134b\",\"rights\":{\"note\":\"Original bounded description or derivation. Source material retains its rights; no full texts mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Constructed fuzzy jump ratio\",\"type\":\"dataset\"},{\"content\":{\"applicability\":[\"Use only the inspected source portion.\"],\"assumptions\":[],\"domain\":\"causal-foundations\",\"equation\":\"\",\"limitations\":[\"Link is not independent reproduction or permission to mirror full text.\"],\"tags\":[\"bibliography\",\"source\",\"hr2006\"],\"text\":\"Miguel A. Hernán; James M. Robins. Estimating causal effects from epidemiological data. 2006.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent human source review.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies\",\"locator\":\"Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies\",\"source_id\":\"causal-atlas:source:HR2006\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"HR2006\",\"provenance\":{\"authors\":\"Miguel A. Hernán; James M. Robins\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.1136/jech.2004.029496\",\"inspected_scope\":\"Computation of causal effects via (conditional) randomisation; Standardisation; The randomised experiment paradigm for observational studies\",\"publication_or_version\":\"2006\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2652882/\"},\"record_id\":\"causal-atlas:source:HR2006\",\"revision\":\"af3ab7a4994794025e9c6821c99884b41ee7d20143fe452ddcd115c76dd7141c\",\"rights\":{\"note\":\"Bibliographic metadata and link only; publisher terms apply.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Estimating causal effects from epidemiological data\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Only the specifically inspected portions.\"],\"assumptions\":[],\"domain\":\"causal-quasi-experimental-designs\",\"equation\":\"\",\"limitations\":[\"Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.\",\"Not independent reproduction or rights clearance for source redistribution.\"],\"tags\":[\"bibliography\",\"ia1991\"],\"text\":\"Joshua D. Angrist; Guido W. Imbens. Identification and Estimation of Local Average Treatment Effects. NBER Technical Working Paper 118, December 1991; inspected version, not the later journal typography.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent human review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10\",\"locator\":\"Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10\",\"source_id\":\"causal-atlas:source:IA1991\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"IA1991\",\"provenance\":{\"access\":\"Selected parsed PDF passages; image inspection of printed pp. 7 and 10. No full empirical replication.\",\"authors\":\"Joshua D. Angrist; Guido W. Imbens\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.3386/t0118\",\"edition_added\":\"0.3.0\",\"inspected_scope\":\"Sections 3-4: Conditions 1-2, Theorem 1 and binary ratio, printed pp. 5-10\",\"publication_or_version\":\"NBER Technical Working Paper 118, December 1991; inspected version, not the later journal typography\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://www.nber.org/system/files/working_papers/t0118/t0118.pdf\"},\"record_id\":\"causal-atlas:source:IA1991\",\"revision\":\"691f14816843580fe3d1cc10e8f91d80b3033eea68cbd26b76afcc199ef27d98\",\"rights\":{\"note\":\"Bibliographic metadata, original short descriptions and links only; linked full text not bundled.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Identification and Estimation of Local Average Treatment Effects\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Named inspected portions only.\"],\"assumptions\":[],\"domain\":\"causal-investigation\",\"equation\":\"\",\"limitations\":[\"Source inspection is not independent scientific replication.\"],\"tags\":[\"bibliography\",\"mi2009\"],\"text\":\"Jonathan A. C. Sterne and colleagues. Multiple imputation for missing data: potential and pitfalls. 2009.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Independent human review pending.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Consequences of missing data; Box 1; What is multiple imputation; Pitfalls\",\"locator\":\"Consequences of missing data; Box 1; What is multiple imputation; Pitfalls\",\"source_id\":\"causal-atlas:source:MI2009\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"primary_portion_checked_by_assistant\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"MI2009\",\"provenance\":{\"authors\":\"Jonathan A. C. Sterne and colleagues\",\"checked_at\":\"2026-11-12\",\"doi\":\"10.1136/bmj.b2393\",\"edition_added\":\"0.2.0\",\"inspected_scope\":\"Consequences of missing data; Box 1; What is multiple imputation; Pitfalls\",\"publication_or_version\":\"2009\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2714692/\"},\"record_id\":\"causal-atlas:source:MI2009\",\"revision\":\"6f183a464853fc4980f226850dbde23702824460e2f801acac7031352861a62f\",\"rights\":{\"note\":\"CC noncommercial notice; no publication/data mirror\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Multiple imputation for missing data: potential and pitfalls\",\"type\":\"source\"},{\"content\":{\"applicability\":[\"Use only the inspected source portion.\"],\"assumptions\":[],\"domain\":\"causal-foundations\",\"equation\":\"\",\"limitations\":[\"Link is not independent reproduction or permission to mirror full text.\"],\"tags\":[\"bibliography\",\"source\",\"whatif\"],\"text\":\"Miguel A. Hernán; James M. Robins. Causal Inference What If author resource page. author landing page accessed 2026-11-12.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No independent human source review.\"],\"locators\":[{\"checked_at\":\"2026-11-12\",\"checker\":\"assistant\",\"inspected_scope\":\"Landing-page scope and links only; book chapters not inspected in this build\",\"locator\":\"Landing-page scope and links only; book chapters not inspected in this build\",\"source_id\":\"causal-atlas:source:WHATIF\"}],\"origin\":\"bibliographic_record\",\"review_status\":\"navigation_only_not_full_text_review\",\"upstream_labels\":{}},\"extensions\":{},\"node_id\":\"causal-atlas\",\"original_id\":\"WHATIF\",\"provenance\":{\"authors\":\"Miguel A. Hernán; James M. Robins\",\"checked_at\":\"2026-11-12\",\"doi\":\"\",\"inspected_scope\":\"Landing-page scope and links only; book chapters not inspected in this build\",\"publication_or_version\":\"author landing page accessed 2026-11-12\",\"source_bytes_archived\":false,\"source_sha256\":null,\"url\":\"https://miguelhernan.org/whatifbook\"},\"record_id\":\"causal-atlas:source:WHATIF\",\"revision\":\"df21f40ecc52502caf430befba5beff41ed6ca3289e51f33bc05a55a60820256\",\"rights\":{\"note\":\"Bibliographic metadata and link only; publisher terms apply.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"Causal Inference What If author resource page\",\"type\":\"source\"}],\"relations\":[{\"from\":{\"record_id\":\"causal-atlas:iv-defier-reversal\",\"revision\":\"fcba7776f851bbcb7c8c1178bfc8ca5cbb530177db8a6f977f36f101bf27672b\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-defier-reversal:qualifies:iv-monotonicity\",\"revision\":\"b08be4188dc369dcb8b8f13e0fa6cee11af357b41d7bd6095202a39dd8e0b1a7\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-monotonicity\",\"revision\":\"76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:iv-heterogeneous-population\",\"revision\":\"a316e6c37b32ee572258e5758828cb5447e0dcbabe972371ccc50755693d738c\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-heterogeneous-population:qualifies:iv-late-target\",\"revision\":\"60efe451cd8d6215c1c7362ac4324cb35e8c11acae240522551fc12cd45a0931\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-late-target\",\"revision\":\"f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:iv-identification-conditions\",\"revision\":\"0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-identification-conditions:qualifies:iv-monotonicity\",\"revision\":\"a543c8a0c6bf6c268360c35d8e1fe19e13461e8cc29bb610599d75da1d7fdecc\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-monotonicity\",\"revision\":\"76bf6847d908478984c250800ec0259ea51b9a18e879bb00ea6cd9612999825b\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:iv-wald\",\"revision\":\"c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-wald:qualifies:iv-denominator-guard\",\"revision\":\"7b2cff0d8fafd6f527e6a69954f794fab0f8b1ac14741eaffdf05808ab2cdc2d\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-denominator-guard\",\"revision\":\"40fc7e52f9c85f6cce7d8e6d911b557e719c3d638dfb1a4bbbed6cf3d673638b\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:iv-wald\",\"revision\":\"c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-wald:qualifies:iv-identification-conditions\",\"revision\":\"41862f1fb2a79a50d76112a700adf0f8425f7a3b565bba654ee799ed94a77feb\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-identification-conditions\",\"revision\":\"0c85db2f0885504b27da0e4f990069ec310e8b926b24238579543aceed54452d\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:iv-wald\",\"revision\":\"c91f9a6488afcc0bec98fbdffc2740700ea1a452ac2ae6ca9130f459f06f0f93\"},\"provenance\":{\"origin\":\"authored_editorial_link\",\"scope\":\"Required context qualification or explicit topic relation; not independent verification.\"},\"relation_id\":\"causal-atlas:iv-wald:qualifies:iv-late-target\",\"revision\":\"09e26aaa9c0f12b1c7c4ca35e258778d943340910dcedd46dad8519e383f1a56\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:iv-late-target\",\"revision\":\"f7336c25d8be93d6656ddfbb1047700eccd910fdbe08a51ce43a557f92e0ae5e\"},\"type\":\"qualifies\"},{\"from\":{\"record_id\":\"causal-atlas:binary-missing-bounds\",\"revision\":\"dc778870b92c6d0a2e12c24185c2c650855d57f62e857b46a5f6c233e4e17e15\"},\"provenance\":{\"edition_added\":\"0.2.0\",\"origin\":\"authored_editorial_link\",\"scope\":\"Preserve applicability cautions or navigation; not new empirical evidence.\"},\"relation_id\":\"causal-atlas:v02:binary-missing-bounds:qualifies:missingness-assumption\",\"revision\":\"b4630928ecd43daf75078e15a5d142db46f55d7e18db4f98f5798ce97ee38147\",\"schema\":\"atlas.relation/1\",\"to\":{\"record_id\":\"causal-atlas:missingness-assumption\",\"revision\":\"f86d559e8fdc7749472496f77ccedbc7beea5b3e010dce8b4f0a8b57600b7203\"},\"type\":\"qualifies\"}]}",
+  "context_bytes": 32152,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "causal-atlas:rd-fuzzy-target",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "f04b6bc44a339c1cb651a6b393fb8fbdbae3a7d2ee16e4d51872d60654fb6bd5"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.control-robust-oracle/1",
+  "result": "passed",
+  "seed": 181126,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "total_compared": 1700,
+  "per_method": {
+    "interval_box": 300,
+    "delay_roots": 300,
+    "Lyapunov_Q": 200,
+    "frequency_S_T": 600,
+    "lag1_correlation": 300
+  },
+  "maximum_scaled_absolute_error": 4.980559976921029e-16,
+  "errors": [],
+  "source": "author_generated_models_not_observations",
+  "independent_physical_validation": false,
+  "hardware_actuation": false,
+  "heldout_ai_evaluation": false
+}

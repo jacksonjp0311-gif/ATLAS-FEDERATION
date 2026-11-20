@@ -1,0 +1,203 @@
+{
+  "schema": "atlas.collection-content-checkpoint/3",
+  "version": "Agent Atlas 0.3.0",
+  "date": "2026-11-13",
+  "status": "tested_research_content_not_agent_v1",
+  "result": "passed",
+  "nodes": 7,
+  "common_records": 1179,
+  "common_relations": 412,
+  "agent_records": 128,
+  "agent_source_cards": 27,
+  "agent_relations": 83,
+  "chapters": 30,
+  "investigations": 18,
+  "old_agent_record_revisions_retained": 100,
+  "old_agent_relation_revisions_retained": 63,
+  "automated_tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 233,
+      "passed": 233,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Materials": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Control": {
+      "ran": 244,
+      "passed": 244,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Agent": {
+      "ran": 156,
+      "passed": 156,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "tests_passed": 1161,
+  "tests_skipped": 0,
+  "source_schema": {
+    "result": "passed",
+    "method": "fastjsonschema compiled entire corpus; Draft202012 examples; runtime full exact context validation",
+    "errors": [],
+    "validated": {
+      "record": 1179,
+      "relation": 412,
+      "node": 7,
+      "context": 16
+    },
+    "draft2020_bounded_samples": [
+      "record",
+      "relation",
+      "node",
+      "context"
+    ],
+    "scope_limit": "Draft 2020-12 not exhaustively run on all large assembled contexts due pathological runtime"
+  },
+  "contexts_validated": 16,
+  "cases": {
+    "v0.1": "passed",
+    "v0.2": "passed",
+    "v0.3": "passed"
+  },
+  "separate_numerical_oracle": {
+    "schema": "atlas.agent-v03-oracle/1",
+    "status": "passed",
+    "seed": 13496,
+    "comparisons": 7750,
+    "categories": {
+      "span_coverage": 250,
+      "recovery_transitions": 1500,
+      "MAST_counts": 2800,
+      "MAST_unknowns": 2800,
+      "repeatability": 400
+    },
+    "max_absolute_difference": 0.0,
+    "numpy_version": "2.3.5",
+    "actual_MAST_rows_loaded": 0,
+    "live_agents_tested": 0,
+    "independent_human_label_review": false,
+    "source": "author-generated randomized structured fixtures"
+  },
+  "preservation": {
+    "schema": "atlas.agent-preservation-audit/3",
+    "result": "passed",
+    "old_release": "Agent 0.2.0",
+    "protected_files_byte_identical": 1439,
+    "protected_sections": [
+      {
+        "prefix": "baseline",
+        "files": 771,
+        "changed": 0
+      },
+      {
+        "prefix": "CAUSAL-ATLAS",
+        "files": 253,
+        "changed": 0
+      },
+      {
+        "prefix": "MATERIALS-ATLAS",
+        "files": 121,
+        "changed": 0
+      },
+      {
+        "prefix": "CONTROL-ATLAS",
+        "files": 225,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/causal-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/control-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/cymatics-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/materials-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/measurement-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "common/nodes/signal-atlas",
+        "files": 9,
+        "changed": 0
+      },
+      {
+        "prefix": "wheels_preserved",
+        "files": 15,
+        "changed": 0
+      }
+    ],
+    "all_protected_changed": [],
+    "old_shared_record_revisions_unchanged": 1151,
+    "old_shared_relation_revisions_unchanged": 392,
+    "old_agent_record_revisions_unchanged": 100,
+    "old_agent_relation_revisions_unchanged": 63,
+    "original_baseline_members_reverified": 771,
+    "original_baseline_changed": [],
+    "source_code_router_changed": false,
+    "independent_scientific_review": false
+  },
+  "clean_wheel_install": {
+    "schema": "atlas.agent-v03-wheel-smoke/1",
+    "status": "passed",
+    "import_outside_source_tree": true,
+    "installed_distribution": "agent-atlas-research 0.3.0",
+    "installed_records": 128,
+    "installed_node_count": 1,
+    "casebook": "passed",
+    "forge_context": "valid",
+    "live_model_runs": 0,
+    "provider_calls": 0
+  },
+  "scientific_restrictions": {
+    "original_MAST_rows_acquired": false,
+    "MAST_metadata_source_checked": true,
+    "actual_agent_model_executions": false,
+    "real_provider_side_effects": false,
+    "independent_task_outcome_review": false,
+    "independent_science_review": false,
+    "content_v1_ready": false,
+    "routing_changed": false,
+    "held_out_agent_benchmark": false,
+    "desktop_transfer": false
+  },
+  "remaining": "Acquire rights-checked original agent traces and external evidence; independent evaluation with controlled models, tools and cost; deepen source review before scoped v1. All 30 domains precede routing."
+}

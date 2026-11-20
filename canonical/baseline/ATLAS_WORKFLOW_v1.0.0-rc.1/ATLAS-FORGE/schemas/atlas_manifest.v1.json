@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas manifest v1",
+  "type": "object",
+  "required": [
+    "atlas_id",
+    "title",
+    "version",
+    "schema_version",
+    "status",
+    "packet_count",
+    "source_count"
+  ],
+  "properties": {
+    "atlas_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "status": {
+      "type": "string"
+    },
+    "packet_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": true
+}

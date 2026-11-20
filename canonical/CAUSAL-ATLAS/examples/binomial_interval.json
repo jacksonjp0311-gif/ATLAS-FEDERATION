@@ -1,0 +1,11 @@
+{
+  "group_0": {
+    "successes": 60,
+    "total": 100
+  },
+  "group_1": {
+    "successes": 75,
+    "total": 100
+  },
+  "confidence": "0.95"
+}

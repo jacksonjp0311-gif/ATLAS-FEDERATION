@@ -1,0 +1,78 @@
+{
+  "schema": "atlas.offline-survival-audit/1",
+  "result": "passed_structural_only",
+  "nodes": 11,
+  "record_count": 2289,
+  "source_cards": 484,
+  "verified_local_primary_source_files": 0,
+  "relation_count": 1455,
+  "by_node": {
+    "agent-atlas": {
+      "records": 190,
+      "sources": 34,
+      "relations": 122
+    },
+    "causal-atlas": {
+      "records": 149,
+      "sources": 34,
+      "relations": 65
+    },
+    "chemistry-atlas": {
+      "records": 237,
+      "sources": 18,
+      "relations": 210
+    },
+    "computation-atlas": {
+      "records": 234,
+      "sources": 21,
+      "relations": 256
+    },
+    "control-atlas": {
+      "records": 249,
+      "sources": 51,
+      "relations": 147
+    },
+    "cymatics-atlas": {
+      "records": 132,
+      "sources": 33,
+      "relations": 0
+    },
+    "energy-atlas": {
+      "records": 301,
+      "sources": 31,
+      "relations": 261
+    },
+    "language-atlas": {
+      "records": 276,
+      "sources": 39,
+      "relations": 277
+    },
+    "materials-atlas": {
+      "records": 148,
+      "sources": 29,
+      "relations": 84
+    },
+    "measurement-atlas": {
+      "records": 141,
+      "sources": 44,
+      "relations": 33
+    },
+    "signal-atlas": {
+      "records": 232,
+      "sources": 150,
+      "relations": 0
+    }
+  },
+  "domain_candidates_declared": 30,
+  "content_ready_candidates_in_roadmap": 6,
+  "full_human_knowledge_preserved": false,
+  "scientific_validity_independently_verified": false,
+  "all_primary_sources_available_offline": false,
+  "global_router_built": false,
+  "desktop_transfer_complete": false,
+  "errors": [],
+  "warnings": [
+    "Many source cards have no locally authenticated original bytes; the archive is not fully offline-primary-source recoverable."
+  ],
+  "interpretation": "Byte/reference closure only. No truth, author, rights, science, or backup-location certification."
+}

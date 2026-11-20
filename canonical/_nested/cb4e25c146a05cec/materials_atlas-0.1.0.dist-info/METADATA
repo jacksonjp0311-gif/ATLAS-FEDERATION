@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: materials-atlas
+Version: 0.1.0
+Summary: Bounded materials science reference, source-led research and explicitly scoped numerical calculators
+Requires-Python: >=3.10
+License-File: NOTICE.md
+Dynamic: license-file

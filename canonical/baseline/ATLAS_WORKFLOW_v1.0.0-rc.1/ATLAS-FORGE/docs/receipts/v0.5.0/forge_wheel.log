@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/ATLAS_WORKFLOW_v0.5.0/ATLAS-FORGE
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: atlas-forge-research
+  Building wheel for atlas-forge-research (pyproject.toml): started
+  Building wheel for atlas-forge-research (pyproject.toml): finished with status 'done'
+  Created wheel for atlas-forge-research: filename=atlas_forge_research-0.5.0-py3-none-any.whl size=2281260 sha256=023c723499e306879537be3520d5b19800b5f826848a4828a34a9aadb6fd23ac
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3hvhrabj/wheels/bd/fe/94/36fa911047b66a10464b30e4c2236c3b49698eb5fc59203235
+Successfully built atlas-forge-research

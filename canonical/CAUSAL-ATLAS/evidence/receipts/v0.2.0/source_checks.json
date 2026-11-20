@@ -1,0 +1,495 @@
+{
+  "schema": "atlas.collection-checks/1",
+  "checkpoint": "0.2.0",
+  "date": "2026-11-12",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tests": {
+    "Forge": {
+      "ran": 188,
+      "passed": 188,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Measurement": {
+      "ran": 218,
+      "passed": 218,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "Causal": {
+      "ran": 122,
+      "passed": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "stages": {
+    "conformance": {
+      "result": "passed",
+      "nodes": 4,
+      "records": 578,
+      "relations": 59
+    },
+    "context": [
+      {
+        "node": "causal-atlas",
+        "query": "standardization positivity",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "measurement-atlas",
+        "query": "expanded uncertainty",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "cymatics-atlas",
+        "query": "Faraday waves",
+        "status": "context_available",
+        "valid": true
+      },
+      {
+        "node": "signal-atlas",
+        "query": "NOAA GOES",
+        "status": "context_available",
+        "valid": true
+      }
+    ],
+    "casebook": {
+      "schema": "atlas.causal-casebook/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "confounded-process",
+          "data_origin": "synthetic_constructed_population",
+          "crude_difference": "-13/50",
+          "standardized_difference": "1/10",
+          "known_model_intervention_difference": "1/10",
+          "expected": {
+            "crude_difference": "-13/50",
+            "standardized_difference": "1/10"
+          },
+          "passed": true,
+          "limitations": [
+            "The generating graph and probabilities are stipulated, not learned from factory data.",
+            "No sampling uncertainty is estimated."
+          ]
+        },
+        {
+          "id": "collider-selection",
+          "data_origin": "synthetic_finite_model",
+          "marginal_A1_given_B1": "1/2",
+          "A1_given_B0_selected": "1",
+          "A1_given_B1_selected": "1/2",
+          "passed": true,
+          "limitations": [
+            "Selection is explicitly defined as logical OR; other mechanisms can produce different magnitudes."
+          ]
+        },
+        {
+          "id": "mediator-conditioning",
+          "data_origin": "synthetic_graph",
+          "chain_blocked_by_M": true,
+          "total_effect_backdoor_adjust_M": {
+            "criterion": "single-exposure-backdoor-sufficient",
+            "valid_under_supplied_graph": false,
+            "descendants_of_exposure_in_set": [
+              "M"
+            ],
+            "blocks_backdoor_paths": true,
+            "graph_truth_checked": false,
+            "no_causal_effect_claim_from_graph_alone": true,
+            "failure_does_not_prove_nonidentifiability": true
+          },
+          "passed": true,
+          "limitations": [
+            "Rejecting M for this sufficient total-effect criterion is not a claim about every direct-effect method."
+          ]
+        },
+        {
+          "id": "missing-treatment-support",
+          "data_origin": "synthetic_grouped_counts",
+          "missing_positive_target_stratum_rejected": true,
+          "passed": true,
+          "limitations": [
+            "Empty sample cells alone do not distinguish structural impossibility from finite-sample sparsity."
+          ]
+        },
+        {
+          "id": "unobserved-common-cause",
+          "data_origin": "synthetic_graph",
+          "observed_adjustment_sets": [],
+          "passed": true,
+          "limitations": [
+            "No observed back-door set was found; this is not a complete nonidentifiability proof."
+          ]
+        }
+      ],
+      "physical_observations": false,
+      "independent_review": false,
+      "causal_discovery": false
+    },
+    "investigations": {
+      "schema": "atlas.causal-investigations/1",
+      "result": "passed",
+      "cases": [
+        {
+          "id": "both_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "propensity_only_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": false,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "outcome_only_correct",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "-13/50",
+            "ipw_hajek": "-13/50",
+            "aipw": "1/10",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": false,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "both_wrong",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "1/10",
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "-13/50",
+            "ipw_hajek": "-13/50",
+            "aipw": "-13/50",
+            "aipw_bias": "-9/25",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": false,
+            "outcome_means_exact": false,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "1/10",
+            "aipw": "-13/50"
+          },
+          "checks": {
+            "true_ate": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact synthetic population expectation. One correct nuisance family removes this model bias; two wrong families can fail."
+        },
+        {
+          "id": "target_easy_heavy",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "4/25",
+            "crude_difference": "-1/68",
+            "outcome_regression": "4/25",
+            "ipw_horvitz_thompson": "4/25",
+            "ipw_hajek": "4/25",
+            "aipw": "4/25",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "4/25"
+          },
+          "checks": {
+            "true_ate": true
+          },
+          "passed": true,
+          "interpretation": "Effect heterogeneity plus target composition changes the average being asked for."
+        },
+        {
+          "id": "target_difficult_heavy",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "schema": "atlas.causal-population-comparison/1",
+            "data_origin": "synthetic_stipulated_population",
+            "true_ate": "17/50",
+            "crude_difference": "2/17",
+            "outcome_regression": "17/50",
+            "ipw_horvitz_thompson": "17/50",
+            "ipw_hajek": "17/50",
+            "aipw": "17/50",
+            "aipw_bias": "0",
+            "algebraic_bias_identity_checked": true,
+            "propensity_exact": true,
+            "outcome_means_exact": true,
+            "limitation": "Expectation over a completely declared model; not a fitted-data, sampling or empirical validation result."
+          },
+          "expected": {
+            "true_ate": "17/50"
+          },
+          "checks": {
+            "true_ate": true
+          },
+          "passed": true,
+          "interpretation": "Same conditional effects, different target: not a contradiction."
+        },
+        {
+          "id": "supplied_models_on_constructed_counts",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "crude_difference": "-13/50",
+            "outcome_regression": "1/10",
+            "ipw_horvitz_thompson": "1/10",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10"
+          },
+          "expected": {
+            "crude_difference": "-13/50",
+            "ipw_hajek": "1/10",
+            "aipw": "1/10"
+          },
+          "checks": {
+            "crude_difference": true,
+            "ipw_hajek": true,
+            "aipw": true
+          },
+          "passed": true,
+          "interpretation": "Exact agreement here follows from deliberately chosen counts; arbitrary finite samples need not agree."
+        },
+        {
+          "id": "missing_outcomes_bounds",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "result": "bounded_not_identified",
+            "data_interpretation": "binary arm risks for supplied counted units",
+            "risks": {
+              "1": [
+                "12/25",
+                "22/25"
+              ],
+              "0": [
+                "27/50",
+                "16/25"
+              ]
+            },
+            "difference_bounds": [
+              "-4/25",
+              "17/50"
+            ],
+            "is_confidence_interval": false,
+            "causal_identification_verified": false,
+            "limitations": [
+              "Unknown binary outcomes may take either value.",
+              "Does not correct treatment confounding or sampling uncertainty."
+            ]
+          },
+          "expected": {
+            "difference_bounds": [
+              "-4/25",
+              "17/50"
+            ]
+          },
+          "checks": {
+            "difference_bounds": true
+          },
+          "passed": true,
+          "interpretation": "Observed-case pass rates 0.80 and 0.60 do not determine the full-cohort difference; admissible assignments can reverse its sign."
+        },
+        {
+          "id": "parallel_trend_scenario",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_two_period_contrast": "1/20",
+            "assumed_untreated_trend_difference": "0",
+            "effect_under_stated_trend_scenario": "1/20",
+            "identification_verified": false,
+            "sampling_interval": null,
+            "limitations": [
+              "Trend difference is assumed, not estimated from the four means.",
+              "Requires no anticipation and a defensible untreated comparison for causal interpretation.",
+              "Not a staggered-adoption estimator, time-series model, or clustered inference procedure."
+            ]
+          },
+          "expected": {
+            "observed_two_period_contrast": "1/20",
+            "effect_under_stated_trend_scenario": "1/20"
+          },
+          "checks": {
+            "observed_two_period_contrast": true,
+            "effect_under_stated_trend_scenario": true
+          },
+          "passed": true,
+          "interpretation": "The contrast is causal only under an appropriate untreated-trend assumption and design conditions."
+        },
+        {
+          "id": "trend_violation_scenario",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_two_period_contrast": "1/20",
+            "assumed_untreated_trend_difference": "2/25",
+            "effect_under_stated_trend_scenario": "-3/100",
+            "identification_verified": false,
+            "sampling_interval": null,
+            "limitations": [
+              "Trend difference is assumed, not estimated from the four means.",
+              "Requires no anticipation and a defensible untreated comparison for causal interpretation.",
+              "Not a staggered-adoption estimator, time-series model, or clustered inference procedure."
+            ]
+          },
+          "expected": {
+            "observed_two_period_contrast": "1/20",
+            "effect_under_stated_trend_scenario": "-3/100"
+          },
+          "checks": {
+            "observed_two_period_contrast": true,
+            "effect_under_stated_trend_scenario": true
+          },
+          "passed": true,
+          "interpretation": "The identical observations permit a harmful effect under this explicit untreated-trend difference."
+        },
+        {
+          "id": "extreme_weight_dominance",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "observed_rows": 3,
+            "sum_weights": "1004",
+            "effective_sample_size": "126002/125001",
+            "max_weight": "1000",
+            "largest_normalized_weight": "250/251",
+            "interpretation": "weight concentration diagnostic, not a count of independent information or a causal validation"
+          },
+          "expected": {
+            "largest_normalized_weight": "250/251",
+            "effective_sample_size": "126002/125001"
+          },
+          "checks": {
+            "largest_normalized_weight": true,
+            "effective_sample_size": true
+          },
+          "passed": true,
+          "interpretation": "Three treated observations have weight-concentration ESS near one; finite positive propensities alone do not mean a stable estimate."
+        },
+        {
+          "id": "observational_ambiguity",
+          "data_origin": "original_constructed_example",
+          "result": {
+            "same_observed_joint": true,
+            "observed_difference": "1",
+            "model_A_effect": "0",
+            "model_B_effect": "1"
+          },
+          "expected": {
+            "same_observed_joint": true,
+            "observed_difference": "1",
+            "model_A_effect": "0",
+            "model_B_effect": "1"
+          },
+          "checks": {
+            "same_observed_joint": true,
+            "observed_difference": true,
+            "model_A_effect": true,
+            "model_B_effect": true
+          },
+          "passed": true,
+          "interpretation": "Two constructed mechanisms agree on every observed A,Y cell but disagree after intervention. Additional information is necessary."
+        }
+      ],
+      "physical_observations": false,
+      "independent_scientific_review": false,
+      "data_origin": "synthetic_only",
+      "causal_discovery": false
+    },
+    "baseline_preservation": {
+      "result": "passed",
+      "members": 771,
+      "changed": [],
+      "input_zip_sha256": "4f9b60a07d6191a154d6007fe0b7de1aa59d59c90293b1f17d0cfdf046e0e412"
+    },
+    "json_schema": {
+      "result": "passed",
+      "errors": [],
+      "records": 578
+    }
+  },
+  "scientific_v1_accepted": false,
+  "live_bitwork_run": false,
+  "user_desktop_run": false,
+  "independent_human_review": false,
+  "result": "passed",
+  "baseline_logging_note": "Inherited Forge HTTP aborted-client tests may log BrokenPipeError while passing; no repair is claimed."
+}
