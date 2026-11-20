@@ -1,5 +1,13 @@
 # ATLAS Federation artwork
 
+## Scientific domain map
+
+[`atlas-federation-map.svg`](atlas-federation-map.svg) is the current README hero, composed directly as an original SVG for this repository. Its navy field, amber orbits, and cyan connections evoke a scientific atlas of related domains. All geometry and typography are native SVG; the asset embeds no third-party image, font file, script, or remote resource.
+
+The map is a conceptual illustration, not a scientific result, measured dependency graph, or representation of completion. README alt text provides its accessible description. The original raster artwork below is retained with its provenance.
+
+## Preserved armillary illustration
+
 [`atlas-federation-hero.png`](atlas-federation-hero.png) is the original hero illustration for the federation README.
 
 - Canvas: 2,172 × 724 pixels, 3:1.

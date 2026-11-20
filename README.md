@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="assets/atlas-federation-hero.png" alt="ATLAS FEDERATION — Knowledge that endures. A luminous brass armillary sphere above a distant horizon." width="100%" />
+  <img src="assets/atlas-federation-map.svg" alt="ATLAS Federation: an original geometric map connecting scientific domains in cyan and amber on a navy field." width="100%" />
 </p>
 
 <h1 align="center">ATLAS Federation</h1>
 
 <p align="center">
-  <strong>A scientific and technological continuity federation.</strong><br />
-  Source-linked knowledge. Preserved reasoning. Reproducible foundations.
+  <strong>A versioned scientific reference federation.</strong><br />
+  Preserve the reasoning. Keep the evidence. Build from what came before.
 </p>
 
 <p align="center">
@@ -15,16 +15,19 @@
   <a href="#research-amortization">Research amortization</a> ·
   <a href="#for-people-and-ai-systems">People &amp; AI</a> ·
   <a href="#evidence-and-integrity">Evidence</a> ·
-  <a href="#restoration-and-preservation">Restoration</a>
+  <a href="#restoration-and-preservation">Restoration</a> ·
+  <a href="#rights-and-reuse">Rights &amp; reuse</a>
 </p>
 
 ---
 
 ## Why ATLAS exists
 
+**ATLAS connects scientific and engineering knowledge with the sources, assumptions, models, and revisions needed to examine it.** It is designed as a reference for human investigators and research agents: a place to understand earlier work, inspect its limits, and carry the useful parts forward.
+
 Knowledge can survive as text and still be lost as capability. A formula without its assumptions, a design without its materials, or a result without its evidence leaves the next person to reconstruct the reasoning before they can begin.
 
-**ATLAS Federation exists to preserve that reasoning.** It connects scientific and engineering domains into one versioned research federation: reference material, source records, equations, assumptions, executable models, experiments, and the evidence needed to examine them. Its purpose is to help people and AI systems understand, test, and carry useful knowledge forward—even when access to networks, services, or the original research process is limited.
+**ATLAS Federation exists to preserve that reasoning.** Its versioned editions bring together reference material, source records, equations, executable models, experiments, and their supporting evidence. The aim is to keep useful context available even when access to networks, services, or the original research process is limited.
 
 The long-term goal is **technological continuity**: preserving enough context for future investigators to learn, repair, reproduce, and eventually rebuild within the limits of their tools and evidence. Each domain contributes to that shared foundation. Each revision should leave the next investigator with a clearer starting point.
 
@@ -104,9 +107,9 @@ Historical indexes describe their own editions. For the latest canonical counts 
 
 ## Research amortization
 
-**Careful research should become a reusable foundation.** Discovery, validation, and synthesis require work. Research amortization carries that investment forward across later readers, projects, and model calls by preserving a versioned body of evidence that can be inspected and reused.
+**Do the careful research once; make its evidence useful many times.** Research amortization means spreading the cost of discovery, validation, and synthesis across later readers, projects, and model calls. A versioned reference lets the next investigator inspect earlier work and focus on what changed, what is missing, and whether it applies.
 
-The approach is developed in **[Signal Atlas](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS)**. Read its [Research Amortization implementation note](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/main/docs/research/RESEARCH_AMORTIZATION.md) for the definition, packet model, and evaluation plan.
+A working example is **[Signal Atlas](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS)**. Read its [Research Amortization implementation note](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/main/docs/research/RESEARCH_AMORTIZATION.md) for the definition, packet model, and evaluation plan.
 
 <p align="center"><strong>Discover → Verify → Connect → Teach → Reuse → Measure</strong></p>
 
@@ -189,15 +192,86 @@ The [release manifest](evidence/Compiler_Design_v0.2.0_incremental/ATLAS_FORGE_R
 
 </details>
 
-Follow [RESTORATION.md](RESTORATION.md) and the [deterministic restoration script](Releases/Compiler_Design_v0.2.0_incremental/RESTORE_ATLAS_FORGE_COMPILER_V02.py). Exact reconstruction requires the original predecessor archive and delta. The complete ZIP is kept out of Git history; the original preservation source remains unchanged. See [publication status](PUBLICATION_STATUS.md) and [release status](RELEASE_STATUS.md) for outstanding publication work and source-rights clearance.
+When the complete archive becomes available, verify both its length and SHA-256 **before extraction**. The following check uses only Python's standard library and does not execute archive contents:
+
+```sh
+python - <<'PY'
+from pathlib import Path
+import hashlib
+
+archive = Path("ATLAS_COLLECTION_Compiler_Design_v0.2.0.zip")
+expected = "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7"
+h = hashlib.sha256()
+with archive.open("rb") as f:
+    for block in iter(lambda: f.read(1024 * 1024), b""):
+        h.update(block)
+if archive.stat().st_size != 735193042 or h.hexdigest() != expected:
+    raise SystemExit("Archive identity mismatch: do not use this as the original edition.")
+print("Original Compiler Design v0.2.0 archive identity verified.")
+PY
+```
+
+This identifies the original archive; it does not establish security, redistribution rights, or scientific validity. Any sanctioned redacted edition needs its own clearly distinguished manifest and checksum.
+
+Follow [RESTORATION.md](RESTORATION.md) and the [deterministic restoration script](Releases/Compiler_Design_v0.2.0_incremental/RESTORE_ATLAS_FORGE_COMPILER_V02.py). Exact reconstruction requires the original predecessor archive and delta. The complete ZIP is kept out of Git history; the original preservation source remains unchanged. See [publication status](PUBLICATION_STATUS.md), the [current archive identity receipt](evidence/publication/2026-11-20-verification.json), and [release status](RELEASE_STATUS.md) for verification scope, outstanding publication work, and source-rights clearance.
 
 ## Roadmap and participation
 
-The [original 30-domain roadmap](Roadmaps/Atlas_30_Domain_Roadmap_2026-11-12.md) remains the historical plan. The [current priority](Roadmaps/ATLAS_FORGE_CURRENT_ACTIVE_PRIORITY.json) is to strengthen **Compiler Design** through deeper control-flow graph checking, independent grammar fuzzing, and an explicit backend target scope. **Formal Verification, original priority 19, follows.** Domain content work precedes further Bitwork routing work.
+The [original 30-domain roadmap](Roadmaps/Atlas_30_Domain_Roadmap_2026-11-12.md) remains the historical plan, with its original ordering and historical status text preserved. The checkpoint records **18 of those 30 domains represented**; representation does not mean acceptance or completion.
+
+<details>
+<summary><strong>Browse the original 30-domain roadmap in order</strong></summary>
+
+| Priority | Original domain | Public source / current coverage |
+| ---: | :--- | :--- |
+| 1 | Measurement | [Browse](Measurement/) |
+| 2 | Causal | [Browse](Causal/) |
+| 3 | Materials | [Browse](Materials/) |
+| 4 | Control | [Browse](Control/) |
+| 5 | Agent | [Browse](Agent/) |
+| 6 | Computation | [Browse](Computation/) |
+| 7 | Language | [Browse](Language/) |
+| 8 | Energy | [Browse](Energy/) |
+| 9 | Bioelectric | [Browse](Bioelectric/) |
+| 10 | Manufacturing | [Browse](Manufacturing/) |
+| 11 | Software design patterns | [Browse](Software_Design_Patterns/) |
+| 12 | Distributed systems | [Browse](Distributed_Systems/) |
+| 13 | Neural architectures | [Browse](Neural_Architectures/) |
+| 14 | Cryptographic protocols | [Browse](Cryptographic_Protocols/) |
+| 15 | OS internals | [Browse](OS_Internals/) |
+| 16 | Network stacks | [Browse](Network_Stacks/) |
+| 17 | Database optimization | [Browse](Database_Optimization/) |
+| 18 | Compiler design | [Browse](Compiler_Design/) · active |
+| 19 | Formal verification | Next original domain; no public domain folder |
+| 20 | Reinforcement learning | Planned; no public domain folder |
+| 21 | Knowledge graphs | Planned; no public domain folder |
+| 22 | Multi-agent coordination | Planned; no public domain folder |
+| 23 | Quantum algorithms | Planned; no public domain folder |
+| 24 | Bioinformatics pipelines | Planned; no public domain folder |
+| 25 | Energy systems modeling | Planned; no public domain folder |
+| 26 | Supply chain dynamics | Planned; no public domain folder |
+| 27 | Regulatory compliance | Planned; no public domain folder |
+| 28 | Cognitive architectures | Planned; no public domain folder |
+| 29 | Simulation and digital twins | Planned; no public domain folder |
+| 30 | Metacognitive control loops | Planned; no public domain folder |
+
+The federation also contains domains outside this candidate list. The directory above distinguishes the public source folders from the larger canonical checkpoint.
+
+</details>
+
+The [current priority](Roadmaps/ATLAS_FORGE_CURRENT_ACTIVE_PRIORITY.json) is to strengthen **Compiler Design** through deeper control-flow graph checking, independent grammar fuzzing, and an explicit backend target scope. **Formal Verification, original priority 19, follows.** Domain content work precedes further Bitwork routing work.
 
 Useful contributions include a well-sourced correction, a reproducible counterexample, a clearer derivation, an independent reproduction, a documented evidence gap, or improved offline instructions. Cite the relevant domain, record revision or file, exact source, and conditions needed to reproduce the finding.
 
 Follow the [contribution and release protocol](Continuity_Toolkit/CONTRIBUTOR_AND_RELEASE_PROTOCOL.md). Preserve earlier scientific records and releases; add revisions that make the history inspectable. Respect the rights attached to each source: a bibliography entry or public URL does not grant redistribution rights to the underlying material.
+
+## Rights and reuse
+
+No repository-wide `LICENSE` file is present in this checkout. Read each source's rights and provenance notes before copying or redistributing material; public access and a bibliographic citation do not themselves grant those rights. Historical source records may describe resources whose underlying content is not included here.
+
+The complete archive remains subject to the [publication and source-rights review](PUBLICATION_STATUS.md). The historical receipts establish the results they record, within their stated scope. They do not grant third-party permissions or establish a fresh security audit. Follow the [evidence boundaries](Continuity_Toolkit/SCIENCE_EVIDENCE_BOUNDARIES.md) when using any edition.
+
+The [README artwork](assets/README.md) is an original repository-native illustration. Its connections are conceptual; they are not measurements or a claim that every domain is complete.
 
 ---
 
