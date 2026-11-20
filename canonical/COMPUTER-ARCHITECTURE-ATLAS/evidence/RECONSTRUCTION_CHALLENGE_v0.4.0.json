@@ -1,0 +1,39 @@
+{
+  "schema": "atlas.at8-v04-continuity-challenge/1",
+  "result": "software_pass_physical_hold",
+  "ISA": "AT8/0.1 unchanged",
+  "source_receipt_sha256": "8f3cedad528fcdb61b8b06e22e465c578c8f83d958b0ff141138757482a7fb08",
+  "ROM_sha256": "9c385619d8886080628f57455a77d885849e0a77d6c0d3755bb52ac1d7ceee74",
+  "NAND_netlist_sha256": "acfc3b62b787099ef909fdb6771901d75488cb63d0553c230a631e5104535697",
+  "NAND_instruction_refinements": 1,
+  "output": [
+    [
+      0,
+      15
+    ]
+  ],
+  "interrupted_generation": 1,
+  "committed_generation": 2,
+  "batch_result": [
+    "passed",
+    "failed_closed",
+    "passed"
+  ],
+  "memory_single_bit_detection": "detected_parity_error",
+  "memory_double_bit_blind_spot": "parity_consistent_not_authentic",
+  "arbiter_grants": [
+    0,
+    1,
+    2,
+    0,
+    1,
+    2
+  ],
+  "physical_evidence_types_required": 12,
+  "physical_evidence_types_verified": 0,
+  "physical_stages_blocked": 6,
+  "physical_cpu_fabricated": false,
+  "firmware_authenticated_by_hardware_root": false,
+  "publisher_original_file_authenticated": false,
+  "independent_scientific_peer_review": false
+}

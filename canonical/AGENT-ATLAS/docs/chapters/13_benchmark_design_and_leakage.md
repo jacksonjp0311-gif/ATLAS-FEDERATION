@@ -1,0 +1,13 @@
+# 13. Benchmark design, distribution shift and leakage
+
+Agent comparisons are meaningful only for a declared target use case. SWE-bench's issue-resolution tasks, AgentBench's interactive environments, τ-bench's service tool interactions, and 2026 τ^τ-bench's end-to-end agent construction tasks answer different scientific questions. A single leaderboard score does not define general agent competence. Tool versions, model versions and benchmark revisions must be pinned; otherwise a reported improvement can be a change in the environment rather than the algorithm.
+
+An evaluation specimen should include: task text and hidden goal state, authorized tools, starting environment state, allowed time and cost, reproducible seed, independent evaluator, expected invariants, failure taxonomy, source release, and contamination/leakage checks. A model that has seen the exact hidden test solution may perform well without generalizing. If the agent can modify or inspect its evaluator, the result is not a clean held-out score. A benchmark with synthetic users measures behavior in those synthetic users' modeled policy, not all real users.
+
+A simple result is not enough. Report per-task outcomes, confidence interval method (if justified), variance across seeds, pass-all and pass-any repeated outcomes, tool cost, planning time, human intervention, incomplete attempts, and how the grading handles partial effects. A system may perform well on action-free Q&A while failing every workflow requiring actual permissioned state changes. Operational safety depends on negative controls and out-of-distribution cases.
+
+**Holdout design:** develop source material and model prompts on one task split, freeze both, then run untouched models on tasks that were independently authored or curated. For time-evolving repositories, choose commit-time splits to avoid future leakage. With interactive apps, use state snapshots and guard against environment drift. The distinction between verification and science matters: passing an authored deterministic toy case proves the reference calculator behavior, not a benchmark improvement in a language model.
+
+Agent Atlas 0.1 includes no real-agent run and no independent held-out benchmark. Its 13 constructed cases are developer tests. The 30-domain project will evaluate actual retrieval and Bitwork routing only at the final integration stage, after all domain content exists.
+
+**Sources:** [AGENTBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html), [SWEBENCH-2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html), [TAUTAU-2026](https://arxiv.org/abs/2609.04611).

@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "source_run": "passed",
+  "full_tests": 1384,
+  "contexts": 32,
+  "oracle_comparisons": 87385,
+  "prior_protected_files_byte_identical": 1664,
+  "record_revisions_from_v02_preserved": 232,
+  "relations_from_v02_preserved": 250,
+  "scientific_source_original_files_retained": 0,
+  "scientific_acceptance": false,
+  "router_changed": false
+}

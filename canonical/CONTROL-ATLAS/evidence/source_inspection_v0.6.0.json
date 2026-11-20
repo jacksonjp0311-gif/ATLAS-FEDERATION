@@ -1,0 +1,29 @@
+[
+  {
+    "record_id": "control-atlas:source:MAYNE-OF-MPC-2006",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0005109806001221",
+    "inspected_scope": "Publisher abstract and introduction: bounded state/output disturbances, observer error and robust invariant tube; the full method and proofs not reviewed",
+    "source_original_bytes_archived": false,
+    "independent_scientist_review": false,
+    "source_status": "publisher_abstract_only",
+    "access_date": "2026-11-13"
+  },
+  {
+    "record_id": "control-atlas:source:SIEBER-TUBE-2022",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0947358022000723",
+    "inspected_scope": "Publisher abstract: finite impulse response disturbance reachable sets and nominal tube formulation; source paper details not reproduced",
+    "source_original_bytes_archived": false,
+    "independent_scientist_review": false,
+    "source_status": "publisher_abstract_only",
+    "access_date": "2026-11-13"
+  },
+  {
+    "record_id": "control-atlas:source:AIAA-RATE-2023",
+    "url": "https://doi.org/10.2514/6.2023-2512",
+    "inspected_scope": "Publisher abstract only: actuator rate limits, induced phase lag and pilot-induced oscillation tendencies; aerospace case is not data about an industrial valve",
+    "source_original_bytes_archived": false,
+    "independent_scientist_review": false,
+    "source_status": "publisher_abstract_only",
+    "access_date": "2026-11-13"
+  }
+]

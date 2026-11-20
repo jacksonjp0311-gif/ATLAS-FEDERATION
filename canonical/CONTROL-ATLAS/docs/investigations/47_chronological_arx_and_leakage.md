@@ -1,0 +1,7 @@
+# Investigation 47 — Synthetic ARX: one-step accuracy, free-run drift and leakage
+
+A seeded simulation produces a discrete scalar plant `y[k+1]=0.6 y[k]+0.35 PWM[k]+3+w[k]` with random bounded-amplitude commands and additive noise. We feed a synthetic ten-column OpenMCT-style log into the strict parser, then reserve the final 30% of transitions as a chronological validation set. The fitted coefficients agree with the known generating coefficients within the test tolerance. A separate NumPy least-squares oracle reproduces the model coefficients and held-out one-step RMSE; free-run RMSE is measured separately.
+
+Why chronological separation matters: randomly splitting adjacent time samples leaks autocorrelated state information across train and test. An apparent low one-step error can also exploit knowing the preceding *measured* true speed, while a free-run forecast must use its own previous predictions. A correct report retains both metrics and a simple persistence baseline. It must not convert an autoregressive prediction into a causal plant gain when the input is closed-loop correlated with disturbances.
+
+The study is intentionally **not empirical OpenMCT validation**. An actual model comparison awaits authenticated publisher logs and experiments across sample periods, sensor noise conditions, actuator regimes and independent motor runs. The synthetic test does not establish physical uncertainty bounds or plant safety.

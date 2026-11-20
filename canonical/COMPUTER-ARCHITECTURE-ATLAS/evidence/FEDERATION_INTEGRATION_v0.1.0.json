@@ -1,0 +1,22 @@
+{
+  "schema": "atlas.computer-at8-integration/1",
+  "status": "passed",
+  "node_id": "computer-architecture-digital-hardware-atlas",
+  "new_node_version": "0.1.0",
+  "node_count": 15,
+  "prior_nodes_preserved": 14,
+  "federation_records": 3084,
+  "federation_relations": 2251,
+  "new_record_count": 102,
+  "new_source_cards": 6,
+  "new_local_relationships": 96,
+  "new_cross_relationships": 10,
+  "new_full_relationships": 106,
+  "original_30_domain_queue_sha256": "9b3ceb5d942fa556e17cb3b731ed9a95b0468e795ed2c1ff8e21864c3e264c33",
+  "original_30_domain_queue_unchanged": true,
+  "auxiliary_domain_not_in_original_30": true,
+  "prior_14_node_registry_entries_byte_identical": true,
+  "original_source_files_preserved": true,
+  "bitwork_router_modified": false,
+  "scientific_evidence": "finite software research only, not physical electronics or independent review"
+}

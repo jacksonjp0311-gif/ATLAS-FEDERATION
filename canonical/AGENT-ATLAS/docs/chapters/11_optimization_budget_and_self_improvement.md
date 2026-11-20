@@ -1,0 +1,13 @@
+# 11. Improving agent behavior requires counterfactual evidence, not a scoreboard
+
+An agent can consume more compute and still be worse. Its research objective should distinguish task quality `R`, computation/financial cost `C`, latency `L`, variance `V`, failure risk `F`, and confidence in evidence `E`. An illustrative objective is `J=E[R]−λC−μL−κV−ρF`, with units and relative weights declared. This is a decision framework, not a fitted production value function or a novel proof of general intelligence.
+
+Before changing a system, establish a baseline with task definitions, model versions, context budget, tool permissions and source snapshots. Vary one mechanism at a time where possible. Randomize task order and use held-out examples to reduce overfitting. Compare single-agent vs multiple-worker strategies at the **same** end-to-end budget. More tasks attempted, more tokens generated or higher self-reported confidence are not substitutes for correct completed outcomes.
+
+Several apparent self-learning mechanisms have distinct meanings. **Feedback-conditioned prompting** modifies future context; **persistent memory** changes retrieved evidence; **policy optimization** changes a decision policy; **model weight training** changes learned parameters; **recursive self-improvement** is a broader claim requiring reproducible gains over iterations. Reflexion demonstrates feedback into memory without weight updates. The present Agent Atlas only defines audit and evaluation tools. It does not train a model, alter another repository, perform self-coding or establish RSI.
+
+A reproducible improvement result requires separated training/development/evaluation cases, multiple seeds or time windows, uncertainty, adverse examples, cost accounting, and a release rollback plan. A parent that retries indefinitely can consume resources while making no progress. A bounded retry policy records the cause, limits attempts, escalates, and can abandon an unresolvable mission with an accurate failure report. The right objective is **verified progress subject to cost and safety**, not unconditional continuation.
+
+**Counterexample:** a change reduces average latency from 20 to 10 seconds but raises irreversible error probability from 1% to 10%. Calling it an “improvement” depends on explicit loss functions and risk tolerance. Without task-outcome measurements and an approved utility, that claim is unsupported.
+
+**Sources:** [REFLEXION-2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html), [ANTHROPIC-AGENTS-2024](https://www.anthropic.com/research/building-effective-agents).

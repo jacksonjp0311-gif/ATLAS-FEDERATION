@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.computer-v04-fault-counterexample/1",
+  "initial_byte": 0,
+  "one_flip": {
+    "status": "detected_parity_error",
+    "value": null,
+    "correction_performed": false
+  },
+  "two_flips": {
+    "status": "parity_consistent_not_authentic",
+    "value": 3,
+    "correction_performed": false
+  },
+  "conclusion": "Single-bit parity detects odd flip counts, not all even flips; cannot authenticate or correct bytes",
+  "physical_fault_rate_measured": false
+}

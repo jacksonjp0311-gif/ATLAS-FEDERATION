@@ -1,0 +1,18 @@
+{
+  "schema": "atlas.agent-source-scope/1",
+  "version": "0.2.0",
+  "source_cards_total": 22,
+  "newly_inspected_source_cards": 5,
+  "external_MAST_public_dataset": {
+    "card": "https://huggingface.co/datasets/mcemri/MAST-Data/blob/main/README.md",
+    "published_trace_count_described_in_card": 1642,
+    "data_bytes_acquired": false,
+    "original_dataset_hash": null,
+    "annotation_origin": "model judge reported by dataset card",
+    "independent_review_in_current_release": false
+  },
+  "real_agent_trace_replay": false,
+  "vendor_private_trace_retrieval": false,
+  "source_words": "original bounded summaries and linked public sources; third-party rights retained",
+  "heldout_agent_eval": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "atlas.electronics-investigation-index/1",
+  "version": "1.0.0-rc.1",
+  "count": 48,
+  "historical": {
+    "count": 34,
+    "manual": "docs/CASEBOOK_v0.4.0.md"
+  },
+  "added": {
+    "count": 14,
+    "manual": "docs/CASEBOOK_v1.0.0-rc.1.md"
+  },
+  "evidence_grade": "authored constructed mathematical cases; no physical laboratory observations"
+}

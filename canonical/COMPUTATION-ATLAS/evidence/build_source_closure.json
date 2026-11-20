@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "new_node": "computation-atlas",
+  "record_count": 162,
+  "relation_count": 175,
+  "source_count": 15,
+  "shared_records": 1403,
+  "shared_nodes": 8,
+  "cross_domain_relations": [
+    {
+      "computation_chapter": 4,
+      "target_record": "control-atlas:control-origin-labels",
+      "target_revision": "7925c527b19bf844baba3ba63e347b58b051c647421686d2d3f4152e2db9f0db"
+    },
+    {
+      "computation_chapter": 21,
+      "target_record": "materials-atlas:abstention",
+      "target_revision": "60af0b01d85b4445e2c2375e3d502bd6763e1f0bbd43e879e13feb0ce231bf17"
+    },
+    {
+      "computation_chapter": 28,
+      "target_record": "agent-atlas:agent-trace-intake-packet",
+      "target_revision": "2d69652131f73ef04b3be0620e570affa99bc3eec56d8d5ccdb7d7a4d6d9feed"
+    },
+    {
+      "computation_chapter": 30,
+      "target_record": "measurement-atlas:claim:ols-exact-predictor-boundary",
+      "target_revision": "900bc683ed95a2444d09333c9d2bdca5a6709b185faf0af2af13207882837b4b"
+    },
+    {
+      "computation_chapter": 15,
+      "target_record": "causal-atlas:aipw-method",
+      "target_revision": "2df7876759403fe2dbf59618d17d3810e0b98284ed04d65079b959bec1399f17"
+    }
+  ],
+  "primary_source_bytes_retained": 0,
+  "scientific_truth_inferred": false
+}

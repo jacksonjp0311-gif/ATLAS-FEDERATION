@@ -1,0 +1,287 @@
+{
+  "control-atlas:alias-fold": {
+    "merged_record_id": "control-atlas:alias-fold",
+    "revision": "74dee55fc767c4727ce5558b3d464a7873fa3c0189c38ed32b7b970e1351d4e0",
+    "old_source_variant_revision": "bb8f944d7a3cd0856882467930cbe6ce81bd7cf9ad507262fc84aaf46a454a5a"
+  },
+  "control-atlas:atlas-control-contract": {
+    "merged_record_id": "control-atlas:atlas-control-contract",
+    "revision": "d0de4d4098ad5e65a9c5bfedb30d531ccebe77735f27968b49e83766ecbbda8d",
+    "old_source_variant_revision": "87445039f6bfa5751fade77e5fd679c3f52feafe528b51b586babe6097c28e6e"
+  },
+  "control-atlas:bounded-casebook": {
+    "merged_record_id": "control-atlas:bounded-casebook",
+    "revision": "70f1cd75493cf52a5ab7ffaea808caa46f64f7d007698375aeee0337f3e85e3d",
+    "old_source_variant_revision": "99eecfb56079ec799ec0482fd88a0bc711e11c0e37a8fec396fb1f2db9099d9c"
+  },
+  "control-atlas:closed-loop-id-bias": {
+    "merged_record_id": "control-atlas:closed-loop-id-bias",
+    "revision": "dc780358e1080fe265ed1c5b2e918c3c351537223de76eb187891cae6d6902b0",
+    "old_source_variant_revision": "e3e7eb69e60428370d0432ec9bf17f8e1c644823c9d704a88d9c8aa8b9435f0f"
+  },
+  "control-atlas:closed-loop-physical-limit": {
+    "merged_record_id": "control-atlas:closed-loop-physical-limit",
+    "revision": "c7412a462925dc2c8106946b358611003b9a70197fe4651431ec278541297ce2",
+    "old_source_variant_revision": "b8bc605c7f3dffb974351abba23a2e4cd0fd8b67559e19f0822f020082c3db0a"
+  },
+  "control-atlas:control-comparison-protocol": {
+    "merged_record_id": "control-atlas:control-comparison-protocol",
+    "revision": "48a4e8d5def3252dc74787a914537f195fa03e89f2512086e2b6bd4a29cadb92",
+    "old_source_variant_revision": "d4bdf82288ccbf08c2e2ac8889a0526a04008c339c97f85cc45bd5a612cf8091"
+  },
+  "control-atlas:control-origin-labels": {
+    "merged_record_id": "control-atlas:control-origin-labels",
+    "revision": "7925c527b19bf844baba3ba63e347b58b051c647421686d2d3f4152e2db9f0db",
+    "old_source_variant_revision": "a3467bddd1fe88de88f6c95ec252137330f1e267c19bcd57e4919cb699fd38fe"
+  },
+  "control-atlas:controllability-limits": {
+    "merged_record_id": "control-atlas:controllability-limits",
+    "revision": "1f85a752eb46ad2c10fe45e09608dd9c37db53c9222225c7930ebdce70d3f95a",
+    "old_source_variant_revision": "a2aadebb1c0f44d81f9033f05f7ab28b934fb3e2822b84645299112621bd19d5"
+  },
+  "control-atlas:controllability-matrix": {
+    "merged_record_id": "control-atlas:controllability-matrix",
+    "revision": "e611ec8bc5dc42f4d72de86d68b251b0e9b2b261fc639aee9d6d588b0af7aeaa",
+    "old_source_variant_revision": "eea98957c1fb50b2da21c29795941e89ee47b3b59bb3deaf7ce5e61b4e438ec1"
+  },
+  "control-atlas:delay-robustness": {
+    "merged_record_id": "control-atlas:delay-robustness",
+    "revision": "90a74c4bac431fff261943da505425b56b0f861543812baf99a46b96211f52f5",
+    "old_source_variant_revision": "6c0f3ce76308847c4e0257f7bfa7ffcfbf99ed56f995533c3edfbb8e8930f8ce"
+  },
+  "control-atlas:euler-vs-zoh": {
+    "merged_record_id": "control-atlas:euler-vs-zoh",
+    "revision": "5d5bf8d2537cf12e068e6af3595a1d021bf36cda656425b46f2dd8e84506575d",
+    "old_source_variant_revision": "68fba80928f6ef8a499d4cd0bde8d767758eba2d296d245be016d9d0e04568f4"
+  },
+  "control-atlas:fault-detection-vs-causation": {
+    "merged_record_id": "control-atlas:fault-detection-vs-causation",
+    "revision": "db4151eb489fb600999b6c3055feeaf53ecd45e40aa5b09c914bc7ab7936ac42",
+    "old_source_variant_revision": "d7ed6dabd4ff84feb14c2006a9fd7610f6c05cd3e96face04be8afb4039e8372"
+  },
+  "control-atlas:feedback-disturbance": {
+    "merged_record_id": "control-atlas:feedback-disturbance",
+    "revision": "2c3839f38c5553895d425bddccbaf8240fc80bbcf995170629368881947964b7",
+    "old_source_variant_revision": "9cb9e7031fca2c3bc28c0547a82f44b0a1fb5fd601fc0de687391e0172417867"
+  },
+  "control-atlas:first-order-model-calculator": {
+    "merged_record_id": "control-atlas:first-order-model-calculator",
+    "revision": "99b9438ca2ef7c3437ac938e7855a2e6d0b4d8bb4fef5be7d9159325fd8ebc43",
+    "old_source_variant_revision": "33ff1becd9473db93b139aaa89a1919dd20e983db656bec6bb0c2f4ea48ff6b0"
+  },
+  "control-atlas:first-order-ode": {
+    "merged_record_id": "control-atlas:first-order-ode",
+    "revision": "7c85573afa4e145abed95c894456ba9d297e826e690e70945f997c4c08bf4434",
+    "old_source_variant_revision": "96ad11000cb1ceb1f31af6c6f79024fc20b70644ecc99f919873bf71a43dd01f"
+  },
+  "control-atlas:first-order-zoh": {
+    "merged_record_id": "control-atlas:first-order-zoh",
+    "revision": "d9c7c8b3c90e8543bb81a7f4e2030c863063db6a55f2001074edaec72219c166",
+    "old_source_variant_revision": "2f2a796850295dc9903ccba5e771ccf7cc1a791d9d90906111010fa083bca562"
+  },
+  "control-atlas:kalman-covariance": {
+    "merged_record_id": "control-atlas:kalman-covariance",
+    "revision": "5eb1a097615dffccb65d63cb100a2d0db8b7eb351568febaccf3ed2aeafccef0",
+    "old_source_variant_revision": "5cf415450c8b6ed7b76357f62aea8c3a1d3adc6776cc6b920bf53009cff968a7"
+  },
+  "control-atlas:lqr-constraints": {
+    "merged_record_id": "control-atlas:lqr-constraints",
+    "revision": "92ffe800c6a833bd4c4f3219dfe756ca8ec34546d4504e277e91f5d2170e4259",
+    "old_source_variant_revision": "474fc0893729a0a238003b4637c61a496737e4e0e8285270a6035529334f9580"
+  },
+  "control-atlas:lqr-dare": {
+    "merged_record_id": "control-atlas:lqr-dare",
+    "revision": "cfb03b051b87cd7033e452981ae76195a19815eb88e91d21c7b5ecd063147b7f",
+    "old_source_variant_revision": "8d0ad209fe95574a4bc01ed03735f1128f0bf5d59a283437946ee7378bee6c68"
+  },
+  "control-atlas:mpc-boundary": {
+    "merged_record_id": "control-atlas:mpc-boundary",
+    "revision": "291ec7147d45c1ff5cbb593a789aabbad37a7953e809ac1e656f9a04063ef1eb",
+    "old_source_variant_revision": "ac9dbd3e72cd5135a038a50e7d5e86bb018817e6ddcbb783090fd4099bebba0d"
+  },
+  "control-atlas:observability-matrix": {
+    "merged_record_id": "control-atlas:observability-matrix",
+    "revision": "3b01fe7ab4f60fe9d5b6df744c5c0752b0d041eb0539cad18ef6577ebaea7ca3",
+    "old_source_variant_revision": "81a29a3e158b0a92c509d5082b70f630438ee4c783d4e2ffbc5362fd48e85bfa"
+  },
+  "control-atlas:observability-measurement": {
+    "merged_record_id": "control-atlas:observability-measurement",
+    "revision": "8890c00cb42eca180aadf600d6fca647bcec76728c4ef768683dea0621a5e647",
+    "old_source_variant_revision": "9e0dc4344d3b4a708a8923a9b15a72e4dccd2c7ef475c74f5119aee13d784be1"
+  },
+  "control-atlas:pid-antiwindup": {
+    "merged_record_id": "control-atlas:pid-antiwindup",
+    "revision": "0747c0e52ce79d5c29f84aeaf1f48259c5021a5ee2a2dd7bea84a09e998b2dde",
+    "old_source_variant_revision": "7699a83a17e253f0e71c2ccb66d6925cd4b71aebbcece73dc667d048cdd972fa"
+  },
+  "control-atlas:pid-derivative-noise": {
+    "merged_record_id": "control-atlas:pid-derivative-noise",
+    "revision": "cbd2f7af29ef35f7428188ccabffdb226a112dbc599d5a787eb7eb99625b08ff",
+    "old_source_variant_revision": "b34952984e33d5ade1db991ca9626d919c7eb0704f122ad46947f0ecba0cd78a"
+  },
+  "control-atlas:pid-trace-calculator": {
+    "merged_record_id": "control-atlas:pid-trace-calculator",
+    "revision": "863ad78084964fd26e5cc183731e29e949fca97cb55c5f43fa542637bb5bb53c",
+    "old_source_variant_revision": "d6b56ef91bd4ac41633d2414939d7444b2ce2da602963ed29a1eb9e20f9abd2b"
+  },
+  "control-atlas:plant-specification": {
+    "merged_record_id": "control-atlas:plant-specification",
+    "revision": "5dcd9567cdc078f267481c8d83bb9c8d83212f0e866c52fefcddcb3bdbfb00a0",
+    "old_source_variant_revision": "732f0405f9aed1ca4f07cfcf0f8536fd136bf29a132d5a51395d8ac19df76b69"
+  },
+  "control-atlas:plant-study-template": {
+    "merged_record_id": "control-atlas:plant-study-template",
+    "revision": "ebfc8f6497c08a87bc330cdc2e08a99cbe579aa13f4676a76bad0c718333deb6",
+    "old_source_variant_revision": "7bc0c645487f28aef34bc782d4f6d4066189a8e703ac6acaf3dddd928ad92f19"
+  },
+  "control-atlas:robust-vs-nominal": {
+    "merged_record_id": "control-atlas:robust-vs-nominal",
+    "revision": "9b0e7af9aa8645a92dcefebf4a5ffbd20bd6bff34a317b5556eee5e1cc2ab8db",
+    "old_source_variant_revision": "923245dfa482dc09043fa3d34dc42c3184293b8d8368273647bab1b20ced9659"
+  },
+  "control-atlas:routing-deferred": {
+    "merged_record_id": "control-atlas:routing-deferred",
+    "revision": "231d7288c66f45a6ed43807342fb3d41c31dae36487b16d3b21a011214522461",
+    "old_source_variant_revision": "e4e8973d747e3709070cde0ba2108b3cdfbc7e28f3595893b6c2b5921b6824b7"
+  },
+  "control-atlas:sampling-alias-calculator": {
+    "merged_record_id": "control-atlas:sampling-alias-calculator",
+    "revision": "55a6410f5e2f9132b1e1b172a293ab6e5a3b27a16cf30f116e3af2fcb3c2e6eb",
+    "old_source_variant_revision": "3e6dc6b61d09f6ad85341e8d31e25403195bf6ec7ab35b34c3efa07df324618e"
+  },
+  "control-atlas:sampling-time": {
+    "merged_record_id": "control-atlas:sampling-time",
+    "revision": "a4d8944ba1006159daa8029a4e3949c589d4c9263fe38d929353e0a9f2bcd7a6",
+    "old_source_variant_revision": "42ec3dccbafaff0788af47b0333ff69704575e7445fa7093fc4dcf3b42aa1e44"
+  },
+  "control-atlas:scalar-arx": {
+    "merged_record_id": "control-atlas:scalar-arx",
+    "revision": "06b9cad2af767886b8aebada97c0673dc350c7c515b31248f562eee604a4af2d",
+    "old_source_variant_revision": "7e94dba8e9d64fbc4e3bfdec77035666be16d177442c715c61f6c16aaf018694"
+  },
+  "control-atlas:scalar-arx-calculator": {
+    "merged_record_id": "control-atlas:scalar-arx-calculator",
+    "revision": "c7b9bfdadb51e36b9e170fc556da8928334a5f7fbaa5d791d73f96141cb03ddf",
+    "old_source_variant_revision": "949debe20f92211d2d39287982514b991d8a0d742e2918305be471b8c90e589c"
+  },
+  "control-atlas:scalar-discrete-pole": {
+    "merged_record_id": "control-atlas:scalar-discrete-pole",
+    "revision": "5812010b853bc335060da9b3c840fecbc24f5451fcdf84b1163fa2ceb6971238",
+    "old_source_variant_revision": "4fed223d86ea0556883f72a5d4287966340c9cb0f85399f50f7aa5e338ed65aa"
+  },
+  "control-atlas:scalar-feedback-pole-check": {
+    "merged_record_id": "control-atlas:scalar-feedback-pole-check",
+    "revision": "30897af22d2a7eca50146a58b0d03f7fd52788a40b6d21515b1abebe61401e53",
+    "old_source_variant_revision": "4924201ee480dc8264be620c86f1baf094cc37c4689feb7908827e3713f5fb4c"
+  },
+  "control-atlas:scalar-kalman": {
+    "merged_record_id": "control-atlas:scalar-kalman",
+    "revision": "1443609ab765da885233532672113b86b4cf2761a15804a6bc6c7a793b2a2004",
+    "old_source_variant_revision": "ab210ef85fb030ee5f2eb2fb602df1b574a43f14a33d97a1f2e3503f7fe39c05"
+  },
+  "control-atlas:scalar-kalman-calculator": {
+    "merged_record_id": "control-atlas:scalar-kalman-calculator",
+    "revision": "88922faf93097dfecdf71a51e5860f5b4561987030863fcae8920b30152bab60",
+    "old_source_variant_revision": "78b53c9ffe84e7bf9eb6e99d7eee9a760a918907f5298efb0361339405faa183"
+  },
+  "control-atlas:scalar-lqr-calculator": {
+    "merged_record_id": "control-atlas:scalar-lqr-calculator",
+    "revision": "5e6a7275848413f23eaf27246b6021771a425f54213b0e7f17e51c4b296e2b21",
+    "old_source_variant_revision": "d18cc724e7762b120941dca31f3b8fa1b9cfca251299c5354460d94d38ce3107"
+  },
+  "control-atlas:source:ASTROM-2E": {
+    "merged_record_id": "control-atlas:source:ASTROM-2E",
+    "revision": "057737afcfea66e8472d747533c3a4dbb1e5b4f7631adff5a8dbe389a5d867b8",
+    "old_source_variant_revision": "4ab7265d2f3ad2ccc6c2d5d085d2b260cda56e125b2f764187ccb326b055c8c2"
+  },
+  "control-atlas:source:CALTECH-FBS": {
+    "merged_record_id": "control-atlas:source:CALTECH-FBS",
+    "revision": "b24f53b6908126a68ba8c3834c086b583ca0b4bed350f798664cda7d35c06659",
+    "old_source_variant_revision": "f7e1cef7711c22842bd7aa67983ad708fbdeabe66142a4650fec3421684e1eb4"
+  },
+  "control-atlas:source:CTMS-METHODS": {
+    "merged_record_id": "control-atlas:source:CTMS-METHODS",
+    "revision": "082d40456492c721801229cd2bd3a0c05300d124f908607c687d316e023b686a",
+    "old_source_variant_revision": "c9065327bf6e2c77f56e13c1c9afd58d1817b3eb5e1fe87f05b125ee9f9c41fa"
+  },
+  "control-atlas:source:MATH-ALIAS": {
+    "merged_record_id": "control-atlas:source:MATH-ALIAS",
+    "revision": "619ec770776a1816561d430fba24644963e8d872e1864106644cf1a39795c62c",
+    "old_source_variant_revision": "1a869961af74b122d5af5b074c448cb9688458faeab044bdf56156b62b62556a"
+  },
+  "control-atlas:source:MATH-ID": {
+    "merged_record_id": "control-atlas:source:MATH-ID",
+    "revision": "3530a12ef543cfcf974f249a006d89a1b24839315e97049bf3d031df3554c915",
+    "old_source_variant_revision": "2ff29d3f7906b6ae93892eb8191d8e1c1dc4cf3663ed7571d933ec8a2212fbbe"
+  },
+  "control-atlas:source:MATH-ID-QUALITY": {
+    "merged_record_id": "control-atlas:source:MATH-ID-QUALITY",
+    "revision": "bdcf72e8496bc72c58a9fd0b4a511cdffa487092b15d87bfba4d40c08d3404c6",
+    "old_source_variant_revision": "519c3a351702b60111c6208a05cb0988d9a29aec5cea6f319da562766366ecef"
+  },
+  "control-atlas:source:MATH-PID-AW": {
+    "merged_record_id": "control-atlas:source:MATH-PID-AW",
+    "revision": "dd87a5f5d943ad787f690cb09ff0ef45ece4bd0fb1d745fc30ec68acc9a64c36",
+    "old_source_variant_revision": "1ccd09464efad1f3535454f7282c9945956e8b323f34c6040931e1770e8aa630"
+  },
+  "control-atlas:source:MICH-PID": {
+    "merged_record_id": "control-atlas:source:MICH-PID",
+    "revision": "2c9b676a737a51c1330a69e51a2a5e8f3f3cda185f3714d11bdad10824e29144",
+    "old_source_variant_revision": "eafd039878d69a8312fc30e56391144af86e36b4fdc420603483747b514e75f5"
+  },
+  "control-atlas:source:MIT-LQR": {
+    "merged_record_id": "control-atlas:v02-source:MIT-LQR",
+    "revision": "d7285c787ec41e0fe0acdcd0848a82a52af431296986094b7b3f9883fe6b2f2c",
+    "old_source_variant_revision": "7940a5a01f010b402d5f490e53b9eb7990105a774635af48288f84b15c97254e"
+  },
+  "control-atlas:source:MIT-STATE": {
+    "merged_record_id": "control-atlas:v02-source:MIT-STATE",
+    "revision": "0168fb6ac79c67eea9770fe305613b7fdccd9ac96f1d44372adea7d900c58fae",
+    "old_source_variant_revision": "cfeff4fa2673b21c702ebd01f8305cf8a83d9f50dc09a27f3d1324c30d841a82"
+  },
+  "control-atlas:source:PYCTR-CTRB": {
+    "merged_record_id": "control-atlas:source:PYCTR-CTRB",
+    "revision": "cedb758994277bc0ca594f20bbe30632f35cfb4293f90094ea141778841a968a",
+    "old_source_variant_revision": "d5f58f5182d327246fae999374386513cd21ac35a5371936cf6b9958675f3da9"
+  },
+  "control-atlas:source:PYCTR-DLQR": {
+    "merged_record_id": "control-atlas:source:PYCTR-DLQR",
+    "revision": "2de1cc1c0c8c874677f04f4fe1d1817f98d3d90b93b2e5b595cca84f334e87f0",
+    "old_source_variant_revision": "e8fb8d3327e3a208df2f06143a6eddea55df4c9edbb27962ebaf21184a71af26"
+  },
+  "control-atlas:source:PYCTR-LQE": {
+    "merged_record_id": "control-atlas:source:PYCTR-LQE",
+    "revision": "04f466ce397761c629c0418ea704b07ee9083673905b84f26c5f8d2da74c09a4",
+    "old_source_variant_revision": "8c1622caf20c49bcb1f4eb8c13b4fd4893c023d81e3859fd9c5367e636bcd3d4"
+  },
+  "control-atlas:source:PYCTR-OBSV": {
+    "merged_record_id": "control-atlas:source:PYCTR-OBSV",
+    "revision": "e820c7c3fdc660131e2c9282a70bb81102bde7237817e15c6b41cc6356a9e854",
+    "old_source_variant_revision": "7c454b35bdd79a1389899a506b138e9302be8364e31206325667f26efb29bfb7"
+  },
+  "control-atlas:source:SCIPY-ZOH": {
+    "merged_record_id": "control-atlas:source:SCIPY-ZOH",
+    "revision": "d625ec17c221e51782208b7b0f242870ea233fa2a1760f2687cde3eb3779ee26",
+    "old_source_variant_revision": "070463cdb9c263d04a72d5d6bda4b1d3a28f9c97aec1a5ddf8559f688110c715"
+  },
+  "control-atlas:system-id-sequence": {
+    "merged_record_id": "control-atlas:system-id-sequence",
+    "revision": "6084686c5fe75f2ca677d359d2d953abdff2dedbf4c8189b0fc5f568c5423c8c",
+    "old_source_variant_revision": "329405472f7200278b4c81e4672c2cc1a55ae13d60af0173acbf3a41861f58ad"
+  },
+  "control-atlas:two-state-eigen": {
+    "merged_record_id": "control-atlas:two-state-eigen",
+    "revision": "d66e92caa38b856bd1b02be45c1f41d19ad3359ec59536b76789070051e5594b",
+    "old_source_variant_revision": "5c8ba14cf7dbac11f6918c9e1baf08f3d2b06958c2eb50ab700ef3e57d1dccf3"
+  },
+  "control-atlas:two-state-pole-calculator": {
+    "merged_record_id": "control-atlas:two-state-pole-calculator",
+    "revision": "d728515133f12ae5038fab8f4d44ac13154ecadc4feee4cacb45177e46120d47",
+    "old_source_variant_revision": "af777729d7a5b87e0309a7320be0771f5e56474fe6762ab91c698ffa642e86d8"
+  },
+  "control-atlas:two-state-rank-calculator": {
+    "merged_record_id": "control-atlas:two-state-rank-calculator",
+    "revision": "e94b2d6299caf06913fcb6f22ecceb09ca0980b6534acc8e9495ffa1f412b004",
+    "old_source_variant_revision": "646c1d9ffb5157b02d061283b791f09e61cdc9981b654ca922f9fcbb643c9114"
+  }
+}

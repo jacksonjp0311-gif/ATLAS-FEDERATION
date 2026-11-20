@@ -1,0 +1,44 @@
+# ATLAS FORGE — Electronics & Semiconductors Atlas 0.1.0
+
+**ONE new content node inside the existing ATLAS FORGE federation.** This is not a second Atlas, alternate architecture, or replacement for the previous twelve nodes. All prior domain files, exact record revisions and historical releases remain protected.
+
+## Contents
+
+- 10 authored scientific reconstruction chapters and 10 constructed investigations
+- Pure standard-library Python models for SI thermal voltage, equilibrium doping and carriers, abrupt-junction depletion approximation, stable Shockley diode I–V and inverse, dielectric capacitance, ideal MOSFET regions, RC switching, dynamic power, finite-volume current divergence, and Boolean gate truth tables
+- Source-linked exact revision JSONL records using the shared `atlas.common/1` wire contract; explicit scholarly/physical evidence gaps
+- Qualified relationships to existing Mathematics, Chemistry, Materials and Computation records
+- Offline tests: `python -m unittest discover -s tests -v` (from this directory)
+
+## Scientific and engineering limits
+
+All reference models use stipulated parameters, not observed semiconductor devices. No wafer production, measured mobility/dielectric constants, calibrated I–V traces, photolithography or industrial tool qualification is claimed. Bibliographic references are URL/navigation cards and **not** publisher-original preserved full texts. No independent expert review or physical experiment is recorded.
+
+## Program continuity
+
+The original 30-slot domain list is preserved byte for byte; Electronics & Semiconductors is the planned missing enabling domain. This node is deliberately an initial bounded content kernel, not v1 acceptance. After it: Manufacturing and Computer Architecture, then other knowledge domains. Bitwork routing only after content libraries, integration and desktop transfer afterward.
+
+
+## v0.4.0 extension
+
+[Current chapter manual](docs/DEPTH_MANUAL_v0.4.0.md) / [casebook](docs/CASEBOOK_v0.4.0.md) / [reference code](electronics_atlas/v04_models.py). Previous editions remain versioned and unchanged in the archive.
+
+
+## Scope v1 content candidate
+
+# Electronics & Semiconductor Devices Atlas — scoped v1 release candidate
+
+**Part of the single canonical ATLAS FORGE federation, not a new project.**
+
+52 original reconstruction chapters, built on the 34 historical originals, 14 constructed v1 examples in `docs/CASEBOOK_v1.0.0-rc.1.md`, immutable JSONL records, source-gap ledger, unit-aware Python reference kernels, distinct historical test snapshots, and finite independent numerical oracle.
+
+Start with the complete [`DEPTH_MANUAL_v1.0.0-rc.1.md`](docs/DEPTH_MANUAL_v1.0.0-rc.1.md), the [`RECONSTRUCTION_v1.0.0-rc.1.md`](docs/RECONSTRUCTION_v1.0.0-rc.1.md) chain and the [`SCOPED_V1_GATES_v1.0.0-rc.1.md`](docs/SCOPED_V1_GATES_v1.0.0-rc.1.md) acceptance matrix.
+
+Run:
+
+```
+python -m unittest discover -s tests -q
+PYTHONPATH=. python evidence/independent_oracle_v1rc.py
+```
+
+The reference package requires only Python 3.10+ for normal model operation; independent oracles additionally use NumPy/mpmath. **No authenticated original publisher PDF, peer-reviewed scientific review, calibrated silicon data, functioning CPU or physical fabrication is claimed.** Archive integrity and mathematical verification are not hardware verification. The 30-domain roadmap and deferred Bitwork rule are preserved.

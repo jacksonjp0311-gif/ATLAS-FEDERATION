@@ -1,0 +1,15 @@
+{
+  "edition": "1.0.0",
+  "previous_record_revisions_retained": 232,
+  "previous_local_relations_retained": 250,
+  "total_records": 234,
+  "source_cards": 21,
+  "local_relations": 251,
+  "cross_domain_relations_only_full": 5,
+  "full_node_relations": 256,
+  "new_scoped_release_assessment_records": 2,
+  "all_chapters": 50,
+  "original_publications_archived_locally": 0,
+  "independent_review": false,
+  "no_bitwork_routing": true
+}

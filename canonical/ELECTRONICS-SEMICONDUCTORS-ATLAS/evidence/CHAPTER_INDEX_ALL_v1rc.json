@@ -1,0 +1,267 @@
+{
+  "schema": "atlas.electronics-chapter-index-all/1",
+  "edition": "1.0.0-rc.1",
+  "total": 52,
+  "chapters": [
+    {
+      "number": 1,
+      "path": "docs/chapters/01_si_constants_scaling_and_thermal_voltage.md",
+      "title": "01. SI charge, energy, dielectric permittivity and thermal voltage"
+    },
+    {
+      "number": 2,
+      "path": "docs/chapters/02_carriers_doping_charge_neutrality.md",
+      "title": "02. Doping, equilibrium carrier mass action and intrinsic concentration"
+    },
+    {
+      "number": 3,
+      "path": "docs/chapters/03_drift_diffusion_current_and_continuity.md",
+      "title": "03. Carrier drift, diffusion currents and conservative continuity"
+    },
+    {
+      "number": 4,
+      "path": "docs/chapters/04_abrupt_pn_junction_depletion_approximation.md",
+      "title": "04. Abrupt p-n junction potential and depletion width"
+    },
+    {
+      "number": 5,
+      "path": "docs/chapters/05_diode_current_and_inverse_bias.md",
+      "title": "05. Ideal Shockley diode current and stable log/exponential arithmetic"
+    },
+    {
+      "number": 6,
+      "path": "docs/chapters/06_mos_dielectric_gate_capacitance.md",
+      "title": "06. Gate dielectric, capacitance and field energy"
+    },
+    {
+      "number": 7,
+      "path": "docs/chapters/07_ideal_mosfet_regions_and_limits.md",
+      "title": "07. Ideal MOSFET square-law model and region continuity"
+    },
+    {
+      "number": 8,
+      "path": "docs/chapters/08_rc_switching_delay_and_power.md",
+      "title": "08. RC response, CMOS switching energy and dynamic power"
+    },
+    {
+      "number": 9,
+      "path": "docs/chapters/09_boolean_logic_and_validity_windows.md",
+      "title": "09. Boolean inverter and idealized static logic versus analog margins"
+    },
+    {
+      "number": 10,
+      "path": "docs/chapters/10_measurement_fabrication_dependencies_and_ai_hardware.md",
+      "title": "10. Semiconductor measurement chain and AI hardware reconstruction dependencies"
+    },
+    {
+      "number": 11,
+      "path": "docs/chapters/11_constant_field_carrier_flux_and_stable_bernoulli.md",
+      "title": "11. Constant-field drift\u2013diffusion and exponential-fitted charge flux"
+    },
+    {
+      "number": 12,
+      "path": "docs/chapters/12_minority_carrier_diffusion_recombination.md",
+      "title": "12. Minority-carrier diffusion, recombination and discrete conservation"
+    },
+    {
+      "number": 13,
+      "path": "docs/chapters/13_resistor_network_nodal_analysis_and_power.md",
+      "title": "13. Nodal circuit analysis, conductance matrices and power accounting"
+    },
+    {
+      "number": 14,
+      "path": "docs/chapters/14_cmos_inverter_load_line_and_nonuniqueness.md",
+      "title": "14. CMOS inverter DC load lines and the indeterminate saturation plateau"
+    },
+    {
+      "number": 15,
+      "path": "docs/chapters/15_logic_voltage_levels_noise_and_switching.md",
+      "title": "15. Logic voltage thresholds, noise margins and simplified RC switching"
+    },
+    {
+      "number": 16,
+      "path": "docs/chapters/16_electrical_metrology_sensitivity_and_covariance.md",
+      "title": "16. Electrical metrology, sensitivity derivatives and covariance propagation"
+    },
+    {
+      "number": 17,
+      "path": "docs/chapters/17_transistors_to_full_adders_and_ripple_carry.md",
+      "title": "17. From CMOS gates to a full adder and n-bit ripple-carry arithmetic"
+    },
+    {
+      "number": 18,
+      "path": "docs/chapters/18_continuity_handoff_semiconductor_to_computer.md",
+      "title": "18. Technological continuity: interfaces from semiconductor equations to computer architecture"
+    },
+    {
+      "number": 19,
+      "path": "docs/chapters/19_rc_network_backward_euler_and_kcl.md",
+      "title": "Chapter 19: From resistor-capacitor networks to timed node voltages"
+    },
+    {
+      "number": 20,
+      "path": "docs/chapters/20_capacitive_switching_energy_and_activity.md",
+      "title": "Chapter 20: Energy from charging a digital node"
+    },
+    {
+      "number": 21,
+      "path": "docs/chapters/21_nand_gates_and_combinational_addition.md",
+      "title": "Chapter 21: Reconstruct Boolean arithmetic from a single universal gate"
+    },
+    {
+      "number": 22,
+      "path": "docs/chapters/22_registers_clock_edges_and_unknown_states.md",
+      "title": "Chapter 22: State storage is not equivalent to combinational logic"
+    },
+    {
+      "number": 23,
+      "path": "docs/chapters/23_clock_setup_hold_skew_and_timing_paths.md",
+      "title": "Chapter 23: Timing inequalities for a synchronous circuit"
+    },
+    {
+      "number": 24,
+      "path": "docs/chapters/24_extended_hamming_error_detection_and_correction.md",
+      "title": "Chapter 24: Preserving data integrity with a small error-correcting code"
+    },
+    {
+      "number": 25,
+      "path": "docs/chapters/25_register_banks_state_transitions_and_memory_abstraction.md",
+      "title": "Chapter 25: A minimal register bank with explicit unknown-state propagation"
+    },
+    {
+      "number": 26,
+      "path": "docs/chapters/26_from_timed_circuits_to_reconstructible_computers.md",
+      "title": "Chapter 26: Evidence-driven handoff to computer architecture"
+    },
+    {
+      "number": 27,
+      "path": "docs/chapters/27_logic_voltage_windows_noise_margins.md",
+      "title": "Chapter 27: Digital voltage thresholds and guaranteed noise windows"
+    },
+    {
+      "number": 28,
+      "path": "docs/chapters/28_gate_dag_timing_path_envelopes.md",
+      "title": "Chapter 28: Combinational timing from acyclic gate networks"
+    },
+    {
+      "number": 29,
+      "path": "docs/chapters/29_setup_hold_clock_skew_and_uncertainty.md",
+      "title": "Chapter 29: Setup, hold, clock skew, and timing closure"
+    },
+    {
+      "number": 30,
+      "path": "docs/chapters/30_metastability_synchronizer_and_empirical_mtbf.md",
+      "title": "Chapter 30: Metastability, synchronization, and empirical failure envelopes"
+    },
+    {
+      "number": 31,
+      "path": "docs/chapters/31_word_alu_logic_flags_and_verification.md",
+      "title": "Chapter 31: Reconstructing a word ALU from gate-level addition"
+    },
+    {
+      "number": 32,
+      "path": "docs/chapters/32_memory_collision_unknown_and_reliability.md",
+      "title": "Chapter 32: Addressable memory: collisions, unknowns, and reliability boundaries"
+    },
+    {
+      "number": 33,
+      "path": "docs/chapters/33_handshake_and_asynchronous_interface_contract.md",
+      "title": "Chapter 33: Four-phase handshake and asynchronous interface correctness"
+    },
+    {
+      "number": 34,
+      "path": "docs/chapters/34_rc_uncertainty_fabrication_and_hardware_handoff.md",
+      "title": "Chapter 34: From numerical electronics to measured gates and a computer"
+    },
+    {
+      "number": 35,
+      "path": "docs/chapters/35_si_constants_and_traceability.md",
+      "title": "Chapter 35 \u2014 SI electrical constants, units and measurement traceability"
+    },
+    {
+      "number": 36,
+      "path": "docs/chapters/36_carrier_statistics_and_neutrality.md",
+      "title": "Chapter 36 \u2014 Carrier statistics, neutrality and coupled charge"
+    },
+    {
+      "number": 37,
+      "path": "docs/chapters/37_junction_diode_iv_and_stability.md",
+      "title": "Chapter 37 \u2014 Junction I\u2013V, diode stable numerics and missing parasitics"
+    },
+    {
+      "number": 38,
+      "path": "docs/chapters/38_mos_stack_capacitance.md",
+      "title": "Chapter 38 \u2014 MOS oxide capacitance and material thickness"
+    },
+    {
+      "number": 39,
+      "path": "docs/chapters/39_mos_threshold_body_effect.md",
+      "title": "Chapter 39 \u2014 MOS substrate body effect, threshold definition and signs"
+    },
+    {
+      "number": 40,
+      "path": "docs/chapters/40_nmos_regions_and_gm.md",
+      "title": "Chapter 40 \u2014 Long-channel MOSFET current regions and transconductance"
+    },
+    {
+      "number": 41,
+      "path": "docs/chapters/41_short_channel_and_leakage_limits.md",
+      "title": "Chapter 41 \u2014 Short-channel, subthreshold and device model limits"
+    },
+    {
+      "number": 42,
+      "path": "docs/chapters/42_dopant_diffusion_and_mass.md",
+      "title": "Chapter 42 \u2014 Diffusion equation and bounded dopant redistribution"
+    },
+    {
+      "number": 43,
+      "path": "docs/chapters/43_sheet_resistance_and_hall.md",
+      "title": "Chapter 43 \u2014 Four-point probe, sheet resistance and Hall metrology"
+    },
+    {
+      "number": 44,
+      "path": "docs/chapters/44_cv_iv_characterization.md",
+      "title": "Chapter 44 \u2014 Capacitance\u2013voltage and current\u2013voltage parameter extraction"
+    },
+    {
+      "number": 45,
+      "path": "docs/chapters/45_lithography_overlay_and_cd.md",
+      "title": "Chapter 45 \u2014 Lithographic pattern transfer and overlay error budgets"
+    },
+    {
+      "number": 46,
+      "path": "docs/chapters/46_semiconductor_process_dependency_graph.md",
+      "title": "Chapter 46 \u2014 Oxidation, deposition, etch, doping and process order"
+    },
+    {
+      "number": 47,
+      "path": "docs/chapters/47_thermal_rc_power_limits.md",
+      "title": "Chapter 47 \u2014 Thermal conduction, self-heating and power budgeting"
+    },
+    {
+      "number": 48,
+      "path": "docs/chapters/48_sram_bitcell_and_noise_limits.md",
+      "title": "Chapter 48 \u2014 SRAM cell state, noise margins and read disturbance"
+    },
+    {
+      "number": 49,
+      "path": "docs/chapters/49_dram_retention_and_refresh.md",
+      "title": "Chapter 49 \u2014 DRAM charge decay, sense thresholds and refresh policy"
+    },
+    {
+      "number": 50,
+      "path": "docs/chapters/50_poisson_defects_and_yield.md",
+      "title": "Chapter 50 \u2014 Defect statistics, yield and reliability boundaries"
+    },
+    {
+      "number": 51,
+      "path": "docs/chapters/51_interconnect_packaging_and_reliability.md",
+      "title": "Chapter 51 \u2014 Interconnect, ESD, packaging and operational qualification"
+    },
+    {
+      "number": 52,
+      "path": "docs/chapters/52_logic_to_machine_bridge.md",
+      "title": "Chapter 52 \u2014 From transistors to a reconstructible stored-program machine"
+    }
+  ]
+}

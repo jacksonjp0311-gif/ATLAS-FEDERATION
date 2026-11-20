@@ -1,0 +1,84 @@
+{
+  "schema": "atlas.db-optimization.bibliography/1",
+  "date_checked": "2026-11-19",
+  "rights_and_authenticity": "Official engineering-documentation landing pages linked and read; no publisher original files or signatures authenticated, no copyright-restricted source texts embedded",
+  "sources": [
+    {
+      "id": "SQLITE_PLANNER",
+      "title": "SQLite Query Planning",
+      "url": "https://www.sqlite.org/queryplanner.html",
+      "organization": "SQLite Project",
+      "role": "Index order, covering access paths, selectivity reasoning"
+    },
+    {
+      "id": "SQLITE_ANALYZE",
+      "title": "SQLite ANALYZE",
+      "url": "https://www.sqlite.org/lang_analyze.html",
+      "organization": "SQLite Project",
+      "role": "Statistics collection, stale statistics and query planning"
+    },
+    {
+      "id": "SQLITE_WAL",
+      "title": "SQLite Write-Ahead Logging",
+      "url": "https://www.sqlite.org/wal.html",
+      "organization": "SQLite Project",
+      "role": "Single writer, WAL checkpoints, concurrency and durability caveats"
+    },
+    {
+      "id": "SQLITE_ISOLATION",
+      "title": "Isolation In SQLite",
+      "url": "https://sqlite.org/isolation.html",
+      "organization": "SQLite Project",
+      "role": "Snapshot isolation, busy snapshot behavior and transaction boundaries"
+    },
+    {
+      "id": "PG_PLANNER",
+      "title": "PostgreSQL Current Documentation: Statistics Used by the Planner",
+      "url": "https://www.postgresql.org/docs/current/planner-stats.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "Single- and multivariate cardinality estimation"
+    },
+    {
+      "id": "PG_EXPLAIN",
+      "title": "PostgreSQL Current Documentation: EXPLAIN",
+      "url": "https://www.postgresql.org/docs/current/sql-explain.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "Observing estimated plans and actual execution where available"
+    },
+    {
+      "id": "PG_ISOLATION",
+      "title": "PostgreSQL Current Documentation: Transaction Isolation",
+      "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "Isolation anomalies, repeatable read, serializable"
+    },
+    {
+      "id": "PG_CONCURRENCY",
+      "title": "PostgreSQL Current Documentation: Concurrency Control",
+      "url": "https://www.postgresql.org/docs/current/mvcc.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "MVCC and concurrency interfaces"
+    },
+    {
+      "id": "PG_INDEX_ONLY",
+      "title": "PostgreSQL index-only scans and covering indexes",
+      "url": "https://www.postgresql.org/docs/current/indexes-index-only-scans.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "MVCC visibility-map constraints, covering indexes and heap fallback"
+    },
+    {
+      "id": "PG_STATS_DETAILS",
+      "title": "PostgreSQL how the planner uses statistics",
+      "url": "https://www.postgresql.org/docs/current/planner-stats-details.html",
+      "organization": "PostgreSQL Global Development Group",
+      "role": "Row estimate examples, correlation and multivariate statistics"
+    },
+    {
+      "id": "SQLITE_EQP",
+      "title": "SQLite EXPLAIN QUERY PLAN",
+      "url": "https://www.sqlite.org/eqp.html",
+      "organization": "SQLite Project",
+      "role": "Plan display is debug-only and format can change"
+    }
+  ]
+}

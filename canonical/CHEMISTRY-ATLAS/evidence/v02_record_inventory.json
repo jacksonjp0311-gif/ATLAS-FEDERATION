@@ -1,0 +1,18 @@
+{
+  "schema": "atlas.chemistry-v02-inventory/1",
+  "prior_records": 168,
+  "added_records": 69,
+  "records": 237,
+  "sources": 18,
+  "prior_full_relations": 146,
+  "added_relations": 64,
+  "standalone_relations": 204,
+  "full_relations": 210,
+  "new_chapters": 16,
+  "all_chapters": 51,
+  "old_cases": 25,
+  "new_cases": 14,
+  "all_cases": 39,
+  "original_publisher_source_files_archived": 0,
+  "independent_expert_review": false
+}

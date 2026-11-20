@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.software-patterns-evidence-hold/1",
+  "status": "bounded_software_only",
+  "publisher_original_files_authenticated": 0,
+  "independent_human_review": false,
+  "real_power_loss_tests": 0,
+  "external_device_actions_tested": 0,
+  "distributed_exactly_once_proven": false,
+  "cryptographic_signatures_verified": false,
+  "hardware_measured_durability": false,
+  "reconstruction_risks": [
+    "SQLite and filesystem commits not one atomic operation",
+    "event chain single-writer",
+    "digest alone not publisher identity",
+    "no guarantee on actual storage under power loss"
+  ]
+}

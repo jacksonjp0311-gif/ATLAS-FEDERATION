@@ -1,0 +1,16 @@
+{
+  "schema": "atlas.control-v1-oracle/1",
+  "result": "passed",
+  "comparisons": 19380,
+  "numpy_version": "2.3.5",
+  "seed": 61113,
+  "max_abs_error": 5.684341886080801e-13,
+  "controls": {
+    "observer_random_systems": 450,
+    "heldout_arx_random_systems": 120
+  },
+  "empirical_publisher_data_evaluated": false,
+  "source_data_authenticity_verified": false,
+  "physical_control_or_safety_tested": false,
+  "interpretation": "independently coded NumPy numeric oracles for synthetic models only"
+}

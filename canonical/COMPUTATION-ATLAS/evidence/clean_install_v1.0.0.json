@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "standalone_records": 234,
+  "standalone_relations": 251,
+  "v1_casebook": 32,
+  "source_closure": "context_available",
+  "installed_version": "1.0.0",
+  "source_tree_imported": false
+}

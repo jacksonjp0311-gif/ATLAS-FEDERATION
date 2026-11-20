@@ -1,0 +1,93 @@
+{
+  "schema": "atlas.computer-at8-golden-programs/1",
+  "count": 3,
+  "programs": [
+    {
+      "name": "arithmetic_memory",
+      "rom_hex": "1005200770003003e000f000",
+      "rom_sha256": "9c385619d8886080628f57455a77d885849e0a77d6c0d3755bb52ac1d7ceee74",
+      "canonical_disassembly": "LDI R0, 5\nADDI R0, 7\nSTORE R0, 0\nXORI R0, 3\nOUT R0, 0\nHALT\n",
+      "instruction_count": 6,
+      "input_tapes": {},
+      "expected_steps": 6,
+      "expected_microcycles": 24,
+      "expected_registers": [
+        15,
+        0,
+        0,
+        0
+      ],
+      "expected_RAM0": 12,
+      "output_tape": [
+        [
+          0,
+          15
+        ]
+      ],
+      "full_software_state_sha256": "cb3b1694aa3915037c7e9fbaa626e82def94e1ac571efa9f2fc7763f07d6477d",
+      "physical_cpu_evidence": false
+    },
+    {
+      "name": "countdown",
+      "rom_hex": "1003e00020ff9002f000",
+      "rom_sha256": "ccecf5d9502d3c2af4b1d1ea1d39a90421f6000d0d0f00e15c0ac24f01813503",
+      "canonical_disassembly": "LDI R0, 3\nOUT R0, 0\nADDI R0, 255\nJNZ R0, 2\nHALT\n",
+      "instruction_count": 5,
+      "input_tapes": {},
+      "expected_steps": 11,
+      "expected_microcycles": 44,
+      "expected_registers": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_RAM0": 0,
+      "output_tape": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "full_software_state_sha256": "116a78f4be7bce83a9168033d31279d3a62f158ca2e80127101edf1c7f83fd26",
+      "physical_cpu_evidence": false
+    },
+    {
+      "name": "input_output",
+      "rom_hex": "d101210271046304e302f000",
+      "rom_sha256": "389441ef62d8a290fbed60a1d6d5242461b28ae8b3d524c851782301741e3bc4",
+      "canonical_disassembly": "IN R1, 1\nADDI R1, 2\nSTORE R1, 4\nLOAD R3, 4\nOUT R3, 2\nHALT\n",
+      "instruction_count": 6,
+      "input_tapes": {
+        "1": [
+          7
+        ]
+      },
+      "expected_steps": 6,
+      "expected_microcycles": 24,
+      "expected_registers": [
+        0,
+        9,
+        0,
+        9
+      ],
+      "expected_RAM0": 0,
+      "output_tape": [
+        [
+          2,
+          9
+        ]
+      ],
+      "full_software_state_sha256": "34bc3e93a0bc110133a4c9bc11e02f4545d533e52d0881900cc63f23453936c2",
+      "physical_cpu_evidence": false
+    }
+  ]
+}

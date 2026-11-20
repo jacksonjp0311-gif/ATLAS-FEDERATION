@@ -1,0 +1,12 @@
+{
+  "schema": "atlas.agent-v03-wheel-smoke/1",
+  "status": "passed",
+  "import_outside_source_tree": true,
+  "installed_distribution": "agent-atlas-research 0.3.0",
+  "installed_records": 128,
+  "installed_node_count": 1,
+  "casebook": "passed",
+  "forge_context": "valid",
+  "live_model_runs": 0,
+  "provider_calls": 0
+}

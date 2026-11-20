@@ -1,0 +1,29 @@
+{
+  "schema": "atlas.software-patterns-independent-oracle/1",
+  "status": "passed",
+  "seed": 20261117,
+  "compared_cases": 50575,
+  "checks_by_group": {
+    "envelope_roundtrip": 2048,
+    "canonical_payload_sha": 2048,
+    "state_machine_reference": 25600,
+    "transition_history": 1280,
+    "breaker_admission": 10000,
+    "breaker_transition": 8119,
+    "journal_idempotent_commit": 450,
+    "journal_result": 450,
+    "journal_replay_cardinality": 1,
+    "journal_restart_recovery": 1,
+    "sha256_blob_identity": 128,
+    "cas_head_identity": 128,
+    "reconstruct_snapshot_after_interruption": 1,
+    "restart_replay_hash_valid": 1,
+    "adapter_unit_conversion": 320
+  },
+  "measurements": 0,
+  "hardware_power_loss_verified": false,
+  "external_exactly_once_guarantee": false,
+  "independent_expert_peer_review": false,
+  "source_originals_authenticated": 0,
+  "limits": "Constructed, finite software reference comparisons, not power-loss equipment tests or formal verification"
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "atlas.energy-v1-independent-oracle/1",
+  "result": "passed",
+  "comparisons": 8670,
+  "counts": {
+    "scenario_weighted_unserved": 650,
+    "scenario_weighted_critical": 650,
+    "scenario_outage_weight": 650,
+    "interval_shortfall_lower": 720,
+    "interval_shortfall_upper": 720,
+    "interval_reserve_upper": 720,
+    "steady_envelope_input_heat": 420,
+    "water_sensible_input": 420,
+    "microgrid_terminal_storage": 620,
+    "microgrid_terminal_fuel": 620,
+    "microgrid_critical_shortfall": 620,
+    "microgrid_flexible_shortfall": 620,
+    "microgrid_renewable_curtailment": 620,
+    "microgrid_energy_conservation": 620
+  },
+  "max_abs_error": 4.547473508864641e-13,
+  "seed": 20261114,
+  "numpy": "2.3.5",
+  "source": "independently written NumPy arithmetic on author-generated synthetic inputs",
+  "real_world_performance_evaluated": false,
+  "original_field_measurements": 0,
+  "limitations": [
+    "Cannot validate field devices, electrical protection, water sanitation or source credibility",
+    "Stipulated scenarios are neither real weather probability models nor physical failure experiments"
+  ]
+}

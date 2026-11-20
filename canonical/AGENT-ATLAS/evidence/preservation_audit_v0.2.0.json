@@ -1,0 +1,27 @@
+{
+  "schema": "atlas.agent-preservation-audit/2",
+  "result": "passed",
+  "previous_full_archive": "ATLAS_COLLECTION_Agent_v0.1.0.zip",
+  "protected_prior_files_byte_identical": 1438,
+  "by_prefix": {
+    "CAUSAL-ATLAS/": 253,
+    "CONTROL-ATLAS/": 225,
+    "MATERIALS-ATLAS/": 121,
+    "baseline/": 771,
+    "common/nodes/causal-atlas/": 9,
+    "common/nodes/control-atlas/": 9,
+    "common/nodes/cymatics-atlas/": 9,
+    "common/nodes/materials-atlas/": 9,
+    "common/nodes/measurement-atlas/": 9,
+    "common/nodes/signal-atlas/": 9,
+    "wheels/": 14
+  },
+  "old_agent_record_revisions_unchanged": 73,
+  "old_agent_relation_revisions_unchanged": 45,
+  "original_baseline_digest_members": 771,
+  "baseline_errors": [],
+  "protected_file_errors": [],
+  "old_common_nonagent_node_versions_preserved": true,
+  "routing_implementation_unchanged": true,
+  "independent_science_review_performed": false
+}

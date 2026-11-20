@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "atlas-network-stacks-reference"
+version = "1.0.0"
+description = "ATLAS FORGE #16 bounded offline network-stacks scientific reference"
+requires-python = ">=3.11"

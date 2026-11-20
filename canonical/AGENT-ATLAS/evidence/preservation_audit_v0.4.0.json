@@ -1,0 +1,14 @@
+{
+  "schema": "atlas.agent-preservation-audit/4",
+  "result": "passed",
+  "previous_release": "Agent 0.3.0",
+  "protected_other_node_and_baseline_files_identical": 1424,
+  "original_baseline_files_identical": 771,
+  "previous_agent_records_revision_identical": 128,
+  "previous_agent_relations_revision_identical": 83,
+  "other_runtime_and_navigation_code_changed": false,
+  "comparison": "source contents byte compared to immutable v0.3 ZIP; hash revision comparisons for Agent records and relations",
+  "limitations": [
+    "Equal historical bytes prove preservation, not source accuracy or scientific review"
+  ]
+}

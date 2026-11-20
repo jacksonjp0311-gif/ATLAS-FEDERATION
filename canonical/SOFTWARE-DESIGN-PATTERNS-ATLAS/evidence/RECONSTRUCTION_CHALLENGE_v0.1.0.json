@@ -1,0 +1,8 @@
+{
+  "schema": "atlas.software-patterns-demo/1",
+  "offline_demo": "passed",
+  "journal_records": 2,
+  "recovered_stale_snapshot": true,
+  "power_loss_hw_certified": false,
+  "external_exactly_once_proven": false
+}

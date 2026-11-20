@@ -1,0 +1,13 @@
+# 14. Evidence maturity, integration contracts and method selection
+
+*Original bounded scientific reference | Assistant-checked source scope | Independent human review: not performed.*
+
+An Atlas is a source-grounded research reference, not a single algorithm. Every control claim should identify plant class, time domain, state/input/output definitions, units, model-identification method, fit residuals, sensor/actuator constraints, uncertainty, source and inspected portion, and known unsupported conditions. Mathematically correct calculations receive a “conditional model result” status, not “experimentally verified control capability.” Synthetic test cases and installed wheel checks only show implementation behavior.
+
+The shared Forge common contract already supports exact immutable record revisions, source links, typed relations and context assembly with assumptions and limitations. Control's first release must use that contract without changing existing domain-specific routing. The user has instructed that all thirty domain knowledge libraries be completed first; routing and Bitwork integration must be addressed only after that, followed by final integrated validation and computer transfer. Starting another node does not authorize modifying the user's desktop, publishing GitHub repositories or calling unfinished science complete.
+
+**Method-selection examples:** for a first-order time constant, use the analytic/ZOH model and test the assumption against data. For unknown dynamics, design an identification experiment rather than guessing gains. For a two-state linear model, test reachability and observability before selecting a controller/observer. For a target under saturation, use a controller implementation that explicitly handles limits. For a stochastic hidden state, validate sensor noise assumptions before relying on an estimator. For complex constraints, research MPC rather than pretending scalar LQR is equivalent.
+
+The next phase should deepen Control's source coverage, add actual appropriately licensed measured-system data with calibration records, compare independently estimated models, run real timing/constraint tests and expand robust control. v0.1 is a substantive foundation, not a finished v1. Scientific completeness, live Bitwork/AI routing and native Windows acceptance remain unresolved by design.
+
+**Publisher/documentation scope:** [ASTROM-2E](https://press.princeton.edu/books/hardcover/9780691193984/feedback-systems) · [MATH-ID](https://www.mathworks.com/help/ident/gs/system-identification-workflow.html). These are exact source pointers and original summaries, not redistributed source text or new measurements.

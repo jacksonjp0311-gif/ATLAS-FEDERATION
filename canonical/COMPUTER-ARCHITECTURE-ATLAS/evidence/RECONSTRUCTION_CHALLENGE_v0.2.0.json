@@ -1,0 +1,60 @@
+{
+  "schema": "atlas.computer-v02-reconstruction-challenge/1",
+  "result": "passed_software_reference_only",
+  "source": "SET 5\nADD 7\nSTORE 4\nXOR 3\nOUT 0\nHALT",
+  "source_sha256": "5e97e358ae231b72cf40e6cebd1021798a481652af93ff52f0f64d0ec6bbbad5",
+  "rom_hex": "1005200770043003e000f000",
+  "rom_sha256": "9dfc1aa0ce8ee056b544d318d7bee9de5c49c8e6272c85dd56a167c753504b65",
+  "ecc_single_bit_corruption_detected_and_corrected": true,
+  "static_control_flow": {
+    "schema": "atlas.at8-control-flow/1",
+    "rom_instructions": 6,
+    "reachable_pcs": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "unreachable_pcs": [],
+    "reachable_halts": [
+      10
+    ],
+    "reachable_structural_cycles": [],
+    "reachable_falloff_traps": [],
+    "all_structural_paths_terminate_at_halt": true,
+    "physical_hardware_verified": false,
+    "limitations": "conservative branch feasibility, excludes input exhaustion, dynamic timing and physical faults"
+  },
+  "source_evaluator_accumulator": 15,
+  "source_evaluator_output": [
+    [
+      0,
+      15
+    ]
+  ],
+  "retirement_events_sha256": "6718d14811acc7789675034bb0885d211c28ce8e38dda2576ce9c9b764c058e0",
+  "two_isa_execution_engines_agree": true,
+  "ram_4": 12,
+  "final_accumulator": 15,
+  "port0_output": 15,
+  "physical_manufacturing_acceptance": "HOLD",
+  "unverified_physical_evidence_types": [
+    "material_identity",
+    "wafer_characterization",
+    "transistor_iv_cv",
+    "dielectric_and_contact_metrology",
+    "gate_transfer_curves",
+    "gate_timing_pvt",
+    "clock_reset_integrity",
+    "physical_memory_retention",
+    "power_thermal_validation",
+    "layout_masks_interconnect",
+    "manufacturing_process_receipts",
+    "independent_hardware_execution_trace"
+  ],
+  "physical_CPU_fabricated": false,
+  "independent_human_scientific_review": false,
+  "original_publisher_bytes_authenticated": 0
+}

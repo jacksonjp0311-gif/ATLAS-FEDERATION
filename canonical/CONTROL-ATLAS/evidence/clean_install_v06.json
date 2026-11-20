@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "installed_versions": {
+    "atlas-forge-research": "1.0.0rc1",
+    "measurement-atlas": "1.0.0rc1",
+    "causal-atlas": "1.0.0",
+    "materials-atlas": "1.0.0",
+    "control-atlas-research": "0.6.0"
+  },
+  "standalone_control_records": 214,
+  "context_status": "context_available",
+  "casebook_count": 12,
+  "import_path": "/mnt/data/control_v06_work/venv_clean/lib/python3.13/site-packages/control_atlas"
+}

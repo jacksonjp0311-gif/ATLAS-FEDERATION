@@ -1,0 +1,30 @@
+{
+  "schema": "atlas.language-historical-preservation/1",
+  "result": "passed",
+  "prior_release": "ATLAS_COLLECTION_Language_v0.2.0.zip",
+  "prior_release_sha256": "e858f3889cbdbcb58cbee6d2f2ed3c9d1cfa4d9a551ca01354d0bff2916c4537",
+  "protected_files_identical": 1836,
+  "protected_prefixes": {
+    "AGENT-ATLAS/": 231,
+    "COMPUTATION-ATLAS/": 140,
+    "CAUSAL-ATLAS/": 253,
+    "MATERIALS-ATLAS/": 121,
+    "CONTROL-ATLAS/": 225,
+    "baseline/": 771,
+    "common/nodes/agent-atlas/": 9,
+    "common/nodes/computation-atlas/": 9,
+    "common/nodes/measurement-atlas/": 9,
+    "common/nodes/causal-atlas/": 9,
+    "common/nodes/materials-atlas/": 9,
+    "common/nodes/control-atlas/": 9,
+    "common/nodes/signal-atlas/": 9,
+    "common/nodes/cymatics-atlas/": 9,
+    "wheels/": 23
+  },
+  "changed_files": [],
+  "old_language_record_revisions_retained": 224,
+  "old_language_full_relation_revisions_retained": 227,
+  "prior_eight_nodes_unchanged": true,
+  "historic_release_tests_archived_not_rewritten": true,
+  "scientific_truth_verified": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.database-v1-finite-oracle/1",
+  "result": "passed",
+  "comparisons": 24523,
+  "failures": 0,
+  "seed": 20261119,
+  "categories": {
+    "left_deep_vs_bruteforce": 1400,
+    "join_permutation_valid": 1400,
+    "external_sort_iterative": 5000,
+    "visibility_direct": 5000,
+    "committed_prefix_independent": 4000,
+    "midrecord_tail_independent": 3523,
+    "plan_regret_direct": 3000,
+    "rw_cycle_sets": 1200
+  },
+  "independence": "distinct brute-permutation, iterative page I/O, direct scan and materialized-log algorithms; same local Python runtime",
+  "production_database_concurrency_certified": false,
+  "physical_storage_durability_verified": false
+}

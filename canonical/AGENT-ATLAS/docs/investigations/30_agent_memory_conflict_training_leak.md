@@ -1,0 +1,7 @@
+# Investigation 30 — A helpful-looking memory can contaminate an evaluation
+
+**Origin:** original evaluation design, not model execution. Suppose an agent is evaluated on ten coding tasks. A previous memory entry contains the patch for two of those tasks. The candidate agent sees the memory; the baseline does not. The candidate scores higher. That result can be explained by **answer exposure**, without establishing a general ability to repair unseen bugs. A nominally small paired p-value cannot repair the contamination.
+
+A proper protocol separates training, dev and held-out task IDs, audits duplicates and near-duplicates where feasible, records exactly which memory record revisions were visible at each step, keeps the evaluator rubric fixed, and checks whether task outcomes reflect semantic correctness. If the memory claims that a repair worked but the executable tests did not independently confirm it, the memory must remain conditional. Failed, inconclusive and cancelled trials stay in the reported denominator.
+
+**Counterexample:** two apparently conflicting repair memories apply to different operating systems. Both can be true within their scopes; deleting one is not valid knowledge compaction. Future corrections must record a supersession or applicability relation rather than rewriting the original incident. Chapter 44 and Chapter 46 contain the research methods. **No actual memory-augmented LLM benchmark was run.**

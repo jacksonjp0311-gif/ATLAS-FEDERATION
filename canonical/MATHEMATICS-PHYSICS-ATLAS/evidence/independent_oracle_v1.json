@@ -1,0 +1,13 @@
+{
+  "schema": "atlas.math-physics-v1-independent-oracle/1",
+  "result": "passed",
+  "seed": 20261116,
+  "dense_scipy_root_systems": 60,
+  "scalar_state_comparisons": 1026,
+  "max_absolute_difference": 3.3262836929282003e-12,
+  "max_dense_root_residual": 6.294964549624638e-14,
+  "manufactured_equilibrium_cases": 6,
+  "invalid_grid_rejections": 4,
+  "numpy": "2.3.5",
+  "science": "algorithmic comparisons on constructed data; no experiments or independent expert review"
+}

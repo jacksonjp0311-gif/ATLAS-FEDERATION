@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.agent-model-oracle/1",
+  "result": "passed",
+  "seed": 20261113,
+  "total_checks": 3200,
+  "counts": {
+    "graph_critical_cost": 400,
+    "topology_constraints": 400,
+    "pass_all": 500,
+    "pass_any": 500,
+    "per_trial": 500,
+    "memory_budget": 400,
+    "journal_digest": 500
+  },
+  "numpy_version": "2.3.5",
+  "networkx_version": "3.6.1",
+  "origin": "independent_numeric_and_graph_algorithms_on_author_generated_data",
+  "real_llm_calls": 0,
+  "real_tool_calls": 0,
+  "independent_scientific_review": false,
+  "limitations": [
+    "No performance benchmark or real external task evaluation",
+    "NetworkX check validates supplied cost graph, not a live scheduler"
+  ]
+}

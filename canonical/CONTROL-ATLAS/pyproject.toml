@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=61"]
+build-backend="setuptools.build_meta"
+[project]
+name="control-atlas-research"
+version="1.0.0rc1"
+requires-python=">=3.10"
+description="Evidence-preserving control theory atlas with bounded pure-Python mathematical reference tools"
+[tool.setuptools.packages.find]
+where=["."]
+include=["control_atlas*"]
+[tool.setuptools.package-data]
+control_atlas=["resources/derived_evidence/*.json", "resources/common/*.json", "resources/common/nodes/*/*.json", "resources/common/nodes/*/data/*.jsonl"]

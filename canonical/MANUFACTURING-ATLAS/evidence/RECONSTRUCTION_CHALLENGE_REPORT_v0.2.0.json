@@ -1,0 +1,31 @@
+{
+  "schema": "atlas.original-federation-manufacturing-to-computer-challenge/1",
+  "software_electronics_v1rc_interpreter_passed": true,
+  "software_program_bytes_hex": "1005200740003003f000",
+  "software_result": {
+    "accumulator": 15,
+    "ram0": 12,
+    "steps": 5
+  },
+  "physical_manufacturing_status": "HOLD",
+  "physical_steps_blocked": 6,
+  "missing_physical_evidence_types": [
+    "cell_timing_across_corners",
+    "clock_setup_hold_measurement",
+    "doping_profile",
+    "external_reviewer_signoff",
+    "film_leakage_test",
+    "gate_transfer_curve",
+    "independent_hardware_program_trace",
+    "memory_retention_measurement",
+    "oxide_thickness_measurements",
+    "traceable_calibration",
+    "transistor_IV_CV",
+    "wafer_batch_assay"
+  ],
+  "structurally_ready_with_hypothetical_metadata_only": true,
+  "physical_evidence_certified_from_metadata": false,
+  "real_fabricated_cpu_demonstrated": false,
+  "independent_science_review": false,
+  "conclusion": "Software reconstructed the finite program. Physical manufacturing remains unsupported by primary measurement evidence."
+}

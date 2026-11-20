@@ -1,0 +1,31 @@
+{
+  "schema": "atlas.computation-preservation/2",
+  "version": "0.2.0",
+  "status": "passed",
+  "previous_full_zip": "ATLAS_COLLECTION_Computation_v0.1.0.zip",
+  "previous_full_sha256": "5bf7ac2f9b746431c69bb9898845ee1155671b4744f280959b1dab7dfe0ab9db",
+  "protected_historical_files_identical": 1693,
+  "protected_by_group": {
+    "baseline/": 771,
+    "CAUSAL-ATLAS/": 253,
+    "MATERIALS-ATLAS/": 121,
+    "CONTROL-ATLAS/": 225,
+    "AGENT-ATLAS/": 231,
+    "common/nodes/causal-atlas/": 9,
+    "common/nodes/materials-atlas/": 9,
+    "common/nodes/control-atlas/": 9,
+    "common/nodes/agent-atlas/": 9,
+    "common/nodes/measurement-atlas/": 9,
+    "common/nodes/cymatics-atlas/": 9,
+    "common/nodes/signal-atlas/": 9,
+    "history/": 29
+  },
+  "changed": [],
+  "missing": [],
+  "previous_computation_records_exact_revision_preserved": 162,
+  "previous_computation_relationships_exact_revision_preserved": 175,
+  "previous_full_release_stored_separately_in_library": true,
+  "other_domain_node_source_changed": false,
+  "router_implementation_changed": false,
+  "independent_scientific_truth_verified": false
+}

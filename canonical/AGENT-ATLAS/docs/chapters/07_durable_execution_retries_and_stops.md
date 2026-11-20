@@ -1,0 +1,13 @@
+# 07. Durable execution separates recovery from unauthorized continuation
+
+Agent tasks often span processes and tools whose lifetimes differ. Durable execution requires stable state snapshots and a journal of what happened; an in-memory list is not a durable store. Actual storage must survive process crashes and power loss with atomic commits, reliable ordering, idempotency, reconciliation and access control. LangGraph's persistence documentation distinguishes short-term checkpoint state from cross-thread stores and explains how saved graph state can support pause/resume and fault tolerance. That is a documented platform design, not an implementation in Agent Atlas.
+
+The Agent Atlas offline event chain records `sequence`, `prev_hash`, `run_id`, `actor`, `action`, `payload` and a SHA-256 digest. It detects local data tampering or deletion when checked against the expected journal, but without a trusted external digest and signature it does not establish a chain-of-custody proof against a party that can rewrite the entire history. The package does not write an actual transaction log to disk and should never be substituted for a production event store.
+
+A **stop** requested by an operator is different from an automatic failure or a tool timeout. Authorized stop must remain final within the run. Automatically retrying after stop contradicts user intent. A tool error is not a stop and may permit retry if a budget and idempotency contract allow it. A completed parent final answer should also be terminal for that run; subsequent changes require a new operation and versioned evidence.
+
+A worker receipt surviving a parent crash is not automatically a verified final answer. The parent must first reestablish run identity, that the child result refers to the correct task, that necessary observations were captured, that external side effects are known, and that admission rules were satisfied. Our `receipt_survival` only returns **eligible for parent verification**, not “recovered” or “deployed.”
+
+**Failure case:** an agent retries a database update after a timeout, causing two charges. Exactly-once effects cannot be established by checking a local hash chain alone; they require correctly designed provider-specific idempotency keys, durable commitments and reconciliation. Prefer an explicitly uncertain status over a fabricated success or automated loop.
+
+**Sources:** [LANGGRAPH-PERSISTENCE](https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/persistence.mdx), [MCP-SPEC-2026](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/index.mdx).

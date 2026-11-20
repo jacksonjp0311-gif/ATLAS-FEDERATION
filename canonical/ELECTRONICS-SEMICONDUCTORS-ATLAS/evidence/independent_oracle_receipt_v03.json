@@ -1,0 +1,21 @@
+{
+  "schema": "atlas.electronics-v03-independent-numerical-oracle/1",
+  "status": "passed",
+  "counts": {
+    "nodal_systems": 350,
+    "nodal_values": 1518,
+    "arithmetic_truth": 6508,
+    "hamming_clean": 16,
+    "hamming_single": 128,
+    "hamming_double": 448,
+    "timing_constraints": 6000,
+    "energy_checks": 2000
+  },
+  "total_comparisons": 16968,
+  "max_abs_rc_voltage_difference": 6.661338147750939e-16,
+  "numpy_version": "2.3.5",
+  "deterministic_seed": 20261116,
+  "physical_measurements": 0,
+  "authenticated_original_publisher_files": 0,
+  "independent_science_peer_review": false
+}

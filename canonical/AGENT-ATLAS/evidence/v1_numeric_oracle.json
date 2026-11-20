@@ -1,0 +1,22 @@
+{
+  "schema": "atlas.agent-v1-numerical-oracle/1",
+  "status": "passed",
+  "comparisons": 2340,
+  "by_algorithm": {
+    "belief_posterior": 660,
+    "observation_evidence": 220,
+    "bellman_values": 660,
+    "dijkstra_networkx": 200,
+    "ips_mean": 200,
+    "weighted_ess": 200,
+    "ips_self_normalized": 200
+  },
+  "max_abs_error": 3.552713678800501e-15,
+  "seed": 20261113,
+  "numpy_version": "2.3.5",
+  "networkx_version": "3.6.1",
+  "authored_synthetic_only": true,
+  "independent_human_scientific_review": false,
+  "measured_agent_performance": false,
+  "scientific_reliability_claim": "none"
+}

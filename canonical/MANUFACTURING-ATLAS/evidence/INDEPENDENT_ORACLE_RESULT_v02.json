@@ -1,0 +1,37 @@
+{
+  "schema": "atlas.manufacturing-v02-independent-oracle/1",
+  "result": "passed",
+  "seed": 20261116,
+  "independent_numeric_and_logical_comparisons": 6052,
+  "groups": {
+    "covariance_quadratic_form": 320,
+    "nonPSD_refusals": 80,
+    "wilson_lower": 550,
+    "wilson_upper": 550,
+    "normal_acceptance_risk": 450,
+    "conditional_capability_cp": 330,
+    "conditional_capability_cpk": 330,
+    "capability_HOLD_without_stability_evidence": 330,
+    "independent_schedule_constraints": 1582,
+    "datum_transform_x": 540,
+    "datum_transform_y": 540,
+    "declared_traceability_still_NOT_authenticated": 150,
+    "evidence_gate_fail_closed_and_noncertification": 300
+  },
+  "max_absolute_errors_by_group": {
+    "covariance_quadratic_form": 1.7763568394002505e-15,
+    "wilson_lower": 2.220446049250313e-16,
+    "wilson_upper": 1.1102230246251565e-16,
+    "normal_acceptance_risk": 2.220446049250313e-16,
+    "conditional_capability_cp": 4.440892098500626e-16,
+    "conditional_capability_cpk": 3.3306690738754696e-16,
+    "datum_transform_x": 1.1368683772161603e-13,
+    "datum_transform_y": 1.1368683772161603e-13,
+    "declared_traceability_still_NOT_authenticated": 0.0
+  },
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "physical_parts_manufactured": 0,
+  "calibration_authenticity_proved": false,
+  "independent_expert_review": false
+}

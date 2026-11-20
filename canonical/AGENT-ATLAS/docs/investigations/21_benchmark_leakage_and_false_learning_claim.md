@@ -1,0 +1,7 @@
+# Investigation 21 — A candidate improves on tasks it already saw
+
+Consider a paired, author-built six-task evaluation. The baseline wins one task, the candidate wins three, both pass one and both fail one. The exact one-sided discordance tail under a symmetric null is `P[X≥3 | X~Binomial(4,0.5)] = 5/16 = 0.3125`. This is only a statistical calculation on reported labels.
+
+Now add one evaluation task ID to the set exposed during training. Even if every outcome stays the same, the audit marks that task contaminated, and the proposed held-out design fails. Similarly, replacing one outcome with null decreases the count of scored pairs; it must not be interpreted as a failure for one arm. Changing one row's evaluator version invalidates comparability. A missing precommitment flag prevents treating the trial as an untouched comparison. These are controlled negative examples for **evaluation design**, not agent performance results.
+
+For real evidence, freeze candidate and evaluator versions before task selection, maintain immutable exposure logs, choose fresh tasks, repeat runs with independent seeds, and use independent outcome checks. A model-generated pass/fail label is not the same as a verified external task result. A small p-value would not by itself correct benchmark contamination or dependent tasks. The current tool returns `agent_improvement_demonstrated=false` irrespective of the arithmetic result.

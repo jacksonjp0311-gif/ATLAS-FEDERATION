@@ -1,0 +1,9 @@
+# 58. Observer, actuator and control command form a coupled system
+
+A feedback law can be mathematically well designed and still fail if the actuator differs from the commanded input or if its sensor estimate is stale. A useful implementation record therefore separates `requested_u`, `magnitude_clamped_target`, `slew_limited_target`, and `applied_u`. The previous Control editions provide scalar actuator lag, clipping and finite-horizon bounded output-feedback tools. Version 1 adds a separate two-state/two-sensor observer-error reference, but it **does not** automatically combine it with a multivariable physically certified actuator/controller.
+
+This separation is intentional. A correct observer proof relies on the **same applied input** in the predictor and real plant. An experiment with only the command reference can support a setpoint-tracking description, not a strict proof that the actuator executed it. The 2026 OpenMCT logs retain PWM alongside the reference, precisely the information that can distinguish commands from applied actions. Those actual raw logs are not present in the current release; no empirical controller-model cross-check is claimed.
+
+A source-aware Control Atlas should answer three different questions: *what was requested*, *what physically happened*, and *what does the model permit us to infer*. An input limit within an offline optimizer is not a safety-rated physical interlock. A finite-time reachable tube does not guarantee unmodeled intersample behavior or faults. A small observer covariance is conditional on the assumed noise model; it is not a measured bound unless a lab has validated one.
+
+The next real integration work after all thirty domain libraries will use these typed relations to retrieve the correct conditional source and method, not to issue device commands. The existing Forge retrieval contract remains unchanged in this content phase.

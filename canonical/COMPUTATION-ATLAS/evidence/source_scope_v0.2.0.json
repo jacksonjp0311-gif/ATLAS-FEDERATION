@@ -1,0 +1,56 @@
+{
+  "version": "0.2.0",
+  "new_source_cards": [
+    {
+      "id": "MIT-6046",
+      "url": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2012/pages/lecture-notes/",
+      "inspected_scope": "Official lecture-note index covers minimum spanning trees, FFT, randomized algorithms, flow, union-find, NP-completeness, approximation and compression",
+      "rights_note": "MIT OCW course terms; no PDF mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "id": "MIT-1806",
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/syllabus/",
+      "inspected_scope": "Official course syllabus covers elimination, pivots, matrix rank, null spaces and factoring A=LU",
+      "rights_note": "MIT OCW course terms; no textbook bytes mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "id": "LAMPORT-1978",
+      "url": "https://lamport.org/pubs/time-clocks.pdf",
+      "inspected_scope": "Author-hosted paper abstract covers happened-before partial orders and logical clocks; original ACM copyright remains with publisher",
+      "rights_note": "ACM 1978 rights; citation and original paraphrase only, no paper mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "id": "PY-DECIMAL",
+      "url": "https://docs.python.org/3/library/decimal.html",
+      "inspected_scope": "Official Python documentation describes decimal contexts, precision, flags and exact/inexact traps; current documentation version is mutable",
+      "rights_note": "PSF documentation license applies; no source text mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "id": "AWS-IDEMPOTENCY",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "inspected_scope": "Official article by Malcolm Featonby describes caller-provided intent IDs, atomic provider idempotency sessions and late-request semantics",
+      "rights_note": "AWS documentation retains original copyright; no text or PDF mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "id": "NIST-FIPS203",
+      "url": "https://csrc.nist.gov/pubs/fips/203/final",
+      "inspected_scope": "Official final standard published 2024-08-13; planning note 2025-11-17 identifies errata for later correction; three ML-KEM parameter sets",
+      "rights_note": "NIST primary publication status/errata check; original bytes not mirrored",
+      "source_bytes_archived": false,
+      "independent_review": false
+    }
+  ],
+  "authenticated_primary_publisher_bytes_acquired": 0,
+  "empirical_model_measurements": 0,
+  "independent_peer_review": false
+}

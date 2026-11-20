@@ -1,0 +1,247 @@
+{
+  "schema": "atlas.software-pattern-chapter-index/1",
+  "edition": "0.1.0",
+  "count": 24,
+  "chapters": [
+    {
+      "number": 1,
+      "slug": "patterns_as_reconstruction_contracts",
+      "title": "Design patterns as reconstructible engineering contracts",
+      "path": "docs/chapters/01_patterns_as_reconstruction_contracts.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "Pattern=(problem,context,forces,solution,invariants,negative_cases,evidence)",
+      "method": "README.md and tests",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 2,
+      "slug": "canonical_data_and_versioned_envelopes",
+      "title": "Canonical data, strict schemas, and versioned contracts",
+      "path": "docs/chapters/02_canonical_data_and_versioned_envelopes.md",
+      "source_id": "NIST-SSDF",
+      "equation": "H=SHA256(canonical(kind,version,id,payload)); digest equality \u2260 authentication",
+      "method": "contracts.envelope, contracts.parse_envelope",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 3,
+      "slug": "factories_and_explicit_dependency_injection",
+      "title": "Factory construction and explicit dependency injection",
+      "path": "docs/chapters/03_factories_and_explicit_dependency_injection.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "implementation = Factory(checked_configuration), not global hidden state",
+      "method": "composition.build_adapter, composition.PortAdapter",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 4,
+      "slug": "adapters_and_anti_corruption_boundaries",
+      "title": "Adapters and anti-corruption layers for incompatible information",
+      "path": "docs/chapters/04_adapters_and_anti_corruption_boundaries.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "V_SI = V_mV/1000; raw_data != certified_calibration",
+      "method": "composition.PortAdapter.normalize",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 5,
+      "slug": "strategies_and_decision_policy_selection",
+      "title": "Strategy pattern and deterministic policy substitution",
+      "path": "docs/chapters/05_strategies_and_decision_policy_selection.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "result=StrategyRegistry[name](payload) with explicit named policy",
+      "method": "composition.StrategyRegistry",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 6,
+      "slug": "decorators_and_crosscutting_audit",
+      "title": "Decorator pattern for explicit audit boundaries",
+      "path": "docs/chapters/06_decorators_and_crosscutting_audit.md",
+      "source_id": "NIST-SSDF",
+      "equation": "record(receipt)=digest(output) only AFTER successful invocation",
+      "method": "composition.audited",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 7,
+      "slug": "pipelines_and_stepwise_validation",
+      "title": "Pipes and filters with verifiable intermediate results",
+      "path": "docs/chapters/07_pipelines_and_stepwise_validation.md",
+      "source_id": "AZURE-PUBSUB",
+      "equation": "x_(i+1)=f_i(x_i); each intermediate SHA256 is part of the receipt",
+      "method": "composition.Pipeline.run",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 8,
+      "slug": "finite_state_machines_and_illegal_transitions",
+      "title": "State machines with explicit forbidden transitions",
+      "path": "docs/chapters/08_finite_state_machines_and_illegal_transitions.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "next = T(current,event), undefined T is a failure not a self-loop",
+      "method": "state.StateMachine, state.recovery_machine",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 9,
+      "slug": "bounded_retry_and_idempotency_preconditions",
+      "title": "Retry with bounded attempts and explicit idempotency preconditions",
+      "path": "docs/chapters/09_bounded_retry_and_idempotency_preconditions.md",
+      "source_id": "AZURE-RETRY",
+      "equation": "attempts<=1+retry_budget; retry only if chosen exception is transient",
+      "method": "resilience.bounded_retry",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 10,
+      "slug": "circuit_breaker_closed_open_half_open",
+      "title": "Circuit breaker states and recovery under unreliable dependencies",
+      "path": "docs/chapters/10_circuit_breaker_closed_open_half_open.md",
+      "source_id": "AZURE-CIRCUIT",
+      "equation": "closed --threshold failures--> open --cooldown--> half_open --probe--> closed/open",
+      "method": "resilience.CircuitBreaker",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 11,
+      "slug": "bulkheads_and_capacity_isolation",
+      "title": "Bulkhead capacity partitioning and blast-radius limits",
+      "path": "docs/chapters/11_bulkheads_and_capacity_isolation.md",
+      "source_id": "AZURE-BULKHEAD",
+      "equation": "allocated[lane] <= capacity[lane] independently for every lane",
+      "method": "resilience.Bulkhead",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 12,
+      "slug": "queue_backpressure_and_delivery_contracts",
+      "title": "Queues, backpressure, duplicates and delivery guarantees",
+      "path": "docs/chapters/12_queue_backpressure_and_delivery_contracts.md",
+      "source_id": "AZURE-PUBSUB",
+      "equation": "admitted_work <= declared_capacity; at-least-once != exactly-once effect",
+      "method": "resilience.Bulkhead and ledger.CommandJournal",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 13,
+      "slug": "command_ids_and_database_idempotency",
+      "title": "Command identity and database-local idempotent effects",
+      "path": "docs/chapters/13_command_ids_and_database_idempotency.md",
+      "source_id": "AZURE-RETRY",
+      "equation": "same ID + same payload -> same committed row; same ID + different payload -> error",
+      "method": "ledger.CommandJournal.execute",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 14,
+      "slug": "transactions_unit_of_work_and_rollback",
+      "title": "Unit of Work, SQLite transactions and rollback boundaries",
+      "path": "docs/chapters/14_transactions_unit_of_work_and_rollback.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "BEGIN IMMEDIATE; validate->reduce->insert->COMMIT or ROLLBACK",
+      "method": "ledger.CommandJournal",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 15,
+      "slug": "deterministic_hash_chained_command_ledger",
+      "title": "Hash-chained command history with independent replay checks",
+      "path": "docs/chapters/15_deterministic_hash_chained_command_ledger.md",
+      "source_id": "SQLITE-WAL",
+      "equation": "H_i=SHA256(seq,id,payload_sha,payload,result,prev=H_(i-1))",
+      "method": "ledger.CommandJournal.verify_replay",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 16,
+      "slug": "event_sourcing_and_head_pointer_replay",
+      "title": "Event sourcing with immutable blobs and a versioned head pointer",
+      "path": "docs/chapters/16_event_sourcing_and_head_pointer_replay.md",
+      "source_id": "AZURE-PUBSUB",
+      "equation": "entry_i={event_i,prev:H_(i-1),sequence:i}; head points to last hash",
+      "method": "events.EventChain, atomicfiles.ContentStore",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 17,
+      "slug": "content_addressed_immutable_artifact_storage",
+      "title": "Content-addressed immutable artifacts and integrity checks",
+      "path": "docs/chapters/17_content_addressed_immutable_artifact_storage.md",
+      "source_id": "PY-OS",
+      "equation": "blob_name=SHA256(blob_bytes); retrieval recomputes the digest",
+      "method": "atomicfiles.ContentStore.put/get",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 18,
+      "slug": "atomic_pointer_publication_and_snapshot_boundaries",
+      "title": "Atomic same-filesystem pointer replacement and rollback design",
+      "path": "docs/chapters/18_atomic_pointer_publication_and_snapshot_boundaries.md",
+      "source_id": "PY-OS",
+      "equation": "write temp->fsync(file)->os.replace(temp,head)->best_effort_fsync(parent)",
+      "method": "atomicfiles.ContentStore.publish",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 19,
+      "slug": "recovery_from_interrupted_multi_resource_workflows",
+      "title": "Recovering a derived snapshot after a committed journal update",
+      "path": "docs/chapters/19_recovery_from_interrupted_multi_resource_workflows.md",
+      "source_id": "SQLITE-WAL",
+      "equation": "authoritative_journal_head != snapshot_head -> reconstruct derived view",
+      "method": "workflow.RecoveryWorkflow.apply/recover",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 20,
+      "slug": "separation_of_authoritative_and_derived_state",
+      "title": "CQRS-style separation of command authority and read projections",
+      "path": "docs/chapters/20_separation_of_authoritative_and_derived_state.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "read_view = f(verified_committed_journal); commands do not trust stale projections",
+      "method": "workflow.RecoveryWorkflow",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 21,
+      "slug": "cache_aside_invalidation_and_coherence",
+      "title": "Cache-aside, invalidation and the limits of stale knowledge",
+      "path": "docs/chapters/21_cache_aside_invalidation_and_coherence.md",
+      "source_id": "FOWLER-CATALOG",
+      "equation": "cache_valid iff cache_revision == authoritative_revision",
+      "method": "workflow snapshot revision comparison; Computer Architecture cache reference",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 22,
+      "slug": "secure_software_provenance_and_rights",
+      "title": "Software supply-chain evidence, rights, and untrusted inputs",
+      "path": "docs/chapters/22_secure_software_provenance_and_rights.md",
+      "source_id": "NIST-SSDF",
+      "equation": "release_acceptance = artifact_integrity AND scoped_tests AND independent_provenance",
+      "method": "contracts.parse_envelope, evidence receipts",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 23,
+      "slug": "property_based_differential_testing_and_negative_cases",
+      "title": "Property-based, differential and interruption-oriented test design",
+      "path": "docs/chapters/23_property_based_differential_testing_and_negative_cases.md",
+      "source_id": "NIST-SSDF",
+      "equation": "oracle(inputs) == implementation(inputs) for explicit finite test set",
+      "method": "evidence/independent_oracle.py and tests",
+      "evidence": "original finite software reference"
+    },
+    {
+      "number": 24,
+      "slug": "offline_technology_reconstruction_workflow",
+      "title": "Reconstructing resilient software without network services",
+      "path": "docs/chapters/24_offline_technology_reconstruction_workflow.md",
+      "source_id": "PY-SQLITE",
+      "equation": "source + tests + schema + journal + snapshots + evidence -> reproducible bounded recovery",
+      "method": "python -m patterns_atlas; workflow.RecoveryWorkflow",
+      "evidence": "original finite software reference"
+    }
+  ]
+}

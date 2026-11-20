@@ -1,0 +1,366 @@
+[
+  {
+    "chapter": "01",
+    "title": "Systems, interventions, and evidential scope",
+    "source_ids": [
+      "FBS-WIKI",
+      "FBS-PRESS"
+    ],
+    "topics": [
+      [
+        "feedback-question",
+        "A feedback question requires plant, actuator, sensor, target and operating range",
+        "concept"
+      ],
+      [
+        "model-vs-hardware",
+        "A simulated controlled plant is not a test of real equipment",
+        "concept"
+      ],
+      [
+        "controller-evidence",
+        "Controller success claims require explicit model and disturbance scope",
+        "concept"
+      ],
+      [
+        "non-routing-domain",
+        "Control Atlas methods must not be mistaken for a live Atlas or Bitwork router",
+        "method"
+      ]
+    ]
+  },
+  {
+    "chapter": "02",
+    "title": "Continuous and sampled plant dynamics",
+    "source_ids": [
+      "FBS-WIKI",
+      "MATLAB-ZOH",
+      "MATLAB-DISC"
+    ],
+    "topics": [
+      [
+        "firstorder-response",
+        "The exact first-order stable response assumes one real pole and no disturbance",
+        "equation"
+      ],
+      [
+        "zoh-response",
+        "Exact first-order ZOH depends on held-constant input between samples",
+        "equation"
+      ],
+      [
+        "continuous-vs-discrete",
+        "Continuous-time dynamics and sampled dynamics require an explicit hold convention",
+        "concept"
+      ],
+      [
+        "unknown-plant",
+        "Exact model discretization does not identify the actual plant",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "03",
+    "title": "Stability, equilibria, and model boundaries",
+    "source_ids": [
+      "FBS-WIKI",
+      "MIT-STABILITY"
+    ],
+    "topics": [
+      [
+        "scalar-stability",
+        "A scalar discrete pole strictly inside the unit circle is asymptotically stable",
+        "equation"
+      ],
+      [
+        "marginal-pole",
+        "Unit-circle boundary is not an asymptotic stability certificate",
+        "concept"
+      ],
+      [
+        "local-stability",
+        "Linearized local stability need not imply global nonlinear stability",
+        "concept"
+      ],
+      [
+        "closed-loop-vs-plant",
+        "Open-loop stability cannot establish closed-loop safety",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "04",
+    "title": "Feedback, disturbances, and error",
+    "source_ids": [
+      "FBS-WIKI",
+      "FBS-PRESS"
+    ],
+    "topics": [
+      [
+        "negative-feedback",
+        "Negative feedback regulates a chosen output but may excite dynamics or noise",
+        "concept"
+      ],
+      [
+        "reference-vs-disturbance",
+        "Setpoint tracking and disturbance rejection are different tests",
+        "concept"
+      ],
+      [
+        "error-metrics",
+        "Integrated absolute error is a metric, not a safety criterion",
+        "method"
+      ],
+      [
+        "noise-sensitivity",
+        "Sensor noise and high-frequency control action require a separate model",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "05",
+    "title": "State-space reachability and observation",
+    "source_ids": [
+      "PY-CTRB",
+      "PY-OBSV",
+      "FBS-WIKI"
+    ],
+    "topics": [
+      [
+        "controllability",
+        "Controllability depends on A and B, not an attractive controller name",
+        "equation"
+      ],
+      [
+        "observability",
+        "Observability depends on A and C, not merely repeated sensor readings",
+        "equation"
+      ],
+      [
+        "rank-tolerance",
+        "Numerical rank thresholds depend on scaling and matrix conditioning",
+        "concept"
+      ],
+      [
+        "unobserved-modes",
+        "A visible output can hide unobservable internal instability",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "06",
+    "title": "Sampling, delays, and ZOH",
+    "source_ids": [
+      "MATLAB-ZOH",
+      "MATLAB-DISC",
+      "MATLAB-ALIAS"
+    ],
+    "topics": [
+      [
+        "sampling-bandlimited",
+        "Nyquist strictly applies to a known bandlimited ideal-sampling signal",
+        "equation"
+      ],
+      [
+        "sampling-not-control",
+        "Sampling above twice bandwidth is not a controller-stability guarantee",
+        "concept"
+      ],
+      [
+        "zoh-hold",
+        "A digital actuator command held between samples is a physical hold assumption",
+        "concept"
+      ],
+      [
+        "delay-phase",
+        "Delays can consume phase margin even for a stable instantaneous plant",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "07",
+    "title": "PI/PID, saturation, and anti-windup",
+    "source_ids": [
+      "MATLAB-AW",
+      "FBS-WIKI"
+    ],
+    "topics": [
+      [
+        "integral-windup",
+        "Integral action can wind up when actuator command exceeds physical limits",
+        "concept"
+      ],
+      [
+        "clamping-antiwindup",
+        "Conditional integration can limit integrator buildup in a saturated model",
+        "method"
+      ],
+      [
+        "pi-discrete-model",
+        "A finite-step PI simulation must declare update order, limits, and sampling",
+        "equation"
+      ],
+      [
+        "antiwindup-not-proof",
+        "Anti-windup does not prove physical loop stability or optimality",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "08",
+    "title": "System identification and uncertainty",
+    "source_ids": [
+      "FBS-WIKI",
+      "MATLAB-DISC"
+    ],
+    "topics": [
+      [
+        "excitation-identification",
+        "Identifiability requires informative excitation and an explicit candidate model",
+        "concept"
+      ],
+      [
+        "confounding-control",
+        "Disturbance and controller action can confound a closed-loop identification",
+        "concept"
+      ],
+      [
+        "fit-not-validity",
+        "A good fitted response is not physical-model validation",
+        "concept"
+      ],
+      [
+        "heldout-disturbance",
+        "Compare fitted dynamics on holdout inputs and disturbances",
+        "method"
+      ]
+    ]
+  },
+  {
+    "chapter": "09",
+    "title": "State estimation and scalar Kalman filtering",
+    "source_ids": [
+      "MIT-STATE",
+      "FBS-WIKI"
+    ],
+    "topics": [
+      [
+        "kalman-conditional",
+        "A Kalman covariance is conditional on specified process and measurement noises",
+        "concept"
+      ],
+      [
+        "kalman-scalar",
+        "A scalar linear-Gaussian filter uses prediction, innovation and correction",
+        "equation"
+      ],
+      [
+        "kalman-bias",
+        "An unmodeled sensor bias can defeat a seemingly small posterior variance",
+        "concept"
+      ],
+      [
+        "kalman-joseph",
+        "Joseph covariance update can preserve nonnegative variance numerically",
+        "method"
+      ]
+    ]
+  },
+  {
+    "chapter": "10",
+    "title": "Finite-horizon optimal control and constraints",
+    "source_ids": [
+      "MIT-LQR",
+      "FBS-SUPPLEMENTS"
+    ],
+    "topics": [
+      [
+        "finite-lqr",
+        "Finite-horizon scalar LQR uses backward Riccati recursion",
+        "equation"
+      ],
+      [
+        "lqr-unconstrained",
+        "Unconstrained LQR ignores actuator saturation and state constraints",
+        "concept"
+      ],
+      [
+        "lqr-cost",
+        "Cost-to-go is defined by a user-chosen Q/R weighting, not universal optimality",
+        "concept"
+      ],
+      [
+        "lqr-no-real",
+        "A low quadratic model cost is not evidence of good production control",
+        "concept"
+      ]
+    ]
+  },
+  {
+    "chapter": "11",
+    "title": "Robustness, margins, and small gain",
+    "source_ids": [
+      "FBS-WIKI",
+      "MIT-STABILITY"
+    ],
+    "topics": [
+      [
+        "small-gain",
+        "Strict small-gain product is sufficient only for stable operator interconnection norms",
+        "equation"
+      ],
+      [
+        "small-gain-not-necessary",
+        "A failed sufficient small-gain check does not prove real instability",
+        "concept"
+      ],
+      [
+        "robustness-nonlinear",
+        "Physical saturation/delay/noise invalidate simplistic gain arguments",
+        "concept"
+      ],
+      [
+        "robust-design-ledger",
+        "Robustness results require uncertainty sets, frequencies and operating domain",
+        "method"
+      ]
+    ]
+  },
+  {
+    "chapter": "12",
+    "title": "Verification, industrial safety, and AI knowledge reuse",
+    "source_ids": [
+      "FBS-WIKI",
+      "MATLAB-AW",
+      "MIT-LQR"
+    ],
+    "topics": [
+      [
+        "controller-review",
+        "Controller deployment requires change control and monitored evidence",
+        "method"
+      ],
+      [
+        "agent-tool-boundary",
+        "Retrieved reference text is data, never authority to actuate hardware",
+        "concept"
+      ],
+      [
+        "routing-last",
+        "All thirty domain content libraries precede Bitwork routing and desktop transfer",
+        "method"
+      ],
+      [
+        "control-maturity",
+        "Control v0.1 is source-linked scientific content, not complete control certification",
+        "concept"
+      ]
+    ]
+  }
+]

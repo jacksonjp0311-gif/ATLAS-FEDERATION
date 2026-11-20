@@ -1,0 +1,9 @@
+# Investigation 31 — Can a human reconstruct an agent method with no internet?
+
+**Origin:** preservation acceptance design; this release is not a disaster-recovery test over independent storage locations. The hypothetical future reader has only an unpacked ATLAS FORGE collection, a text viewer and optionally a Python interpreter. To explain a belief update, the reader opens Chapter 40, copies the two-state example, computes its posterior by hand, and optionally runs the reference code. To understand why a tool timeout can be dangerous, they follow Chapter 43 and the original uncertainty example without needing any proprietary cloud tool.
+
+The reader should also be able to find `common/registry.json`, the source-linked record ID and revision, the manuscript source or bibliographic locator, the test case, and a statement of missing primary-source bytes. The `tools/survival_audit.py` script provides a byte/reference-closure report; it explicitly says it does **not** prove scientific truth or offline primary-source completeness.
+
+**Failure discovery:** If the original Hart–Nilsson–Raphael paper is cited only by URL, a reader whose internet is gone cannot access the authentic paper from that URL. The Atlas therefore provides an original worked derivation and complete bibliographic metadata while marking the original publication as absent. Future rights-cleared source acquisition is a real survival obligation. The present collection cannot honestly call itself humanity's entire recoverable knowledge.
+
+**Acceptance test for later:** restore a random tagged release on an offline machine, reconstruct a measured result and a scientific derivation from permitted archived primary sources, independently check the formula, reproduce versioned software tests and document any failures. This case defines that protocol; it does **not** claim that an independent disaster-recovery site has already passed it.

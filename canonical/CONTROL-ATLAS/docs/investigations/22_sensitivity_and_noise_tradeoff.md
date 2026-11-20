@@ -1,0 +1,5 @@
+# Investigation 22 — A frequency-domain identity that does not imply complete rejection
+
+For the synthetic stable first-order plant `G(s)=2/(1+3s)` with proportional feedback Kp=1, evaluate at ω=0.5 rad/s. The loop transfer is `L=2/(1+1.5j)`. The program computes sensitivity `S=1/(1+L)`, complementary sensitivity `T=L/(1+L)`, and confirms the complex identity S+T=1. The magnitudes are approximately 0.53748 and 0.59628: they do **not** sum to one because complex magnitudes do not preserve addition.
+
+This exercise does not show attenuation at every frequency, gain margin, disk margin, or stable behavior under unmodeled delay. The input disturbance, sensor noise and reference commands enter different parts of a block diagram. A controller engineer must request the correct transfer paths, physical noise spectrum, bandwidth and sampling. A diagram rather than a single gain number may be required. [Python Control margin docs](https://python-control.readthedocs.io/en/latest/generated/control.margin.html) support the distinct margin concepts.

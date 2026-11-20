@@ -1,0 +1,52 @@
+{
+  "schema": "atlas.language-v1-source-review/1",
+  "new_sources": [
+    {
+      "record_id": "language-atlas:source:UAX15-REV58",
+      "url": "https://www.unicode.org/reports/tr15/tr15-58.html",
+      "scope": "Unicode 18 published revision 58, 2026-08-12; stability and canonical-vs-compatibility forms",
+      "rights": "Unicode, Inc. license; data/code rights subject to Unicode License V3",
+      "raw_file_acquired": false
+    },
+    {
+      "record_id": "language-atlas:source:UD-ENHANCED-V2",
+      "url": "https://universaldependencies.org/v2/enhanced.html",
+      "scope": "UD v2 public guidance on empty nodes, propagation and enhanced graphs; enhanced graph need not contain the basic tree",
+      "rights": "UD specification permissions differ from individual treebank corpora",
+      "raw_file_acquired": false
+    },
+    {
+      "record_id": "language-atlas:source:GIDA-CARE",
+      "url": "https://www.gida-global.org/care",
+      "scope": "Community data governance: Collective Benefit, Authority to Control, Responsibility and Ethics",
+      "rights": "GIDA CARE documents may carry CC BY-NC-ND; original publication not mirrored",
+      "raw_file_acquired": false
+    },
+    {
+      "record_id": "language-atlas:source:POPOVIC-CHRF2015",
+      "url": "https://aclanthology.org/W15-3049/",
+      "scope": "ACL/WMT 2015 publisher metadata and method description, not reproducibility audit of original experiments",
+      "rights": "Copyright and reuse conditions of ACL paper retained",
+      "raw_file_acquired": false
+    },
+    {
+      "record_id": "language-atlas:source:SEP-GENQUANT",
+      "url": "https://plato.stanford.edu/entries/generalized-quantifiers/",
+      "scope": "2024 updated public exposition of \u2200,\u2203 and generalized quantifier semantics; no full paper mirrored",
+      "rights": "Stanford Encyclopedia intellectual property retained",
+      "raw_file_acquired": false
+    },
+    {
+      "record_id": "language-atlas:source:UNICODE-LICENSE-V3",
+      "url": "https://www.unicode.org/license.txt",
+      "scope": "Unicode data/software license notice, permission subject to inclusion of notice; Unicode18 data bytes not acquired",
+      "rights": "Unicode license V3, retain full notice upon future licensed data acquisition",
+      "raw_file_acquired": false
+    }
+  ],
+  "raw_original_bytes_acquired": 0,
+  "unicode18_normative_tests_acquired": false,
+  "actual_language_recordings": 0,
+  "community_permissions_verified": 0,
+  "independent_linguistic_reviews": 0
+}

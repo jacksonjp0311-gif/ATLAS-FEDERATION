@@ -1,0 +1,21 @@
+# 39. Agent systems: where the model ends and the world begins
+
+An **agent** is a system that receives observations, maintains some state or memory, selects actions under a goal or objective, and interacts with an environment. These properties describe architecture, not human-like consciousness or a claim to general intelligence. Some AI workflows are fixed programs that call a language model at known points; others let a model choose from an authorized action space. Do not assume an LLM, a prompt, a chat transcript, an orchestrator and the actual environment are the same object. ReAct (Yao et al. 2022/2023) interleaves reasoning-style steps and actions; this is one established approach, not proof that generated actions are correct or that intermediate text is a faithful causal explanation.
+
+## Formal boundary
+
+Define `S` as the unobserved physical/task state, `O` as observations, `A` as the action set, `T(s'|s,a)` as transition dynamics and `Z(o|s',a)` as the observation likelihood. A policy maps observations or internal belief/state to actions. A record that says “tool returned success” is an **observation**. The external effect, if any, belongs to **state**, and may remain unknown. A proposed tool call is an intended action; the provider's receipt is an acknowledgment; independently observed task completion is a separate outcome. In general `intended_action != effect` and `reported_success != externally_verified_success`.
+
+A dependency graph or worker queue adds other state variables: task owner, parent dispatch, goal revision, permitted tools, authorization, worker leases, deadlines, budget, and cancellation intent. A worker's message is not permission to mutate an account or overwrite a database. An operator STOP is an explicit control event; a temporary timeout or failure to respond is not. A recovery procedure must reconcile unknown external side effects before attempting a repeat with a new key. Existing Agent Atlas v0.4 teaches structural evidence packets; it does not authenticate any external host signature or execute providers.
+
+## A complete laboratory question
+
+To evaluate a proposed agent architecture, state the **task distribution**, permitted tools and side effects, environment version, success oracle, budget (tokens, money, wall-clock), concurrency, stop and retry policy, and what constitutes completion. A low-cost agent may pass a trivial benchmark while failing to recover from an uncertain submission. A large swarm may increase the number of worker outputs without increasing the independently verified task-success rate. Separate availability, correctness, latency, cost, security and recoverability; never compress them into one uncontrolled score.
+
+An agent can also be **partially observable**. It may need multiple measurements to distinguish whether a motor is stuck or its sensor is biased, whether an API request succeeded or timed out after committing, or whether a child worker is still running. The correct action can be to inspect, reconcile, request more evidence, or decline to act. An evidence-preserving knowledge base should teach the *reason for abstention* just as explicitly as the formula for action.
+
+## Research and safety boundaries
+
+The Atlas is **not** a live autonomy harness, weaponized process controller, security bypass or replacement for qualified operators. All methods in this edition are pure offline mathematical reference code on supplied data. For application to PEGASUS or other systems, the future implementation must separately authorize tools, verify host receipts, monitor real worker/process state and control side effects. The known absence of those capabilities is a scientific and engineering fact about this edition.
+
+**Sources:** Yao et al., *ReAct: Synergizing Reasoning and Acting in Language Models* (2023), https://arxiv.org/abs/2210.03629 ; OpenTelemetry GenAI agent spans (public evolving convention), https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md ; Sutton and Barto, *Reinforcement Learning: An Introduction* (MIT Press, 2018), ISBN 9780262039246 (publisher overview only). The formalized boundary and examples are original educational synthesis.

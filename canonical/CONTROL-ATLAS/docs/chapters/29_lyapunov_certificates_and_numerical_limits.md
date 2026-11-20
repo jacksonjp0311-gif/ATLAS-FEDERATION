@@ -1,0 +1,11 @@
+# 29. A Lyapunov candidate is a conditional proof object
+
+For an exact real discrete-time autonomous system `x[k+1]=A x[k]`, consider the quadratic candidate `V(x)=xᵀP x`. If `P` is symmetric positive definite and `Q=P−AᵀP A` is positive definite, then `V(x[k+1])−V(x[k])=−xᵀQ x<0` for every nonzero x. For the assumed LTI model, this provides a sufficient strict asymptotic-stability result. It does not establish that the matrix A represents a real plant, the state is observed reliably, or actuator limits are absent.
+
+The new calculator accepts a two-by-two A and a **supplied** symmetric P. It computes Q and symmetric 2×2 eigenvalues using a scale-dependent floating-point threshold. For the model `A=diag(0.7,0.9)` and `P=I`, Q=diag(0.51,0.19), so both P and Q are positive definite and a nominal quadratic certificate is returned. It does not search for P or verify an interval uncertainty set. It is a developer-level numeric screening tool, **not** a formally verified theorem prover; the arithmetic is floating-point and near-boundary eigenvalues are uncertain.
+
+A crucial counterexample demonstrates logic discipline. Let `A=[[0.5,4],[0,0.5]]`. Its eigenvalues are both 0.5, so the mathematical linear system is asymptotically stable, but `P=I` gives a Q with a negative eigenvalue. That failure only means *this candidate* did not certify decay. It is invalid to assert the plant is unstable because one arbitrary P fails. More sophisticated solvers can search for P or produce structured parameter-dependent certificates, but their numerical condition and model validity still matter.
+
+In a real control loop, linearization may hold only locally, disturbances can change equilibria, saturation can invalidate linear feedback, and hybrid transitions can violate a single quadratic model. Lyapunov analyses in nonlinear control use invariant sets, regions of attraction, and other tools; this node does not automatically certify them.
+
+**Technical source:** MIT [Underactuated Robotics, Lyapunov Analysis](https://underactuated.mit.edu/lyapunov.html), selected online chapter, and Åström–Murray [FBSwiki](https://fbswiki.org/) stability topics. These citations support the method family, not an independent proof review of this implementation.

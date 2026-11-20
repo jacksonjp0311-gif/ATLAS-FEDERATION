@@ -1,3 +1,5 @@
+> Public derivative notice: the affected historical numeric example has been removed; the unchanged original remains privately preserved.
+
 # CAUSAL ATLAS — scientific reference depth manual v1.0.0
 
 **James Paul Jackson · 12 November 2026 · bounded research reference edition**
@@ -702,13 +704,11 @@ Document the source inclusion criteria, target inclusion criteria, calendar and 
 
 # 19. An authentic descriptive reproduction: Berkeley admissions in 1973
 
-The standard R `datasets::UCBAdmissions` table records 4,526 applications across the six largest graduate departments at UC Berkeley in 1973, by recorded sex and admission decision. These are **observational aggregated historical records**, not a randomized intervention. They are suitable for demonstrating Simpson's paradox and a fundamental boundary of adjustment: a reversal after standardization does not by itself identify an effect of a hypothetical intervention.
+> Historical UCBAdmissions numerical data and derived results are unavailable in this public derivative pending redistribution clearance.
 
 ## Reproduce the published marginals
 
-The source R documentation reports 2,691 male applicants, 1,198 admitted, and 1,835 female applicants, 557 admitted. The `ucb-admissions` command reconstructs them from 24 source-attributed aggregate counts and computes crude fractions: 1,198/2,691 ≈ 44.52% and 557/1,835 ≈ 30.35%. The female-minus-male crude association is about −14.16 percentage points. All numbers use the historical table, not simulated individuals.
-
-The six departments have different admission rates and different applicant distributions. For a **descriptive standardization only**, choose the pooled department application shares as the target weights and apply them to each recorded-sex group's within-department rates. The resulting standardized rates are approximately 38.73% for men and 43.00% for women, a female-minus-male difference of about **+4.26 points**. This is a sign reversal caused by changing weights, not an experimentally validated causal effect.
+> Historical UCBAdmissions numerical data and derived results are unavailable in this public derivative pending redistribution clearance.
 
 ## What the table does not tell us
 
@@ -718,9 +718,7 @@ Even if the calculation is exact, the scientific question may be underdetermined
 
 ## Reproducibility and provenance
 
-The Atlas includes only a normalized transcription of the 24 count cells with source links and a local content hash. The upstream R CSV is **not** bundled because its distributor explicitly reports uncertainty concerning dataset redistribution rights. The original source-byte hash remains null. This release checks the published R marginals and the full total, with clear provenance and a stand-alone CLI command. For a stronger archive, acquire an appropriately licensed publisher snapshot and review the historic source context.
-
-Run: `python -m causal_atlas ucb-admissions examples/ucb_admissions.json`.
+> Historical UCBAdmissions numerical data and derived results are unavailable in this public derivative pending redistribution clearance.
 
 **References:** [R base datasets documentation, UCBAdmissions](https://cloud.r-project.org/doc/manuals/r-release/packages/datasets/refman/datasets.html), [teaching reproduction with the 24 numeric cells](https://utstat.utoronto.ca/~brunner/oldclass/312f22/lectures/312f22ContingencyTables-R.pdf), [Rdatasets source and licensing statement](https://github.com/vincentarelbundock/Rdatasets). The 1975 Bickel, Hammel and O'Connell Science paper is cited in R documentation; the full article is not mirrored or independently audited here.
 
@@ -1186,15 +1184,11 @@ For an actual fleet deployment, preserve machine model, maintenance age, product
 
 **Question:** Do the overall and department-standardized admissions rates tell the same story in the historical Berkeley data?
 
-This case is **not synthetic**. It transcribes aggregate counts from the R `datasets::UCBAdmissions` table for the six largest UC Berkeley graduate departments in 1973, the familiar example discussed in Bickel, Hammel and O'Connell (1975). It includes 4,526 applications, broken down by recorded sex, admission outcome and department. No identifying applicant records or full paper are bundled.
-
-**Run:** `python -m causal_atlas ucb-admissions examples/ucb_admissions.json`.
-
-The R documentation reports 1,198 admissions of 2,691 male applications (44.52%) and 557 admissions of 1,835 female applications (30.35%), an overall female-minus-male gap of approximately −14.16 percentage points. The Atlas reproduces these totals exactly. It then standardizes both groups’ department rates to the same pooled department mix and obtains approximately 38.73% and 43.00%, respectively, a **+4.26-point** female-minus-male difference. The sign reversal is a descriptive arithmetic effect of changing weights.
+> Historical UCBAdmissions numerical data and derived results are unavailable in this public derivative pending redistribution clearance.
 
 A causal interpretation is not identified by these counts. The table is observational, includes only six departments, lacks detailed applicant characteristics, and does not specify a well-defined intervention on sex. Conditioning on department answers a different descriptive question, and application choices are themselves selected. The adjusted contrast is not proof that bias was absent or that a causal effect of sex was favorable. Nor does the crude gap alone establish intentional discrimination in each department.
 
-The raw third-party CSV is not bundled. The package contains the transcribed numeric aggregate cells with a source URL, original-byte absence flag, local hash and rights note, because the Rdatasets distributor reports uncertainty regarding underlying dataset redistribution permissions. Source provenance is retained and the historical totals are checked against official R documentation.
+> Historical UCBAdmissions numerical data and derived results are unavailable in this public derivative pending redistribution clearance.
 
 **Sources:** [R base UCBAdmissions documentation](https://cloud.r-project.org/doc/manuals/r-release/packages/datasets/refman/datasets.html); [public numerical table reproduction](https://utstat.utoronto.ca/~brunner/oldclass/312f22/lectures/312f22ContingencyTables-R.pdf); [Rdatasets rights notice](https://github.com/vincentarelbundock/Rdatasets). The numerical comparison is reproducible but is not a causal study replication.
 

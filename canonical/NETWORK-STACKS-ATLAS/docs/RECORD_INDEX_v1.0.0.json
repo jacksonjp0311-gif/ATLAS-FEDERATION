@@ -1,0 +1,788 @@
+[
+  {
+    "record_id": "network-stacks-atlas:source:RFC791",
+    "revision": "d9f8a10f8223243bf31460910deef4f8f9c2f37562ebeb26fb65bbe991af3c62",
+    "type": "source",
+    "title": "Internet Protocol, IPv4"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC1071",
+    "revision": "75dee961016114193e2a48a66eca66042f5b858aa87985d85d1b8d35fe3180ca",
+    "type": "source",
+    "title": "Computing the Internet Checksum"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC894",
+    "revision": "f07cf0abd1d8f116d0f1d0725fa65333ee298598212cab7e19f5cbea79f9d2ed",
+    "type": "source",
+    "title": "Standard for the Transmission of IP Datagrams over Ethernet Networks"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC826",
+    "revision": "52ec925c83f5049d7db6982921763a7960431516f299e864a81237a933310600",
+    "type": "source",
+    "title": "An Ethernet Address Resolution Protocol"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC4861",
+    "revision": "93ea882c62127b89071359aae20e97cf5d6836dfb87095a34b879a5484a12052",
+    "type": "source",
+    "title": "Neighbor Discovery for IP version 6"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC8200",
+    "revision": "2ef78364d85d45eaa52d3cb19e9ccccf0c2b2986910852ed0e65f4b71f39554f",
+    "type": "source",
+    "title": "Internet Protocol, Version 6 (IPv6) Specification"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC9673",
+    "revision": "89fa9a48f9de53e286edd9055237b6c15676f2ccd9b3cdef5b4d309f7d5cc5ce",
+    "type": "source",
+    "title": "IPv6 Hop-by-Hop Options Processing Procedures"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC4443",
+    "revision": "e4aff437bb2545dc1fb9052076959359880bc849b16aaef3a905af06634c0cd6",
+    "type": "source",
+    "title": "Internet Control Message Protocol (ICMPv6)"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC4632",
+    "revision": "1fe30e346c88537bd4f0f98ea76993b69f39a0e61e80f57f864520e1e39132b2",
+    "type": "source",
+    "title": "Classless Inter-domain Routing (CIDR)"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC768",
+    "revision": "68800cad6d325dcc141eb22c3d618ab60ab3d51aec84ccdce836159f9620464e",
+    "type": "source",
+    "title": "User Datagram Protocol"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC9293",
+    "revision": "f7692424f56ec9e508982da62c62ba3367d885deba69e71c58e4ecc515c5204a",
+    "type": "source",
+    "title": "Transmission Control Protocol (TCP)"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC6298",
+    "revision": "45f06bc9c83be4bf9abdf2e763a7d9d6ae9536e14c842eee1fa0d040c8f77f91",
+    "type": "source",
+    "title": "Computing TCP Retransmission Timer"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC1035",
+    "revision": "914fad49433ccfc70ad710eb4ab9cbdf5e6d26e27a28e66a0fbd4c1c0a9946ec",
+    "type": "source",
+    "title": "Domain Names: Implementation and Specification"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC4033",
+    "revision": "bb756db499d6c226500648941820e7048eb0ad09893d527ecdf5885cb5efd413",
+    "type": "source",
+    "title": "DNS Security Introduction and Requirements"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC9000",
+    "revision": "0977b95141556fc510e202376e4ce3cb5743147e1f1a4914aa0280344608e5ea",
+    "type": "source",
+    "title": "QUIC: A UDP-Based Multiplexed and Secure Transport"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC9001",
+    "revision": "b3b186aca0126bb7c50daece0a14a7db6c207a91f25320a25caf4a0f6fef521a",
+    "type": "source",
+    "title": "Using TLS to Secure QUIC"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC9846",
+    "revision": "e5ab78d9801736c8af6900c491697988b809574c5163dc4b2e578c5ea8c7e1c4",
+    "type": "source",
+    "title": "The Transport Layer Security (TLS) Protocol Version 1.3"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC1191",
+    "revision": "77c5b7fe8a0d9f7a78fc1879073f300e127f7fd8e093275d263bb2d45544a06d",
+    "type": "source",
+    "title": "Path MTU Discovery"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC8201",
+    "revision": "6d604290e0f0ad84970096bed5c8039e36a7875650178f40d345b8b2ec3892ac",
+    "type": "source",
+    "title": "Path MTU Discovery for IP version 6"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC4271",
+    "revision": "5e9a1a1beae61ce8247095b2bd370ee52e292e22caa733e300411f399c2bebe8",
+    "type": "source",
+    "title": "A Border Gateway Protocol 4 (BGP-4)"
+  },
+  {
+    "record_id": "network-stacks-atlas:source:RFC1918",
+    "revision": "7737a3108a7c5a07e5d44064a4d73e4e714ea582253b503c9a1c6218066ddc2a",
+    "type": "source",
+    "title": "Address Allocation for Private Internets"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-01-concept",
+    "revision": "04ff62d8c6d6be0a64a6a2eeb67bf2dae10e3d7919ebe9dc63b3dbb60d53fbc8",
+    "type": "concept",
+    "title": "Layering, interface contracts and failure propagation \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-01-claim",
+    "revision": "7c453c40ffb5ba527bb73ea4cb82e9f19d77b2c0483e131e20240e7407369d3a",
+    "type": "claim",
+    "title": "Layering, interface contracts and failure propagation \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-01-equation",
+    "revision": "ec2452f1e3eceec7b9e09e469988e87afa42e24f19f28ad1c317fa9ca8acb26f",
+    "type": "equation",
+    "title": "Layering, interface contracts and failure propagation \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-01-method",
+    "revision": "9a576abaa45d2dd8439d2a29e6c591626241f07a6530c7cff2f53950f41e7014",
+    "type": "method",
+    "title": "Layering, interface contracts and failure propagation \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-01-constructed-case",
+    "revision": "26d2b869169a876ef91dfc365575d4342dc2c9434e1213de422c1bc7e6f9d5b3",
+    "type": "dataset",
+    "title": "Layering, interface contracts and failure propagation \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-02-concept",
+    "revision": "52953409dccca2cd9b8456e6b27225df427a315677d6e4c0bbabb150af54122a",
+    "type": "concept",
+    "title": "Ethernet II framing and local link ambiguity \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-02-claim",
+    "revision": "15e7587dde8b593ff7e1eace634a9268c78b213b89bdaee46dfec732fd3853b3",
+    "type": "claim",
+    "title": "Ethernet II framing and local link ambiguity \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-02-equation",
+    "revision": "03d4fd4f553db70db9d74c2886271ddb7cd4c7ffd144df097952e12c544a83bc",
+    "type": "equation",
+    "title": "Ethernet II framing and local link ambiguity \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-02-method",
+    "revision": "16e946ae34f1da8e23ea77c2af99387930c5f049648687f87c714f50bfeb3d59",
+    "type": "method",
+    "title": "Ethernet II framing and local link ambiguity \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-02-constructed-case",
+    "revision": "dcdf1e78c7e04784498614f8d279d276c9a59e1f77b7710d90b0aeea00eb22b5",
+    "type": "dataset",
+    "title": "Ethernet II framing and local link ambiguity \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-03-concept",
+    "revision": "73b29d79641ee3f0210aa0223ea2da5cad4ce6dfc690db10f62c960e92e0b1fb",
+    "type": "concept",
+    "title": "ARP binding and spoofing boundaries \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-03-claim",
+    "revision": "b94c185ae00574d5cb6232a86615351623d85dc15fa06f74d240a9870ee35c74",
+    "type": "claim",
+    "title": "ARP binding and spoofing boundaries \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-03-equation",
+    "revision": "47e27e57f764cbda7b5aba5fdc0339f0897244c079728e1a97d14508e8dd03e2",
+    "type": "equation",
+    "title": "ARP binding and spoofing boundaries \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-03-method",
+    "revision": "cfec08d1393a4ed03786fa41514ef02f700c1dee28b66cf6e0184767b85d81f4",
+    "type": "method",
+    "title": "ARP binding and spoofing boundaries \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-03-constructed-case",
+    "revision": "2041f46bf92e2e9381d14da7bdf80f3e0ef73c48ddddd40d85e9f6ac1b58557e",
+    "type": "dataset",
+    "title": "ARP binding and spoofing boundaries \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-04-concept",
+    "revision": "5bc937eb1c7997e0e5d94604dd15eeb226870d87fdb9201b59f5ce779c9d75c1",
+    "type": "concept",
+    "title": "IPv4 header, length, TTL and checksum \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-04-claim",
+    "revision": "2865d3a090cc22e701e6757b477603627518951c4e0438f26661732b1d361874",
+    "type": "claim",
+    "title": "IPv4 header, length, TTL and checksum \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-04-equation",
+    "revision": "f07bbef85c9ad22ca51570a98846d892afb2674423f6dfd96069a69ef45cd8da",
+    "type": "equation",
+    "title": "IPv4 header, length, TTL and checksum \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-04-method",
+    "revision": "90d9882fa48992db6fdb81d496020d953d48e94ef9253c0905eb49c2a036d07a",
+    "type": "method",
+    "title": "IPv4 header, length, TTL and checksum \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-04-constructed-case",
+    "revision": "6471850fa0ca6e470f6c002df86239796e0b43a6899bfa0b4f4a098791be9e3a",
+    "type": "dataset",
+    "title": "IPv4 header, length, TTL and checksum \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-05-concept",
+    "revision": "a8344096bd7d6a41bd137317790d6f7eb35e11c582cecb322c44cd9c98f5caa3",
+    "type": "concept",
+    "title": "IPv4 MTU, fragmentation and PMTU limits \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-05-claim",
+    "revision": "824dfd5424d33010dcca4c8f57e561434ee0d78747a635020f33434cbdf92bbf",
+    "type": "claim",
+    "title": "IPv4 MTU, fragmentation and PMTU limits \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-05-equation",
+    "revision": "502af0b416dc1b326056b1e8a0def30ac533d0f0966ae884f252d56451712b55",
+    "type": "equation",
+    "title": "IPv4 MTU, fragmentation and PMTU limits \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-05-method",
+    "revision": "a025005045f028a4181695d38f5a7039e93ec427e4c66babfa5edce2a32aba32",
+    "type": "method",
+    "title": "IPv4 MTU, fragmentation and PMTU limits \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-05-constructed-case",
+    "revision": "a3e2db4ff153d77cfcd4aaeb6e9c939497e038471810914c5dbd203deb6c1e57",
+    "type": "dataset",
+    "title": "IPv4 MTU, fragmentation and PMTU limits \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-06-concept",
+    "revision": "61f1adbc60210d18630e7bee22be7fb91b916919041e53761231891153b6942c",
+    "type": "concept",
+    "title": "IPv6 fixed header and bounded extension chain \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-06-claim",
+    "revision": "01f93002e211b764c25d0992f4062b8554f0296241ec7ac2d0a1c7da07512a35",
+    "type": "claim",
+    "title": "IPv6 fixed header and bounded extension chain \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-06-equation",
+    "revision": "5294ffb2ee0e49275d1946e55750b6953dddec2423d15e2069c85fd33ff800ad",
+    "type": "equation",
+    "title": "IPv6 fixed header and bounded extension chain \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-06-method",
+    "revision": "174ee966ffb13a4193d96a3627d87c45459d49826bc98a458b5cd74d36acbea0",
+    "type": "method",
+    "title": "IPv6 fixed header and bounded extension chain \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-06-constructed-case",
+    "revision": "9fed2ef1b4b78efa7d9c7e67010f4d6ed46bc3e87ad1bcde2b19d0a86652f3dd",
+    "type": "dataset",
+    "title": "IPv6 fixed header and bounded extension chain \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-07-concept",
+    "revision": "d682739ce0e77ceccf8e3d4efb6efc2e23e1ba083a61b94535c2650473e5feb5",
+    "type": "concept",
+    "title": "IPv6 neighbor discovery and link-local dependence \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-07-claim",
+    "revision": "2f4ebfec75698e8a9ffa57e9f70686d48ac5bed419081a2221ad3efbfe728d7a",
+    "type": "claim",
+    "title": "IPv6 neighbor discovery and link-local dependence \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-07-equation",
+    "revision": "af71418347e0594edf219a2ddcb8edcef231f30c7bae81e8e9c3f4d10d4ac39e",
+    "type": "equation",
+    "title": "IPv6 neighbor discovery and link-local dependence \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-07-method",
+    "revision": "e9ffe86cf16791104802b558e9111f95a28cd5c9374c5540f83fc0592aa47b07",
+    "type": "method",
+    "title": "IPv6 neighbor discovery and link-local dependence \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-07-constructed-case",
+    "revision": "adb5da0215286969fbecf48fe29c3fdf0a359fea8367743d35e2184771cf3d90",
+    "type": "dataset",
+    "title": "IPv6 neighbor discovery and link-local dependence \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-08-concept",
+    "revision": "18fa8db9a23cbcdaf7c4061b327901ce03379279d9df458d0af30b6230230401",
+    "type": "concept",
+    "title": "ICMP errors, checksums and diagnostic limits \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-08-claim",
+    "revision": "35d169813b522c0f7ad0b869425e0126a3d081feebbe7ebd771dbc62754b01c4",
+    "type": "claim",
+    "title": "ICMP errors, checksums and diagnostic limits \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-08-equation",
+    "revision": "b9e2307c008e73888e6f114c052f28a15bab1af212d29d64ed35b40e36575963",
+    "type": "equation",
+    "title": "ICMP errors, checksums and diagnostic limits \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-08-method",
+    "revision": "3c6a77de483c5f3f77e0a6a7b5677efea79ae616024877e10356f404757f5b03",
+    "type": "method",
+    "title": "ICMP errors, checksums and diagnostic limits \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-08-constructed-case",
+    "revision": "d6f70ed6deec2308783f30abbb6e1052379c2f04f297b7031e6da43cb0b0f17b",
+    "type": "dataset",
+    "title": "ICMP errors, checksums and diagnostic limits \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-09-concept",
+    "revision": "61d14cc4f134808732e0b5812baa086ab3e51b598bc2625bc97b2efb645b86c8",
+    "type": "concept",
+    "title": "CIDR, longest-prefix forwarding and route policy \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-09-claim",
+    "revision": "47839594ae689473fcaabfee8c978e8e73285ef01515acd6eedd38d55daf44d9",
+    "type": "claim",
+    "title": "CIDR, longest-prefix forwarding and route policy \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-09-equation",
+    "revision": "6736c090a1abaccd67a0a049907e5c284984349e912cd2337c579a2048e1c87c",
+    "type": "equation",
+    "title": "CIDR, longest-prefix forwarding and route policy \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-09-method",
+    "revision": "7010c0d7242590eef4db5bf0f0f10e3fae2363dba7619943e48e7cbc0ce19896",
+    "type": "method",
+    "title": "CIDR, longest-prefix forwarding and route policy \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-09-constructed-case",
+    "revision": "821603da021cdb064bb72adaac55d80e8d37fc5b982cd6b7299f3682d53ac76e",
+    "type": "dataset",
+    "title": "CIDR, longest-prefix forwarding and route policy \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-10-concept",
+    "revision": "c3d57855d3a82e34fa26a61525bb053171ac156bdae70887a70952db279634d4",
+    "type": "concept",
+    "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-10-claim",
+    "revision": "87844d223128bb38f304fc7be5e3aa1f472531ca30d8144eba81a0c45c79bbca",
+    "type": "claim",
+    "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-10-equation",
+    "revision": "300e75795660144a62c4de9da16465161458d69b1f415f4e1eeaca92158b237b",
+    "type": "equation",
+    "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-10-method",
+    "revision": "02cf4b2e2f4a463b8c2bdb2921f3d28577dc5ae7284d2d91433c735558334b1a",
+    "type": "method",
+    "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-10-constructed-case",
+    "revision": "a2c04fb4fe097216a07ddc3893752de6c0a2bfe38b1f5b2f96c1b90476e871d6",
+    "type": "dataset",
+    "title": "UDP framing, pseudo-header integrity and checksum exceptions \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-11-concept",
+    "revision": "f28a663fd21a1feb03a3cfe20d73fd9b28dbe497c54d34380a06a38ab128c0ec",
+    "type": "concept",
+    "title": "TCP sequence space, receive windows and wraparound \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-11-claim",
+    "revision": "55dba3709219476d363bfc49f55887ae0726eeee8d416220240854cec756973b",
+    "type": "claim",
+    "title": "TCP sequence space, receive windows and wraparound \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-11-equation",
+    "revision": "935e103b0578a2dd280d7fa32bf727617d47a6d26a6530d2db16b4afa9924850",
+    "type": "equation",
+    "title": "TCP sequence space, receive windows and wraparound \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-11-method",
+    "revision": "ef9d50159e7f35a21bd298b0a30874df7f6a35530112627aa65ad5912fcb85b4",
+    "type": "method",
+    "title": "TCP sequence space, receive windows and wraparound \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-11-constructed-case",
+    "revision": "d1f6f7cd6886dcae72cb373a93a2154a58b43ab69a14a3347068ab4bd75f582d",
+    "type": "dataset",
+    "title": "TCP sequence space, receive windows and wraparound \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-12-concept",
+    "revision": "1146f86b3a4c6ffed2757804348821bda86e972f8b1bf1ac309849326c4239b7",
+    "type": "concept",
+    "title": "TCP RTT estimation and retransmission timeout \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-12-claim",
+    "revision": "3b0e1d7ff4b634ae476ea0c600323e77f6f14940af28a2dd0882b9ef3d028502",
+    "type": "claim",
+    "title": "TCP RTT estimation and retransmission timeout \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-12-equation",
+    "revision": "dc888c12df017f2a2d97d1c579cccef71ee4ad5f5fe0b0be343b8531d98c95f2",
+    "type": "equation",
+    "title": "TCP RTT estimation and retransmission timeout \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-12-method",
+    "revision": "fc21320a79fb7fdb8dab8db83469a55c566e295e5a83fff48ccd64adb6f577d1",
+    "type": "method",
+    "title": "TCP RTT estimation and retransmission timeout \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-12-constructed-case",
+    "revision": "5d6fe4181a5771a973ca637e3d576ea5d4d139d32c3b048d19d8867a612caeac",
+    "type": "dataset",
+    "title": "TCP RTT estimation and retransmission timeout \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-13-concept",
+    "revision": "cef0e7b8534f6049a3127f472ab48b373d43a7346247bf11c2fa3759e10adc76",
+    "type": "concept",
+    "title": "DNS label encoding and compression-pointer safety \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-13-claim",
+    "revision": "7b83abf6c781c574178ac07c857531cd30f9ec182212702605054bb991585b05",
+    "type": "claim",
+    "title": "DNS label encoding and compression-pointer safety \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-13-equation",
+    "revision": "18694307a9698dc22c1370d82e7da34a1e651871e163d7c2e8c470010b4be3b9",
+    "type": "equation",
+    "title": "DNS label encoding and compression-pointer safety \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-13-method",
+    "revision": "8aee8c8a30f5ad32b488ba1a1138c2eff3d1f0ca81be86c1c56a23dbb044700c",
+    "type": "method",
+    "title": "DNS label encoding and compression-pointer safety \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-13-constructed-case",
+    "revision": "d67ebe5671df9dbbb0791fcd47298f79bb1d6d18297aa7f4f21ac079c38b46d0",
+    "type": "dataset",
+    "title": "DNS label encoding and compression-pointer safety \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-14-concept",
+    "revision": "c7fb7f49e64b59895030ae3944a5058a2eafe4bd4696f386930731191d3b7741",
+    "type": "concept",
+    "title": "DNSSEC trust anchors and limits of name resolution \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-14-claim",
+    "revision": "0f87986f92708fbdd8effd92d9fc42401be7fa61ae7b9cb462f72c41625da1a3",
+    "type": "claim",
+    "title": "DNSSEC trust anchors and limits of name resolution \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-14-equation",
+    "revision": "cc7af42e2bf5afc9b0f80b6b908f08b1647a12a5fbd045454f291fa50873e8c7",
+    "type": "equation",
+    "title": "DNSSEC trust anchors and limits of name resolution \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-14-method",
+    "revision": "302139bb91e9e4aaf16306d864c936d920f54bfd5eb7dc25aab167426029ad2d",
+    "type": "method",
+    "title": "DNSSEC trust anchors and limits of name resolution \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-14-constructed-case",
+    "revision": "8c83284bda398bd2d5a7e8a68df38ca1d6a649d4b639b4ca960833a521bbcf27",
+    "type": "dataset",
+    "title": "DNSSEC trust anchors and limits of name resolution \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-15-concept",
+    "revision": "94042e9c840f7d2898004c11ea30cffef3ba0c1a96f846142a004b2fa21923f2",
+    "type": "concept",
+    "title": "QUIC variable integers versus secure connection state \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-15-claim",
+    "revision": "00e025ff519b0b52f4bade290f4ae6b2a74cb03522c661e66f3eccb446c4d93e",
+    "type": "claim",
+    "title": "QUIC variable integers versus secure connection state \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-15-equation",
+    "revision": "a7fbda7da1eb871249319720848d071910abaa160b5a8a2bee02668740fc8f8d",
+    "type": "equation",
+    "title": "QUIC variable integers versus secure connection state \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-15-method",
+    "revision": "81d18f1cb10bb730eb346307efa93117c070912882df2ab455bf4a5db59c4ca3",
+    "type": "method",
+    "title": "QUIC variable integers versus secure connection state \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-15-constructed-case",
+    "revision": "d28853608ac2aaaa3fb1ecb12283b7a34d0d8875ec81c92e57b50f5891a78ce8",
+    "type": "dataset",
+    "title": "QUIC variable integers versus secure connection state \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-16-concept",
+    "revision": "2967d905f4646da70ee820004b8814425fd1afe6a4060d7b46a5461b2676f92f",
+    "type": "concept",
+    "title": "TLS 1.3 version continuity and trusted channel boundaries \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-16-claim",
+    "revision": "42c23ba78dc72ce8807fc3639475e52db2ad9c738b5a752874e047dbb2451bd3",
+    "type": "claim",
+    "title": "TLS 1.3 version continuity and trusted channel boundaries \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-16-equation",
+    "revision": "d258db37a417f3060b59b601f5c9d193a7bc663536a2e83f7c7a24b0368ebc2e",
+    "type": "equation",
+    "title": "TLS 1.3 version continuity and trusted channel boundaries \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-16-method",
+    "revision": "79c8c8f0a0e1a29f7ddcf7bf11af2e5b32746d68dd3aebb7a275337fa3d76abb",
+    "type": "method",
+    "title": "TLS 1.3 version continuity and trusted channel boundaries \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-16-constructed-case",
+    "revision": "99631f99f10cbc81ebee68dbf6f0494a4f7482359fbe025fcce2c0e44d29ce41",
+    "type": "dataset",
+    "title": "TLS 1.3 version continuity and trusted channel boundaries \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-17-concept",
+    "revision": "1c681a4ae19993dd4d459f9237f91ee2360ef007e3c7af660896f5f98f64d3be",
+    "type": "concept",
+    "title": "Routing control planes, path-vector safety and policy \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-17-claim",
+    "revision": "284c0032b6a8c051c64fe5fb71d5f5a30bbcb28aed3341e0fb9ebb36b6602a70",
+    "type": "claim",
+    "title": "Routing control planes, path-vector safety and policy \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-17-equation",
+    "revision": "08dc6a4bdc2d83a5cf1ab65ef3e394eb9ed23229c3fb506d0fa06b0dbdc56a9e",
+    "type": "equation",
+    "title": "Routing control planes, path-vector safety and policy \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-17-method",
+    "revision": "45fe7da9e8c6fcbe3eba63ec1ef4329d37e26af4d874caabf7148bde5da18f22",
+    "type": "method",
+    "title": "Routing control planes, path-vector safety and policy \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-17-constructed-case",
+    "revision": "d01a33e3d6a472ea0c099c94640a4c1efac606875349c9534948f542170c0b96",
+    "type": "dataset",
+    "title": "Routing control planes, path-vector safety and policy \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-18-concept",
+    "revision": "6672bdec6330c7844b2d4dbd26f43c6b058fa6de8d2d300396c70b3d8b52d2f2",
+    "type": "concept",
+    "title": "Network measurements, clocks and uncertainty \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-18-claim",
+    "revision": "27d59fb479296bf05d11d0deecd26e7e1cfc461648fa903ef75965c9985fc8aa",
+    "type": "claim",
+    "title": "Network measurements, clocks and uncertainty \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-18-equation",
+    "revision": "4310dbb651294067f9841d8664f8952fdf5a211503edef33c9687b5e178ed2c7",
+    "type": "equation",
+    "title": "Network measurements, clocks and uncertainty \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-18-method",
+    "revision": "9e78664560991f2862656cad04808048d8079c1582e76621850dad1eb81aaaed",
+    "type": "method",
+    "title": "Network measurements, clocks and uncertainty \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-18-constructed-case",
+    "revision": "585695b8f7b38d4ebc3c3102f436c65eee6018b419e696511fbff5a2a749f0cf",
+    "type": "dataset",
+    "title": "Network measurements, clocks and uncertainty \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-19-concept",
+    "revision": "343bc7c9a6a116e43d67770683564bfa909772b4e6a83529eb6559f3272c086d",
+    "type": "concept",
+    "title": "Fault injection, adversarial framing and transport evidence \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-19-claim",
+    "revision": "7513b978dd252a764e6bb4d531bbd97f60d7e9b2accf8fced8d9ce9838a8e416",
+    "type": "claim",
+    "title": "Fault injection, adversarial framing and transport evidence \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-19-equation",
+    "revision": "87e964d38236483686592b0a155ae34850673ba6dcbb375f95f4eb4cd4d1a479",
+    "type": "equation",
+    "title": "Fault injection, adversarial framing and transport evidence \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-19-method",
+    "revision": "9cd80e27cf3a1fa486acdf9cdd296b88bfc910e2a763698b4c8bd827480e3ed1",
+    "type": "method",
+    "title": "Fault injection, adversarial framing and transport evidence \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-19-constructed-case",
+    "revision": "61716ca7874c942e329cb3dd68d962678e16d6c7faaa5312fc68e601ead07661",
+    "type": "dataset",
+    "title": "Fault injection, adversarial framing and transport evidence \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-20-concept",
+    "revision": "7d0b0f1b0e5770b3bdce76e58974f324b7f1429e003d47e91ab4655e8cdfd02a",
+    "type": "concept",
+    "title": "Offline reconstruction and survival dependency chain \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-20-claim",
+    "revision": "57e563d0a1aeb888532ec4c6ee500b42740f6f8edcf1922239e896b13268256e",
+    "type": "claim",
+    "title": "Offline reconstruction and survival dependency chain \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-20-equation",
+    "revision": "3bd957996b164262c03636fa5dbdff264afb9fbf0b309e6a2f99bb7d34756c35",
+    "type": "equation",
+    "title": "Offline reconstruction and survival dependency chain \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-20-method",
+    "revision": "5f0ba377b9ab718b1a497f5995547b1e6b95443fbd84421035b2b950b42871dc",
+    "type": "method",
+    "title": "Offline reconstruction and survival dependency chain \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-20-constructed-case",
+    "revision": "eafc76f90f27de66f18de5589c5777c5dbd30a79d607466610fc5140fe72bbdd",
+    "type": "dataset",
+    "title": "Offline reconstruction and survival dependency chain \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-21-concept",
+    "revision": "1342363164f9242d8f9c5acae156fc9478020ac1f6ada481d64b7e160b5a889b",
+    "type": "concept",
+    "title": "Security boundaries, provenance and trust anchors \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-21-claim",
+    "revision": "496e855747e99ba5bd560bc35798ca8276f641fe1ff6e30ee1e504b55fbb43fb",
+    "type": "claim",
+    "title": "Security boundaries, provenance and trust anchors \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-21-equation",
+    "revision": "5154e0e882db8f7cc0cff297c7bcab809b4350e0631447225824d51ffe7645de",
+    "type": "equation",
+    "title": "Security boundaries, provenance and trust anchors \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-21-method",
+    "revision": "0ddf754030857209ba3cb51a2c1bdb07888940e9d2717af925e47a9e2a8cc64b",
+    "type": "method",
+    "title": "Security boundaries, provenance and trust anchors \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-21-constructed-case",
+    "revision": "802b7428e251d078686c2717f8e1485b8fca44697d707a15af06855a376a6cb2",
+    "type": "dataset",
+    "title": "Security boundaries, provenance and trust anchors \u2014 reproducible constructed input"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-22-concept",
+    "revision": "c95e53cfbe050cb7dbd4b9a040664f8c984ab313d22be9e35b04ecb36bf007ac",
+    "type": "concept",
+    "title": "Independent acceptance gates, restoration and preservation \u2014 definitions and full technical chapter"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-22-claim",
+    "revision": "d247931d602ff536432e77141983dacaf34662919e5a591c0540d0f6bc8a5ed2",
+    "type": "claim",
+    "title": "Independent acceptance gates, restoration and preservation \u2014 bounded claim and explicit negative case"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-22-equation",
+    "revision": "0e95819f970ff7a66394fc94368e5f34f256e24d38a483b6d4dcbb760f8e1639",
+    "type": "equation",
+    "title": "Independent acceptance gates, restoration and preservation \u2014 equation and assumptions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-22-method",
+    "revision": "4c0718245c4554e62e768c9db7bdb6877b1922ff8cde854a8ba567d2da3815c2",
+    "type": "method",
+    "title": "Independent acceptance gates, restoration and preservation \u2014 offline reproduction and refusal conditions"
+  },
+  {
+    "record_id": "network-stacks-atlas:chapter-22-constructed-case",
+    "revision": "9b99dd97c5061d7eadc11230ea4a34ed7faa0bea5e9d87d33b7d4d14ee19a20a",
+    "type": "dataset",
+    "title": "Independent acceptance gates, restoration and preservation \u2014 reproducible constructed input"
+  }
+]

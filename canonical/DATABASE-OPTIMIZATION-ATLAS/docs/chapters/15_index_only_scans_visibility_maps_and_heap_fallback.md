@@ -1,0 +1,11 @@
+## 15 — Index-only scans, visibility maps, and heap fallback
+
+An **index-only scan** is a conditional optimization, not a blanket guarantee that secondary-index entries are sufficient to answer a query. PostgreSQL's B-tree implementation can serve columns directly from an index only when the index stores the required values, but the engine still must establish MVCC visibility. The visibility map permits a fast decision on heap pages known to be all-visible. An unmarked page normally requires a heap check. There is a crucial distinction between **covering predicate columns**, **covering projection columns**, and **certifying visibility**.
+
+Let `m` be the number of candidate index entries and `A` the all-visible heap-page set. For candidate row `i` on heap page `p_i`, the educational reference computes `H = sum_i 1[p_i not in A]` potential row-level heap visibility checks, and `m-H` rows answerable from index values under the all-visible model. Real systems deduplicate and cache heap page visits; the model explicitly counts per-row checks and does **not** predict I/O. With candidates on pages `(5,5,8,9)` and `A={5,9}`, the result is two potential heap checks and two index-only rows. It would be invalid to claim four index-only rows because the query projected only columns from the index.
+
+**Procedure:** Use `db_extended.index_only_visibility((5,5,8,9), frozenset({5,9}))`, then perturb membership in `A`. Run `test_db_extended.VisibilityTests` and `independent_oracle_v1.py`; compare against direct filtering (`page not in all_visible_set`). Use a real PostgreSQL installation only if available and collect `EXPLAIN (ANALYZE, BUFFERS)` alongside table/visibility metadata; do not present the model as a measured result.
+
+**Negative control:** an index that lacks a requested projected column is ineligible even if every page is all-visible. Recently updated heap pages are not automatically all-visible. Unverified disk contents, a stale external index, visibility bugs, and concurrent vacuum/reclamation fall outside this finite model.
+
+**Sources:** PostgreSQL documentation, `https://www.postgresql.org/docs/current/indexes-index-only-scans.html`; SQLite covering-index behavior is a separate implementation (`https://www.sqlite.org/queryplanner.html`).

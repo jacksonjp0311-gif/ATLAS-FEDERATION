@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=61"]
+build-backend="setuptools.build_meta"
+[project]
+name="computation-atlas-research"
+version="1.0.0"
+requires-python=">=3.10"
+description="Offline computation theory and algorithms reference, with exact provenance and bounded models"
+[tool.setuptools.packages.find]
+where=["."]
+include=["computation_atlas*"]
+[tool.setuptools.package-data]
+computation_atlas=["resources/common/*.json","resources/common/nodes/*/*.json","resources/common/nodes/*/data/*.jsonl"]

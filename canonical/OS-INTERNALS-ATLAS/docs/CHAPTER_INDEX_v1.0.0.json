@@ -1,0 +1,284 @@
+[
+  {
+    "chapter": "01_kernel_boundary",
+    "title": "Privilege boundaries, traps and minimum kernel responsibilities",
+    "sources": [
+      "OSTEP",
+      "OPENAT2",
+      "MEM_BARRIER"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "cryptographic-protocols-atlas"
+    ]
+  },
+  {
+    "chapter": "02_boot_chain",
+    "title": "Firmware, boot loaders, kernel initialization and trusted recovery",
+    "sources": [
+      "NIST_FW",
+      "ELF5",
+      "DEVICE_MODEL"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "cryptographic-protocols-atlas"
+    ]
+  },
+  {
+    "chapter": "03_process_lifecycle",
+    "title": "Processes, threads, fork, exec, wait and state transitions",
+    "sources": [
+      "FORK2",
+      "EXECVE2",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "software-design-patterns-atlas",
+      "computer-architecture-digital-hardware-atlas"
+    ]
+  },
+  {
+    "chapter": "04_cpu_scheduling",
+    "title": "Round-robin, deadline scheduling, fairness, and utilization",
+    "sources": [
+      "SCHED7",
+      "KERNEL_EEVDF",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "control-atlas",
+      "mathematics-physics-atlas"
+    ]
+  },
+  {
+    "chapter": "05_interrupts_context",
+    "title": "Interrupt dispatch, preemption, exception vectors and context integrity",
+    "sources": [
+      "GENERICIRQ",
+      "MEM_BARRIER",
+      "DEVICE_MODEL"
+    ],
+    "dependencies": [
+      "electronics-semiconductors-atlas",
+      "computer-architecture-digital-hardware-atlas"
+    ]
+  },
+  {
+    "chapter": "06_virtual_memory",
+    "title": "Virtual address translation, page-table hierarchy, ASID and TLB shootdown",
+    "sources": [
+      "KERNEL_PGT",
+      "MMAP2",
+      "MEM_BARRIER"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "mathematics-physics-atlas"
+    ]
+  },
+  {
+    "chapter": "07_page_faults",
+    "title": "Demand paging, copy-on-write, protection faults and memory pressure",
+    "sources": [
+      "KERNEL_PGT",
+      "MMAP2",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "materials-atlas",
+      "computer-architecture-digital-hardware-atlas"
+    ]
+  },
+  {
+    "chapter": "08_page_replacement",
+    "title": "Page replacement, reference locality and Belady anomaly",
+    "sources": [
+      "OSTEP",
+      "KERNEL_PGT"
+    ],
+    "dependencies": [
+      "computation-atlas",
+      "mathematics-physics-atlas"
+    ]
+  },
+  {
+    "chapter": "09_buddy_allocation",
+    "title": "Buddy allocator, fragmentation, alignment and free-space invariants",
+    "sources": [
+      "OSTEP",
+      "KERNEL_PGT"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "computation-atlas"
+    ]
+  },
+  {
+    "chapter": "10_memory_order",
+    "title": "Memory ordering, data races, barriers, and happens-before reasoning",
+    "sources": [
+      "MEM_BARRIER",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "mathematics-physics-atlas"
+    ]
+  },
+  {
+    "chapter": "11_synchronization",
+    "title": "Mutexes, condition variables, lost wakeups and priority inversion",
+    "sources": [
+      "FUTEX2",
+      "MEM_BARRIER",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "control-atlas",
+      "distributed-systems-atlas"
+    ]
+  },
+  {
+    "chapter": "12_deadlock",
+    "title": "Deadlocks, wait-for graphs and resource-allocation assumptions",
+    "sources": [
+      "OSTEP",
+      "MEM_BARRIER"
+    ],
+    "dependencies": [
+      "mathematics-physics-atlas",
+      "distributed-systems-atlas"
+    ]
+  },
+  {
+    "chapter": "13_vfs",
+    "title": "VFS objects, namespaces, descriptors and filesystem path resolution",
+    "sources": [
+      "VFS",
+      "OPENAT2",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "software-design-patterns-atlas",
+      "cryptographic-protocols-atlas"
+    ]
+  },
+  {
+    "chapter": "14_crash_consistency",
+    "title": "Write-ahead logging, ordering, fsync, namespace persistence and recovery",
+    "sources": [
+      "FSYNC2",
+      "RENAME2",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "distributed-systems-atlas",
+      "software-design-patterns-atlas"
+    ]
+  },
+  {
+    "chapter": "15_elf_loader",
+    "title": "ELF64 executable headers, loadable segments, alignment and zero fill",
+    "sources": [
+      "ELF5",
+      "EXECVE2"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "cryptographic-protocols-atlas"
+    ]
+  },
+  {
+    "chapter": "16_file_descriptors",
+    "title": "Handles, generation tags, rights checks and stale-reference hazards",
+    "sources": [
+      "OPENAT2",
+      "POSIX2024",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "cryptographic-protocols-atlas",
+      "software-design-patterns-atlas"
+    ]
+  },
+  {
+    "chapter": "17_device_io",
+    "title": "Drivers, device registers, IRQs, DMA and IOMMU trust boundaries",
+    "sources": [
+      "DEVICE_MODEL",
+      "GENERICIRQ",
+      "MEM_BARRIER"
+    ],
+    "dependencies": [
+      "electronics-semiconductors-atlas",
+      "manufacturing-atlas"
+    ]
+  },
+  {
+    "chapter": "18_multiprocessor",
+    "title": "Multicore scheduling, coherence, TLB invalidation and interprocessor coordination",
+    "sources": [
+      "KERNEL_PGT",
+      "MEM_BARRIER",
+      "KERNEL_EEVDF"
+    ],
+    "dependencies": [
+      "mathematics-physics-atlas",
+      "computer-architecture-digital-hardware-atlas"
+    ]
+  },
+  {
+    "chapter": "19_recovery",
+    "title": "Forensic file recovery, exact provenance and offline scientific continuity",
+    "sources": [
+      "FSYNC2",
+      "NIST_FW",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "cryptographic-protocols-atlas",
+      "distributed-systems-atlas"
+    ]
+  },
+  {
+    "chapter": "20_fault_injection",
+    "title": "Fault injection, independent oracle design, and finite model limitations",
+    "sources": [
+      "OSTEP",
+      "MEM_BARRIER",
+      "FSYNC2"
+    ],
+    "dependencies": [
+      "computation-atlas",
+      "measurement-atlas"
+    ]
+  },
+  {
+    "chapter": "21_os_security",
+    "title": "Isolation boundaries, namespaces, least privilege and update trust",
+    "sources": [
+      "OPENAT2",
+      "NIST_FW",
+      "OSTEP"
+    ],
+    "dependencies": [
+      "cryptographic-protocols-atlas",
+      "software-design-patterns-atlas"
+    ]
+  },
+  {
+    "chapter": "22_offline_rebuild",
+    "title": "From source references to an experimentally reconstructible operating system",
+    "sources": [
+      "OSTEP",
+      "ELF5",
+      "GENERICIRQ",
+      "KERNEL_PGT"
+    ],
+    "dependencies": [
+      "computer-architecture-digital-hardware-atlas",
+      "manufacturing-atlas"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "schema": "atlas.energy-v1-inventory/1",
+  "previous_energy_records": 241,
+  "new_records": 60,
+  "energy_records": 301,
+  "energy_sources": 31,
+  "full_energy_relations": 261,
+  "standalone_energy_relations": 256,
+  "historical_record_revisions_unchanged": 241,
+  "historical_relation_revisions_unchanged": 205,
+  "chapters": 64,
+  "new_chapters": 14,
+  "new_cases": 15,
+  "past_investigations": 36,
+  "total_investigations": 51,
+  "full_primary_sources_authenticated": 0
+}

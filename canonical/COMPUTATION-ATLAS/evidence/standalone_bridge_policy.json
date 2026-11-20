@@ -1,0 +1,11 @@
+{
+  "schema": "atlas.standalone-bridge-policy/1",
+  "result": "passed",
+  "standalone_records": 162,
+  "standalone_relations": 170,
+  "full_collection_relations": 175,
+  "cross_domain_edges_omitted_from_standalone": 5,
+  "cross_domain_edge_revisions_preserved_in_full_collection": true,
+  "source_closure_tested": true,
+  "rationale": "Stand-alone research wheel contains its one complete node. Five cross-domain relations exist only in the complete collection, where target records are present. Standalone export MUST not leave dangling references."
+}

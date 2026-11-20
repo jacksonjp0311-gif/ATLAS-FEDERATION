@@ -1,0 +1,49 @@
+{
+  "schema": "atlas.agent-v03-source-inspection/1",
+  "sources": [
+    {
+      "record_id": "agent-atlas:source:OTEL-AGENT-2026",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md",
+      "inspected_scope": "Development-status public documentation: invoke_agent, invoke_workflow, plan and tool spans; no full instrumentation evaluation",
+      "status": "selected_page_only",
+      "independent_review": false,
+      "raw_document_archived": false
+    },
+    {
+      "record_id": "agent-atlas:source:OTEL-TOOL-2026",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md",
+      "inspected_scope": "Development-status public execute_tool span section; tool call ID when available, error.type, sensitive content warnings",
+      "status": "selected_page_only",
+      "independent_review": false,
+      "raw_document_archived": false
+    },
+    {
+      "record_id": "agent-atlas:source:OTEL-PRIVACY-2026",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-spans.md",
+      "inspected_scope": "Public guidance distinguishes metadata from opt-in input/output and tool content fields, which can be sensitive",
+      "status": "selected_page_only",
+      "independent_review": false,
+      "raw_document_archived": false
+    },
+    {
+      "record_id": "agent-atlas:source:AWS-IDEMPOTENCY",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "inspected_scope": "Public discussion of uncertain outcomes, caller-provided idempotency key, late arrivals, atomic application/provider contracts",
+      "status": "selected_page_only",
+      "independent_review": false,
+      "raw_document_archived": false
+    },
+    {
+      "record_id": "agent-atlas:source:AWS-WA-IDEMPOTENCY",
+      "url": "https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/rel_prevent_interaction_failure_idempotent.html",
+      "inspected_scope": "Public reliability guidance on idempotency tokens; model is not a proof that a specific remote API is idempotent",
+      "status": "selected_page_only",
+      "independent_review": false,
+      "raw_document_archived": false
+    }
+  ],
+  "MAST_full_rows_read": 0,
+  "actual_agent_executions": 0,
+  "independent_human_review": false,
+  "copyright_handling": "only short original metadata/paraphrases; no external trace content or full publisher text mirrored"
+}

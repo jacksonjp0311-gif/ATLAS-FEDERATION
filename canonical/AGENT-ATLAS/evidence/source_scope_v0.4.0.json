@@ -1,0 +1,34 @@
+{
+  "schema": "atlas.agent-v04-source-scope/1",
+  "date": "2026-11-13",
+  "sources": [
+    {
+      "record_id": "agent-atlas:source:CHECKLIST-ACL2020",
+      "url": "https://aclanthology.org/2020.acl-main.442/",
+      "scope": "Publisher abstract and metadata: behavioral test matrix, capability-vs-example coverage and test generation; full paper not independently audited",
+      "raw_document_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "record_id": "agent-atlas:source:DWORK-HOLDOUT2015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26250683/",
+      "scope": "PubMed abstract on adaptive reuse of holdout and statistical validity; not an implementation of the reusable holdout technique",
+      "raw_document_bytes_archived": false,
+      "human_review": false
+    },
+    {
+      "record_id": "agent-atlas:source:COHEN-KAPPA1960",
+      "url": "https://journals.sagepub.com/doi/10.1177/001316446002000104",
+      "scope": "Publisher article metadata and accessible short opening; method defined but article is rights restricted and not mirrored",
+      "raw_document_bytes_archived": false,
+      "human_review": false
+    }
+  ],
+  "MAST_full_rows_loaded": 0,
+  "MAST_human_rows_loaded": 0,
+  "actual_agent_runs": 0,
+  "offline_fixture_count": 9,
+  "independent_human_review": false,
+  "dataset_access": "Hugging Face full JSON and 19-row JSON could not be acquired in this sandbox; dataset card/schema inspected, not original rows",
+  "rights": "Only short original summaries and bibliographic links retained; no full third-party text or trace content mirrored"
+}

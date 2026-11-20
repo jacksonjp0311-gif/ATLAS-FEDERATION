@@ -1,0 +1,18 @@
+{
+  "schema": "atlas.agent-record-inventory/4",
+  "version": "0.4.0",
+  "agent_records": 158,
+  "agent_source_cards": 30,
+  "agent_non_source_records": 128,
+  "agent_relations": 101,
+  "historical_agent_records_retained": 128,
+  "historical_agent_relations_retained": 83,
+  "new_records": 30,
+  "new_sources": 3,
+  "new_relations": 18,
+  "chapters": 38,
+  "investigations": 24,
+  "casebook_v04": 9,
+  "source_acquisition": "Only selected publisher docs/abstracts; no MAST original trace/human rows",
+  "scientific_content_v1_ready": false
+}

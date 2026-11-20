@@ -1,0 +1,26 @@
+{
+  "schema": "atlas.control-output-feedback-oracle/1",
+  "result": "passed",
+  "seed": 601126,
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "checks": {
+    "observer_recurrence": 300,
+    "actuator_numpy_clip": 400,
+    "tube_trajectory_containment": 57600,
+    "measurement_bound": 400,
+    "affine_box_scipy_lp": 200
+  },
+  "total_comparisons": 58900,
+  "largest_numeric_difference": 7.275957614183426e-12,
+  "validation_scope": "separately_computed_author_synthetic_models_and_random_trajectories",
+  "not_verified": [
+    "physical actuator model",
+    "actual sensor noise envelope",
+    "measurement time alignment",
+    "engineering safety",
+    "observer integrity under faults",
+    "hardware system",
+    "unbounded-time robustness"
+  ]
+}

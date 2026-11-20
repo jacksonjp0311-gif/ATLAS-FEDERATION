@@ -1,0 +1,75 @@
+{
+  "schema": "atlas.legacy-public-redactions/1",
+  "changes": [
+    {
+      "path": "Causal/Causal_Depth_Manual_v1.0.0.md",
+      "original_sha256": "8790ffdf3b5de698ee3817657c08c3afc1beb45f495e5e8b9ba1c68857d2e2c1",
+      "public_sha256": "ea7b982927b7dc1ebd59381286986f6f35ce591865066199fd80abd88fb2d188",
+      "original_bytes": 157685,
+      "public_bytes": 155095,
+      "reason_codes": [
+        "ucb_admissions_redistribution_unresolved"
+      ],
+      "impact": "The historical UCBAdmissions case is unavailable; unrelated original science is retained.",
+      "operations": [
+        {
+          "action": "replace_affected_paragraphs",
+          "original_line_ranges": [
+            [
+              705,
+              705
+            ],
+            [
+              709,
+              711
+            ],
+            [
+              721,
+              723
+            ],
+            [
+              1189,
+              1193
+            ],
+            [
+              1197,
+              1197
+            ]
+          ]
+        }
+      ],
+      "public_history_rewritten": false
+    },
+    {
+      "path": "Causal/Causal_Real_Data_Reproduction_v1.0.0.md",
+      "original_sha256": "e8d8e1bf1034d137c4ff1a8f319465b586eabb96b5d764ec13ff76261e78df05",
+      "public_sha256": "be692f07f0a7ef0441ce4531e90a8b6d5025bbf7fd78a470fd72bc5903998556",
+      "original_bytes": 2584,
+      "public_bytes": 1460,
+      "reason_codes": [
+        "ucb_admissions_redistribution_unresolved"
+      ],
+      "impact": "The historical UCBAdmissions case is unavailable; unrelated original science is retained.",
+      "operations": [
+        {
+          "action": "replace_affected_paragraphs",
+          "original_line_ranges": [
+            [
+              7,
+              7
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              18,
+              18
+            ]
+          ]
+        }
+      ],
+      "public_history_rewritten": false
+    }
+  ]
+}

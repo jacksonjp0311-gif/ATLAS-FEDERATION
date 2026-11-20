@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.agent-advanced-numerical-oracle/1",
+  "version": "0.2.0",
+  "status": "passed",
+  "seed": 391126,
+  "comparisons": 5070,
+  "categories": {
+    "trace_union": 350,
+    "paired_outcomes": 400,
+    "paired_exact_p": 400,
+    "mast_code_counts": 3920
+  },
+  "largest_abs_error": 1.1102230246251565e-16,
+  "numpy_version": "2.3.5",
+  "scipy_available": true,
+  "actual_model_calls": 0,
+  "external_MAST_rows_read": 0,
+  "independent_human_review": false,
+  "description": "Secondary algorithms for author-generated deterministic and randomized metadata examples; not a language-model improvement benchmark."
+}

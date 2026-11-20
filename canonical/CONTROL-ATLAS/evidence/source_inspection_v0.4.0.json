@@ -1,0 +1,72 @@
+[
+  {
+    "source_id": "MIT-LQR-DISCRETE",
+    "url": "https://underactuated.mit.edu/lqr.html",
+    "title": "MIT Underactuated Robotics discrete Riccati and constraints",
+    "inspected_scope": "Discrete-time Riccati and input/state constraints sections, public HTML",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "MIT-LYAPUNOV-COMMON",
+    "url": "https://underactuated.mit.edu/lyapunov.html",
+    "title": "MIT Underactuated Robotics common Lyapunov analysis",
+    "inspected_scope": "Common Lyapunov functions and uncertain parameter discussion, public HTML",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "STANFORD-EE363",
+    "url": "https://ee363.stanford.edu/archive/lectures.html",
+    "title": "Stanford EE363 control lectures topic index",
+    "inspected_scope": "Lecture index only: discrete LQR, Kalman, Lyapunov, S-procedure; linked individual PDFs not audited",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "NIST-OT-R3-FINAL",
+    "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+    "title": "NIST SP 800-82 Revision 3 Final OT Guide",
+    "inspected_scope": "Official metadata and abstract: September 2023 final publication; not full text reviewed",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "NIST-OT-R4-DRAFT",
+    "url": "https://csrc.nist.gov/pubs/sp/800/82/r4/ipd",
+    "title": "NIST SP 800-82 Revision 4 Initial Public Draft",
+    "inspected_scope": "Official public draft metadata published September 21, 2026; comments due November 30, 2026; NOT final standard",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "NIST-PHYSICS-MONITOR",
+    "url": "https://csrc.nist.gov/pubs/journal/2018/07/a-survey-of-physicsbased-attack-detection-in-cps/final",
+    "title": "NIST survey of physics-based attack detection in CPS",
+    "inspected_scope": "Official publisher abstract on sensor and command anomaly detection and limitations; article not audited in full",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  },
+  {
+    "source_id": "KALMAN-NIS-SECONDARY",
+    "url": "https://kalman-filter.com/normalized-innovation-squared/",
+    "title": "Secondary educational NIS definition",
+    "inspected_scope": "Public explanatory mathematical page on normalized innovation squared, Gaussian chi-square assumptions; not a standard",
+    "checked_at": "2026-11-13",
+    "source_bytes_archived": false,
+    "independent_review": false,
+    "rights": "original bounded summary and link only"
+  }
+]

@@ -1,0 +1,9 @@
+# ATLAS FORGE · Database Optimization original #17 · Scoped reference v1.0.0
+
+## 14 — Offline reconstruction, integrity and release gates
+
+A minimal recoverable relational system can begin with well-documented **SQLite** and standard-library Python, keeping structured scientific records and provenance off the internet. The work is reconstructible only if data format, source exact revision, schema migrations, query semantics, index strategy and backup procedure can be independently checked. Keep the original database file unmodified, test on an expendable copy, and preserve `sha256sum` or Python `hashlib.sha256` receipts for every input and output.
+
+**Procedure:** (1) record interpreter and SQLite versions; (2) create a throwaway database; (3) load deterministic rows with specified schema; (4) execute truth, join, lookup, snapshot and integrity tests; (5) add an index, compare exact results; (6) record EXPLAIN text and environment; (7) produce repeatable hashes for source, tests and outputs; (8) independently restore and rerun. Link the results to OS Internals (paging and WAL), Software Design Patterns (data contracts/idempotent journals), Distributed Systems (replication and commit), and Cryptographic Protocols (integrity/provenance) using exact record revisions, not unqualified names.
+
+**Acceptance gates:** This increment has an executable mathematical/software reference and independent finite oracles. It lacks a native persistent B+ tree engine, query optimizer with exhaustive planner proof, distributed replica implementation, real measurement suite, long-duration fault injection, independent scientific review, publisher-original archive authentication, fresh full federation regression, and a verified patch from canonical OS Internals. These remain *HOLD*. Never increment the canonical checkpoint from this unsealed artifact.

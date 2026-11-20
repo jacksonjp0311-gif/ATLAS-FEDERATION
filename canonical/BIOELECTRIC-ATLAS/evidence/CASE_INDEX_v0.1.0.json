@@ -1,0 +1,169 @@
+{
+  "schema": "atlas.bioelectric-casebook/1",
+  "edition": "0.1.0",
+  "case_count": 18,
+  "cases": [
+    {
+      "id": "BIOELECTRIC-V01-01",
+      "chapter": 1,
+      "title": "Dimensional consistency for bioelectric systems",
+      "algorithm_equation": "V_T=k_B T/e; F=e N_A; C_mem=C_specific*A; U_C=0.5 C_mem V^2",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-02",
+      "chapter": 2,
+      "title": "Ion activities, chemical potential and membrane separation",
+      "algorithm_equation": "\u03bc_i = \u03bc_i\u00b0 + R T ln(a_i) + z_i F \u03c6",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-03",
+      "chapter": 3,
+      "title": "Nernst equilibrium voltage with explicit valence and units",
+      "algorithm_equation": "E_ion = (R T / z F) ln(a_out/a_in)",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-04",
+      "chapter": 4,
+      "title": "Goldman\u2013Hodgkin\u2013Katz constant-field voltage and limiting cases",
+      "algorithm_equation": "V = (R T/F) ln((P_K K_out+P_Na Na_out+P_Cl Cl_in)/(P_K K_in+P_Na Na_in+P_Cl Cl_out))",
+      "source_id": "GOLDMAN-1943",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-05",
+      "chapter": 5,
+      "title": "Passive membrane as capacitor and conductance network",
+      "algorithm_equation": "C dV/dt = -g(V-E) + I; \u03c4=C/g; V(t)=V_inf+(V0-V_inf)exp(-t/\u03c4)",
+      "source_id": "NEURON-CABLE",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-06",
+      "chapter": 6,
+      "title": "Parallel channel conductances and current conservation",
+      "algorithm_equation": "0 = \u03a3_k g_k(E_k-V) + I; V*=(\u03a3g_k E_k+I)/\u03a3g_k",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-07",
+      "chapter": 7,
+      "title": "A reconstructible sealed-end passive cable discretization",
+      "algorithm_equation": "C dV_i/dt = g_a \u03a3_neighbors(V_j\u2212V_i) \u2212 g_l(V_i\u2212E_l)+I_i",
+      "source_id": "NEURON-CABLE",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-08",
+      "chapter": 8,
+      "title": "Cable-step stability, conservation and discretization errors",
+      "algorithm_equation": "\u0394t \u2264 C/(degree_max g_ax+g_leak) (sufficient nonnegative weights)",
+      "source_id": "NEURON-CABLE",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-09",
+      "chapter": 9,
+      "title": "Hodgkin\u2013Huxley voltage-gated sodium and potassium kinetics",
+      "algorithm_equation": "dx/dt=\u03b1_x(V)(1\u2212x)\u2212\u03b2_x(V)x; I_Na=gNa m\u00b3h(V\u2212ENa); I_K=gK n\u2074(V\u2212EK)",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-10",
+      "chapter": 10,
+      "title": "Removable singularities in Hodgkin\u2013Huxley rate equations",
+      "algorithm_equation": "lim_{x\u21920} x/(1\u2212exp(\u2212x/a)) = a",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-11",
+      "chapter": 11,
+      "title": "Time integration of the HH membrane with explicit scope limits",
+      "algorithm_equation": "C_m dV/dt=I_in\u2212I_Na\u2212I_K\u2212I_l; gated x(t+\u0394t)=x_inf+(x\u2212x_inf)e^{\u2212\u0394t/\u03c4}",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-12",
+      "chapter": 12,
+      "title": "FitzHugh\u2013Nagumo dimensionless excitability dynamics",
+      "algorithm_equation": "dv/dt = v\u2212v\u00b3/3\u2212w+I; dw/dt=\u03b5(v+a\u2212bw)",
+      "source_id": "FITZHUGH-1961",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-13",
+      "chapter": 13,
+      "title": "Electrode\u2013electrolyte interface as a passive dummy-load circuit",
+      "algorithm_equation": "Z(\u03c9)=R_s + 1/(1/R_ct + j\u03c9 C_dl)",
+      "source_id": "NEURON-CABLE",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-14",
+      "chapter": 14,
+      "title": "Sampling, Nyquist limits and ADC error models",
+      "algorithm_equation": "\u0394V=(V_max\u2212V_min)/(2^N\u22121); |quantization error|\u2264\u0394V/2 for unclipped ideal nearest-code samples",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-15",
+      "chapter": 15,
+      "title": "Noise, calibration uncertainty and reproducible signal traces",
+      "algorithm_equation": "u_c=\u221a\u03a3u_i\u00b2 for independent (uncorrelated) standard uncertainties",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-16",
+      "chapter": 16,
+      "title": "Electrogenic pumps, metabolic work and non-equilibrium ion gradients",
+      "algorithm_equation": "dN_i/dt=J_pump,i\u2212J_leak,i; C_m dV/dt=\u03a3_i I_i + I_external (specified signs)",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-17",
+      "chapter": 17,
+      "title": "Offline engineering bench workflow with non-biological electrical dummies",
+      "algorithm_equation": "Measured Z_dummy(\u03c9) compared with Z_model(\u03c9), with calibrated uncertainty and isolation safeguards",
+      "source_id": "NAGUMO-1962",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    },
+    {
+      "id": "BIOELECTRIC-V01-18",
+      "chapter": 18,
+      "title": "Scientific evidence gates, source rights and nonclinical acceptance",
+      "algorithm_equation": "software verified \u2227 original-source authentication missing \u2227 physical evidence missing \u21d2 independent science acceptance HOLD",
+      "source_id": "BIPM-SI-2026",
+      "physical_measurement_performed": false,
+      "clinical_acceptance": false
+    }
+  ]
+}

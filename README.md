@@ -97,6 +97,10 @@ These folders provide browsable material corresponding to the **24-node canonica
 
 The separate [Signal Atlas research project](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) develops research amortization. Its current repository and this federation's historical [Signal reference subset](Signal/) have distinct provenance. The full original federation archive remains unpublished; a separately identified public derivative is being prepared subject to the remaining audit and rights holds. See [publication status](PUBLICATION_STATUS.md).
 
+### Cleared source in the original archive layout
+
+An additional [partial source export under `canonical/`](canonical/README_PUBLICATION.md) provides **1,948 cleared original files across 19 domain roots**, preserving their archive-relative paths. The [batch receipt](evidence/publication/cleared-domain-source-batch-2026-11-20.json) records its exact scope and file hashes. Shared runtime, baseline, history, and rights-held material remain outside this batch; the complete archive and the separately identified public derivative are not yet publicly released.
+
 ### Federation resources
 
 | Location | Purpose |

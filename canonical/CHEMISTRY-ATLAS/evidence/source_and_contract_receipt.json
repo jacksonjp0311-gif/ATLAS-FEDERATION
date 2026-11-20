@@ -1,0 +1,48 @@
+{
+  "schema": "atlas.chemistry-v01-source-contract/1",
+  "edition": "0.1.0",
+  "chapters": 35,
+  "casebook_cases": 25,
+  "original_publisher_source_files_acquired": 0,
+  "real_chemical_experiments": 0,
+  "human_chemistry_peer_review": false,
+  "source_cards": 14,
+  "records": 168,
+  "local_relations": 140,
+  "full_relations": 146,
+  "cross_links": [
+    {
+      "chemistry": "chemistry-atlas:chapter-34-concept",
+      "target": "computation-atlas:chapter-01-concept",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    },
+    {
+      "chemistry": "chemistry-atlas:chapter-24-concept",
+      "target": "materials-atlas:anisotropic-thermal",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    },
+    {
+      "chemistry": "chemistry-atlas:chapter-13-concept",
+      "target": "energy-atlas:chapter-02-concept",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    },
+    {
+      "chemistry": "chemistry-atlas:chapter-30-concept",
+      "target": "measurement-atlas:concept:calibration-stability",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    },
+    {
+      "chemistry": "chemistry-atlas:chapter-32-concept",
+      "target": "agent-atlas:agent-trace-intake-packet",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    },
+    {
+      "chemistry": "chemistry-atlas:chapter-17-concept",
+      "target": "control-atlas:actuation-knowledge-boundary",
+      "kind": "conceptual-relationship-not-scientific-verification"
+    }
+  ],
+  "offline_stdlib_core": true,
+  "chemical_safety_operational_actions": false,
+  "routing_changed": false
+}

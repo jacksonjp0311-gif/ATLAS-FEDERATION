@@ -1,0 +1,15 @@
+{
+  "edition": "0.2.0",
+  "previous_records": 162,
+  "new_records": 70,
+  "total_records": 231,
+  "previous_relations": 175,
+  "new_relations": 80,
+  "full_relations": 255,
+  "standalone_relations": 250,
+  "new_sources": 6,
+  "sources_total": 21,
+  "chapters_total": 50,
+  "old_revisions_unchanged": true,
+  "cross_node_relations_full_only": 5
+}

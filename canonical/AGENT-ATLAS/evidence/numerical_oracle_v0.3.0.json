@@ -1,0 +1,19 @@
+{
+  "schema": "atlas.agent-v03-oracle/1",
+  "status": "passed",
+  "seed": 13496,
+  "comparisons": 7750,
+  "categories": {
+    "span_coverage": 250,
+    "recovery_transitions": 1500,
+    "MAST_counts": 2800,
+    "MAST_unknowns": 2800,
+    "repeatability": 400
+  },
+  "max_absolute_difference": 0.0,
+  "numpy_version": "2.3.5",
+  "actual_MAST_rows_loaded": 0,
+  "live_agents_tested": 0,
+  "independent_human_label_review": false,
+  "source": "author-generated randomized structured fixtures"
+}

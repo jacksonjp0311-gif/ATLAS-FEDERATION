@@ -1,0 +1,47 @@
+[
+  {
+    "source_id": "control-atlas:source:FBS-ROBUST-V03",
+    "title": "\u00c5str\u00f6m and Murray, Feedback Systems 2e author wiki",
+    "url": "https://fbswiki.org/",
+    "inspected_scope": "Author-maintained book overview and chapter descriptions covering stability, robustness and frequency domain; full copyrighted book not audited",
+    "source_bytes_archived": false,
+    "independent_human_review": false,
+    "full_paper_audited": false
+  },
+  {
+    "source_id": "control-atlas:source:MIT-LYAP-V03",
+    "title": "MIT Underactuated Robotics chapter on Lyapunov analysis",
+    "url": "https://underactuated.mit.edu/lyapunov.html",
+    "inspected_scope": "Public working-notes chapter defining stability certificates and Lyapunov functions; selected content, not independently reviewed proof",
+    "source_bytes_archived": false,
+    "independent_human_review": false,
+    "full_paper_audited": false
+  },
+  {
+    "source_id": "control-atlas:source:PY-CT-MARGINS-V03",
+    "title": "Python Control Systems Library gain/phase margin documentation",
+    "url": "https://python-control.readthedocs.io/en/latest/generated/control.margin.html",
+    "inspected_scope": "Public API documentation identifying gain/phase margins and crossover frequencies for SISO systems; pointwise sensitivity is a different calculation",
+    "source_bytes_archived": false,
+    "independent_human_review": false,
+    "full_paper_audited": false
+  },
+  {
+    "source_id": "control-atlas:source:MATLAB-RESID-V03",
+    "title": "MathWorks What Is Residual Analysis? (R2026b)",
+    "url": "https://www.mathworks.com/help/ident/ug/what-is-residual-analysis.html",
+    "inspected_scope": "Public vendor documentation distinguishes residual whiteness and residual/input independence; code in this package does not perform full tests",
+    "source_bytes_archived": false,
+    "independent_human_review": false,
+    "full_paper_audited": false
+  },
+  {
+    "source_id": "control-atlas:source:NETWORK-DELAY-2013",
+    "title": "Networked control stability with random time delays and packet dropout",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0016003213001920",
+    "inspected_scope": "Publisher abstract only: Markov models for variable network delay and packet dropout; no full article or algorithm implementation reviewed",
+    "source_bytes_archived": false,
+    "independent_human_review": false,
+    "full_paper_audited": false
+  }
+]

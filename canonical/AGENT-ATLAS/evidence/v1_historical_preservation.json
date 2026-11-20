@@ -1,0 +1,10 @@
+{
+  "schema": "atlas.historical-preservation/1",
+  "parent": "ATLAS_COLLECTION_Agent_v0.4.0.zip",
+  "protected_members_compared": 1424,
+  "mismatches": [],
+  "unchanged": true,
+  "all_previous_agent_record_revisions_unchanged": true,
+  "all_previous_agent_relations_unchanged": true,
+  "science_review": false
+}

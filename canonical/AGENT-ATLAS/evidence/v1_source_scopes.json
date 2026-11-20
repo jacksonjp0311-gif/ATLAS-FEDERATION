@@ -1,0 +1,41 @@
+{
+  "schema": "atlas.agent-source-scopes/1",
+  "edition": "1.0.0",
+  "new_source_cards": [
+    {
+      "record_id": "agent-atlas:source:KLC-POMDP-1998",
+      "title": "Planning and Acting in Partially Observable Stochastic Domains",
+      "url": "https://www.sciencedirect.com/science/article/pii/S000437029800023X",
+      "reviewed_portion": "Published abstract: MDP and POMDP theory, belief states, offline planning; not full methods audit",
+      "original_source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "agent-atlas:source:SUTTON-BARTO-2018",
+      "title": "Reinforcement Learning: An Introduction, Second Edition",
+      "url": "https://mitpress.mit.edu/9780262039246/reinforcement-learning/",
+      "reviewed_portion": "Publisher overview: return, interaction, tabular algorithms and agent evaluation; not full textbook",
+      "original_source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "agent-atlas:source:HART-NILSSON-RAPHAEL-1968",
+      "title": "A Formal Basis for the Heuristic Determination of Minimum Cost Paths",
+      "url": "https://doi.org/10.1109/TSSC.1968.300136",
+      "reviewed_portion": "Publisher abstract: heuristic graph-search theory and conditional optimality; not full paper replication",
+      "original_source_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "agent-atlas:source:LOC-FORMATS-2025-26",
+      "title": "Library of Congress Recommended Formats Statement 2025\u20132026, datasets",
+      "url": "https://www.loc.gov/preservation/resources/rfs/data.html",
+      "reviewed_portion": "Public datasets section: platform-independent, text-based formats with documented schema; guidance, not guaranteed permanence",
+      "original_source_bytes_archived": false,
+      "independent_review": false
+    }
+  ],
+  "MAST_original_trace_rows_acquired": 0,
+  "real_model_runs": 0,
+  "independent_human_review": false
+}

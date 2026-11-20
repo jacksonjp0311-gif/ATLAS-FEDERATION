@@ -1,0 +1,234 @@
+{
+  "schema": "atlas.language-sources/1",
+  "date": "2026-11-14",
+  "source_cards": 25,
+  "sources": [
+    {
+      "record_id": "language-atlas:source:BCP47",
+      "title": "RFC 5646 — Tags for Identifying Languages",
+      "url": "https://www.rfc-editor.org/rfc/rfc5646",
+      "inspected_scope": "BCP47 official abstract: syntax, structure, semantics and registered subtags",
+      "rights_note": "IETF RFC Trust copyright and code-component terms apply; not mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:CHILDES",
+      "title": "CHILDES Child Language Data Exchange System",
+      "url": "https://talkbank.org/childes/",
+      "inspected_scope": "Official CHILDES overview and registration/access conditions, no child-level source data used",
+      "rights_note": "Child language data are sensitive; no child corpus uploaded or mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:CHOMSKY1956",
+      "title": "Three Models for the Description of Language (1956)",
+      "url": "https://doi.org/10.1109/TIT.1956.1056813",
+      "inspected_scope": "Bibliographic historical paper pointer for formal grammar classification; no paper body inspected",
+      "rights_note": "Publisher copyright remains external",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:CLDF",
+      "title": "Cross-Linguistic Data Formats (CLDF)",
+      "url": "https://cldf.clld.org/",
+      "inspected_scope": "CLDF 1.3 official overview: UTF-8 CSV, linked identifiers, metadata and interoperability",
+      "rights_note": "CLDF specification and individual datasets have separately scoped licenses",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:ELAR",
+      "title": "Endangered Languages Archive (ELAR)",
+      "url": "https://blogs.soas.ac.uk/elar/about-elar/",
+      "inspected_scope": "Publisher overview of endangered language multimedia repository and registration",
+      "rights_note": "Community and deposit-specific access conditions govern material, no recording mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:GLOTTOLOG",
+      "title": "Glottolog language and family bibliographic identifiers",
+      "url": "https://glottolog.org/",
+      "inspected_scope": "Bibliographic navigation for reference language names and genealogical classifications; no dataset version pinned",
+      "rights_note": "Check version and dataset-specific license before archival use",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:IPA-CHART",
+      "title": "International Phonetic Alphabet, current IPA Chart",
+      "url": "https://www.internationalphoneticassociation.org/content/chart",
+      "inspected_scope": "Official IPA chart notation, Council revisions and reproduction terms; current chart rights CC BY-SA 4.0",
+      "rights_note": "IPA chart CC BY-SA 4.0 with attribution/share alike where applicable; chart not copied",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:LEIPZIG",
+      "title": "Leipzig Glossing Rules",
+      "url": "https://www.eva.mpg.de/lingua/resources/glossing-rules.php",
+      "inspected_scope": "Official ten rules and interlinear gloss conventions page, last stated change 2015",
+      "rights_note": "Rules are external publisher material, not reproduced in full",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:LSA-SIGN",
+      "title": "Sign Languages as Natural Languages",
+      "url": "https://www.linguisticsociety.org/resource/sign-languages",
+      "inspected_scope": "Bibliographic pointer about signed linguistic systems, no original primary video inspected",
+      "rights_note": "No sign-language community recordings or third-party material archived",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:PHOIBLE",
+      "title": "PHOIBLE phonological inventories",
+      "url": "https://phoible.org/inventories",
+      "inspected_scope": "Database description and inventories index; PHOIBLE 2.0 CC BY-SA 3.0",
+      "rights_note": "CC BY-SA 3.0 for PHOIBLE 2.0; no inventories copied here",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:PRAAT",
+      "title": "Praat phonetic analysis software",
+      "url": "https://www.fon.hum.uva.nl/praat/",
+      "inspected_scope": "Bibliographic software reference for acoustic analysis and measurements; no instrument data acquired",
+      "rights_note": "Software and documentation rights checked separately before redistribution",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:RFC4647",
+      "title": "RFC 4647 — Matching of Language Tags",
+      "url": "https://www.rfc-editor.org/rfc/rfc4647",
+      "inspected_scope": "BCP47 official abstract about filtering and lookup matching",
+      "rights_note": "IETF Trust rights retained",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:SEP-COMPOS",
+      "title": "Compositionality",
+      "url": "https://plato.stanford.edu/entries/compositionality/",
+      "inspected_scope": "Stanford Encyclopedia 2025 revision: structure, constituent meaning, theories and counterarguments",
+      "rights_note": "Stanford authors/publisher copyright; original article not mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:SEP-IMPLICATURE",
+      "title": "Implicature",
+      "url": "https://plato.stanford.edu/entries/implicature/",
+      "inspected_scope": "Bibliographic pointer for conversational implicature and cancellability",
+      "rights_note": "Stanford source copyright, no article mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:SEP-PRAG",
+      "title": "Pragmatics",
+      "url": "https://plato.stanford.edu/entries/pragmatics/",
+      "inspected_scope": "Bibliographic pointer for context dependence and language-use theory; no full-page review",
+      "rights_note": "Stanford source copyright and terms retained",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:SHANNON1948",
+      "title": "A Mathematical Theory of Communication (1948)",
+      "url": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+      "inspected_scope": "Bibliographic historical pointer for communication and entropy, not a paper reproduction",
+      "rights_note": "Original journal publisher rights may apply",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:SLP3",
+      "title": "Speech and Language Processing, Third Edition online draft",
+      "url": "https://web.stanford.edu/~jurafsky/slp3/",
+      "inspected_scope": "Authors August 19, 2026 manuscript release; inspected site contents and edition details",
+      "rights_note": "© 2026 authors all rights reserved; only link and original brief educational synthesis",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:TALKBANK",
+      "title": "TalkBank linguistic interaction and transcript resources",
+      "url": "https://talkbank.org/",
+      "inspected_scope": "Bibliographic overview of corpus, transcription and speaker data; no corpora inspected",
+      "rights_note": "Corpus-level access, consent and data restrictions apply",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:UD-CONLLU",
+      "title": "Universal Dependencies CoNLL-U Format",
+      "url": "https://universaldependencies.org/format.html",
+      "inspected_scope": "Official 10-column UTF-8 tab-separated sentence format, fields and multiword/empty-node distinctions",
+      "rights_note": "Specification linked; rights and treebank license distinct",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:UD-GUIDE",
+      "title": "Universal Dependencies annotation framework, version 2",
+      "url": "https://universaldependencies.org/",
+      "inspected_scope": "UD v2 official overview: cross-linguistic POS, morphology, dependency syntax, public 2026 releases",
+      "rights_note": "Different treebanks have their own licenses; no original treebank mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:UNICODE-CORE",
+      "title": "The Unicode Standard and character model",
+      "url": "https://www.unicode.org/standard/standard.html",
+      "inspected_scope": "Bibliographic pointer to Unicode standard character properties; full specification not audited",
+      "rights_note": "Rights retained by Unicode Consortium; no full source mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:UNICODE-UAX15",
+      "title": "Unicode Standard Annex #15 — Normalization Forms",
+      "url": "https://www.unicode.org/reports/tr15/",
+      "inspected_scope": "Unicode 18.0, published 2026-08-12; inspected summary, definitions of NFC/NFD/NFKC/NFKD",
+      "rights_note": "Unicode published normative standard; original content terms/rights must be checked; no full text mirrored",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:UNICODE-UAX29",
+      "title": "Unicode Standard Annex #29 — Text Segmentation",
+      "url": "https://www.unicode.org/reports/tr29/",
+      "inspected_scope": "Unicode 18.0, published 2026-09-01; inspected abstract and grapheme/word/sentence boundaries",
+      "rights_note": "Unicode normative content and related data rights must be checked; no original bytes retained",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:W3C-LANG",
+      "title": "W3C Internationalization: Language Tags",
+      "url": "https://www.w3.org/International/articles/language-tags/",
+      "inspected_scope": "Bibliographic educational overview of language tag choices; no full text reviewed",
+      "rights_note": "W3C material rights retained",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    },
+    {
+      "record_id": "language-atlas:source:WALS",
+      "title": "World Atlas of Language Structures Online",
+      "url": "https://wals.info/",
+      "inspected_scope": "WALS v2020.6 typology database and per-chapter citation guidance; CC BY 4.0 site terms",
+      "rights_note": "WALS site CC BY 4.0; specific linked original chapter and edition must be credited",
+      "original_transport_bytes_archived": false,
+      "independent_review": false
+    }
+  ],
+  "original_source_bytes_retained": 0,
+  "community_fieldwork_originals_acquired": 0
+}

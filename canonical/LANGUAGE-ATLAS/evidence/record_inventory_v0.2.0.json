@@ -1,0 +1,29 @@
+{
+  "schema": "atlas.language-v02-content-inventory/1",
+  "version": "0.2.0",
+  "chapters": 50,
+  "investigations": 30,
+  "records": 224,
+  "source_cards": 33,
+  "full_relations": 227,
+  "standalone_relations": 222,
+  "old_records_unchanged": 167,
+  "old_language_full_relations_unchanged": 167,
+  "new_source_cards": 8,
+  "new_machine_records": 57,
+  "new_constructed_cases": 11,
+  "original_publisher_files_archived": 0,
+  "community_recordings_or_sign_video": 0,
+  "live_translations_evaluated": 0,
+  "independent_human_expert_review": false,
+  "scoped_content_v1_ready": false,
+  "research_methods": [
+    "token alignment",
+    "unsmoothed corpus BLEU",
+    "bounded CNF PCFG inside and Viterbi",
+    "family-sampling sensitivity",
+    "historical segment correspondence",
+    "community access metadata",
+    "multimodal annotation tiers"
+  ]
+}

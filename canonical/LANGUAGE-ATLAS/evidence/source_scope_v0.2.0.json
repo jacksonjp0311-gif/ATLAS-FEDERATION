@@ -1,0 +1,83 @@
+{
+  "schema": "atlas.language-v02-source-scope/1",
+  "date": "2026-11-14",
+  "new_sources": [
+    {
+      "id": "BLEU2002",
+      "title": "BLEU: a Method for Automatic Evaluation of Machine Translation",
+      "url": "https://aclanthology.org/P02-1040/",
+      "scope": "ACL Anthology conference paper metadata, abstract and BLEU method overview; full paper and datasets not mirrored",
+      "rights": "Paper publication retains its own rights, paper full text not copied",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "POST2018",
+      "title": "A Call for Clarity in Reporting BLEU Scores",
+      "url": "https://aclanthology.org/W18-6319/",
+      "scope": "ACL WMT 2018 abstract on BLEU tokenization/normalization, comparability and SacreBLEU reporting",
+      "rights": "Paper retains rights; this Atlas method is explicitly not SacreBLEU",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "CLDF-SPEC",
+      "title": "CLDF cross-linguistic data specification and source/provenance rules",
+      "url": "https://github.com/cldf/cldf",
+      "scope": "Specification README sections on UTF-8 CSV, CSVW TableGroup metadata, source identifiers, explicit null and BibTeX references",
+      "rights": "Repository license and dataset reuse permissions require independent version review",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "WALS-INTRO",
+      "title": "WALS Online \u2014 Introduction: scope and language sampling",
+      "url": "https://wals.info/chapter/s1",
+      "scope": "Publisher Introduction, language sample design, genealogical and areal representativeness and documented missingness",
+      "rights": "Original source copyright/licensing and data edition remain separate from this authored explanation",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "CLA-ACCESS",
+      "title": "California Language Archive access and community preferences",
+      "url": "https://cla.berkeley.edu/faq.html",
+      "scope": "Official public FAQ on deposit access restrictions, speakers, descendants and community request process",
+      "rights": "No authorization to mirror individual recordings or override restrictions",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "UN-DESA-151",
+      "title": "Why Indigenous languages matter: International Decade 2022\u20132032",
+      "url": "https://desapublications.un.org/policy-briefs/un-desa-policy-brief-no-151-why-indigenous-languages-matter-international-decade-0",
+      "scope": "Public policy brief passage emphasizing free, prior and informed consent and indigenous data control",
+      "rights": "Policy context does not constitute a legal license or consent for a specific data item",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "UNESCO-IDIL",
+      "title": "International Decade of Indigenous Languages 2022\u20132032",
+      "url": "https://www.unesco.org/en/decades/indigenous-languages",
+      "scope": "Public overview on language preservation and revitalization during 2022\u20132032",
+      "rights": "UNESCO site materials rights separate; no linguistic corpora or media obtained",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    },
+    {
+      "id": "UAX29-REV49",
+      "title": "Unicode UAX #29 Text Segmentation, revision 49, Unicode 18.0",
+      "url": "https://www.unicode.org/reports/tr29/tr29-49.html",
+      "scope": "Pinned revision 49, 2026-09-01, published extended grapheme, word and sentence boundary overview and rule changes",
+      "rights": "Unicode standard rights apply; property files and conformance tests were not downloaded",
+      "raw_original_bytes_acquired": false,
+      "independent_scientific_review": false
+    }
+  ],
+  "authentic_corpus_samples_loaded": 0,
+  "community_recordings_or_sign_video_acquired": 0,
+  "live_model_evaluations": 0,
+  "primary_publisher_files_archived": 0,
+  "human_reviewers": 0
+}

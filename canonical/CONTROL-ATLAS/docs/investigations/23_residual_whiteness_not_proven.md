@@ -1,0 +1,5 @@
+# Investigation 23 — Perfect in-sample fitting is not validated identification
+
+A synthetic alternating residual sequence `[1,-1,1,-1,...]` has mean zero and unit RMS, yet its lag-one correlation is strongly negative. A mean-zero residual is not evidence of white noise. A low lag-one correlation in another sequence would also be insufficient: a model may have lag-two correlation, correlation with past inputs, wrong disturbance variance or operating-regime shift.
+
+The new function returns descriptive lag-one correlation but no p-value or significant-whiteness claim. It refuses constant residuals because the centered energy is zero and correlation undefined. It cannot infer sensor bias from one number, and it does not fit nuisance models, test the causal excitation design or identify a physical plant. [System Identification residual guidance](https://www.mathworks.com/help/ident/ug/what-is-residual-analysis.html) distinguishes residual autocorrelation and input-residual independence checks.

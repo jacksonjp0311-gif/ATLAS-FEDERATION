@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "protected_files_byte_identical": 1437,
+  "by_prefix": {
+    "baseline/": 771,
+    "CAUSAL-ATLAS/": 253,
+    "MATERIALS-ATLAS/": 121,
+    "CONTROL-ATLAS/": 225,
+    "common/nodes/causal-atlas/": 9,
+    "common/nodes/materials-atlas/": 9,
+    "common/nodes/control-atlas/": 9,
+    "common/nodes/measurement-atlas/": 9,
+    "common/nodes/signal-atlas/": 9,
+    "common/nodes/cymatics-atlas/": 9,
+    "wheels/": 13
+  },
+  "original_baseline_members": 771,
+  "baseline_changed": [],
+  "old_nodes_records_preserved": 1051,
+  "old_nodes": [
+    "causal-atlas",
+    "control-atlas",
+    "cymatics-atlas",
+    "materials-atlas",
+    "measurement-atlas",
+    "signal-atlas"
+  ],
+  "new_source_routing_implemented": false,
+  "new_live_model_invocations": 0
+}

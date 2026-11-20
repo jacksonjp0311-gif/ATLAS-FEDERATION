@@ -1,0 +1,13 @@
+# 03. An agent observes through channels, not direct access to truth
+
+A deployed agent's observations can be delayed, incomplete, censored or fabricated. A planning step may rely on a database row, a web page, an external simulator or another worker's natural-language report. Those channels have distinct provenance and error properties. A **partially observable decision process** maintains a belief about hidden state rather than equating the latest token stream with objective reality. Bayesian belief updates require a specified transition and observation model; a generic language model's confidence sentence is not such a calibrated posterior.
+
+For a finite known POMDP, a belief update is `b_{t+1}(x') ∝ Z(o_{t+1}|x',a_t) Σ_x T(x'|x,a_t)b_t(x)`. This is a conditional mathematical identity. Agent Atlas does not fit transition or observation matrices, and does not make probabilistic claims about a production agent's hidden state. The key architectural practice is distinguishing **observation**, **interpretation**, **action authorization**, **state estimate**, and **measured outcome**.
+
+Consider a terminal command that returns a timeout after a long-running task. There are multiple compatible explanations: the task never started, it started and remains running, it completed without returning a response, or a child completed but its parent crashed. Reissuing the command can be safe or unsafe depending on idempotency and external effects. A ledger entry `tool_error` preserves the ambiguity; only an authorized `stop` or actual termination event should mark the run stopped. Our event journal has explicit actor+action fields to demonstrate this important separation.
+
+A state-of-the-art evaluation should measure factual state after action, not just the model's explanation. τ-bench evaluates end-state against annotated goals; τ²-bench adds shared user/agent control. Both emphasize that a conversation transcript alone can be an incomplete representation of the task. An agent may claim success while the required database state has not changed. Conversely, a state update might succeed despite a text explanation describing failure.
+
+**Counterexample:** two possible physical machine states generate the same coarse sensor reading. A model selecting one confident cause without additional data commits an identification error, not a planning achievement. Route the claim to a measurement/causal study and retain competing hypotheses. This is a cross-domain analogy, not an empirical benchmark on machinery.
+
+**Sources:** [TAUBENCH-2024](https://arxiv.org/abs/2406.12045), [TAU2-2025](https://arxiv.org/abs/2506.07982), [REACT-2023](https://arxiv.org/abs/2210.03629).

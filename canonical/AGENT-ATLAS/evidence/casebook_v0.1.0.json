@@ -1,0 +1,222 @@
+{
+  "schema": "agent.atlas.casebook/1",
+  "version": "0.1.0",
+  "status": "passed",
+  "cases": [
+    {
+      "id": "dag_and_critical_path",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "dependency graph is acyclic, critical path 7 in user supplied cost units",
+      "observation": {
+        "order": [
+          "collect",
+          "analyze",
+          "audit",
+          "publish"
+        ],
+        "critical_path_cost": 7.0
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "admit_only_affordable_work",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "does not launch workers or silently overspend budget",
+      "observation": {
+        "ready_candidates": [
+          "analyze",
+          "audit"
+        ],
+        "admitted": [
+          "analyze"
+        ],
+        "blocked_due_to_failure": [],
+        "explicitly_failed": [],
+        "budget_remaining": 0.0,
+        "not_yet_ready": [
+          "publish"
+        ],
+        "not_executed": true,
+        "limitations": [
+          "External results must be admitted by a separate evidence verifier",
+          "No worker is spawned; estimates are input assumptions"
+        ]
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "failed_dependency_blocks_descendants",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "failed required dependency blocks dependent goals",
+      "observation": [
+        "analyze",
+        "audit",
+        "publish"
+      ],
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "cycle_rejection",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "cyclic task plans fail closed",
+      "observation": {
+        "rejected": true
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "host_owned_approval",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "mutating action requires host approval",
+      "observation": {
+        "without_approval": {
+          "admitted": false,
+          "reason": "operator_approval_required",
+          "request_id": "user-approval-001"
+        },
+        "with_declared_approval": {
+          "admitted": true,
+          "reason": "static_host_policy_satisfied",
+          "request_id": "user-approval-001",
+          "limitations": [
+            "Simulation only; host must enforce identity, consent, and actual authorization"
+          ]
+        }
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "scope_not_expandable_by_approval",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "approval does not grant a resource absent from catalog",
+      "observation": {
+        "admitted": false,
+        "reason": "capability_or_resource_not_authorized",
+        "request_id": "user-approval-001"
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "explicit_stop_is_final",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "operator stop is different from tool error and is terminal",
+      "observation": {
+        "state": "stop",
+        "entries": 3,
+        "tip_hash": "69899c409152d42cebe46ca6a21fcac8a6a68801e510bd3d497cf0c74160d597"
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "journal_detects_mutation",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "content hash chain detects edited bytes, not proof of authorship",
+      "observation": {
+        "tamper_detected": true
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "receipt_content_integrity",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "local hash and task linkage verified, external truth not asserted",
+      "observation": {
+        "admitted": true,
+        "task_id": "task42",
+        "receipt_digest": "dc3493a37e77469eaf62621d1169d144de54814b43909cf7c25b0534809ae189",
+        "limitations": [
+          "Content hash proves local bytes and identifiers only; not truth of a worker claim",
+          "Parent must check required evidence and consequences before final commitment"
+        ]
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "foreign_child_receipt_rejected",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "worker result of a different task not accepted",
+      "observation": {
+        "rejected": true
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "memory_qualifier_remains_attached",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "context selection does not drop attached limitation to fit budget",
+      "observation": {
+        "admitted": [
+          {
+            "id": "m1",
+            "score": 0.89,
+            "source_id": "s1",
+            "qualifier": "source not expert reviewed",
+            "tokens": 6
+          }
+        ],
+        "remaining": 0,
+        "excluded": [
+          "m2"
+        ],
+        "status": "illustrative_scored_memory_selection",
+        "limitations": [
+          "Rank scores are not scientific confidence",
+          "All qualifiers are retained in chosen units",
+          "This is not the deferred Atlas or Bitwork router"
+        ]
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "pass_all_vs_pass_any",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "pass all 3 vs any 3 are different reliability metrics",
+      "observation": {
+        "tasks": 3,
+        "repeats_per_task": 3,
+        "observed_pass_all_k": 0.3333333333333333,
+        "observed_pass_any_k": 1.0,
+        "per_trial_mean": 0.6666666666666666,
+        "estimated_independent_pass_all_k": 0.2962962962962962,
+        "limitations": [
+          "Observed pass-all and pass-any are finite empirical fractions, not confidence intervals",
+          "The p^k estimate assumes independent identically distributed repeated trials; correlated failures invalidate that extrapolation",
+          "Do not compare different task distributions or equate repeated trial success with factual correctness"
+        ]
+      },
+      "live_agent_or_external_model_test": false
+    },
+    {
+      "id": "content_verified_result_not_automatically_committed",
+      "origin": "author_constructed_offline",
+      "passed": true,
+      "expected": "retained result can be considered on restart; no final answer or real persistence occurred",
+      "observation": {
+        "status": "eligible_for_parent_verification",
+        "run_tip_hash": "0a5033f59e6aaf134df74fe2ab480e5e82e5945b2d43f0f2646824de33e33ea3",
+        "receipt_digest": "dc3493a37e77469eaf62621d1169d144de54814b43909cf7c25b0534809ae189",
+        "missing": [
+          "actual parent restart/reconciliation not executed",
+          "claim/evidence truth not independently reviewed"
+        ]
+      },
+      "live_agent_or_external_model_test": false
+    }
+  ],
+  "case_count": 13,
+  "live_agent_runs": 0,
+  "external_model_benchmarks": 0,
+  "independent_human_scientific_review": false
+}

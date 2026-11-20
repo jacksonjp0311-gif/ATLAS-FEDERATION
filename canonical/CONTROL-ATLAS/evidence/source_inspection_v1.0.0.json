@@ -1,0 +1,44 @@
+[
+  {
+    "record_id": "control-atlas:source:OPENMCT-MENDELEY-V2",
+    "url": "https://data.mendeley.com/datasets/5xvg43r9r8/2",
+    "inspected_scope": "Dataset landing HTML; CC BY 4.0, 14 acquisition logs, >60,000 samples, 10-column apparatus and processing file inventory; raw file API inaccessible, no raw bytes downloaded",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  },
+  {
+    "record_id": "control-atlas:source:OPENMCT-DIB-2026",
+    "url": "https://doi.org/10.1016/j.dib.2026.113274",
+    "inspected_scope": "Open-access abstract/accessible article excerpt listing hardware, 10 log columns, exact field meanings, asynchronous DMM readings, APRBS sampling conditions and interpretation limits",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  },
+  {
+    "record_id": "control-atlas:source:GITHUB-MOTOR-EDU-2026",
+    "url": "https://github.com/dilusha-c/PID_Motor_Controlled",
+    "inspected_scope": "Public README: 12V brushed DC motor, encoder, Raspberry Pi, cited CSV step logs and ownership statement; permissive redistribution of raw CSV not established",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  },
+  {
+    "record_id": "control-atlas:source:GITHUB-MOTOR-PWM30",
+    "url": "https://github.com/dilusha-c/PID_Motor_Controlled/blob/main/Mode/mode1/data_pwm_30.csv",
+    "inspected_scope": "Public raw text read through GitHub interface, 49 (time,rpm) observations and source Git blob; only derived descriptive metrics retained, original raw not bundled",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  },
+  {
+    "record_id": "control-atlas:source:GITHUB-MOTOR-PWM50",
+    "url": "https://github.com/dilusha-c/PID_Motor_Controlled/blob/main/Mode/mode1/data_pwm_50.csv",
+    "inspected_scope": "Public raw text read through GitHub interface, 49 (time,rpm) observations and source Git blob; only derived descriptive metrics retained, original raw not bundled",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  },
+  {
+    "record_id": "control-atlas:source:GITHUB-MOTOR-PWM70",
+    "url": "https://github.com/dilusha-c/PID_Motor_Controlled/blob/main/Mode/mode1/data_pwm_70.csv",
+    "inspected_scope": "Public raw text read through GitHub interface, 49 (time,rpm) observations and source Git blob; only derived descriptive metrics retained, original raw not bundled",
+    "original_bytes_archived": false,
+    "scientific_independent_review": false
+  }
+]

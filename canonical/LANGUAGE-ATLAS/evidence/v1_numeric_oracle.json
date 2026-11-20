@@ -1,0 +1,26 @@
+{
+  "schema": "atlas.language-v1-numerical-oracle/1",
+  "status": "passed",
+  "seed": 20261114,
+  "comparisons": 3580,
+  "by_method": {
+    "nfa_independent_graph_search": 550,
+    "quantifier_forall_exists": 550,
+    "quantifier_exists_forall": 550,
+    "weighted_alignment_exhaustive": 350,
+    "weighted_alignment_operation_cost": 350,
+    "ordered_rules_independent": 300,
+    "character_ngram_numpy_independent_counts": 450,
+    "document_actual_byte_digest": 240,
+    "document_never_automatically_published": 240
+  },
+  "numpy_version": "2.3.5",
+  "authentic_language_corpora": 0,
+  "unicode18_normative_test_rows": 0,
+  "real_language_models": 0,
+  "independent_linguistic_review": false,
+  "limitations": [
+    "Finite author-generated examples and independent calculations do not prove linguistic universals",
+    "No human-speaker judgments, original media or community-consent records were acquired"
+  ]
+}

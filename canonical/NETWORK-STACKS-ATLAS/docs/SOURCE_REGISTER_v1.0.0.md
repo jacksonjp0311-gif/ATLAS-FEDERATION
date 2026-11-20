@@ -1,0 +1,23 @@
+# Network Stacks #16 — official bibliographic locators (no authenticated publisher originals)
+
+- **RFC791:** Internet Protocol, IPv4, September 1981, https://www.rfc-editor.org/info/rfc791/
+- **RFC1071:** Computing the Internet Checksum, September 1988, https://www.rfc-editor.org/info/rfc1071/
+- **RFC894:** Standard for the Transmission of IP Datagrams over Ethernet Networks, April 1984, https://www.rfc-editor.org/info/rfc894/
+- **RFC826:** An Ethernet Address Resolution Protocol, November 1982, https://www.rfc-editor.org/info/rfc826/
+- **RFC4861:** Neighbor Discovery for IP version 6, September 2007, https://www.rfc-editor.org/info/rfc4861/
+- **RFC8200:** Internet Protocol, Version 6 (IPv6) Specification, July 2017 (updated by RFC 9673), https://www.rfc-editor.org/info/rfc8200/
+- **RFC9673:** IPv6 Hop-by-Hop Options Processing Procedures, 2024, https://www.rfc-editor.org/info/rfc9673/
+- **RFC4443:** Internet Control Message Protocol (ICMPv6), March 2006, https://www.rfc-editor.org/info/rfc4443/
+- **RFC4632:** Classless Inter-domain Routing (CIDR), August 2006, https://www.rfc-editor.org/info/rfc4632/
+- **RFC768:** User Datagram Protocol, August 1980, https://www.rfc-editor.org/info/rfc768/
+- **RFC9293:** Transmission Control Protocol (TCP), August 2022 (obsoletes RFC 793), https://www.rfc-editor.org/info/rfc9293/
+- **RFC6298:** Computing TCP Retransmission Timer, June 2011, https://www.rfc-editor.org/info/rfc6298/
+- **RFC1035:** Domain Names: Implementation and Specification, November 1987, https://www.rfc-editor.org/info/rfc1035/
+- **RFC4033:** DNS Security Introduction and Requirements, March 2005, https://www.rfc-editor.org/info/rfc4033/
+- **RFC9000:** QUIC: A UDP-Based Multiplexed and Secure Transport, May 2021, https://www.rfc-editor.org/info/rfc9000/
+- **RFC9001:** Using TLS to Secure QUIC, May 2021, https://www.rfc-editor.org/info/rfc9001/
+- **RFC9846:** The Transport Layer Security (TLS) Protocol Version 1.3, July 2026 (obsoletes RFC 8446), https://www.rfc-editor.org/info/rfc9846/
+- **RFC1191:** Path MTU Discovery, November 1990, https://www.rfc-editor.org/info/rfc1191/
+- **RFC8201:** Path MTU Discovery for IP version 6, July 2017, https://www.rfc-editor.org/info/rfc8201/
+- **RFC4271:** A Border Gateway Protocol 4 (BGP-4), January 2006, https://www.rfc-editor.org/info/rfc4271/
+- **RFC1918:** Address Allocation for Private Internets, February 1996, https://www.rfc-editor.org/info/rfc1918/

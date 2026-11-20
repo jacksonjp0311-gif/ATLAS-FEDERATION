@@ -1,0 +1,133 @@
+{
+  "schema": "atlas.bioelectric-chapter-index/1",
+  "edition": "0.1.0",
+  "chapters": 18,
+  "items": [
+    {
+      "chapter": 1,
+      "title": "Dimensional consistency for bioelectric systems",
+      "file": "docs/chapters/01_dimensions_constants_and_scope.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "V_T=k_B T/e; F=e N_A; C_mem=C_specific*A; U_C=0.5 C_mem V^2"
+    },
+    {
+      "chapter": 2,
+      "title": "Ion activities, chemical potential and membrane separation",
+      "file": "docs/chapters/02_ion_activities_and_electrochemical_potential.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "\u03bc_i = \u03bc_i\u00b0 + R T ln(a_i) + z_i F \u03c6"
+    },
+    {
+      "chapter": 3,
+      "title": "Nernst equilibrium voltage with explicit valence and units",
+      "file": "docs/chapters/03_nernst_voltage_concentration_and_valence.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "E_ion = (R T / z F) ln(a_out/a_in)"
+    },
+    {
+      "chapter": 4,
+      "title": "Goldman\u2013Hodgkin\u2013Katz constant-field voltage and limiting cases",
+      "file": "docs/chapters/04_ghk_constant_field_and_limitations.md",
+      "source_id": "GOLDMAN-1943",
+      "equation": "V = (R T/F) ln((P_K K_out+P_Na Na_out+P_Cl Cl_in)/(P_K K_in+P_Na Na_in+P_Cl Cl_out))"
+    },
+    {
+      "chapter": 5,
+      "title": "Passive membrane as capacitor and conductance network",
+      "file": "docs/chapters/05_membrane_capacitors_resistors_and_time_constants.md",
+      "source_id": "NEURON-CABLE",
+      "equation": "C dV/dt = -g(V-E) + I; \u03c4=C/g; V(t)=V_inf+(V0-V_inf)exp(-t/\u03c4)"
+    },
+    {
+      "chapter": 6,
+      "title": "Parallel channel conductances and current conservation",
+      "file": "docs/chapters/06_parallel_channel_equilibria_and_current_balance.md",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "equation": "0 = \u03a3_k g_k(E_k-V) + I; V*=(\u03a3g_k E_k+I)/\u03a3g_k"
+    },
+    {
+      "chapter": 7,
+      "title": "A reconstructible sealed-end passive cable discretization",
+      "file": "docs/chapters/07_discrete_cable_axial_current_and_sealed_ends.md",
+      "source_id": "NEURON-CABLE",
+      "equation": "C dV_i/dt = g_a \u03a3_neighbors(V_j\u2212V_i) \u2212 g_l(V_i\u2212E_l)+I_i"
+    },
+    {
+      "chapter": 8,
+      "title": "Cable-step stability, conservation and discretization errors",
+      "file": "docs/chapters/08_cable_stability_and_charge_invariants.md",
+      "source_id": "NEURON-CABLE",
+      "equation": "\u0394t \u2264 C/(degree_max g_ax+g_leak) (sufficient nonnegative weights)"
+    },
+    {
+      "chapter": 9,
+      "title": "Hodgkin\u2013Huxley voltage-gated sodium and potassium kinetics",
+      "file": "docs/chapters/09_hodgkin_huxley_gating_kinetics.md",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "equation": "dx/dt=\u03b1_x(V)(1\u2212x)\u2212\u03b2_x(V)x; I_Na=gNa m\u00b3h(V\u2212ENa); I_K=gK n\u2074(V\u2212EK)"
+    },
+    {
+      "chapter": 10,
+      "title": "Removable singularities in Hodgkin\u2013Huxley rate equations",
+      "file": "docs/chapters/10_singular_gating_rates_and_numerical_precision.md",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "equation": "lim_{x\u21920} x/(1\u2212exp(\u2212x/a)) = a"
+    },
+    {
+      "chapter": 11,
+      "title": "Time integration of the HH membrane with explicit scope limits",
+      "file": "docs/chapters/11_hh_time_integration_reproducibility_and_scope.md",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "equation": "C_m dV/dt=I_in\u2212I_Na\u2212I_K\u2212I_l; gated x(t+\u0394t)=x_inf+(x\u2212x_inf)e^{\u2212\u0394t/\u03c4}"
+    },
+    {
+      "chapter": 12,
+      "title": "FitzHugh\u2013Nagumo dimensionless excitability dynamics",
+      "file": "docs/chapters/12_fitzhugh_nagumo_abstract_excitability.md",
+      "source_id": "FITZHUGH-1961",
+      "equation": "dv/dt = v\u2212v\u00b3/3\u2212w+I; dw/dt=\u03b5(v+a\u2212bw)"
+    },
+    {
+      "chapter": 13,
+      "title": "Electrode\u2013electrolyte interface as a passive dummy-load circuit",
+      "file": "docs/chapters/13_electrode_interfaces_and_dummy_randles_networks.md",
+      "source_id": "NEURON-CABLE",
+      "equation": "Z(\u03c9)=R_s + 1/(1/R_ct + j\u03c9 C_dl)"
+    },
+    {
+      "chapter": 14,
+      "title": "Sampling, Nyquist limits and ADC error models",
+      "file": "docs/chapters/14_adc_sampling_quantization_and_aliasing.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "\u0394V=(V_max\u2212V_min)/(2^N\u22121); |quantization error|\u2264\u0394V/2 for unclipped ideal nearest-code samples"
+    },
+    {
+      "chapter": 15,
+      "title": "Noise, calibration uncertainty and reproducible signal traces",
+      "file": "docs/chapters/15_noise_replay_and_measurement_uncertainty.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "u_c=\u221a\u03a3u_i\u00b2 for independent (uncorrelated) standard uncertainties"
+    },
+    {
+      "chapter": 16,
+      "title": "Electrogenic pumps, metabolic work and non-equilibrium ion gradients",
+      "file": "docs/chapters/16_bioelectric_materials_ions_pumps_and_energy.md",
+      "source_id": "HODGKIN-HUXLEY-1952",
+      "equation": "dN_i/dt=J_pump,i\u2212J_leak,i; C_m dV/dt=\u03a3_i I_i + I_external (specified signs)"
+    },
+    {
+      "chapter": 17,
+      "title": "Offline engineering bench workflow with non-biological electrical dummies",
+      "file": "docs/chapters/17_offline_instrument_reconstruction_on_inert_dummies.md",
+      "source_id": "NAGUMO-1962",
+      "equation": "Measured Z_dummy(\u03c9) compared with Z_model(\u03c9), with calibrated uncertainty and isolation safeguards"
+    },
+    {
+      "chapter": 18,
+      "title": "Scientific evidence gates, source rights and nonclinical acceptance",
+      "file": "docs/chapters/18_bioelectric_science_acceptance_and_provenance.md",
+      "source_id": "BIPM-SI-2026",
+      "equation": "software verified \u2227 original-source authentication missing \u2227 physical evidence missing \u21d2 independent science acceptance HOLD"
+    }
+  ]
+}

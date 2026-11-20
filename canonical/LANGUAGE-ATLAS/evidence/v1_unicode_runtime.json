@@ -1,0 +1,8 @@
+{
+  "schema": "atlas.language-unicode-runtime/1",
+  "python_unicodedata_version": "15.1.0",
+  "normative_target": "Unicode 18.0.0 UAX29 Revision 49 and UAX15 Revision 58",
+  "full_uax29_conformance_proven": false,
+  "unicode18_normative_test_file_acquired": false,
+  "source_data_licensing": "Unicode License V3 link-only; test source bytes not acquired"
+}

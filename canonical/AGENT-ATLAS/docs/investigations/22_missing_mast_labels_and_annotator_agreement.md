@@ -1,0 +1,7 @@
+# Investigation 22 — MAST failure annotations with missing labels
+
+A constructed three-item, fourteen-code MAST-14 dataset illustrates the difference between a model-judge label and an annotator's label. For code 3.1, the first item is a positive agreement, the second is model-only positive, and the third has a missing model label. The known-item matrix is TP=1, FP=1, FN=0, TN=0, missing=1. Precision relative to the annotator is 1/2. This is **not** a 50% true task-accuracy claim: the annotator is a rater, not an objective task-outcome oracle.
+
+For a code where all nonmissing items are unanimously negative, Cohen's kappa has a zero denominator in the conventional chance-corrected form and is reported as null. In a sparsely labeled taxonomy a reported null also must not silently become 0. Different MAST human annotation rounds contain different code counts, so the v0.4 method rejects versions other than `MAST-14` unless a verified crosswalk is later supplied.
+
+The genuine MAST public dataset card lists 1,642 full annotated traces and 19 human-annotation records. No original rows were imported in this release. The model's output shows agreement among supplied labels only, not failure probabilities. A stronger empirical study needs actual legally acquired traces and independent adjudication, precise taxonomy versioning, privacy safeguards and stratified sampling across frameworks and tasks.
