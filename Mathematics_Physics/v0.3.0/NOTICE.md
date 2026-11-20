@@ -1,0 +1,1 @@
+All newly written science chapters, code and tests are author-project original materials with AI assistance. External BIPM/NIST/MIT/OpenStax scientific and teaching references are bibliographic source locators with source-specific rights. No original full-text publisher file or figures were mirrored in this edition.

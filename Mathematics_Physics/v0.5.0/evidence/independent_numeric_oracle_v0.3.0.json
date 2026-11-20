@@ -1,0 +1,23 @@
+{
+  "schema": "atlas.math-physics-v03-independent-numerical/1",
+  "status": "passed",
+  "seed": 20261115,
+  "numpy_version": "2.3.5",
+  "counts": {
+    "svd_singular_values_numpy": 360,
+    "svd_minimum_norm_numpy": 360,
+    "poisson_analytic_quadratic": 240,
+    "implicit_heat_dense_numpy": 240,
+    "tridiagonal_numpy": 100
+  },
+  "comparisons": 1300,
+  "invalid_input_refusals": 120,
+  "max_absolute_error_in_native_units": 6.714628852932947e-13,
+  "failures": [],
+  "evidence_limits": [
+    "Finite NumPy/analytic numerical comparisons on generated inputs only",
+    "Some reference formulas are based on the same underlying mathematical model",
+    "No publisher files authenticated; no real physical measurements or AI model evaluations",
+    "No mathematical theorem of universal convergence or scientific peer review"
+  ]
+}

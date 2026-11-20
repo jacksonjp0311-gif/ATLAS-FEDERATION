@@ -1,0 +1,235 @@
+{
+  "contexts_validated": 94,
+  "date": "2026-11-15",
+  "edition": "0.2.0",
+  "empirical_data_tested": false,
+  "federation_source_tree_regression": "passed",
+  "fresh_extracted_federation_regression": "pending_while_archiving",
+  "full_compiled_schema": "passed",
+  "historical_file_preservation": {
+    "boundary": "SHA256 preservation verifies equality to restored v0.1 source; not publisher original authenticity or science review",
+    "changed_existing_files_allowed": 36,
+    "changed_file_paths": [
+      "BUILD_POLICY.json",
+      "CURRENT_CHECKPOINT.json",
+      "DOMAIN_QUEUE.json",
+      "MATHEMATICS-PHYSICS-ATLAS/CHANGELOG.md",
+      "MATHEMATICS-PHYSICS-ATLAS/README.md",
+      "MATHEMATICS-PHYSICS-ATLAS/atlas_manifest.json",
+      "MATHEMATICS-PHYSICS-ATLAS/data/claims.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/data/concepts.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/data/equations.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/data/methods.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/data/relations.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/data/sources.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/docs/REFERENCE_GUIDE.md",
+      "MATHEMATICS-PHYSICS-ATLAS/docs/SCOPED_V1_GATES.md",
+      "MATHEMATICS-PHYSICS-ATLAS/docs/SOURCE_REGISTER.md",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/atlas_manifest.json",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/claims.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/concepts.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/equations.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/methods.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/relations.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/nodes/mathematics-physics-atlas/data/sources.jsonl",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/registry.json",
+      "MATHEMATICS-PHYSICS-ATLAS/math_physics_atlas/resources/common/registry.lock.json",
+      "MATHEMATICS-PHYSICS-ATLAS/pyproject.toml",
+      "MATHEMATICS-PHYSICS-ATLAS/tests/test_integrity.py",
+      "common/nodes/mathematics-physics-atlas/atlas_manifest.json",
+      "common/nodes/mathematics-physics-atlas/data/claims.jsonl",
+      "common/nodes/mathematics-physics-atlas/data/concepts.jsonl",
+      "common/nodes/mathematics-physics-atlas/data/equations.jsonl",
+      "common/nodes/mathematics-physics-atlas/data/methods.jsonl",
+      "common/nodes/mathematics-physics-atlas/data/relations.jsonl",
+      "common/nodes/mathematics-physics-atlas/data/sources.jsonl",
+      "common/registry.json",
+      "common/registry.lock.json",
+      "tools/check_collection.py"
+    ],
+    "deleted_historical_files": 0,
+    "math_v01_records_immutable_revisions_preserved": 164,
+    "math_v01_relations_immutable_revisions_preserved": 152,
+    "new_bitwork_router_files": 0,
+    "new_math_record_count": 189,
+    "new_math_relation_count": 176,
+    "old_common_registry_archived_identical": true,
+    "old_tests_unchanged": true,
+    "previous_files_byte_identical": 4682,
+    "previous_full_federation_record_count_preserved": 2521,
+    "previous_full_federation_relation_count_preserved": 1679,
+    "prior_release": "Mathematics_Physics_v0.1.0",
+    "prior_release_archive_sha256": "a2fa31601aeb7f3356a1ba3f7a118ee3936126a9b86b6f05feef1ca1c68fcfb6",
+    "result": "passed",
+    "schema": "atlas.math-physics-v02-preservation/1",
+    "source_original_manifest_files": 4718,
+    "unauthorized_prior_file_changes": []
+  },
+  "independent_scientific_review": false,
+  "live_AI_comparison": false,
+  "new_numeric_oracle": {
+    "counts": {
+      "adaptive_rk4_vs_analytic_logistic": 120,
+      "analytic_svd2_vs_lapack_svd": 300,
+      "deliberate_domain_refusals": 120,
+      "ftcs_heat_vs_analytic_eigenmode": 100,
+      "householder_qr_vs_lapack_lstsq": 300,
+      "leapfrog_wave_vs_analytic_eigenmode": 100,
+      "radix2_fft_vs_numpy_fft": 200,
+      "radix2_inverse_roundtrip": 200
+    },
+    "general_svd_solver_implemented": false,
+    "independent_scientific_peer_review": false,
+    "max_abs_error": {
+      "adaptive_rk4_vs_analytic_logistic": 2.066859061677917e-08,
+      "analytic_svd2_vs_lapack_svd": 1.7763568394002505e-15,
+      "ftcs_heat_vs_analytic_eigenmode": 0.0002955170027497678,
+      "householder_qr_vs_lapack_lstsq": 6.217248937900877e-15,
+      "leapfrog_wave_vs_analytic_eigenmode": 0.003641065913306263,
+      "radix2_fft_vs_numpy_fft": 2.416106516409301e-14,
+      "radix2_inverse_roundtrip": 3.202372833989377e-15
+    },
+    "methods": "NumPy LAPACK/FFT and separate analytic ODE/PDE eigenmode formulas",
+    "numeric_cases": 1320,
+    "numpy_version": "2.3.5",
+    "original_publisher_files_authenticated": 0,
+    "physical_experiments": 0,
+    "rejected_invalid_cases": 120,
+    "result": "passed",
+    "schema": "atlas.math-physics-v02-independent-oracle/1",
+    "seed": 20261115
+  },
+  "node_count": 12,
+  "publisher_original_bytes_authenticated": 0,
+  "record_count": 2546,
+  "relation_count": 1703,
+  "schema": "atlas.math-physics-v02-validation/1",
+  "sealed_archive_replay": "pending_while_archiving",
+  "skipped_tests": 0,
+  "source_cards": 498,
+  "source_tree_software_is_not_scientific_acceptance": true,
+  "standalone_wheel_offline_install": "passed",
+  "test_count": 2059,
+  "test_suites": {
+    "Agent": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 251,
+      "ran": 251,
+      "skipped": 0
+    },
+    "Causal": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 233,
+      "ran": 233,
+      "skipped": 0
+    },
+    "Chemistry": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 68,
+      "ran": 68,
+      "skipped": 0
+    },
+    "ChemistryV02": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 60,
+      "ran": 60,
+      "skipped": 0
+    },
+    "ChemistryV1": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 52,
+      "ran": 52,
+      "skipped": 0
+    },
+    "Computation": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 128,
+      "ran": 128,
+      "skipped": 0
+    },
+    "Control": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 244,
+      "ran": 244,
+      "skipped": 0
+    },
+    "Energy": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 79,
+      "ran": 79,
+      "skipped": 0
+    },
+    "EnergyV02": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 46,
+      "ran": 46,
+      "skipped": 0
+    },
+    "EnergyV1": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 41,
+      "ran": 41,
+      "skipped": 0
+    },
+    "Forge": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 188,
+      "ran": 188,
+      "skipped": 0
+    },
+    "Language": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 135,
+      "ran": 135,
+      "skipped": 0
+    },
+    "LanguageV1": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 58,
+      "ran": 58,
+      "skipped": 0
+    },
+    "Materials": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 122,
+      "ran": 122,
+      "skipped": 0
+    },
+    "MathPhysics": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 64,
+      "ran": 64,
+      "skipped": 0
+    },
+    "MathPhysicsV02": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 72,
+      "ran": 72,
+      "skipped": 0
+    },
+    "Measurement": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 218,
+      "ran": 218,
+      "skipped": 0
+    }
+  },
+  "wheel_build": "passed"
+}

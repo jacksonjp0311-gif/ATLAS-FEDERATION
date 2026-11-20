@@ -1,0 +1,69 @@
+{
+  "schema": "atlas.computer-case-index/2",
+  "version": "0.2.0",
+  "historical_cases": 18,
+  "new_cases": 12,
+  "total_cases": 30,
+  "new_case_titles": [
+    {
+      "chapter": 25,
+      "title": "Byte encoding compatibility",
+      "expected": "same execution snapshots from atomic and microcode models"
+    },
+    {
+      "chapter": 26,
+      "title": "Source bootstrap",
+      "expected": "source evaluator, atomic ISA and microcycle state agree"
+    },
+    {
+      "chapter": 27,
+      "title": "Nested counted loops",
+      "expected": "result 12; counter registers R3/R2 do not alias"
+    },
+    {
+      "chapter": 28,
+      "title": "Control-flow closure",
+      "expected": "reports unreachable, cyclic and fall-off cases; no false termination proof"
+    },
+    {
+      "chapter": 29,
+      "title": "Source/ROM manifest",
+      "expected": "source and ROM SHA-256 repeat; mutation changes ROM hash"
+    },
+    {
+      "chapter": 30,
+      "title": "SECDED 13,8",
+      "expected": "correct all singles and detect every double; higher-weight faults explicitly unproven"
+    },
+    {
+      "chapter": 31,
+      "title": "ROM recovery",
+      "expected": "single corrected; double refuses; wrong expected hash refuses"
+    },
+    {
+      "chapter": 32,
+      "title": "Instruction retirement",
+      "expected": "two engine snapshots identical; source and event hashes reproducible"
+    },
+    {
+      "chapter": 33,
+      "title": "Precise trap",
+      "expected": "trap preserves committed state, bounded watchdog not described as HALT"
+    },
+    {
+      "chapter": 34,
+      "title": "Independent source semantics",
+      "expected": "compiled byte output and independently interpreted result agree"
+    },
+    {
+      "chapter": 35,
+      "title": "Physical evidence negative gate",
+      "expected": "physical acceptance stays HOLD; 12 physical evidence types remain unverified"
+    },
+    {
+      "chapter": 36,
+      "title": "Reconstruction chain",
+      "expected": "software result passes, six physical stages remain blocked"
+    }
+  ]
+}

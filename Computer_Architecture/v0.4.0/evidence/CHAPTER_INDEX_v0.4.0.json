@@ -1,0 +1,129 @@
+{
+  "schema": "atlas.computer-v04-chapter-index/1",
+  "current_edition": "0.4.0",
+  "prior_chapters": 48,
+  "new_chapters": [
+    {
+      "number": 49,
+      "slug": "nand_gate_netlist_from_boolean_equations",
+      "title": "A reconstructible NAND netlist from the Boolean adder",
+      "path": "docs/chapters/49_nand_gate_netlist_from_boolean_equations.md",
+      "equation": "s=a XOR b XOR c; cout=(ab) OR (c(a XOR b))",
+      "method": "v04_gatelevel.ripple_adder_netlist; NandCircuit.eval",
+      "units": "bits, NAND counts and structural gate levels",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 50,
+      "slug": "three_valued_unknowns_and_limits",
+      "title": "Unknown-state propagation without invented register certainty",
+      "path": "docs/chapters/50_three_valued_unknowns_and_limits.md",
+      "equation": "NAND(0,X)=1; NAND(1,X)=X; NAND(X,X)=X",
+      "method": "v04_gatelevel.nand3; NandCircuit.eval",
+      "units": "0, 1 and X (UNKNOWN, symbolic)",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 51,
+      "slug": "integer_arithmetic_and_carry_refinement",
+      "title": "NAND arithmetic, unsigned carry, and subtraction borrow conventions",
+      "path": "docs/chapters/51_integer_arithmetic_and_carry_refinement.md",
+      "equation": "a+b+c_in = sum + (2^w) carry_out; a-b=a+(NOT b)+1 (mod 2^w)",
+      "method": "v04_gatelevel.evaluate_add; computer_atlas.gates.alu8",
+      "units": "binary words, carry and signed overflow flags",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 52,
+      "slug": "hardware_isa_retirement_refinement",
+      "title": "Verifying gate arithmetic at each AT8 instruction retirement",
+      "path": "docs/chapters/52_hardware_isa_retirement_refinement.md",
+      "equation": "Refinement: GateResult(operand,immediate) = ISAResult(operand,immediate)",
+      "method": "v04_gatelevel.certify_at8_arithmetic; v02_trace.differential_retirement",
+      "units": "byte values and instruction retirement indexes",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 53,
+      "slug": "structural_gate_depth_timing_envelopes",
+      "title": "Structural gate depth and hypothetical timing envelopes",
+      "path": "docs/chapters/53_structural_gate_depth_timing_envelopes.md",
+      "equation": "t_latest <= depth_max * t_gate,max (zero interconnect assumption)",
+      "method": "NandCircuit.structural_depth; NandCircuit.gate_delay_bounds",
+      "units": "NAND levels, seconds, declared min and max gate delays",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 54,
+      "slug": "harvard_rom_ram_addressing_and_isolation",
+      "title": "Harvard ROM/RAM separation and addressing boundaries",
+      "path": "docs/chapters/54_harvard_rom_ram_addressing_and_isolation.md",
+      "equation": "ROM fetch PC even, 0<=PC+1<ROMlength; RAM 0<=address<256",
+      "method": "v04_memory.HarvardBus; isa.validate_rom",
+      "units": "bytes, addresses and transaction events",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 55,
+      "slug": "parity_fault_detection_vs_ecc",
+      "title": "Parity byte memory: detection, correction limits, and false confidence",
+      "path": "docs/chapters/55_parity_fault_detection_vs_ecc.md",
+      "equation": "parity(byte) = popcount(byte) mod 2; parity(data xor mask) differs iff popcount(mask) odd",
+      "method": "v04_memory.ParityByteMemory; v02_ecc.protect_rom",
+      "units": "byte and parity bits",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 56,
+      "slug": "bounded_round_robin_bus_arbitration",
+      "title": "Finite fair bus arbitration and its assumptions",
+      "path": "docs/chapters/56_bounded_round_robin_bus_arbitration.md",
+      "equation": "grant_t = first requesting master at/after pointer_t (mod N)",
+      "method": "v04_memory.RoundRobinArbiter",
+      "units": "clock-indexed binary requests and master identifiers",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 57,
+      "slug": "source_boot_image_execution_hash_contract",
+      "title": "Source-to-boot reproduction and explicit trust boundaries",
+      "path": "docs/chapters/57_source_boot_image_execution_hash_contract.md",
+      "equation": "H_source=SHA256(UTF8 source); H_ROM=SHA256(compile(source)); H_image=SHA256(boot_image)",
+      "method": "v04_bootstrap.bootstrap_certificate; v03_boot.encode_boot_image",
+      "units": "UTF-8 bytes, ROM bytes, hashes and execution events",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 58,
+      "slug": "refinement_receipts_failure_isolation",
+      "title": "Finite refinement receipts and fail-closed test batches",
+      "path": "docs/chapters/58_refinement_receipts_failure_isolation.md",
+      "equation": "expected_state = ISA(ROM,inputs) = microcycle(ROM,inputs) for retired steps",
+      "method": "v04_bootstrap.verify_boot_batch; v02_trace.differential_retirement",
+      "units": "instruction count, trace hashes and binary outputs",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 59,
+      "slug": "manufacturing_measurement_for_nand_to_CPU",
+      "title": "Manufacturing evidence required to move from NAND models to physical processors",
+      "path": "docs/chapters/59_manufacturing_measurement_for_nand_to_CPU.md",
+      "equation": "hardware acceptance requires calibrated electrical, timing, retention and manufacturing evidence",
+      "method": "v04_gatelevel.gate_delay_bounds; manufacturing_atlas v0.2 evidence lattice",
+      "units": "volts, amps, seconds, Kelvin, geometry and uncertainties",
+      "evidence": "constructed_software_reference_only"
+    },
+    {
+      "number": 60,
+      "slug": "bootstrap_to_runtime_technological_continuity",
+      "title": "Reconstructible computing runtime: what still separates AT8 from a general machine",
+      "path": "docs/chapters/60_bootstrap_to_runtime_technological_continuity.md",
+      "equation": "scientific equations -> fabricated gates -> working memory -> ISA -> tools -> runtime -> AI workload",
+      "method": "v04_bootstrap.bootstrap_certificate; v04_memory.HarvardBus",
+      "units": "program bytes, states, timestamps, source evidence and calibrated instruments",
+      "evidence": "constructed_software_reference_only"
+    }
+  ],
+  "total_chapters": 60,
+  "source_origins_not_authenticated": true
+}

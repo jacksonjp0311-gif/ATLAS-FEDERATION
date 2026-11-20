@@ -1,0 +1,20 @@
+{
+  "schema": "atlas.computer-0.2-verification-boundaries/1",
+  "date": "2026-11-17",
+  "local_historical_tests": 86,
+  "local_new_tests": 56,
+  "new_independent_comparisons": 93661,
+  "full_federation_tests": 2548,
+  "full_test_suites": 30,
+  "validated_contexts": 167,
+  "publisher_original_transport_authenticated": 0,
+  "independent_peer_review": false,
+  "fabricated_CPU_or_measured_physical_computer": false,
+  "known_limitations": [
+    "AT8 is a small original teaching ISA",
+    "compiler lacks calls and linking",
+    "SECDED corrects single bits and detects doubles, not all triple faults",
+    "compiler finite testing does not imply universal correctness",
+    "physical evidence metadata cannot certify hardware"
+  ]
+}

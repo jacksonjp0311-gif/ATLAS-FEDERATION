@@ -1,0 +1,15 @@
+{
+  "schema": "atlas.math-physics-inventory/1",
+  "version": "0.1.0",
+  "chapters": 38,
+  "casebook": 22,
+  "sources": 10,
+  "records": 164,
+  "relations_internal": 152,
+  "relations_full": 160,
+  "cross_node_qualified_links": 8,
+  "prior_node_count": 11,
+  "original_publisher_bytes_authenticated": 0,
+  "physical_measurements_observed": 0,
+  "independent_peer_review": false
+}

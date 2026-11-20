@@ -1,0 +1,475 @@
+[
+  {
+    "id": "chapter-01",
+    "title": "Proof, axioms, and falsifiable mathematical claims",
+    "domain": "Logical foundations",
+    "file": "01_proof_axioms_and_falsifiable_mathematical_claims.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-02",
+    "title": "Units, dimensional analysis, and SI definitions",
+    "domain": "Metrology",
+    "file": "02_units_dimensional_analysis_and_si_definitions.md",
+    "sources": [
+      "BIPM-SI",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-03",
+    "title": "Numbers, rational arithmetic and precision",
+    "domain": "Computational foundations",
+    "file": "03_numbers_rational_arithmetic_and_precision.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-LA"
+    ]
+  },
+  {
+    "id": "chapter-04",
+    "title": "Functions, domains, limits and continuity",
+    "domain": "Calculus",
+    "file": "04_functions_domains_limits_and_continuity.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-ODE",
+      "MIT-CALCULUS"
+    ]
+  },
+  {
+    "id": "chapter-05",
+    "title": "Derivatives, sensitivities and automatic differentiation",
+    "domain": "Calculus",
+    "file": "05_derivatives_sensitivities_and_automatic_differentiation.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-ODE",
+      "MIT-CALCULUS"
+    ]
+  },
+  {
+    "id": "chapter-06",
+    "title": "Integration and conservation over time",
+    "domain": "Calculus",
+    "file": "06_integration_and_conservation_over_time.md",
+    "sources": [
+      "MIT-ODE",
+      "NIST-DLMF",
+      "MIT-CALCULUS"
+    ]
+  },
+  {
+    "id": "chapter-07",
+    "title": "Vectors, inner products and geometric projection",
+    "domain": "Linear algebra",
+    "file": "07_vectors_inner_products_and_geometric_projection.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-08",
+    "title": "Matrices as composable linear maps",
+    "domain": "Linear algebra",
+    "file": "08_matrices_as_composable_linear_maps.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-09",
+    "title": "Gaussian elimination and rational certificates",
+    "domain": "Linear algebra",
+    "file": "09_gaussian_elimination_and_rational_certificates.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-10",
+    "title": "Rank, nullspace and underdetermination",
+    "domain": "Linear algebra",
+    "file": "10_rank_nullspace_and_underdetermination.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-11",
+    "title": "Least squares and identifiable parameter fitting",
+    "domain": "Linear algebra",
+    "file": "11_least_squares_and_identifiable_parameter_fitting.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "id": "chapter-12",
+    "title": "Eigenvalues, stability and dynamical modes",
+    "domain": "Linear algebra",
+    "file": "12_eigenvalues_stability_and_dynamical_modes.md",
+    "sources": [
+      "MIT-LA",
+      "MIT-ODE"
+    ]
+  },
+  {
+    "id": "chapter-13",
+    "title": "Probability axioms and conditional evidence",
+    "domain": "Probability",
+    "file": "13_probability_axioms_and_conditional_evidence.md",
+    "sources": [
+      "NIST-UNCERTAINTY",
+      "MIT-LA"
+    ]
+  },
+  {
+    "id": "chapter-14",
+    "title": "Random variables, expectation and variance",
+    "domain": "Probability",
+    "file": "14_random_variables_expectation_and_variance.md",
+    "sources": [
+      "NIST-UNCERTAINTY",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-15",
+    "title": "Bayesian updating versus evidence reliability",
+    "domain": "Probability",
+    "file": "15_bayesian_updating_versus_evidence_reliability.md",
+    "sources": [
+      "NIST-UNCERTAINTY",
+      "MIT-LA"
+    ]
+  },
+  {
+    "id": "chapter-16",
+    "title": "Binomial counting and independence assumptions",
+    "domain": "Probability",
+    "file": "16_binomial_counting_and_independence_assumptions.md",
+    "sources": [
+      "NIST-UNCERTAINTY",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-17",
+    "title": "Numerical conditioning and stability",
+    "domain": "Numerical computation",
+    "file": "17_numerical_conditioning_and_stability.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-LA"
+    ]
+  },
+  {
+    "id": "chapter-18",
+    "title": "Discrete Fourier transform and spectral analysis",
+    "domain": "Signal mathematics",
+    "file": "18_discrete_fourier_transform_and_spectral_analysis.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-ODE"
+    ]
+  },
+  {
+    "id": "chapter-19",
+    "title": "Differential equations and initial value problems",
+    "domain": "Differential equations",
+    "file": "19_differential_equations_and_initial_value_problems.md",
+    "sources": [
+      "MIT-ODE",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-20",
+    "title": "Runge–Kutta methods and local error",
+    "domain": "Numerical computation",
+    "file": "20_runge_kutta_methods_and_local_error.md",
+    "sources": [
+      "MIT-ODE",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-21",
+    "title": "Partial differential equations and boundary conditions",
+    "domain": "Differential equations",
+    "file": "21_partial_differential_equations_and_boundary_conditions.md",
+    "sources": [
+      "MIT-ODE",
+      "MIT-PHYS"
+    ]
+  },
+  {
+    "id": "chapter-22",
+    "title": "Optimization, convexity and objective design",
+    "domain": "Optimization",
+    "file": "22_optimization_convexity_and_objective_design.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-23",
+    "title": "Softmax, log-sum-exp and numerical probability",
+    "domain": "Optimization",
+    "file": "23_softmax_log_sum_exp_and_numerical_probability.md",
+    "sources": [
+      "NIST-DLMF",
+      "MIT-LA"
+    ]
+  },
+  {
+    "id": "chapter-24",
+    "title": "Newtonian mechanics and inertial frames",
+    "domain": "Classical physics",
+    "file": "24_newtonian_mechanics_and_inertial_frames.md",
+    "sources": [
+      "OPENSTAX-PHY",
+      "BIPM-SI"
+    ]
+  },
+  {
+    "id": "chapter-25",
+    "title": "Energy, momentum and conservation boundaries",
+    "domain": "Classical physics",
+    "file": "25_energy_momentum_and_conservation_boundaries.md",
+    "sources": [
+      "OPENSTAX-PHY",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-26",
+    "title": "Oscillators, modes and resonance",
+    "domain": "Classical physics",
+    "file": "26_oscillators_modes_and_resonance.md",
+    "sources": [
+      "OPENSTAX-PHY",
+      "MIT-ODE"
+    ]
+  },
+  {
+    "id": "chapter-27",
+    "title": "Electric charge, fields and potential",
+    "domain": "Electromagnetism",
+    "file": "27_electric_charge_fields_and_potential.md",
+    "sources": [
+      "MIT-PHYS",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-28",
+    "title": "Circuit dynamics and RC time constants",
+    "domain": "Electromagnetism",
+    "file": "28_circuit_dynamics_and_rc_time_constants.md",
+    "sources": [
+      "MIT-PHYS",
+      "OPENSTAX-PHY"
+    ]
+  },
+  {
+    "id": "chapter-29",
+    "title": "Maxwell equations and wave propagation",
+    "domain": "Electromagnetism",
+    "file": "29_maxwell_equations_and_wave_propagation.md",
+    "sources": [
+      "MIT-PHYS",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-30",
+    "title": "Thermodynamic temperature and energy scales",
+    "domain": "Thermodynamics",
+    "file": "30_thermodynamic_temperature_and_energy_scales.md",
+    "sources": [
+      "BIPM-SI",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-31",
+    "title": "Special relativity and spacetime consistency",
+    "domain": "Relativity",
+    "file": "31_special_relativity_and_spacetime_consistency.md",
+    "sources": [
+      "OPENSTAX-PHY",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-32",
+    "title": "Quantum state amplitudes and Born measurement",
+    "domain": "Quantum physics",
+    "file": "32_quantum_state_amplitudes_and_born_measurement.md",
+    "sources": [
+      "MIT-QUANTUM",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-33",
+    "title": "Schrödinger equation and Hamiltonian modeling",
+    "domain": "Quantum physics",
+    "file": "33_schr_dinger_equation_and_hamiltonian_modeling.md",
+    "sources": [
+      "MIT-QUANTUM",
+      "NIST-CODATA"
+    ]
+  },
+  {
+    "id": "chapter-34",
+    "title": "Heisenberg uncertainty and measurement meaning",
+    "domain": "Quantum physics",
+    "file": "34_heisenberg_uncertainty_and_measurement_meaning.md",
+    "sources": [
+      "MIT-QUANTUM",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "id": "chapter-35",
+    "title": "Covariance and propagated measurement uncertainty",
+    "domain": "Metrology",
+    "file": "35_covariance_and_propagated_measurement_uncertainty.md",
+    "sources": [
+      "NIST-UNCERTAINTY",
+      "BIPM-SI"
+    ]
+  },
+  {
+    "id": "chapter-36",
+    "title": "Inverse problems and scientific identifiability",
+    "domain": "Numerical computation",
+    "file": "36_inverse_problems_and_scientific_identifiability.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-UNCERTAINTY"
+    ]
+  },
+  {
+    "id": "chapter-37",
+    "title": "From linear algebra to neural network computation",
+    "domain": "AI foundations",
+    "file": "37_from_linear_algebra_to_neural_network_computation.md",
+    "sources": [
+      "MIT-LA",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-38",
+    "title": "Rebuilding an offline scientific computing stack",
+    "domain": "Knowledge continuity",
+    "file": "38_rebuilding_an_offline_scientific_computing_stack.md",
+    "sources": [
+      "BIPM-SI",
+      "NIST-DLMF"
+    ]
+  },
+  {
+    "id": "chapter-39",
+    "title": "39 householder qr and stable least squares",
+    "domain": "Numerical methods",
+    "file": "39_householder_qr_and_stable_least_squares.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-40",
+    "title": "40 singular values rank and identifiability",
+    "domain": "Numerical methods",
+    "file": "40_singular_values_rank_and_identifiability.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-41",
+    "title": "41 radix2 fft sampling and spectral oracles",
+    "domain": "Numerical methods",
+    "file": "41_radix2_fft_sampling_and_spectral_oracles.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-42",
+    "title": "42 adaptive nonlinear ode and local error",
+    "domain": "Numerical methods",
+    "file": "42_adaptive_nonlinear_ode_and_local_error.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-43",
+    "title": "43 heat equation ftcs diffusion and stability",
+    "domain": "Numerical methods",
+    "file": "43_heat_equation_ftcs_diffusion_and_stability.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-44",
+    "title": "44 wave equation leapfrog cfl and field limits",
+    "domain": "Numerical methods",
+    "file": "44_wave_equation_leapfrog_cfl_and_field_limits.md",
+    "sources": [
+      "MIT-NUMERICAL-METHODS"
+    ]
+  },
+  {
+    "id": "chapter-45",
+    "title": "Rectangular singular-value decomposition and rank-aware numerical diagnosis",
+    "domain": "Linear algebra",
+    "file": "45_rectangular_svd_one_sided_jacobi_and_rank.md",
+    "sources": [
+      "ZZ-LAPACK"
+    ]
+  },
+  {
+    "id": "chapter-46",
+    "title": "SVD pseudoinverse, minimum norm and scientific identifiability",
+    "domain": "Inverse problems",
+    "file": "46_pseudoinverse_least_squares_identifiability.md",
+    "sources": [
+      "ZZ-LAPACK"
+    ]
+  },
+  {
+    "id": "chapter-47",
+    "title": "Electrostatic Poisson equation, Gauss balance and Dirichlet reconstruction",
+    "domain": "Electrostatics",
+    "file": "47_poisson_electrostatics_finite_difference_gauss_law.md",
+    "sources": [
+      "ZZ-MIT-PDE"
+    ]
+  },
+  {
+    "id": "chapter-48",
+    "title": "Backward Euler and Crank–Nicolson diffusion, stability versus physical accuracy",
+    "domain": "Numerical PDE",
+    "file": "48_implicit_diffusion_stability_and_temporal_resolution.md",
+    "sources": [
+      "ZZ-MIT-PDE"
+    ]
+  }
+]

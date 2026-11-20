@@ -1,0 +1,10 @@
+{
+  "nodes": [
+    {
+      "manifest": "nodes/mathematics-physics-atlas/atlas_manifest.json",
+      "manifest_sha256": "20fd77a4ac5aaf25e5f58697eaf1166cba10b63bc10f87592e5b17119a002da3",
+      "node_id": "mathematics-physics-atlas"
+    }
+  ],
+  "schema": "atlas.registry/1"
+}

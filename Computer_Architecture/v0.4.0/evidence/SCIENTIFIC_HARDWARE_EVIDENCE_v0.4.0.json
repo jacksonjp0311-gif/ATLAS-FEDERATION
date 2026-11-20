@@ -1,0 +1,15 @@
+{
+  "schema": "atlas.computer-v04-science-hardware-gates/1",
+  "software_reference": "targeted and independent finite verification pending source/fresh complete federation release",
+  "physical_CPU_fabrication": false,
+  "authenticated_firmware_signature": false,
+  "secure_boot_hardware_root_of_trust": false,
+  "characterized_gate_propagation_delay": false,
+  "measured_device_noise_margin": false,
+  "physical_RAM_retention_and_failure_rate": false,
+  "calibrated_semiconductor_process_data": false,
+  "independent_expert_scientific_review": false,
+  "authenticated_original_publisher_documents": 0,
+  "source_and_software_provenance": "author-created; exact hash local consistency, not third-party identity",
+  "remaining_acceptance": "HOLD"
+}

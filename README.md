@@ -52,13 +52,16 @@ Created by **James Paul Jackson**. ATLAS Federation continues the original **ATL
 
 ## Domain directory
 
-The links below lead to **20 domain folders currently published in this repository**. They are grouped for navigation; the original research roadmap retains its own ordering. A published folder can contain multiple historical editions, and its presence alone does not establish completeness or scientific acceptance.
+The links below lead to **24 domain folders in this public source mirror**. They are grouped for navigation; the original research roadmap retains its own ordering. A folder can contain preserved historical editions or a frozen reference subset. Its presence alone does not establish completeness or scientific acceptance.
 
 ### Foundations, reasoning, and intelligent systems
 
 | Domain | Browse source | Read first |
 | :--- | :--- | :--- |
 | Measurement | [Measurement](Measurement/) | [Release scope](Measurement/V1_Release_Scope_rc1.md) |
+| Mathematics and fundamental physics | [Mathematics &amp; Physics](Mathematics_Physics/) | [Edition directory](Mathematics_Physics/README.md) |
+| Signal | [Signal](Signal/) | [Preserved reference guide](Signal/README.md) |
+| Cymatics | [Cymatics](Cymatics/) | [Preserved reference guide](Cymatics/README.md) |
 | Causal reasoning | [Causal](Causal/) | [Reference guide](Causal/Causal_Reference_Guide_v1.0.0.md) |
 | Control | [Control](Control/) | [Research editions](Control/) |
 | Agents | [Agent](Agent/) | [Reference guide](Agent/Agent_Reference_Guide_v1.0.0.md) |
@@ -81,6 +84,7 @@ The links below lead to **20 domain folders currently published in this reposito
 
 | Domain | Browse source | Read first |
 | :--- | :--- | :--- |
+| Computer architecture and digital hardware | [Computer Architecture](Computer_Architecture/) | [Edition directory](Computer_Architecture/README.md) |
 | Software design patterns | [Software Design Patterns](Software_Design_Patterns/) | [v0.1.0 notes](Software_Design_Patterns/README_v0.1.0.md) |
 | Distributed systems | [Distributed Systems](Distributed_Systems/) | [Scoped v1.0.0 notes](Distributed_Systems/README_v1.0.0.md) |
 | Cryptographic protocols | [Cryptographic Protocols](Cryptographic_Protocols/) | [Scoped v1.0.0 notes](Cryptographic_Protocols/README_v1.0.0.md) |
@@ -89,7 +93,9 @@ The links below lead to **20 domain folders currently published in this reposito
 | Database optimization | [Database Optimization](Database_Optimization/) | [Scoped v1.0.0 notes](Database_Optimization/README_v1.0.0.md) |
 | Compiler design · **active** | [Compiler Design](Compiler_Design/) | [v0.2.0 notes](Compiler_Design/README_v0.2.0.md) |
 
-The **24-node canonical checkpoint** also includes Computer Architecture / Digital Hardware, Cymatics, Mathematics / Physics, and Signal. Their corresponding domain directories are not yet present in this public mirror. The separate [Signal Atlas research project](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) is available publicly; it is not a replacement for the federation's exact historical Signal node.
+These folders provide browsable material corresponding to the **24-node canonical checkpoint**. Computer Architecture and Mathematics / Physics include versioned source roots and historical snapshots. Signal and Cymatics preserve the federation's frozen reference subsets; they are not complete standalone upstream applications. The [four-domain publication manifest](evidence/publication/four-domains-2026-11-20-manifest.json) records exact original paths, hashes, and excluded files. The [publication checks](evidence/publication/four-domains-2026-11-20-checks.json) document the selected test results and remaining historical-test limitations.
+
+The separate [Signal Atlas research project](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS) develops research amortization. Its current repository and this federation's historical [Signal reference subset](Signal/) have distinct provenance. The full original federation archive remains unpublished; a separately identified public derivative is being prepared subject to the remaining audit and rights holds. See [publication status](PUBLICATION_STATUS.md).
 
 ### Federation resources
 

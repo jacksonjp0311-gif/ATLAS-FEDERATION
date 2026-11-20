@@ -1,0 +1,1055 @@
+{
+  "schema": "atlas.context/1",
+  "request": {
+    "question": "NOAA GOES",
+    "node_ids": [
+      "signal-atlas"
+    ],
+    "max_context_bytes": 32768,
+    "limit": 8
+  },
+  "request_sha256": "e88f3ab3071588f1feb90cc94295f29d85a7029ff8f601ffd06056b875c6bd90",
+  "registry_revision": "e3339d5226926498bc5b299d2a07a430944dd67dd471aaf49e598ba28f8429d0",
+  "node_versions": {
+    "signal-atlas": {
+      "software_version": "1.0",
+      "contract_version": "1.0",
+      "corpus_revision": "ea57201fc08d48cb92a0752bd0714f2a5ba146fd89535410134b4ff66e1d252d",
+      "index_revision": "bm25-fields-1",
+      "evidence_maturity": "legacy imported; upstream labels preserved without new scientific review"
+    }
+  },
+  "policy_version": "whole-evidence-unit-1",
+  "status": "context_available",
+  "evidence_sufficiency": "not_assessed",
+  "selected_roots": [
+    {
+      "record_id": "signal-atlas:claim:C-082",
+      "revision": "65f1ad567d626748785e4e18bbcb0f95a75ddc60e766e9c5c7874246f9da1116"
+    },
+    {
+      "record_id": "signal-atlas:claim:C-069",
+      "revision": "61bdda69c8208e2f5913a16efb06d2cf5b1298a676fa2cab9692465644f6b568"
+    },
+    {
+      "record_id": "signal-atlas:claim:C-059",
+      "revision": "35257ebb587d6be69372053daebd53fc3ff5a09bdd48290dffd427346a3a81b5"
+    }
+  ],
+  "dependencies": [
+    {
+      "record_id": "signal-atlas:claim:C-059",
+      "revision": "35257ebb587d6be69372053daebd53fc3ff5a09bdd48290dffd427346a3a81b5"
+    },
+    {
+      "record_id": "signal-atlas:claim:C-069",
+      "revision": "61bdda69c8208e2f5913a16efb06d2cf5b1298a676fa2cab9692465644f6b568"
+    },
+    {
+      "record_id": "signal-atlas:claim:C-082",
+      "revision": "65f1ad567d626748785e4e18bbcb0f95a75ddc60e766e9c5c7874246f9da1116"
+    },
+    {
+      "record_id": "signal-atlas:source_card:SRC-115",
+      "revision": "efba0e888f7eaea00a57cee6a8b013e7d4507280ac83fb3ceec3e955ba73a55f"
+    },
+    {
+      "record_id": "signal-atlas:source_card:SRC-133",
+      "revision": "35546fc5c630a72f2a5a54f2403076e77daf74a054cc6e360d7dda25ed77526a"
+    },
+    {
+      "record_id": "signal-atlas:source_card:SRC-134",
+      "revision": "54b1bc21a2090943146bf168b721d5dd275a3e721df0ae7ff53badd29edaa5be"
+    },
+    {
+      "record_id": "signal-atlas:source_card:SRC-152",
+      "revision": "5410d3f2684231f3828316a329cc77627aed10808b40f52fc21955f7ba75400e"
+    }
+  ],
+  "payload": {
+    "notice": "Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.",
+    "records": [
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "dataset-limitation",
+          "equation": "",
+          "limitations": [
+            "Only source-landscape/abstract review; not independent confirmation of all underlying details."
+          ],
+          "tags": [],
+          "text": "Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "source-attributed"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "C-059",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "dataset-limitation",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "claim",
+            "limitations": "Only source-landscape/abstract review; not independent confirmation of all underlying details.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "C-059",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "72ec1a96dad642df297a937324caefd434fff684",
+              "snapshot_sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051"
+            },
+            "record_locator": {
+              "position": "line:59",
+              "upstream_file": "data/claims.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl"
+            },
+            "record_uid": "signal-atlas:claim:C-059",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-115",
+                "source_uid": "signal-atlas:source:SRC-115",
+                "title": "NOAA Solar Cycle Progression and observed indices documentation",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-115",
+                  "language": "en",
+                  "publisher": "NOAA SWPC",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA Solar Cycle Progression and observed indices documentation",
+                  "topics": [
+                    "solar radio flux",
+                    "dataset",
+                    "solar cycle"
+                  ],
+                  "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression"
+                },
+                "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.",
+            "title": "C-059",
+            "upstream_record": {
+              "claim": "Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.",
+              "claim_type": "dataset-limitation",
+              "evidence_status": "source-attributed",
+              "id": "C-059",
+              "notes": "Only source-landscape/abstract review; not independent confirmation of all underlying details.",
+              "review_date": "2026-11-02",
+              "source_ids": [
+                "SRC-115"
+              ]
+            },
+            "upstream_status": "source-attributed"
+          }
+        },
+        "record_id": "signal-atlas:claim:C-059",
+        "revision": "35257ebb587d6be69372053daebd53fc3ff5a09bdd48290dffd427346a3a81b5",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "signal-atlas:source_card:SRC-115",
+            "revision": "efba0e888f7eaea00a57cee6a8b013e7d4507280ac83fb3ceec3e955ba73a55f"
+          }
+        ],
+        "status": "active",
+        "title": "C-059",
+        "type": "claim"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "science-application",
+          "equation": "",
+          "limitations": [
+            "Only source-landscape/abstract review; not independent confirmation of all underlying details."
+          ],
+          "tags": [],
+          "text": "NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "source-attributed"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "C-069",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "science-application",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "claim",
+            "limitations": "Only source-landscape/abstract review; not independent confirmation of all underlying details.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "C-069",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "72ec1a96dad642df297a937324caefd434fff684",
+              "snapshot_sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051"
+            },
+            "record_locator": {
+              "position": "line:69",
+              "upstream_file": "data/claims.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl"
+            },
+            "record_uid": "signal-atlas:claim:C-069",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-133",
+                "source_uid": "signal-atlas:source:SRC-133",
+                "title": "NOAA wind-profiling radar research instruments",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "technology",
+                  "id": "SRC-133",
+                  "language": "en",
+                  "publisher": "NOAA Physical Sciences Laboratory",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA wind-profiling radar research instruments",
+                  "topics": [
+                    "radar",
+                    "hardware",
+                    "atmospheric science"
+                  ],
+                  "url": "https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html"
+                },
+                "url": "https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html"
+              },
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-134",
+                "source_uid": "signal-atlas:source:SRC-134",
+                "title": "NOAA National Weather Service radar teaching page",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-134",
+                  "language": "en",
+                  "publisher": "NOAA National Weather Service",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Public educational explanation of radar pulses and echoes in weather measurement.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA National Weather Service radar teaching page",
+                  "topics": [
+                    "radar",
+                    "meteorology",
+                    "teaching"
+                  ],
+                  "url": "https://www.weather.gov/grr/DidYouKnowRadar"
+                },
+                "url": "https://www.weather.gov/grr/DidYouKnowRadar"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.",
+            "title": "C-069",
+            "upstream_record": {
+              "claim": "NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.",
+              "claim_type": "science-application",
+              "evidence_status": "source-attributed",
+              "id": "C-069",
+              "notes": "Only source-landscape/abstract review; not independent confirmation of all underlying details.",
+              "review_date": "2026-11-02",
+              "source_ids": [
+                "SRC-133",
+                "SRC-134"
+              ]
+            },
+            "upstream_status": "source-attributed"
+          }
+        },
+        "record_id": "signal-atlas:claim:C-069",
+        "revision": "61bdda69c8208e2f5913a16efb06d2cf5b1298a676fa2cab9692465644f6b568",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "signal-atlas:source_card:SRC-133",
+            "revision": "35546fc5c630a72f2a5a54f2403076e77daf74a054cc6e360d7dda25ed77526a"
+          },
+          {
+            "record_id": "signal-atlas:source_card:SRC-134",
+            "revision": "54b1bc21a2090943146bf168b721d5dd275a3e721df0ae7ff53badd29edaa5be"
+          }
+        ],
+        "status": "active",
+        "title": "C-069",
+        "type": "claim"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "dataset-structure-and-derived-join",
+          "equation": "",
+          "limitations": [
+            "Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology."
+          ],
+          "tags": [],
+          "text": "The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "Preserved upstream labels are not independently reviewed by the common-contract migration."
+          ],
+          "locators": [],
+          "origin": "editorial",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "upstream_status": "artifact-derived"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "C-082",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "dataset-structure-and-derived-join",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "claim",
+            "limitations": "Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "C-082",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "72ec1a96dad642df297a937324caefd434fff684",
+              "snapshot_sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051"
+            },
+            "record_locator": {
+              "position": "line:82",
+              "upstream_file": "data/claims.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl"
+            },
+            "record_uid": "signal-atlas:claim:C-082",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "raw link and provenance retained; reuse terms not independently reviewed",
+                "source_id": "SRC-152",
+                "source_uid": "signal-atlas:source:SRC-152",
+                "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+                "upstream_record": {
+                  "added_at": "2026-11-03",
+                  "checked_at": "2026-11-03",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-152",
+                  "language": "en",
+                  "publisher": "NOAA Space Weather Prediction Center",
+                  "research_batch": "v1.0-observations",
+                  "review_status": "dated dataset snapshot included",
+                  "rights": "raw link and provenance retained; reuse terms not independently reviewed",
+                  "snapshot_status": "dataset-snapshot-included",
+                  "source_type": "official observation product",
+                  "summary": "Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.",
+                  "time_scope": "rolling six-hour product captured 2026-11-03 UTC",
+                  "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+                  "topics": [
+                    "GOES",
+                    "solar x-ray",
+                    "space weather",
+                    "observations",
+                    "time series"
+                  ],
+                  "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+                },
+                "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [],
+            "text": "The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.",
+            "title": "C-082",
+            "upstream_record": {
+              "claim": "The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.",
+              "claim_type": "dataset-structure-and-derived-join",
+              "evidence_status": "artifact-derived",
+              "id": "C-082",
+              "notes": "Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology.",
+              "review_date": "2026-11-03",
+              "source_ids": [
+                "SRC-152"
+              ]
+            },
+            "upstream_status": "artifact-derived"
+          }
+        },
+        "record_id": "signal-atlas:claim:C-082",
+        "revision": "65f1ad567d626748785e4e18bbcb0f95a75ddc60e766e9c5c7874246f9da1116",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [
+          {
+            "record_id": "signal-atlas:source_card:SRC-152",
+            "revision": "5410d3f2684231f3828316a329cc77627aed10808b40f52fc21955f7ba75400e"
+          }
+        ],
+        "status": "active",
+        "title": "C-082",
+        "type": "claim"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "science",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [
+            "solar radio flux",
+            "dataset",
+            "solar cycle"
+          ],
+          "text": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "indexed-primary-landing-page"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "SRC-115",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "science",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "SRC-115",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+              "snapshot_sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580"
+            },
+            "record_locator": {
+              "position": "line:114",
+              "upstream_file": "data/sources.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl"
+            },
+            "record_uid": "signal-atlas:source_card:SRC-115",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-115",
+                "source_uid": "signal-atlas:source:SRC-115",
+                "title": "NOAA Solar Cycle Progression and observed indices documentation",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-115",
+                  "language": "en",
+                  "publisher": "NOAA SWPC",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA Solar Cycle Progression and observed indices documentation",
+                  "topics": [
+                    "solar radio flux",
+                    "dataset",
+                    "solar cycle"
+                  ],
+                  "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression"
+                },
+                "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "solar radio flux",
+              "dataset",
+              "solar cycle"
+            ],
+            "text": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+            "title": "NOAA Solar Cycle Progression and observed indices documentation",
+            "upstream_record": {
+              "added_at": "2026-11-02",
+              "checked_at": "2026-11-02",
+              "country": "United States",
+              "domain": "science",
+              "id": "SRC-115",
+              "language": "en",
+              "publisher": "NOAA SWPC",
+              "research_batch": "2026-11-02-E",
+              "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+              "review_status": "indexed-primary-landing-page",
+              "rights": "link-only; original page/media rights not independently cleared",
+              "snapshot_status": "catalog-card-only",
+              "source_type": "official",
+              "summary": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+              "time_scope": "science/technical reference",
+              "title": "NOAA Solar Cycle Progression and observed indices documentation",
+              "topics": [
+                "solar radio flux",
+                "dataset",
+                "solar cycle"
+              ],
+              "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression"
+            },
+            "upstream_status": "indexed-primary-landing-page"
+          }
+        },
+        "record_id": "signal-atlas:source_card:SRC-115",
+        "revision": "efba0e888f7eaea00a57cee6a8b013e7d4507280ac83fb3ceec3e955ba73a55f",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NOAA Solar Cycle Progression and observed indices documentation",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "technology",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [
+            "radar",
+            "hardware",
+            "atmospheric science"
+          ],
+          "text": "Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "indexed-primary-landing-page"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "SRC-133",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "technology",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "SRC-133",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+              "snapshot_sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580"
+            },
+            "record_locator": {
+              "position": "line:132",
+              "upstream_file": "data/sources.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl"
+            },
+            "record_uid": "signal-atlas:source_card:SRC-133",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-133",
+                "source_uid": "signal-atlas:source:SRC-133",
+                "title": "NOAA wind-profiling radar research instruments",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "technology",
+                  "id": "SRC-133",
+                  "language": "en",
+                  "publisher": "NOAA Physical Sciences Laboratory",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA wind-profiling radar research instruments",
+                  "topics": [
+                    "radar",
+                    "hardware",
+                    "atmospheric science"
+                  ],
+                  "url": "https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html"
+                },
+                "url": "https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "radar",
+              "hardware",
+              "atmospheric science"
+            ],
+            "text": "Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.",
+            "title": "NOAA wind-profiling radar research instruments",
+            "upstream_record": {
+              "added_at": "2026-11-02",
+              "checked_at": "2026-11-02",
+              "country": "United States",
+              "domain": "technology",
+              "id": "SRC-133",
+              "language": "en",
+              "publisher": "NOAA Physical Sciences Laboratory",
+              "research_batch": "2026-11-02-E",
+              "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+              "review_status": "indexed-primary-landing-page",
+              "rights": "link-only; original page/media rights not independently cleared",
+              "snapshot_status": "catalog-card-only",
+              "source_type": "official",
+              "summary": "Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.",
+              "time_scope": "science/technical reference",
+              "title": "NOAA wind-profiling radar research instruments",
+              "topics": [
+                "radar",
+                "hardware",
+                "atmospheric science"
+              ],
+              "url": "https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html"
+            },
+            "upstream_status": "indexed-primary-landing-page"
+          }
+        },
+        "record_id": "signal-atlas:source_card:SRC-133",
+        "revision": "35546fc5c630a72f2a5a54f2403076e77daf74a054cc6e360d7dda25ed77526a",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NOAA wind-profiling radar research instruments",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "science",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [
+            "radar",
+            "meteorology",
+            "teaching"
+          ],
+          "text": "Public educational explanation of radar pulses and echoes in weather measurement.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "indexed-primary-landing-page"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "SRC-134",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "science",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "SRC-134",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+              "snapshot_sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580"
+            },
+            "record_locator": {
+              "position": "line:133",
+              "upstream_file": "data/sources.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl"
+            },
+            "record_uid": "signal-atlas:source_card:SRC-134",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "link-only; original page/media rights not independently cleared",
+                "source_id": "SRC-134",
+                "source_uid": "signal-atlas:source:SRC-134",
+                "title": "NOAA National Weather Service radar teaching page",
+                "upstream_record": {
+                  "added_at": "2026-11-02",
+                  "checked_at": "2026-11-02",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-134",
+                  "language": "en",
+                  "publisher": "NOAA National Weather Service",
+                  "research_batch": "2026-11-02-E",
+                  "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+                  "review_status": "indexed-primary-landing-page",
+                  "rights": "link-only; original page/media rights not independently cleared",
+                  "snapshot_status": "catalog-card-only",
+                  "source_type": "official",
+                  "summary": "Public educational explanation of radar pulses and echoes in weather measurement.",
+                  "time_scope": "science/technical reference",
+                  "title": "NOAA National Weather Service radar teaching page",
+                  "topics": [
+                    "radar",
+                    "meteorology",
+                    "teaching"
+                  ],
+                  "url": "https://www.weather.gov/grr/DidYouKnowRadar"
+                },
+                "url": "https://www.weather.gov/grr/DidYouKnowRadar"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "radar",
+              "meteorology",
+              "teaching"
+            ],
+            "text": "Public educational explanation of radar pulses and echoes in weather measurement.",
+            "title": "NOAA National Weather Service radar teaching page",
+            "upstream_record": {
+              "added_at": "2026-11-02",
+              "checked_at": "2026-11-02",
+              "country": "United States",
+              "domain": "science",
+              "id": "SRC-134",
+              "language": "en",
+              "publisher": "NOAA National Weather Service",
+              "research_batch": "2026-11-02-E",
+              "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction",
+              "review_status": "indexed-primary-landing-page",
+              "rights": "link-only; original page/media rights not independently cleared",
+              "snapshot_status": "catalog-card-only",
+              "source_type": "official",
+              "summary": "Public educational explanation of radar pulses and echoes in weather measurement.",
+              "time_scope": "science/technical reference",
+              "title": "NOAA National Weather Service radar teaching page",
+              "topics": [
+                "radar",
+                "meteorology",
+                "teaching"
+              ],
+              "url": "https://www.weather.gov/grr/DidYouKnowRadar"
+            },
+            "upstream_status": "indexed-primary-landing-page"
+          }
+        },
+        "record_id": "signal-atlas:source_card:SRC-134",
+        "revision": "54b1bc21a2090943146bf168b721d5dd275a3e721df0ae7ff53badd29edaa5be",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "NOAA National Weather Service radar teaching page",
+        "type": "source"
+      },
+      {
+        "content": {
+          "applicability": [],
+          "assumptions": [],
+          "domain": "science",
+          "equation": "",
+          "limitations": [
+            "See original record and node scope."
+          ],
+          "tags": [
+            "GOES",
+            "solar x-ray",
+            "space weather",
+            "observations",
+            "time series"
+          ],
+          "text": "Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.",
+          "uncertainty": [],
+          "units": []
+        },
+        "evidence": {
+          "gaps": [
+            "No primary-source check performed by this migration."
+          ],
+          "locators": [],
+          "origin": "bibliographic_metadata",
+          "review_status": "imported_unreviewed",
+          "upstream_labels": {
+            "status": "dated dataset snapshot included"
+          }
+        },
+        "extensions": {},
+        "node_id": "signal-atlas",
+        "original_id": "SRC-152",
+        "provenance": {
+          "legacy_envelope": {
+            "applicability": null,
+            "domain": "science",
+            "equation": null,
+            "evidence_locator": null,
+            "federation_status": "imported_reference_not_independently_reviewed",
+            "kind": "source_card",
+            "limitations": "See original record and node scope.",
+            "node_id": "signal-atlas",
+            "node_version": "1.0",
+            "original_id": "SRC-152",
+            "provenance": {
+              "captured_at": "2026-11-11",
+              "commit": "234b65fdb4f64add7fa53d5ea8312a63bcf616b4",
+              "git_blob_sha1": "294e2d13fd4cddd6994629f7551ad1d8d9ff0bba",
+              "snapshot_sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580"
+            },
+            "record_locator": {
+              "position": "line:150",
+              "upstream_file": "data/sources.jsonl",
+              "url": "https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl"
+            },
+            "record_uid": "signal-atlas:source_card:SRC-152",
+            "scope_notice": "Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.",
+            "sources": [
+              {
+                "rights": "raw link and provenance retained; reuse terms not independently reviewed",
+                "source_id": "SRC-152",
+                "source_uid": "signal-atlas:source:SRC-152",
+                "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+                "upstream_record": {
+                  "added_at": "2026-11-03",
+                  "checked_at": "2026-11-03",
+                  "country": "United States",
+                  "domain": "science",
+                  "id": "SRC-152",
+                  "language": "en",
+                  "publisher": "NOAA Space Weather Prediction Center",
+                  "research_batch": "v1.0-observations",
+                  "review_status": "dated dataset snapshot included",
+                  "rights": "raw link and provenance retained; reuse terms not independently reviewed",
+                  "snapshot_status": "dataset-snapshot-included",
+                  "source_type": "official observation product",
+                  "summary": "Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.",
+                  "time_scope": "rolling six-hour product captured 2026-11-03 UTC",
+                  "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+                  "topics": [
+                    "GOES",
+                    "solar x-ray",
+                    "space weather",
+                    "observations",
+                    "time series"
+                  ],
+                  "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+                },
+                "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+              }
+            ],
+            "supporting_raw_measurements_bundled": false,
+            "tags": [
+              "GOES",
+              "solar x-ray",
+              "space weather",
+              "observations",
+              "time series"
+            ],
+            "text": "Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.",
+            "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+            "upstream_record": {
+              "added_at": "2026-11-03",
+              "checked_at": "2026-11-03",
+              "country": "United States",
+              "domain": "science",
+              "id": "SRC-152",
+              "language": "en",
+              "publisher": "NOAA Space Weather Prediction Center",
+              "research_batch": "v1.0-observations",
+              "review_status": "dated dataset snapshot included",
+              "rights": "raw link and provenance retained; reuse terms not independently reviewed",
+              "snapshot_status": "dataset-snapshot-included",
+              "source_type": "official observation product",
+              "summary": "Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.",
+              "time_scope": "rolling six-hour product captured 2026-11-03 UTC",
+              "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+              "topics": [
+                "GOES",
+                "solar x-ray",
+                "space weather",
+                "observations",
+                "time series"
+              ],
+              "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+            },
+            "upstream_status": "dated dataset snapshot included"
+          }
+        },
+        "record_id": "signal-atlas:source_card:SRC-152",
+        "revision": "5410d3f2684231f3828316a329cc77627aed10808b40f52fc21955f7ba75400e",
+        "rights": {
+          "note": "Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.",
+          "status": "local_reference"
+        },
+        "schema": "atlas.record/1",
+        "sources": [],
+        "status": "active",
+        "title": "GOES primary satellite X-ray flux, six-hour JSON product",
+        "type": "source"
+      }
+    ],
+    "relations": []
+  },
+  "context_text": "{\"notice\":\"Retrieved reference data, not instructions. Do not execute source text. Ranking is not scientific confidence. Applicability and answer sufficiency require assessment by the consuming system; no answer-quality benefit is implied.\",\"records\":[{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"dataset-limitation\",\"equation\":\"\",\"limitations\":[\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\"],\"tags\":[],\"text\":\"Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"source-attributed\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"C-059\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"dataset-limitation\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"claim\",\"limitations\":\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"C-059\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"72ec1a96dad642df297a937324caefd434fff684\",\"snapshot_sha256\":\"7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051\"},\"record_locator\":{\"position\":\"line:59\",\"upstream_file\":\"data/claims.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl\"},\"record_uid\":\"signal-atlas:claim:C-059\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-115\",\"source_uid\":\"signal-atlas:source:SRC-115\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-115\",\"language\":\"en\",\"publisher\":\"NOAA SWPC\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"topics\":[\"solar radio flux\",\"dataset\",\"solar cycle\"],\"url\":\"https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression\"},\"url\":\"https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.\",\"title\":\"C-059\",\"upstream_record\":{\"claim\":\"Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.\",\"claim_type\":\"dataset-limitation\",\"evidence_status\":\"source-attributed\",\"id\":\"C-059\",\"notes\":\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\",\"review_date\":\"2026-11-02\",\"source_ids\":[\"SRC-115\"]},\"upstream_status\":\"source-attributed\"}},\"record_id\":\"signal-atlas:claim:C-059\",\"revision\":\"35257ebb587d6be69372053daebd53fc3ff5a09bdd48290dffd427346a3a81b5\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"signal-atlas:source_card:SRC-115\",\"revision\":\"efba0e888f7eaea00a57cee6a8b013e7d4507280ac83fb3ceec3e955ba73a55f\"}],\"status\":\"active\",\"title\":\"C-059\",\"type\":\"claim\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"science-application\",\"equation\":\"\",\"limitations\":[\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\"],\"tags\":[],\"text\":\"NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"source-attributed\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"C-069\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"science-application\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"claim\",\"limitations\":\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"C-069\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"72ec1a96dad642df297a937324caefd434fff684\",\"snapshot_sha256\":\"7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051\"},\"record_locator\":{\"position\":\"line:69\",\"upstream_file\":\"data/claims.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl\"},\"record_uid\":\"signal-atlas:claim:C-069\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-133\",\"source_uid\":\"signal-atlas:source:SRC-133\",\"title\":\"NOAA wind-profiling radar research instruments\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"technology\",\"id\":\"SRC-133\",\"language\":\"en\",\"publisher\":\"NOAA Physical Sciences Laboratory\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA wind-profiling radar research instruments\",\"topics\":[\"radar\",\"hardware\",\"atmospheric science\"],\"url\":\"https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html\"},\"url\":\"https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html\"},{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-134\",\"source_uid\":\"signal-atlas:source:SRC-134\",\"title\":\"NOAA National Weather Service radar teaching page\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-134\",\"language\":\"en\",\"publisher\":\"NOAA National Weather Service\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Public educational explanation of radar pulses and echoes in weather measurement.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA National Weather Service radar teaching page\",\"topics\":[\"radar\",\"meteorology\",\"teaching\"],\"url\":\"https://www.weather.gov/grr/DidYouKnowRadar\"},\"url\":\"https://www.weather.gov/grr/DidYouKnowRadar\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.\",\"title\":\"C-069\",\"upstream_record\":{\"claim\":\"NOAA illustrates atmospheric wind profiling and weather radar as legitimate scientific uses of electromagnetic sensing.\",\"claim_type\":\"science-application\",\"evidence_status\":\"source-attributed\",\"id\":\"C-069\",\"notes\":\"Only source-landscape/abstract review; not independent confirmation of all underlying details.\",\"review_date\":\"2026-11-02\",\"source_ids\":[\"SRC-133\",\"SRC-134\"]},\"upstream_status\":\"source-attributed\"}},\"record_id\":\"signal-atlas:claim:C-069\",\"revision\":\"61bdda69c8208e2f5913a16efb06d2cf5b1298a676fa2cab9692465644f6b568\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"signal-atlas:source_card:SRC-133\",\"revision\":\"35546fc5c630a72f2a5a54f2403076e77daf74a054cc6e360d7dda25ed77526a\"},{\"record_id\":\"signal-atlas:source_card:SRC-134\",\"revision\":\"54b1bc21a2090943146bf168b721d5dd275a3e721df0ae7ff53badd29edaa5be\"}],\"status\":\"active\",\"title\":\"C-069\",\"type\":\"claim\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"dataset-structure-and-derived-join\",\"equation\":\"\",\"limitations\":[\"Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology.\"],\"tags\":[],\"text\":\"The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"Preserved upstream labels are not independently reviewed by the common-contract migration.\"],\"locators\":[],\"origin\":\"editorial\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"federation_status\":\"imported_reference_not_independently_reviewed\",\"upstream_status\":\"artifact-derived\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"C-082\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"dataset-structure-and-derived-join\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"claim\",\"limitations\":\"Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"C-082\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"72ec1a96dad642df297a937324caefd434fff684\",\"snapshot_sha256\":\"7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051\"},\"record_locator\":{\"position\":\"line:82\",\"upstream_file\":\"data/claims.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/claims.jsonl\"},\"record_uid\":\"signal-atlas:claim:C-082\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"raw link and provenance retained; reuse terms not independently reviewed\",\"source_id\":\"SRC-152\",\"source_uid\":\"signal-atlas:source:SRC-152\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"upstream_record\":{\"added_at\":\"2026-11-03\",\"checked_at\":\"2026-11-03\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-152\",\"language\":\"en\",\"publisher\":\"NOAA Space Weather Prediction Center\",\"research_batch\":\"v1.0-observations\",\"review_status\":\"dated dataset snapshot included\",\"rights\":\"raw link and provenance retained; reuse terms not independently reviewed\",\"snapshot_status\":\"dataset-snapshot-included\",\"source_type\":\"official observation product\",\"summary\":\"Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.\",\"time_scope\":\"rolling six-hour product captured 2026-11-03 UTC\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"topics\":[\"GOES\",\"solar x-ray\",\"space weather\",\"observations\",\"time series\"],\"url\":\"https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json\"},\"url\":\"https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[],\"text\":\"The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.\",\"title\":\"C-082\",\"upstream_record\":{\"claim\":\"The frozen NOAA GOES X-ray capture contains two energy-band labels and can be paired by shared timestamp and satellite without dropping or duplicating any retained channel rows.\",\"claim_type\":\"dataset-structure-and-derived-join\",\"evidence_status\":\"artifact-derived\",\"id\":\"C-082\",\"notes\":\"Checked against this snapshot and deterministic pairing code; applies to this capture, not cadence or climatology.\",\"review_date\":\"2026-11-03\",\"source_ids\":[\"SRC-152\"]},\"upstream_status\":\"artifact-derived\"}},\"record_id\":\"signal-atlas:claim:C-082\",\"revision\":\"65f1ad567d626748785e4e18bbcb0f95a75ddc60e766e9c5c7874246f9da1116\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[{\"record_id\":\"signal-atlas:source_card:SRC-152\",\"revision\":\"5410d3f2684231f3828316a329cc77627aed10808b40f52fc21955f7ba75400e\"}],\"status\":\"active\",\"title\":\"C-082\",\"type\":\"claim\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"science\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[\"solar radio flux\",\"dataset\",\"solar cycle\"],\"text\":\"Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"indexed-primary-landing-page\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"SRC-115\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"science\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"SRC-115\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"294e2d13fd4cddd6994629f7551ad1d8d9ff0bba\",\"snapshot_sha256\":\"4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580\"},\"record_locator\":{\"position\":\"line:114\",\"upstream_file\":\"data/sources.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl\"},\"record_uid\":\"signal-atlas:source_card:SRC-115\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-115\",\"source_uid\":\"signal-atlas:source:SRC-115\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-115\",\"language\":\"en\",\"publisher\":\"NOAA SWPC\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"topics\":[\"solar radio flux\",\"dataset\",\"solar cycle\"],\"url\":\"https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression\"},\"url\":\"https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"solar radio flux\",\"dataset\",\"solar cycle\"],\"text\":\"Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-115\",\"language\":\"en\",\"publisher\":\"NOAA SWPC\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"topics\":[\"solar radio flux\",\"dataset\",\"solar cycle\"],\"url\":\"https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression\"},\"upstream_status\":\"indexed-primary-landing-page\"}},\"record_id\":\"signal-atlas:source_card:SRC-115\",\"revision\":\"efba0e888f7eaea00a57cee6a8b013e7d4507280ac83fb3ceec3e955ba73a55f\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NOAA Solar Cycle Progression and observed indices documentation\",\"type\":\"source\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"technology\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[\"radar\",\"hardware\",\"atmospheric science\"],\"text\":\"Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"indexed-primary-landing-page\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"SRC-133\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"technology\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"SRC-133\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"294e2d13fd4cddd6994629f7551ad1d8d9ff0bba\",\"snapshot_sha256\":\"4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580\"},\"record_locator\":{\"position\":\"line:132\",\"upstream_file\":\"data/sources.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl\"},\"record_uid\":\"signal-atlas:source_card:SRC-133\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-133\",\"source_uid\":\"signal-atlas:source:SRC-133\",\"title\":\"NOAA wind-profiling radar research instruments\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"technology\",\"id\":\"SRC-133\",\"language\":\"en\",\"publisher\":\"NOAA Physical Sciences Laboratory\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA wind-profiling radar research instruments\",\"topics\":[\"radar\",\"hardware\",\"atmospheric science\"],\"url\":\"https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html\"},\"url\":\"https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"radar\",\"hardware\",\"atmospheric science\"],\"text\":\"Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.\",\"title\":\"NOAA wind-profiling radar research instruments\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"technology\",\"id\":\"SRC-133\",\"language\":\"en\",\"publisher\":\"NOAA Physical Sciences Laboratory\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Official engineering photos and public explanation of atmospheric radar wind profilers; visual reuse rights are not assumed.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA wind-profiling radar research instruments\",\"topics\":[\"radar\",\"hardware\",\"atmospheric science\"],\"url\":\"https://psl.noaa.gov/data/obs/instruments/WindProfilerDescription.html\"},\"upstream_status\":\"indexed-primary-landing-page\"}},\"record_id\":\"signal-atlas:source_card:SRC-133\",\"revision\":\"35546fc5c630a72f2a5a54f2403076e77daf74a054cc6e360d7dda25ed77526a\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NOAA wind-profiling radar research instruments\",\"type\":\"source\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"science\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[\"radar\",\"meteorology\",\"teaching\"],\"text\":\"Public educational explanation of radar pulses and echoes in weather measurement.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"indexed-primary-landing-page\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"SRC-134\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"science\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"SRC-134\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"294e2d13fd4cddd6994629f7551ad1d8d9ff0bba\",\"snapshot_sha256\":\"4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580\"},\"record_locator\":{\"position\":\"line:133\",\"upstream_file\":\"data/sources.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl\"},\"record_uid\":\"signal-atlas:source_card:SRC-134\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"link-only; original page/media rights not independently cleared\",\"source_id\":\"SRC-134\",\"source_uid\":\"signal-atlas:source:SRC-134\",\"title\":\"NOAA National Weather Service radar teaching page\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-134\",\"language\":\"en\",\"publisher\":\"NOAA National Weather Service\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Public educational explanation of radar pulses and echoes in weather measurement.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA National Weather Service radar teaching page\",\"topics\":[\"radar\",\"meteorology\",\"teaching\"],\"url\":\"https://www.weather.gov/grr/DidYouKnowRadar\"},\"url\":\"https://www.weather.gov/grr/DidYouKnowRadar\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"radar\",\"meteorology\",\"teaching\"],\"text\":\"Public educational explanation of radar pulses and echoes in weather measurement.\",\"title\":\"NOAA National Weather Service radar teaching page\",\"upstream_record\":{\"added_at\":\"2026-11-02\",\"checked_at\":\"2026-11-02\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-134\",\"language\":\"en\",\"publisher\":\"NOAA National Weather Service\",\"research_batch\":\"2026-11-02-E\",\"review_scope\":\"Official or scholarly record and public summary reviewed; not independent full-text reproduction\",\"review_status\":\"indexed-primary-landing-page\",\"rights\":\"link-only; original page/media rights not independently cleared\",\"snapshot_status\":\"catalog-card-only\",\"source_type\":\"official\",\"summary\":\"Public educational explanation of radar pulses and echoes in weather measurement.\",\"time_scope\":\"science/technical reference\",\"title\":\"NOAA National Weather Service radar teaching page\",\"topics\":[\"radar\",\"meteorology\",\"teaching\"],\"url\":\"https://www.weather.gov/grr/DidYouKnowRadar\"},\"upstream_status\":\"indexed-primary-landing-page\"}},\"record_id\":\"signal-atlas:source_card:SRC-134\",\"revision\":\"54b1bc21a2090943146bf168b721d5dd275a3e721df0ae7ff53badd29edaa5be\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"NOAA National Weather Service radar teaching page\",\"type\":\"source\"},{\"content\":{\"applicability\":[],\"assumptions\":[],\"domain\":\"science\",\"equation\":\"\",\"limitations\":[\"See original record and node scope.\"],\"tags\":[\"GOES\",\"solar x-ray\",\"space weather\",\"observations\",\"time series\"],\"text\":\"Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.\",\"uncertainty\":[],\"units\":[]},\"evidence\":{\"gaps\":[\"No primary-source check performed by this migration.\"],\"locators\":[],\"origin\":\"bibliographic_metadata\",\"review_status\":\"imported_unreviewed\",\"upstream_labels\":{\"status\":\"dated dataset snapshot included\"}},\"extensions\":{},\"node_id\":\"signal-atlas\",\"original_id\":\"SRC-152\",\"provenance\":{\"legacy_envelope\":{\"applicability\":null,\"domain\":\"science\",\"equation\":null,\"evidence_locator\":null,\"federation_status\":\"imported_reference_not_independently_reviewed\",\"kind\":\"source_card\",\"limitations\":\"See original record and node scope.\",\"node_id\":\"signal-atlas\",\"node_version\":\"1.0\",\"original_id\":\"SRC-152\",\"provenance\":{\"captured_at\":\"2026-11-11\",\"commit\":\"234b65fdb4f64add7fa53d5ea8312a63bcf616b4\",\"git_blob_sha1\":\"294e2d13fd4cddd6994629f7551ad1d8d9ff0bba\",\"snapshot_sha256\":\"4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580\"},\"record_locator\":{\"position\":\"line:150\",\"upstream_file\":\"data/sources.jsonl\",\"url\":\"https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS/blob/234b65fdb4f64add7fa53d5ea8312a63bcf616b4/data/sources.jsonl\"},\"record_uid\":\"signal-atlas:source_card:SRC-152\",\"scope_notice\":\"Included-file and dataset references inside upstream_record describe the original Atlas, not this reference subset.\",\"sources\":[{\"rights\":\"raw link and provenance retained; reuse terms not independently reviewed\",\"source_id\":\"SRC-152\",\"source_uid\":\"signal-atlas:source:SRC-152\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"upstream_record\":{\"added_at\":\"2026-11-03\",\"checked_at\":\"2026-11-03\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-152\",\"language\":\"en\",\"publisher\":\"NOAA Space Weather Prediction Center\",\"research_batch\":\"v1.0-observations\",\"review_status\":\"dated dataset snapshot included\",\"rights\":\"raw link and provenance retained; reuse terms not independently reviewed\",\"snapshot_status\":\"dataset-snapshot-included\",\"source_type\":\"official observation product\",\"summary\":\"Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.\",\"time_scope\":\"rolling six-hour product captured 2026-11-03 UTC\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"topics\":[\"GOES\",\"solar x-ray\",\"space weather\",\"observations\",\"time series\"],\"url\":\"https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json\"},\"url\":\"https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json\"}],\"supporting_raw_measurements_bundled\":false,\"tags\":[\"GOES\",\"solar x-ray\",\"space weather\",\"observations\",\"time series\"],\"text\":\"Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"upstream_record\":{\"added_at\":\"2026-11-03\",\"checked_at\":\"2026-11-03\",\"country\":\"United States\",\"domain\":\"science\",\"id\":\"SRC-152\",\"language\":\"en\",\"publisher\":\"NOAA Space Weather Prediction Center\",\"research_batch\":\"v1.0-observations\",\"review_status\":\"dated dataset snapshot included\",\"rights\":\"raw link and provenance retained; reuse terms not independently reviewed\",\"snapshot_status\":\"dataset-snapshot-included\",\"source_type\":\"official observation product\",\"summary\":\"Rolling six-hour primary GOES X-ray flux product. The frozen payload preserves timestamps, satellite identifier, band label, flux fields, and provider quality flags.\",\"time_scope\":\"rolling six-hour product captured 2026-11-03 UTC\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"topics\":[\"GOES\",\"solar x-ray\",\"space weather\",\"observations\",\"time series\"],\"url\":\"https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json\"},\"upstream_status\":\"dated dataset snapshot included\"}},\"record_id\":\"signal-atlas:source_card:SRC-152\",\"revision\":\"5410d3f2684231f3828316a329cc77627aed10808b40f52fc21955f7ba75400e\",\"rights\":{\"note\":\"Project-owned reference metadata/paraphrase. Third-party source rights remain separate; no full text mirrored.\",\"status\":\"local_reference\"},\"schema\":\"atlas.record/1\",\"sources\":[],\"status\":\"active\",\"title\":\"GOES primary satellite X-ray flux, six-hour JSON product\",\"type\":\"source\"}],\"relations\":[]}",
+  "context_bytes": 31521,
+  "budget_unit": "utf8_bytes_of_context_text",
+  "exclusions": [
+    {
+      "record_id": "signal-atlas:claim:C-057",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    },
+    {
+      "record_id": "signal-atlas:claim:C-058",
+      "reason": "whole_evidence_unit_exceeds_remaining_budget"
+    }
+  ],
+  "conflicts": [],
+  "routing": {
+    "method": "bm25-fields-1",
+    "fallback_used": false,
+    "live_bitwork_run": false
+  },
+  "missing_information": [
+    "Consumer must assess query coverage and applicability; candidate relevance is not a sufficient answer."
+  ],
+  "package_sha256": "32ae70f786f333c7050e5117f1955cbbbf0bbb21a111a6f848515b7c4f627984"
+}

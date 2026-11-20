@@ -1,0 +1,83 @@
+{
+  "schema": "atlas.publication_checks/1",
+  "date": "2026-11-20",
+  "scope": "Four additional domain source/documentation exports; not a complete federation release",
+  "canonical_original_archive_sha256": "0ca19d26cda186a43ed994b9a2c9bb87b38d90d65a07f4ba4edde3a8ccfafae7",
+  "original_source_files_verified": 1308,
+  "source_manifest_mismatches": [],
+  "static_validation": {
+    "outgoing_files_before_this_receipt": 1314,
+    "outgoing_bytes_before_this_receipt": 45211385,
+    "parsing": {
+      "json_files": 222,
+      "python_ast_files": 226,
+      "jsonl_files": 178,
+      "jsonl_records": 8342
+    },
+    "parse_errors": [],
+    "secret_privacy_patterns": "Private-key markers, known provider-token formats, JWTs, credential-bearing URL/query and quoted credential assignments, email-shaped strings, SSN-shaped strings and selected personal-data assignments. Values are never reported.",
+    "secret_privacy_findings": 0,
+    "unreadable_or_unscanned_entries": 0,
+    "content_review": "Computer Architecture and Mathematics/Physics contain bounded educational CPU and scientific-computing models. Cymatics biological application passages are high-level acoustic assembly/sorting summaries without operational biological protocols. Signal scientific reference records were screened. No actionable biological-dual-use, weapon or exploit instructions identified in this export.",
+    "python_execution_review": "AST imports and execution-call review performed before isolated tests. Dynamic imports observed only for literal standard-library hashlib/math. Receipt-writing oracles and manifest writers were not executed."
+  },
+  "tests": [
+    {
+      "domain": "Computer_Architecture",
+      "edition": "v0.4.0",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_*.py",
+      "isolation": "Exact copy of original current source; all174files match staged edition; files unchanged after testing.",
+      "ran": 251,
+      "passed": 247,
+      "failed": 4,
+      "limitations": [
+        {
+          "file": "tests/test_evidence.py",
+          "line": 17,
+          "assertion": "24 chapters expected, 60 present"
+        },
+        {
+          "file": "tests/test_integrity.py",
+          "line": 27,
+          "assertion": "software_version 0.1.0 expected, 0.4.0 present"
+        },
+        {
+          "file": "tests/test_integrity.py",
+          "line": 43,
+          "assertion": "102 records expected, 253 present"
+        },
+        {
+          "file": "tests/test_integrity.py",
+          "line": 51,
+          "assertion": "6 sources expected, 13 present"
+        }
+      ],
+      "interpretation": "Four preserved v0.1 metadata assertions fail against the v0.4 edition. No functional CPU/model failure was observed. Original tests and science are unchanged."
+    },
+    {
+      "domain": "Mathematics_Physics",
+      "edition": "v1.0.0-rc.1",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test*models.py",
+      "isolation": "Exact copy of original current source; all165files match staged edition; files unchanged after testing.",
+      "ran": 125,
+      "passed": 125,
+      "failed": 0,
+      "limitations": [
+        "Model test family only. Integrity tests requiring shared atlas_forge dependency and receipt-writing scientific oracles were not executed."
+      ]
+    },
+    {
+      "domain": "Cymatics",
+      "validation": "JSON/JSONL parse, source-hash preservation, static safety/privacy review; no standalone executable model test suite represented."
+    },
+    {
+      "domain": "Signal",
+      "validation": "JSON/JSONL parse, source-hash preservation, static safety/privacy review; no standalone executable model test suite represented."
+    }
+  ],
+  "limits": [
+    "Authored static checks are not a GitGuardian engine rescan or proof that no possible secret exists.",
+    "Publication review does not establish scientific correctness, physical validation, clinical safety or complete reproducibility.",
+    "Original provenance and revision fields preserved; this export does not claim all federation domains or the complete archive have been publicly released."
+  ]
+}

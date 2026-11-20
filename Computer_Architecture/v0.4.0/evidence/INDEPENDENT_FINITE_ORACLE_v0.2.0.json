@@ -1,0 +1,70 @@
+{
+  "schema": "atlas.at8-v02-independent-finite-oracle/1",
+  "status": "passed",
+  "seed": 20261116,
+  "comparisons": 93661,
+  "groups": {
+    "independent_13_8_generator": 256,
+    "clean_13_8_decoder": 256,
+    "one_bit_error_correction": 3328,
+    "two_bit_error_detection": 19968,
+    "bootstrap_exhaustive_8bit_add": 65536,
+    "bootstrap_full_trace_sample": 16,
+    "ast_vs_atomic_accumulator": 850,
+    "ast_vs_atomic_output": 850,
+    "ast_vs_atomic_ram": 850,
+    "atomic_vs_microcycle": 850,
+    "source_halt_reachable": 850,
+    "acyclic_must_halt_structural": 50,
+    "metadata_not_physical_certification": 1
+  },
+  "bootstrap_samples": [
+    {
+      "source_sha256": "0314392f4bb646b204a825e5569a3acfb8e149b9e2b97fd4e2f3fa13a43d7932",
+      "rom_sha256": "5d1ff9ce19bd12b3edae6b8413a08b1df58a4064973c55cb505881b04786706b",
+      "accumulator": 119,
+      "output_events": 3,
+      "microcycle_state_match": true
+    },
+    {
+      "source_sha256": "738ed351cd3228158f482c9c7b306c2301469f34690424265575826d167848e7",
+      "rom_sha256": "b1918b5299c90fd120e4f768b64a3bafaa2ae4acb4937bb9386a120b88e59d7c",
+      "accumulator": 72,
+      "output_events": 24,
+      "microcycle_state_match": true
+    },
+    {
+      "source_sha256": "bbee07acebfae8d4d8417d73ce9de2c8e12ab6cab86fbdc21a15f789a64d6f08",
+      "rom_sha256": "186b0d41c911c30401ef1a5577a8f6c0a5232c695bbcc0eb3d03f4e2087758f4",
+      "accumulator": 131,
+      "output_events": 64,
+      "microcycle_state_match": true
+    },
+    {
+      "source_sha256": "7ee8011081707fd6dce8c39c67d453686c2e864fbe2b5a05402c7c9c70a506e3",
+      "rom_sha256": "fe172ccc723d13ac95a6c94dc154854ac946c0218c8ea6df0342030f82d529e6",
+      "accumulator": 90,
+      "output_events": 2,
+      "microcycle_state_match": true
+    },
+    {
+      "source_sha256": "b6bd53f43e814d020162c105033a75ae33008cff1e02f74c2582517b166243a8",
+      "rom_sha256": "3f346e21c00dccde5dbf8a30704436568402b90c9d2da9ccaa2aa58e5e1c1df6",
+      "accumulator": 18,
+      "output_events": 8,
+      "microcycle_state_match": true
+    },
+    {
+      "source_sha256": "c947ae30d8cff7982239c5926105e369bcb4b2685f18d0db08508253ef252521",
+      "rom_sha256": "04c18ebe36d6a9f4ce9f231a5ca685e8a8711c362b2abe6c4dee7da476fc184e",
+      "accumulator": 98,
+      "output_events": 8,
+      "microcycle_state_match": true
+    }
+  ],
+  "physical_evidence_types_missing": 12,
+  "human_scientific_review": false,
+  "physical_cpu_fabricated": false,
+  "publisher_original_transport_authenticated": 0,
+  "scope": "finite independent software models, not silicon fabrication or hardware validation"
+}

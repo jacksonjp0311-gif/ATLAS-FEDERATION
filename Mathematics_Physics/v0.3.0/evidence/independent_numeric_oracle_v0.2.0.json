@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "adaptive_rk4_vs_analytic_logistic": 120,
+    "analytic_svd2_vs_lapack_svd": 300,
+    "deliberate_domain_refusals": 120,
+    "ftcs_heat_vs_analytic_eigenmode": 100,
+    "householder_qr_vs_lapack_lstsq": 300,
+    "leapfrog_wave_vs_analytic_eigenmode": 100,
+    "radix2_fft_vs_numpy_fft": 200,
+    "radix2_inverse_roundtrip": 200
+  },
+  "general_svd_solver_implemented": false,
+  "independent_scientific_peer_review": false,
+  "max_abs_error": {
+    "adaptive_rk4_vs_analytic_logistic": 2.066859061677917e-08,
+    "analytic_svd2_vs_lapack_svd": 1.7763568394002505e-15,
+    "ftcs_heat_vs_analytic_eigenmode": 0.0002955170027497678,
+    "householder_qr_vs_lapack_lstsq": 6.217248937900877e-15,
+    "leapfrog_wave_vs_analytic_eigenmode": 0.003641065913306263,
+    "radix2_fft_vs_numpy_fft": 2.416106516409301e-14,
+    "radix2_inverse_roundtrip": 3.202372833989377e-15
+  },
+  "methods": "NumPy LAPACK/FFT and separate analytic ODE/PDE eigenmode formulas",
+  "numeric_cases": 1320,
+  "numpy_version": "2.3.5",
+  "original_publisher_files_authenticated": 0,
+  "physical_experiments": 0,
+  "rejected_invalid_cases": 120,
+  "result": "passed",
+  "schema": "atlas.math-physics-v02-independent-oracle/1",
+  "seed": 20261115
+}

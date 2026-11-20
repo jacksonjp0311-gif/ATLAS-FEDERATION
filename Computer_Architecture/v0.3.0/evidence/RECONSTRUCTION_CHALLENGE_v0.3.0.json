@@ -1,0 +1,38 @@
+{
+  "schema": "atlas.computer-v03-reconstruction-challenge/1",
+  "result": "passed_software_reference_physical_hold",
+  "ISA": "AT8/0.1 unchanged",
+  "boot_image_format": "AT8R/3",
+  "main_program_receipt_sha256": "303f125c8522c23458744d948bffa86f9d4d7d6fd30eed40ded006fc1136ba68",
+  "main_program_rom_sha256": "9c385619d8886080628f57455a77d885849e0a77d6c0d3755bb52ac1d7ceee74",
+  "software_main_output": [
+    [
+      0,
+      15
+    ]
+  ],
+  "interrupted_slot_still_selected_generation": 1,
+  "committed_slot_selected_generation": 2,
+  "separate_jobs": [
+    {
+      "index": 0,
+      "result": "verified_software"
+    },
+    {
+      "index": 1,
+      "result": "failed_closed"
+    },
+    {
+      "index": 2,
+      "result": "verified_software"
+    }
+  ],
+  "batch_is_successful": false,
+  "physical_evidence_required": 12,
+  "physical_evidence_verified": 0,
+  "physical_stages_blocked": 6,
+  "hardware_cpu_fabricated": false,
+  "authenticated_secure_boot": false,
+  "publisher_original_source_transport_authentication": false,
+  "independent_scientific_peer_review": false
+}

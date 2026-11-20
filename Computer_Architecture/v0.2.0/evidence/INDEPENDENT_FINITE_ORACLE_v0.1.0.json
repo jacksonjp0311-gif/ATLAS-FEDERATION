@@ -1,0 +1,25 @@
+{
+  "schema": "atlas.at8-independent-oracle/1",
+  "status": "passed",
+  "seed": 20261117,
+  "groups": {
+    "exhaustive_gate_8bit_add": 65536,
+    "exhaustive_gate_signed_overflow": 65536,
+    "third_oracle_vs_architecture": 700,
+    "third_oracle_vs_microcoded": 700,
+    "roundtrip_disassembly": 700,
+    "four_microcycles_per_instruction": 700,
+    "branch_control_execution_three_way": 3,
+    "program_halts": 3,
+    "atomic_addi_reg_and_carry": 1536,
+    "input_exhaustion_atomic": 1
+  },
+  "compared_cases": 135415,
+  "microcoded_distinct_from_atomic_spec": true,
+  "third_interpreter_separate": true,
+  "physical_cpu_demonstrated": false,
+  "manufacturing_characterization_supplied": false,
+  "source_originals_authenticated": 0,
+  "independent_human_review": false,
+  "claims": "finite software and constructed oracle evidence, not physically calibrated devices"
+}
